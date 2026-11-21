@@ -6,7 +6,7 @@ was checked and how. Forum and blog sources never establish a cruise
 line's status; they are kept as leads. Competitor pages are listed in
 research/competitors-seo.md.
 
-## Read directly (rounds 2-3) (114)
+## Read directly (rounds 2-3) (135)
 
 | URL | Type | Supports | Checked |
 | --- | --- | --- | --- |
@@ -27,7 +27,13 @@ research/competitors-seo.md.
 | https://explorajourneys.com/int/en/legal/conditions-of-carriage | passenger-contract | Explora Journeys: status/notes | 2026-11-21 |
 | https://faq.flyfrontier.com/help/does-frontier-allow-transport-of-human-remains | airline | Travel spirit-frontier: airline-us | 2026-11-21 |
 | https://flysmartavia.com/en/faq/luggage/carriage-rules/airplane-funeral-urn/ | airline | Travel ural-smartavia: airline-international | 2026-11-21 |
+| https://gov.gs/wp-content/uploads/2022/10/Scattering-of-Ashes-Policy-0321.pdf | government-guidance | Law SGSSI-01 (South Georgia and the South Sandwich Islands): Scattering ashes policy | 2026-11-21 |
 | https://legal.seadream.com/Yacht%20Ticket%20Contract.pdf | passenger-contract | SeaDream Yacht Club: status/notes | 2026-11-21 |
+| https://lovdata.no/dokument/NL/lov/1996-06-07-32 | statute | Law NO-01 (Norway): Scattering ashes (spredning av aske) | 2026-11-21 |
+| https://lovdata.no/dokument/SF/forskrift/2008-02-15-153 | regulation | Law NO-SJ-01 (Norway (Svalbard)): Ash scattering on Svalbard; Protected area: Svalbard (Norway) | 2026-11-21 |
+| https://mwg.rlp.de/fileadmin/15/Abteilung_2_Gesundheit/Bestattungsgesetz/BestattG_RP_2025.pdf | statute | Law DE-RIV-01 (Germany (Rhineland-Palatinate)): River burial (Flussbestattung); Inland waters: Germany, Rhineland-Palatinate | 2026-11-21 |
+| https://narodne-novine.nn.hr/clanci/sluzbeni/2025_05_78_1014.html | statute | Law HR-01 (Croatia): Scattering cremated remains | 2026-11-21 |
+| https://naturalresources.wales/permits-and-permissions/marine-licensing/marine-licence-exempted-activity/?lang=en | government-guidance | Law UK-WAL-01 (United Kingdom (Wales)): Scattering ashes at sea in Welsh waters | 2026-11-21 |
 | https://seadream.com/about/faq | official-faq | SeaDream Yacht Club: status/notes | 2026-11-21 |
 | https://seadream.com/about/policies-terms-conditions | official-policy-page | SeaDream Yacht Club: status/notes | 2026-11-21 |
 | https://seadream.com/lifestyle/celebrations | official-policy-page | SeaDream Yacht Club: status/notes | 2026-11-21 |
@@ -36,6 +42,7 @@ research/competitors-seo.md.
 | https://static.ritzcarltonyachtcollection.com/node/2171 | official-faq | The Ritz-Carlton Yacht Collection: status/notes | 2026-11-21 |
 | https://static.ritzcarltonyachtcollection.com/node/8946 | official-policy-page | The Ritz-Carlton Yacht Collection: status/notes | 2026-11-21 |
 | https://static.ritzcarltonyachtcollection.com/node/8959 | official-policy-page | The Ritz-Carlton Yacht Collection: status/notes | 2026-11-21 |
+| https://web1.karlsruhe.de/service/Buergerdienste/leistung.php?id=6015473 | government-guidance | Law DE-01 (Germany): Sea burial (Seebestattung) | 2026-11-21 |
 | https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/importing-human-remains-ashes | government | Travel abf-australia: customs-australia | 2026-11-21 |
 | https://www.aircanada.com/ca/en/aco/home/plan/baggage/carry-on.html | airline | Travel air-canada: airline-canada | 2026-11-21 |
 | https://www.aircaraibes.com/en/faq/can-i-travel-funeral-urn | airline | Travel air-caraibes: airline-international | 2026-11-21 |
@@ -56,6 +63,7 @@ research/competitors-seo.md.
 | https://www.azamara.com/static-assets/resources/ctc-pdfs/North_America_CTC_Terms_and_Conditions.pdf | passenger-contract | Azamara: status/notes | 2026-11-21 |
 | https://www.azamara.com/static-assets/resources/ctc-pdfs/United_Kingdom_CTC_Terms_and_Conditions.pdf | passenger-contract | Azamara: status/notes | 2026-11-21 |
 | https://www.azamara.com/worldofcelebrations | official-policy-page | Azamara: status/notes | 2026-11-21 |
+| https://www.boe.es/eli/es/rd/2022/03/29/218 | regulation | Law ES-01 (Spain): Placing urns or ashes at sea (economic activity) | 2026-11-21 |
 | https://www.carnival.com.au/safety-information | official-policy-page | Carnival Australia brands: status/notes | 2026-11-21 |
 | https://www.carnival.com.au/~/media/A58FC38024B84BEEB88804DD80C96059.pdf | passenger-contract | Carnival Australia brands: status/notes | 2026-11-21 |
 | https://www.catsa-acsta.gc.ca/en/cremated-remains | government | Travel catsa: airport-security-canada | 2026-11-21 |
@@ -72,9 +80,14 @@ research/competitors-seo.md.
 | https://www.fourseasonsyachts.com/faq | official-faq | Four Seasons Yachts: status/notes | 2026-11-21 |
 | https://www.fourseasonsyachts.com/terms-and-conditions | passenger-contract | Four Seasons Yachts: status/notes | 2026-11-21 |
 | https://www.fredolsencruises.com/faqs/on-board/can-i-scatter-ashes-at-sea | official-faq | Fred. Olsen Cruise Lines: permitted, documentedOrIndividualApproval, advanceNotice, leadTime, contactDepartment, writtenApplication, containerRequirements, biodegradableUrns, scatterOrReleaseUrn, privateCeremony,... | 2026-11-21 |
-| https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england | government-guidance | Law UK-01 (United Kingdom): Burial at sea and scattering ashes | 2026-11-21 |
+| https://www.gov.ie/en/department-of-transport/services/burial-at-sea/ | government-guidance | Law IE-01 (Ireland): Burial at sea; ashes | 2026-11-21 |
+| https://www.gov.scot/publications/burial-regulations-guidance/pages/3/ | government-guidance | Law UK-SCT-01 (United Kingdom (Scotland)): Scattering ashes; burial at sea | 2026-11-21 |
+| https://www.gov.uk/government/publications/egypt-bereavement-information-pack/egypt-bereavement-information | government-guidance | Law EG-01 (Egypt (Nile)): Cremation and ashes; Inland waters: Egypt | 2026-11-21 |
+| https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england | government-guidance | Law UK-01 (United Kingdom (England, Northern Ireland offshore)): Burial at sea and scattering ashes | 2026-11-21 |
 | https://www.gov.uk/guidance/what-to-do-when-someone-dies-abroad | government | Travel govuk-death-abroad: customs-uk | 2026-11-21 |
 | https://www.gov.uk/guidance/when-someone-dies-in-italy | government | Travel govuk-italy: customs-eu | 2026-11-21 |
+| https://www.greenburial.gov.hk/en/scattering-cremains-sea/intro.html | government-guidance | Law HK-01 (Hong Kong): Scattering cremated ashes in designated waters | 2026-11-21 |
+| https://www.guardiacostiera.gov.it/portale/documents/121759/0/Ord+97+del+07-09-2023+Dispersione+delle+ceneri+funebri+in+mare.pdf/df0e6413-6c14-1a90-20a3-6d45de39a849?version=1.0&t=1742803425272 | regulation | Law IT-02 (Italy (Campania, Castellammare di Stabia maritime district)): Coast Guard ordinance on dispersal at sea (example) | 2026-11-21 |
 | https://www.havilavoyages.com/en/faq | official-faq | Havila Voyages (Havila Kystruten): status/notes | 2026-11-21 |
 | https://www.havilavoyages.com/en/terms | passenger-contract | Havila Voyages (Havila Kystruten): status/notes | 2026-11-21 |
 | https://www.heathrow.com/at-the-airport/security-and-baggage/hand-baggage-and-liquids | airport | Travel heathrow: airport-security-uk | 2026-11-21 |
@@ -85,14 +98,20 @@ research/competitors-seo.md.
 | https://www.hollandamerica.com/en/us/plan-a-cruise/get-ready-for-your-cruise/faq/know-before-you-go | official-faq | Holland America Line: status/notes | 2026-11-21 |
 | https://www.hurtigruten.com/en/help/life-on-board | official-faq | Hurtigruten (Norwegian Coastal Express): status/notes | 2026-11-21 |
 | https://www.hurtigruten.com/en/help/medical-safety | official-faq | Hurtigruten (Norwegian Coastal Express): status/notes | 2026-11-21 |
+| https://www.imo.org/en/OurWork/Environment/Pages/Garbage-Default.aspx | government-guidance | Law INT-05 (International (MARPOL)): MARPOL Annex V: what counts as garbage | 2026-11-21 |
+| https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx | government-guidance | Law INT-04 (International (London Convention/Protocol)): Is scattering ashes 'dumping'? | 2026-11-21 |
 | https://www.jetblue.com/help/cremated-remains | airline | Travel jetblue: airline-us | 2026-11-21 |
+| https://www.justice.fr/fiche/cremation | government-guidance | Law FR-01 (France): Dispersal of ashes at sea and in nature | 2026-11-21 |
 | https://www.meinschiff.com/faq/an-bord | official-faq | TUI Cruises (Mein Schiff): status/notes | 2026-11-21 |
 | https://www.meinschiff.com/faq/service | official-faq | TUI Cruises (Mein Schiff): status/notes | 2026-11-21 |
+| https://www.mhlw.go.jp/content/11130500/001321304.pdf | government-guidance | Law JP-01 (Japan): MHLW guideline for scattering businesses (散骨) | 2026-11-21 |
 | https://www.mitsuioceancruises.com/assets/terms/pdf/terms.pdf | passenger-contract | Mitsui Ocean Cruises: status/notes | 2026-11-21 |
 | https://www.mitsuioceancruises.com/fuji/faq/ | official-faq | Mitsui Ocean Cruises: status/notes | 2026-11-21 |
 | https://www.ncl.com/faq/what-cant-i-bring-on-board | official-faq | Norwegian Cruise Line: status/notes | 2026-11-21 |
+| https://www.nea.gov.sg/our-services/after-death/post-death-matters/burial-cremation-and-ash-storage | government-guidance | Law SG-01 (Singapore): Sea scattering at a designated site | 2026-11-21 |
 | https://www.nicko-cruises.de/agb | passenger-contract | nicko cruises (ocean, Vasco da Gama): status/notes | 2026-11-21 |
 | https://www.nicko-cruises.de/faq | official-faq | nicko cruises (ocean, Vasco da Gama): status/notes | 2026-11-21 |
+| https://www.parlamento.it/parlam/leggi/01130l.htm | statute | Law IT-01 (Italy): Dispersal of ashes at sea, lakes and rivers | 2026-11-21 |
 | https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html | official-faq | Phoenix Reisen: status/notes | 2026-11-21 |
 | https://www.phoenixreisen.com/reise-und-geschaeftsbedingungen.html | passenger-contract | Phoenix Reisen: status/notes | 2026-11-21 |
 | https://www.plantours-kreuzfahrten.de/infos-service/reiseplanung/infos-von-a-z-hochsee/ | official-faq | Plantours Kreuzfahrten: status/notes | 2026-11-21 |
@@ -101,6 +120,7 @@ research/competitors-seo.md.
 | https://www.ponant.com/faq | official-faq | Ponant: status/notes | 2026-11-21 |
 | https://www.princess.com/faq/onboard-experience | official-faq | Princess Cruises: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, privateCeremony, fees | 2026-11-21 |
 | https://www.princess.com/legal/passage-contract/plc | passenger-contract | Princess Cruises: fees | 2026-11-21 |
+| https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen/vergunningen-rijkswateren | government-guidance | Law NL-01 (Netherlands): Scattering ashes in state waters (sea and rivers); Inland waters: Netherlands | 2026-11-21 |
 | https://www.royalcaribbean.com/aus/en/faq/questions/what-is-royal-caribbeans-burial-at-sea-policy | cruise-line | Travel royal-caribbean: cruise-line | 2026-11-21 |
 | https://www.royalcaribbean.com/faq/questions/what-is-royal-caribbeans-burial-at-sea-policy | official-faq | Royal Caribbean International: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements, biodegradableUrns,... | 2026-11-21 |
 | https://www.seabourn.com/en/us/about/legal-information/booking-conditions-united-kingdom | passenger-contract | Seabourn: status/notes | 2026-11-21 |
@@ -110,6 +130,7 @@ research/competitors-seo.md.
 | https://www.silversea.com/guest-terms/united-kingdom/united-kingdom-booking-conditions-en/ | passenger-contract | Silversea Cruises: status/notes | 2026-11-21 |
 | https://www.silversea.com/guest-terms/united-states/united-states-ctc-en/ | passenger-contract | Silversea Cruises: status/notes | 2026-11-21 |
 | https://www.silversea.com/travel-informations/faq.html | official-faq | Silversea Cruises: status/notes | 2026-11-21 |
+| https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf | treaty | Law INT-01 (International (UNCLOS)): Territorial sea and contiguous zone; Law INT-02 (International (UNCLOS)): High seas and flag-state jurisdiction; Law INT-03 (International (UNCLOS)): Dumping: definition and... | 2026-11-21 |
 | https://www.vikingcruises.co.uk/oceans/frequently-asked-questions.html | official-faq | Viking (Viking Ocean, Viking River, Viking Expedition): status/notes | 2026-11-21 |
 | https://www.vikingcruises.com.au/oceans/frequently-asked-questions.html | official-faq | Viking (Viking Ocean, Viking River, Viking Expedition): status/notes | 2026-11-21 |
 | https://www.vikingcruises.com/expeditions/frequently-asked-questions.html | official-faq | Viking (Viking Ocean, Viking River, Viking Expedition): status/notes | 2026-11-21 |
@@ -185,7 +206,7 @@ research/competitors-seo.md.
 | https://www.stamps.com/article/ship-cremated-remains/ | secondary | Travel private-carriers: shipping-us | 2026-11-21 |
 | https://www.united.com/ual/en/us/fly/travel/baggage/fragile.html | airline | Travel united: airline-us | 2026-11-21 |
 
-## Search summary only (round 1) (76)
+## Search summary only (round 1) (72)
 
 | URL | Type | Supports | Checked |
 | --- | --- | --- | --- |
@@ -204,54 +225,51 @@ research/competitors-seo.md.
 | https://cruiseindustrynews.com/cruise-news/2024/02/american-queen-voyages-ceases-operations/ | secondary-news | American Queen Voyages: status/notes | 2026-11-21 |
 | https://cruiseindustrynews.com/cruise-news/2026/02/alaskan-dream-cruises-shuts-down/ | secondary-news | Alaskan Dream Cruises: status/notes | 2026-11-21 |
 | https://cruiseindustrynews.com/cruise-news/2026/03/four-seasons-i-kicks-off-maiden-mediterranean-voyage/ | secondary-news | Four Seasons Yachts: status/notes | 2026-11-21 |
+| https://dec.alaska.gov/ | government-guidance | Law US-17 (United States (Alaska)): State rules on scattering ashes | 2026-11-21 |
+| https://documents.ats.aq/recatt/Att011_e.pdf | treaty | Law ANT-01 (Antarctica (Antarctic Treaty area)): Madrid Protocol Annexes III and IV | 2026-11-21 |
+| https://elibrary.gbrmpa.gov.au/jspui/retrieve/38c38365-ff28-4d92-9d98-da0828817e18/Memorials-management-within-the-Great-Barrier-Reef-Marine-Park-v0-2007.pdf | government-guidance | Law AU-GBR-01 (Australia (Great Barrier Reef Marine Park)): Ashes in the Marine Park | 2026-11-21 |
+| https://en.mitos.gov.gr/index.php/ΔΔ:Transfer_of_ashes_from_abroad_to_Greece | government-guidance | Law GR-01 (Greece): Scattering ashes at sea | 2026-11-21 |
 | https://faqs.fredolsencruises.com/portal/en/kb/articles/can-i-scatter-ashes-at-sea | official-faq | Fred. Olsen Cruise Lines: status/notes | 2026-11-21 |
 | https://fernwehblog.net/seebestattung-kreuzfahrt/ | secondary-blog | TUI Cruises (Mein Schiff): status/notes; AIDA Cruises: status/notes; Hapag-Lloyd Cruises: status/notes | 2026-11-21 |
 | https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes | official-faq | Carnival Australia brands: status/notes; Carnival Cruise Line: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements,... | 2026-11-21 |
 | https://iaato.org/field-operations-manual | official-policy-page | Protected area: Antarctica (Antarctic Treaty area, south of 60 degrees S) | 2026-11-21 |
-| https://laws.bahamas.gov.bs/ | government-guidance | Law BS-01 (Bahamas): Scattering ashes at sea | 2026-11-21 |
-| https://lovdata.no/ | government-guidance | Law NO-01 (Norway): Scattering ashes at sea | 2026-11-21 |
-| https://lovdata.no/dokument/SF/forskrift/2008-02-15-153 | government | Protected area: Svalbard (Norway) | 2026-11-21 |
+| https://laws.bahamas.gov.bs/ | government-guidance | Law BS-01 (Bahamas): Ashes at sea | 2026-11-21 |
+| https://laws.justice.gc.ca/eng/acts/C-15.31/FullText.html | statute | Law CA-01 (Canada): Disposal at sea under CEPA 1999 | 2026-11-21 |
+| https://moc.gov.vn/ | government-guidance | Law VN-KH-01 (Vietnam and Cambodia (Mekong)): Scattering ashes in the Mekong | 2026-11-21 |
 | https://mp.australis.com/mp/wp-content/uploads/2022/07/Brochure-23-24ENG-1.pdf | official-pdf | Australis: status/notes | 2026-11-21 |
-| https://mwg.rlp.de/fileadmin/15/Abteilung_2_Gesundheit/Bestattungsgesetz/BestattG_RP_2025.pdf | law-inland | Inland waters: Germany, Rhineland-Palatinate | not verified |
+| https://mzj.sh.gov.cn/cmsres/9c/9cde2287021344cf81e72ad594b148d5/cb0fc211416279f5d931c386261c39b8.pdf | regulation | Law CN-01 (China (Shanghai example)): Sea burial (海葬) | 2026-11-21 |
+| https://njt.jog.gov.hu/jogszabaly/1999-145-20-22 | regulation | Law HU-01 (Hungary): Scattering ashes (including rivers) | 2026-11-21 |
 | https://norgeguide.com/en/faq/safety-rules-and-fines/illegal-to-die-on-svalbard/ | secondary-blog | Protected area: Svalbard (Norway) | 2026-11-21 |
 | https://oceanwide-expeditions.com/blog/shackletons-tower-of-strength-right-hand-man-the-antarctic-exploits-of-frank-wild | secondary-blog | Protected area: South Georgia | 2026-11-21 |
-| https://pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=246&tabela=leis | law-inland | Inland waters: Portugal (Douro) | not verified |
+| https://pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=246&tabela=leis | statute | Law PT-01 (Portugal): Destination of ashes; Inland waters: Portugal (Douro) | 2026-11-21 |
 | https://questions.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE17354 | law-inland | Inland waters: France | not verified |
+| https://ris.bka.gv.at/Dokumente/Landesnormen/LNO40014729/LNO40014729.html | statute | Law AT-01 (Austria): Scattering ashes and water burial | 2026-11-21 |
 | https://telegraph.rivieratravel.co.uk/help-centre/european-river-cruise-faqs | official-faq | Riviera Travel (river cruises): status/notes | 2026-11-21 |
 | https://www.auroraexpeditions.com.au/wp-content/uploads/2023/09/IAATO-Reducing-Waste-Guidelines-for-Visitors42.pdf | official-pdf | Protected area: Antarctica (Antarctic Treaty area, south of 60 degrees S) | 2026-11-21 |
-| https://www.boe.es/ | government-guidance | Law ES-01 (Spain): Scattering ashes at sea | 2026-11-21 |
-| https://www.canada.ca/en/environment-climate-change/services/disposal-at-sea.html | government-guidance | Law CA-01 (Canada): Scattering ashes at sea | 2026-11-21 |
+| https://www.bvi.gov.vg/services/burials-sea-body-or-cremated-remains | government-guidance | Law CAR-01 (Caribbean states (British Virgin Islands example)): Ashes at sea | 2026-11-21 |
 | https://www.captaincook.com.au/celebrations/private-boat-hire | official-policy-page | Captain Cook Cruises (Australia): status/notes | 2026-11-21 |
 | https://www.cnn.com/travel/scatter-ashes-while-traveling-antarctica/index.html | secondary-news | Protected area: Antarctica (Antarctic Treaty area, south of 60 degrees S) | 2026-11-21 |
 | https://www.cruisecritic.com/cruise/viking-river/viking-alruna/reviews/589479 | forum-anecdote | Viking River Cruises (note only): status/notes | 2026-11-21 |
 | https://www.cruisehive.com/carnival-clarifies-strict-guest-limits-on-solemn-at-sea-ceremony/201209 | secondary-news | Carnival Cruise Line: advanceNotice, leadTime, privateCeremony, fees, gpsCoordinates, certificateConfirmation | 2026-11-21 |
 | https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734 | secondary-news | Carnival Australia brands: status/notes; Carnival Cruise Line: weatherItineraryLimits, differsByVesselItinerary | 2026-11-21 |
 | https://www.cruisehive.com/carnival-fleet-expands-as-po-cruises-australia-era-ends | secondary-news | Carnival Australia brands: status/notes | 2026-11-21 |
-| https://www.dcceew.gov.au/environment/marine/sea-dumping | government-guidance | Law AU-01 (Australia): Scattering ashes at sea | 2026-11-21 |
 | https://www.disboards.com/threads/dcl-onboard-restricted-items-policy-updates-decorations-ducks-and-ashes-and-more.3936270/ | forum-anecdote | Disney Cruise Line: status/notes | 2026-11-21 |
 | https://www.disboards.com/threads/is-there-a-dcl-policy-for-scattering-ashes-burial-at-sea.3908112/ | forum-anecdote | Disney Cruise Line: status/notes | 2026-11-21 |
-| https://www.dof.gob.mx/ | government-guidance | Law MX-01 (Mexico): Scattering ashes at sea | 2026-11-21 |
 | https://www.epa.gov/marine-protection-permitting/burial-sea | government | Protected area: Alaska (US) | 2026-11-21 |
-| https://www.epa.govt.nz/ | government-guidance | Law NZ-01 (New Zealand): Scattering ashes at sea | 2026-11-21 |
 | https://www.expedia.com/lp/b/rules-amawaterways | secondary-blog | AmaWaterways: status/notes | 2026-11-21 |
-| https://www.gesetze-im-internet.de/ | government-guidance | Law DE-01 (Germany): Scattering ashes at sea | 2026-11-21 |
-| https://www.gov.uk/government/publications/egypt-bereavement-information-pack/egypt-bereavement-information | law-inland | Inland waters: Egypt | not verified |
+| https://www.galapagos.gob.ec/ | government-guidance | Law GAL-01 (Ecuador (Galapagos National Park and Marine Reserve)): Ashes in Galapagos | 2026-11-21 |
+| https://www.gob.mx/cms/uploads/attachment/file/724503/Ley_de_Vertimentos_Zonas_Marinas_Mex._13-04-2020.pdf | statute | Law MX-01 (Mexico): Ashes at sea | 2026-11-21 |
 | https://www.govinfo.gov/content/pkg/FR-2013-01-15/pdf/2013-00535.pdf | regulation | Law US-15 (United States): Sanctuary permits for cremated remains | 2026-11-21 |
 | https://www.guardiacostiera.gov.it/portale/documents/121759/0/Ord+97+del+07-09-2023+Dispersione+delle+ceneri+funebri+in+mare.pdf/df0e6413-6c14-1a90-20a3-6d45de39a849?version=1.0&t=1742803425272null | government | Costa Cruises (Costa Crociere): status/notes | 2026-11-21 |
-| https://www.imo.org/en/OurWork/Environment/Pages/Garbage-Default.aspx | treaty | Law INT-05 (International (MARPOL)): MARPOL Annex V and special areas | 2026-11-21 |
-| https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx | treaty | Law INT-04 (International (London Convention/Protocol)): Is scattering ashes 'dumping'? | 2026-11-21 |
-| https://www.kodiko.gr/ | government-guidance | Law GR-01 (Greece): Scattering ashes at sea | 2026-11-21 |
-| https://www.legifrance.gouv.fr/ | government-guidance | Law FR-01 (France): Scattering ashes at sea | 2026-11-21 |
-| https://www.mhlw.go.jp/ | government-guidance | Law JP-01 (Japan): Scattering ashes at sea | 2026-11-21 |
+| https://www.law.cornell.edu/regulations/hawaii/Haw-Code-R-SS-20-26-40 | regulation | Law US-16 (United States (Hawaii)): State rules on scattering ashes | 2026-11-21 |
+| https://www.legislation.gov.au/C2004A02478/latest/text | statute | Law AU-01 (Australia): Sea dumping permits and ashes | 2026-11-21 |
+| https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2015/229/en/latest/ | regulation | Law NZ-01 (New Zealand): Burial at sea regulations and ashes | 2026-11-21 |
 | https://www.mitsuioceancruises.com/assets/download/pdf/f_guide.pdf | official-pdf | Mitsui Ocean Cruises: status/notes | 2026-11-21 |
-| https://www.nea.gov.sg/ | government-guidance | Law SG-01 (Singapore): Scattering ashes at sea | 2026-11-21 |
 | https://www.nolo.com/legal-encyclopedia/burial-cremation-laws-alaska.html | secondary-blog | Protected area: Alaska (US) | 2026-11-21 |
-| https://www.normattiva.it/ | government-guidance | Law IT-01 (Italy): Scattering ashes at sea | 2026-11-21 |
 | https://www.nps.gov/bisc/planyourvisit/special-use-permit-for-scattering-of-ashes.htm | government-guidance | Law US-10 (United States (Alaska)): NPS parks with ash-scattering permit pages | 2026-11-21 |
 | https://www.oceaniacruises.com/sites/default/files/2024-10/Oceania%20Ticket%20Contract_US.pdf | passenger-contract | Oceania Cruises: status/notes | 2026-11-21 |
 | https://www.pachamamatributes.com/blogs/news/cruise-lines-that-allow-ash-scattering | secondary-blog | Celebrity Cruises: status/notes | 2026-11-21 |
 | https://www.ra-kotz.de/totenasche.htm | law-inland | Inland waters: Germany, North Rhine-Westphalia | not verified |
-| https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen/vergunningen-rijkswateren | law-inland | Inland waters: Netherlands | not verified |
 | https://www.rssc.com/media/hostedfiles/legal/TicketContract07272010.pdf | passenger-contract | Regent Seven Seas Cruises: status/notes | 2026-11-21 |
 | https://www.saga.co.uk/magazine/relationships/bereavement/burial-at-sea | secondary-news | Saga Cruises: status/notes | 2026-11-21 |
 | https://www.seabourn.com/en/us/legal-privacy/cruise-contract | passenger-contract | Seabourn: status/notes | 2026-11-21 |
@@ -260,7 +278,6 @@ research/competitors-seo.md.
 | https://www.travelocity.com/lp/b/rules-uniworld-river-cruises | secondary-blog | Uniworld Boutique River Cruises: status/notes | 2026-11-21 |
 | https://www.travelweekly.com/River-Cruising/American-Queen-Voyages-has-shut-down | secondary-news | American Queen Voyages: status/notes | 2026-11-21 |
 | https://www.tuiholidays.ie/f/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered | official-faq | Marella Cruises: status/notes | 2026-11-21 |
-| https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf | treaty | Law INT-01 (International (UNCLOS)): Territorial sea and contiguous zone; Law INT-02 (International (UNCLOS)): High seas and flag-state jurisdiction; Law INT-03 (International (UNCLOS)): Dumping: coastal-state... | 2026-11-21 |
 | https://www.urnsforashes.co.uk/wp-content/uploads/2022/10/environment-agency-scattering-ashes.pdf | law-inland | Inland waters: United Kingdom (England) | not verified |
 | https://www.vienna.at/privatbeisetzung-ist-in-bundeslaendern-unterschiedlich-geregelt/8258485 | law-inland | Inland waters: Austria | not verified |
 | https://www.weka.de/ordnungsamt-gewerbeamt/flugbestattungen-ueber-nordsee/ | law-inland | Inland waters: Germany (general, state law) | not verified |

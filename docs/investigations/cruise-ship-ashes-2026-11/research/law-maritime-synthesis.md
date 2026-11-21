@@ -1,5 +1,12 @@
 # Scattering ashes from cruise ships: legal synthesis
 
+> Round 3 update (2026-11-21): many entries below are now confirmed from
+> official text (UNCLOS, Norway, Svalbard, Netherlands, Italy, Spain,
+> Croatia, Rhineland-Palatinate, Japan, Singapore, Hong Kong, South
+> Georgia, Scotland partial, Ireland partial). law-maritime.json is the
+> authoritative record; this synthesis is the round 1 text, kept for
+> history.
+
 Checked 2026-11-21. Entry IDs refer to `law-maritime.json`.
 
 ## How far this research got

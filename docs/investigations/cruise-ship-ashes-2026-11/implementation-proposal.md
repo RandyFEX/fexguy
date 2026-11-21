@@ -21,8 +21,15 @@ exclusion from the sitemap filter in astro.config.mjs.
      sort order, and build-time checks: every non-unverified operator has an
      official source with a verified date; no answer marked official without
      a source; no em dash (U+2014) in any string.
-   - `law.json`: the confirmed law entries only (EPA, eCFR, GOV.UK), with
-     citations.
+   - `law.json`: the confirmed law entries only (EPA, eCFR, UNCLOS, GOV.UK,
+     gov.scot, Norway, Svalbard, Netherlands, Italy, Spain, Croatia,
+     Rhineland-Palatinate, Japan, Singapore, Hong Kong, South Georgia), each
+     with its `category` (national law, coastal state, maritime convention,
+     environmental or protected area, river) so the page can group them.
+     Partially confirmed entries (France, Canada, Australia, Antarctica)
+     are shown only with that label; unverified ones are not shown.
+   - `travel.json`: official airport, customs and airline rules, grouped by
+     country, never generalizing TSA rules to other countries.
 2. **Page** `src/pages/scattering-ashes-from-a-cruise-ship-preview.astro`
    (preview slug; the final slug `/scattering-ashes-from-a-cruise-ship/`
    needs Randy's approval):
@@ -51,6 +58,16 @@ exclusion from the sitemap filter in astro.config.mjs.
   scope>` headers, wrapped in the existing keyboard-focusable scroll
   container (src/scripts/scroll-tables.ts). On phones, the operator cards
   below carry the same data.
+- **Status data rules (round 3):** the page shows a status other than
+  Unverified only when the record has `wordingConfirmed: true` and an
+  official source read by us. Records with `unconfirmed-official` answers
+  (Carnival, MSC, P&O, Cunard) show "Policy page could not be confirmed"
+  with the link, never the summarized rules as fact. `notCruiseLine`
+  records (charters) are excluded from the directory. Grouped and closed
+  operators are excluded too.
+- **Unverified operators** get a compact row (name, regions, "No
+  published policy found", date searched, the official contact if read)
+  rather than a full card, so 85 rows stay readable.
 - **Progressive-enhancement filters** (a small inline script, no new
   dependency), placed above the cards:
   - text search by operator name (`<input type="search">` with a visible

@@ -7,7 +7,7 @@ def short(s, n=140):
     s = cell(s); return s if len(s) <= n else s[:n-3].rsplit(" ", 1)[0] + "..."
 def check(note):
     n = (note or "").lower()
-    if "opened directly on 2026-11-21" in n: return "Read directly (rounds 2-3)"
+    if re.search(r"opened directly( on)? 2026-11-21|read directly|re-opened directly|opened directly \(http 200", n): return "Read directly (rounds 2-3)"
     if (n.startswith("round 2") or n.startswith("round 3")) and ("bot protection" in n or "refused" in n or "401" in n): return "Blocked; search summary only"
     if ("fetch tool" in n and "read on 2026-11-21" in n) or "read via webfetch" in n: return "Read via fetch tool"
     if "round 2 (2026-11-21): the fetch tool confirmed" in n: return "Read via fetch tool"
@@ -29,6 +29,7 @@ for f in sorted(glob.glob(os.path.join(R, "operators-*.json"))):
 for e in json.load(open(os.path.join(R, "law-maritime.json"))):
     note = e.get("notes", "")
     if e.get("confidence") == "confirmed" and "ecfr.gov" in (e.get("url") or ""): note = "ecfr api " + note
+    elif e.get("confidence") == "confirmed": note = "read directly " + note
     add(e.get("url"), e.get("sourceType", ""), f"Law {e['id']} ({e['jurisdiction']}): {e['topic']}", e.get("verified", ""), note)
 for e in json.load(open(os.path.join(R, "travel-with-remains.json"))):
     add(e.get("url"), e.get("entityType", ""), f"Travel {e['id']}: {e['topic']}", e.get("verified", ""), e.get("accessNote", ""))
