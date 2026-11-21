@@ -110,18 +110,6 @@
       "detail": "#no-published-policy"
     },
     {
-      "id": "alaskan-dream-cruises",
-      "name": "Alaskan Dream Cruises",
-      "fleet": "Expedition",
-      "regions": "Alaska",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Reported to have ceased operations in February 2026.",
-      "detail": "#no-published-policy"
-    },
-    {
       "id": "albatros-expeditions",
       "name": "Albatros Expeditions",
       "fleet": "Expedition",
@@ -131,18 +119,6 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "aman-and-other-yacht-lines",
-      "name": "Aman (Aman at Sea) and other yacht lines",
-      "fleet": "Yacht",
-      "regions": "",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Group of operators. No operator statement found.",
       "detail": "#no-published-policy"
     },
     {
@@ -167,18 +143,6 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "american-queen-voyages",
-      "name": "American Queen Voyages",
-      "fleet": "River",
-      "regions": "Mississippi River system, Pacific Northwest, Great Lakes (former)",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Reported to have ceased operations in February 2024.",
       "detail": "#no-published-policy"
     },
     {
@@ -302,18 +266,6 @@
       "detail": "#no-published-policy"
     },
     {
-      "id": "carnival-australia",
-      "name": "Carnival Australia brands",
-      "fleet": "Ocean",
-      "regions": "Australia, New Zealand, South Pacific",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
       "id": "carnival-cruise-line",
       "name": "Carnival Cruise Line",
       "fleet": "Ocean",
@@ -347,18 +299,6 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "yangtze-operators",
-      "name": "Century Cruises and other Yangtze River operators",
-      "fleet": "River",
-      "regions": "Yangtze River, China",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Group of operators. No operator statement found.",
       "detail": "#no-published-policy"
     },
     {
@@ -434,22 +374,10 @@
       "detail": "#no-published-policy"
     },
     {
-      "id": "emerald-river",
-      "name": "Emerald Cruises (river)",
-      "fleet": "River",
-      "regions": "Europe, Mekong",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
       "id": "emerald-cruises-yacht",
-      "name": "Emerald Cruises (yacht)",
-      "fleet": "Yacht",
-      "regions": "Mediterranean, Caribbean, Southeast Asia",
+      "name": "Emerald Cruises (yacht and river)",
+      "fleet": "Yacht and river",
+      "regions": "Mediterranean, Caribbean, Southeast Asia, Europe, Mekong",
       "status": "unverified",
       "policyUrl": null,
       "policyNote": null,
@@ -483,21 +411,9 @@
     },
     {
       "id": "grand-circle-oat-small-ships",
-      "name": "Grand Circle / Overseas Adventure Travel small ships",
-      "fleet": "Expedition",
-      "regions": "Europe, Antarctica, Worldwide",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "grand-circle-river",
-      "name": "Grand Circle Cruise Line (river)",
-      "fleet": "River",
-      "regions": "Europe, Egypt (Nile)",
+      "name": "Grand Circle Cruise Line and Overseas Adventure Travel",
+      "fleet": "River and small ship",
+      "regions": "Europe, Antarctica, Worldwide, Egypt (Nile)",
       "status": "unverified",
       "policyUrl": null,
       "policyNote": null,
@@ -590,18 +506,6 @@
       "detail": "#no-published-policy"
     },
     {
-      "id": "japan-korea-coastal",
-      "name": "Japanese and Korean coastal operators (general)",
-      "fleet": "Coastal",
-      "regions": "Japan, South Korea",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Group of operators. No operator statement found.",
-      "detail": "#no-published-policy"
-    },
-    {
       "id": "lindblad-expeditions",
       "name": "Lindblad Expeditions / National Geographic-Lindblad",
       "fleet": "Expedition",
@@ -662,39 +566,15 @@
       "detail": "#no-published-policy"
     },
     {
-      "id": "nicko-cruises",
-      "name": "nicko cruises",
-      "fleet": "River",
-      "regions": "Europe (river), ocean (Vasco da Gama)",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
       "id": "nicko-cruises-ocean",
-      "name": "nicko cruises (ocean, Vasco da Gama)",
-      "fleet": "Ocean",
-      "regions": "Worldwide, Northern Europe",
+      "name": "nicko cruises (ocean and river)",
+      "fleet": "Ocean and river",
+      "regions": "Worldwide, Northern Europe, Europe (river), ocean (Vasco da Gama)",
       "status": "unverified",
       "policyUrl": null,
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "nile-cruise-operators",
-      "name": "Nile cruise operators (general)",
-      "fleet": "River",
-      "regions": "Egypt (Nile)",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Group of operators. No operator statement found.",
       "detail": "#no-published-policy"
     },
     {
@@ -903,21 +783,9 @@
     },
     {
       "id": "scenic-eclipse",
-      "name": "Scenic (ocean, Scenic Eclipse)",
-      "fleet": "Yacht",
-      "regions": "Antarctica, Arctic, Mediterranean, Worldwide",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "scenic-river",
-      "name": "Scenic (river)",
-      "fleet": "River",
-      "regions": "Europe, Mekong, Egypt (Nile)",
+      "name": "Scenic (ocean and river)",
+      "fleet": "Ocean and river",
+      "regions": "Antarctica, Arctic, Mediterranean, Worldwide, Europe, Mekong, Egypt (Nile)",
       "status": "unverified",
       "policyUrl": null,
       "policyNote": null,
@@ -1079,18 +947,6 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
-      "detail": "#no-published-policy"
-    },
-    {
-      "id": "viking-river-note",
-      "name": "Viking River Cruises",
-      "fleet": "River",
-      "regions": "Europe, Egypt, Mekong, Mississippi",
-      "status": "unverified",
-      "policyUrl": null,
-      "policyNote": null,
-      "verified": "2026-11-21",
-      "restrictions": "Covered by the Viking entry. No published policy found.",
       "detail": "#no-published-policy"
     },
     {

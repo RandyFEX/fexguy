@@ -601,6 +601,7 @@
       "Distance: \"12 nautical miles from land\" and \"12 miles out to sea from any port\" both appear on the same FAQ (round 1 thought they were two copies). Read together: international waters, at least 12 nm from land. Resolved."
     ],
     "unresolved": [
+      "Verification limitation (Version 1.5): the complete official policy wording has not been independently verified. The tui.co.uk page refused automated reading (HTTP 403); on 2026-11-21 a page-reading tool returned a paraphrase plus one exact quote (\"Ashes can be scattered in international waters\"). The status rests on that read; confirm the full text in a browser before publication.",
       "Notice period, urn type for release, fees and ceremony format not published."
     ],
     "needsDirectContact": false,
@@ -780,7 +781,8 @@
       }
     },
     "wordingConfirmed": false,
-    "round2": "verified-via-fetch-tool-paraphrase"
+    "round2": "verified-via-fetch-tool-paraphrase",
+    "verificationLimitation": "Verification limitation (Version 1.5): the complete official policy wording has not been independently verified. The tui.co.uk page refused automated reading (HTTP 403); on 2026-11-21 a page-reading tool returned a paraphrase plus one exact quote (\"Ashes can be scattered in international waters\"). The status rests on that read; confirm the full text in a browser before publication."
   },
   {
     "conflicts": [],

@@ -33,6 +33,14 @@ with these open questions:
 Fastest fix: Randy opens the four pages in a browser and pastes the text,
 or each line confirms by email.
 
+## 2a. Marella: wording not independently verified
+
+Marella is shown as Officially permitted from its official FAQ, but the
+complete official wording has not been independently verified: the page
+refused automated reading (HTTP 403), and a page-reading tool returned a
+paraphrase plus one exact quote. Its official link and research are kept;
+confirm the full text in a browser before publication.
+
 ## 3. Operators whose official sites could not be read
 
 Official policy unknown because the site blocked or could not render:

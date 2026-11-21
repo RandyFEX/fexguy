@@ -6,7 +6,25 @@ component has been changed. Model for depth and sourcing: the One Last
 Amazing Adventure national parks preview (branch
 `claude/last-adventure-preview`, not modified).
 
-## Status: Version 1.3 private preview built (2026-11-21)
+## Status: Version 1.5 corrections (2026-11-21)
+
+Randy's authorized corrections on the preview:
+- Meta description replaced with Randy's wording.
+- Glacier Bay-specific claim removed; the general National Park System
+  rule (36 CFR 2.62) and its citation kept.
+- Marella: verification limitation recorded (research record
+  `verificationLimitation`, gap-report.md section 2a); link and research kept.
+- Directory: 80 unique, currently operating cruise lines (5 officially
+  permitted, 1 conditionally permitted, 1 not permitted, 73 unverified).
+  Left out of the public directory, research records kept: 2 reported
+  closures (Alaskan Dream Cruises, American Queen Voyages), 5 grouped
+  entries (Yangtze, Nile, Japan/Korea coastal, Aman and other yachts,
+  Carnival Australia brands), 1 duplicate (Viking River note); 4 operators
+  split across two records shown once (Scenic, Emerald, nicko, Grand
+  Circle/O.A.T.). Check dates now come from each record (all 80 supported).
+- Sales elements and shared components unchanged.
+
+## Version 1.3 status: private preview built (2026-11-21)
 
 The article and the 92-operator directory are built as a private preview
 at the provisional path `/scattering-ashes-from-a-cruise-ship/` (slug not

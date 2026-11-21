@@ -79,7 +79,7 @@ const ext = { target: '_blank', rel: 'noopener' };
       <li><strong>Unverified:</strong> we could not read an official policy. This is not a “no.” It means you need to ask the line in writing.</li>
     </ul>
     <p>
-      Of the {operators.length} cruise operators we researched, {counts['officially-permitted']} are officially permitted,
+      Of the {operators.length} currently operating cruise lines in our directory, {counts['officially-permitted']} are officially permitted,
       {counts['conditionally-permitted']} conditionally permitted, {counts['not-permitted']} not permitted and
       {counts.unverified} unverified. Most unverified lines simply publish nothing on the subject.
     </p>
@@ -105,7 +105,7 @@ const ext = { target: '_blank', rel: 'noopener' };
 
     <h2 id="directory">Cruise line directory</h2>
     <p>
-      All {operators.length} cruise operators we researched: ocean, luxury, expedition, river and regional lines around
+      All {operators.length} currently operating cruise lines we researched: ocean, luxury, expedition, river and regional lines around
       the world. Each entry shows the permission status, the official policy page when one exists, the date we checked
       and the main restrictions. Use the search and status filters to narrow the list.
     </p>
@@ -155,7 +155,7 @@ const ext = { target: '_blank', rel: 'noopener' };
                   )}
                 </dd>
               </div>
-              <div><dt>Checked</dt><dd><time datetime={o.verified}>{checkedLabel}</time></dd></div>
+              <div><dt>Checked</dt><dd>{o.verified ? <time datetime={o.verified}>{checkedLabel}</time> : 'Not re-checked'}</dd></div>
             </dl>
             <a class="cra-card__more" href={o.detail}>Details<span class="visually-hidden"> about {o.name}</span></a>
           </li>
@@ -365,7 +365,7 @@ const ext = { target: '_blank', rel: 'noopener' };
       in their waters.” The 600-foot depth rule you may see online is for full-body burials, not ashes.
     </p>
     <p>
-      In national parks such as Glacier Bay, scattering is prohibited except under a permit or in designated areas
+      In areas of the National Park System, scattering ashes is prohibited except under a permit or in designated areas
       (<a href="https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.62" {...ext}>36 CFR 2.62</a>). The Monterey
       Bay, Greater Farallones and Channel Islands marine sanctuaries ban discharges from cruise ships, with exceptions that
       do not include ashes (<a href="https://www.ecfr.gov/current/title-15/subtitle-B/chapter-IX/subchapter-B/part-922" {...ext}>15 CFR part 922</a>).

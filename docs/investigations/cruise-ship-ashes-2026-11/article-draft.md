@@ -5,7 +5,7 @@ metadata, from research/competitors-seo.md:
 
 - **H1:** Scattering Ashes From a Cruise Ship: Cruise Line Policies, Rules and Planning Guide
 - **SEO title (57 characters):** Scattering Ashes From a Cruise Ship: Rules by Cruise Line
-- **Meta description (154 characters):** Which cruise lines allow scattering ashes at sea, what each requires, fees, documents, urns and legal rules, with links to every official policy we found.
+- **Meta description (Version 1.5, Randy's wording):** Which cruise lines allow scattering ashes at sea? Compare verified cruise line policies, required documents, ceremony procedures and legal rules.
 - **Slug:** /scattering-ashes-from-a-cruise-ship/
 - **Author:** Randy VanderVaate, Founder of Funeral Funds (byline from ArticleLayout)
 
@@ -165,8 +165,8 @@ permit, and in another country's waters that country's laws also apply;
 ashes.
 
 Alaska and Hawaii: we found no state rule on scattering ashes at sea. In
-national parks such as Glacier Bay, scattering is prohibited except under
-a permit or in designated areas
+areas of the National Park System, scattering ashes is prohibited except
+under a permit or in designated areas
 ([36 CFR 2.62](https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.62)),
 and the Monterey Bay, Greater Farallones and Channel Islands marine
 sanctuaries ban discharges from cruise ships with exceptions that do not
