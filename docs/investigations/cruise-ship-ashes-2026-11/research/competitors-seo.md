@@ -231,11 +231,11 @@ PAA-style questions inferred from results:
 
 - **H1:** Scattering Ashes From a Cruise Ship: Cruise Line Policies,
   Rules and Planning Guide
-- **SEO title (57 chars):** Scattering Ashes on a Cruise: Cruise Line Rules
-  & Steps
-  - Alternate (55 chars): Scattering Ashes From a Cruise Ship: Rules by
-    Cruise Line
-- **Meta description (about 150 chars):** Which cruise lines allow
+- **SEO title (57 chars):** Scattering Ashes From a Cruise Ship: Rules by
+  Cruise Line
+  - Alternate (55 chars): Scattering Ashes on a Cruise: Cruise Line Rules
+    & Steps
+- **Meta description (154 chars):** Which cruise lines allow
   scattering ashes at sea, what each requires, fees, documents, urns and
   legal rules, with links to every official policy we found.
 - **URL slug:** /scattering-ashes-from-a-cruise-ship/

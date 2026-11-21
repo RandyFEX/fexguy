@@ -1240,7 +1240,7 @@
     "sources": [],
     "id": "celestyal-cruises",
     "name": "Celestyal Cruises",
-    "parent": "Celestyal (Lois group / Brookfield-backed)",
+    "parent": "Not captured in this round",
     "fleetType": "ocean",
     "regions": [
       "Greek Islands",
@@ -1533,7 +1533,7 @@
       "Search Norwegian-language Hurtigruten help pages."
     ],
     "needsDirectContact": true,
-    "notes": "English search only; Norwegian search (\"spredning av aske\", \"askespredning\") could not be run (search limit). Note: Norwegian law on scattering ashes (requires permission from the county governor, statsforvalteren) was not researched here.",
+    "notes": "English search only; Norwegian search (\"spredning av aske\", \"askespredning\") could not be run (search limit). Norwegian law on scattering ashes was not researched here.",
     "status": "unverified",
     "evidenceLevel": "none",
     "sources": [],
@@ -2402,7 +2402,7 @@
       "No operator-published policy on cremated remains found in this round; contact the line directly."
     ],
     "needsDirectContact": true,
-    "notes": "Phoenix charters its ships (Amadea, Artania, Amera, Deutschland in some seasons).",
+    "notes": "Phoenix charters its ships (Amadea and Artania appeared in results).",
     "status": "unverified",
     "evidenceLevel": "none",
     "sources": [],
@@ -3012,7 +3012,7 @@
     "sources": [],
     "id": "plantours-kreuzfahrten",
     "name": "Plantours Kreuzfahrten",
-    "parent": "Plantours & Partner GmbH",
+    "parent": "Not captured in this round",
     "fleetType": "ocean",
     "regions": [
       "Northern Europe",
@@ -3156,7 +3156,7 @@
     "sources": [],
     "id": "nicko-cruises-ocean",
     "name": "nicko cruises (ocean, Vasco da Gama)",
-    "parent": "nicko cruises Schiffsreisen GmbH (Mystic Invest)",
+    "parent": "nicko cruises Schiffsreisen GmbH",
     "fleetType": "ocean",
     "regions": [
       "Worldwide",
