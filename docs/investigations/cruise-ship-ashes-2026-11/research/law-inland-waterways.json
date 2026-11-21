@@ -1,0 +1,119 @@
+[
+  {
+    "jurisdiction": "Germany (general, state law)",
+    "rule": "Burial law is state (Land) law. Most states keep a cemetery obligation (Friedhofspflicht) for urns, so scattering ashes outside cemeteries, including in rivers, is generally not permitted; burial outside a cemetery is an administrative offence in most states. Sea burial is limited to designated North Sea and Baltic areas.",
+    "citation": "State burial acts (Bestattungsgesetze der Laender)",
+    "url": "https://www.weka.de/ordnungsamt-gewerbeamt/flugbestattungen-ueber-nordsee/",
+    "quote": "",
+    "verified": false,
+    "notes": "Secondary (WEKA legal publisher, ra-kotz.de lawyer page). Official statutes not opened this round. Check each riverside state (e.g. NRW, Hesse, Baden-Wuerttemberg) individually."
+  },
+  {
+    "jurisdiction": "Germany, Bavaria",
+    "rule": "Scattering ashes and river burial are not permitted; Bavaria plans no relaxation of its burial law.",
+    "citation": "Bayerisches Bestattungsgesetz (BestG)",
+    "url": "https://www.sonntagsblatt.de/artikel/epd/bayern-plant-keine-lockerung-des-bestattungsrechts",
+    "quote": "",
+    "verified": false,
+    "notes": "Secondary (epd news agency via sonntagsblatt.de). Relevant to Danube and Main river cruises in Bavaria. Statute text not opened."
+  },
+  {
+    "jurisdiction": "Germany, North Rhine-Westphalia",
+    "rule": "Scattering is allowed only in narrow cases, such as an area designated by the cemetery operator or on the high seas, under the deceased's written wishes; not on the Rhine from a cruise ship.",
+    "citation": "Bestattungsgesetz NRW (BestG NRW)",
+    "url": "https://www.ra-kotz.de/totenasche.htm",
+    "quote": "",
+    "verified": false,
+    "notes": "Secondary (law firm page). Statute text not opened."
+  },
+  {
+    "jurisdiction": "Germany, Rhineland-Palatinate",
+    "rule": "Since 27 September 2025 a river burial (Flussbestattung) is lawful: an urn of immediately water-soluble cellulose placed from a ship on the Rhine, Moselle, Lahn or Saar within the state, subject to water law; not near the bank or from bridges or jetties; reported to be carried out by funeral directors; certain Rhine stretches (near Worms and Mainz) excluded by implementing regulation. Reports say the deceased must have left a written instruction.",
+    "citation": "Bestattungsgesetz Rheinland-Pfalz (BestG), Ausfertigung 22.09.2025, in force 27.09.2025; Durchfuehrungsverordnung",
+    "url": "https://mwg.rlp.de/fileadmin/15/Abteilung_2_Gesundheit/Bestattungsgesetz/BestattG_RP_2025.pdf",
+    "quote": "Ascheurne aus sofort wasserlöslicher Zellulose",
+    "verified": false,
+    "notes": "Quote and details come from search-result text describing the official PDF; the PDF host (mwg.rlp.de / mwwg.rlp.de) could not be reached from this sandbox. Translation: 'ash urn made of immediately water-soluble cellulose'. Excluded stretches (Rhine km 441-444, 496-499) and the funeral-director requirement come from secondary reports (rheinpfalz.de, aeternitas.de) and conflict slightly between draft and final text. This permits a licensed funeral director's river burial, not passengers scattering from a cruise ship."
+  },
+  {
+    "jurisdiction": "Austria",
+    "rule": "Scattering ashes in the open, including rivers, is generally prohibited without permission; rules differ by state. Lower Austria reportedly allows scattering in the Danube with approval of the municipality responsible for that river section; Vienna is stricter (approval by the Magistrat).",
+    "citation": "State burial laws, e.g. NOe Bestattungsgesetz 2007; Wiener Leichen- und Bestattungsgesetz",
+    "url": "https://www.vienna.at/privatbeisetzung-ist-in-bundeslaendern-unterschiedlich-geregelt/8258485",
+    "quote": "",
+    "verified": false,
+    "notes": "Secondary (vienna.at news, funeral-company press releases on pressetext.com). The official Lower Austria page noe.gv.at/noe/Naturbestattungsanlagen.html surfaced but was not opened; per a summary, it says burial or scattering of ashes is only permissible in approved burial facilities, which conflicts with the funeral company's Danube claim. Conflict unresolved."
+  },
+  {
+    "jurisdiction": "Hungary",
+    "rule": "Scattering of ashes is regulated under the 1999 Cemeteries and Burial Act (Act XLIII of 1999) and Gov. Decree 145/1999; a June 2026 news report says a scattering on the Danube must be done legally through a funeral provider with the permission of the area's water authority (Kozep-Duna-volgyi Vizugyi Igazgatosag).",
+    "citation": "1999. evi XLIII. torveny; 145/1999. (X. 1.) Korm. rendelet",
+    "url": "https://444.hu/2026/06/20/250-piknikezo-gyerek-kozeleben-tartottak-szorasos-temetest-kiakadt-a-dunabogdanyi-polgarmester",
+    "quote": "",
+    "verified": false,
+    "notes": "Statute: https://njt.jog.gov.hu/jogszabaly/1999-43-00-00 (not opened). The water-authority permission point is from a news report (secondary), not from the statute text."
+  },
+  {
+    "jurisdiction": "Netherlands",
+    "rule": "Relatives may scatter ashes in state waters (sea or river) without a permit, provided they keep sufficient distance from bathing-water sites and drinking-water intake points; use of state land or water may need separate consent from the Rijksvastgoedbedrijf.",
+    "citation": "Rijkswaterstaat guidance on permits for state waters",
+    "url": "https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen/vergunningen-rijkswateren",
+    "quote": "Het verstrooien van as in rijkswater (open water, zoals op zee of in een rivier) is toegestaan voor nabestaanden.",
+    "verified": false,
+    "notes": "Official government source; quote from search snippet, page not opened. Translation: 'Scattering ashes in state waters (open water, such as at sea or in a river) is permitted for relatives.' The Wet op de lijkbezorging itself was not opened. A 2025 notice withdrew an existing permit for scattering and biodegradable urns in the Maas between Maasbracht and Maasgouw (zoek.officielebekendmakingen.nl), so local exceptions exist."
+  },
+  {
+    "jurisdiction": "France",
+    "rule": "CGCT art. L2223-18-2 sets an exhaustive list of destinations for ashes, including dispersal 'en pleine nature'; under art. L2223-18-3 the person in charge of the funeral must declare it to the town hall of the deceased's birthplace, which records the date and place. Whether public waterways count as 'pleine nature' was not confirmed from the statute text in this round.",
+    "citation": "Code general des collectivites territoriales, art. L2223-18-2 and L2223-18-3",
+    "url": "https://questions.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE17354",
+    "quote": "dispersées en pleine nature",
+    "verified": false,
+    "notes": "Source is a ministerial answer to a parliamentary question (official). Quote from snippet; full statute on Legifrance not opened. The widely reported exclusion of 'voies publiques' (public roads) and any rule on rivers or canals must be checked on legifrance.gouv.fr before publication."
+  },
+  {
+    "jurisdiction": "United Kingdom (England)",
+    "rule": "Environment Agency guidance: no need to contact the Agency beforehand if its guidance is followed; avoid putting other objects in the water, avoid marinas and angling areas; secondary summaries say not within 1 km of a drinking-water abstraction point. Landowner or navigation-authority permission may still be needed.",
+    "citation": "Environment Agency, 'Funeral practices and spreading ashes' guidance leaflet",
+    "url": "https://www.urnsforashes.co.uk/wp-content/uploads/2022/10/environment-agency-scattering-ashes.pdf",
+    "quote": "You should also avoid scattering close to marinas and areas used by anglers.",
+    "verified": false,
+    "notes": "The leaflet is hosted by a commercial site (copy of the official document); the current gov.uk version was not located and one source says the leaflet was archived. The 1 km drinking-water point is from the Law Society Q&A (lawsociety.org.uk). Broads Authority has its own page (broads-authority.gov.uk/visiting/scattering-of-ashes-in-the-broads-area)."
+  },
+  {
+    "jurisdiction": "United States (federal)",
+    "rule": "Scattering cremated remains in lakes, rivers or other inland waters is not regulated under the federal Marine Protection, Research, and Sanctuaries Act; states may have requirements, and some states prohibit it. Ocean burial of cremated remains must be at least 3 nautical miles from land and reported to EPA within 30 days.",
+    "citation": "EPA, Burial at Sea (MPRSA general permit, 40 CFR 229.1)",
+    "url": "https://19january2017snapshot.epa.gov/ocean-dumping/burial-sea_.html",
+    "quote": "Scattering of cremated remains in lakes, rivers or other inland waters is not subject to federal regulation under the MPRSA.",
+    "verified": false,
+    "notes": "Quote from an archived EPA snapshot via search snippet; the live page is https://www.epa.gov/ocean-dumping/burial-sea (not opened; a 2025 snapshot lists the FAQ 'Can I scatter cremated remains in a lake, river or bay?'). State rules for the Mississippi River states were not checked this round."
+  },
+  {
+    "jurisdiction": "Egypt",
+    "rule": "UK government guidance states cremation is not available or permitted in Egypt. Law 48 of 1982 on protection of the Nile prohibits throwing wastes into the Nile and waterways; whether cremated remains count as waste is not established. Burying ashes at archaeological sites is reported as strictly prohibited.",
+    "citation": "FCDO Egypt bereavement information; Law No. 48 of 1982",
+    "url": "https://www.gov.uk/government/publications/egypt-bereavement-information-pack/egypt-bereavement-information",
+    "quote": "",
+    "verified": false,
+    "notes": "FCDO page surfaced but was not opened; wording not confirmed. Law 48 of 1982 summary from UNEP LEAP/FAOLEX (https://leap.unep.org/countries/eg/national-legislation/law-no-48-1982-concerning-protection-nile-river-and-water). No Egyptian rule specific to scattering imported ashes from Nile cruise ships was found."
+  },
+  {
+    "jurisdiction": "Portugal (Douro)",
+    "rule": "Decreto-Lei 411/98 (as amended) governs mortuary law, including the transport of ashes; no provision on scattering ashes in the Douro or other rivers was found this round.",
+    "citation": "Decreto-Lei n.o 411/98, de 30 de dezembro (as amended)",
+    "url": "https://pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=246&tabela=leis",
+    "quote": "",
+    "verified": false,
+    "notes": "Unresolved. Municipal cemetery regulations and the port/river authority (APDL) rules were not checked. Douro scattering rules need direct verification."
+  },
+  {
+    "jurisdiction": "Vietnam, Cambodia, China (Yangtze), Australia (Murray), Chile",
+    "rule": "Not researched this round.",
+    "citation": "",
+    "url": "",
+    "quote": "",
+    "verified": false,
+    "notes": "The shared web-search budget was exhausted before these jurisdictions could be searched."
+  }
+]
