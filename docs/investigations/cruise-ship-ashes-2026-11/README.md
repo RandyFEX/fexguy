@@ -6,7 +6,27 @@ component has been changed. Model for depth and sourcing: the One Last
 Amazing Adventure national parks preview (branch
 `claude/last-adventure-preview`, not modified).
 
-## Status: Version 1.5 corrections (2026-11-21)
+## Status: Version 1.6 evidence recovery (2026-11-21)
+
+- Carnival, MSC, P&O Cruises and Cunard recovered as Officially permitted
+  from the search engine's indexed copies of their official policy pages
+  (domain-restricted searches); full requirements recorded in the research
+  JSON (`basis: official-indexed`, `evidenceMethod`). Direct reads still
+  blocked (403/401); exact wording to confirm in a browser.
+- Celebrity, Norwegian, Holland America and Disney: no official policy on
+  their sites or in the search index; secondary reporting kept separately.
+  Other priority lines searched the same way: no policy found.
+- Counts, public directory scope (80 lines): 9 officially permitted, 1
+  conditionally permitted, 1 not permitted, 69 unverified. Research
+  register (92 cruise records): 9 / 1 / 1 / 81 (plus the Tokyo Bay charter).
+- Updated: research JSON, SCHEMA.md, register.md, sources.md,
+  gap-report.md, article-draft.md. NOT updated (held by Randy until the
+  directory strategy is decided): the preview page, its component and
+  `src/data/cruise-ashes/operators.json`. Note:
+  `scripts/cruise-ashes/build-data.mjs` will stop with an error for the
+  four recovered lines until their summary lines are added, by design.
+
+## Version 1.5 corrections (2026-11-21)
 
 Randy's authorized corrections on the preview:
 - Meta description replaced with Randy's wording.

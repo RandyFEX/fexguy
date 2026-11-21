@@ -14,10 +14,241 @@
       "Australia"
     ],
     "headquarters": "Miami, Florida, USA",
-    "status": "unverified",
-    "statusRationale": "Round 3 reclassification under the round 3 category rules: the line's official page could not be read in rounds 1 to 3 (bot protection). Search-engine summaries of that page describe a permitted procedure (kept below as unconfirmed answers), but a summary is not an authoritative source, so the status is unverified until the wording is confirmed.",
-    "evidenceLevel": "secondary-reporting",
+    "status": "officially-permitted",
+    "statusRationale": "Version 1.6: the line's own policy page, read through the search engine's index of that official page (the page refuses automated requests), explicitly permits it, subject to its published requirements.",
+    "evidenceLevel": "official-policy",
     "answers": {
+      "permitted": {
+        "answer": "Yes: Guest Services and the Environmental Officer coordinate the scattering of ashes on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented procedure, arranged individually with Guest Services on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Contact the Guest Services Desk once on board the ship.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Guest Services Desk on board; the Environmental Officer coordinates.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "writtenApplication": {
+        "answer": "No form; Guest Services collects the preferred date and time, the number of attendees and a copy of the death certificate.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "deathOrCremationCertificate": {
+        "answer": "The deceased's death certificate and certification that the cremation was done by a licensed facility.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Ashes kept in a sealed, leak-proof urn; the container must be wood, plastic, cardboard or non-lead ceramic. The indexed copy also says plastic urns are not permitted for dispersal.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "To disperse the ashes with the urn, present a certificate that the urn is biodegradable.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Either: ashes may be dispersed, or released with the urn if it is certified biodegradable.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "privateCeremony": {
+        "answer": "A Guest Services member escorts the family and guests are given a moment of privacy.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "designatedArea": {
+        "answer": "May take place in a non-accessible area of the ship; guests may need to take stairs.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "crewParticipation": {
+        "answer": "Guest Services escorts the family; the Environmental Officer coordinates.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Beyond twelve nautical miles from land and outside any special areas.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Date and time set by environmental restrictions and the itinerary.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "familyRequestLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Date and time depend on environmental restrictions and the itinerary.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "The page lists 'Scattering of human or animal ashes'. No pet-specific requirements were seen in the indexed copy; confirm with Guest Services.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "Commemorative flowers must be bought through the onboard Fun Shops, with no ribbon or non-biodegradable decorations. The urn may not be taken ashore in a port of call.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "id": "v6a",
+        "url": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
+        "title": "Scattering of Ashes - Carnival Cruise Lines",
+        "type": "official-faq",
+        "quote": "The date and time will be based on environmental restrictions and must be performed beyond twelve nautical miles from land and outside any special areas.",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened.",
+        "otherIndexedQuotes": [
+          "Guest Services and the Environmental Officer will coordinate the scattering of ashes.",
+          "The container must be constructed of wood, plastic, cardboard or any non-lead based ceramic.",
+          "they must present a certificate that the urn is biodegradable.",
+          "the guest may not disembark the urn and try to enter it in a port-of-call",
+          "guests will be given a moment of privacy to disperse the ashes.",
+          "may take place in a non-accessible area of the ship. Guests may be required to take stairs",
+          "Scattering of human or animal ashes"
+        ]
+      },
+      {
+        "id": "r1-s1",
+        "url": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
+        "title": "Scattering of Ashes (Carnival help center)",
+        "type": "official-faq",
+        "quote": "the scattering must be performed beyond twelve nautical miles from land and outside any special areas",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): help.carnival.com refused curl (HTTP 403); a fetch tool got only the empty 'Oracle B2C Service' script shell. Wording still rests on the round 1 search summary. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s2",
+        "url": "https://help.carnival.com/app/answers/detail/a_id/6249/~/items-overboard-policy",
+        "title": "Items Overboard Policy (Carnival help center)",
+        "type": "official-policy-page",
+        "quote": "$500 charge, per violation",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): help.carnival.com refused curl (HTTP 403); a fetch tool got only the empty 'Oracle B2C Service' script shell. Wording still rests on the round 1 search summary. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s4",
+        "url": "https://www.cruisehive.com/carnival-clarifies-strict-guest-limits-on-solemn-at-sea-ceremony/201209",
+        "title": "Carnival Clarifies Strict Guest Limits on Solemn At-Sea Ceremony (CruiseHive)",
+        "type": "secondary-news",
+        "quote": "There is no charge for any of this",
+        "verified": "2026-11-21",
+        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. Quote attributed to Carnival brand ambassador John Heald. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s5",
+        "url": "https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734",
+        "title": "Carnival Cruise Line Clarifies Scattering Ceremony at Sea (CruiseHive)",
+        "type": "secondary-news",
+        "quote": "subject to individual itineraries and the operational needs of the vessel on specific sailings",
+        "verified": "2026-11-21",
+        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. (Earlier-round record, kept.)"
+      }
+    ],
+    "conflicts": [
+      "The indexed copy says plastic urns are not permitted, and also lists plastic among allowed container materials; read together, the travel container may be plastic but anything released must be biodegradable. Confirm on the page.",
+      "Animal ashes appear in the page's list; secondary reporting never mentioned them. Requirements for animal ashes are not shown."
+    ],
+    "unresolved": [
+      "Full page text not opened (bot protection); confirm wording in a browser.",
+      "Guest limit (12 per secondary reporting only), fee and certificate or coordinates afterward are not in the indexed content.",
+      "Whether arrangements can be made before sailing."
+    ],
+    "needsDirectContact": false,
+    "notes": "help.carnival.com could not be fetched; all official wording comes from search-result summaries and must be re-checked before publication.",
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection",
+    "researchLog": [
+      "Round 3 (2026-11-21), network unrestricted: help.carnival.com answer 1132 and help.goccl.co.uk answer 1132 both HTTP 403 (bot protection). carnival.com.au reachable but no ashes page found. web.archive.org could not be reached (proxy egress closed the connection). Fetching archived copies through a page-reading tool was refused by the session's permission policy, so no further attempt was made.",
+      "Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401."
+    ],
+    "previousStatus": "conditionally-permitted",
+    "round3": "reclassified-unconfirmed-official-page",
+    "previousAnswersRound1": {
       "permitted": {
         "answer": "Yes, as a scattering coordinated by the ship (not by guests on their own).",
         "basis": "unconfirmed-official",
@@ -178,63 +409,8 @@
         ]
       }
     },
-    "sources": [
-      {
-        "id": "s1",
-        "url": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
-        "title": "Scattering of Ashes (Carnival help center)",
-        "type": "official-faq",
-        "quote": "the scattering must be performed beyond twelve nautical miles from land and outside any special areas",
-        "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): help.carnival.com refused curl (HTTP 403); a fetch tool got only the empty 'Oracle B2C Service' script shell. Wording still rests on the round 1 search summary."
-      },
-      {
-        "id": "s2",
-        "url": "https://help.carnival.com/app/answers/detail/a_id/6249/~/items-overboard-policy",
-        "title": "Items Overboard Policy (Carnival help center)",
-        "type": "official-policy-page",
-        "quote": "$500 charge, per violation",
-        "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): help.carnival.com refused curl (HTTP 403); a fetch tool got only the empty 'Oracle B2C Service' script shell. Wording still rests on the round 1 search summary."
-      },
-      {
-        "id": "s4",
-        "url": "https://www.cruisehive.com/carnival-clarifies-strict-guest-limits-on-solemn-at-sea-ceremony/201209",
-        "title": "Carnival Clarifies Strict Guest Limits on Solemn At-Sea Ceremony (CruiseHive)",
-        "type": "secondary-news",
-        "quote": "There is no charge for any of this",
-        "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. Quote attributed to Carnival brand ambassador John Heald."
-      },
-      {
-        "id": "s5",
-        "url": "https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734",
-        "title": "Carnival Cruise Line Clarifies Scattering Ceremony at Sea (CruiseHive)",
-        "type": "secondary-news",
-        "quote": "subject to individual itineraries and the operational needs of the vessel on specific sailings",
-        "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page."
-      }
-    ],
-    "conflicts": [
-      "Official article says contact Guest Services once on board; secondary reporting describes pre-cruise requests to the brand ambassador two or three days before sailing.",
-      "Carnival requires twelve nautical miles, more than the US EPA general-permit minimum of three nautical miles cited by secondary sources; Carnival's own rule governs on its ships."
-    ],
-    "unresolved": [
-      "Twelve-guest limit, no-fee statement and coordinates folder are secondary (brand ambassador quotes), not confirmed in the official article.",
-      "Whether ashes are scattered loose or released in the urn is not stated in the official text as seen.",
-      "Pet ashes not addressed.",
-      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
-    ],
-    "needsDirectContact": true,
-    "notes": "help.carnival.com could not be fetched; all official wording comes from search-result summaries and must be re-checked before publication.",
-    "wordingConfirmed": false,
-    "round2": "blocked-by-bot-protection",
-    "researchLog": [
-      "Round 3 (2026-11-21), network unrestricted: help.carnival.com answer 1132 and help.goccl.co.uk answer 1132 both HTTP 403 (bot protection). carnival.com.au reachable but no ashes page found. web.archive.org could not be reached (proxy egress closed the connection). Fetching archived copies through a page-reading tool was refused by the session's permission policy, so no further attempt was made."
-    ],
-    "previousStatus": "conditionally-permitted",
-    "round3": "reclassified-unconfirmed-official-page"
+    "evidenceMethod": "search-index-of-official-page",
+    "round16": "recovered-official-indexed"
   },
   {
     "id": "royal-caribbean-international",
@@ -598,9 +774,12 @@
     "wordingConfirmed": false,
     "round2": "official-site-searched-nothing-found",
     "researchLog": [
-      "Round 3: ncl.com US sitemap (7,171 URLs) has no page about ashes, burial, memorials or committal. FAQ 'what-not-bring-onboard' and 'what-do-i-bring' (HTTP 200): no mention of ashes or remains. Guest Ticket Contract (https://www.ncl.com/ticketcontract, redirects to NCL-Guest-Ticket-Contract-EN02-2026.pdf, 15 pages, read in full): no mention of ashes, cremated remains, burial or items overboard."
+      "Round 3: ncl.com US sitemap (7,171 URLs) has no page about ashes, burial, memorials or committal. FAQ 'what-not-bring-onboard' and 'what-do-i-bring' (HTTP 200): no mention of ashes or remains. Guest Ticket Contract (https://www.ncl.com/ticketcontract, redirects to NCL-Guest-Ticket-Contract-EN02-2026.pdf, 15 pages, read in full): no mention of ashes, cremated remains, burial or items overboard.",
+      "Version 1.6: two domain-restricted searches of ncl.com found no ashes or burial-at-sea page."
     ],
-    "round3": "searched-no-official-policy"
+    "round3": "searched-no-official-policy",
+    "round16": "searched-index-no-policy",
+    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe whole-urn committals more than 12 miles out and a captain's coordinates letter; one says no notice is needed (Cruise Critic). Contradictory, not official."
   },
   {
     "id": "celebrity-cruises",
@@ -768,6 +947,15 @@
         "quote": "",
         "verified": "2026-11-21",
         "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. Urn retailer blog listing Celebrity with Royal Caribbean as allowing biodegradable urns via Guest Services; commercial interest, not authoritative."
+      },
+      {
+        "id": "v6a",
+        "url": "https://www.celebritycruises.com/faqs/all-faqs",
+        "title": "All FAQs (Celebrity Cruises)",
+        "type": "official-faq",
+        "quote": "guests are not permitted to discard any item overboard",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: from the search engine's indexed copy of the official page. General overboard rule; not an ashes policy."
       }
     ],
     "conflicts": [
@@ -783,9 +971,12 @@
     "wordingConfirmed": false,
     "round2": "official-site-searched-nothing-found",
     "researchLog": [
-      "Round 3: celebritycruises.com sitemaps (23) contain no page about ashes, burial or committal (only 'Hot Glass' glass-memorial activity pages, rendered by script, no text). US Cruise/Cruisetour Ticket Contract (https://www.celebritycruises.com/guest-terms/united-states-english/) and Cruise-Ticket-Contract-Celebrity.pdf read in full: no mention of ashes, cremated remains, burial or overboard."
+      "Round 3: celebritycruises.com sitemaps (23) contain no page about ashes, burial or committal (only 'Hot Glass' glass-memorial activity pages, rendered by script, no text). US Cruise/Cruisetour Ticket Contract (https://www.celebritycruises.com/guest-terms/united-states-english/) and Cruise-Ticket-Contract-Celebrity.pdf read in full: no mention of ashes, cremated remains, burial or overboard.",
+      "Version 1.6: domain-restricted search of celebritycruises.com found no ashes policy; the indexed All FAQs page states guests are not permitted to discard any item overboard (general rule)."
     ],
-    "round3": "searched-no-official-policy"
+    "round3": "searched-no-official-policy",
+    "round16": "searched-index-no-policy",
+    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe ceremonies arranged through a Celebrity office or travel team (Cruise Critic). Not official."
   },
   {
     "id": "princess-cruises",
@@ -1177,9 +1368,12 @@
     "wordingConfirmed": false,
     "round2": "official-site-searched-nothing-found",
     "researchLog": [
-      "Round 3: hollandamerica.com US sitemap (13,878 URLs) contains no page about ashes, burial, memorials or committal. Round 2 findings stand: Know Before You Go asks guests to 'refrain from pouring or discarding anything overboard'; cruise contract allows a US $500 charge per violation."
+      "Round 3: hollandamerica.com US sitemap (13,878 URLs) contains no page about ashes, burial, memorials or committal. Round 2 findings stand: Know Before You Go asks guests to 'refrain from pouring or discarding anything overboard'; cruise contract allows a US $500 charge per violation.",
+      "Version 1.6: domain-restricted search of hollandamerica.com found no ashes or burial-at-sea page."
     ],
-    "round3": "searched-no-official-policy"
+    "round3": "searched-no-official-policy",
+    "round16": "searched-index-no-policy",
+    "secondaryReporting": "Unconfirmed secondary reporting: a forum post quotes a Holland America email saying committal only in international waters at least 12 nautical miles out; others describe an officer present and GPS coordinates (Cruise Critic). Not official."
   },
   {
     "id": "disney-cruise-line",
@@ -1353,9 +1547,12 @@
     "wordingConfirmed": false,
     "round2": "official-site-searched-nothing-found",
     "researchLog": [
-      "Round 3: with a normal cookie jar the site opened (round 2 redirect loop was a cookie issue). Sitemap (5,565 URLs): no page about ashes, burial or memorials. US Cruise Contract (https://disneycruise.disney.go.com/contracts-terms-safety/cruise-contract/united-states/, about 7,500 words) read: no mention of ashes, cremated remains, burial or overboard. Prohibited-items pages render by script and returned no text."
+      "Round 3: with a normal cookie jar the site opened (round 2 redirect loop was a cookie issue). Sitemap (5,565 URLs): no page about ashes, burial or memorials. US Cruise Contract (https://disneycruise.disney.go.com/contracts-terms-safety/cruise-contract/united-states/, about 7,500 words) read: no mention of ashes, cremated remains, burial or overboard. Prohibited-items pages render by script and returned no text.",
+      "Version 1.6: domain-restricted search of disneycruise.disney.go.com found no ashes page (only the safety page and US cruise contract, which do not mention ashes)."
     ],
-    "round3": "searched-no-official-policy"
+    "round3": "searched-no-official-policy",
+    "round16": "searched-index-no-policy",
+    "secondaryReporting": "Unconfirmed secondary reporting: forum posts quote reported internal guidance that there are no provisions for ash disposition at sea or at Castaway Cay (DIS boards). Not official."
   },
   {
     "id": "msc-cruises",
@@ -1371,10 +1568,282 @@
       "Asia"
     ],
     "headquarters": "Geneva, Switzerland",
-    "status": "unverified",
-    "statusRationale": "Round 3 reclassification under the round 3 category rules: the line's official page could not be read in rounds 1 to 3 (bot protection). Search-engine summaries of that page describe a permitted procedure (kept below as unconfirmed answers), but a summary is not an authoritative source, so the status is unverified until the wording is confirmed.",
-    "evidenceLevel": "secondary-reporting",
+    "status": "officially-permitted",
+    "statusRationale": "Version 1.6: the line's own policy page, read through the search engine's index of that official page (the page refuses automated requests), explicitly permits it, subject to its published requirements.",
+    "evidenceLevel": "official-policy",
     "answers": {
+      "permitted": {
+        "answer": "Yes: a Memorial at Sea (scattering of ashes) service for human remains.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b",
+          "v6c"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented FAQ procedure; time and location set by the ship's command.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Notify MSC by phone or through a travel agent before the cruise, then visit Guest Services on board to set the date, time and meeting place.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "MSC (by phone) or your travel agent before sailing; Guest Services on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "writtenApplication": {
+        "answer": "No form; give the ship, sail date, booking number, stateroom number, attendees' names, the deceased's name and urn details.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "deathOrCremationCertificate": {
+        "answer": "MSC does not require a death certificate, but airport and port security may ask for one in transit.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Biodegradable urns only, carried in carry-on luggage; plastic ribbons, plastic flowers, plastic urns, balloons and other non-biodegradable items are prohibited.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b",
+          "v6c"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Required, with a certificate from the urn manufacturer that it is fully biodegradable (stated on the international page; the indexed US page did not show the certificate line).",
+        "basis": "official-indexed",
+        "sources": [
+          "v6b"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Groups of no more than 10 guests; a waiver may be required to access the location.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "designatedArea": {
+        "answer": "Some locations may not be wheelchair accessible and may involve steep or spiral stairs; closed-toe shoes required.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "crewParticipation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "No fee.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from the coast.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b",
+          "v6c"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Yes: timing set by the ship's command based on weather and safety.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "familyRequestLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Only on cruises of 6 nights or longer with at least one sea day; timing depends on weather and safety.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b",
+          "v6c"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Yes: the certificate shows the coordinates and time.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "certificateConfirmation": {
+        "answer": "A certificate signed by the Navigation Officer or Captain, as a memento.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "differsByVesselItinerary": {
+        "answer": "Depends on cruise length and sea days; regional pages differ slightly in wording.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b",
+          "v6c"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not permitted: human remains only.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "MSC does not require EPA documentation; guests must follow the laws of places they pass through on the way to the port.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "id": "v6a",
+        "url": "https://www.msccruisesusa.com/faq/on-board-information",
+        "title": "Frequently Asked Questions about On Board Information - FAQ (MSC Cruises USA)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6b",
+        "url": "https://www.msccruises.com/int/faq/on-board-information",
+        "title": "On board information - FAQ (MSC Cruises international)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6c",
+        "url": "https://www.msccruises.co.uk/faq",
+        "title": "FAQ (MSC Cruises UK)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6d",
+        "url": "https://www.msccruises.ca/faq/on-board-information",
+        "title": "On board information - FAQ (MSC Cruises Canada)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6e",
+        "url": "https://www.msccruises.com.au/faq/on-board-information",
+        "title": "On board information - FAQ (MSC Cruises Australia)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "r1-s1",
+        "url": "https://www.msccruisesusa.com/faq/on-board-information",
+        "title": "On Board Information FAQ (MSC Cruises USA)",
+        "type": "official-faq",
+        "quote": "at least 12 nautical miles from the coast",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s2",
+        "url": "https://www.msccruises.com/int/faq/on-board-information",
+        "title": "On board information FAQ (MSC Cruises international)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s3",
+        "url": "https://www.msccruises.co.uk/faq",
+        "title": "FAQ (MSC Cruises UK)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary. (Earlier-round record, kept.)"
+      }
+    ],
+    "conflicts": [
+      "Regional pages differ slightly (the manufacturer certificate line was seen on the international page, not the indexed US page). The 10-guest limit appears in the indexed US and international content."
+    ],
+    "unresolved": [
+      "Full page text not opened (bot protection); confirm wording in a browser."
+    ],
+    "needsDirectContact": false,
+    "notes": "Most fully documented policy in this group, but quotes must be re-verified on the live FAQ.",
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection",
+    "researchLog": [
+      "Round 3: msccruisesusa.com, msccruises.com/int, msccruises.co.uk and msccruises.com.au FAQ pages all HTTP 401 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy).",
+      "Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401."
+    ],
+    "previousStatus": "conditionally-permitted",
+    "round3": "reclassified-unconfirmed-official-page",
+    "previousAnswersRound1": {
       "permitted": {
         "answer": "Yes, human ashes, under the Memorial at Sea service.",
         "basis": "unconfirmed-official",
@@ -1542,51 +2011,8 @@
         "sources": []
       }
     },
-    "sources": [
-      {
-        "id": "s1",
-        "url": "https://www.msccruisesusa.com/faq/on-board-information",
-        "title": "On Board Information FAQ (MSC Cruises USA)",
-        "type": "official-faq",
-        "quote": "at least 12 nautical miles from the coast",
-        "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary."
-      },
-      {
-        "id": "s2",
-        "url": "https://www.msccruises.com/int/faq/on-board-information",
-        "title": "On board information FAQ (MSC Cruises international)",
-        "type": "official-faq",
-        "quote": "",
-        "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary."
-      },
-      {
-        "id": "s3",
-        "url": "https://www.msccruises.co.uk/faq",
-        "title": "FAQ (MSC Cruises UK)",
-        "type": "official-faq",
-        "quote": "",
-        "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): www.msccruisesusa.com answered HTTP 401 to curl and to a fetch tool; msccruises.com and msccruises.co.uk are outside this session's network. Wording still rests on the round 1 search summary."
-      }
-    ],
-    "conflicts": [
-      "Two search summaries disagreed on which regional FAQ states the 10-guest limit (international only, or US as well); a location waiver may be required."
-    ],
-    "unresolved": [
-      "Exact wording of each regional FAQ entry not read directly.",
-      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
-    ],
-    "needsDirectContact": true,
-    "notes": "Most fully documented policy in this group, but quotes must be re-verified on the live FAQ.",
-    "wordingConfirmed": false,
-    "round2": "blocked-by-bot-protection",
-    "researchLog": [
-      "Round 3: msccruisesusa.com, msccruises.com/int, msccruises.co.uk and msccruises.com.au FAQ pages all HTTP 401 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy)."
-    ],
-    "previousStatus": "conditionally-permitted",
-    "round3": "reclassified-unconfirmed-official-page"
+    "evidenceMethod": "search-index-of-official-page",
+    "round16": "recovered-official-indexed"
   },
   {
     "id": "virgin-voyages",

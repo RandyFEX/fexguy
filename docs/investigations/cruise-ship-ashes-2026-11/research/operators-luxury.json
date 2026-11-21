@@ -229,9 +229,11 @@
       "https://www.vikingcruises.co.uk/oceans/frequently-asked-questions.html 200 and https://www.vikingcruises.com.au/oceans/frequently-asked-questions.html 200: no mention",
       "https://www.viking.com/ 200 (home page only)",
       "WebSearch 'Viking cruise scatter ashes at sea policy cremated remains': no Viking page returned; only other lines and forums",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of Viking ocean, river and regional sites found only general FAQ pages with no mention of ashes."
     ],
-    "officialContact": "Viking reservations 1-800-304-9616 (official FAQ 'Call Viking'); Viking 1-877-668-4546 (FAQ, for booked guests' requests)"
+    "officialContact": "Viking reservations 1-800-304-9616 (official FAQ 'Call Viking'); Viking 1-877-668-4546 (FAQ, for booked guests' requests)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "cunard",
@@ -246,106 +248,292 @@
       "World"
     ],
     "headquarters": "Southampton, United Kingdom",
-    "status": "unverified",
-    "statusRationale": "Round 3 reclassification under the round 3 category rules: the line's official page could not be read in rounds 1 to 3 (bot protection). Search-engine summaries of that page describe a permitted procedure (kept below as unconfirmed answers), but a summary is not an authoritative source, so the status is unverified until the wording is confirmed.",
-    "evidenceLevel": "secondary-reporting",
+    "status": "officially-permitted",
+    "statusRationale": "Version 1.6: the line's own policy page, read through the search engine's index of that official page (the page refuses automated requests), explicitly permits it, subject to its published requirements.",
+    "evidenceLevel": "official-policy",
     "sources": [
       {
-        "id": "s1",
+        "id": "v6a",
+        "url": "https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary",
+        "title": "Cruise questions - Frequently asked questions (Cunard)",
+        "type": "official-faq",
+        "quote": "The ashes will not be scattered but committed to the sea in a biodegradable container.",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened.",
+        "otherIndexedQuotes": [
+          "It is dependent on certain factors and requires approval from the Captain in advance of the start of your voyage.",
+          "cannot be performed on voyages of 5 nights duration or less",
+          "must be at least 12 nautical miles away from land",
+          "Unfortunately, we are not permitted to commit the ashes of pets."
+        ]
+      },
+      {
+        "id": "v6b",
+        "url": "https://my.cunard.com/en-gb/activity-types/celebrations",
+        "title": "Celebrations at Sea (Cunard)",
+        "type": "official-policy-page",
+        "quote": "including requirements for a biodegradable container and supporting documentation, Captain's discretion and itinerary/location restrictions",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "r1-s1",
         "url": "https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary",
         "title": "Cruise questions - Frequently asked questions - Cunard Line",
         "type": "official-faq",
         "quote": "In order for the committal of ashes to take place, the ashes must be stored within a biodegradable container and the cremation certificate needs to be brought on board.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s2",
+        "id": "r1-s2",
         "url": "https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary",
         "title": "Cruise questions - Frequently asked questions - Cunard Line",
         "type": "official-faq",
         "quote": "The Captain or a Senior Officer will accompany you to an outside area, typically a lower deck and if requested they will say a prayer.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s3",
+        "id": "r1-s3",
         "url": "https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary",
         "title": "Cruise questions - Frequently asked questions - Cunard Line",
         "type": "official-faq",
         "quote": "The ashes will not be scattered but committed to the sea in a biodegradable container.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s4",
+        "id": "r1-s4",
         "url": "https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary",
         "title": "Cruise questions - Frequently asked questions - Cunard Line",
         "type": "official-faq",
         "quote": "It is dependent on certain factors and requires approval from the Captain in advance of the start of your voyage.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s5",
+        "id": "r1-s5",
         "url": "https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea",
         "title": "Committal of ashes at sea (UK)",
         "type": "official-policy-page",
         "quote": "speak to our Customer Contact Centre at least 90 days prior to sailing to discuss a committal of ashes",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s6",
+        "id": "r1-s6",
         "url": "https://www.cunard.com/en-us/activity-types/ceremonies/committal-of-ashes-at-sea",
         "title": "Committal of ashes at sea (US)",
         "type": "official-policy-page",
         "quote": "Search summary (not verbatim): biodegradable container with a certificate or equivalent proof that it is biodegradable; Certificate of Cremation brought on board; person committing must be booked; ashes in hand luggage; not in Norwegian fjords or Alaska state waters; weather may restrict; approval subject to change.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s7",
+        "id": "r1-s7",
         "url": "https://my.cunard.com/en-gb/activity-types/celebrations",
         "title": "Celebrations at Sea - Cunard Cruises - Manage booking",
         "type": "official-policy-page",
         "quote": "For Renewal of Vows, Engagement and Committal of Ashes Packages: full payment is due at the time of booking.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s8",
+        "id": "r1-s8",
         "url": "https://my.cunard.com/en-gb/activity-types/celebrations",
         "title": "Celebrations at Sea - Cunard Cruises - Manage booking",
         "type": "official-policy-page",
         "quote": "including requirements for a biodegradable container and supporting documentation, Captain's discretion and itinerary/location restrictions",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s9",
+        "id": "r1-s9",
         "url": "https://boards.cruisecritic.com/topic/2832273-cunard-burial-at-sea/",
         "title": "Cunard Burial at Sea? - Cruise Critic Community",
         "type": "forum-anecdote",
         "quote": "Search summary (not verbatim): a member reported Cunard asked for cremation paperwork and a photo of a cardboard urn, approval came via the Captain's secretary, and a Captain-signed certificate with date and coordinates followed.",
         "verified": "2026-11-21",
-        "accessNote": "Forum not fetched (proxy); paraphrase from search summary. Anecdote only."
+        "accessNote": "Forum not fetched (proxy); paraphrase from search summary. Anecdote only. (Earlier-round record, kept.)"
       }
     ],
     "conflicts": [
-      "The UK page snippet names the 'Customer Contact Centre' while another snippet of the same text names the 'Customer Service Department'.",
-      "A forum member reports a cardboard urn was accepted; another member says wooden boxes are unsuitable. Official text requires only a biodegradable container."
+      "Round 1 summaries named both 'Customer Contact Centre' and 'Customer Service Department' and a 90-day lead time; these were not seen in the round 1.6 indexed content and stay unconfirmed."
     ],
     "unresolved": [
-      "Package price (a paid Committal of Ashes Package exists; amount not seen)",
-      "Exact US page wording (only a paraphrase was available)",
-      "Whether a death certificate is also required",
-      "Whether a written memorial certificate is issued officially",
-      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
+      "Full page text not opened (bot protection); confirm wording in a browser.",
+      "Package price, lead time and contact department."
     ],
-    "needsDirectContact": true,
+    "needsDirectContact": false,
     "notes": "All official text was obtained from search-result snippets because cunard.com was blocked by the session proxy. Cunard commits the ashes in the container; loose scattering is expressly not done.",
     "answers": {
+      "permitted": {
+        "answer": "Yes, as a committal of ashes in a biodegradable container, with the Captain's approval.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented policy; approval from the Captain in advance of the voyage, always subject to change.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Required: the Captain's approval before the voyage starts.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Booked as a Committal of Ashes package; full payment is due at booking.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6b"
+        ]
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Bring the cremation certificate on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Biodegradable container; supporting documentation required.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Required.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Committed whole: 'The ashes will not be scattered but committed to the sea in a biodegradable container.'",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "privateCeremony": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "An outside area, typically a lower deck.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "crewParticipation": {
+        "answer": "The Captain or a Senior Officer accompanies the family and will say a prayer if requested.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "A paid package (full payment at booking); price not shown in the indexed content.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6b"
+        ]
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not on voyages of 5 nights or less; must be on a sea day; times and dates may be restricted by weather and are finalised on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "The Captain normally provides location details from the ship's log afterward.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "certificateConfirmation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Yes: Captain's discretion and itinerary or location restrictions.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not permitted.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "Flowers must be completely biodegradable.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection",
+    "researchLog": [
+      "Round 3: cunard.com en-gb, en-us and en-au committal pages and my.cunard.com celebrations page all HTTP 403 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy).",
+      "Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401."
+    ],
+    "previousStatus": "conditionally-permitted",
+    "round3": "reclassified-unconfirmed-official-page",
+    "previousAnswersRound1": {
       "permitted": {
         "answer": "Yes, as a committal of ashes in a biodegradable container, subject to the Captain's approval.",
         "basis": "unconfirmed-official",
@@ -508,13 +696,8 @@
         "sources": []
       }
     },
-    "wordingConfirmed": false,
-    "round2": "blocked-by-bot-protection",
-    "researchLog": [
-      "Round 3: cunard.com en-gb, en-us and en-au committal pages and my.cunard.com celebrations page all HTTP 403 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy)."
-    ],
-    "previousStatus": "conditionally-permitted",
-    "round3": "reclassified-unconfirmed-official-page"
+    "evidenceMethod": "search-index-of-official-page",
+    "round16": "recovered-official-indexed"
   },
   {
     "id": "oceania-cruises",
@@ -687,9 +870,11 @@
       "WebSearch 'Oceania Cruises scattering ashes at sea cremated remains ceremony': no Oceania page returned",
       "WebSearch 'site:oceaniacruises.com ashes OR \"burial at sea\" OR \"cremated\"': no oceaniacruises.com result",
       "WebSearch 'Oceania Cruises guest ticket contract pdf prohibited items list': found contract and 2017 prohibited-items PDF URLs on oceaniacruises.com, but the host refuses this session (403); not read",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of oceaniacruises.com found no ashes page."
     ],
-    "officialContact": "Not captured: official site blocked (HTTP 403)."
+    "officialContact": "Not captured: official site blocked (HTTP 403).",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "regent-seven-seas-cruises",
@@ -859,9 +1044,11 @@
       "WebFetch https://www.rssc.com/faq: host not resolvable from the fetch tool",
       "WebSearch 'Regent Seven Seas scattering ashes at sea ceremony policy': no Regent page returned",
       "WebSearch 'site:rssc.com ashes OR \"burial at sea\" OR cremated': no rssc.com result",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of rssc.com found no ashes page."
     ],
-    "officialContact": "Not captured: official site blocked (HTTP 403)."
+    "officialContact": "Not captured: official site blocked (HTTP 403).",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "seabourn",
@@ -1059,9 +1246,11 @@
       "https://www.seabourn.com/en/us/faq/on-board/will-religious-services-be-offered 200: no mention of memorials",
       "https://www.seabourn.com/en/us/faq/booked-guests 200: no mention",
       "WebSearch 'Seabourn \"ashes\" scattering ceremony at sea': no Seabourn policy page returned",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of seabourn.com found no ashes page."
     ],
-    "officialContact": "Seabourn +1 800-442-4448 (official site header)"
+    "officialContact": "Seabourn +1 800-442-4448 (official site header)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "silversea",
@@ -1257,9 +1446,11 @@
       "https://www.silversea.com/guest-terms 200 (index); /guest-terms/united-states/united-states-ctc-en/ 200, /guest-terms/united-kingdom/united-kingdom-booking-conditions-en/ 200, /guest-terms/guest-health-safety-and-conduct-policy/english/ 200: no mention",
       "https://www.silversea.com/guest-terms/wp-json/wp/v2/search?search=ashes (and cremated, burial, remains): 0 results",
       "WebSearch 'Silversea scatter ashes at sea ceremony cremated remains': no Silversea page returned",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of silversea.com found no ashes page."
     ],
-    "officialContact": "Not captured from the pages read (the FAQ page's phone link rendered as tel:undefined)."
+    "officialContact": "Not captured from the pages read (the FAQ page's phone link rendered as tel:undefined).",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "azamara",
@@ -1477,9 +1668,11 @@
       "https://www.azamara.com/booked-guests/before-you-board/guest-conduct-policy 200: no mention",
       "https://www.azamara.com/worldofcelebrations 200: celebrations packages only; no memorial or ashes service",
       "WebSearch 'Azamara \"ashes\" scattering at sea guest services': only the forum lead",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of azamara.com found no ashes page."
     ],
-    "officialContact": "Azamara special requests: SpecialRequests@Azamara.com (official FAQ); phone 1-855-292-6272 (official FAQ)"
+    "officialContact": "Azamara special requests: SpecialRequests@Azamara.com (official FAQ); phone 1-855-292-6272 (official FAQ)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "explora-journeys",
@@ -2072,9 +2265,11 @@
       "https://www.windstarcruises.com/faq/ 404",
       "https://www.windstarcruises.com/voyage-plan/ 200, /voyage-plan/general-information/ 200, /voyage-plan/cruise-documents/ 200, /terms-conditions/ 200, /yacht-club/faqs/ 200: no mention",
       "WebSearch 'Windstar Cruises scattering ashes at sea': no Windstar page returned",
-      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
+      "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).",
+      "Version 1.6: domain-restricted search of windstarcruises.com found no ashes page."
     ],
-    "officialContact": "Windstar 1.800.258.7245 (official site header)"
+    "officialContact": "Windstar 1.800.258.7245 (official site header)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "seadream-yacht-club",

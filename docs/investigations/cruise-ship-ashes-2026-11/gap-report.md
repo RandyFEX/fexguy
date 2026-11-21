@@ -1,4 +1,4 @@
-# Gap report (round 3, 2026-11-21)
+# Gap report (Version 1.6, 2026-11-21)
 
 What is still unresolved after round 3. "Couldn't verify" is not "false";
 nothing unconfirmed was deleted. Round 2 findings are kept in the git
@@ -17,21 +17,27 @@ history of this file.
   cruise-line pages through a page-reading tool was refused by this
   session's permission policy, so no archived copy was used.
 
-## 2. Four lines with a policy page we could not read
+## 2. Carnival, MSC, P&O and Cunard (recovered in Version 1.6)
 
-Reclassified to Unverified under the round 3 rules. Their round 1
-search-summary evidence is kept (answers marked `unconfirmed-official`),
-with these open questions:
+Now Officially permitted, from the search engine's indexed copies of their
+own policy pages (domain-restricted searches; Randy authorized the method
+in Version 1.6). The pages and official PDFs still refuse automated
+requests (HTTP 403/401). Remaining questions:
 
-| Line | Page | What must be confirmed |
+| Line | Official page | Still open |
 | --- | --- | --- |
-| Carnival | help.carnival.com answer 1132 (also help.goccl.co.uk) | Full text; 12 nm; documents; urn certificate; flowers bought on board; urn stays aboard; arranged on board only or before sailing; 12-guest limit (secondary only) |
-| MSC | msccruisesusa.com, msccruises.com, .co.uk, .com.au FAQs (all 401) | 6+ nights and a sea day; 12 nm; fee; 10-guest limit by region; coordinates certificate; animal ashes |
-| P&O Cruises | pocruises.com committal page (403); P&O Australia now redirects to Carnival Australia | GBP 270 charge; minimum cruise length (6 nights or less excluded vs five nights or more); fjords; certificate |
-| Cunard | cunard.com en-gb, en-us, en-au committal pages and FAQ719; my.cunard.com (all 403) | 90-day lead time; contact department; package price; fjords and Alaska exclusions; death certificate |
+| Carnival | https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes | Direct read of the full wording; requirements for animal ashes (the page lists "human or animal ashes"); guest limit and fee (not published); whether arrangements can start before sailing |
+| MSC | https://www.msccruisesusa.com/faq/on-board-information (also msccruises.com/int, .co.uk, .ca, .com.au) | Direct read; manufacturer-certificate line seen on the international page but not in the indexed US page |
+| P&O Cruises | https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes | Direct read; minimum cruise length conflict between the committal page (not on 6 nights or less) and the FAQ (five nights or more); lead time and contact; the March 2026 Ceremonies T&Cs PDF (403) |
+| Cunard | https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary | Direct read; package price; lead time and contact department (round 1 summaries said 90 days, not seen in Version 1.6) |
 
-Fastest fix: Randy opens the four pages in a browser and pastes the text,
-or each line confirms by email.
+## 2b. The benchmark's nine lines (Version 1.6)
+
+| Line | Result |
+| --- | --- |
+| Royal Caribbean, Princess, Virgin Voyages | Officially permitted (read directly in round 2; re-confirmed in the index) |
+| Carnival, MSC | Officially permitted (Version 1.6, indexed official pages) |
+| Celebrity, Norwegian, Holland America, Disney | Unverified: no policy on the official site or in its search index. Unconfirmed secondary reporting is kept separately in each record (`secondaryReporting`). Celebrity's and Holland America's general overboard rules are official but are not ash policies |
 
 ## 2a. Marella: wording not independently verified
 
@@ -112,3 +118,29 @@ reach 12 nm on a sea day.
   from the cruise-line comparison (`notCruiseLine`).
 - Closed operators (Alaskan Dream Cruises, American Queen Voyages) stay
   out of the directory.
+
+## 9. Why rounds 1 to 3 missed recoverable policies (Version 1.6)
+
+- Round 1 found these four policies only as search-engine summaries and
+  could not open the pages (network allowlist). Round 3 then applied a
+  rule that a search summary is never authoritative, and the session's
+  permission system refused archived copies, so the four were downgraded
+  to Unverified even though their official pages exist and are indexed.
+- The research treated "the page refuses automated requests" as "the
+  policy cannot be established". The better method, used in Version 1.6,
+  is a search restricted to the operator's own domain, which returns the
+  search engine's indexed copy of that official page with quoted wording.
+- Effort was spread over 80+ operators (most of which publish nothing)
+  instead of concentrating on the few lines that publish a policy.
+
+## 10. Recommendations for a useful article
+
+- Lead with the 11 lines that have an official policy (9 officially
+  permitted, Ambassador conditional, Crystal not permitted) in the main
+  comparison table, with requirements a family can act on.
+- Show the unverified lines as a compact list (name, "no published
+  policy", the official contact where read), not as full directory cards.
+- Keep the full 92-record register internal (research/ and register.md).
+- Before publication, read the four indexed pages directly in a browser
+  (Carnival, MSC, P&O, Cunard) and Marella's full FAQ, and ask Celebrity,
+  Norwegian, Holland America and Disney in writing.

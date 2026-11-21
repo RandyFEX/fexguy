@@ -11,15 +11,16 @@ metadata, from research/competitors-seo.md:
 
 Editorial notes for Randy (not part of the article):
 
-- Round 3 applies stricter categories: a line is "permitted" only if we
-  read its own policy. Carnival, MSC, P&O Cruises and Cunard publish
-  policy pages that their sites would not let us read, so they now show
-  as Unverified, with a note on what their pages reportedly say. If you
-  open those four pages in a browser and send me the text, they can move
-  to their real status.
-- We searched the official sites of all 85 unverified operators (FAQs,
-  contracts, terms, sitemaps). None publishes a policy. That is shown as
-  "no published policy", never as a yes or a no.
+- Version 1.6: Carnival, MSC, P&O Cruises and Cunard are now officially
+  permitted, from the search engine's indexed copy of their own policy
+  pages (their sites refuse automated requests; you authorized this
+  method). Their exact wording still needs one direct read in a browser
+  before publication.
+- The preview page and its directory data were NOT updated in Version 1.6
+  (you asked to hold the directory rebuild); this draft is ahead of it.
+- Unverified lines: we searched their official sites and the search
+  index. None publishes a policy. That is shown as "no published policy",
+  never as a yes or a no.
 - No insurance or sales content is included, by design.
 
 ---
@@ -28,14 +29,13 @@ Editorial notes for Randy (not part of the article):
 
 ## Quick answer
 
-Some cruise lines will help you commit a loved one's ashes to the sea, but
-only with their permission and on their terms. Royal Caribbean, Princess,
-Virgin Voyages, Fred. Olsen and Marella publish a written process.
+Yes, on many major cruise lines, but only with the line's permission and
+on its terms. Carnival, Royal Caribbean, Princess, MSC, Virgin Voyages,
+P&O Cruises, Cunard, Fred. Olsen and Marella publish a written process.
 Ambassador says it may be possible case by case, and Crystal says it does
-not offer burials at sea from the ship. Most other lines, including
-Norwegian, Celebrity, Holland America, Disney and Viking, publish no policy
-we could find, and the pages of Carnival, MSC, P&O Cruises and Cunard could
-not be read for this guide. For any line, ask in writing before you book.
+not offer burials at sea from the ship. Norwegian, Celebrity, Holland
+America, Disney, Viking and most smaller lines publish no policy we could
+find, so ask them in writing before you book.
 Plan on a biodegradable urn, copies of the death and cremation
 certificates, a request made before you sail, and a ceremony well
 offshore, often 12 nautical miles out.
@@ -86,10 +86,10 @@ falls into one of four groups:
 | Marella (TUI) | Officially permitted | Contact TUI before travelling | At least 12 nautical miles, outside protected areas | Leak-proof, sealed, X-ray friendly | Copy of death certificate | Not published | [FAQ](https://www.tui.co.uk/destinations/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered) |
 | Ambassador | Conditionally permitted | Ask Guest Services; approval may take time | Not published | Not published | Not published | Not published | [FAQs](https://www.ambassadorcruiseline.com/faqs/) |
 | Crystal | Not permitted from the ship | Contact Onboard Guest Services | n/a | n/a | n/a | n/a | [FAQ](https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed) |
-| Carnival | Unverified (policy page could not be read) | Ask | | | | | [Help article](https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes) |
-| MSC Cruises | Unverified (policy page could not be read) | Ask | | | | | [FAQ](https://www.msccruisesusa.com/faq/on-board-information) |
-| P&O Cruises (UK) | Unverified (policy page could not be read) | Ask | | | | | [Committal page](https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes) |
-| Cunard | Unverified (policy page could not be read) | Ask | | | | | [Committal page](https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea) |
+| Carnival | Officially permitted | Guest Services once on board | Beyond 12 nautical miles, outside special areas | Sealed, leak-proof urn; certificate if released | Death certificate; proof of licensed cremation | Not published | [Help article](https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes) |
+| MSC Cruises | Officially permitted | Notify MSC before the cruise | At least 12 nautical miles; 6+ nights with a sea day | Biodegradable urn with maker's certificate; carry-on | Not required by MSC | No fee | [FAQ](https://www.msccruisesusa.com/faq/on-board-information) |
+| P&O Cruises (UK) | Officially permitted | Captain's approval before the cruise | At least 12 nautical miles; sea day; not the Norwegian Fjords | Biodegradable container with proof; hand luggage | Certificate of Cremation | GBP 270 admin charge | [Committal page](https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes) |
+| Cunard | Officially permitted | Captain's approval before the voyage | At least 12 nautical miles; sea day; not 5 nights or less | Biodegradable container, committed whole | Cremation certificate | Paid package; price not shown | [FAQ](https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary) |
 | Norwegian Cruise Line | Unverified (no published policy) | Ask | | | | | Searched ncl.com |
 | Celebrity Cruises | Unverified (no published policy) | Ask | | | | | Searched celebritycruises.com |
 | Holland America Line | Unverified (no published policy) | Ask | | | | | Searched hollandamerica.com |
@@ -98,8 +98,8 @@ falls into one of four groups:
 
 "Not published" means the official page we read does not say. Our research
 register holds 92 cruise-operator records worldwide (ocean, luxury,
-expedition, river and regional). Seven lines have a policy we could read;
-the other 85 are unverified, most because their official sites publish
+expedition, river and regional). Eleven lines have an official policy;
+the others are unverified, most because their official sites publish
 nothing on the subject.
 
 ## How the law works
@@ -377,30 +377,101 @@ offers celebrations of life that may include spreading ashes on a private
 excursion. Contact obgs@crystalcruises.com.
 [Source](https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed)
 
-### Carnival, MSC, P&O Cruises and Cunard
+### Carnival Cruise Line
 
-*Unverified: each line has a policy page, but its website blocked every
-attempt to read it for this guide.*
+*Officially permitted. Read from the search engine's indexed copy of
+Carnival's official page, November 21, 2026; confirm the exact wording on
+the page.*
 
-Search-engine summaries of these pages describe permission with
-conditions. We list what they reportedly say so you know what to ask,
-not as confirmed policy:
+- Contact the Guest Services Desk once on board. Guest Services and the
+  Environmental Officer coordinate the scattering; they ask for your
+  preferred date and time, the number of attendees and a copy of the death
+  certificate.
+- Bring the death certificate and certification that the cremation was
+  done by a licensed facility.
+- Keep the ashes in a sealed, leak-proof urn for the whole trip. To release
+  the urn with the ashes, present a certificate that it is biodegradable.
+- It "must be performed beyond twelve nautical miles from land and outside
+  any special areas," with the date and time based on environmental
+  restrictions.
+- Commemorative flowers must be bought through the onboard Fun Shops, with
+  no ribbon or non-biodegradable decorations.
+- The urn may not be taken ashore in a port of call.
+- A Guest Services team member escorts the family, and guests are given a
+  moment of privacy; the site may need stairs.
+- The page lists "Scattering of human or animal ashes"; ask Guest Services
+  about requirements for animal ashes.
 
-- **Carnival** ([help article](https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes)):
-  reportedly arranged with Guest Services and the Environmental Officer on
-  board, beyond 12 nautical miles, with a death certificate, proof of
-  licensed cremation and a certified biodegradable urn.
-- **MSC** ([FAQ](https://www.msccruisesusa.com/faq/on-board-information)):
-  reportedly human ashes only, on cruises of six nights or more with a sea
-  day, at least 12 nautical miles out, with a certified biodegradable urn
-  and a limited number of guests.
-- **P&O Cruises** ([committal page](https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes)):
-  reportedly an admin charge, the Captain's approval before the cruise, a
-  Certificate of Cremation and at least 12 nautical miles; its pages
-  reportedly disagree on the minimum cruise length.
-- **Cunard** ([committal page](https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea)):
-  reportedly a paid Committal of Ashes Package with the Captain's
-  approval and a biodegradable container committed whole.
+[Source](https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes)
+
+### MSC Cruises
+
+*Officially permitted. Read from the search engine's indexed copy of
+MSC's official FAQ pages (US, international, UK, Canada, Australia),
+November 21, 2026; confirm the exact wording on the page.*
+
+MSC calls it Memorial at Sea:
+
+- Only on cruises of 6 nights or longer with at least one sea day.
+- Human remains only; animal ashes are not permitted.
+- Notify MSC by phone or through your travel agent before the cruise
+  (ship, sail date, booking and stateroom numbers, attendees, the
+  deceased's name and urn details), then visit Guest Services on board.
+- At least 12 nautical miles from the coast; the ship's command sets the
+  time based on weather and safety.
+- No more than 10 guests; a waiver may be required.
+- Biodegradable urns only, in carry-on luggage, with the manufacturer's
+  certificate that the urn is fully biodegradable. No plastic ribbons,
+  plastic flowers, plastic urns or balloons.
+- No fee. MSC does not require a death certificate, but airport and port
+  security may ask for one.
+- Closed-toe shoes required; some locations involve steep or spiral stairs.
+- A certificate with the coordinates and time, signed by the Navigation
+  Officer or Captain.
+
+[Source](https://www.msccruisesusa.com/faq/on-board-information)
+
+### P&O Cruises (UK)
+
+*Officially permitted. Read from the search engine's indexed copy of P&O's
+official pages, November 21, 2026; confirm the exact wording on the page.*
+
+- The Captain must approve it before the cruise starts.
+- Ashes in a biodegradable container, as hand luggage, with proof that it
+  is biodegradable; bring the Certificate of Cremation.
+- On a sea day, at least 12 nautical miles from land; not in protected
+  waters such as the Norwegian Fjords.
+- The ashes are lowered into the water in their container, in a ceremony
+  conducted by the Captain or a senior officer.
+- An admin charge of GBP 270 applies.
+- You receive a certificate with the latitude and longitude from the
+  ship's log.
+- Pet ashes are not permitted, and P&O does not help with scatterings
+  ashore.
+- Cruise length: the committal page says not on cruises of 6 nights or
+  less, while P&O's FAQ says cruises of five nights or more. Ask P&O.
+
+[Committal page](https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes)
+
+### Cunard
+
+*Officially permitted. Read from the search engine's indexed copy of
+Cunard's official FAQ and celebrations page, November 21, 2026; confirm the
+exact wording on the page.*
+
+- Requires the Captain's approval before the voyage, and approval is
+  always subject to change.
+- "The ashes will not be scattered but committed to the sea in a
+  biodegradable container." Bring the cremation certificate.
+- Not on voyages of 5 nights or less; on a sea day, at least 12 nautical
+  miles from land; dates may be restricted by weather.
+- The Captain or a Senior Officer accompanies the family to an outside
+  area, typically a lower deck, and will say a prayer if asked.
+- Booked as a paid Committal of Ashes package, paid in full at booking.
+- Location details from the ship's log are normally provided afterward.
+- Pet ashes are not permitted; flowers must be biodegradable.
+
+[Cunard FAQ](https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary)
 
 ### Lines with no published policy
 
@@ -563,7 +634,9 @@ Fred. Olsen allows either, if the container is certified biodegradable.
 
 ### Do cruise lines charge for this?
 
-None of the policies we read publishes a fee. Ask.
+Some do. P&O Cruises charges a GBP 270 admin fee and Cunard sells a paid
+Committal of Ashes package; MSC says there is no fee. The other policies
+we read do not publish a fee, so ask.
 
 ### How far from shore does the ship have to be?
 
@@ -583,12 +656,16 @@ time with guests; Royal Caribbean's Front Desk sets the time and place.
 
 ### Will I receive the coordinates or a certificate?
 
-None of the policies we read promises one. Ask in advance.
+MSC provides a certificate with the coordinates and time, P&O gives a
+certificate with the latitude and longitude from the ship's log, and
+Cunard normally provides location details from the ship's log. Other lines
+do not say, so ask in advance.
 
 ### Can I scatter a pet's ashes at sea from a cruise?
 
-Not under the US general permit, which covers human remains only. Ask the
-line.
+MSC, P&O Cruises and Cunard say no. Carnival's page lists "human or animal
+ashes", so ask Guest Services. From a US port, the EPA general permit
+covers human remains only.
 
 ### Can I scatter ashes at a private island or in port?
 
@@ -618,7 +695,7 @@ the full list, including every page we searched with no policy found.
 - Ambassador, [FAQs](https://www.ambassadorcruiseline.com/faqs/)
 - Crystal, [Burial at sea FAQ](https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed)
 - Holland America, [Know Before You Go](https://www.hollandamerica.com/en/us/plan-a-cruise/get-ready-for-your-cruise/faq/know-before-you-go) and [cruise contract](https://www.hollandamerica.com/en/us/legal-privacy/cruise-contract)
-- Carnival, MSC, P&O Cruises, Cunard: policy pages linked above (not readable for this guide)
+- Carnival, [Scattering of Ashes](https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes); MSC, [on-board information FAQ](https://www.msccruisesusa.com/faq/on-board-information); P&O Cruises, [Committal of ashes](https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes); Cunard, [FAQ](https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary) (all read from search-engine indexed copies)
 - UN, [UNCLOS](https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf); IMO, [London Convention and Protocol](https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx)
 - EPA, [Burial at Sea](https://www.epa.gov/ocean-dumping/burial-sea), [Reporting Tool](https://burialatsea.epa.gov/) and [fact sheet](https://www.epa.gov/sites/default/files/2019-05/documents/burial_at_sea_reporting_tool_factsheet_may_13_2019.pdf)
 - eCFR, [40 CFR 229.1](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1), [36 CFR 2.62](https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.62), [15 CFR part 922](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-IX/subchapter-B/part-922), [33 CFR 105.545](https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-105/subpart-E/section-105.545), [42 CFR 71.50](https://www.ecfr.gov/current/title-42/chapter-I/subchapter-F/part-71/subpart-F/section-71.50)

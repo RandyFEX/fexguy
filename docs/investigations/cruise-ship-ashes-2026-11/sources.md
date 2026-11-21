@@ -146,6 +146,22 @@ research/competitors-seo.md.
 | https://www.windstarcruises.com/voyage-plan/general-information/ | official-faq | Windstar Cruises: status/notes | 2026-11-21 |
 | https://www.windstarcruises.com/yacht-club/faqs/ | official-faq | Windstar Cruises: status/notes | 2026-11-21 |
 
+## Read via search-engine index of the official page (V1.6) (11)
+
+| URL | Type | Supports | Checked |
+| --- | --- | --- | --- |
+| https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes | official-faq | Carnival Australia brands: status/notes; Carnival Cruise Line: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements,... | 2026-11-21 |
+| https://my.cunard.com/en-gb/activity-types/celebrations | official-policy-page | Cunard: writtenApplication, containerRequirements, fees, differsByVesselItinerary; Cunard: status/notes | 2026-11-21 |
+| https://pocruises.com/ceremonies-at-sea/faqs | official-faq | P&O Cruises (UK): permitted, weatherItineraryLimits | 2026-11-21 |
+| https://www.celebritycruises.com/faqs/all-faqs | official-faq | Celebrity Cruises: status/notes | 2026-11-21 |
+| https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary | official-faq | Cunard: permitted, documentedOrIndividualApproval, advanceNotice, deathOrCremationCertificate, containerRequirements, biodegradableUrns, scatterOrReleaseUrn, designatedArea, crewParticipation, distanceOffshore,... | 2026-11-21 |
+| https://www.msccruises.ca/faq/on-board-information | official-faq | MSC Cruises: status/notes | 2026-11-21 |
+| https://www.msccruises.co.uk/faq | official-faq | MSC Cruises: permitted, containerRequirements, distanceOffshore, weatherItineraryLimits, differsByVesselItinerary; MSC Cruises: status/notes | 2026-11-21 |
+| https://www.msccruises.com.au/faq/on-board-information | official-faq | MSC Cruises: status/notes | 2026-11-21 |
+| https://www.msccruises.com/int/faq/on-board-information | official-faq | MSC Cruises: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements, biodegradableUrns, privateCeremony, designatedArea,... | 2026-11-21 |
+| https://www.msccruisesusa.com/faq/on-board-information | official-faq | MSC Cruises: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements, privateCeremony, designatedArea, fees,... | 2026-11-21 |
+| https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes | official-policy-page | P&O Cruises (UK): permitted, documentedOrIndividualApproval, advanceNotice, deathOrCremationCertificate, containerRequirements, biodegradableUrns, scatterOrReleaseUrn, crewParticipation, fees, distanceOffshore,... | 2026-11-21 |
+
 ## Read via fetch tool (2)
 
 | URL | Type | Supports | Checked |
@@ -162,27 +178,22 @@ research/competitors-seo.md.
 | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-220 | regulation | Law US-07 (United States): MPRSA scope: what 'ocean waters' and 'dumping' mean | 2026-11-21 |
 | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1 | regulation | Law US-01 (United States): EPA general permit: who is covered; Law US-02 (United States): Cremated remains: 3 nautical miles; Law US-03 (United States): Flowers and wreaths; Law US-04 (United States): Reporting... | 2026-11-21 |
 
-## Blocked; search summary only (20)
+## Blocked; search summary only (15)
 
 | URL | Type | Supports | Checked |
 | --- | --- | --- | --- |
-| https://help.carnival.com/app/answers/detail/a_id/6249/~/items-overboard-policy | official-policy-page | Carnival Cruise Line: fees | 2026-11-21 |
+| https://help.carnival.com/app/answers/detail/a_id/6249/~/items-overboard-policy | official-policy-page | Carnival Cruise Line: status/notes | 2026-11-21 |
 | https://help.ryanair.com/hc/en-gb/articles/12890971417105-Does-Ryanair-carry-ashes-coffins-human-remains | airline | Travel ryanair: airline-international | 2026-11-21 |
-| https://my.cunard.com/en-gb/activity-types/celebrations | official-policy-page | Cunard: writtenApplication, fees; Cunard: documentedOrIndividualApproval, weatherItineraryLimits, differsByVesselItinerary | 2026-11-21 |
 | https://travel.state.gov/en/international-travel/living-abroad/death.html | government | Travel state-dept: death-abroad-us | 2026-11-21 |
 | https://www.britishairways.com/content/information/help/faq/baggage/cremated-remains | airline | Travel british-airways: airline-international | 2026-11-21 |
 | https://www.carnival.com/safety-information | cruise-line | Travel carnival: cruise-line | 2026-11-21 |
-| https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea | official-policy-page | Cunard: advanceNotice, leadTime, contactDepartment | 2026-11-21 |
-| https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary | official-faq | Cunard: permitted, deathOrCremationCertificate, containerRequirements, biodegradableUrns; Cunard: designatedArea, crewParticipation; Cunard: biodegradableUrns, scatterOrReleaseUrn; Cunard: permitted,... | 2026-11-21 |
-| https://www.cunard.com/en-us/activity-types/ceremonies/committal-of-ashes-at-sea | official-policy-page | Cunard: deathOrCremationCertificate, containerRequirements, weatherItineraryLimits, differsByVesselItinerary; Protected area: Alaska (US); Protected area: Norwegian fjords (protected waters) | 2026-11-21 |
+| https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea | official-policy-page | Cunard: status/notes | 2026-11-21 |
+| https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary | official-faq | Cunard: status/notes | 2026-11-21 |
+| https://www.cunard.com/en-us/activity-types/ceremonies/committal-of-ashes-at-sea | official-policy-page | Cunard: status/notes; Protected area: Alaska (US); Protected area: Norwegian fjords (protected waters) | 2026-11-21 |
 | https://www.ecfr.gov/current/title-42/chapter-I/subchapter-F/part-71/subpart-F/section-71.50 | government | Travel cdc-import: customs-us | 2026-11-21 |
 | https://www.lufthansa.com/de/en/dangerous-goods | airline | Travel lufthansa: airline-international | 2026-11-21 |
-| https://www.msccruises.co.uk/faq | official-faq | MSC Cruises: containerRequirements, differsByVesselItinerary, petAshes | 2026-11-21 |
-| https://www.msccruises.com/int/faq/on-board-information | official-faq | MSC Cruises: permitted, advanceNotice, deathOrCremationCertificate, privateCeremony, distanceOffshore, weatherItineraryLimits, differsByVesselItinerary | 2026-11-21 |
-| https://www.msccruisesusa.com/faq/on-board-information | official-faq | MSC Cruises: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements, biodegradableUrns, privateCeremony, designatedArea,... | 2026-11-21 |
-| https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes | official-policy-page | P&O Cruises (UK): permitted, documentedOrIndividualApproval, advanceNotice, deathOrCremationCertificate, containerRequirements, biodegradableUrns, privateCeremony, crewParticipation, chaplainCelebrant, fees,... | 2026-11-21 |
-| https://www.pocruises.com/en-au/help | official-faq | P&O Cruises (UK): permitted, documentedOrIndividualApproval, advanceNotice, weatherItineraryLimits, differsByVesselItinerary | 2026-11-21 |
-| https://www.pocruises.com/en-au/login-test/scattering-test | official-policy-page | P&O Cruises (UK): privateCeremony, designatedArea, petAshes | 2026-11-21 |
+| https://www.pocruises.com/en-au/help | official-faq | P&O Cruises (UK): status/notes | 2026-11-21 |
+| https://www.pocruises.com/en-au/login-test/scattering-test | official-policy-page | P&O Cruises (UK): status/notes | 2026-11-21 |
 | https://www.transavia.com/help/en-eu/baggage/allowed-in-baggage/urn | airline | Travel transavia: airline-international | 2026-11-21 |
 | https://www.tsa.gov/blog/2018/07/10/ways-travel-cremated-remains | government | Travel tsa-blog-2018: airport-security-us | 2026-11-21 |
 | https://www.tui.co.uk/destinations/faq/marella-cruises/miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered | cruise-line | Travel marella: cruise-line | 2026-11-21 |
@@ -219,7 +230,7 @@ research/competitors-seo.md.
 | https://boards.cruisecritic.co.uk/topic/2948805-burial-at-sea-release-of-ashes/page/2/ | forum-anecdote | Holland America Line: status/notes | 2026-11-21 |
 | https://boards.cruisecritic.co.uk/topic/2976633-water-burial | forum-anecdote | Crystal: status/notes | 2026-11-21 |
 | https://boards.cruisecritic.com/topic/1148423-burying-ashes-at-sea-on-ncl/ | forum-anecdote | Norwegian Cruise Line: status/notes | 2026-11-21 |
-| https://boards.cruisecritic.com/topic/2832273-cunard-burial-at-sea/ | forum-anecdote | Cunard: gpsCoordinates, certificateConfirmation | 2026-11-21 |
+| https://boards.cruisecritic.com/topic/2832273-cunard-burial-at-sea/ | forum-anecdote | Cunard: status/notes | 2026-11-21 |
 | https://boards.cruisecritic.com/topic/2861486-how-to-arrange-a-burial-at-sea-with-celebrity | forum-anecdote | Celebrity Cruises: status/notes | 2026-11-21 |
 | https://boards.cruisecritic.com/topic/2884298-has-anyone-done-a-burial-at-sea-of-ashes/ | forum-anecdote | Norwegian Cruise Line: status/notes | 2026-11-21 |
 | https://cruiseindustrynews.com/cruise-news/2024/02/american-queen-voyages-ceases-operations/ | secondary-news | American Queen Voyages: status/notes | 2026-11-21 |
@@ -231,7 +242,6 @@ research/competitors-seo.md.
 | https://en.mitos.gov.gr/index.php/ΔΔ:Transfer_of_ashes_from_abroad_to_Greece | government-guidance | Law GR-01 (Greece): Scattering ashes at sea | 2026-11-21 |
 | https://faqs.fredolsencruises.com/portal/en/kb/articles/can-i-scatter-ashes-at-sea | official-faq | Fred. Olsen Cruise Lines: status/notes | 2026-11-21 |
 | https://fernwehblog.net/seebestattung-kreuzfahrt/ | secondary-blog | TUI Cruises (Mein Schiff): status/notes; AIDA Cruises: status/notes; Hapag-Lloyd Cruises: status/notes | 2026-11-21 |
-| https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes | official-faq | Carnival Australia brands: status/notes; Carnival Cruise Line: permitted, documentedOrIndividualApproval, advanceNotice, contactDepartment, writtenApplication, deathOrCremationCertificate, containerRequirements,... | 2026-11-21 |
 | https://iaato.org/field-operations-manual | official-policy-page | Protected area: Antarctica (Antarctic Treaty area, south of 60 degrees S) | 2026-11-21 |
 | https://laws.bahamas.gov.bs/ | government-guidance | Law BS-01 (Bahamas): Ashes at sea | 2026-11-21 |
 | https://laws.justice.gc.ca/eng/acts/C-15.31/FullText.html | statute | Law CA-01 (Canada): Disposal at sea under CEPA 1999 | 2026-11-21 |
@@ -250,8 +260,8 @@ research/competitors-seo.md.
 | https://www.captaincook.com.au/celebrations/private-boat-hire | official-policy-page | Captain Cook Cruises (Australia): status/notes | 2026-11-21 |
 | https://www.cnn.com/travel/scatter-ashes-while-traveling-antarctica/index.html | secondary-news | Protected area: Antarctica (Antarctic Treaty area, south of 60 degrees S) | 2026-11-21 |
 | https://www.cruisecritic.com/cruise/viking-river/viking-alruna/reviews/589479 | forum-anecdote | Viking River Cruises (note only): status/notes | 2026-11-21 |
-| https://www.cruisehive.com/carnival-clarifies-strict-guest-limits-on-solemn-at-sea-ceremony/201209 | secondary-news | Carnival Cruise Line: advanceNotice, leadTime, privateCeremony, fees, gpsCoordinates, certificateConfirmation | 2026-11-21 |
-| https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734 | secondary-news | Carnival Australia brands: status/notes; Carnival Cruise Line: weatherItineraryLimits, differsByVesselItinerary | 2026-11-21 |
+| https://www.cruisehive.com/carnival-clarifies-strict-guest-limits-on-solemn-at-sea-ceremony/201209 | secondary-news | Carnival Cruise Line: status/notes | 2026-11-21 |
+| https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734 | secondary-news | Carnival Australia brands: status/notes; Carnival Cruise Line: status/notes | 2026-11-21 |
 | https://www.cruisehive.com/carnival-fleet-expands-as-po-cruises-australia-era-ends | secondary-news | Carnival Australia brands: status/notes | 2026-11-21 |
 | https://www.disboards.com/threads/dcl-onboard-restricted-items-policy-updates-decorations-ducks-and-ashes-and-more.3936270/ | forum-anecdote | Disney Cruise Line: status/notes | 2026-11-21 |
 | https://www.disboards.com/threads/is-there-a-dcl-policy-for-scattering-ashes-burial-at-sea.3908112/ | forum-anecdote | Disney Cruise Line: status/notes | 2026-11-21 |
@@ -269,6 +279,7 @@ research/competitors-seo.md.
 | https://www.nps.gov/bisc/planyourvisit/special-use-permit-for-scattering-of-ashes.htm | government-guidance | Law US-10 (United States (Alaska)): NPS parks with ash-scattering permit pages | 2026-11-21 |
 | https://www.oceaniacruises.com/sites/default/files/2024-10/Oceania%20Ticket%20Contract_US.pdf | passenger-contract | Oceania Cruises: status/notes | 2026-11-21 |
 | https://www.pachamamatributes.com/blogs/news/cruise-lines-that-allow-ash-scattering | secondary-blog | Celebrity Cruises: status/notes | 2026-11-21 |
+| https://www.pocruises.com/content/dam/po/pdfs/ceremonies-sea-shore/POC_Ceremonies_Sea_and_Shore_TCs-March2026.pdf | official-pdf | P&O Cruises (UK): status/notes | 2026-11-21 |
 | https://www.ra-kotz.de/totenasche.htm | law-inland | Inland waters: Germany, North Rhine-Westphalia | not verified |
 | https://www.rssc.com/media/hostedfiles/legal/TicketContract07272010.pdf | passenger-contract | Regent Seven Seas Cruises: status/notes | 2026-11-21 |
 | https://www.saga.co.uk/magazine/relationships/bereavement/burial-at-sea | secondary-news | Saga Cruises: status/notes | 2026-11-21 |
@@ -296,6 +307,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.expeditions.com/plan/advisor-faqs 200: no mention
   - https://www.expeditions.com/campaign/galapagos-questions 200: no mention
   - https://www.expeditions.com/sitemap and sitemap.xml (sitemapPages, sitemapLandings) 200: no memorial/ashes/celebration page listed
+  - Version 1.6: domain-restricted search of expeditions.com found no guest policy (only a 2023 expedition report noting the founder's ashes were scattered on West Point Island, history not policy).
 - **Aurora Expeditions** (unverified):
   - https://www.aurora-expeditions.com/ 403 (bot protection page)
   - https://www.aurora-expeditions.com/us/ 403
@@ -320,6 +332,7 @@ mention of ashes is not evidence of a prohibition.
   - General T&Cs PDF (Americas, effective 01-06-2026, all departures) https://assets.eu.ctfassets.net/vy34d8u43l9r/bw8EB7bMgn4ef26vUnVl0/97338a32467aa964b9f59f91a232344e/HX_General_T_Cs_-_Americas_-_Effective_01-06-2026__All_Departures___-_Clean_2Aug2026.pdf 200: no mention
   - Regional FAQ stories (antarctica-faqs, svalbard-faqs, galapagos-faqs, alaska-faqs, hx-faq) 200: no mention
   - en-us sitemap: no memorial/ashes page (only an unrelated 'John Hunter Memorial Trail' excursion)
+  - Version 1.6: domain-restricted search of travelhx.com found no ashes page.
 - **Swan Hellenic** (unverified):
   - https://www.swanhellenic.com/ 429 (rate limited/bot protection)
   - https://www.swanhellenic.com/faq 429 twice
@@ -331,12 +344,14 @@ mention of ashes is not evidence of a prohibition.
   - https://scenic.cruises/US/en-US/terms-conditions 200: no mention
   - https://scenic.cruises/US/en-US/about-us/booking-policies 200: no mention
   - https://scenic.cruises/US/en-US/faqs 404
+  - Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page.
 - **Emerald Cruises (yacht)** (unverified):
   - https://emerald.cruises/US/en-US/about-us/faq 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention
   - https://emerald.cruises/US/en-US/terms-conditions 200: no mention
   - https://emerald.cruises/US/en-US/about-us/booking-policies 200: no mention
   - https://emerald.cruises/US/en-US/faqs 404
   - Domain-restricted web search: only Cambodia temple blog posts
+  - Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page.
 - **Atlas Ocean Voyages** (unverified):
   - https://atlasoceanvoyages.com/faq 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention
   - https://atlasoceanvoyages.com/antarctica/before-you-go 200: no mention (IAATO, Antarctic Treaty System and 'Don't Pack a Pest' guidance only)
@@ -409,8 +424,9 @@ mention of ashes is not evidence of a prohibition.
   - https://www.oattravel.com/faq-home 200: index page only, no mention
   - https://www.oattravel.com/terms-and-conditions 200: no mention
   - FAQ topic subpages (e.g. /faq-home/preparing-for-your-trip) not opened
-- **P&O Cruises (UK)** (unverified):
+- **P&O Cruises (UK)** (officially-permitted):
   - Round 3: pocruises.com committal page HTTP 403 (bot protection). pocruises.com.au now redirects to carnival.com.au (P&O Australia brand retired; utm_campaign=po-transition). web.archive.org not reachable; archived copies not attempted further (permission policy).
+  - Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401.
 - **TUI Cruises (Mein Schiff)** (unverified):
   - https://www.tuicruises.com/faq 000: connection failed (domain now redirects elsewhere)
   - https://tuicruises.com/ 200: redirects to https://www.meinschiff.com/de
@@ -420,6 +436,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.meinschiff.com/faq/sicherheit-gesundheit and /faq/buchung-zahlung: redirected to the FAQ index, no mention
   - https://www.meinschiff.com/agb 200 and AGB PDF (Stand November 2026) 200: no mention of Urne, Asche, Bestattung or items overboard
   - web.archive.org: connection reset in this environment (not usable)
+  - Version 1.6: German-language domain-restricted search found no ashes page.
 - **AIDA Cruises** (unverified):
   - https://aida.de/unternehmen/bordordnung 403: WAF block page
   - https://www.aida.de/unternehmen/bordordnung 403: WAF block page
@@ -428,6 +445,7 @@ mention of ashes is not evidence of a prohibition.
   - archive.org availability API: snapshot 20261101130254 exists; web.archive.org fetch reset by peer
   - WebFetch aida.de: host not allowed in this session
   - Web search (German, Bordordnung Urne Asche): no AIDA policy page surfaced; search listed https://www.aida.de/kreuzfahrt/agb/bordordnung.24588.html and https://aida.de/faq/bordleben (not readable)
+  - Version 1.6: German-language domain-restricted search of aida.de found no Seebestattung or ashes page.
 - **Costa Cruises (Costa Crociere)** (unverified):
   - https://www.costacrociere.it/sitemap.xml 200: 5645 URLs, none about ceneri/funerali/memoriale
   - https://www.costacrociere.it/faq.html 200: FAQ in embedded JSON; no ceneri/urna/dispersione
@@ -435,6 +453,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.costacrociere.it/condizioni-generali/condizioni-generali-valide-dal-130726.html 200: clause 10.13 environmental policy found; no ceneri
   - https://progressive.costa.it/costa/brochure/gen-apr/brochure_2027.pdf 403
   - Web search (Italian, dispersione ceneri Costa): no Costa policy page
+  - Version 1.6: Italian-language domain-restricted search of Costa sites found no page on dispersing ashes.
 - **Celestyal Cruises** (unverified):
   - https://celestyal.com/sitemap.xml 200: 3697 URLs, none about ashes/memorials
   - https://celestyal.com/faqs 200 and https://celestyal.com/gb/faqs 200: no mention (answers partly script-loaded)
@@ -448,6 +467,7 @@ mention of ashes is not evidence of a prohibition.
   - https://hl-cruises.com/ships/ms-europa/on-board/information-from-a-z 404
   - https://www.hl-cruises.com/hapag-lloyd-cruises/safety-on-board 200: no mention
   - Web search (German, Hapag-Lloyd Seebestattung Urne): nothing official
+  - Version 1.6: German-language domain-restricted search found no ashes page.
 - **Hurtigruten (Norwegian Coastal Express)** (unverified):
   - https://www.hurtigruten.com/en/sitemaps/en/sitemap.xml 200: 571 URLs, no memorial/ashes page
   - https://www.hurtigruten.com/en/help/life-on-board 200: no mention
@@ -455,16 +475,19 @@ mention of ashes is not evidence of a prohibition.
   - https://www.hurtigruten.com/en/help/port-to-port 200: no mention (pets mentioned only for live animals)
   - https://www.hurtigruten.com/en/help/further-information/general-terms-and-conditions 200 and linked 2023 GTC PDF 200: no mention
   - Web search (Norwegian askespredning Hurtigruten; English): no Hurtigruten page
+  - Version 1.6: Norwegian and English domain-restricted search found no ashes page.
 - **Havila Voyages (Havila Kystruten)** (unverified):
   - https://www.havilavoyages.com/sitemap.xml 200: 944 URLs, none about ashes/memorials
   - https://www.havilavoyages.com/en/faq and /nb/faq 200: no mention
   - https://www.havilavoyages.com/en/terms 200 and /de/reisebedingungen 200, plus 3 terms PDFs on brand.havilavoyages.com 200: no mention
   - Web search (askespredning Havila): nothing relevant
+  - Version 1.6: Norwegian and English domain-restricted search found no ashes page.
 - **Ponant** (unverified):
   - https://www.ponant.com/sitemap.xml 200: index of dynamic sitemaps, no memorial page found
   - https://www.ponant.com/faq 200: French FAQ readable, no cendres/dispersion
   - https://www.ponant.com/en/faq: redirected to the homepage
   - Web search (French cendres dispersion Ponant; English): no Ponant page
+  - Version 1.6: ponant.com blocks the search engine's crawler, so no indexed content is available; direct site reading was done in round 3 (FAQ silent).
 - **Aroya Cruises** (unverified):
   - https://www.aroya.com/robots.txt 200 (sitemap https://aroya.com/sitemap.xml)
   - https://aroya.com/sitemap.xml 403
@@ -480,6 +503,7 @@ mention of ashes is not evidence of a prohibition.
   - https://travel.saga.co.uk/cruises/faqs.aspx 403
   - WebFetch travel.saga.co.uk: host not allowed in this session
   - Web search restricted to saga.co.uk/travel.saga.co.uk: only blog pages (first time on board, activities), no ashes wording in the result summaries
+  - Version 1.6: domain-restricted search of saga.co.uk found no cruise ashes policy (only a general bereavement guide).
 - **Phoenix Reisen** (unverified):
   - https://www.phoenixreisen.com/sitemap.xml 200: 1447 URLs, none about Seebestattung
   - https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html 200: no mention
@@ -532,8 +556,10 @@ mention of ashes is not evidence of a prohibition.
   - https://www.viking.com/ 200 (home page only)
   - WebSearch 'Viking cruise scatter ashes at sea policy cremated remains': no Viking page returned; only other lines and forums
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
-- **Cunard** (unverified):
+  - Version 1.6: domain-restricted search of Viking ocean, river and regional sites found only general FAQ pages with no mention of ashes.
+- **Cunard** (officially-permitted):
   - Round 3: cunard.com en-gb, en-us and en-au committal pages and my.cunard.com celebrations page all HTTP 403 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy).
+  - Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401.
 - **Oceania Cruises** (unverified):
   - https://www.oceaniacruises.com/robots.txt 200 (no sitemap listed); https://www.oceaniacruises.com/sitemap.xml 403
   - https://www.oceaniacruises.com/ 403; https://www.oceaniacruises.com/faq 403
@@ -545,6 +571,7 @@ mention of ashes is not evidence of a prohibition.
   - WebSearch 'site:oceaniacruises.com ashes OR "burial at sea" OR "cremated"': no oceaniacruises.com result
   - WebSearch 'Oceania Cruises guest ticket contract pdf prohibited items list': found contract and 2017 prohibited-items PDF URLs on oceaniacruises.com, but the host refuses this session (403); not read
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of oceaniacruises.com found no ashes page.
 - **Regent Seven Seas Cruises** (unverified):
   - https://www.rssc.com/robots.txt 200 (lists https://www.rssc.com/sitemap.xml); sitemap 403
   - https://www.rssc.com/ 403; https://www.rssc.com/faq 403
@@ -553,6 +580,7 @@ mention of ashes is not evidence of a prohibition.
   - WebSearch 'Regent Seven Seas scattering ashes at sea ceremony policy': no Regent page returned
   - WebSearch 'site:rssc.com ashes OR "burial at sea" OR cremated': no rssc.com result
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of rssc.com found no ashes page.
 - **Seabourn** (unverified):
   - https://www.seabourn.com/robots.txt 200; https://www.seabourn.com/en/us/sitemap.xml 200 (11,347 URLs, about 240 FAQ URLs): no URL about ashes, cremation, burial, memorial or funeral
   - https://www.seabourn.com/en/us/faq/prohibited-items 200: no mention
@@ -562,6 +590,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.seabourn.com/en/us/faq/booked-guests 200: no mention
   - WebSearch 'Seabourn "ashes" scattering ceremony at sea': no Seabourn policy page returned
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of seabourn.com found no ashes page.
 - **Silversea Cruises** (unverified):
   - https://www.silversea.com/robots.txt 200; https://www.silversea.com/sitemap-index.xml 200; https://www.silversea.com/sitemap-en.xml 200: no URL about ashes, burial or memorials
   - https://www.silversea.com/faq.html 404
@@ -570,6 +599,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.silversea.com/guest-terms/wp-json/wp/v2/search?search=ashes (and cremated, burial, remains): 0 results
   - WebSearch 'Silversea scatter ashes at sea ceremony cremated remains': no Silversea page returned
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of silversea.com found no ashes page.
 - **Azamara** (unverified):
   - https://www.azamara.com/robots.txt 200; https://azamara.com/sitemap.xml 200 (1,737 URLs): no URL about ashes, burial or memorials
   - https://www.azamara.com/faqs 200 (about 179 questions): no mention
@@ -580,6 +610,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.azamara.com/worldofcelebrations 200: celebrations packages only; no memorial or ashes service
   - WebSearch 'Azamara "ashes" scattering at sea guest services': only the forum lead
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of azamara.com found no ashes page.
 - **Explora Journeys** (unverified):
   - https://explorajourneys.com/robots.txt 200; https://www.explorajourneys.com/sitemap.xml 200; https://explorajourneys.com/int/en.sitemap.xml 200: no URL about ashes, burial or memorials
   - FAQ pages 200: /int/en/faq, /faq/ship, /faq/luggage, /faq/embarkation-and-disembarkation, /faq/health---safety, /faq/faq-search-results: no mention
@@ -592,6 +623,7 @@ mention of ashes is not evidence of a prohibition.
   - https://www.windstarcruises.com/voyage-plan/ 200, /voyage-plan/general-information/ 200, /voyage-plan/cruise-documents/ 200, /terms-conditions/ 200, /yacht-club/faqs/ 200: no mention
   - WebSearch 'Windstar Cruises scattering ashes at sea': no Windstar page returned
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
+  - Version 1.6: domain-restricted search of windstarcruises.com found no ashes page.
 - **SeaDream Yacht Club** (unverified):
   - https://seadream.com/robots.txt 200; https://seadream.com/sitemap.xml 200 (5,527 URLs): no URL about ashes, burial or memorials
   - https://seadream.com/about/faq 200: no mention
@@ -619,18 +651,24 @@ mention of ashes is not evidence of a prohibition.
   - https://www.amanatsea.com/guest-code-of-conduct 200: no mention
   - Other yacht lines (e.g. Orient Express Sailing Yachts) not researched this round (search budget)
   - web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts).
-- **Carnival Cruise Line** (unverified):
+- **Carnival Cruise Line** (officially-permitted):
   - Round 3 (2026-11-21), network unrestricted: help.carnival.com answer 1132 and help.goccl.co.uk answer 1132 both HTTP 403 (bot protection). carnival.com.au reachable but no ashes page found. web.archive.org could not be reached (proxy egress closed the connection). Fetching archived copies through a page-reading tool was refused by the session's permission policy, so no further attempt was made.
+  - Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401.
 - **Norwegian Cruise Line** (unverified):
   - Round 3: ncl.com US sitemap (7,171 URLs) has no page about ashes, burial, memorials or committal. FAQ 'what-not-bring-onboard' and 'what-do-i-bring' (HTTP 200): no mention of ashes or remains. Guest Ticket Contract (https://www.ncl.com/ticketcontract, redirects to NCL-Guest-Ticket-Contract-EN02-2026.pdf, 15 pages, read in full): no mention of ashes, cremated remains, burial or items overboard.
+  - Version 1.6: two domain-restricted searches of ncl.com found no ashes or burial-at-sea page.
 - **Celebrity Cruises** (unverified):
   - Round 3: celebritycruises.com sitemaps (23) contain no page about ashes, burial or committal (only 'Hot Glass' glass-memorial activity pages, rendered by script, no text). US Cruise/Cruisetour Ticket Contract (https://www.celebritycruises.com/guest-terms/united-states-english/) and Cruise-Ticket-Contract-Celebrity.pdf read in full: no mention of ashes, cremated remains, burial or overboard.
+  - Version 1.6: domain-restricted search of celebritycruises.com found no ashes policy; the indexed All FAQs page states guests are not permitted to discard any item overboard (general rule).
 - **Holland America Line** (unverified):
   - Round 3: hollandamerica.com US sitemap (13,878 URLs) contains no page about ashes, burial, memorials or committal. Round 2 findings stand: Know Before You Go asks guests to 'refrain from pouring or discarding anything overboard'; cruise contract allows a US $500 charge per violation.
+  - Version 1.6: domain-restricted search of hollandamerica.com found no ashes or burial-at-sea page.
 - **Disney Cruise Line** (unverified):
   - Round 3: with a normal cookie jar the site opened (round 2 redirect loop was a cookie issue). Sitemap (5,565 URLs): no page about ashes, burial or memorials. US Cruise Contract (https://disneycruise.disney.go.com/contracts-terms-safety/cruise-contract/united-states/, about 7,500 words) read: no mention of ashes, cremated remains, burial or overboard. Prohibited-items pages render by script and returned no text.
-- **MSC Cruises** (unverified):
+  - Version 1.6: domain-restricted search of disneycruise.disney.go.com found no ashes page (only the safety page and US cruise contract, which do not mention ashes).
+- **MSC Cruises** (officially-permitted):
   - Round 3: msccruisesusa.com, msccruises.com/int, msccruises.co.uk and msccruises.com.au FAQ pages all HTTP 401 (bot protection). web.archive.org not reachable; archived copies not attempted further (permission policy).
+  - Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401.
 - **AmaWaterways** (unverified):
   - https://www.amawaterways.com/faq 200: JavaScript application shell only (about 4.6 KB of text, navigation); no FAQ text rendered; Grep of page text and raw HTML for ashes/cremat*/urn(s)/scatter*/funeral/deceased/memorial: no match
   - https://www.amawaterways.com/terms-and-conditions 200: same application shell, terms text not in HTML; no match
@@ -688,11 +726,13 @@ mention of ashes is not evidence of a prohibition.
   - https://www.scenic.com.au/terms-conditions/scenic-general-terms-and-conditions -> scenic.cruises/AU/en-GB/... 200 (about 13 KB text, partly script-rendered): no match
   - https://www.scenic.com.au/terms-conditions/europe-river-cruise2025 -> scenic.cruises/AU/en-GB/terms-conditions 200: no match
   - Web search 'site:scenic.com.au OR site:scenic.cruises ... ashes scatter': only terms and brochures, no ashes text
+  - Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page.
 - **Emerald Cruises (river)** (unverified):
   - https://www.emeraldcruises.com/faqs: redirected to https://emerald.cruises/US/en-US (homepage, 200): no match
   - https://emerald.cruises/US/en-US/plan-your-journey/faqs and /river/plan-your-journey/faqs: 404
   - Shared Scenic Group terms (scenic.cruises AU general terms, which cover Emerald brand journeys) 200: no match
   - Web search (site:emerald.cruises ... ashes scatter): no Emerald page
+  - Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page.
 - **Grand Circle Cruise Line (river)** (unverified):
   - https://www.gct.com/faq 200 (about 4.5 KB text, mostly script-rendered): Grep of page text and raw HTML for ashes/cremat*/urn(s)/scatter*/funeral/deceased/memorial: no match
   - https://www.oattravel.com/faq -> /faq-home 200 (sister brand): no match

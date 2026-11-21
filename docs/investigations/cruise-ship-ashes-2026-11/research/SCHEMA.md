@@ -87,3 +87,18 @@ Extra fields:
 - `officialContact`: guest-services contact read on the official site.
 - `notCruiseLine`: true for charter operators kept as context (they are
   excluded from the cruise-line comparison).
+
+## Version 1.6 additions (2026-11-21)
+
+- `basis: "official-indexed"`: the answer comes from the search engine's
+  indexed copy of the operator's own policy page, found by searches
+  restricted to the operator's domain. Randy authorized this method in
+  Version 1.6 for pages that refuse automated requests. It counts as an
+  authoritative operator source for classification; `wordingConfirmed`
+  stays false until the page is read directly.
+- `evidenceMethod`: `search-index-of-official-page` for those records.
+- `previousAnswersRound1`: the round 1 answers, kept when Version 1.6
+  replaced them.
+- `secondaryReporting`: credible secondary reporting that is not
+  officially confirmed, kept separate from the answers.
+- `round16`: `recovered-official-indexed` or `searched-index-no-policy`.

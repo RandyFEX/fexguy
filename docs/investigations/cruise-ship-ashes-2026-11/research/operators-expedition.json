@@ -166,9 +166,11 @@
       "https://www.expeditions.com/terms-conditions 200 (site terms): no mention",
       "https://www.expeditions.com/plan/advisor-faqs 200: no mention",
       "https://www.expeditions.com/campaign/galapagos-questions 200: no mention",
-      "https://www.expeditions.com/sitemap and sitemap.xml (sitemapPages, sitemapLandings) 200: no memorial/ashes/celebration page listed"
+      "https://www.expeditions.com/sitemap and sitemap.xml (sitemapPages, sitemapLandings) 200: no memorial/ashes/celebration page listed",
+      "Version 1.6: domain-restricted search of expeditions.com found no guest policy (only a 2023 expedition report noting the founder's ashes were scattered on West Point Island, history not policy)."
     ],
-    "officialContact": "Lindblad Expeditions: +1.800.397.3348 (shown on https://www.expeditions.com/plan/faqs); email form at https://www.expeditions.com/contact-us"
+    "officialContact": "Lindblad Expeditions: +1.800.397.3348 (shown on https://www.expeditions.com/plan/faqs); email form at https://www.expeditions.com/contact-us",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "aurora-expeditions",
@@ -643,9 +645,11 @@
       "https://www.travelhx.com/en-us/terms/general-terms-and-conditions/ 200: links to PDFs",
       "General T&Cs PDF (Americas, effective 01-06-2026, all departures) https://assets.eu.ctfassets.net/vy34d8u43l9r/bw8EB7bMgn4ef26vUnVl0/97338a32467aa964b9f59f91a232344e/HX_General_T_Cs_-_Americas_-_Effective_01-06-2026__All_Departures___-_Clean_2Aug2026.pdf 200: no mention",
       "Regional FAQ stories (antarctica-faqs, svalbard-faqs, galapagos-faqs, alaska-faqs, hx-faq) 200: no mention",
-      "en-us sitemap: no memorial/ashes page (only an unrelated 'John Hunter Memorial Trail' excursion)"
+      "en-us sitemap: no memorial/ashes page (only an unrelated 'John Hunter Memorial Trail' excursion)",
+      "Version 1.6: domain-restricted search of travelhx.com found no ashes page."
     ],
-    "officialContact": "HX Expeditions (US): +1 (888) 568-9793 (shown on https://www.travelhx.com/en-us/support/faq/)"
+    "officialContact": "HX Expeditions (US): +1 (888) 568-9793 (shown on https://www.travelhx.com/en-us/support/faq/)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "swan-hellenic",
@@ -956,9 +960,11 @@
       "https://scenic.cruises/US/en-US/plan-your-journey/faqs 200: no mention",
       "https://scenic.cruises/US/en-US/terms-conditions 200: no mention",
       "https://scenic.cruises/US/en-US/about-us/booking-policies 200: no mention",
-      "https://scenic.cruises/US/en-US/faqs 404"
+      "https://scenic.cruises/US/en-US/faqs 404",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
     ],
-    "officialContact": "Scenic (US): 1 (855) 517-1200 (shown on https://scenic.cruises/US/en-US/plan-your-journey/faqs/ocean)"
+    "officialContact": "Scenic (US): 1 (855) 517-1200 (shown on https://scenic.cruises/US/en-US/plan-your-journey/faqs/ocean)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "emerald-cruises-yacht",
@@ -1112,9 +1118,11 @@
       "https://emerald.cruises/US/en-US/terms-conditions 200: no mention",
       "https://emerald.cruises/US/en-US/about-us/booking-policies 200: no mention",
       "https://emerald.cruises/US/en-US/faqs 404",
-      "Domain-restricted web search: only Cambodia temple blog posts"
+      "Domain-restricted web search: only Cambodia temple blog posts",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
     ],
-    "officialContact": "Emerald Cruises (US): 1 (855) 222-3214 (shown on https://emerald.cruises/US/en-US/about-us/faq)"
+    "officialContact": "Emerald Cruises (US): 1 (855) 222-3214 (shown on https://emerald.cruises/US/en-US/about-us/faq)",
+    "round16": "searched-index-no-policy"
   },
   {
     "id": "atlas-ocean-voyages",

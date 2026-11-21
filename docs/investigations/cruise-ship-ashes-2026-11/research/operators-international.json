@@ -1,16 +1,13 @@
 [
   {
     "conflicts": [
-      "Minimum cruise length: the committal page (s1) says committal \"cannot be performed on cruises of 6 nights duration or less\" (implying 7+ nights), while the help page (s2) says \"cruises of five nights or more\".",
-      "Pet ashes and the lower-deck detail come only from a URL labelled as a test page (s3)."
+      "Minimum cruise length: the committal page says committal cannot be performed on cruises of 6 nights or less; the Celebrate at Sea FAQ says cruises of five nights or more. Both are official; ask P&O."
     ],
     "unresolved": [
-      "Exact lead time and the named department to contact were not captured.",
-      "Whether the biodegradable container is released whole or the ashes are poured was not captured.",
-      "Whether the £270 fee is current.",
-      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
+      "Full page text not opened (bot protection); confirm wording in a browser.",
+      "Lead time and contact department not shown in the indexed content."
     ],
-    "needsDirectContact": true,
+    "needsDirectContact": false,
     "notes": "All P&O text was obtained from search-result snippets because pocruises.com could not be fetched from this environment. s1 snippets also stated: Certificate of Cremation must be brought on board; the person scattering must be booked on the cruise; ceremony on a sea day at least 12 nautical miles from land; not possible in protected waters such as the Norwegian Fjords; \"the ceremony is not a formal or religious ceremony\"; a certificate with latitude and longitude from the ship's log is provided.",
     "id": "po-cruises-uk",
     "name": "P&O Cruises (UK)",
@@ -24,39 +21,234 @@
       "World cruises"
     ],
     "headquarters": "Southampton, England, UK",
-    "status": "unverified",
-    "statusRationale": "Round 3 reclassification under the round 3 category rules: the line's official page could not be read in rounds 1 to 3 (bot protection). Search-engine summaries of that page describe a permitted procedure (kept below as unconfirmed answers), but a summary is not an authoritative source, so the status is unverified until the wording is confirmed.",
-    "evidenceLevel": "secondary-reporting",
+    "status": "officially-permitted",
+    "statusRationale": "Version 1.6: the line's own policy page, read through the search engine's index of that official page (the page refuses automated requests), explicitly permits it, subject to its published requirements.",
+    "evidenceLevel": "official-policy",
     "sources": [
       {
-        "id": "s1",
+        "id": "v6a",
+        "url": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
+        "title": "Committal of ashes at sea (P&O Cruises)",
+        "type": "official-policy-page",
+        "quote": "There is a admin charge of £270 to conduct the scattering of ashes from our P&O Cruises ships.",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened.",
+        "otherIndexedQuotes": [
+          "committal of ashes cannot be performed on cruises of 6 nights duration or less",
+          "Latitude & Longitude"
+        ]
+      },
+      {
+        "id": "v6b",
+        "url": "https://pocruises.com/ceremonies-at-sea/faqs",
+        "title": "Celebrate at Sea FAQs (P&O Cruises)",
+        "type": "official-faq",
+        "quote": "on cruises of five nights or more",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6c",
+        "url": "https://www.pocruises.com/content/dam/po/pdfs/ceremonies-sea-shore/POC_Ceremonies_Sea_and_Shore_TCs-March2026.pdf",
+        "title": "Ceremonies Sea and Shore Terms and Conditions, March 2026 (P&O Cruises)",
+        "type": "official-pdf",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Listed in the search index; the PDF returned HTTP 403 to a direct request on 2026-11-21. Content not read."
+      },
+      {
+        "id": "r1-s1",
         "url": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
         "title": "Committal of ashes at sea",
         "type": "official-policy-page",
         "quote": "There is a admin charge of £270 to conduct the scattering of ashes from our P&O Cruises ships.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s2",
+        "id": "r1-s2",
         "url": "https://www.pocruises.com/en-au/help",
         "title": "Travel Help & Advice",
         "type": "official-faq",
         "quote": "Yes it's possible to scatter ashes from our ships at sea on cruises of five nights or more. You'll require approval from the Captain in advance of your cruise",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       },
       {
-        "id": "s3",
+        "id": "r1-s3",
         "url": "https://www.pocruises.com/en-au/login-test/scattering-test",
         "title": "Committal of ashes at sea (test URL)",
         "type": "official-policy-page",
         "quote": "The Captain or Senior Officer will accompany you to an outside area, typically a lower deck.",
         "verified": "2026-11-21",
-        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
       }
     ],
     "answers": {
+      "permitted": {
+        "answer": "Yes, with the Captain's approval in advance of the cruise.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented policy; each committal needs the Captain's approval before the cruise starts.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Required: Captain's approval in advance of the start of the cruise.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Bring the Certificate of Cremation on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Ashes in a biodegradable container, carried as hand luggage, with a certificate or equivalent proof that it is biodegradable.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Required, with proof of biodegradability.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "The ashes are lowered into the water in their container.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "privateCeremony": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "The ceremony is conducted by the Captain or a senior officer.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Admin charge of GBP 270, not reduced if elements are removed; includes pre-cruise and on-board planning, the ceremony and a certificate, with some floral and Champagne extras for up to four guests.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "On a sea day; not in protected bodies of water such as the Norwegian Fjords; minimum cruise length (see conflicts).",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Yes: latitude and longitude from the ship's log on a ceremony certificate.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "certificateConfirmation": {
+        "answer": "A ceremony certificate with the position from the ship's log.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "differsByVesselItinerary": {
+        "answer": "Yes: cruise length, sea days and protected waters.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not permitted: P&O is not permitted to scatter the ashes of pets.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "P&O does not assist with scatterings ashore; local approvals in that country would apply.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection",
+    "researchLog": [
+      "Round 3: pocruises.com committal page HTTP 403 (bot protection). pocruises.com.au now redirects to carnival.com.au (P&O Australia brand retired; utm_campaign=po-transition). web.archive.org not reachable; archived copies not attempted further (permission policy).",
+      "Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401."
+    ],
+    "previousStatus": "conditionally-permitted",
+    "round3": "reclassified-unconfirmed-official-page",
+    "previousAnswersRound1": {
       "permitted": {
         "answer": "Yes, with the Captain's approval in advance, on qualifying cruises (see conflict on minimum length).",
         "basis": "unconfirmed-official",
@@ -220,13 +412,8 @@
         ]
       }
     },
-    "wordingConfirmed": false,
-    "round2": "blocked-by-bot-protection",
-    "researchLog": [
-      "Round 3: pocruises.com committal page HTTP 403 (bot protection). pocruises.com.au now redirects to carnival.com.au (P&O Australia brand retired; utm_campaign=po-transition). web.archive.org not reachable; archived copies not attempted further (permission policy)."
-    ],
-    "previousStatus": "conditionally-permitted",
-    "round3": "reclassified-unconfirmed-official-page"
+    "evidenceMethod": "search-index-of-official-page",
+    "round16": "recovered-official-indexed"
   },
   {
     "conflicts": [],
@@ -979,9 +1166,11 @@
       "https://www.meinschiff.com/faq/service, /faq/vor-der-reise, /faq/an-und-abreise 200: no mention",
       "https://www.meinschiff.com/faq/sicherheit-gesundheit and /faq/buchung-zahlung: redirected to the FAQ index, no mention",
       "https://www.meinschiff.com/agb 200 and AGB PDF (Stand November 2026) 200: no mention of Urne, Asche, Bestattung or items overboard",
-      "web.archive.org: connection reset in this environment (not usable)"
+      "web.archive.org: connection reset in this environment (not usable)",
+      "Version 1.6: German-language domain-restricted search found no ashes page."
     ],
-    "officialContact": "Contact options listed at https://www.meinschiff.com/de/kontakt (not opened)."
+    "officialContact": "Contact options listed at https://www.meinschiff.com/de/kontakt (not opened).",
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -1160,8 +1349,10 @@
       "https://aida.de/robots.txt 403",
       "archive.org availability API: snapshot 20261101130254 exists; web.archive.org fetch reset by peer",
       "WebFetch aida.de: host not allowed in this session",
-      "Web search (German, Bordordnung Urne Asche): no AIDA policy page surfaced; search listed https://www.aida.de/kreuzfahrt/agb/bordordnung.24588.html and https://aida.de/faq/bordleben (not readable)"
-    ]
+      "Web search (German, Bordordnung Urne Asche): no AIDA policy page surfaced; search listed https://www.aida.de/kreuzfahrt/agb/bordordnung.24588.html and https://aida.de/faq/bordleben (not readable)",
+      "Version 1.6: German-language domain-restricted search of aida.de found no Seebestattung or ashes page."
+    ],
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -1346,8 +1537,10 @@
       "https://www.costacruises.com/faq.html 404",
       "https://www.costacrociere.it/condizioni-generali/condizioni-generali-valide-dal-130726.html 200: clause 10.13 environmental policy found; no ceneri",
       "https://progressive.costa.it/costa/brochure/gen-apr/brochure_2027.pdf 403",
-      "Web search (Italian, dispersione ceneri Costa): no Costa policy page"
-    ]
+      "Web search (Italian, dispersione ceneri Costa): no Costa policy page",
+      "Version 1.6: Italian-language domain-restricted search of Costa sites found no page on dispersing ashes."
+    ],
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -1715,9 +1908,11 @@
       "https://www.hl-cruises.de/flotte/ms-europa/an-bord/informationen-a-bis-z 200 and ms-europa-2 200: script-loaded",
       "https://hl-cruises.com/ships/ms-europa/on-board/information-from-a-z 404",
       "https://www.hl-cruises.com/hapag-lloyd-cruises/safety-on-board 200: no mention",
-      "Web search (German, Hapag-Lloyd Seebestattung Urne): nothing official"
+      "Web search (German, Hapag-Lloyd Seebestattung Urne): nothing official",
+      "Version 1.6: German-language domain-restricted search found no ashes page."
     ],
-    "officialContact": "Kontaktcenter 040 307030-555 (shown on https://www.hl-cruises.de pages)."
+    "officialContact": "Kontaktcenter 040 307030-555 (shown on https://www.hl-cruises.de pages).",
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -1908,9 +2103,11 @@
       "https://www.hurtigruten.com/en/help/medical-safety 200: no mention",
       "https://www.hurtigruten.com/en/help/port-to-port 200: no mention (pets mentioned only for live animals)",
       "https://www.hurtigruten.com/en/help/further-information/general-terms-and-conditions 200 and linked 2023 GTC PDF 200: no mention",
-      "Web search (Norwegian askespredning Hurtigruten; English): no Hurtigruten page"
+      "Web search (Norwegian askespredning Hurtigruten; English): no Hurtigruten page",
+      "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
     ],
-    "officialContact": "UK phone shown on the English help pages: +44 208 131 4058 (tel link on https://www.hurtigruten.com/en/help/life-on-board)."
+    "officialContact": "UK phone shown on the English help pages: +44 208 131 4058 (tel link on https://www.hurtigruten.com/en/help/life-on-board).",
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -2080,9 +2277,11 @@
       "https://www.havilavoyages.com/sitemap.xml 200: 944 URLs, none about ashes/memorials",
       "https://www.havilavoyages.com/en/faq and /nb/faq 200: no mention",
       "https://www.havilavoyages.com/en/terms 200 and /de/reisebedingungen 200, plus 3 terms PDFs on brand.havilavoyages.com 200: no mention",
-      "Web search (askespredning Havila): nothing relevant"
+      "Web search (askespredning Havila): nothing relevant",
+      "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
     ],
-    "officialContact": "Phone: +47 70 00 70 71 (shown on https://www.havilavoyages.com/en/faq)."
+    "officialContact": "Phone: +47 70 00 70 71 (shown on https://www.havilavoyages.com/en/faq).",
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -2245,9 +2444,11 @@
       "https://www.ponant.com/sitemap.xml 200: index of dynamic sitemaps, no memorial page found",
       "https://www.ponant.com/faq 200: French FAQ readable, no cendres/dispersion",
       "https://www.ponant.com/en/faq: redirected to the homepage",
-      "Web search (French cendres dispersion Ponant; English): no Ponant page"
+      "Web search (French cendres dispersion Ponant; English): no Ponant page",
+      "Version 1.6: ponant.com blocks the search engine's crawler, so no indexed content is available; direct site reading was done in round 3 (FAQ silent)."
     ],
-    "officialContact": "+33 4 91 36 41 65 (tel link on https://www.ponant.com/faq)."
+    "officialContact": "+33 4 91 36 41 65 (tel link on https://www.ponant.com/faq).",
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],
@@ -2717,8 +2918,10 @@
       "https://travel.saga.co.uk/robots.txt 403",
       "https://travel.saga.co.uk/cruises/faqs.aspx 403",
       "WebFetch travel.saga.co.uk: host not allowed in this session",
-      "Web search restricted to saga.co.uk/travel.saga.co.uk: only blog pages (first time on board, activities), no ashes wording in the result summaries"
-    ]
+      "Web search restricted to saga.co.uk/travel.saga.co.uk: only blog pages (first time on board, activities), no ashes wording in the result summaries",
+      "Version 1.6: domain-restricted search of saga.co.uk found no cruise ashes policy (only a general bereavement guide)."
+    ],
+    "round16": "searched-index-no-policy"
   },
   {
     "conflicts": [],

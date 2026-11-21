@@ -1606,8 +1606,10 @@
       "https://scenic.cruises/US/en-US/plan-your-journey/faqs/river 200 (River Cruise FAQs, about 19 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
       "https://www.scenic.com.au/terms-conditions/scenic-general-terms-and-conditions -> scenic.cruises/AU/en-GB/... 200 (about 13 KB text, partly script-rendered): no match",
       "https://www.scenic.com.au/terms-conditions/europe-river-cruise2025 -> scenic.cruises/AU/en-GB/terms-conditions 200: no match",
-      "Web search 'site:scenic.com.au OR site:scenic.cruises ... ashes scatter': only terms and brochures, no ashes text"
-    ]
+      "Web search 'site:scenic.com.au OR site:scenic.cruises ... ashes scatter': only terms and brochures, no ashes text",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
+    ],
+    "round16": "searched-index-no-policy"
   },
   {
     "status": "unverified",
@@ -1760,8 +1762,10 @@
       "https://www.emeraldcruises.com/faqs: redirected to https://emerald.cruises/US/en-US (homepage, 200): no match",
       "https://emerald.cruises/US/en-US/plan-your-journey/faqs and /river/plan-your-journey/faqs: 404",
       "Shared Scenic Group terms (scenic.cruises AU general terms, which cover Emerald brand journeys) 200: no match",
-      "Web search (site:emerald.cruises ... ashes scatter): no Emerald page"
-    ]
+      "Web search (site:emerald.cruises ... ashes scatter): no Emerald page",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
+    ],
+    "round16": "searched-index-no-policy"
   },
   {
     "status": "unverified",

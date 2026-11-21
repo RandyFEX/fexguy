@@ -7,6 +7,7 @@ def short(s, n=140):
     s = cell(s); return s if len(s) <= n else s[:n-3].rsplit(" ", 1)[0] + "..."
 def check(note):
     n = (note or "").lower()
+    if n.startswith("version 1.6: read through the search engine's index") or n.startswith("version 1.6: from the search engine's indexed copy"): return "Read via search-engine index of the official page (V1.6)"
     if re.search(r"opened directly( on)? 2026-11-21|read directly|re-opened directly|opened directly \(http 200", n): return "Read directly (rounds 2-3)"
     if (n.startswith("round 2") or n.startswith("round 3")) and ("bot protection" in n or "refused" in n or "401" in n): return "Blocked; search summary only"
     if ("fetch tool" in n and "read on 2026-11-21" in n) or "read via webfetch" in n: return "Read via fetch tool"
@@ -43,7 +44,7 @@ extra = [
  ("https://www.epa.gov/sites/default/files/2019-05/documents/burial_at_sea_reporting_tool_factsheet_may_13_2019.pdf", "government", "EPA reporting tool: who reports, what is asked", "2026-11-21", "opened directly on 2026-11-21"),
 ]
 for u, t, s, v, n in extra: add(u, t, s, v, n)
-order = ["Read directly (rounds 2-3)", "Read via fetch tool", "Read directly (eCFR, round 1)", "Blocked; search summary only", "Rounds 2-3: not found or not readable", "Search summary only (round 1)"]
+order = ["Read directly (rounds 2-3)", "Read via search-engine index of the official page (V1.6)", "Read via fetch tool", "Read directly (eCFR, round 1)", "Blocked; search summary only", "Rounds 2-3: not found or not readable", "Search summary only (round 1)"]
 L = ["# Sources: cruise ship ash scattering guide", "",
      "Generated from the research JSON by `tools/build_sources.py`. Every URL",
      "recorded in the research, with its type, what it supports, the date it",
