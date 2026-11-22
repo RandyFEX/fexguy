@@ -696,7 +696,9 @@ const lawRegions = [
     border-radius: var(--radius);
     overflow-wrap: anywhere;
   }
-  .prose > h3[id^='law-'] {
+  /* Version 1.13: the cruise-line profile headings use the same badge. */
+  .prose > h3[id^='law-'],
+  .cra-profile > h3[id^='op-'] {
     width: fit-content;
     max-width: 100%;
     background: var(--color-primary);
