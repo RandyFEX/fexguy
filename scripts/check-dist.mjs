@@ -866,8 +866,8 @@ const CTA_TEXT = 'SEE PRICES NOW';
 // The pricing module's green header reads Randy's V14.1 wording.
 const CTA_MODULE_TEXT = 'GET 3 RATES NOW';
 // Every orange quote button (hero, pre-footer, article and page buttons) reads
-// Randy's V14.8 wording; the green menu button and the /roku/ top link keep CTA_TEXT.
-const CTA_ORANGE_TEXT = 'GET FREE RATES NOW';
+// Randy's V14.9 wording; the green menu button and the /roku/ top link keep CTA_TEXT.
+const CTA_ORANGE_TEXT = 'GET 3 RATES NOW';
 const CTA_MENU_CLASS = /\b(?:nav__quote|nav__top-link)\b/;
 // The funeral cost map's CTA reads Randy's own wording for that page (Map V3.0, November 2026).
 // The state-regulated investigation's first closing card reads Randy's own wording (V6.7, November 2026), at its URL and on its preview copy.
