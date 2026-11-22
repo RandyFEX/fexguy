@@ -49,11 +49,12 @@ for (const o of established) {
   assert.ok(html.includes(`id="op-${o.id}"`), `profile for ${o.name}`);
   assert.ok(html.includes(`href="#op-${o.id}"`), `comparison row for ${o.name}`);
 }
-// Version 1.10: every line links to its official customer-service page or homepage, with the exact labels.
-const service = unverified.filter((u) => u.contactKind === 'service');
-const website = unverified.filter((u) => u.contactKind === 'website');
-assert.equal((html.match(/class="cra-row__link"[^>]*>\s*Contact customer service</g) ?? []).length, service.length, 'Contact customer service links');
-assert.equal((html.match(/class="cra-row__link"[^>]*>\s*Visit official website</g) ?? []).length, website.length, 'Visit official website links');
+// Version 1.11: every directory link reads exactly "Visit Official Website".
+const linked = unverified.filter((u) => u.contactUrl);
+const labels = [...html.matchAll(/<a class="cra-row__link"[^>]*>([^<]*)</g)].map((m) => m[1].trim());
+assert.equal(labels.length, linked.length, 'one link per linked line');
+assert.ok(labels.every((l) => l === 'Visit Official Website'), `labels: ${[...new Set(labels)].join(', ')}`);
+assert.ok(!/Visit official website/.test(html), 'old lowercase label gone');
 assert.deepEqual(unverified.filter((u) => !u.contactUrl).map((u) => u.id).sort(), ['albatros-expeditions', 'heritage-line'], 'only the reported exceptions lack a link');
 assert.ok(!/No contact page recorded|Official contact information/.test(html), 'old labels gone');
 for (const o of established) assert.ok(html.includes(`href="${o.policyUrl.replace(/&/g, '&amp;')}"`), `policy link kept for ${o.name}`);
