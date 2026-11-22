@@ -137,7 +137,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const { ctx, page } = await newPage(opts);
     await page.goto(`${srv.base}/free-quote/`);
     await page.waitForSelector('[data-step="1"]:not([hidden])');
-    assert((await page.textContent('#qf-s1')).trim() === "I'm shopping for burial or life insurance for a...", 'first screen');
+    assert((await page.textContent('#qf-s1')).trim() === 'Show me 3 rates for a...', 'first screen');
     const ev = await page.evaluate(() => window.__ev.find((e) => e.name === 'quote_funnel_entry'));
     assert(ev && ev.entryType === 'direct' && !ev.entryPath, `entry event ${JSON.stringify(ev)}`);
     await ctx.close();
