@@ -23,9 +23,8 @@ import { site } from '@/config/site';
 import { footerDisclaimer } from '@/lib/footer-notes';
 
 const phone = PAGE_PHONES.default;
-// V1.5: Randy's list of 21 insurance companies, in his order. Only companies
-// with an authentic logo file in the project are shown; the others are listed
-// (commented out) until their official logo files are added.
+// Randy's list of 21 insurance companies (V1.5, Senior Life for Oxford Life in
+// V1.9), in his order, each with its authentic logo.
 const carrierLogos = [
   { name: 'CVS Health / Aetna', src: '/images/carriers/cvs-aetna-logo.png', w: 325, h: 44 },
   { name: 'Aflac', src: '/images/carriers/wall/aflac.png', w: 104, h: 33 },
@@ -38,7 +37,7 @@ const carrierLogos = [
   { name: 'Foresters Financial', src: '/images/carriers/wall/foresters.svg', w: 144, h: 55 },
   // Royal Neighbors: used on Randy's instruction; Royal Neighbors' own approval is not on record.
   { name: 'Royal Neighbors of America', src: '/images/carriers/wall/royal-neighbors.png', w: 129, h: 128 },
-  // Sentinel Security Life: logo file needed (the saved file is cropped mid-word).
+  { name: 'Sentinel Security Life', src: '/images/carriers/wall/sentinel-security-life.png', w: 423, h: 300 },
   { name: 'Guarantee Trust Life', src: '/images/carriers/wall/guarantee-trust-life.png', w: 561, h: 120 },
   { name: 'CICA Life', src: '/images/carriers/wall/cica-life.png', w: 398, h: 100 },
   { name: 'American Amicable', src: '/images/carriers/wall/american-amicable.png', w: 559, h: 188 },
@@ -47,7 +46,9 @@ const carrierLogos = [
   { name: 'Colonial Penn', src: '/images/carriers/wall/colonial-penn.png', w: 298, h: 98 },
   { name: 'American Home Life', src: '/images/carriers/wall/american-home-life.png', w: 192, h: 185 },
   { name: 'Lincoln Heritage', src: '/images/carriers/wall/lincoln-heritage.svg', w: 373, h: 59 },
-  // Security National Life, Senior Life (replaces Oxford Life, Randy V1.9): logo files needed.
+  { name: 'Security National Life', src: '/images/carriers/wall/security-national-life.png', w: 676, h: 196 },
+  // Senior Life replaces Oxford Life in the approved list (Randy, V1.9).
+  { name: 'Senior Life', src: '/images/carriers/wall/senior-life.png', w: 534, h: 268 },
 ];
 // Each logo gets about the same visible area (proportions kept): width =
 // sqrt(area x aspect ratio), capped by the row height.
