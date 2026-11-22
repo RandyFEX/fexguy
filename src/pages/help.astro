@@ -243,7 +243,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     --color-focus-inner: var(--color-text);
     background: var(--color-primary);
     color: #ffffff;
-    padding-block: var(--space-8);
+    /* V1.8 spacing: less below the phone number than above the badge,
+       because the number's line height already leaves room under its digits. */
+    padding-block: var(--space-6) var(--space-3);
   }
   .hp-hero__inner {
     max-width: 40rem;
@@ -307,7 +309,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
 
   /* Cream band: the white 4-IN-1 Commitment card, then the second call CTA. */
   .hp-commit {
-    padding-block: var(--space-8);
+    padding-block: var(--space-6) var(--space-8);
     background: var(--home-cream);
   }
   .hp-commit__card {
@@ -486,10 +488,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   }
   @media (min-width: 64rem) {
     .hp-hero {
-      padding-block: var(--space-12);
+      padding-block: var(--space-8) var(--space-6);
     }
     .hp-commit {
-      padding-block: var(--space-12);
+      padding-block: var(--space-8) var(--space-12);
     }
   }
 </style>
