@@ -71,7 +71,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 // also with reduced motion (the global 0.01ms transition must not skew the fit).
 for (const [n, o] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['iphone13', devices['iPhone 13']], ['320', { viewport: { width: 320, height: 640 }, isMobile: true, hasTouch: true }]])
   for (const motion of ['no-preference', 'reduce'])
-    await check(`${n} (${motion} motion): the module header SEE 3 RATES NOW fits on one line`, async () => {
+    await check(`${n} (${motion} motion): the module header GET 3 RATES NOW fits on one line`, async () => {
       const { ctx, page } = await newPage({ ...o, reducedMotion: motion });
       await page.goto(`${srv.base}${ARTICLE}`);
       await page.evaluate(() => document.fonts.ready);
@@ -80,7 +80,7 @@ for (const [n, o] of [['desktop', { viewport: { width: 1440, height: 900 } }], [
         const cs = getComputedStyle(t);
         return { text: t.textContent, fs: parseFloat(cs.fontSize), fits: t.scrollWidth <= t.clientWidth + 1, lines: Math.round(t.getBoundingClientRect().height / parseFloat(cs.lineHeight)), color: cs.color, weight: cs.fontWeight };
       });
-      assert(r.text === 'SEE 3 RATES NOW' && r.fits && r.lines === 1 && r.fs >= 26 && r.fs <= 40 && r.color === 'rgb(255, 235, 59)' && r.weight === '900', JSON.stringify(r));
+      assert(r.text === 'GET 3 RATES NOW' && r.fits && r.lines === 1 && r.fs >= 26 && r.fs <= 40 && r.color === 'rgb(255, 235, 59)' && r.weight === '900', JSON.stringify(r));
       await ctx.close();
       return `${r.fs}px`;
     });
@@ -162,7 +162,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
           note: b.querySelector('.gp__note').textContent.trim(), noCall: !b.querySelector('[data-gp-call], a[href^="tel:"]'), noteLast: b.querySelector('.gp__body').lastElementChild === b.querySelector('.gp__note'),
           prev: prev?.tagName ?? null, next: next?.tagName ?? null };
       });
-      assert(t.title === 'SEE 3 RATES NOW' && t.q === 'Show me 3 rates for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(t.title === 'GET 3 RATES NOW' && t.q === 'Show me 3 rates for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
       // V14.4: no call button in the module; the note is the last element.
       assert(t.note === '3 rates in 30 seconds.' && t.noCall && t.noteLast, `module note / no call button ${JSON.stringify(t)}`);

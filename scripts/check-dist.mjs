@@ -864,7 +864,7 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
 // (no button class), unless their text is an old pricing label.
 const CTA_TEXT = 'SEE PRICES NOW';
 // The pricing module's green header reads Randy's V14.1 wording.
-const CTA_MODULE_TEXT = 'SEE 3 RATES NOW';
+const CTA_MODULE_TEXT = 'GET 3 RATES NOW';
 // The homepage hero button reads Randy's V14.5 wording.
 const CTA_HERO_TEXT = 'GET 3 RATES NOW';
 // The funeral cost map's CTA reads Randy's own wording for that page (Map V3.0, November 2026).
