@@ -19,7 +19,6 @@
 // view while the reader scrolls, within its sidebar column; when the screen is
 // too short for it, it scrolls inside itself instead of being cut off.
 import GenderChoice from '@/components/quote/GenderChoice.astro';
-import { HEADER_PHONE_ICON_PATH, PAGE_PHONES } from '@/config/phones';
 
 interface Props {
   placement?: 'aside' | 'article-aside' | 'inline';
@@ -27,7 +26,6 @@ interface Props {
 const { placement = 'aside' } = Astro.props;
 const id = placement === 'article-aside' ? 'quote-aside' : 'quote';
 const titleId = `${id}-title`;
-const phone = PAGE_PHONES.default;
 ---
 
 <div
@@ -42,12 +40,8 @@ const phone = PAGE_PHONES.default;
   <div class="gp__body">
     <p class="gp__q">Show me 3 rates for a...</p>
     <GenderChoice as="link" />
-    <p class="gp__note">Your Burial Insurance Quote Starts Here. No Agent Required. 3 Rates in 30 Seconds.</p>
-    {/* v5.9 (Randy): a direct call option under the choices; a tap is recorded, never a completed call. */}
-    <a class="btn gp__call" href={phone.href} data-gp-call>
-      <svg aria-hidden="true" width="22" height="22" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
-      <span class="gp__call-text"><span class="gp__call-label">CALL NOW</span> <span class="gp__call-number">{phone.display}</span></span>
-    </a>
+    <p class="gp__note">3 rates in 30 seconds.</p>
+    {/* V14.4 (Randy): the v5.9 CALL NOW button under the choices was removed. */}
   </div>
 </div>
 
