@@ -23,16 +23,25 @@ import { site } from '@/config/site';
 import { footerDisclaimer } from '@/lib/footer-notes';
 
 const phone = PAGE_PHONES.default;
-// V1.3: carriers listed on /forms/ (Policy Support) with an authentic logo
-// already in the project; the others have no logo file here yet.
+// V1.5: Randy's list of 21 insurance companies, in his order. Only companies
+// with an authentic logo file in the project are shown; the others are listed
+// (commented out) until their official logo files are added.
 const carrierLogos = [
-  { name: 'Aetna', src: '/images/carriers/cvs-aetna-logo.png', w: 325, h: 44 },
+  { name: 'CVS Health / Aetna', src: '/images/carriers/cvs-aetna-logo.png', w: 325, h: 44 },
   { name: 'Aflac', src: '/images/carriers/wall/aflac.png', w: 104, h: 33 },
   { name: 'Family Benefit Life', src: '/images/carriers/wall/family-benefit-life.png', w: 480, h: 89 },
   { name: 'Gerber Life', src: '/images/carriers/wall/gerber-life.png', w: 211, h: 236 },
   { name: 'Liberty Bankers Life', src: '/wp-content/uploads/2019/09/Liberty-Bankers-Life-Logo-250-Width.png', w: 400, h: 100 },
   { name: 'Mutual of Omaha', src: '/images/carriers/wall/mutual-of-omaha.png', w: 299, h: 112 },
   { name: 'Trinity Life', src: '/images/carriers/wall/trinity-life.png', w: 480, h: 84 },
+  { name: 'Transamerica', src: '/images/carriers/wall/transamerica.svg', w: 147, h: 26 },
+  { name: 'Foresters Financial', src: '/images/carriers/wall/foresters.svg', w: 144, h: 55 },
+  // Royal Neighbors of America, Sentinel Security Life, Guarantee Trust Life (GTL),
+  // CICA Life, American Amicable, Prosperity Life, Americo: logo files needed.
+  { name: 'Colonial Penn', src: '/images/carriers/wall/colonial-penn.png', w: 298, h: 98 },
+  // American Home Life: logo file needed.
+  { name: 'Lincoln Heritage', src: '/images/carriers/wall/lincoln-heritage.svg', w: 373, h: 59 },
+  // Security National Life, Oxford Life: logo files needed.
 ];
 // Each logo gets about the same visible area (proportions kept): width =
 // sqrt(area x aspect ratio), capped by the row height.
@@ -92,13 +101,19 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </svg>
           <span>Your Request Was Received!</span>
         </p>
-        <h1 class="hp-hero__title" id="hp-title">Get Your Life Insurance Answers Now.</h1>
-        <p class="hp-hero__lede hp-hero__lede--first">
-          We kept it simple by showing you just three options, but we guarantee you can qualify for at least one of those plans.
-        </p>
-        <p class="hp-hero__lede">
-          With that said, it's always smart to let us check your actual rates through the other 20 to 30 companies that we can get pricing from.
-        </p>
+        <h1 class="hp-hero__title" id="hp-title">We Just Showed You Three Options.</h1>
+        <p class="hp-hero__lede">Now Let Us Price-Shop 20+ More Insurance Companies.</p>
+        {/* V1.5 (Randy): the insurance company logo panel, between the
+            headline and the call CTA; no heading or disclaimer. */}
+        <ul class="hp-logos" role="list" aria-label="Insurance companies">
+          {
+            carrierLogos.map((l) => (
+              <li class="hp-logos__item">
+                <img src={l.src} alt={l.name} width={l.w} height={l.h} loading="lazy" decoding="async" style={`--w-sm:${logoWidth(l, 900, 30)}px;--w-lg:${logoWidth(l, 1500, 40)}px`} />
+              </li>
+            ))
+          }
+        </ul>
         <div class="hp-call">
           <a class="btn hp-call__btn" href={phone.href}>CALL FUNERAL FUNDS NOW</a>
           <a class="hp-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
@@ -124,16 +139,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             }
           </ul>
         </div>
-        {/* V1.3 (Randy): carriers from the /forms/ Policy Support list that have an authentic logo file in the project. */}
-        <ul class="hp-logos" role="list" aria-label="Insurance companies">
-          {
-            carrierLogos.map((l) => (
-              <li class="hp-logos__item">
-                <img src={l.src} alt={l.name} width={l.w} height={l.h} loading="lazy" decoding="async" style={`--w-sm:${logoWidth(l, 1100, 40)}px;--w-lg:${logoWidth(l, 1700, 44)}px`} />
-              </li>
-            ))
-          }
-        </ul>
         <div class="hp-call hp-call--bottom">
           <a class="hp-call__number hp-call__number--green" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
           <a class="btn hp-call__btn" href={phone.href}>CALL FUNERAL FUNDS NOW</a>
@@ -308,34 +313,30 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     margin-top: 0.1em;
     color: var(--color-primary);
   }
-  .hp-hero__lede--first {
-    margin-bottom: var(--space-3);
-  }
-  /* Carrier logos (V1.3): a compact grid between the Commitment card and the
-     bottom call CTA; no cards or borders, original proportions; multiply
-     blends the logos' white backgrounds into the cream band. */
+  /* Carrier logo panel (V1.5): a compact white panel in the green hero,
+     between the supporting sentence and the call CTA. 7 across from 48rem,
+     4 on phones (3 under 22rem); rows centered; no cards or borders; each
+     logo keeps its proportions and gets about the same visible area. */
   .hp-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--space-3) var(--space-4);
-    max-width: 60rem;
-    margin: var(--space-6) auto 0;
-    padding: 0;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    max-width: 52rem;
+    margin: calc(-1 * var(--space-3)) auto var(--space-6);
+    padding: var(--space-3);
     list-style: none;
-  }
-  @media (min-width: 48rem) {
-    .hp-logos .hp-logos__item { flex-basis: calc((100% - 6 * var(--space-4)) / 7); }
-    .hp-logos .hp-logos__item { height: 2.75rem; }
-    .hp-logos .hp-logos__item img { width: var(--w-lg); }
+    background: #ffffff;
+    border-radius: var(--home-radius);
   }
   .hp-logos__item {
-    flex: 0 0 calc((100% - 2 * var(--space-4)) / 3);
+    flex: 0 0 calc((100% - 3 * var(--space-3)) / 4);
     min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
+    height: 2rem;
   }
   .hp-logos__item img {
     display: block;
@@ -343,7 +344,14 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     height: auto;
     max-width: 100%;
     object-fit: contain;
-    mix-blend-mode: multiply;
+  }
+  @media (max-width: 21.99rem) {
+    .hp-logos .hp-logos__item { flex-basis: calc((100% - 2 * var(--space-3)) / 3); }
+  }
+  @media (min-width: 48rem) {
+    .hp-logos { padding: var(--space-3) var(--space-4); }
+    .hp-logos .hp-logos__item { flex-basis: calc((100% - 6 * var(--space-3)) / 7); height: 2.75rem; }
+    .hp-logos .hp-logos__item img { width: var(--w-lg); }
   }
   /* Second call CTA under the Commitment card (V2.0): the hero's number
      (in green on cream) and orange button, centered, same sizes. */
