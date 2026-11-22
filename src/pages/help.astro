@@ -124,7 +124,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <div class="hp-call">
           <a class="btn hp-call__btn" href={phone.href}>CALL FUNERAL FUNDS NOW</a>
           <a class="hp-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
-          <p class="hp-call__note">Speak directly with Randy, your licensed independent agent.</p>
         </div>
       </div>
     </section>
@@ -157,6 +156,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             </ul>
           </div>
         </div>
+        <div class="hp-call hp-call--bottom">
+          <a class="hp-call__number hp-call__number--green" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+          <a class="btn hp-call__btn" href={phone.href}>CALL FUNERAL FUNDS NOW</a>
+        </div>
         <div class="hp-commit__card">
           <h2 class="hp-commit__title" id="hp-commit-title">4-IN-1 FUNERAL FUNDS COMMITMENT</h2>
           <ul class="hp-commit__list" role="list">
@@ -171,10 +174,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
               ))
             }
           </ul>
-        </div>
-        <div class="hp-call hp-call--bottom">
-          <a class="hp-call__number hp-call__number--green" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
-          <a class="btn hp-call__btn" href={phone.href}>CALL FUNERAL FUNDS NOW</a>
         </div>
       </div>
     </section>
@@ -426,8 +425,13 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   }
   /* Second call CTA under the Commitment card (V2.0): the hero's number
      (in green on cream) and orange button, centered, same sizes. */
-  .hp-call--bottom {
+  /* V1.11: the call CTA follows Randy's block (whose bottom margin sets the
+     gap); the 4-IN-1 card comes after it. */
+  .hp-call--bottom + .hp-commit__card {
     margin-top: var(--space-6);
+  }
+  .hp-call--bottom {
+    margin-top: 0;
     text-align: center;
   }
   .hp-call__number--green {
