@@ -686,6 +686,25 @@ const lawRegions = [
   .cra :global(.toc) {
     margin-block: var(--space-6);
   }
+  /* Version 1.12: main section headings as full-width bars, regional law
+     subsection headings as compact badges. Text, size, weight and IDs unchanged. */
+  .prose > h2[id] {
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    overflow-wrap: anywhere;
+  }
+  .prose > h3[id^='law-'] {
+    width: fit-content;
+    max-width: 100%;
+    background: var(--color-primary);
+    color: #fff;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius);
+    overflow-wrap: anywhere;
+  }
   .cra__flag {
     font-size: 0.875rem;
     color: var(--color-text-muted);
