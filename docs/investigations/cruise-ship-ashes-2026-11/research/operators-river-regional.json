@@ -167,7 +167,13 @@
       "Web search 'site:amawaterways.com ashes OR \"cremated remains\" OR urn': no amawaterways.com result",
       "Web search 'river cruise \"ashes\" scatter policy AmaWaterways OR Avalon ...': no operator policy; only ocean lines and trade articles",
       "Web search (Cruise Critic river boards, Scenic/Emerald/APT/AmaWaterways): no AmaWaterways statement"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.amawaterways.com/help/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -324,7 +330,13 @@
       "web.archive.org snapshot of /faq/ and archive.org availability API: connection failed through the proxy (tunnel closed) twice; no archived copy read",
       "WebFetch of /faq/: host not reachable from the WebFetch tool",
       "Web search '\"Avalon Waterways\" ashes scattered': no Avalon page or statement; results were ocean lines and forums"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.avalonwaterways.com/contact/",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -492,7 +504,13 @@
       "https://www.uniworld.com/us/terms-and-conditions 200 (about 33 KB text): no match",
       "Web search 'site:uniworld.com OR site:tauck.com \"ashes\" scatter loved one': no Uniworld page",
       "Web search '\"Uniworld\" ashes scatter river cruise': brochures and resellers only, no ashes text"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.uniworld.com/us/about-uniworld/contact",
+      "method": "linked from the official homepage (page itself returns 403 to automated requests)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -646,7 +664,13 @@
       "https://www.tauck.com/terms-and-conditions 200 (about 67 KB text): no match",
       "Web search 'site:uniworld.com OR site:tauck.com \"ashes\" scatter loved one': no Tauck page",
       "Web search '\"Tauck\" scatter ashes cruise husband': forums about ocean lines only, no Tauck mention"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.tauck.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -811,7 +835,13 @@
       "https://www.rivieratravel.co.uk/booking-conditions and /help-centre/frequently-asked-questions: same redirect to the US homepage",
       "https://www.rivieratravel.com/help-centre/european-river-cruise-faqs 403 (bot protection; not bypassed)",
       "Web search '\"Riviera Travel\" ashes river cruise scatter': only brochures and other operators (Thames, Mersey Ferries, York City Cruises), no Riviera statement"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.rivieratravel.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -970,7 +1000,13 @@
       "https://www.croisieurope.com/ 200: Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial|cendres|defunt: no match",
       "https://www.croisieuroperivercruises.com/faq 404",
       "Web search 'CroisiEurope cendres defunt dispersion croisiere fluviale': no CroisiEurope text on ashes; only environment pages and brochures"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.croisieurope.com/information/contacter-croisieurope",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -1141,7 +1177,13 @@
       "https://www.a-rosa.de/mein-a-rosa/a-rosa-bordinformationen.html and /kontakt/faq.html: 404 (guessed German URLs)",
       "Web search 'Flusskreuzfahrt Urne Asche verstreuen erlaubt nicko A-ROSA': A-ROSA catalogues, AGB and FAQ only; no Urne/Asche text; separate news on Rhineland-Palatinate river burials (not operator-related)"
     ],
-    "officialContact": "A-ROSA phone +49 381 2026001 (shown on the on-board information page)"
+    "officialContact": "A-ROSA phone +49 381 2026001 (shown on the on-board information page)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.arosa-cruises.com/company/contact.html",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -1451,7 +1493,13 @@
       "https://www.aptouring.com/en-au/faqs, /en-au/help/faqs, /en-au/frequently-asked-questions: 404 (no FAQ URL found)",
       "Web search 'site:scenic.com.au OR site:scenic.cruises OR site:emerald.cruises OR site:aptouring.com ashes scatter': no aptouring.com result",
       "Travelmarvel site not checked separately"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.aptouring.com/en-us/connect-with-us/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -2236,7 +2284,13 @@
       "https://www.sanctuaryretreats.com/ redirected to https://www.abercrombiekent.com/sanctuary 200 (Sanctuary is presented under Abercrombie & Kent): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match (only 'wake up' in an unrelated story)",
       "Web search 'Mekong river cruise scatter ashes Pandaw OR \"Heritage Line\" OR \"Aqua Mekong\" OR Sanctuary': nothing for Sanctuary",
       "Nile legal context (Law 48 of 1982; FCDO: cremation not available in Egypt) is in law-inland-waterways.json"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.abercrombiekent.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -2389,7 +2443,13 @@
     "researchLog": [
       "https://www.aquaexpeditions.com/faq/ and /faqs/: 404 (no FAQ URL found)",
       "Web search 'Mekong river cruise scatter ashes Pandaw OR \"Heritage Line\" OR \"Aqua Mekong\" OR Sanctuary': itinerary pages only"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.aquaexpeditions.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -2541,7 +2601,13 @@
     "researchLog": [
       "https://www.heritagelinecruise.com/faq and https://heritagelinecruise.com/faqs/: connection failed (no response)",
       "Web search (Mekong group query): only a Heritage Line itinerary listing, nothing on ashes"
-    ]
+    ],
+    "officialLinks": {
+      "kind": null,
+      "url": null,
+      "method": "heritagelinecruise.com did not respond and has no indexed pages; no verifiable official website.",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -2695,7 +2761,13 @@
       "https://www.pandaw.com/faq 200 (about 12 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
       "https://www.pandaw.com/terms-and-conditions 404",
       "Web search (Mekong group query): Pandaw itinerary PDFs and 'life onboard' page in results; no ashes text"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.pandaw.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -3012,7 +3084,13 @@
       "https://www.captaincook.com.au/faqs and /sitemap.xml 403",
       "archive.org availability API: connection failed through the proxy; no archived copy read",
       "Web search 'Captain Cook Cruises OR \"Murray Princess\" ashes scattering memorial cruise': no Captain Cook statement; other Australian operators (Wildlife Coast Cruises) advertise memorial cruises, which says nothing about Captain Cook"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.captaincook.com.au/contact-us/",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -3165,7 +3243,13 @@
       "https://www.murrayprincess.com.au/ 200: no match",
       "Web search (Captain Cook / Murray Princess memorial query): only an Anzac Day cruise news page, unrelated to ashes"
     ],
-    "officialContact": "Contact page: https://www.murrayprincess.com.au/contact/ (linked from the official FAQ)"
+    "officialContact": "Contact page: https://www.murrayprincess.com.au/contact/ (linked from the official FAQ)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.murrayprincess.com.au/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",
@@ -3330,7 +3414,13 @@
       "https://mp.australis.com/mp/wp-content/uploads/2022/07/Brochure-23-24ENG-1.pdf 200 (brochure, about 15 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
       "https://www.australis.com/en/faq/ 404",
       "No search spent on Australis this round"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.australis.com/",
+      "method": "direct (Randy-supplied)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "status": "unverified",

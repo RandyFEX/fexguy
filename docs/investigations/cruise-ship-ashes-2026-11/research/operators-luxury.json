@@ -233,7 +233,13 @@
       "Version 1.6: domain-restricted search of Viking ocean, river and regional sites found only general FAQ pages with no mention of ashes."
     ],
     "officialContact": "Viking reservations 1-800-304-9616 (official FAQ 'Call Viking'); Viking 1-877-668-4546 (FAQ, for booked guests' requests)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.vikingcruises.com/contact-us/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "cunard",
@@ -874,7 +880,13 @@
       "Version 1.6: domain-restricted search of oceaniacruises.com found no ashes page."
     ],
     "officialContact": "Not captured: official site blocked (HTTP 403).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.oceaniacruises.com/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "regent-seven-seas-cruises",
@@ -1048,7 +1060,13 @@
       "Version 1.6: domain-restricted search of rssc.com found no ashes page."
     ],
     "officialContact": "Not captured: official site blocked (HTTP 403).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.rssc.com/about/contact",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "seabourn",
@@ -1250,7 +1268,13 @@
       "Version 1.6: domain-restricted search of seabourn.com found no ashes page."
     ],
     "officialContact": "Seabourn +1 800-442-4448 (official site header)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.seabourn.com/en/us/about/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "silversea",
@@ -1450,7 +1474,13 @@
       "Version 1.6: domain-restricted search of silversea.com found no ashes page."
     ],
     "officialContact": "Not captured from the pages read (the FAQ page's phone link rendered as tel:undefined).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.silversea.com/other-resources/contact-us.html",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "azamara",
@@ -1672,7 +1702,13 @@
       "Version 1.6: domain-restricted search of azamara.com found no ashes page."
     ],
     "officialContact": "Azamara special requests: SpecialRequests@Azamara.com (official FAQ); phone 1-855-292-6272 (official FAQ)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.azamara.com/about-azamara/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "explora-journeys",
@@ -1894,7 +1930,13 @@
       "WebSearch 'Explora Journeys scattering ashes at sea': no Explora page returned",
       "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
     ],
-    "officialContact": "contact@explorajourneys.com (official FAQ)"
+    "officialContact": "contact@explorajourneys.com (official FAQ)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://explorajourneys.com/us/en/my-explora/support---contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "crystal",
@@ -2269,7 +2311,13 @@
       "Version 1.6: domain-restricted search of windstarcruises.com found no ashes page."
     ],
     "officialContact": "Windstar 1.800.258.7245 (official site header)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.windstarcruises.com/our-company/contact-us/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "seadream-yacht-club",
@@ -2463,7 +2511,13 @@
       "https://seadream.com/lifestyle/celebrations 200: no memorial service",
       "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
     ],
-    "officialContact": "SeaDream +1 800-707-4911 (official FAQ page)"
+    "officialContact": "SeaDream +1 800-707-4911 (official FAQ page)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://seadream.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "ritz-carlton-yacht-collection",
@@ -2658,7 +2712,13 @@
       "WebSearch 'Ritz-Carlton Yacht Collection FAQ prohibited items ashes': only the FAQ/static pages above; no ashes policy",
       "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
     ],
-    "officialContact": "Special Services: special.services@ritz-carltonyachtcollection.com (official FAQ); 1-888-838-4867 (official FAQ)"
+    "officialContact": "Special Services: special.services@ritz-carltonyachtcollection.com (official FAQ); 1-888-838-4867 (official FAQ)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.ritzcarltonyachtcollection.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "four-seasons-yachts",
@@ -2843,7 +2903,13 @@
       "WebSearch 'Four Seasons Yachts FAQ prohibited items celebrations onboard': found the fourseasonsyachts.com pages above",
       "web.archive.org could not be used: every connection to web.archive.org failed on 2026-11-21 (the proxy tunnel closed mid-exchange, 6 attempts)."
     ],
-    "officialContact": "Four Seasons Yachts 1-800-705-7580 (official site header)"
+    "officialContact": "Four Seasons Yachts 1-800-705-7580 (official site header)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.fourseasonsyachts.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "aman-and-other-yacht-lines",

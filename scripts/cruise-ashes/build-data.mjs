@@ -49,14 +49,6 @@ const COMPARE = {
   'po-cruises-uk': { approval: 'Captain\u2019s approval before the cruise', documents: 'Certificate of Cremation; proof the container is biodegradable', restrictions: 'Sea day; at least 12 nautical miles; not the Norwegian Fjords; no pet ashes; minimum cruise length differs between P&O\u2019s own pages', fees: 'GBP 270 admin charge' },
   cunard: { approval: 'Captain\u2019s approval before the voyage', documents: 'Cremation certificate; supporting documentation for the biodegradable container', restrictions: 'Not on voyages of 5 nights or less; sea day; at least 12 nautical miles; container committed whole; no pet ashes', fees: 'Paid package; price not published' },
 };
-// Unverified lines: the official page where a contact was shown (from the
-// record's officialContact; nothing invented). Pages marked "not opened" are skipped.
-const contactUrl = (r) => {
-  const c = r.officialContact ?? '';
-  // Skipped: pages not opened, contacts not captured, and redirects to another company's site.
-  if (/not opened|not captured|redirects/i.test(c)) return null;
-  return c.match(/https?:\/\/[^\s)]+/)?.[0]?.replace(/[.,;]$/, '') ?? null;
-};
 // Left out of the public directory (research records kept):
 const EXCLUDE = {
   'alaskan-dream-cruises': 'reported closed (February 2026, news reports)',
@@ -110,6 +102,7 @@ for (const f of FILES) {
     if (r.status !== 'unverified' && !r.wordingConfirmed && r.id !== 'marella-cruises' && r.evidenceMethod !== 'search-index-of-official-page')
       throw new Error(`${r.id}: established status without confirmed wording or an indexed official page`);
     if (r.status !== 'unverified' && !COMPARE[r.id]) throw new Error(`${r.id}: established status needs a comparison row`);
+    if (r.status === 'unverified' && !r.officialLinks) throw new Error(`${r.id}: no verified official link or reported exception (officialLinks)`);
     if (twin && twin.status !== 'unverified') throw new Error(`${r.id}: merged record ${twin.id} has its own status`);
     const verified = checkedOn(r) && (!twin || checkedOn(twin)) ? checkedOn(r) : null;
     ops.push({
@@ -123,7 +116,10 @@ for (const f of FILES) {
       verified,
       restrictions: dash(restrictions),
       compare: COMPARE[r.id] ?? null,
-      contactUrl: r.status === 'unverified' ? contactUrl(r) ?? contactUrl(twin ?? {}) : null,
+      // Version 1.10: verified official customer-service page ('service') or
+      // official homepage ('website'); null only for a reported exception.
+      contactUrl: r.status === 'unverified' ? (r.officialLinks?.url ?? null) : null,
+      contactKind: r.status === 'unverified' ? (r.officialLinks?.kind ?? null) : null,
       detail,
     });
   }

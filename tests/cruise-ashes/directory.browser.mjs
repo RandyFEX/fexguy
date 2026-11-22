@@ -49,8 +49,14 @@ for (const o of established) {
   assert.ok(html.includes(`id="op-${o.id}"`), `profile for ${o.name}`);
   assert.ok(html.includes(`href="#op-${o.id}"`), `comparison row for ${o.name}`);
 }
-assert.equal((html.match(/>Contact customer service</g) ?? []).length, unverified.filter((u) => !u.contactUrl).length, 'exact customer-service wording on every line without a contact link');
-assert.equal((html.match(/Official contact information</g) ?? []).length, unverified.filter((u) => u.contactUrl).length, 'verified contact links kept');
+// Version 1.10: every line links to its official customer-service page or homepage, with the exact labels.
+const service = unverified.filter((u) => u.contactKind === 'service');
+const website = unverified.filter((u) => u.contactKind === 'website');
+assert.equal((html.match(/class="cra-row__link"[^>]*>\s*Contact customer service</g) ?? []).length, service.length, 'Contact customer service links');
+assert.equal((html.match(/class="cra-row__link"[^>]*>\s*Visit official website</g) ?? []).length, website.length, 'Visit official website links');
+assert.deepEqual(unverified.filter((u) => !u.contactUrl).map((u) => u.id).sort(), ['albatros-expeditions', 'heritage-line'], 'only the reported exceptions lack a link');
+assert.ok(!/No contact page recorded|Official contact information/.test(html), 'old labels gone');
+for (const o of established) assert.ok(html.includes(`href="${o.policyUrl.replace(/&/g, '&amp;')}"`), `policy link kept for ${o.name}`);
 for (const o of unverified.filter((u) => u.contactUrl)) assert.ok(html.includes(`href="${o.contactUrl.replace(/&/g, '&amp;')}"`), `contact link for ${o.name}`);
 const counts = data.operators.reduce((m, o) => ((m[o.status] = (m[o.status] ?? 0) + 1), m), {});
 assert.ok(html.includes(`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted'] ?? 0} conditionally permitted and ${counts['not-permitted'] ?? 0} not permitted. They are compared below. For ${total} other lines`), 'displayed counts match the data');

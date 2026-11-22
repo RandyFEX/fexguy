@@ -156,3 +156,15 @@ reach 12 nm on a sea day.
   Randy. Norwegian stays Unverified until then.
 - Carnival Elation Facebook discussion (2026-10-24): used only as described
   by Randy, as anecdotal passenger experience; no URL recorded.
+
+## 12. Version 1.10 official links (2026-11-22)
+
+Every unverified line in the directory now links to a verified official
+customer-service page (62) or official homepage (5), recorded per operator
+as `officialLinks` (URL, kind, how verified, date). Two exceptions have no
+verifiable official website and show no link:
+
+- Albatros Expeditions: albatros-expeditions.com redirects to
+  polar-latitudes.com, a different brand.
+- Heritage Line: heritagelinecruise.com did not respond and has no indexed
+  pages.

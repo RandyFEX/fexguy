@@ -809,7 +809,13 @@
     ],
     "round3": "searched-no-official-policy",
     "round16": "searched-index-no-policy",
-    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe whole-urn committals more than 12 miles out and a captain's coordinates letter; one says no notice is needed (Cruise Critic). Contradictory, not official."
+    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe whole-urn committals more than 12 miles out and a captain's coordinates letter; one says no notice is needed (Cruise Critic). Contradictory, not official.",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.ncl.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "celebrity-cruises",
@@ -1006,7 +1012,13 @@
     ],
     "round3": "searched-no-official-policy",
     "round16": "searched-index-no-policy",
-    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe ceremonies arranged through a Celebrity office or travel team (Cruise Critic). Not official."
+    "secondaryReporting": "Unconfirmed secondary reporting: forum members describe ceremonies arranged through a Celebrity office or travel team (Cruise Critic). Not official.",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.celebritycruises.com/company/customer-support/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "princess-cruises",
@@ -1403,7 +1415,13 @@
     ],
     "round3": "searched-no-official-policy",
     "round16": "searched-index-no-policy",
-    "secondaryReporting": "Unconfirmed secondary reporting: a forum post quotes a Holland America email saying committal only in international waters at least 12 nautical miles out; others describe an officer present and GPS coordinates (Cruise Critic). Not official."
+    "secondaryReporting": "Unconfirmed secondary reporting: a forum post quotes a Holland America email saying committal only in international waters at least 12 nautical miles out; others describe an officer present and GPS coordinates (Cruise Critic). Not official.",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.hollandamerica.com/en/us/faq/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "disney-cruise-line",
@@ -1582,7 +1600,13 @@
     ],
     "round3": "searched-no-official-policy",
     "round16": "searched-index-no-policy",
-    "secondaryReporting": "Unconfirmed secondary reporting: forum posts quote reported internal guidance that there are no provisions for ash disposition at sea or at Castaway Cay (DIS boards). Not official."
+    "secondaryReporting": "Unconfirmed secondary reporting: forum posts quote reported internal guidance that there are no provisions for ash disposition at sea or at Castaway Cay (DIS boards). Not official.",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://disneycruise.disney.go.com/help/phone/",
+      "method": "direct (Randy-supplied; loads with a normal browser cookie)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "msc-cruises",

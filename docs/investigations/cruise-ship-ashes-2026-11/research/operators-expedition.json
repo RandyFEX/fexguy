@@ -170,7 +170,13 @@
       "Version 1.6: domain-restricted search of expeditions.com found no guest policy (only a 2023 expedition report noting the founder's ashes were scattered on West Point Island, history not policy)."
     ],
     "officialContact": "Lindblad Expeditions: +1.800.397.3348 (shown on https://www.expeditions.com/plan/faqs); email form at https://www.expeditions.com/contact-us",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.expeditions.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "aurora-expeditions",
@@ -328,7 +334,13 @@
       "https://www.aurora-expeditions.com/us/faqs/ via WebFetch: host not resolvable in that tool",
       "web.archive.org copies: availability API showed only a 2015 snapshot of /faqs/; archive fetches failed (proxy tunnel closed) in this session",
       "Domain-restricted web search (aurora-expeditions.com) for ashes/cremated remains: only an unrelated Spitsbergen blog post"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.aurora-expeditions.com/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "quark-expeditions",
@@ -486,7 +498,13 @@
       "page-sitemap.xml and qrk_agreement-sitemap.xml 200: no memorial/ashes page listed",
       "Domain-restricted web search: only blog posts on Grytviken/Frank Wild's ashes interred beside Shackleton (history, not policy)"
     ],
-    "officialContact": "Quark Expeditions: +1 (877) 585-1235 (shown on https://www.quarkexpeditions.com/frequently-asked-questions)"
+    "officialContact": "Quark Expeditions: +1 (877) 585-1235 (shown on https://www.quarkexpeditions.com/frequently-asked-questions)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.quarkexpeditions.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "hx-hurtigruten-expeditions",
@@ -649,7 +667,13 @@
       "Version 1.6: domain-restricted search of travelhx.com found no ashes page."
     ],
     "officialContact": "HX Expeditions (US): +1 (888) 568-9793 (shown on https://www.travelhx.com/en-us/support/faq/)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.travelhx.com/en-us/support/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "swan-hellenic",
@@ -805,7 +829,13 @@
       "https://www.swanhellenic.com/faq 429 twice",
       "web.archive.org snapshot 20260807182909 of /faq exists per availability API, but fetch failed (proxy tunnel closed)",
       "Domain-restricted web search: only an itinerary page, no policy"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.swanhellenic.com/contacts",
+      "method": "search-engine index of the official page (429)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "scenic-eclipse",
@@ -964,7 +994,13 @@
       "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
     ],
     "officialContact": "Scenic (US): 1 (855) 517-1200 (shown on https://scenic.cruises/US/en-US/plan-your-journey/faqs/ocean)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://scenic.cruises/US/en-US/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "emerald-cruises-yacht",
@@ -1122,7 +1158,13 @@
       "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
     ],
     "officialContact": "Emerald Cruises (US): 1 (855) 222-3214 (shown on https://emerald.cruises/US/en-US/about-us/faq)",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://emerald.cruises/US/en-US/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "atlas-ocean-voyages",
@@ -1280,7 +1322,13 @@
       "sitemap-0.xml 200: no memorial/ashes page",
       "Domain-restricted web search: only a blog 'Ancient Burial Practices Reborn' (not policy)"
     ],
-    "officialContact": "Atlas Ocean Voyages: 1-888-665-9956 (shown on https://atlasoceanvoyages.com/faq)"
+    "officialContact": "Atlas Ocean Voyages: 1-888-665-9956 (shown on https://atlasoceanvoyages.com/faq)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://atlasoceanvoyages.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "american-cruise-lines",
@@ -1438,7 +1486,13 @@
       "WebFetch: host not resolvable in that tool",
       "web.archive.org CDX/snapshot requests failed (proxy tunnel closed)",
       "Web search (2): no American Cruise Lines policy; only general cruise articles"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.americancruiselines.com/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "uncruise-adventures",
@@ -1596,7 +1650,13 @@
       "sitemap_pages_1.xml 200: no memorial/ashes page",
       "Web search: no UnCruise policy"
     ],
-    "officialContact": "UnCruise Adventures: 888-862-8881 (shown on https://uncruise.com/pages/frequently-asked-questions)"
+    "officialContact": "UnCruise Adventures: 888-862-8881 (shown on https://uncruise.com/pages/frequently-asked-questions)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://uncruise.com/about-us/contact",
+      "method": "search-engine index of the official page (site shows a bot check)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "star-clippers",
@@ -1751,7 +1811,13 @@
       "https://www.starclippers.com/us/ same Incapsula shell",
       "Wayback availability API: no snapshot of /us/faq.html",
       "Domain-restricted web search: nothing"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.starclippers.com/",
+      "method": "direct (no customer-service page found)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "paul-gauguin-cruises",
@@ -1904,7 +1970,13 @@
       "https://www.pgcruises.com/legal/passenger-ticket-contract 200: no mention",
       "https://www.pgcruises.com/legal/terms-conditions 200: no mention"
     ],
-    "officialContact": "Paul Gauguin Cruises: 1 (800) 848-6172 (shown on https://www.pgcruises.com/faq)"
+    "officialContact": "Paul Gauguin Cruises: 1 (800) 848-6172 (shown on https://www.pgcruises.com/faq)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.pgcruises.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "coral-expeditions",
@@ -2059,7 +2131,13 @@
       "https://www.coralexpeditions.com/terms-and-conditions 200, same client-rendered shell",
       "https://www.coralexpeditions.com/articles/five-essential-things-to-know-before-you-board 200, same shell",
       "sitemap.xml 200: no memorial/ashes page listed"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.coralexpeditions.com/contact-us/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "heritage-expeditions",
@@ -2214,7 +2292,13 @@
       "https://www.heritage-expeditions.com/faq/ and /faqs/ 404",
       "sitemap.xml 200: no FAQ, memorial or ashes page listed"
     ],
-    "officialContact": "Heritage Expeditions: +64 3 365 3500 (shown on https://www.heritage-expeditions.com/terms-conditions/)"
+    "officialContact": "Heritage Expeditions: +64 3 365 3500 (shown on https://www.heritage-expeditions.com/terms-conditions/)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.heritage-expeditions.com/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "oceanwide-expeditions",
@@ -2369,7 +2453,13 @@
       "https://oceanwide-expeditions.com/page/terms-and-conditions 200: no mention",
       "Domain-restricted web search: only a blog on Frank Wild's reinterred ashes (history)"
     ],
-    "officialContact": "Oceanwide Expeditions: +1 800 453 7245 (shown on https://oceanwide-expeditions.com/faq)"
+    "officialContact": "Oceanwide Expeditions: +1 800 453 7245 (shown on https://oceanwide-expeditions.com/faq)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://oceanwide-expeditions.com/page/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "antarctica21",
@@ -2520,7 +2610,13 @@
       "https://www.antarctica21.com/termsconditions 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention",
       "https://www.antarctica21.com/travel-tips-antarctica 200 (includes FAQ): no mention"
     ],
-    "officialContact": "Antarctica21: +1 (877) 994 2994 (shown on https://www.antarctica21.com/termsconditions)"
+    "officialContact": "Antarctica21: +1 (877) 994 2994 (shown on https://www.antarctica21.com/termsconditions)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.antarctica21.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "albatros-expeditions",
@@ -2675,7 +2771,13 @@
       "https://polar-latitudes.com/resources/faq/ 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention",
       "https://polar-latitudes.com/terms-and-conditions/ 200: no mention"
     ],
-    "officialContact": "Polar Latitudes site (albatros-expeditions.com redirects there): +1 (802) 698-8479 (shown on https://polar-latitudes.com/resources/faq/)"
+    "officialContact": "Polar Latitudes site (albatros-expeditions.com redirects there): +1 (802) 698-8479 (shown on https://polar-latitudes.com/resources/faq/)",
+    "officialLinks": {
+      "kind": null,
+      "url": null,
+      "method": "albatros-expeditions.com redirects to polar-latitudes.com, a different brand; no verifiable Albatros website.",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "pearl-seas-cruises",
@@ -2827,7 +2929,13 @@
       "https://www.pearlseascruises.com/ 403 (bot protection)",
       "https://www.pearlseascruises.com/faq 403",
       "Wayback availability API: no snapshot of /faq"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.pearlseascruises.com/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "victory-cruise-lines",
@@ -2979,7 +3087,13 @@
       "https://victorycruiselines.com/frequently-asked-questions 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention",
       "https://victorycruiselines.com/passenger-ticket-contract 200: no mention"
     ],
-    "officialContact": "Victory Cruise Lines: (855) 556-7193 (shown on https://victorycruiselines.com/frequently-asked-questions)"
+    "officialContact": "Victory Cruise Lines: (855) 556-7193 (shown on https://victorycruiselines.com/frequently-asked-questions)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://victorycruiselines.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "alaskan-dream-cruises",
@@ -3283,7 +3397,13 @@
     "researchLog": [
       "https://www.metropolitan-touring.com/galapagos/faq/ 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention"
     ],
-    "officialContact": "Metropolitan Touring: 855-500-0496 (shown on https://www.metropolitan-touring.com/galapagos/faq/)"
+    "officialContact": "Metropolitan Touring: 855-500-0496 (shown on https://www.metropolitan-touring.com/galapagos/faq/)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.metropolitan-touring.com/contact-us/",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "ecoventura",
@@ -3435,7 +3555,13 @@
       "https://ecoventura.com/booking-terms-conditions/ 200: no mention",
       "https://ecoventura.com/travel-details/ 200: no mention"
     ],
-    "officialContact": "Ecoventura: +1 305 262 6264 (shown on https://ecoventura.com/key-information-faqs/)"
+    "officialContact": "Ecoventura: +1 305 262 6264 (shown on https://ecoventura.com/key-information-faqs/)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://ecoventura.com/contact-us/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "variety-cruises",
@@ -3588,7 +3714,13 @@
       "https://www.varietycruises.com/faq 200: keyword search of page text and raw HTML for ashes/cremat/scatter/human remains/burial/funeral/urn/committal: no mention",
       "https://www.varietycruises.com/page/terms-and-conditions 200: no mention"
     ],
-    "officialContact": "Variety Cruises: 800-319-7776 (US, shown on https://www.varietycruises.com/faq); +30 210 6919191"
+    "officialContact": "Variety Cruises: 800-319-7776 (US, shown on https://www.varietycruises.com/faq); +30 210 6919191",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.varietycruises.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "id": "grand-circle-oat-small-ships",
@@ -3745,6 +3877,12 @@
       "https://www.oattravel.com/terms-and-conditions 200: no mention",
       "FAQ topic subpages (e.g. /faq-home/preparing-for-your-trip) not opened"
     ],
-    "officialContact": "Grand Circle: 1-800-221-2610; O.A.T.: 1-800-955-1925 (shown on their FAQ pages)"
+    "officialContact": "Grand Circle: 1-800-221-2610; O.A.T.: 1-800-955-1925 (shown on their FAQ pages)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.gct.com/about-us/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   }
 ]

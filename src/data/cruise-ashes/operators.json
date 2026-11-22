@@ -18,6 +18,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-carnival-cruise-line"
     },
     {
@@ -37,6 +38,7 @@
         "fees": "Paid package; price not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-cunard"
     },
     {
@@ -56,6 +58,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-fred-olsen-cruise-lines"
     },
     {
@@ -75,6 +78,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-marella-cruises"
     },
     {
@@ -94,6 +98,7 @@
         "fees": "No fee"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-msc-cruises"
     },
     {
@@ -113,6 +118,7 @@
         "fees": "GBP 270 admin charge"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-po-cruises-uk"
     },
     {
@@ -132,6 +138,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-princess-cruises"
     },
     {
@@ -151,6 +158,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-royal-caribbean-international"
     },
     {
@@ -170,6 +178,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-virgin-voyages"
     },
     {
@@ -189,6 +198,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-ambassador-cruise-line"
     },
     {
@@ -208,6 +218,7 @@
         "fees": "Not published"
       },
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#op-crystal"
     },
     {
@@ -221,7 +232,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.arosa-cruises.com/company/contact.html",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -235,7 +247,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.aida.de/",
+      "contactKind": "website",
       "detail": "#no-published-policy"
     },
     {
@@ -250,6 +263,7 @@
       "restrictions": "No published policy found on the official site.",
       "compare": null,
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#no-published-policy"
     },
     {
@@ -263,7 +277,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.amawaterways.com/help/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -277,7 +292,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.americancruiselines.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -291,7 +307,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.antarctica21.com/termsconditions",
+      "contactUrl": "https://www.antarctica21.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -305,7 +322,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.aptouring.com/en-us/connect-with-us/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -319,7 +337,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.aquaexpeditions.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -333,7 +352,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://cruisearoya.com/contact/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -347,7 +367,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://atlasoceanvoyages.com/faq",
+      "contactUrl": "https://atlasoceanvoyages.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -361,7 +382,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.aurora-expeditions.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -375,7 +397,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.australis.com/",
+      "contactKind": "website",
       "detail": "#no-published-policy"
     },
     {
@@ -389,7 +412,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.avalonwaterways.com/contact/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -403,7 +427,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.azamara.com/about-azamara/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -417,7 +442,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.captaincook.com.au/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -431,7 +457,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.celebritycruises.com/company/customer-support/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -445,7 +472,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://celestyal.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -459,7 +487,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.coralexpeditions.com/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -473,7 +502,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.costacruises.com/",
+      "contactKind": "website",
       "detail": "#no-published-policy"
     },
     {
@@ -487,7 +517,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.croisieurope.com/information/contacter-croisieurope",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -501,7 +532,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://disneycruise.disney.go.com/help/phone/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -515,7 +547,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://ecoventura.com/key-information-faqs/",
+      "contactUrl": "https://ecoventura.com/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -529,7 +562,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://emerald.cruises/US/en-US/about-us/faq",
+      "contactUrl": "https://emerald.cruises/US/en-US/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -543,7 +577,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://explorajourneys.com/us/en/my-explora/support---contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -557,7 +592,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.fourseasonsyachts.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -571,7 +607,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.gct.com/about-us/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -585,7 +622,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": "https://www.hl-cruises.de",
+      "contactUrl": "https://www.hl-cruises.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -599,7 +637,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.havilavoyages.com/en/faq",
+      "contactUrl": "https://www.havilavoyages.com/en/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -613,7 +652,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.heritage-expeditions.com/terms-conditions/",
+      "contactUrl": "https://www.heritage-expeditions.com/contact/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -628,6 +668,7 @@
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
       "contactUrl": null,
+      "contactKind": null,
       "detail": "#no-published-policy"
     },
     {
@@ -641,7 +682,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.hollandamerica.com/en/us/faq/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -655,7 +697,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.hurtigruten.com/en/help/life-on-board",
+      "contactUrl": "https://www.hurtigruten.com/en-us/help/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -669,7 +712,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.travelhx.com/en-us/support/faq/",
+      "contactUrl": "https://www.travelhx.com/en-us/support/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -683,7 +727,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.expeditions.com/plan/faqs",
+      "contactUrl": "https://www.expeditions.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -697,7 +742,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.metropolitan-touring.com/galapagos/faq/",
+      "contactUrl": "https://www.metropolitan-touring.com/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -711,7 +757,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.mitsuioceancruises.com/contact/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -726,6 +773,7 @@
       "restrictions": "No published policy found on the official site.",
       "compare": null,
       "contactUrl": "https://www.murrayprincess.com.au/contact/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -739,7 +787,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.nicko-cruises.de/faq",
+      "contactUrl": "https://www.nicko-cruises.de/kontaktieren",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -753,7 +802,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.ncl.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -767,7 +817,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.asukacruise.co.jp/inquiries/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -781,7 +832,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.oceaniacruises.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -795,7 +847,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://oceanwide-expeditions.com/faq",
+      "contactUrl": "https://oceanwide-expeditions.com/page/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -809,7 +862,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.pandaw.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -823,7 +877,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.pgcruises.com/faq",
+      "contactUrl": "https://www.pgcruises.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -837,7 +892,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.pearlseascruises.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -851,7 +907,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html",
+      "contactUrl": "https://www.phoenixreisen.com/kontakt.html",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -865,7 +922,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.plantours-kreuzfahrten.de/infos-service/das-sind-wir/kontakt/",
+      "contactUrl": "https://www.plantours-kreuzfahrten.de/kontakt/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -879,7 +937,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.ponant.com/faq",
+      "contactUrl": "https://www.ponant.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -893,7 +952,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.quarkexpeditions.com/frequently-asked-questions",
+      "contactUrl": "https://www.quarkexpeditions.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -907,7 +967,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.rssc.com/about/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -921,7 +982,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://rwcruises.com/",
+      "contactKind": "website",
       "detail": "#no-published-policy"
     },
     {
@@ -935,7 +997,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.rivieratravel.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -949,7 +1012,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://travel.saga.co.uk/cruises/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -963,7 +1027,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.abercrombiekent.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -977,7 +1042,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://scenic.cruises/US/en-US/plan-your-journey/faqs/ocean",
+      "contactUrl": "https://scenic.cruises/US/en-US/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -991,7 +1057,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.seabourn.com/en/us/about/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1005,7 +1072,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://seadream.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1019,7 +1087,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.silversea.com/other-resources/contact-us.html",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1033,7 +1102,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.starclippers.com/",
+      "contactKind": "website",
       "detail": "#no-published-policy"
     },
     {
@@ -1047,7 +1117,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.swanhellenic.com/contacts",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1061,7 +1132,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.tauck.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1075,7 +1147,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.ritzcarltonyachtcollection.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1089,7 +1162,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.meinschiff.com/de/kontakt",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1103,7 +1177,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://uncruise.com/pages/frequently-asked-questions",
+      "contactUrl": "https://uncruise.com/about-us/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1117,7 +1192,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.uniworld.com/us/about-uniworld/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1131,7 +1207,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://www.varietycruises.com/faq",
+      "contactUrl": "https://www.varietycruises.com/contact",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1145,7 +1222,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": "https://victorycruiselines.com/frequently-asked-questions",
+      "contactUrl": "https://victorycruiselines.com/contact-us",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1159,7 +1237,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.vikingcruises.com/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     },
     {
@@ -1173,7 +1252,8 @@
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
       "compare": null,
-      "contactUrl": null,
+      "contactUrl": "https://www.windstarcruises.com/our-company/contact-us/",
+      "contactKind": "service",
       "detail": "#no-published-policy"
     }
   ]

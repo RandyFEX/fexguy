@@ -1170,7 +1170,13 @@
       "Version 1.6: German-language domain-restricted search found no ashes page."
     ],
     "officialContact": "Contact options listed at https://www.meinschiff.com/de/kontakt (not opened).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.meinschiff.com/de/kontakt",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -1352,7 +1358,13 @@
       "Web search (German, Bordordnung Urne Asche): no AIDA policy page surfaced; search listed https://www.aida.de/kreuzfahrt/agb/bordordnung.24588.html and https://aida.de/faq/bordleben (not readable)",
       "Version 1.6: German-language domain-restricted search of aida.de found no Seebestattung or ashes page."
     ],
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.aida.de/",
+      "method": "search-engine index of the official site (403); only department-specific contact pages found",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -1540,7 +1552,13 @@
       "Web search (Italian, dispersione ceneri Costa): no Costa policy page",
       "Version 1.6: Italian-language domain-restricted search of Costa sites found no page on dispersing ashes."
     ],
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.costacruises.com/",
+      "method": "direct (no customer-service page found)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -1713,7 +1731,13 @@
       "https://celestyal.com/faqs 200 and https://celestyal.com/gb/faqs 200: no mention (answers partly script-loaded)",
       "https://celestyal.com/terms-and-conditions/booking-conditions 200: no mention",
       "Web search (Celestyal scatter ashes): no Celestyal page"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://celestyal.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -1912,7 +1936,13 @@
       "Version 1.6: German-language domain-restricted search found no ashes page."
     ],
     "officialContact": "Kontaktcenter 040 307030-555 (shown on https://www.hl-cruises.de pages).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.hl-cruises.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2107,7 +2137,13 @@
       "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
     ],
     "officialContact": "UK phone shown on the English help pages: +44 208 131 4058 (tel link on https://www.hurtigruten.com/en/help/life-on-board).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.hurtigruten.com/en-us/help/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2281,7 +2317,13 @@
       "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
     ],
     "officialContact": "Phone: +47 70 00 70 71 (shown on https://www.havilavoyages.com/en/faq).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.havilavoyages.com/en/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2448,7 +2490,13 @@
       "Version 1.6: ponant.com blocks the search engine's crawler, so no indexed content is available; direct site reading was done in round 3 (FAQ silent)."
     ],
     "officialContact": "+33 4 91 36 41 65 (tel link on https://www.ponant.com/faq).",
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.ponant.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2601,7 +2649,13 @@
       "https://aroya.com/sitemap.xml 403",
       "https://aroya.com/ 403",
       "https://aroya.com/en/faq 403"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://cruisearoya.com/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2754,7 +2808,13 @@
       "https://rwcruises.com/ and https://www.rwcruises.com/en/faq 000: connection failed",
       "https://www.resortsworldcruises.com/ 200: parked domain for sale (not the operator)",
       "Web search (Resorts World Cruises scattering ashes): no operator page"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://rwcruises.com/",
+      "method": "search-engine index of the official site (no direct connection)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -2921,7 +2981,13 @@
       "Web search restricted to saga.co.uk/travel.saga.co.uk: only blog pages (first time on board, activities), no ashes wording in the result summaries",
       "Version 1.6: domain-restricted search of saga.co.uk found no cruise ashes policy (only a general bereavement guide)."
     ],
-    "round16": "searched-index-no-policy"
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://travel.saga.co.uk/cruises/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -3095,7 +3161,13 @@
       "https://www.phoenixreisen.com/reise-und-geschaeftsbedingungen.html 200: no mention",
       "Web search (Phoenix Reisen Seebestattung Asche): nothing official"
     ],
-    "officialContact": "+49 228 92600 (tel link on https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html)."
+    "officialContact": "+49 228 92600 (tel link on https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html).",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.phoenixreisen.com/kontakt.html",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -3484,7 +3556,13 @@
       "https://www.mitsuioceancruises.com/guideline/ 200: no mention",
       "https://www.mitsuioceancruises.com/assets/terms/pdf/terms.pdf 200: clause 12(9) general ocean-dumping prohibition",
       "https://www.mitsuioceancruises.com/assets/download/pdf/f_guide.pdf 200: no mention"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.mitsuioceancruises.com/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -3679,7 +3757,13 @@
       "https://www.asukacruise.co.jp/cruisedesk/reservationguide/ 200: no mention",
       "https://www.asukacruise.co.jp/chartercruise/faq/ 200: no mention",
       "Web search (Japanese 飛鳥II 散骨 遺骨): only travel-agency pages"
-    ]
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.asukacruise.co.jp/inquiries/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -3860,7 +3944,13 @@
       "https://www.plantours-kreuzfahrten.de/wp-sitemap.xml 200 and page sitemap 200: no Seebestattung page",
       "infos-von-a-z-hochsee 200, reisebedingungen-agb 200, bordmanifest 200, infos-service/verschiedenes 200, infos-service/reiseplanung 200: no mention"
     ],
-    "officialContact": "Kontaktformular: https://www.plantours-kreuzfahrten.de/infos-service/das-sind-wir/kontakt/"
+    "officialContact": "Kontaktformular: https://www.plantours-kreuzfahrten.de/infos-service/das-sind-wir/kontakt/",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.plantours-kreuzfahrten.de/kontakt/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   },
   {
     "conflicts": [],
@@ -4042,6 +4132,12 @@
       "https://www.nicko-cruises.de/agb 200: no mention",
       "ocean-2026-27-de-agbs.pdf 200: no mention"
     ],
-    "officialContact": "+49 711 248980 44 (shown on https://www.nicko-cruises.de/faq)."
+    "officialContact": "+49 711 248980 44 (shown on https://www.nicko-cruises.de/faq).",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.nicko-cruises.de/kontaktieren",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
   }
 ]
