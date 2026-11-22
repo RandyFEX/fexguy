@@ -820,8 +820,8 @@ await check('/facebook/: no phone number shows or can be tapped before this visi
 await check('homepage SEE PRICES NOW opens the pricing funnel at the first question (not the old homepage form)', async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);
-  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero SEE PRICES NOW href');
-  if ((await p.innerText('.hero__btn--primary')).trim() !== 'SEE PRICES NOW') throw new Error('hero button wording');
+  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero GET 3 RATES NOW href');
+  if ((await p.innerText('.hero__btn--primary')).trim() !== 'GET 3 RATES NOW') throw new Error('hero button wording');
   await p.click('.hero__btn--primary');
   await p.waitForURL(/\/free-quote\/$/);
   await p.waitForSelector('[data-step="1"]:not([hidden])');
