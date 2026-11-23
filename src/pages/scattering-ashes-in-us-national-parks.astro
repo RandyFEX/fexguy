@@ -12,10 +12,17 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-// Fixed page hero (V4.6): the verified NPS photograph at Tunnel View, Yosemite
-// (no people; the earlier Lady Bird Johnson Grove hero showed a family).
-const heroPhoto = parks.find((p) => p.id === 'yosemite')!.destinations.find((d) => d.id === 'tunnel-view')!.photo!;
-const hero = { ...heroPhoto, caption: 'Tunnel View, Yosemite National Park' };
+// Fixed page hero (Version 4.0, restored at Randy's instruction in V4.7): the
+// verified NPS photograph of a family at Lady Bird Johnson Grove. Its rights
+// record is the "hero" entry in src/data/last-adventure/image-rights.json.
+const hero = {
+  src: '/images/last-adventure/redwood/lady-bird-johnson-grove-family.jpg',
+  srcWebp: '/images/last-adventure/redwood/lady-bird-johnson-grove-family.webp',
+  alt: 'Three people stand on a walkway in the trees. It is foggy',
+  credit: 'NPS Photo / Steve Olson',
+  sourceUrl: 'https://www.nps.gov/redw/index.htm',
+  caption: 'Lady Bird Johnson Grove, Redwood National and State Parks',
+};
 const credit = (ph: Photo) => ph.credit;
 // The determination is the summary up to its first comma, semicolon or colon
 // (bold); the explanation after it stays regular. The text is never changed.

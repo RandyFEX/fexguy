@@ -6706,5 +6706,27 @@
    "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
    "checked": "2026-11-16"
   }
- ]
+ ],
+ "hero": {
+  "park": "redwood",
+  "destination": null,
+  "use": "fixed page hero (Version 4.0; restored at Randy's instruction, V4.7)",
+  "destinationName": "Lady Bird Johnson Grove",
+  "status": "VERIFIED NPS PUBLIC DOMAIN",
+  "file": "/images/last-adventure/redwood/lady-bird-johnson-grove-family.jpg",
+  "fileWebp": "/images/last-adventure/redwood/lady-bird-johnson-grove-family.webp",
+  "source": "Official NPS web page (nps.gov content image)",
+  "sourceUrl": "https://www.nps.gov/redw/index.htm",
+  "originalImage": "https://www.nps.gov/common/uploads/structured_data/CCDEEABE-CDBA-3C8D-B3E050B3DE5B0B55.jpg",
+  "pageTitle": "Redwood National and State Parks (U.S. National Park Service)",
+  "captionOnSource": "Visitors to the Lady Bird Johnson Grove cross a road using a walkway. NPS Photo / Steve Olson",
+  "altOnSource": "Three people stand on a walkway in the trees. It is foggy",
+  "photoCreditOnSource": "NPS Photo / Steve Olson",
+  "authorshipEvidence": "The official NPS page credits the photograph to the National Park Service: \"NPS Photo / Steve Olson\"",
+  "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105). NPS website disclaimer (https://www.nps.gov/aboutus/disclaimer.htm): material created by the National Park Service and presented on its website, unless otherwise indicated, is generally considered in the public domain. No third-party, courtesy or copyright notice appears with the image.",
+  "creditShown": "NPS Photo / Steve Olson",
+  "depicts": "Three people stand on a walkway in the trees. It is foggy",
+  "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+  "checked": "2026-11-17"
+ }
 }
