@@ -1735,6 +1735,17 @@ Prioritize the shortest reliable path to completing approved changes.
   pages apart by page path (no new events). Start New Quote stays on the
   page it was used on.
 
+## Cruise ship ash scattering guide (Randy, November 2026)
+
+- /scattering-ashes-from-a-cruise-ship/ (src/pages/scattering-ashes-from-a-cruise-ship.astro,
+  src/components/cruise-ashes/, data src/data/cruise-ashes/operators.json built by
+  scripts/cruise-ashes/build-data.mjs) was published at Randy's instruction:
+  indexable and in the sitemap. Research, sources and the gap report are in
+  docs/investigations/cruise-ship-ashes-2026-11/. It reuses the article
+  Get Pricing module (QuoteBox: sidebar from 64rem, in-article copy before
+  "Cruise lines with an established policy" on phones). Its first Key Point
+  is Randy's wording. Test: tests/cruise-ashes/directory.browser.mjs.
+
 ## Permanent review links (Randy, November 2026, V2.0)
 
 - Fixed Preview address (Vercel branch alias of the `review` branch; Vercel

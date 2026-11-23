@@ -1,0 +1,18 @@
+---
+// Worldwide cruise ship ash scattering guide (Randy, November 2026).
+// Published at Randy's instruction ("lets get this page live"): indexable
+// and in the sitemap. Research and sources: docs/investigations/cruise-ship-ashes-2026-11/.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CruiseAshesGuide from '@/components/cruise-ashes/CruiseAshesGuide.astro';
+import { pageTitle } from '@/lib/seo/meta';
+
+const path = '/scattering-ashes-from-a-cruise-ship/';
+const h1 = 'Scattering Ashes From a Cruise Ship: Cruise Line Policies, Rules and Planning Guide';
+---
+
+<BaseLayout
+  title={pageTitle('Scattering Ashes From a Cruise Ship: Rules by Cruise Line')}
+  description="Which cruise lines allow scattering ashes at sea? Compare verified cruise line policies, required documents, ceremony procedures and legal rules."
+>
+  <CruiseAshesGuide path={path} h1={h1} updated="2026-11-21" />
+</BaseLayout>

@@ -1,0 +1,4146 @@
+[
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.expedia.com/lp/b/rules-amawaterways",
+        "title": "AmaWaterways rules (Expedia reseller page)",
+        "type": "secondary-blog",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Appeared in search results for 'AmaWaterways scattering ashes cremated remains policy'; snippet showed general ticket terms only, no ashes clause seen. Not fetched (see notes)."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "The FAQ and terms pages render with JavaScript and could not be read as text; a person should read https://www.amawaterways.com/faq and the terms in a browser."
+    ],
+    "needsDirectContact": true,
+    "id": "amawaterways",
+    "name": "AmaWaterways",
+    "parent": "AmaWaterways (privately held)",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Mekong",
+      "Nile",
+      "Africa (Chobe)",
+      "Colombia"
+    ],
+    "headquarters": "Calabasas, California, USA",
+    "notes": "Searched: 'AmaWaterways scattering ashes cremated remains policy'. No AmaWaterways FAQ, ticket contract clause or PDF mentioning ashes, urns or cremated remains surfaced. Source s1 is a third-party reseller copy of general terms and establishes nothing about ashes. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.amawaterways.com/faq 200: JavaScript application shell only (about 4.6 KB of text, navigation); no FAQ text rendered; Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.amawaterways.com/terms-and-conditions 200: same application shell, terms text not in HTML; no match",
+      "https://www.amawaterways.com/robots.txt and /sitemap.xml 200: no FAQ or terms URLs listed beyond the above",
+      "Web search 'site:amawaterways.com ashes OR \"cremated remains\" OR urn': no amawaterways.com result",
+      "Web search 'river cruise \"ashes\" scatter policy AmaWaterways OR Avalon ...': no operator policy; only ocean lines and trade articles",
+      "Web search (Cruise Critic river boards, Scenic/Emerald/APT/AmaWaterways): no AmaWaterways statement"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.amawaterways.com/help/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "The official FAQ and terms (https://www.avalonwaterways.com/faq/, /terms-conditions/) could not be opened (HTTP 403); they should be read in a browser."
+    ],
+    "needsDirectContact": true,
+    "id": "avalon-waterways",
+    "name": "Avalon Waterways",
+    "parent": "Group Voyagers (Globus family of brands)",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Mekong",
+      "Galapagos (expedition partner)"
+    ],
+    "headquarters": "Littleton, Colorado, USA",
+    "notes": "Searched: 'Avalon Waterways ashes scattering river cruise urn'. No Avalon-published material on ashes surfaced; results were ocean lines (Carnival, Royal Caribbean, Fred. Olsen, Cunard, P&O) and UK river charter operators. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.avalonwaterways.com/faq/ 403 (site bot protection; not bypassed)",
+      "https://www.avalonwaterways.com/terms-conditions/ 403 (bot protection; not bypassed)",
+      "web.archive.org snapshot of /faq/ and archive.org availability API: connection failed through the proxy (tunnel closed) twice; no archived copy read",
+      "WebFetch of /faq/: host not reachable from the WebFetch tool",
+      "Web search '\"Avalon Waterways\" ashes scattered': no Avalon page or statement; results were ocean lines and forums"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.avalonwaterways.com/contact/",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.travelocity.com/lp/b/rules-uniworld-river-cruises",
+        "title": "Uniworld River Cruises General Conditions, Rules and Regulations (Travelocity reseller page)",
+        "type": "secondary-blog",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Appeared in an extended search for river-cruise terms mentioning cremated remains; the search tool reported no ashes clause in the excerpt. Not fetched."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Uniworld FAQ content may load partly by script; confirm with Uniworld guest services."
+    ],
+    "needsDirectContact": true,
+    "id": "uniworld",
+    "name": "Uniworld Boutique River Cruises",
+    "parent": "The Travel Corporation (TTC)",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Egypt (Nile)",
+      "India",
+      "Vietnam and Cambodia (Mekong)",
+      "Peru (Amazon)"
+    ],
+    "headquarters": "Los Angeles, California, USA",
+    "notes": "Searched: 'Uniworld river cruise scatter ashes cremated remains' and an extended search for river-cruise terms containing 'cremated remains' or 'human ashes'. No Uniworld-published ashes policy found. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.uniworld.com/us/faq 200 (about 50 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.uniworld.com/us/terms-and-conditions 200 (about 33 KB text): no match",
+      "Web search 'site:uniworld.com OR site:tauck.com \"ashes\" scatter loved one': no Uniworld page",
+      "Web search '\"Uniworld\" ashes scatter river cruise': brochures and resellers only, no ashes text"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.uniworld.com/us/about-uniworld/contact",
+      "method": "linked from the official homepage (page itself returns 403 to automated requests)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "tauck",
+    "name": "Tauck (river cruises and small ships)",
+    "parent": "Tauck (family owned)",
+    "fleetType": "river",
+    "regions": [
+      "Europe (river)",
+      "small-ship ocean itineraries"
+    ],
+    "headquarters": "Wilton, Connecticut, USA",
+    "notes": "Searched: 'Tauck cremated remains ashes scatter policy'. No Tauck material surfaced. A follow-up forum/anecdote search could not run because the shared search budget was exhausted. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.tauck.com/faq 200 (about 73 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.tauck.com/terms-and-conditions 200 (about 67 KB text): no match",
+      "Web search 'site:uniworld.com OR site:tauck.com \"ashes\" scatter loved one': no Tauck page",
+      "Web search '\"Tauck\" scatter ashes cruise husband': forums about ocean lines only, no Tauck mention"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.tauck.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://telegraph.rivieratravel.co.uk/help-centre/european-river-cruise-faqs",
+        "title": "European river cruise FAQs (Riviera Travel, Telegraph partner site)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Surfaced in search; fetch failed (DNS: host outside this session's allowed network). Content not seen, so no ashes text is claimed."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "The UK help-centre FAQ and booking conditions could not be read (geo redirect and HTTP 403); they should be read in a browser from the UK site."
+    ],
+    "needsDirectContact": true,
+    "id": "riviera-travel",
+    "name": "Riviera Travel (river cruises)",
+    "parent": "Riviera Travel Ltd",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Portugal (Douro)"
+    ],
+    "headquarters": "Burton upon Trent, England, UK",
+    "notes": "Searched: '\"Riviera Travel\" ashes scatter river cruise' and a general Rhine/Danube query. Brochures on issuu.com surfaced but no ashes text in snippets. The official FAQ page (s1) could not be opened; it should be checked directly. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.rivieratravel.co.uk/help-centre/european-river-cruise-faqs: redirected to https://www.rivieratravel.com/ (US homepage, 200), FAQ not served to this client; no match on homepage",
+      "https://www.rivieratravel.co.uk/booking-conditions and /help-centre/frequently-asked-questions: same redirect to the US homepage",
+      "https://www.rivieratravel.com/help-centre/european-river-cruise-faqs 403 (bot protection; not bypassed)",
+      "Web search '\"Riviera Travel\" ashes river cruise scatter': only brochures and other operators (Thames, Mersey Ferries, York City Cruises), no Riviera statement"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.rivieratravel.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Correct URL of the current CroisiEurope FAQ and conditions generales de vente was not found; ask CroisiEurope directly. French law context: law-inland-waterways.json (CGCT)."
+    ],
+    "needsDirectContact": true,
+    "id": "croisieurope",
+    "name": "CroisiEurope",
+    "parent": "CroisiEurope (Schmitter family)",
+    "fleetType": "river",
+    "regions": [
+      "France",
+      "Europe",
+      "Portugal (Douro)",
+      "Mekong",
+      "Africa"
+    ],
+    "headquarters": "Strasbourg, France",
+    "notes": "Searched in French: 'CroisiEurope dispersion cendres croisiere fluviale'. No CroisiEurope material on dispersal of ashes surfaced. On French rivers, see the CGCT entry in law-inland-waterways.json (dispersal 'en pleine nature' with a declaration to the town hall of the deceased's birthplace).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.croisieurope.travel/faq: redirected to /fr/faq, 404",
+      "https://www.croisieurope.com/fr/conditions-generales-de-vente 404",
+      "https://www.croisieurope.com/ 200: Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial|cendres|defunt: no match",
+      "https://www.croisieuroperivercruises.com/faq 404",
+      "Web search 'CroisiEurope cendres defunt dispersion croisiere fluviale': no CroisiEurope text on ashes; only environment pages and brochures"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.croisieurope.com/information/contacter-croisieurope",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://arosa-cruises.com/my-a-rosa/a-rosa-on-board-information.html",
+        "title": "Good to know from A to Z (A-ROSA on-board information)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Surfaced in search; not fetched. Snippet did not show any ashes or urn entry. Listed as the place to check."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "German state rules (Friedhofspflicht; Rhineland-Palatinate river burial with a permit since 2025) apply separately; see law-inland-waterways.json."
+    ],
+    "needsDirectContact": true,
+    "id": "a-rosa",
+    "name": "A-ROSA Flussschiff",
+    "parent": "A-ROSA Flussschiff GmbH",
+    "fleetType": "river",
+    "regions": [
+      "Rhine",
+      "Danube",
+      "Rhone",
+      "Seine",
+      "Douro"
+    ],
+    "headquarters": "Rostock, Germany",
+    "notes": "Searched in German: 'A-ROSA Flusskreuzfahrt Asche verstreuen Urne an Bord'. No A-ROSA text on urns or scattering surfaced. Germany's state burial laws generally restrict scattering outside cemeteries (Friedhofspflicht); Rhineland-Palatinate since 27 September 2025 allows a regulated river burial of a water-soluble urn from a boat (see law file). Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.arosa-cruises.com/my-a-rosa/a-rosa-on-board-information.html 200 ('Good to know from A to Z', about 44 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial|Urne|Asche|Bestattung|verstorben: no match",
+      "https://www.arosa-cruises.com/company/general-terms-and-conditions.html 200 (about 90 KB text): no match",
+      "https://extranet.arosa-cruises.com/contact/faq.html 200 (about 100 KB text): no match",
+      "https://www.a-rosa.de/fileadmin/media/downloads_de/AGB_2021.pdf 200 (German AGB 2021, about 50 KB text): no match",
+      "https://www.a-rosa.de/mein-a-rosa/a-rosa-bordinformationen.html and /kontakt/faq.html: 404 (guessed German URLs)",
+      "Web search 'Flusskreuzfahrt Urne Asche verstreuen erlaubt nicko A-ROSA': A-ROSA catalogues, AGB and FAQ only; no Urne/Asche text; separate news on Rhineland-Palatinate river burials (not operator-related)"
+    ],
+    "officialContact": "A-ROSA phone +49 381 2026001 (shown on the on-board information page)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.arosa-cruises.com/company/contact.html",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "nicko-cruises",
+    "name": "nicko cruises",
+    "parent": "nicko cruises Schiffsreisen GmbH",
+    "fleetType": "river",
+    "regions": [
+      "Europe (river)",
+      "ocean (Vasco da Gama)"
+    ],
+    "headquarters": "Stuttgart, Germany",
+    "notes": "Searched in German: 'nicko cruises Urne Asche Beisetzung Schiff'. No nicko-published material on ashes. Results were German sea-burial operators (e.g. Adler-Schiffe) and other lines, which say nothing about nicko.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.nicko-cruises.de/faq 200 (about 42 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial|Urne|Asche|Bestattung|verstorben: no match (only 'Aschenbecher', ashtrays, in the smoking rule)",
+      "https://www.nicko-cruises.de/agb 200 (about 221 KB text): no match",
+      "https://www.nicko-cruises.de/sitemap.xml 404",
+      "Web search 'Flusskreuzfahrt Urne Asche verstreuen erlaubt nicko A-ROSA': no nicko material"
+    ],
+    "officialContact": "nicko cruises, info@nicko-cruises.de, +49 711 248980 44 (published on the official FAQ)"
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "apt-travelmarvel",
+    "name": "APT / Travelmarvel",
+    "parent": "APT Travel Group",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Mekong",
+      "Kimberley (APT small ship)"
+    ],
+    "headquarters": "Melbourne, Victoria, Australia",
+    "notes": "Searched: 'APT river cruise ashes urn scatter FAQ'. No APT or Travelmarvel material surfaced. Travelmarvel was not searched separately (search budget exhausted). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.aptouring.com/en-au/terms-and-conditions 200 (about 14 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.aptouring.com/en-au/faqs, /en-au/help/faqs, /en-au/frequently-asked-questions: 404 (no FAQ URL found)",
+      "Web search 'site:scenic.com.au OR site:scenic.cruises OR site:emerald.cruises OR site:aptouring.com ashes scatter': no aptouring.com result",
+      "Travelmarvel site not checked separately"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.aptouring.com/en-us/connect-with-us/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "scenic-river",
+    "name": "Scenic (river)",
+    "parent": "Scenic Group (also operates Scenic ocean and Emerald)",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Mekong",
+      "Egypt (Nile)"
+    ],
+    "headquarters": "Sydney, New South Wales, Australia",
+    "notes": "Searched: 'Scenic river cruise scattering ashes policy'. No Scenic material surfaced. Scenic river and Scenic ocean are brands of the same group; whether the ocean (Scenic Eclipse) records cover the river fleet is not established here.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.scenic.com.au/faqs: redirected to https://scenic.cruises/US/en-US (homepage, 200): no match",
+      "https://scenic.cruises/US/en-US/plan-your-journey/faqs/river 200 (River Cruise FAQs, about 19 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.scenic.com.au/terms-conditions/scenic-general-terms-and-conditions -> scenic.cruises/AU/en-GB/... 200 (about 13 KB text, partly script-rendered): no match",
+      "https://www.scenic.com.au/terms-conditions/europe-river-cruise2025 -> scenic.cruises/AU/en-GB/terms-conditions 200: no match",
+      "Web search 'site:scenic.com.au OR site:scenic.cruises ... ashes scatter': only terms and brochures, no ashes text",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
+    ],
+    "round16": "searched-index-no-policy"
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "emerald-river",
+    "name": "Emerald Cruises (river)",
+    "parent": "Scenic Group",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Mekong"
+    ],
+    "headquarters": "Sydney, New South Wales, Australia",
+    "notes": "Searched: 'Emerald Cruises river ashes scatter'. No Emerald material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.emeraldcruises.com/faqs: redirected to https://emerald.cruises/US/en-US (homepage, 200): no match",
+      "https://emerald.cruises/US/en-US/plan-your-journey/faqs and /river/plan-your-journey/faqs: 404",
+      "Shared Scenic Group terms (scenic.cruises AU general terms, which cover Emerald brand journeys) 200: no match",
+      "Web search (site:emerald.cruises ... ashes scatter): no Emerald page",
+      "Version 1.6: domain-restricted search of Scenic and Emerald sites found no ashes page."
+    ],
+    "round16": "searched-index-no-policy"
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "grand-circle-river",
+    "name": "Grand Circle Cruise Line (river)",
+    "parent": "Grand Circle Corporation (also Overseas Adventure Travel)",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Egypt (Nile)"
+    ],
+    "headquarters": "Boston, Massachusetts, USA",
+    "notes": "Searched: 'Grand Circle Cruise Line ashes scatter remains policy'. No Grand Circle material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.gct.com/faq 200 (about 4.5 KB text, mostly script-rendered): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.oattravel.com/faq -> /faq-home 200 (sister brand): no match",
+      "No search spent on Grand Circle this round"
+    ]
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "secondary-reporting",
+    "statusRationale": "Defunct: the line ceased operations on 20 February 2024 and cancelled all future sailings (trade press). No ashes policy is relevant for booking; the status records the absence of a current operator.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://cruiseindustrynews.com/cruise-news/2024/02/american-queen-voyages-ceases-operations/",
+        "title": "American Queen Voyages ceases operations",
+        "type": "secondary-news",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Search-result title and summary only; not fetched."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.travelweekly.com/River-Cruising/American-Queen-Voyages-has-shut-down",
+        "title": "American Queen Voyages has shut down",
+        "type": "secondary-news",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Search-result title only; not fetched."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the American Queen brand or vessels returned under a new operator after 2024 (no later reporting found in this round)"
+    ],
+    "needsDirectContact": false,
+    "id": "american-queen-voyages",
+    "name": "American Queen Voyages",
+    "parent": "Hornblower Group (former)",
+    "fleetType": "river",
+    "regions": [
+      "Mississippi River system",
+      "Pacific Northwest",
+      "Great Lakes (former)"
+    ],
+    "headquarters": "New Orleans, Louisiana, USA (former)",
+    "notes": "Operating status: ceased operations 20 February 2024 (parent Hornblower Group in Chapter 11; reports describe the closure as expected to be permanent). Exclude from the guide as a bookable option unless a revival is confirmed. For US rivers generally see the EPA entry in law-inland-waterways.json (inland scattering not regulated by MPRSA; state rules apply).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "sanctuary-retreats",
+    "name": "Sanctuary Retreats (Nile and Mekong river cruises)",
+    "parent": "Abercrombie & Kent group",
+    "fleetType": "river",
+    "regions": [
+      "Egypt (Nile)",
+      "Mekong"
+    ],
+    "headquarters": "London, England, UK",
+    "notes": "Not searched individually: the shared search budget ran out. For the Nile, see the Egypt entries in law-inland-waterways.json (UK FCDO says cremation is not available in Egypt; Law 48 of 1982 bars throwing wastes into the Nile; whether ashes count is not established). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.sanctuaryretreats.com/ redirected to https://www.abercrombiekent.com/sanctuary 200 (Sanctuary is presented under Abercrombie & Kent): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match (only 'wake up' in an unrelated story)",
+      "Web search 'Mekong river cruise scatter ashes Pandaw OR \"Heritage Line\" OR \"Aqua Mekong\" OR Sanctuary': nothing for Sanctuary",
+      "Nile legal context (Law 48 of 1982; FCDO: cremation not available in Egypt) is in law-inland-waterways.json"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.abercrombiekent.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "aqua-expeditions",
+    "name": "Aqua Expeditions (Aqua Mekong, Aqua Nera Amazon)",
+    "parent": "Aqua Expeditions",
+    "fleetType": "river",
+    "regions": [
+      "Mekong (Vietnam, Cambodia)",
+      "Peruvian Amazon",
+      "Indonesia (Aqua Blu, expedition)"
+    ],
+    "headquarters": "Singapore",
+    "notes": "Searched: 'Mekong cruise scatter ashes Vietnam Cambodia Pandaw Heritage Line Aqua Mekong'. Only itinerary pages surfaced; nothing on ashes. Vietnamese and Cambodian law on river scattering was not found in this round.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.aquaexpeditions.com/faq/ and /faqs/: 404 (no FAQ URL found)",
+      "Web search 'Mekong river cruise scatter ashes Pandaw OR \"Heritage Line\" OR \"Aqua Mekong\" OR Sanctuary': itinerary pages only"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.aquaexpeditions.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "heritage-line",
+    "name": "Heritage Line",
+    "parent": "Heritage Line (Vietnam)",
+    "fleetType": "river",
+    "regions": [
+      "Mekong",
+      "Halong Bay (Lan Ha Bay)"
+    ],
+    "headquarters": "Ho Chi Minh City, Vietnam",
+    "notes": "Covered only by the combined Mekong search above; no Heritage Line material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.heritagelinecruise.com/faq and https://heritagelinecruise.com/faqs/: connection failed (no response)",
+      "Web search (Mekong group query): only a Heritage Line itinerary listing, nothing on ashes"
+    ],
+    "officialLinks": {
+      "kind": null,
+      "url": null,
+      "method": "heritagelinecruise.com did not respond and has no indexed pages; no verifiable official website.",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "pandaw",
+    "name": "Pandaw",
+    "parent": "Pandaw River Expeditions",
+    "fleetType": "river",
+    "regions": [
+      "Mekong",
+      "Myanmar (Irrawaddy, Chindwin)",
+      "India"
+    ],
+    "headquarters": "Singapore / Yangon (as published historically)",
+    "notes": "Covered by the combined Mekong search; only Pandaw itinerary PDFs and reseller pages surfaced, none on ashes.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.pandaw.com/faq 200 (about 12 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.pandaw.com/terms-and-conditions 404",
+      "Web search (Mekong group query): Pandaw itinerary PDFs and 'life onboard' page in results; no ashes text"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.pandaw.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "No official statement from any Yangtze operator on cremated remains was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Chinese rules on scattering ashes in the Yangtze were not checked."
+    ],
+    "needsDirectContact": true,
+    "id": "yangtze-operators",
+    "name": "Century Cruises and other Yangtze River operators",
+    "parent": "Various (Century Cruises; other Yangtze lines)",
+    "fleetType": "river",
+    "regions": [
+      "Yangtze River, China"
+    ],
+    "headquarters": "Chongqing, China (Century Cruises)",
+    "notes": "The planned search could not run (shared search budget exhausted). No operator policy and no Chinese regulation on scattering ashes in the Yangtze were checked. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "Web search 'Yangtze river cruise scatter ashes Century Cruises OR Victoria Cruises' (with Chinese terms): only operator background pages (Audley, Cruise Critic, China Discovery); no statement from Century Cruises, Victoria Cruises or another Yangtze operator",
+      "No official operator site was fetched this round"
+    ]
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.captaincook.com.au/celebrations/private-boat-hire",
+        "title": "Captain Cook Cruises private boat hire",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Surfaced in search; not fetched. Snippet describes a charter fleet available for private hire; no mention of ashes was seen."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "The official site returned HTTP 403; whether a private charter may include an ashes ceremony should be asked directly."
+    ],
+    "needsDirectContact": true,
+    "id": "captain-cook-cruises-australia",
+    "name": "Captain Cook Cruises (Australia)",
+    "parent": "Kelsian Group (formerly SeaLink Marine & Tourism)",
+    "fleetType": "coastal",
+    "regions": [
+      "Sydney Harbour",
+      "Murray River (historically)"
+    ],
+    "headquarters": "Sydney, New South Wales, Australia",
+    "notes": "Searched: 'Captain Cook Cruises Sydney Harbour ashes scattering memorial cruise'. Captain Cook offers private charters, but nothing found says whether an ashes ceremony is allowed. A different operator (Sydney Harbour Escapes) markets ashes-scattering charters on the harbour, which says nothing about Captain Cook.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.captaincook.com.au/celebrations/private-boat-hire 403 (bot protection; not bypassed)",
+      "https://www.captaincook.com.au/faqs and /sitemap.xml 403",
+      "archive.org availability API: connection failed through the proxy; no archived copy read",
+      "Web search 'Captain Cook Cruises OR \"Murray Princess\" ashes scattering memorial cruise': no Captain Cook statement; other Australian operators (Wildlife Coast Cruises) advertise memorial cruises, which says nothing about Captain Cook"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.captaincook.com.au/contact-us/",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?"
+    ],
+    "needsDirectContact": true,
+    "id": "murray-princess",
+    "name": "Murray Princess (PS Murray Princess)",
+    "parent": "Kelsian Group / Captain Cook Cruises (as reported historically; not verified this round)",
+    "fleetType": "river",
+    "regions": [
+      "Murray River, South Australia"
+    ],
+    "headquarters": "Mannum, South Australia",
+    "notes": "The planned search could not run (shared search budget exhausted). Ownership line above is not verified. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.murrayprincess.com.au/faqs/ 200 (about 28 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.murrayprincess.com.au/ 200: no match",
+      "Web search (Captain Cook / Murray Princess memorial query): only an Anzac Day cruise news page, unrelated to ashes"
+    ],
+    "officialContact": "Contact page: https://www.murrayprincess.com.au/contact/ (linked from the official FAQ)",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.murrayprincess.com.au/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "Official operator pages that could be opened on 2026-11-21 contain no wording on carrying, scattering or committing cremated remains; nothing else official was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://mp.australis.com/mp/wp-content/uploads/2022/07/Brochure-23-24ENG-1.pdf",
+        "title": "Australis brochure 2023-24 (English)",
+        "type": "official-pdf",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Surfaced in search; not fetched; snippet showed itinerary content only."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether Australis permits ashes ceremonies",
+      "Whether Chilean rules for Cape Horn National Park or Chilean waters restrict scattering",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Whether Chilean rules for Cape Horn National Park or Chilean waters restrict scattering."
+    ],
+    "needsDirectContact": true,
+    "id": "australis",
+    "name": "Australis",
+    "parent": "Australis (Chile)",
+    "fleetType": "expedition",
+    "regions": [
+      "Patagonia",
+      "Tierra del Fuego",
+      "Cape Horn"
+    ],
+    "headquarters": "Santiago / Punta Arenas, Chile",
+    "notes": "Searched: 'Australis Patagonia cruise ashes scatter Cape Horn'. Results cover itineraries and weather-dependent Cape Horn landings only. Not a river line; included because it was assigned in the regional group.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://mp.australis.com/mp/wp-content/uploads/2022/07/Brochure-23-24ENG-1.pdf 200 (brochure, about 15 KB text): Grep of page text and raw HTML for ashes|cremat*|urn(s)|scatter*|funeral|deceased|memorial: no match",
+      "https://www.australis.com/en/faq/ 404",
+      "No search spent on Australis this round"
+    ],
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.australis.com/",
+      "method": "direct (Randy-supplied)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "No official statement from any Nile cruise operator on cremated remains was found. Silence is not treated as permission or prohibition.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Whether Egyptian law (Law 48 of 1982 on protection of the Nile) treats scattering ashes as a prohibited discharge; see law-inland-waterways.json."
+    ],
+    "needsDirectContact": true,
+    "id": "nile-cruise-operators",
+    "name": "Nile cruise operators (general)",
+    "parent": "Various",
+    "fleetType": "river",
+    "regions": [
+      "Egypt (Nile)"
+    ],
+    "headquarters": "Egypt",
+    "notes": "Searched: 'Egypt law scattering cremated ashes Nile cruise cremation illegal Egypt'. No Nile operator published a policy in the results. Legal context is in law-inland-waterways.json (Egypt).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "Web search 'Nile cruise scatter ashes Egypt river permitted': no statement by any Nile cruise operator; results were Egyptian news (permit revoked for a cruise boat discharging waste in Luxor, Ahram Online), UK FCDO bereavement pack and a news item about a tourist stopped with an urn at a temple (secondary leads only)",
+      "No official operator site was fetched this round"
+    ]
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "This is a group record. One Japanese private-charter operator officially offers ocean-scattering cruises (see tokyo-bay-anniversary-cruises), but that does not establish a status for Japanese or Korean coastal operators in general.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Does the operator allow guests to bring cremated remains aboard its river vessels, and does it permit scattering or committal of ashes from the vessel? If so, what notice, documents, container type and approvals (including any national or local waterway permit) are required?",
+      "Which specific Japanese or Korean coastal passenger lines (not dedicated scattering charters) allow ashes ceremonies; Korean operators returned no statement."
+    ],
+    "needsDirectContact": true,
+    "id": "japan-korea-coastal",
+    "name": "Japanese and Korean coastal operators (general)",
+    "parent": "Various",
+    "fleetType": "coastal",
+    "regions": [
+      "Japan",
+      "South Korea"
+    ],
+    "headquarters": "Japan / South Korea",
+    "notes": "Not searched: the shared search budget ran out before this group. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "Web search 'Japan sea scattering ashes cruise (Japanese terms)': found one official operator page (Tokyo Bay Anniversary Cruises, private charter cruisers) offering ocean-scattering memorial cruises; recorded as a separate new operator (tokyo-bay-anniversary-cruises). Other results were press releases of scattering services (secondary).",
+      "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/ 200: read; see the new record",
+      "Web search (Korean terms for sea burial and coastal cruise, Busan/Incheon): only news on coastal sightseeing cruises (Grace in Busan); no Korean operator statement on ashes"
+    ]
+  },
+  {
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "statusRationale": "The Viking River Cruises FAQ, travel-information page, the Viking Passenger Ticket Contract and the prohibited-items list were read on 2026-11-21; none mentions cremated remains or scattering. The only lead is an unverified passenger review.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.cruisecritic.com/cruise/viking-river/viking-alruna/reviews/589479",
+        "title": "Cruise Critic passenger review, Viking Alruna",
+        "type": "forum-anecdote",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Search snippet only: the search tool summarized it as a cruise director helping pick a spot to scatter ashes in Cologne. Exact wording not seen; not fetched."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.vikingrivercruises.com/frequently-asked-questions.html",
+        "title": "Viking River Cruises FAQ",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ashes, cremated/cremation, cremains, burial, scatter, committal, human remains, funeral, urn and memorial: no match."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.vikingrivercruises.com/my-trip/travel-information/index.html",
+        "title": "Viking River Cruises travel information",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ashes, cremated/cremation, cremains, burial, scatter, committal, human remains, funeral, urn and memorial: no match."
+      },
+      {
+        "id": "s4",
+        "url": "https://docs.vikingcruises.com/pdf/PassengerTicketContract.pdf",
+        "title": "Viking Passenger Ticket Contract (PDF; reached from vikingcruises.com/passengerticketcontract/)",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); full text searched: 'death' appears only in liability clauses; no ashes, cremation, burial-at-sea or human-remains clause."
+      },
+      {
+        "id": "s5",
+        "url": "https://assets.viking.com/is/image/viking/Prohibited-Item-List-2026-08-25",
+        "title": "Viking Prohibited Items List for Luggage Loading (image, updated 09/23/2026)",
+        "type": "official-pdf",
+        "quote": "The above list is illustrative, not exhaustive and subject to change without notice.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, JPEG image read visually): the list and its 'not prohibited' examples do not mention cremated remains or urns."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether the operator permits carrying or scattering cremated remains at all",
+      "Whether any national or regional inland-waterway law on its rivers allows scattering from a passenger vessel (see law-inland-waterways.json)",
+      "Ask Viking in writing whether river-ship guests may carry cremated remains aboard and scatter them, and whether this is ever arranged by the crew, given national inland-waterway rules."
+    ],
+    "needsDirectContact": true,
+    "id": "viking-river-note",
+    "name": "Viking River Cruises (note only)",
+    "parent": "Viking Holdings",
+    "fleetType": "river",
+    "regions": [
+      "Europe",
+      "Egypt",
+      "Mekong",
+      "Mississippi"
+    ],
+    "headquarters": "Basel, Switzerland / Los Angeles, USA",
+    "notes": "Covered by another agent; recorded only because one forum-anecdote surfaced in this round's search. A forum anecdote never establishes policy.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.vikingrivercruises.com/frequently-asked-questions.html 200: no mention",
+      "https://www.vikingcruises.com/oceans/my-trip/travel-information/index.html 200, /expeditions/my-trip/travel-information/index.html 200, https://www.vikingrivercruises.com/my-trip/travel-information/index.html 200: no mention",
+      "https://vikingcruises.com/passengerticketcontract/ -> https://docs.vikingcruises.com/pdf/PassengerTicketContract.pdf 200: no mention; https://www.vikingcruises.co.uk/passengerticketcontract/ resolves to the same PDF",
+      "https://assets.viking.com/is/image/viking/Prohibited-Item-List-2026-08-25 200 (image): no mention",
+      "Lead only: Cruise Critic review of Viking Alruna (forum-anecdote, snippet from round 2, not fetched)"
+    ],
+    "officialContact": "Viking reservations 1-800-304-9616 (official FAQ)"
+  },
+  {
+    "id": "tokyo-bay-anniversary-cruises",
+    "name": "Tokyo Bay Anniversary Cruises (Anniversary Cruise)",
+    "parent": "Not published on the page read",
+    "fleetType": "charter (private cruisers, Tokyo Bay)",
+    "regions": [
+      "Tokyo Bay, Japan",
+      "overseas resort scattering (Hawaii, Guam)"
+    ],
+    "headquarters": "Tokyo, Japan (phone 03-6809-6455 shown on the site)",
+    "status": "officially-permitted",
+    "statusRationale": "The operator's own English page offers ocean-scattering cruises returning the remains of the deceased to the sea, with private, joint, proxy and resort plans. It is a private-charter operator, not a cruise line, so it illustrates the Japanese market only.",
+    "evidenceLevel": "official-policy",
+    "answers": {
+      "permitted": {
+        "answer": "Yes. The operator offers ocean-scattering memorial cruises in which the remains of the deceased are returned to the sea (Tokyo Bay private charters).",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Arranged in advance: the page describes support 'from advance consultation to the day of the scattering'. No minimum notice period is published.",
+        "basis": "official",
+        "sources": [
+          "s3"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Yes. Plans include a fully-booked family scattering for just the family, a joint scattering with other families, a proxy scattering without the family present, and resort scattering overseas (Hawaii, Guam).",
+        "basis": "official",
+        "sources": [
+          "s2"
+        ]
+      },
+      "designatedArea": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Staff guide the ceremony ('Our staff will provide thorough guidance during the ceremony').",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "No scattering fee is published on the scattering page; the separate 'About price' page (read 2026-11-21) does not mention scattering.",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "General cruise FAQ: departures usually go ahead in rain; the captain decides based on safety. Nothing specific to scattering.",
+        "basis": "official",
+        "sources": [
+          "s5"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "The page mentions a 'completion report' after the scattering; its content (for example coordinates or a certificate) is not described.",
+        "basis": "official",
+        "sources": [
+          "s3"
+        ]
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Model plan includes a moment of silence, a sake offering, petals sent to the sea (only petals, for environmental reasons), an optional white rose wreath, cherry-blossom routes in spring, a commemorative photo and meals.",
+        "basis": "official",
+        "sources": [
+          "s4"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/",
+        "title": "Commemorating the deceased: Ocean scattering of ashes cruise | Tokyo Bay Anniversary Cruises - Private cruises",
+        "type": "official-policy-page",
+        "quote": "An ocean scattering cruise is a memorial service in which the remains of the deceased are returned to the sea.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/",
+        "title": "Same page, plan types",
+        "type": "official-policy-page",
+        "quote": "including a fully-booked family scattering for just your family, a proxy scattering that does not require your presence, a joint scattering with other family members, and a resort scattering overseas in Hawaii, Guam, etc.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/",
+        "title": "Same page, support",
+        "type": "official-policy-page",
+        "quote": "We comply with all laws and regulations regarding ocean scattering, and provide comprehensive support from advance consultation to the day of the scattering and completion report.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+      },
+      {
+        "id": "s4",
+        "url": "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/",
+        "title": "Same page, model plan",
+        "type": "official-policy-page",
+        "quote": "In consideration of the environment, only the petals are sent to the sea.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+      },
+      {
+        "id": "s5",
+        "url": "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/",
+        "title": "Same page, FAQ",
+        "type": "official-faq",
+        "quote": "Generally, we will depart as usual in rainy weather. The captain will make a decision based on safety as his first priority",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word. General cruise FAQ on the page, not specific to scattering."
+      }
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Price of a scattering cruise, required documents (Japanese law and the operator's own requirements), container or powdering requirements, distance from shore, and what the completion report contains."
+    ],
+    "needsDirectContact": true,
+    "notes": "Added in round 3.",
+    "wordingConfirmed": true,
+    "round3": "verified-official",
+    "researchLog": [
+      "https://www.anniversary-cruise.com/en/event/anniversary/sannkotu-model-plan/ 200: ocean scattering cruise page, quotes copied",
+      "https://www.anniversary-cruise.com/en/service/price/ 200: no mention of scattering"
+    ],
+    "officialContact": "Phone 03-6809-6455; consultation form https://www.anniversary-cruise.com/en/ordermade-form-en/",
+    "notCruiseLine": true
+  }
+]
