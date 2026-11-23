@@ -9,7 +9,6 @@
 // form is a progressive enhancement (hidden until its script runs).
 // No insurance or sales content in the article body, by design.
 import ArticleByline from '@/components/article/ArticleByline.astro';
-import ArticleSummary from '@/components/article/ArticleSummary.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import data from '@/data/cruise-ashes/operators.json';
 
@@ -20,6 +19,9 @@ interface Props {
   preview?: boolean;
 }
 const { path, h1, updated, preview = false } = Astro.props;
+// The H1 is shown on the hero in two lines: before the colon, then the rest.
+const [h1Main, ...h1Rest] = h1.split(': ');
+const h1Sub = h1Rest.join(': ');
 
 type Op = (typeof data.operators)[number];
 const operators = data.operators as Op[];
@@ -35,17 +37,8 @@ const checkedLabel = new Date(`${data.checked}T12:00:00Z`).toLocaleDateString('e
 
 const established = operators.filter((o) => o.status !== 'unverified');
 const unverified = operators.filter((o) => o.status === 'unverified');
-const quickAnswer =
-  'Yes, on many major cruise lines, but only with the line’s permission and on its terms. Carnival, Royal Caribbean, Princess, MSC, Virgin Voyages, P&O Cruises, Cunard, Fred. Olsen and Marella publish a written process. Ambassador says it may be possible case by case, and Crystal does not offer it from the ship. Norwegian, Celebrity, Holland America, Disney, Viking and most smaller lines publish no policy we could find, so ask them in writing before you book. Plan on a biodegradable urn, copies of the death and cremation certificates, permission arranged before or at the start of the cruise, and a ceremony at least 12 nautical miles offshore.';
-const keyPoints = [
-  'Final expense life insurance through Funeral Funds is often used to fund a cruise to scatter ashes at sea, anywhere in the world where scattering is permitted.',
-  'Never scatter ashes from your balcony or a public deck on your own. Ask the cruise line first; the ship arranges the time and place.',
-  'Published policies require a biodegradable container, and several require the whole urn to go into the sea rather than loose ashes.',
-  'Some lines charge: P&O Cruises lists a GBP 270 admin charge and Cunard sells a paid package; MSC says there is no fee.',
-  'A cruise line’s permission does not override the law of the country whose waters the ship is in.',
-  'From a US port, cremated remains must be placed at least 3 nautical miles from land and the burial reported to the EPA within 30 days.',
-  'Airport rules differ by country and airline. Air Canada, for example, no longer accepts cremated remains in checked bags from August 28, 2026.',
-];
+// Every cruise line in the guide (the comparison plus the directory).
+const lineCount = operators.length;
 const toc = [
   { id: 'which-lines', text: 'Which cruise lines allow scattering ashes?' },
   { id: 'profiles', text: 'Cruise lines with an established policy' },
@@ -90,12 +83,49 @@ const lawRegions = [
 ];
 ---
 
-<div class="container page page--article cra" data-article-layout="content">
+{/* Hero banner (Randy, November 2026): full-width image with the H1 over it,
+   modeled on the national parks guide. The image is an AI-generated
+   illustration Randy supplied (generic, unbranded ship). The H1 text is
+   unchanged; the part after the colon displays as the subtitle line. */}
+<header class="cra-hero">
+  <picture>
+    <source type="image/avif" srcset="/images/cruise-ashes/cruise-ship-hero-800.avif 800w, /images/cruise-ashes/cruise-ship-hero-1200.avif 1200w, /images/cruise-ashes/cruise-ship-hero-1600.avif 1600w" sizes="100vw" />
+    <source type="image/webp" srcset="/images/cruise-ashes/cruise-ship-hero-800.webp 800w, /images/cruise-ashes/cruise-ship-hero-1200.webp 1200w, /images/cruise-ashes/cruise-ship-hero-1600.webp 1600w" sizes="100vw" />
+    <img class="cra-hero__img" src="/images/cruise-ashes/cruise-ship-hero.jpg" alt="A white cruise ship sailing on calm blue water past green mountains at sunset" width="1600" height="800" fetchpriority="high" />
+  </picture>
+  <div class="cra-hero__shade"></div>
+  <div class="cra-hero__text">
+    <h1>{h1Main}:<span class="cra-hero__sub"> {h1Sub}</span></h1>
+  </div>
+  <p class="cra-hero__credit">AI-generated illustration</p>
+</header>
+
+{/* Randy (November 2026): no Quick Answer or Key Points; an introductory paragraph replaces them. */}
+<div class="container page page--article cra" data-article-layout="content" data-article-exceptions="quick-answer key-points">
   <div class="prose wp-content">
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
-    <h1>{h1}</h1>
     <ArticleByline updated={updated} />
-    <ArticleSummary quickAnswer={quickAnswer} takeaways={{ label: 'Key Points', items: keyPoints }} />
+    {/* Opening (Randy, November 2026), modeled on the national parks guide's introduction. */}
+    <p class="cra-lead">
+      <strong>For someone who loved the sea, few farewells feel more fitting than a ceremony on the open water.</strong>
+      Families gather at the rail at sunset, share a few stories, and let their loved one go where the horizon runs out
+      of land.
+    </p>
+    <p>
+      A cruise can make that moment possible almost anywhere in the world: the Caribbean, Alaska, the Mediterranean, the
+      fjords of Norway or the South Pacific. It can also turn a goodbye into one last trip together, with time to grieve,
+      remember and celebrate a life.
+    </p>
+    <p>
+      <strong>But you can’t simply scatter ashes from your balcony.</strong> Every cruise line sets its own rules, and
+      many don’t publish them at all. Some arrange a private ceremony with an officer on deck; others require a
+      biodegradable urn, copies of the death and cremation certificates, or permission before you sail. And the ship’s
+      permission doesn’t override the law of the waters it’s sailing through.
+    </p>
+    <p>
+      We checked the official policies of {lineCount} cruise lines so your family knows what to expect before you book.
+      Find your cruise line below.
+    </p>
     <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
       <ul class="cra-jump__list">
         {jump.map((j) => <li><a class="cra-jump__link" href={j.href}>{j.label}</a></li>)}
@@ -675,6 +705,66 @@ const lawRegions = [
 </script>
 
 <style>
+  /* Hero banner (modeled on the national parks guide's .ola-hero). */
+  .cra-hero {
+    position: relative;
+    color: #fff;
+    background: #1f2926;
+  }
+  .cra-hero__img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 68% 50%;
+  }
+  .cra-hero__shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(0 0 0 / 0.05) 30%, rgb(0 0 0 / 0.65) 100%);
+  }
+  .cra-hero__text {
+    position: absolute;
+    inset: auto 0 var(--space-12);
+    padding-inline: var(--space-4);
+    max-width: var(--container-max);
+    margin-inline: auto;
+  }
+  .cra-hero h1 {
+    font-size: clamp(2.25rem, 1.6rem + 3.4vw, 4.25rem);
+    line-height: 1.05;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 12px rgb(0 0 0 / 0.4);
+  }
+  .cra-hero__sub {
+    display: block;
+    font-size: clamp(1.125rem, 1rem + 0.8vw, 1.625rem);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: var(--space-3);
+    text-shadow: 0 1px 8px rgb(0 0 0 / 0.5);
+  }
+  .cra-hero__credit {
+    position: absolute;
+    right: var(--space-2);
+    bottom: var(--space-2);
+    margin: 0;
+    font-size: 0.75rem;
+    color: rgb(255 255 255 / 0.85);
+  }
+  @media (min-width: 40rem) {
+    .cra-hero__img {
+      aspect-ratio: 16 / 9;
+    }
+    .cra-hero__text {
+      padding-inline: var(--space-6);
+      bottom: 2.5rem;
+    }
+  }
+  .cra-lead {
+    font-size: 1.25rem;
+  }
   .cra {
     padding-block: var(--space-8) var(--space-12);
   }
