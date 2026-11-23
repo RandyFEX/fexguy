@@ -257,6 +257,7 @@ export const site: SiteConfig = {
             { label: 'IUL Playbook', href: '/iul-book/' },
             { label: 'Buyers Guide', href: '/buyers-guide/' },
             { label: 'Scattering Ashes at Sea', href: '/scattering-ashes-from-a-cruise-ship/' },
+            { label: 'Scattering Ashes in National Parks', href: '/scattering-ashes-in-us-national-parks/' },
           ],
         },
         {
