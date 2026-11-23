@@ -126,12 +126,12 @@ const lawRegions = [
       We checked the official policies of {lineCount} cruise lines so your family knows what to expect before you book.
       Find your cruise line below.
     </p>
+    <ArticleToc items={toc} path={path} />
     <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
       <ul class="cra-jump__list">
         {jump.map((j) => <li><a class="cra-jump__link" href={j.href}>{j.label}</a></li>)}
       </ul>
     </nav>
-    <ArticleToc items={toc} path={path} />
 
     <h2 id="which-lines">Which cruise lines allow scattering ashes?</h2>
     <p>
