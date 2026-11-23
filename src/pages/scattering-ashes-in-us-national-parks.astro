@@ -1,10 +1,10 @@
 ---
-// One Last Amazing Adventure: private five-park preview (Randy, November
-// 2026, Version 1.5 editorial redesign). Built from the Version 1.1 research
-// in src/data/last-adventure/parks.ts. Review only: noindex, nofollow (also
-// an X-Robots-Tag header in vercel.json), out of the sitemap, llms.txt and
-// site search, never linked from the site, and not merged to production.
+// Scattering Ashes in U.S. National Parks: One Last Amazing Adventure (Randy,
+// November 2026). The 63-park guide built from the research in
+// src/data/last-adventure/parks.ts. Published at Randy's instruction (V4.6):
+// indexable and in the sitemap, at /scattering-ashes-in-us-national-parks/.
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { pageTitle } from '@/lib/seo/meta';
 import { parks, states, parkOrder, parkStates, stateId, mapsUrl, type Point, type Photo } from '@/data/last-adventure/parks';
 
 const total = parks.reduce((n, p) => n + p.destinations.length, 0);
@@ -12,9 +12,10 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-// Fixed page hero (Version 4.0): the verified NPS photograph of a family at Lady Bird Johnson Grove.
-const heroPhoto = parks.find((p) => p.id === 'redwood')!.destinations.find((d) => d.id === 'lady-bird-johnson-grove')!.photo!;
-const hero = { ...heroPhoto, caption: 'Lady Bird Johnson Grove, Redwood National and State Parks' };
+// Fixed page hero (V4.6): the verified NPS photograph at Tunnel View, Yosemite
+// (no people; the earlier Lady Bird Johnson Grove hero showed a family).
+const heroPhoto = parks.find((p) => p.id === 'yosemite')!.destinations.find((d) => d.id === 'tunnel-view')!.photo!;
+const hero = { ...heroPhoto, caption: 'Tunnel View, Yosemite National Park' };
 const credit = (ph: Photo) => ph.credit;
 // The determination is the summary up to its first comma, semicolon or colon
 // (bold); the explanation after it stays regular. The text is never changed.
@@ -63,16 +64,14 @@ const difficultyRange = (text: string): [number, number] | null => {
 ---
 
 <BaseLayout
-  title="Scattering Ashes in U.S. National Parks: One Last Amazing Adventure (Preview) | Funeral Funds"
-  description="Private preview: five national parks and 21 extraordinary places for a final family adventure."
-  robots="noindex, nofollow"
-  noindex={true}
+  title={pageTitle('Scattering Ashes in U.S. National Parks: One Last Amazing Adventure')}
+  description="Can you scatter ashes in a national park? See the rules, permits and extraordinary places to say goodbye in all 63 U.S. national parks."
   canonical="/scattering-ashes-in-us-national-parks/"
   stickyCall={false}
   preFooter={false}
   bodyClass="page-ola"
 >
-  <article class="ola" data-page-type="utility" data-page-reason="Private, non-indexed preview of the One Last Amazing Adventure national parks guide.">
+  <article class="ola" data-page-type="guide" data-page-reason="Standalone guide to scattering ashes in U.S. national parks, built from park data with its own layout; not an editorial article.">
     <header class="ola-hero">
       <picture>
         {hero.srcWebp && <source srcset={hero.srcWebp} type="image/webp" />}
@@ -80,8 +79,8 @@ const difficultyRange = (text: string): [number, number] | null => {
       </picture>
       <div class="ola-hero__shade"></div>
       <div class="ola-hero__text">
-        <p class="ola-hero__flag">Private preview. Not published.</p>
-        <h1>One Last Amazing Adventure</h1>
+        <h1>Scattering Ashes in U.S. National Parks</h1>
+        <p class="ola-hero__sub ola-hero__sub--name">One Last Amazing Adventure</p>
         <p class="ola-hero__sub">63 National Parks, Extraordinary Places to Say Goodbye</p>
       </div>
       <p class="ola-credit ola-credit--hero">{hero.caption}. Photo: {hero.credit}</p>
@@ -500,7 +499,8 @@ const difficultyRange = (text: string): [number, number] | null => {
   }
   .ola-hero__text {
     position: absolute;
-    inset: auto 0 2.5rem;
+    /* Phones: room for the two-line photo credit under the subtitles. */
+    inset: auto 0 var(--space-16);
     padding-inline: var(--space-4);
     max-width: var(--ola-wrap);
     margin-inline: auto;
@@ -1292,6 +1292,7 @@ const difficultyRange = (text: string): [number, number] | null => {
     }
     .ola-hero__text {
       padding-inline: var(--space-6);
+      bottom: 2.5rem;
     }
     .ola-cards {
       grid-template-columns: repeat(2, 1fr);
