@@ -82,7 +82,6 @@ export default defineConfig({
         // /facebook/, /free-quote/, /get-rates/ and /help/ are noindex landing pages (src/pages/).
         // /health-question-search-preview/ is a non-indexed review page.
         // /trin-fbl/ is a client documents page sent by direct link (noindex, nofollow).
-        // /scattering-ashes-in-us-national-parks/ is a private review page (noindex, nofollow).
         return (
           !path.startsWith('/404') &&
           path !== '/search/' &&
@@ -95,7 +94,6 @@ export default defineConfig({
           path !== '/state-regulated-investigation-preview/' &&
           path !== '/impact-calculator-preview/' &&
           path !== '/trin-fbl/' &&
-          path !== '/scattering-ashes-in-us-national-parks/' &&
           !excluded.has(path)
         );
       },
