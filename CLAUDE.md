@@ -1741,9 +1741,9 @@ Prioritize the shortest reliable path to completing approved changes.
   src/components/cruise-ashes/, data src/data/cruise-ashes/operators.json built by
   scripts/cruise-ashes/build-data.mjs) was published at Randy's instruction:
   indexable and in the sitemap. Research, sources and the gap report are in
-  docs/investigations/cruise-ship-ashes-2026-11/. It reuses the article
-  Get Pricing module (QuoteBox: sidebar from 64rem, in-article copy before
-  "Cruise lines with an established policy" on phones). Its first Key Point
+  docs/investigations/cruise-ship-ashes-2026-11/. No quote module
+  (Randy, November 2026: the page is for visits and backlinks, not leads;
+  the Get Pricing sidebar and in-article copy were removed). Its first Key Point
   is Randy's wording. Test: tests/cruise-ashes/directory.browser.mjs.
   Linked from the mega menu: Guides & Tools > Guides > "Scattering Ashes at
   Sea" (Randy, V1.18; desktop and phone).

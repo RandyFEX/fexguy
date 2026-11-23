@@ -11,7 +11,6 @@
 import ArticleByline from '@/components/article/ArticleByline.astro';
 import ArticleSummary from '@/components/article/ArticleSummary.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
-import QuoteBox from '@/components/lead/QuoteBox.astro';
 import data from '@/data/cruise-ashes/operators.json';
 
 interface Props {
@@ -92,9 +91,7 @@ const lawRegions = [
 ---
 
 <div class="container page page--article cra" data-article-layout="content">
-  {/* Version 1.17: the standard article Get Pricing module (ArticleLayout pattern): desktop sidebar, in-article copy on phones and tablets. */}
-  <div class="cra-grid">
-  <div class="cra-main prose wp-content">
+  <div class="prose wp-content">
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
     <h1>{h1}</h1>
     <ArticleByline updated={updated} />
@@ -150,8 +147,6 @@ const lawRegions = [
       page refused automated requests, so we read the search engine’s indexed copy of that official page; check the
       wording on the page before you rely on it.
     </p>
-
-    <QuoteBox placement="inline" />
 
     <h2 id="profiles">Cruise lines with an established policy</h2>
 
@@ -341,10 +336,6 @@ const lawRegions = [
       <li>Will I receive the time and coordinates afterward?</li>
       <li>If we sail from a US port, who reports it to the EPA?</li>
     </ul>
-  </div>
-  <aside class="cra-aside" aria-label="Get a quote">
-    <QuoteBox placement="article-aside" />
-  </aside>
   </div>
 
   <section class="cra-dir" id="find-your-cruise-line" aria-labelledby="no-published-policy" data-cra-directory>
@@ -686,22 +677,6 @@ const lawRegions = [
 <style>
   .cra {
     padding-block: var(--space-8) var(--space-12);
-  }
-  /* Version 1.17: same grid as ArticleLayout's .art-grid (sidebar from 64rem). */
-  .cra-main {
-    min-width: 0;
-  }
-  @media (min-width: 64rem) {
-    .cra-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 46rem) 21rem;
-      justify-content: space-between;
-      align-items: start;
-      gap: var(--space-12);
-    }
-    .cra-aside {
-      align-self: stretch;
-    }
   }
   .cra :global(.byline) {
     margin-block: var(--space-4) var(--space-6);
