@@ -126,6 +126,11 @@ const lawRegions = [
       We checked the official policies of {lineCount} cruise lines so your family knows what to expect before you book.
       Find your cruise line below.
     </p>
+  </div>
+
+  {/* Sand section (Randy, November 2026): everything after the opening sits on the national parks guide's sand color; text sits in white panels. */}
+  <div class="cra-sand">
+  <div class="prose wp-content">
     <ArticleToc items={toc} path={path} />
     <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
       <ul class="cra-jump__list">
@@ -134,6 +139,7 @@ const lawRegions = [
     </nav>
 
     <h2 id="which-lines">Which cruise lines allow scattering ashes?</h2>
+    <div class="cra-panel">
     <p>
       We checked the official website of every cruise line in this guide on {checkedLabel}. Each line is in one of four
       groups:
@@ -148,6 +154,7 @@ const lawRegions = [
       {`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted']} conditionally permitted and ${counts['not-permitted']} not permitted. They are compared below. For ${counts.unverified} other lines we found no published policy; they are listed further down with a link to contact each line where we found one.`}
     </p>
 
+    </div>
     <p class="cra-cmp__caption" id="cra-cmp-caption">Cruise lines with an established policy (checked {checkedLabel})</p>
     <ul class="cra-cmp" aria-labelledby="cra-cmp-caption">
       {
@@ -172,12 +179,14 @@ const lawRegions = [
         ))
       }
     </ul>
+    <div class="cra-panel">
     <p class="cra__note">
       “Not published” means the line’s official policy does not say. “Indexed official page” means the line’s own policy
       page refused automated requests, so we read the search engine’s indexed copy of that official page; check the
       wording on the page before you rely on it.
     </p>
 
+    </div>
     <h2 id="profiles">Cruise lines with an established policy</h2>
 
     <section class="cra-profile" id="op-royal-caribbean-international" aria-labelledby="op-rc-h">
@@ -344,6 +353,7 @@ const lawRegions = [
     </section>
 
     <h2 id="no-published-policy">Lines with no published policy</h2>
+    <div class="cra-panel">
     <p>
       For these {counts.unverified} cruise lines we searched the official website and found no published policy on
       scattering ashes. For some, parts of the site could not be read. No published policy is not a yes and not a no: ask
@@ -353,7 +363,7 @@ const lawRegions = [
       Some lines’ terms ban throwing items overboard without the crew’s permission. Holland America asks guests to
       “refrain from pouring or discarding anything overboard”
       (<a href="https://www.hollandamerica.com/en/us/plan-a-cruise/get-ready-for-your-cruise/faq/know-before-you-go" {...ext}>Know Before You Go</a>),
-      and the passage contracts of <a href="https://www.princess.com/legal/passage-contract/plc" {...ext}>Princess</a> and
+      and the passage contracts of <a href="https://www.princess.com/legal/passage-contract/plc" {...ext}>Princess</a> and{' '}
       <a href="https://www.hollandamerica.com/en/us/legal-privacy/cruise-contract" {...ext}>Holland America</a> allow a US
       $500 charge per violation. That is a general rule, not a ban on ceremonies, but it is why you need written permission.
     </p>
@@ -366,6 +376,7 @@ const lawRegions = [
       <li>Will I receive the time and coordinates afterward?</li>
       <li>If we sail from a US port, who reports it to the EPA?</li>
     </ul>
+    </div>
   </div>
 
   <section class="cra-dir" id="find-your-cruise-line" aria-labelledby="no-published-policy" data-cra-directory>
@@ -415,6 +426,7 @@ const lawRegions = [
 
   <div class="prose wp-content">
     <h2 id="documents">Documents and advance permission</h2>
+    <div class="cra-panel">
     <p>Across the policies we read, families are asked for some or all of these:</p>
     <ul>
       <li><strong>Permission before you sail:</strong> P&amp;O and Cunard need the Captain’s approval before the cruise; Princess and Virgin require approval in advance (Virgin: at least 14 days); MSC asks you to notify it before the cruise; Fred. Olsen asks for at least seven days’ notice; Royal Caribbean takes requests by email. Carnival arranges it with Guest Services once you are on board.</li>
@@ -425,7 +437,9 @@ const lawRegions = [
     </ul>
     <p>Carry copies of each document on the trip, and keep the line’s written approval with them.</p>
 
+    </div>
     <h2 id="ceremony">What happens at the ceremony</h2>
+    <div class="cra-panel">
     <ul>
       <li><strong>The ship sets the time and place.</strong> Royal Caribbean’s Front Desk sets them; MSC’s ship command sets the time; Fred. Olsen agrees them with you; Marella’s Guest Experience Coordinator arranges them.</li>
       <li><strong>Distance:</strong> every line that publishes a distance (Carnival, MSC, P&amp;O, Cunard, Fred. Olsen, Marella) requires at least 12 nautical miles from land.</li>
@@ -438,19 +452,23 @@ const lawRegions = [
       <li><strong>Not guaranteed:</strong> Fred. Olsen says the service “cannot be guaranteed,” and other lines depend on weather, port authorities and the itinerary.</li>
     </ul>
 
+    </div>
     <h2 id="law">How the law works</h2>
+    <div class="cra-panel">
     <p>
       Three layers apply at once: the law of the country whose waters the ship is in, the law of the ship’s flag
       country, and the cruise line’s own policy. A cruise line’s permission is a private rule. It never overrides the law
       of the place.
     </p>
 
+    </div>
     <nav class="cra-jump cra-jump--law" aria-label="Laws by region">
       <ul class="cra-jump__list">
         {lawRegions.map((r) => <li><a class="cra-jump__link" href={r.href}>{r.label}</a></li>)}
       </ul>
     </nav>
 
+    <div class="cra-panel">
     <h3 id="law-international">International waters and the flag state</h3>
     <p>
       Under the UN Convention on the Law of the Sea, a country’s sovereignty covers its territorial sea, which may reach
@@ -459,16 +477,18 @@ const lawRegions = [
       (Article 92), and dumping in another country’s territorial sea or exclusive economic zone needs that country’s
       express prior approval (Article 210(5))
       (<a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf" {...ext}>UNCLOS</a>).
-      The treaty does not say whether scattering ashes is “dumping,” and neither does the IMO’s page on the
+      The treaty does not say whether scattering ashes is “dumping,” and neither does the IMO’s page on the{' '}
       <a href="https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx" {...ext}>London Convention and Protocol</a>.
     </p>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-us">United States</h3>
     <p>
       US burial at sea is governed by the Marine Protection, Research, and Sanctuaries Act, not the Clean Water Act. The
-      EPA’s general permit at
-      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>
-      covers cremated remains. According to the
+      EPA’s general permit at{' '}
+      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>{' '}
+      covers cremated remains. According to the{' '}
       <a href="https://www.epa.gov/ocean-dumping/burial-sea" {...ext}>EPA’s Burial at Sea page</a>:
     </p>
     <ul>
@@ -492,6 +512,8 @@ const lawRegions = [
       We found no Alaska or Hawaii state rule on scattering ashes at sea.
     </p>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-uk-ireland">United Kingdom and Ireland</h3>
     <ul>
       <li><strong>England and Northern Irish offshore waters:</strong> “You don’t need a licence or permission to scatter ashes at sea after a cremation” (<a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>).</li>
@@ -500,6 +522,8 @@ const lawRegions = [
       <li><strong>Ireland:</strong> the Department of Transport’s voluntary guidelines suggest cremation and scattering of ashes be considered rather than burial at sea (<a href="https://www.gov.ie/en/department-of-transport/services/burial-at-sea/" {...ext}>gov.ie</a>).</li>
     </ul>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-europe">Europe and the Mediterranean</h3>
     <ul>
       <li><strong>Norway:</strong> scattering ashes needs the County Governor’s permission (<a href="https://lovdata.no/dokument/NL/lov/1996-06-07-32" {...ext}>Funeral Act, section 20</a>). On Svalbard the Governor may permit it on application, not in built-up areas (<a href="https://lovdata.no/dokument/SF/forskrift/2008-02-15-153" {...ext}>Svalbard regulation</a>).</li>
@@ -512,6 +536,8 @@ const lawRegions = [
       <li><strong>Greece:</strong> we could not confirm the rule from an official text.</li>
     </ul>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-canada-au-nz">Canada, Australia and New Zealand</h3>
     <ul>
       <li><strong>Canada:</strong> the federal disposal-at-sea law (CEPA 1999, section 125) does not mention ashes (<a href="https://laws.justice.gc.ca/eng/acts/C-15.31/FullText.html" {...ext}>Justice Laws</a>). We could not open the federal guidance.</li>
@@ -519,6 +545,8 @@ const lawRegions = [
       <li><strong>New Zealand:</strong> not confirmed from an official page.</li>
     </ul>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-caribbean">Caribbean, Mexico, Asia and the polar regions</h3>
     <ul>
       <li><strong>Caribbean, Bahamas, Mexico and Bermuda:</strong> we found no official rule. Ask the cruise line which local rules apply on your itinerary.</li>
@@ -530,6 +558,8 @@ const lawRegions = [
       <li><strong>Galapagos:</strong> no National Park rule found.</li>
     </ul>
 
+    </div>
+    <div class="cra-panel">
     <h3 id="law-rivers">Rivers and inland waters</h3>
     <p>
       The EPA says scattering in lakes and rivers “is not subject to federal regulation” under its burial at sea rules;
@@ -540,7 +570,9 @@ const lawRegions = [
       We found no river cruise line that publishes a policy.
     </p>
 
+    </div>
     <h2 id="travel">Traveling with cremated remains</h2>
+    <div class="cra-panel">
     <p>Airport rules are national, and airlines add their own. Do not assume US rules apply abroad.</p>
     <ul>
       <li><strong>United States (TSA):</strong> cremated remains are allowed in carry-on bags, with special instructions, and in checked bags, but some airlines do not allow them in checked bags. The container must X-ray clearly. “Out of respect for the deceased, TSA officers will not open a container, even if requested by the passenger” (<a href="https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains" {...ext}>TSA</a>).</li>
@@ -579,7 +611,9 @@ const lawRegions = [
       your cruise line whether the transfer can happen on board.
     </p>
 
+    </div>
     <h2 id="planning">How to plan it, step by step</h2>
+    <div class="cra-panel">
     <ol>
       <li><strong>Check the policy before you book.</strong> Use the comparison above, then confirm with the line in writing. If it publishes no policy, ask before you pay.</li>
       <li><strong>Choose a suitable sailing.</strong> Look for sea days and time well offshore. Coastal countries have their own rules close to shore.</li>
@@ -593,44 +627,70 @@ const lawRegions = [
       <li><strong>Afterward,</strong> ask for the date, time and coordinates. If you sailed from a US port, ask whether the line files the EPA report; if not, you can report online within 30 days.</li>
     </ol>
     <p>
-      For more help with arrangements, see our <a href="/12-step-final-planning-guide/">12-step final planning guide</a>,
+      For more help with arrangements, see our <a href="/12-step-final-planning-guide/">12-step final planning guide</a>,{' '}
       <a href="/cremation-cost-and-info/">what cremation costs</a> and <a href="/burial-vs-cremation/">burial vs cremation</a>.
     </p>
 
+    </div>
     <h2 id="faq">Frequently asked questions</h2>
+    <div class="cra-panel">
     <h3>Can I scatter ashes from my cruise ship balcony?</h3>
     <p>No. Every policy we read requires the line’s permission and a ceremony arranged by the ship, and some contracts allow a US $500 charge for releasing items overboard without permission.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Is the urn released, or are the ashes poured out?</h3>
     <p>It depends on the line. Royal Caribbean says the entire urn must be tossed. Fred. Olsen allows either, if the container is certified biodegradable.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Do cruise lines charge for this?</h3>
     <p>Some do. P&amp;O Cruises lists a GBP 270 admin charge and Cunard sells a paid Committal of Ashes package; MSC says there is no fee. The other policies we read do not publish a fee, so ask.</p>
+    </div>
+    <div class="cra-panel">
     <h3>How far from shore does the ship have to be?</h3>
     <p>From a US port, at least 3 nautical miles by law. Every line that publishes a distance uses at least 12 nautical miles. Other countries set their own rules.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Do I have to tell the EPA?</h3>
     <p>If the ship departed a US port with the ashes aboard, the burial must be reported within 30 days. Ask the line whether it reports it; if not, a relative can report online.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Can I choose where the ashes go?</h3>
     <p>Usually the ship decides with you. Fred. Olsen agrees the place, date and time with guests; Royal Caribbean’s Front Desk sets the time and place.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Will I receive the coordinates or a certificate?</h3>
     <p>MSC provides a certificate with the coordinates and time, P&amp;O gives a certificate with the latitude and longitude from the ship’s log, and Cunard normally provides location details from the ship’s log. Other lines do not say, so ask in advance.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Can I scatter a pet’s ashes at sea from a cruise?</h3>
     <p>MSC, P&amp;O Cruises and Cunard say no. Carnival’s page lists “human or animal ashes,” so ask Guest Services. From a US port, the EPA general permit covers human remains only.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Can I scatter ashes at a private island or in port?</h3>
     <p>Not that we found. Carnival, Fred. Olsen and Marella say the remains cannot be taken ashore once on board, P&amp;O does not assist with scatterings ashore, and coastal countries set their own rules.</p>
+    </div>
+    <div class="cra-panel">
     <h3>What if the ceremony can’t happen?</h3>
     <p>Fred. Olsen states the service “cannot be guaranteed,” and other lines depend on port authorities, weather and the itinerary. Keep the ashes and paperwork safe and plan another option.</p>
+    </div>
+    <div class="cra-panel">
     <h3>Does no published policy mean a line does not allow it?</h3>
     <p>No. It means the line does not say on its website. Ask the line in writing.</p>
 
+    </div>
     <h2 id="sources">Sources</h2>
+    <div class="cra-panel">
     <p>
       Every official page was checked on {checkedLabel}. Cruise lines: the policy links in each profile and in the
-      directory. Law: <a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf" {...ext}>UNCLOS</a>,
-      <a href="https://www.epa.gov/ocean-dumping/burial-sea" {...ext}>EPA Burial at Sea</a>,
-      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>,
-      <a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>
+      directory. Law: <a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf" {...ext}>UNCLOS</a>,{' '}
+      <a href="https://www.epa.gov/ocean-dumping/burial-sea" {...ext}>EPA Burial at Sea</a>,{' '}
+      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>,{' '}
+      <a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>{' '}
       and the national sources linked in each section. Travel: TSA, CATSA, Australian Border Force, New Zealand Aviation
       Security and Customs, GOV.UK, Heathrow and the airlines linked above.
     </p>
+    </div>
+  </div>
   </div>
 </div>
 
@@ -767,7 +827,7 @@ const lawRegions = [
   }
   /* Randy (November 2026): no quote sidebar, so the article uses the full
      page width (the site container) instead of the narrow reading column. */
-  .cra > .prose {
+  .cra .prose {
     max-width: none;
   }
   .cra :global(.byline) {
@@ -790,7 +850,7 @@ const lawRegions = [
     overflow-wrap: anywhere;
   }
   /* Version 1.13: the cruise-line profile headings use the same badge. */
-  .prose > h3[id^='law-'],
+  .prose .cra-panel > h3[id^='law-'],
   .cra-profile > h3[id^='op-'] {
     width: fit-content;
     max-width: 100%;
@@ -1042,8 +1102,6 @@ const lawRegions = [
     display: none;
   }
   .cra-profile {
-    border-top: 1px solid var(--color-border);
-    padding-top: var(--space-4);
     margin-top: var(--space-6);
   }
   /* Version 1.15: verification statements bold in the body-text color. */
@@ -1057,6 +1115,60 @@ const lawRegions = [
   .cra-dir {
     max-width: var(--container-max);
     margin-block: var(--space-4) var(--space-8);
+  }
+  /* Sand section (Randy, November 2026): the national parks guide's sand
+     (#f6f2ea) runs edge to edge behind everything after the opening; text
+     sits in white panels, like the parks cards. */
+  .cra {
+    padding-bottom: 0;
+  }
+  .cra-sand {
+    background: #f6f2ea;
+    box-shadow: 0 0 0 100vmax #f6f2ea;
+    clip-path: inset(0 -100vmax);
+    padding-block: var(--space-8) var(--space-12);
+    margin-top: var(--space-6);
+  }
+  .cra-panel,
+  .cra-profile,
+  .cra-dir {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+  }
+  .cra-panel {
+    margin-block: var(--space-4) var(--space-6);
+  }
+  /* Randy (November 2026): each full-width green bar is joined to the white
+     box under it (no sand between them). */
+  .prose > h2[id] {
+    margin-bottom: 0;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .prose > h2[id] + .cra-panel,
+  .prose > h2[id] + .cra-profile {
+    margin-top: 0;
+    border-top: 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+  .cra-panel > :first-child,
+  .cra-profile > :first-child {
+    margin-top: 0;
+  }
+  .cra-panel > :last-child,
+  .cra-profile > :last-child {
+    margin-bottom: 0;
+  }
+  .cra-jump__link {
+    background: #fff;
+  }
+  @media (min-width: 48rem) {
+    .cra-panel,
+    .cra-profile,
+    .cra-dir {
+      padding: var(--space-6);
+    }
   }
   .cra-dir__filters {
     display: grid;
