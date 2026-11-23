@@ -1,0 +1,211 @@
+{
+  "id": "guadalupe-mountains",
+  "name": "Guadalupe Mountains National Park",
+  "short": "Guadalupe Mountains",
+  "state": "Texas",
+  "states": ["Texas"],
+  "tagline": "The Top of Texas, rising from the Chihuahuan Desert.",
+  "photo": {
+    "src": "/images/last-adventure/guadalupe-mountains/park.jpg",
+    "srcWebp": "/images/last-adventure/guadalupe-mountains/park.webp",
+    "alt": "View to the eastern escarpment",
+    "credit": "NPS/Al O’Bright",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/39e462e0-0e66-4999-b269-cd1e53cf4540",
+    "caption": "View to the eastern escarpment"
+  },
+  "intro": "In far West Texas, the Guadalupe Mountains rise abruptly from the Chihuahuan Desert to Guadalupe Peak, at 8,751 feet the highest point in the state. A final adventure here can be a gentle paved walk to a stagecoach ruin, a loop to a shaded desert spring, a hike into McKittrick Canyon or the long climb to the Top of Texas. The park permits the scattering of ashes in most areas, including Guadalupe Peak, with a permit applied for at least four weeks ahead.",
+  "homepage": "https://www.nps.gov/gumo/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/gumo/planyourvisit/maps.htm" },
+    { "label": "Trail descriptions (NPS)", "url": "https://www.nps.gov/gumo/planyourvisit/trails.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a special use permit in most areas of the park, as a small private affair held away from high visitor use areas.",
+  "scatterFacts": [
+    "Email the special use permit application to gumo_permits@nps.gov at least four weeks before the requested date, with the non-refundable $150 application fee. Ask the Permit Coordinator by email if you need it sooner.",
+    "Party size 1 to 10. Scattering is allowed in wilderness and primitive areas along most trails and throughout the park.",
+    "Guadalupe Peak: the peak trail and summit are closed to scattering on Saturdays, and permits may be further restricted in March, April, October and November because of heavy trail traffic.",
+    "Closed to scattering: the McKittrick Canyon trail from the visitor center to the Notch, and the part of Pine Spring Canyon leading to Devil's Hall.",
+    "Not within 100 yards of any body of water, not in the regular course of dry washes or intermittent waterways, and not in a developed area.",
+    "Ashes pulverized and fully dispersed. No container, urn, flowers, memorial markers, potted plants, dried arrangements or plants with seeds. Areas stay open to the public and parking cannot be reserved."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits: scattering ashes (NPS)", "url": "https://www.nps.gov/gumo/getinvolved/special-use-permits.htm" },
+    { "label": "Application form (PDF)", "url": "https://www.nps.gov/gumo/planyourvisit/upload/GUMO-NPS-10-930-Application-for-SUP-Long-Form-2024-OMB-Approved.pdf" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/gumo/learn/management/superintendents_compendium.htm" }
+  ],
+  "beforeYouGo": "The park is open year-round and observes Mountain Time; phones may show the wrong time. It lies on US 62/180, 110 miles east of El Paso, 56 miles southwest of Carlsbad, New Mexico, and 62 miles north of Van Horn on US 54. There is no gasoline in the park (none for 35 miles in either direction from the visitor center), no restaurant, grocery or lodge, and no public transportation. McKittrick Canyon is day use only; its gate closes daily at 5 pm Mountain Time.",
+  "destinations": [
+    {
+      "id": "pinery-trail",
+      "name": "The Pinery",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/pinery-trail.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/pinery-trail.webp",
+        "alt": "Two people walk a paved path through a bright desert landscape",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/thingstodo/gumo_pinery_trail.htm"
+      },
+      "description": "A short paved path leads from the visitor center through the desert to the stone walls of the Pinery, a Butterfield Overland Mail station built in 1858 and the highest on the whole 2,800-mile route. Travelers once rested here after long, jolting days on the stagecoach, with the Guadalupe Mountains looming above. It is an easy walk for everyone, wheelchairs included, and a quiet place to talk about the journeys your loved one made and the stories they liked to tell.",
+      "plan": {
+        "distance": "0.75 mi round trip",
+        "difficulty": "Easy",
+        "time": "20 to 30 minutes",
+        "elevation": "40 ft",
+        "accessibility": "Paved and fully accessible from the visitor center to the Pinery (NPS); accessible parking at the trailhead",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "US 62/180 to the Pine Springs Visitor Center. The trail can also be started from the Butterfield pull-off on US 62/180.",
+        "points": [
+          { "label": "Pine Springs Visitor Center", "lat": 31.8943, "lon": -104.82174 },
+          { "label": "Pinery parking (Butterfield pull-off)", "lat": 31.89311, "lon": -104.81696 }
+        ]
+      },
+      "trail": {
+        "name": "Pinery Trail",
+        "steps": ["Follow the paved trail from the visitor center to the ruins of the Pinery Station.", "Return the same way."],
+        "notes": ["The ruin is fragile: do not climb on the walls."]
+      },
+      "final": [{ "label": "Pinery Station ruins", "lat": 31.89409, "lon": -104.81719 }],
+      "scatterNote": {
+        "text": "Developed areas are excluded. The Guadalupe Peak Trail, which starts half a mile away at the Pine Springs Trailhead, is open to scattering with a permit (not on Saturdays; parties of 1 to 10).",
+        "points": [{ "label": "Pine Springs Trailhead", "lat": 31.89666, "lon": -104.82819 }]
+      },
+      "links": [
+        { "label": "Pinery Trail", "url": "https://www.nps.gov/thingstodo/gumo_pinery_trail.htm" },
+        { "label": "The Pinery", "url": "https://www.nps.gov/places/gumo_the_pinery.htm" }
+      ]
+    },
+    {
+      "id": "smith-spring",
+      "name": "Smith Spring",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/smith-spring.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/smith-spring.webp",
+        "alt": "Water cascades down rocks in a forested setting",
+        "credit": "NPS/Bieri",
+        "sourceUrl": "https://www.nps.gov/thingstodo/gumo_hike_smith_springs_trail.htm"
+      },
+      "description": "Water is precious in the desert, and Smith Spring feels like a secret the mountains kept. The loop starts at the historic Frijole Ranch, follows a paved path to sunny Manzanita Spring, then climbs with wide views of the foothills to a shady oasis where a tiny waterfall gurgles against the mountainside. Watch for birds, mule deer and elk along the way. Sit in the shade together, listen to the water and share a favorite memory before walking the loop home.",
+      "plan": {
+        "distance": "2.3 mi round-trip loop",
+        "difficulty": "Easy to Moderate",
+        "time": "1 to 2 hours",
+        "elevation": "402 ft",
+        "accessibility": "Paved to the Frijole Ranch buildings and Manzanita Spring; loose or hard rock beyond, poles recommended. Accessible parking at the trailhead",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From US 62/180, take the Frijole Ranch access road, one mile north of Pine Springs, to the trailhead at its end.",
+        "points": [{ "label": "Frijole Ranch Trailhead", "lat": 31.90774, "lon": -104.80144 }]
+      },
+      "trail": {
+        "name": "Smith Spring Trail (loop)",
+        "steps": [
+          "Start at the trailhead sign and follow the paved path past the Frijole Ranch buildings toward Manzanita Spring.",
+          "Climb along the maintained trail to Smith Spring.",
+          "Continue around the loop past Manzanita Spring and back to the ranch."
+        ]
+      },
+      "final": [{ "label": "Smith Spring", "lat": 31.91872, "lon": -104.80692 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed within 100 yards of any body of water, so the springs are excluded. The Guadalupe Peak Trail from the Pine Springs Trailhead is open to scattering with a permit (not on Saturdays; parties of 1 to 10).",
+        "points": [{ "label": "Pine Springs Trailhead", "lat": 31.89666, "lon": -104.82819 }]
+      },
+      "links": [{ "label": "Smith Spring Trail Loop", "url": "https://www.nps.gov/thingstodo/gumo_hike_smith_springs_trail.htm" }]
+    },
+    {
+      "id": "pratt-cabin",
+      "name": "McKittrick Canyon and Pratt Cabin",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/pratt-cabin.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/pratt-cabin.webp",
+        "alt": "A cabin with stone walls and roof surrounded by desert mountain landscape and plants",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/places/gumo_pratt_cabin.htm"
+      },
+      "description": "McKittrick Canyon is the heart of the park, and the shortest way into it ends at a stone cabin where two creeks meet. Geologist Wallace Pratt built it as a summer home in the early 1930s and later gave the land that helped create the park. The walk crosses the stream twice before you reach the porch and the picnic tables in its shade. Unpack lunch, rest together and imagine the summers a family once spent here, far from the heat of the city.",
+      "plan": {
+        "distance": "4.8 mi round trip",
+        "difficulty": "Moderate (due to length)",
+        "time": "2 to 4 hours",
+        "accessibility": "Loose or hard rock trail, two to six feet wide; poles recommended. Two stream crossings. Accessible parking at the trailhead",
+        "bestTime": "Fall: the park recommends McKittrick Canyon for fall colors, and volunteers staff the cabin on fall weekends",
+        "scattering": "Not on this trail (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Drive to the McKittrick Canyon Visitor Center, where the trail begins. The canyon is day use only, and the gate closes daily at 5 pm Mountain Time.",
+        "points": [{ "label": "McKittrick Canyon parking", "lat": 31.97682, "lon": -104.75182 }]
+      },
+      "trail": {
+        "name": "McKittrick Canyon Trail",
+        "steps": [
+          "Follow the McKittrick Canyon Trail up the canyon from the visitor center, crossing the stream twice.",
+          "Reach Pratt Cabin at the junction of the North and South branches of the canyon, just over two miles in.",
+          "Return the same way, or continue 1.1 mi to the Grotto (7.0 mi round trip from the visitor center)."
+        ],
+        "notes": [
+          "In McKittrick Canyon, stay on the trail and stay out of the stream except where the trail crosses it.",
+          "The cabin is open only when a volunteer or ranger is present, and there are no restrooms there."
+        ]
+      },
+      "final": [{ "label": "Pratt Cabin", "lat": 31.98363, "lon": -104.78064 }],
+      "scatterNote": {
+        "text": "The McKittrick Canyon trail from the visitor center to the Notch is closed to scattering. The Guadalupe Peak Trail, which starts at the Pine Springs Trailhead, is open to scattering with a permit (not on Saturdays; parties of 1 to 10).",
+        "points": [{ "label": "Pine Springs Trailhead", "lat": 31.89666, "lon": -104.82819 }]
+      },
+      "links": [
+        { "label": "Hike to Pratt Cabin", "url": "https://www.nps.gov/thingstodo/gumo_hiketoprattcabin.htm" },
+        { "label": "Pratt Cabin", "url": "https://www.nps.gov/places/gumo_pratt_cabin.htm" },
+        { "label": "The Grotto", "url": "https://www.nps.gov/places/gumo-the_grotto.htm" }
+      ]
+    },
+    {
+      "id": "guadalupe-peak",
+      "name": "Guadalupe Peak",
+      "kinds": ["extraordinary"],
+      "photo": null,
+      "description": "Nothing in Texas stands higher than this summit. The climb starts a mile above sea level and rises through high desert into forest, until the whole of the surrounding mountains and desert lies spread out below. It is a long, hard day, and that is the point: you carry your loved one to the Top of Texas together. Because the park allows scattering on the peak trail and summit with a permit, the farewell can happen right there at the top.",
+      "plan": {
+        "distance": "8.4 mi round trip (older NPS pages give 8.5 mi)",
+        "difficulty": "Strenuous",
+        "time": "6 to 8 hours",
+        "elevation": "3,000 ft",
+        "accessibility": "Steep, rocky trail with little shade; summit at 8,751 ft",
+        "bestTime": "Start early, especially in summer; afternoon thunderstorms are common in summer and winter winds can exceed 40 mph",
+        "scattering": "Allowed here with a permit, except on Saturdays"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "US 62/180 to the Pine Springs Visitor Center; check in, then turn right out of the visitor center lot to the Pine Springs Trailhead, half a mile away. On busy weekends parking may run short by mid-morning; overflow parking is at the visitor center.",
+        "points": [
+          { "label": "Pine Springs Trailhead", "lat": 31.89666, "lon": -104.82819 },
+          { "label": "Pine Springs Visitor Center", "lat": 31.8943, "lon": -104.82174 }
+        ]
+      },
+      "trail": {
+        "name": "Guadalupe Peak Trail",
+        "steps": [
+          "Follow the signs for the Guadalupe Peak Trail and stay on the hiker trail.",
+          "The steepest part is the first mile and a half, where the trail switchbacks up the first slope.",
+          "Continue through the high forest to the summit, then return the same way."
+        ],
+        "notes": [
+          "The horse trail adds about a mile each way but is less steep.",
+          "Carry at least one gallon of water per person; turn around when half is gone. Expect the summit to be at least 10 degrees cooler and much windier than Pine Springs, and descend if storms build.",
+          "Pack out all waste, including human waste in a commercial toilet bag."
+        ]
+      },
+      "final": [{ "label": "Summit", "lat": 31.89146, "lon": -104.86067 }],
+      "scatterNote": { "text": "Permit required: parties of 1 to 10, never on Saturdays, and permits may be further restricted in March, April, October and November. Keep away from dry washes and at least 100 yards from water." },
+      "links": [{ "label": "Guadalupe Peak", "url": "https://www.nps.gov/thingstodo/gumo_hike_guadalupe_peak.htm" }]
+    }
+  ]
+}

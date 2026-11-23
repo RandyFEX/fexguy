@@ -1,0 +1,218 @@
+{
+  "id": "acadia",
+  "name": "Acadia National Park",
+  "short": "Acadia",
+  "state": "Maine",
+  "states": ["Maine"],
+  "tagline": "Pink granite, mountain summits and the open Atlantic on the coast of Maine.",
+  "photo": {
+    "src": "/images/last-adventure/acadia/park.jpg",
+    "srcWebp": "/images/last-adventure/acadia/park.webp",
+    "alt": "Sunrise light over the granite summit of Cadillac Mountain and the coast beyond",
+    "credit": "NPS/Lucia Lubanovich",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8cec9cbb-a143-4ba7-af59-1873fcd5ad9a",
+    "caption": "Sunrise at Cadillac Mountain"
+  },
+  "intro": "On Mount Desert Island, Acadia's granite mountains run right down to the sea. In a single day a family can watch the sun rise from Cadillac Mountain, listen to the surf at Thunder Hole, walk the shore of Jordan Pond and finish at a lighthouse on the rocks. Scattering is possible here with a special use permit, at a location the park reviews and approves.",
+  "homepage": "https://www.nps.gov/acad/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/acad/planyourvisit/maps.htm" },
+    { "label": "Directions and GPS coordinates (NPS)", "url": "https://www.nps.gov/acad/planyourvisit/directions.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering ashes requires a special use permit; the park lists no designated scattering areas, so you name the location in your application and the park decides.",
+  "scatterFacts": [
+    "Memorialization, such as scattering of ashes, requires a special use permit. Application fee: $55, non-refundable, paid by check or money order made payable to the National Park Service.",
+    "Mail the application to Acadia National Park, Attention: Special Use Coordinator, 33 McFarland Hill Drive, Bar Harbor, Maine 04609. Phone: 207-288-8791.",
+    "The application asks for your requested location. The park publishes no designated scattering areas.",
+    "Lead time is not published: the form asks you to allow sufficient time and to check with the park for guidelines.",
+    "In areas reached only by trail, groups are limited to 20 people or fewer."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits (NPS)", "url": "https://www.nps.gov/acad/planyourvisit/special-use-permits.htm" },
+    { "label": "Memorialization application (PDF)", "url": "https://www.nps.gov/acad/planyourvisit/upload/UPDATED-NPS-10-930-Application-for-Memoral-SUP-2024-OMB-Approved-1.pdf" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/acad/learn/management/sc.htm" }
+  ],
+  "beforeYouGo": "Reach Mount Desert Island on Route 3 from Ellsworth. The 27-mile Park Loop Road begins at Hulls Cove Visitor Center and closes to vehicles every year from December 1 through April 14, including the road to Cadillac Mountain. Vehicle reservations are required to drive Cadillac Summit Road from mid-May to mid-October and are sold only online at Recreation.gov. A park entrance pass is required year round. Parking at Sand Beach, Thunder Hole and Bass Harbor Head Light fills early in summer.",
+  "destinations": [
+    {
+      "id": "cadillac-mountain-summit",
+      "name": "Cadillac Mountain Summit",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/acadia/cadillac-mountain-summit.jpg",
+        "srcWebp": "/images/last-adventure/acadia/cadillac-mountain-summit.webp",
+        "alt": "Autumn sunrise over the summit of Cadillac Mountain",
+        "credit": "NPS/Kelsey Graczyk",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9c0f49fc-33ea-4a3f-9279-7c6d3208c225"
+      },
+      "description": "Cadillac Mountain rises 1,530 feet, the highest point on the eastern seaboard, and from its bare pink granite you look across Frenchman Bay to the Porcupine Islands and out to open ocean. From October 7 to March 6 it is the first place in the country to see the sunrise. Imagine wrapping up in blankets on the ledges with the people who knew your loved one best, watching the first light reach the water, and sharing the stories that begin a last adventure.",
+      "plan": {
+        "distance": "Short paved summit loop from the parking area; loop length not published on the park's Cadillac page",
+        "difficulty": "Easy on the paved sections; other parts of the loop are very steep or have steps",
+        "accessibility": "Portions of the Cadillac Summit Loop are paved and wide enough for a single wheelchair; other sections are very steep or contain steps. Accessible restrooms and a limited number of accessible parking spaces at the summit (NPS)",
+        "bestTime": "Sunrise or sunset: arrive roughly an hour early, as parking is often full",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Follow the Park Loop Road to Cadillac Summit Road, reachable at the beginning or end of the loop, then drive the winding, paved 3.5 miles to the summit. A vehicle reservation is required from mid-May to mid-October. No RVs or trailers.",
+        "points": [{ "label": "Cadillac Mountain parking area", "lat": 44.35264, "lon": -68.22461, "source": "nps" }]
+      },
+      "final": [{ "label": "Summit", "lat": 44.35286, "lon": -68.2239 }],
+      "links": [
+        { "label": "Cadillac Mountain (NPS)", "url": "https://www.nps.gov/acad/planyourvisit/cadillac-mountain.htm" },
+        { "label": "Cadillac Summit Road vehicle reservations", "url": "https://www.nps.gov/acad/planyourvisit/permits.htm" }
+      ]
+    },
+    {
+      "id": "thunder-hole",
+      "name": "Thunder Hole",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/acadia/thunder-hole.jpg",
+        "srcWebp": "/images/last-adventure/acadia/thunder-hole.webp",
+        "alt": "Spray of water between a natural rock inlet along the coast",
+        "credit": "NPS Photo/Kent Miller",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/091f5b87-f614-4266-b6e5-4714d0b6398e"
+      },
+      "description": "Along the Ocean Path, waves rush into a narrow sea cave in the granite, and when the conditions are right the trapped air and water go off with a boom you can hear up and down the shore. Slabs of pink granite, dark spruce and the open Atlantic surround you. Stand together above the cove and let the ocean fill the silences while you remember someone who loved this coast or always wanted to see it.",
+      "plan": {
+        "distance": "Short paved section from the Thunder Hole parking area; 0.7 mi one way from the Sand Beach upper lot on the Ocean Path",
+        "difficulty": "Easy",
+        "time": "Ocean Path end to end: 2 to 4 hours (NPS)",
+        "accessibility": "Thunder Hole parking area is the most physically accessible entrance to the Ocean Path: three accessible spaces lead to a ramp, a crosswalk and a short paved section. Sand Beach to Thunder Hole is concrete and packed gravel (NPS)",
+        "bestTime": "The park says the booming is best about 2 hours before high tide with high winds",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Enter at Hulls Cove Visitor Center and follow the Park Loop Road past the entrance station near Sand Beach to the Thunder Hole parking area. The fare-free Island Explorer bus also stops at Thunder Hole in season.",
+        "points": [{ "label": "Thunder Hole parking area", "lat": 44.32101, "lon": -68.18933, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Ocean Path",
+        "steps": [
+          "From the Thunder Hole parking area, use the ramp and crosswalk to the short paved section of the Ocean Path.",
+          "For a longer walk, the Ocean Path continues past Thunder Hole to Otter Cliffs and Otter Point, 2.2 mi one way from Sand Beach."
+        ],
+        "notes": ["Past Thunder Hole the trail becomes uneven, with granite staircases at Otter Cliffs. Steep drops into the ocean: keep children away from the edge."]
+      },
+      "final": [{ "label": "Thunder Hole", "lat": 44.32059, "lon": -68.18854 }],
+      "links": [
+        { "label": "Hike Ocean Path Trail (NPS)", "url": "https://www.nps.gov/thingstodo/hike-ocean-path-trail.htm" },
+        { "label": "Thunder Hole (NPS)", "url": "https://www.nps.gov/places/thunder-hole.htm" }
+      ]
+    },
+    {
+      "id": "bass-harbor-head-light",
+      "name": "Bass Harbor Head Light Station",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/acadia/bass-harbor-head-light.jpg",
+        "srcWebp": "/images/last-adventure/acadia/bass-harbor-head-light.webp",
+        "alt": "The Bass Harbor Head Lighthouse at Acadia National Park during sunset. October 14, 2026",
+        "credit": "NPS/Lucia Lubanovich",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/90bfb3df-5f0c-459a-843e-f0b9889baab4"
+      },
+      "description": "Since 1858 this small white lighthouse has marked the entrance to Bass Harbor and Blue Hill Bay, and its red light still shines over the rocks on the southwest corner of Mount Desert Island. From the gravel overlook or the cliff viewpoint below, the tower and keeper's house sit above the waves like a postcard. A lighthouse is a fitting place to talk about the person who guided your family home, and evening light here is something to share slowly.",
+      "plan": {
+        "distance": "Gravel overlook beside the parking area; short gravel path and stairs to the cliff viewpoint",
+        "difficulty": "Easy at the overlook; the cliff viewpoint has 37 wooden and 27 stone steps",
+        "accessibility": "Wheelchair-accessible packed gravel overlook in front of three accessible parking spaces; accessible restroom. The paved driveway to the lighthouse is steep (NPS)",
+        "bestTime": "Daytime for parking: the park warns of sunset gridlock and a single small lot",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Take Route 102A from Bass Harbor or Seawall, then Lighthouse Road for 0.5 mi to the parking lot. No buses, trailers or RVs, no roadside parking, and no public transportation.",
+        "points": [{ "label": "Bass Harbor Head Lighthouse parking area", "lat": 44.22257, "lon": -68.33727, "source": "nps" }]
+      },
+      "final": [{ "label": "Lighthouse", "lat": 44.22197, "lon": -68.33722 }],
+      "links": [
+        { "label": "Explore Bass Harbor Head Light Station (NPS)", "url": "https://www.nps.gov/acad/planyourvisit/explore-bass-harbor-head-light-station.htm" },
+        { "label": "Bass Harbor Head Light Station (NPS)", "url": "https://www.nps.gov/places/bass-harbor-head-light-station.htm" }
+      ]
+    },
+    {
+      "id": "jordan-pond-path",
+      "name": "Jordan Pond Path",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/acadia/jordan-pond-path.jpg",
+        "srcWebp": "/images/last-adventure/acadia/jordan-pond-path.webp",
+        "alt": "A wooden bridge along a gravel path crosses a lake. The bridge is surrounded by plants and flanked by forest. Two people are crossing the bridge",
+        "credit": "NPS Photo/Kaitlyn Chen",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/b0a94e88-61b0-4136-9f3d-9fa2abacc065"
+      },
+      "description": "Jordan Pond lies in a steep valley carved by glaciers, framed by Penobscot and Pemetic mountains and the two rounded peaks called the Bubbles. The path circles the whole shoreline, over crushed stone, footbridges and long wooden boardwalks. Listen for loons, look for beaver work along the edges, and watch the cliffs for peregrine falcons. Walking all the way around together, pausing wherever a memory surfaces, turns the loop into a quiet procession of stories.",
+      "plan": {
+        "distance": "3.3 mi loop",
+        "difficulty": "Not rated by NPS: the eastern half is even crushed stone; the western half is significantly more difficult",
+        "time": "1 to 3 hours",
+        "accessibility": "Not accessible: uneven footing, stepping stones and a small bridge. The restaurant area and boat launch are accessible (NPS)",
+        "scattering": "Only at a site you propose and the park approves; Jordan Pond is a public water supply"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Route 3, enter at Hulls Cove Visitor Center and follow the Park Loop Road; at 2.8 mi continue straight on the two-way section toward Jordan Pond and park in the North Lot just before the Jordan Pond House. Walk down the boat access to the pond.",
+        "points": [
+          { "label": "Jordan Pond House North Lot", "lat": 44.32155, "lon": -68.25189, "source": "nps" },
+          { "label": "Jordan Pond boat ramp (trailhead)", "lat": 44.32284, "lon": -68.25377, "source": "nps" }
+        ]
+      },
+      "trail": {
+        "name": "Jordan Pond Path (loop)",
+        "steps": [
+          "Start at the boat launch and turn right to follow the east shoreline on even, crushed-stone terrain.",
+          "About two-thirds of the way up the east side, pass the junction with the Bubbles Trail and Jordan Pond Carry.",
+          "At the north end, cross the two wooden log bridges near the Bubbles Divide Trailhead.",
+          "Return along the western half: a boulder field with stepping stones and some scrambling, then a raised wooden boardwalk.",
+          "After the small stone bridge, turn left into the stone courtyard and follow the shore back to the trailhead."
+        ],
+        "notes": [
+          "The park encourages starting with the eastern half in case you choose to turn around.",
+          "Jordan Pond is a public water supply: wading and swimming are prohibited at all times."
+        ]
+      },
+      "final": [{ "label": "Lakeshore at the boat launch", "lat": 44.32295, "lon": -68.25387 }],
+      "links": [
+        { "label": "Hike Jordan Pond Path (NPS)", "url": "https://www.nps.gov/thingstodo/hike-jordan-pond-path.htm" },
+        { "label": "Jordan Pond (NPS)", "url": "https://www.nps.gov/acad/planyourvisit/jordan-pond.htm" }
+      ]
+    },
+    {
+      "id": "cadillac-north-ridge-trail",
+      "name": "Cadillac North Ridge Trail",
+      "kinds": ["extraordinary"],
+      "photo": null,
+      "description": "For a family that would rather earn the view, the North Ridge Trail climbs the open granite shoulder of Cadillac Mountain, mostly exposed, with Bar Harbor, Frenchman Bay and the Schoodic Peninsula spreading out behind you. Blue blazes and Bates cairns mark the way as the trail steepens and the woods fall away. Carrying your loved one up the ridge one step at a time, and reaching the summit together, can feel like the last climb you share.",
+      "plan": {
+        "distance": "4.4 mi round trip",
+        "difficulty": "Moderate",
+        "time": "2.5 to 4 hours at an average pace",
+        "accessibility": "Not accessible: steep sections with uneven footing; no accessible restrooms at the trailhead (NPS)",
+        "bestTime": "Popular at sunrise and sunset; carry headlamps",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Route 3, turn in at Hulls Cove Visitor Center, turn left at the stop sign and follow the Park Loop Road for 3 mi to the small pull-off near the start of the one-way section toward Sand Beach. Parking is very limited; the park recommends the Island Explorer (mid-June to October) to the Cadillac North Ridge stop, then 0.1 mi on the Kebo Brook Trail.",
+        "points": [{ "label": "North Ridge trailhead parking", "lat": 44.37854, "lon": -68.22923 }]
+      },
+      "trail": {
+        "name": "Cadillac North Ridge Trail",
+        "steps": [
+          "Cross the Park Loop Road and ascend a granite slope into the woods.",
+          "After 1 mi the trail becomes rockier, with a few sets of granite stairs.",
+          "After another 0.3 mi it becomes steeper and more exposed, with wide views.",
+          "Follow blue blazes and Bates cairns; the trail parallels the road for a short section.",
+          "At the fork shortly before the summit keep right for 0.1 mi to the north side of the summit parking lot, then return the same way."
+        ],
+        "notes": ["There is no public transportation to or from the summit, and the park advises against walking down Cadillac Summit Road."]
+      },
+      "final": [{ "label": "Trail destination at the summit parking lot", "lat": 44.35304, "lon": -68.2253 }],
+      "links": [{ "label": "Hike Cadillac North Ridge Trail (NPS)", "url": "https://www.nps.gov/thingstodo/hike-cadillac-north-ridge-trail.htm" }]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "everglades",
+  "name": "Everglades National Park",
+  "short": "Everglades",
+  "state": "Florida",
+  "states": ["Florida"],
+  "tagline": "A slow river of grass, hardwood hammocks and wading birds under a wide Florida sky.",
+  "photo": {
+    "src": "/images/last-adventure/everglades/park.jpg",
+    "srcWebp": "/images/last-adventure/everglades/park.webp",
+    "alt": "An aerial photo of the flat expanse of Everglades National Park with its winding rivers weaving from lake to lake through red mangrove forests",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5a5d6cf2-4698-4242-aaa5-8b7ecabad88c",
+    "caption": "Aerial View of Lane River in Everglades National Park"
+  },
+  "intro": "Established in 1947 as the first national park created for its biodiversity, Everglades protects 1.5 million acres of wetland, forest and marine habitat at the southern tip of Florida. Its beauty is quiet and wide: sawgrass prairie running to the horizon, tree islands, mangroves and some of the best wildlife viewing in the country. Most of the places below are short, level boardwalks, so nearly every member of the family can come along.",
+  "homepage": "https://www.nps.gov/ever/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/ever/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "The park lists scattering of ashes among the activities that require a permit from the superintendent; it publishes no designated locations or specific scattering conditions.",
+  "scatterFacts": [
+    "The Superintendent's Compendium lists 36 CFR 2.62, memorialization (to include scattering of ashes), as an activity that requires a permit.",
+    "Requests go through the park's Special Use Permit process: Special Park Uses Coordinator, (305) 242-7042, ever_sup_office@nps.gov.",
+    "For special park use requests, the park requires at least 15 business days of review, a $100 non-refundable application fee and insurance information; it does not say whether a scattering request is handled differently.",
+    "No designated scattering locations or distance rules are published. Ask the coordinator where scattering can take place before you plan the day."
+  ],
+  "scatterLink": [
+    { "label": "Special Use Permits (NPS)", "url": "https://www.nps.gov/ever/learn/management/specialuse.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/ever/learn/management/compendium.htm" },
+    { "label": "Application for Special Use Permit, 10-930 (PDF)", "url": "https://www.nps.gov/ever/learn/management/upload/NPS-10-930-Application-for-SUP-Long-Form-2024-OMB-Approved-2.pdf" }
+  ],
+  "beforeYouGo": "The park has three entrances in three different cities, and they are not interconnected: the Homestead Entrance (Ernest F. Coe Visitor Center, with access to Royal Palm and Flamingo), the Miami Entrance at Shark Valley on U.S. 41 (Tamiami Trail), and a Gulf Coast entrance. Each entrance and the Flamingo Visitor Center are at least a one-hour drive apart. The dry season, typically December through April, is the busy season; the wet season, May to November, is rainy and can bring many mosquitoes. On busy winter weekends, arrive before 10 AM.",
+  "destinations": [
+    {
+      "id": "anhinga-trail",
+      "name": "Anhinga Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/everglades/anhinga-trail.jpg",
+        "srcWebp": "/images/last-adventure/everglades/anhinga-trail.webp",
+        "alt": "An aerial photo overlooking the Anhinga Trail and Royal Palm and the flat expanse of the everglades in the distance",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/eb8a7762-df46-46b4-b6f7-86545f81cf64"
+      },
+      "description": "Walk slowly here and the Everglades comes to you. The path follows the water and loops out over a sawgrass marsh and freshwater slough, where alligators rest in the sun, turtles surface and anhingas spread their wings to dry. Herons and egrets stalk the shallows, especially in winter. It is one of the park's most popular trails for good reason, and an easy place for grandparents and grandchildren to walk side by side, pointing out every creature they spot.",
+      "plan": {
+        "distance": "0.8 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS); pavement and boardwalk",
+        "bestTime": "Winter, when wildlife viewing is best",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the Homestead Entrance (Ernest F. Coe Visitor Center), drive four miles to the Royal Palm Visitor Center, where the trail starts.",
+        "points": [{ "label": "Royal Palm Visitor Center parking", "lat": 25.38303, "lon": -80.60991 }]
+      },
+      "trail": {
+        "name": "Anhinga Trail",
+        "steps": ["Start at the Royal Palm Visitor Center.", "Follow the paved path along the water to the looping boardwalk over the marsh, then return."]
+      },
+      "final": [{ "label": "Trail destination", "lat": 25.383, "lon": -80.60629 }],
+      "scatterNote": { "text": "Scattering requires a permit from the superintendent. The park publishes no designated locations; ask the Special Park Uses Coordinator where it can take place." },
+      "links": [
+        { "label": "Anhinga Trail", "url": "https://www.nps.gov/ever/planyourvisit/anhinga-trail.htm" },
+        { "label": "Anhinga Trail (place)", "url": "https://www.nps.gov/places/anhinga-trail.htm" }
+      ]
+    },
+    {
+      "id": "pa-hay-okee-overlook",
+      "name": "Pa-hay-okee Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/everglades/pa-hay-okee-overlook.jpg",
+        "srcWebp": "/images/last-adventure/everglades/pa-hay-okee-overlook.webp",
+        "alt": "Boardwalk at Pa-hay-okee Overlook above the sawgrass",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2e74aac6-1dd8-b71c-0793-991570cf41f8"
+      },
+      "description": "A short boardwalk loop leads to a raised, roofed observation platform, and suddenly the river of grass spreads out in every direction. This is the Everglades at its widest and simplest: sawgrass, sky and scattered tree islands under drifting clouds. Recently renovated with a wider boardwalk and a ceiling that echoes the original 1959 design, it is a calm, shaded place to stand together, open a thermos and let the silence say what words cannot.",
+      "plan": {
+        "distance": "0.16 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS); renovated boardwalk and accessible parking",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the Homestead Entrance (Ernest F. Coe Visitor Center), follow the Main Park Road 13 miles to the overlook parking.",
+        "points": [{ "label": "Pa-hay-okee parking", "lat": 25.44046, "lon": -80.7832 }]
+      },
+      "trail": {
+        "name": "Pa-hay-okee Overlook boardwalk",
+        "steps": ["Walk the boardwalk loop from the parking area to the raised observation platform."]
+      },
+      "final": [{ "label": "Overlook", "lat": 25.44164, "lon": -80.78395 }],
+      "scatterNote": { "text": "Scattering requires a permit from the superintendent. The park publishes no designated locations; ask the Special Park Uses Coordinator where it can take place." },
+      "links": [{ "label": "Pa-hay-okee Overlook", "url": "https://www.nps.gov/ever/planyourvisit/pa-hay-okee-overlook.htm" }]
+    },
+    {
+      "id": "mahogany-hammock",
+      "name": "Mahogany Hammock",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/everglades/mahogany-hammock.jpg",
+        "srcWebp": "/images/last-adventure/everglades/mahogany-hammock.webp",
+        "alt": "Boardwalk winding through the tropical hardwood hammock at Mahogany Hammock",
+        "credit": "NPS photo J Roark",
+        "sourceUrl": "https://www.nps.gov/ever/planyourvisit/mahogany-hammock-trail.htm"
+      },
+      "description": "Step off the open prairie and into a jungle. The boardwalk winds through a dense hardwood hammock, an island of trees rising from the sawgrass, past gumbo-limbo trees and air plants clinging to the branches. Somewhere along the loop stands the largest living mahogany tree in the United States. Under the shade, voices soften, and it becomes an easy place to share a favorite memory of the person who would have loved this walk.",
+      "plan": {
+        "distance": "0.5 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS); boardwalk",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the Homestead Entrance (Ernest F. Coe Visitor Center), follow the Main Park Road about twenty miles to the Mahogany Hammock turnoff and parking.",
+        "points": [
+          { "label": "Parking", "lat": 25.32375, "lon": -80.83158 },
+          { "label": "Boardwalk trailhead", "lat": 25.32361, "lon": -80.83207 }
+        ]
+      },
+      "trail": {
+        "name": "Mahogany Hammock Trail",
+        "steps": ["Follow the self-guiding boardwalk loop through the hammock and back to the trailhead."]
+      },
+      "final": [{ "label": "Mahogany Hammock", "lat": 25.32206, "lon": -80.83368 }],
+      "scatterNote": { "text": "Scattering requires a permit from the superintendent. The park publishes no designated locations; ask the Special Park Uses Coordinator where it can take place." },
+      "links": [{ "label": "Mahogany Hammock Trail", "url": "https://www.nps.gov/ever/planyourvisit/mahogany-hammock-trail.htm" }]
+    },
+    {
+      "id": "shark-valley-observation-tower",
+      "name": "Shark Valley Observation Tower",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/everglades/shark-valley-observation-tower.jpg",
+        "srcWebp": "/images/last-adventure/everglades/shark-valley-observation-tower.webp",
+        "alt": "Spiraling concrete observation tower is silhouetted against a bright blue sky",
+        "credit": "NPS Photo/ A Sanchez",
+        "sourceUrl": "https://www.nps.gov/places/shark-valley-observation-tower.htm"
+      },
+      "description": "Halfway around the Shark Valley loop, a spiraling concrete tower rises out of the heart of the river of grass. At the top you stand at the highest point a visitor can stand on foot in the whole park, with views reaching up to 20 miles across sawgrass marsh and tree islands. Getting there is part of the day, whether you ride the narrated tram, pedal together or walk, watching alligators, herons and turtles along the way.",
+      "plan": {
+        "distance": "15 mi paved loop; the tower is at the halfway point, 7 miles south of the parking lot",
+        "difficulty": "Easy by tram; not rated by the park for walking or biking",
+        "elevation": "Tower top at 70 ft elevation",
+        "accessibility": "Tower listed as wheelchair accessible (NPS); flat, paved tram road with very limited shade",
+        "bestTime": "Weekdays, early; parking fills and waits are long from 10 a.m. to 3 p.m.",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "U.S. 41 (Tamiami Trail) about 25 miles west of the Florida Turnpike to the Shark Valley Visitor Center. Private vehicles may not go beyond the entrance road and parking lot.",
+        "points": [{ "label": "Shark Valley parking", "lat": 25.75681, "lon": -80.76616 }]
+      },
+      "trail": {
+        "name": "Shark Valley Tram Road",
+        "steps": [
+          "Take a guided tram tour (park-authorized concessioner), rent or bring a bicycle, or walk the paved tram road from behind the visitor center.",
+          "The observation tower stands at the halfway point of the 15-mile loop.",
+          "Complete the loop back to the visitor center."
+        ],
+        "notes": [
+          "Bring plenty of water and sun protection; there is very limited shade and a water fountain at the tower.",
+          "Stay 15 feet from all wildlife. Helmets are required for children under 16 on bicycles. Pets are not allowed on the tram road.",
+          "Arrive 1.5 to 2 hours early for scheduled tram tours; call 305 221 8776 for current access conditions."
+        ]
+      },
+      "final": [{ "label": "Observation tower", "lat": 25.65608, "lon": -80.76643 }],
+      "scatterNote": { "text": "Scattering requires a permit from the superintendent. The park publishes no designated locations; ask the Special Park Uses Coordinator where it can take place." },
+      "links": [
+        { "label": "Shark Valley Observation Tower", "url": "https://www.nps.gov/places/shark-valley-observation-tower.htm" },
+        { "label": "Shark Valley Visitor Center", "url": "https://www.nps.gov/ever/planyourvisit/svdirections.htm" },
+        { "label": "Shark Valley trails", "url": "https://www.nps.gov/ever/planyourvisit/shark-valley-trails.htm" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "lake-clark",
+  "name": "Lake Clark National Park and Preserve",
+  "short": "Lake Clark",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "Turquoise lakes, birch forests and a wilderness cabin built by hand.",
+  "photo": {
+    "src": "/images/last-adventure/lake-clark/park.jpg",
+    "srcWebp": "/images/last-adventure/lake-clark/park.webp",
+    "alt": "kayaker near forested mountains",
+    "credit": "NPS Photo/Kevyn Jalone",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d4633519-1dd8-b71c-0717-22378e884867",
+    "caption": "Silver Salmon Creek"
+  },
+  "intro": "Lake Clark lies across Cook Inlet from Anchorage and Homer, a roadless park of mountains, glacial lakes and forest reached by small plane. From the village of Port Alsworth, on the shore of Lake Clark itself, maintained trails lead through birch groves to a roaring waterfall. Farther north, on Upper Twin Lake, Dick Proenneke's handbuilt cabin still stands where he lived alone for decades. Scattering ashes is allowed without a permit in most of the park, away from developed areas and two protected historic districts.",
+  "homepage": "https://www.nps.gov/lacl/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/lacl/planyourvisit/maps.htm" },
+    { "label": "Tanalian Trails handout (PDF)", "url": "https://www.nps.gov/lacl/planyourvisit/upload/Hiking-the-Tanalian-Trails-Handout-2021-508-Compliant.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit in most of the park and preserve, except near developed areas and within two historic districts.",
+  "scatterFacts": [
+    "Superintendent's Compendium (January 2026), 36 CFR 2.62(b): except as listed, all areas of the park and preserve are open to scattering of human ashes from cremation without a permit.",
+    "Not within 1/4 mile of any building or structure, camping areas, occupied campsites, roads, picnic areas and other park developed areas.",
+    "Not within the Kijik Archaeological District National Historic Landmark or the Richard L. Proenneke Historic District.",
+    "Installing a monument or other commemorative installation requires a permit (36 CFR 2.62(a)).",
+    "Groups larger than 15 people need a permit (36 CFR 13.50). Questions: 907 644-3626."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/2026-LACL-Compendium-with-Maps-508.pdf" }
+  ],
+  "beforeYouGo": "Lake Clark is not on the road system; travel is mainly by small plane, about 120 air miles southwest of Anchorage and 65 air miles northwest of Homer. Flights to Port Alsworth from Homer, Kenai or Anchorage generally last about an hour to 1.5 hours, and the two airstrips there are privately owned. The Port Alsworth visitor center is open in summer only. Allow extra days for weather delays, and bring all supplies: Port Alsworth has no grocery store.",
+  "destinations": [
+    {
+      "id": "tanalian-falls",
+      "name": "Tanalian Falls",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/lake-clark/tanalian-falls.jpg",
+        "srcWebp": "/images/last-adventure/lake-clark/tanalian-falls.webp",
+        "alt": "Sunshine yellow leaves mix with green spruce along the Tanalian River as it rages down the waterfall",
+        "credit": "NPS Photo/K. Tucker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3abde9d7-d92c-4ca6-8693-bcb4f3c942c3"
+      },
+      "description": "The walk begins in birch groves and climbs spruce-studded hillsides to a wide view of Lake Clark, then bends down a gentle hill toward a growing roar. Cold glacial water pours over a 30-foot cliff of ancient lava, and the mist drifts onto your faces. In summer, dwarf dogwood lines the path and sunlight dapples the forest floor. Find a rock by the river, let the sound of the falls fill the silence, and remember together.",
+      "plan": {
+        "distance": "About 4 mi round trip (NPS day hikes page; another NPS page gives 3 mi from the trailhead)",
+        "difficulty": "Moderate",
+        "time": "1 to 1.5 hours to the falls",
+        "accessibility": "Steep gravel road to the park boundary, planked boardwalk, then a steep descent to the lower falls; narrow, rocky and muddy in places",
+        "scattering": "Allowed without a permit away from developed areas (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach Port Alsworth. Fly in by small plane, then walk; the trailhead is near the southernmost airstrip. Stop at the visitor center, midway up the easternmost runway, for trail conditions and a map.",
+        "points": [{ "label": "Lake Clark visitor center, Port Alsworth", "lat": 60.19738, "lon": -154.32259 }]
+      },
+      "trail": {
+        "name": "Tanalian Falls Trail",
+        "steps": [
+          "Follow the Tanalian Falls Trail up the steep gravel road to the park boundary.",
+          "Continue through birch and spruce to the view of Lake Clark, then descend toward the falls.",
+          "Optional: return on the Beaver Pond Trail (3.2 mi round trip on its own), which has benches above the pond and a more gradual grade.",
+          "Optional: continue beyond the falls into designated wilderness to Kontrashibuna Lake (about 5.5 mi round trip)."
+        ],
+        "notes": ["In Port Alsworth, cross the airstrips only at their very ends, and look left, right and up first."]
+      },
+      "final": [{ "label": "Tanalian Falls", "lat": 60.18373, "lon": -154.26838 }],
+      "scatterNote": {
+        "text": "Scattering is allowed without a permit except within 1/4 mile of buildings, structures, camping areas, occupied campsites, roads, picnic areas and other developed areas. The falls lie away from Port Alsworth; choose a spot that meets that distance."
+      },
+      "links": [
+        { "label": "Day hikes", "url": "https://www.nps.gov/lacl/planyourvisit/day-hikes.htm" },
+        { "label": "Tanalian Falls", "url": "https://www.nps.gov/thingstodo/go-fly-fishing-at-tanalian-falls.htm" },
+        { "label": "Port Alsworth", "url": "https://www.nps.gov/lacl/planyourvisit/port-alsworth.htm" }
+      ]
+    },
+    {
+      "id": "proenneke-cabin",
+      "name": "Proenneke Cabin, Upper Twin Lake",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/lake-clark/proenneke-cabin.jpg",
+        "srcWebp": "/images/last-adventure/lake-clark/proenneke-cabin.webp",
+        "alt": "Panorama of Proenneke's wooden cabin, canoe, beach, Upper Twin Lake, and beach chair",
+        "credit": "NPS Photo/C. Lindsay; K. Jalone",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/62427193-6401-4f2e-a94d-17ad5966da2b"
+      },
+      "description": "A floatplane settles onto Upper Twin Lake, and on the south shore, beside the Hope Creek delta, a small log cabin flies an American flag. Dick Proenneke built it by hand and made a life here, and the Dena'ina name for the lakes means lakes that flow into one another. In summer rangers and volunteers welcome visitors inside. Eat lunch on the beach in front of the cabin, as many visitors do, and talk about the life your loved one built.",
+      "plan": {
+        "distance": "Fly-in; the cabin is on the lakeshore",
+        "difficulty": "Easy at the lakeshore cabin; the Teetering Rock trail is unmaintained and not rated",
+        "accessibility": "Reached only by floatplane in summer; a pit toilet is down a trail behind the cabin",
+        "bestTime": "Cabin open late May (tentative) to late September; 2026 hours 10 am to 4 pm daily",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "No roads reach Twin Lakes. Visitors arrive by small planes on floats that land on Upper Twin Lake (wheels or skis in winter, depending on snow and ice): just over an hour from Anchorage, typically 30 minutes from Port Alsworth.",
+        "points": []
+      },
+      "trail": {
+        "name": "Unmarked trail to Teetering Rock (optional)",
+        "steps": [
+          "Land on Upper Twin Lake near the cabin; air to ground radio frequency 122.9.",
+          "Visit the cabin with a ranger or volunteer during open hours.",
+          "Optional: walk up to Teetering Rock on the unmaintained trail that begins behind the cabin."
+        ],
+        "notes": [
+          "Keep food in your possession or in a bear-resistant container; bear-proof lockers are near the cabin and at the Hope Creek campsite.",
+          "Stay on the trails: the tundra is fragile."
+        ]
+      },
+      "final": [{ "label": "Proenneke Cabin", "lat": 60.64851, "lon": -153.81311, "source": "nps" }],
+      "scatterNote": {
+        "text": "Scattering is not allowed within the Richard L. Proenneke Historic District, nor within 1/4 mile of any building, structure or camping area such as the Hope Creek campsite. Elsewhere in the park, scattering is allowed without a permit; ask the park about the district's boundaries before choosing a spot."
+      },
+      "links": [
+        { "label": "Visit Twin Lakes", "url": "https://www.nps.gov/lacl/planyourvisit/visit-proenneke-cabin.htm" },
+        { "label": "Day hikes (Teetering Rock)", "url": "https://www.nps.gov/lacl/planyourvisit/day-hikes.htm" }
+      ]
+    }
+  ]
+}

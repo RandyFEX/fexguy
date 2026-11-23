@@ -1,0 +1,143 @@
+{
+  "id": "dry-tortugas",
+  "name": "Dry Tortugas National Park",
+  "short": "Dry Tortugas",
+  "state": "Florida",
+  "states": ["Florida"],
+  "tagline": "A brick fortress and a lighthouse island in open turquoise water, 70 miles past Key West.",
+  "photo": {
+    "src": "/images/last-adventure/dry-tortugas/park.jpg",
+    "srcWebp": "/images/last-adventure/dry-tortugas/park.webp",
+    "alt": "An aerial view of the Dry Tortugas",
+    "credit": "NPS Photo / Brandon Cintron Gerena",
+    "sourceUrl": "https://www.nps.gov/drto/index.htm",
+    "caption": "Aerial view of the Dry Tortugas"
+  },
+  "intro": "Almost 70 miles west of Key West, seven small islands of coral and sand sit in about 100 square miles of open water, and less than 1% of the park is dry ground. Fort Jefferson, one of the nation's largest 1800s masonry forts, fills most of Garden Key, while the lighthouse on Loggerhead Key watches over the reefs and shipwrecks to the west. Getting here takes a ferry, seaplane or boat, which makes the journey itself part of the tribute.",
+  "homepage": "https://www.nps.gov/drto/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/drto/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "The park lists memorialization (scattering ashes from human cremation) as an activity that requires a special use permit, obtained from the Superintendent of Everglades National Park before you arrive; no locations or conditions are published.",
+  "scatterFacts": [
+    "Superintendent's Compendium: 36 CFR 2.62, memorialization (scattering ashes from human cremation), requires a permit.",
+    "This permit is not issued at Garden Key: it must be obtained from the Superintendent, Everglades National Park, before arriving at Dry Tortugas.",
+    "Permit Coordinator: 305-242-7734. The park notes an application fee for special use permits but does not state the amount on its Dry Tortugas page.",
+    "No designated scattering locations, distance rules or at-sea conditions are published. Ask the Permit Coordinator where scattering can take place before you plan the trip."
+  ],
+  "scatterLink": [
+    { "label": "Special Use Permits (NPS)", "url": "https://www.nps.gov/drto/planyourvisit/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/drto/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Application for Special Use Permit, 10-930 (PDF)", "url": "https://www.nps.gov/ever/learn/management/upload/NPS-10-930-Application-for-SUP-Long-Form-2024-OMB-Approved-2.pdf" }
+  ],
+  "beforeYouGo": "There are no roads to the park. Visitors arrive by the Yankee Freedom ferry or Key West Seaplane Charters from Key West, by private boat or by permitted charter; ferry and seaplane visitors land at Garden Key. Services are limited, and the park does not accept cash. Entrance fees are required for visitors 16 and older who arrive by personal boat. Space for personal vessels at Garden Key is extremely limited after Hurricane Ian damage. For accessibility help on the Yankee Freedom, give advance notice at 1 (800) 634-0939.",
+  "destinations": [
+    {
+      "id": "fort-jefferson",
+      "name": "Fort Jefferson",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/fort-jefferson.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/fort-jefferson.webp",
+        "alt": "A brick fort is surrounded by a moat and blue sky",
+        "credit": "NPS Photo by Denise Diaz",
+        "sourceUrl": "https://www.nps.gov/places/fort-jefferson.htm"
+      },
+      "description": "After hours of open water, the walls of Fort Jefferson rise straight out of the sea, red brick against turquoise. Built over nearly thirty years and never finished, it is the largest masonry structure in the Americas, made of more than 16 million bricks. Wander the arched casemates together, find a quiet corner with a view through the old gun openings, and let the stillness of this remote place hold your memories for a while.",
+      "plan": {
+        "distance": "Steps from the Garden Key dock; distances within the fort not published",
+        "difficulty": "Easy on the first tier",
+        "accessibility": "First tier accessible on the grass or brick walkway; wheelchairs cannot reach the second and third tiers (NPS). A ramp at the Fort Jefferson dock lets power chairs and wheelchairs leave the boat.",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park. Take the Yankee Freedom ferry or a Key West Seaplane Charters flight from Key West, or come by private boat or permitted charter, to Garden Key.",
+        "points": [{ "label": "Garden Key Dock", "lat": 24.62738, "lon": -82.87211 }]
+      },
+      "final": [{ "label": "Fort Jefferson", "lat": 24.6286, "lon": -82.87221 }],
+      "scatterNote": { "text": "Scattering requires a special use permit from the Superintendent, Everglades National Park, obtained before you arrive. The park publishes no designated locations; ask the Permit Coordinator (305-242-7734)." },
+      "links": [
+        { "label": "Fort Jefferson", "url": "https://www.nps.gov/places/fort-jefferson.htm" },
+        { "label": "Fort Jefferson history", "url": "https://www.nps.gov/drto/learn/historyculture/fort-jefferson.htm" },
+        { "label": "Accessibility", "url": "https://www.nps.gov/drto/planyourvisit/accessibility.htm" }
+      ]
+    },
+    {
+      "id": "moat-wall",
+      "name": "Moat Walkway and Swim Beaches",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/moat-wall.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/moat-wall.webp",
+        "alt": "Fort Jefferson seen from the moat wall",
+        "credit": "NPS Photo / Maria Belen Farias",
+        "sourceUrl": "https://www.nps.gov/drto/index.htm"
+      },
+      "description": "A long brick wall circles Fort Jefferson, holding a calm moat on one side and open sea on the other. Walking it feels like walking on the water, the fort's arches mirrored beside you and the horizon stretching away. Small beaches on Garden Key invite you to sit in the sand or swim in clear, shallow water over reefs full of fish. Choose a spot along the wall, share a story, and watch the light move across the sea.",
+      "plan": {
+        "distance": "Around the outside of the fort; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "The trail on the outside of the fort is listed as accessible (NPS); beaches are sand",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Arrive at Garden Key by ferry, seaplane, private boat or permitted charter.",
+        "points": [{ "label": "Garden Key Dock", "lat": 24.62738, "lon": -82.87211 }]
+      },
+      "trail": {
+        "name": "Moat walkway",
+        "steps": ["From the dock, walk to the moat wall that surrounds Fort Jefferson.", "Follow the walkway along the wall, with the moat on one side and the sea on the other."],
+        "notes": [
+          "Swimming in the moat is prohibited. Swim only in the designated areas or display a dive flag outside them, and never snorkel alone.",
+          "All coral, shells and historic artifacts are protected."
+        ]
+      },
+      "final": [
+        { "label": "South Swim Beach", "lat": 24.62689, "lon": -82.87358 },
+        { "label": "North Swim Beach", "lat": 24.6296, "lon": -82.87208 }
+      ],
+      "scatterNote": { "text": "Scattering requires a special use permit from the Superintendent, Everglades National Park, obtained before you arrive. The park publishes no designated locations; ask the Permit Coordinator (305-242-7734)." },
+      "links": [
+        { "label": "Swimming, snorkeling and diving", "url": "https://www.nps.gov/drto/planyourvisit/swimming-snorkeling-and-diving.htm" },
+        { "label": "Garden Key", "url": "https://www.nps.gov/drto/planyourvisit/garden-key.htm" }
+      ]
+    },
+    {
+      "id": "loggerhead-key",
+      "name": "Loggerhead Key",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/loggerhead-key.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/loggerhead-key.webp",
+        "alt": "A photo in front of Loggerhead Key from a boat",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
+        "sourceUrl": "https://www.nps.gov/drto/index.htm"
+      },
+      "description": "Three miles beyond Garden Key, the largest island in the Dry Tortugas rises from turquoise water, crowned by a tall lighthouse above a white beach and swaying palms. Named for the loggerhead sea turtles that have long found refuge here, it is a quiet place of shipwrecks, wildlife and history. Reaching it takes your own boat or a kayak, so the people who make this crossing together will remember it as their own small voyage.",
+      "plan": {
+        "distance": "3 miles by water from Garden Key",
+        "difficulty": "Easy on the marked paths; boat or kayak required",
+        "accessibility": "No public transportation to the island; access by private vessel, or kayaks and canoes brought on the ferry with advance arrangements",
+        "bestTime": "Day use only",
+        "scattering": "Only with a park permit; no locations published"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park, and there is no public transportation to Loggerhead Key. Come by private vessel, or bring a kayak or canoe on the ferry with advance arrangements and paddle the 3 miles from Garden Key. Anchoring is not allowed in the Research Natural Area; use the park's mooring buoys.",
+        "points": []
+      },
+      "trail": {
+        "name": "Loggerhead Key marked paths",
+        "steps": ["Land at the dinghy beach.", "Stay on the marked paths; all buildings and boat docks on the island are closed to the public."],
+        "notes": ["A permit for visiting Loggerhead Key is obtained at Garden Key (Superintendent's Compendium). Fishing is prohibited in the Research Natural Area, including Loggerhead Key."]
+      },
+      "final": [{ "label": "Lighthouse", "lat": 24.63333, "lon": -82.92055 }],
+      "scatterNote": { "text": "Scattering requires a special use permit from the Superintendent, Everglades National Park, obtained before you arrive. The park publishes no designated locations; ask the Permit Coordinator (305-242-7734)." },
+      "links": [
+        { "label": "Loggerhead Key", "url": "https://www.nps.gov/drto/planyourvisit/loggerhead-key.htm" },
+        { "label": "Loggerhead Key (place)", "url": "https://www.nps.gov/places/loggerhead-key.htm" }
+      ]
+    }
+  ]
+}

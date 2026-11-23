@@ -1,0 +1,217 @@
+{
+  "id": "yellowstone",
+  "name": "Yellowstone National Park",
+  "short": "Yellowstone",
+  "state": "Wyoming, Montana and Idaho",
+  "states": ["Wyoming", "Montana", "Idaho"],
+  "tagline": "Geysers, a golden canyon and wild valleys in the world's first national park.",
+  "photo": {
+    "src": "/images/last-adventure/yellowstone/park.jpg",
+    "srcWebp": "/images/last-adventure/yellowstone/park.webp",
+    "alt": "A wide column of water erupts from a pool surrounded by terraces with and orange sky in the background",
+    "credit": "NPS/Neal Herbert",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/293fdc01-1c52-44cb-abe8-7c5da7079b03",
+    "caption": "Sunset eruption of Great Fountain Geyser, Lower Geyser Basin"
+  },
+  "intro": "Yellowstone became the world's first national park in 1872, and its geysers, hot springs and canyon still draw families from every corner of the country. A final adventure here can be as gentle as waiting together for Old Faithful to erupt, or as demanding as a climb to a mountaintop fire lookout. Between the two lie paved canyon overlooks and wide valleys where bison and elk graze beside the road.",
+  "homepage": "https://www.nps.gov/yell/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/yell/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a free Special Use Permit, only in undeveloped, non-thermal areas well away from roads, buildings and hydrothermal features.",
+  "scatterFacts": [
+    "A Special Use Permit is required. No fee.",
+    "Email the completed Special Use Form to yell_sup@nps.gov at least 10 business days before your planned date, with maps or diagrams of the location. Questions: (307) 344-2110, Monday to Friday, 8:00 a.m. to 5:00 p.m. (MT).",
+    "If approved, the park emails a draft permit to review, sign and return. The signed permit must be with you during the event.",
+    "Only in undeveloped, non-thermal areas, well away from buildings, roads, parking areas, campgrounds and any hot springs, geysers or other hydrothermal features.",
+    "Only human cremains, fully processed and completely dispersed, not buried or left in piles. Do not disturb rocks, vegetation or other natural features.",
+    "No memorial items (plaques, urns, photos, flowers and similar) may be left. The site stays open to the public, and the event should be small, private, discreet and away from high visitor use areas."
+  ],
+  "scatterLink": [
+    { "label": "Scattering of ashes permit (NPS)", "url": "https://www.nps.gov/yell/planyourvisit/ashscattering.htm" },
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/yell/planyourvisit/permitsandreservations.htm" }
+  ],
+  "beforeYouGo": "Yellowstone is open 24 hours a day, all year, but most park roads are not. The only road generally open year-round to regular vehicles runs from the North Entrance at Gardiner, Montana, through Tower Junction to Cooke City, Montana. Most other roads close to regular vehicles from early November to late April. Projected 2027 dates: West Entrance to Old Faithful and Norris to Canyon Village open April 16 to October 31; Dunraven Pass (Canyon Village to Tower Fall) open May 28 to about October 11. Check road status before you go. The featured places are developed or hydrothermal areas, so plan the farewell there and propose a separate undeveloped, non-thermal site in your permit application.",
+  "destinations": [
+    {
+      "id": "old-faithful",
+      "name": "Old Faithful",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/yellowstone/old-faithful.jpg",
+        "srcWebp": "/images/last-adventure/yellowstone/old-faithful.webp",
+        "alt": "Old Faithful Geyser erupting in a towering column of steam",
+        "credit": "NPS/Jim Peaco",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/dc3baf0c-1dd8-b71b-0ba9-d575bac600f0"
+      },
+      "description": "Families have gathered in this semicircle of benches for well over a century, all waiting for the same thing. The crowd goes quiet, steam builds over the cone, and then a column of boiling water climbs as high as 184 feet into the sky. Old Faithful erupts more often than any of the park's other big geysers, so you can plan your moment almost to the minute. Sit close together, hold a favorite photograph, and let the eruption mark the start of this last journey.",
+      "plan": {
+        "distance": "Less than 1/4 mile from the Old Faithful Visitor Education Center to the viewing area",
+        "difficulty": "Easy",
+        "time": "30 to 90 minutes",
+        "accessibility": "Wheelchair-accessible walkways from all parking areas to the geyser (NPS)",
+        "bestTime": "Arrive at least 10 minutes before the predicted eruption",
+        "scattering": "Not at this spot: only in undeveloped, non-thermal areas, with a free permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Grand Loop Road to the Old Faithful area in the Upper Geyser Basin; from the West Entrance, drive to Madison, then south to Old Faithful. Parking is limited, especially 10 a.m. to 6 p.m.",
+        "points": [{ "label": "Old Faithful Visitor Education Center", "lat": 44.4586, "lon": -110.8292 }]
+      },
+      "final": [{ "label": "Old Faithful Geyser", "lat": 44.46046, "lon": -110.82815 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed in hydrothermal or developed areas such as the Upper Geyser Basin. Propose an undeveloped, non-thermal location well away from roads and buildings in your Special Use Permit application; the park decides whether to approve it."
+      },
+      "links": [
+        { "label": "Watch Old Faithful erupt", "url": "https://www.nps.gov/thingstodo/yell_oldfaithful.htm" },
+        { "label": "Old Faithful Geyser", "url": "https://www.nps.gov/places/old-faithful-geyser.htm" }
+      ]
+    },
+    {
+      "id": "grand-prismatic-overlook",
+      "name": "Grand Prismatic Overlook",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/yellowstone/grand-prismatic-overlook.jpg",
+        "srcWebp": "/images/last-adventure/yellowstone/grand-prismatic-overlook.webp",
+        "alt": "Looking down from the overlook onto Grand Prismatic Spring and people on the boardwalk next to it",
+        "credit": "NPS/Diane Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/ac28edac-bfff-4187-8e96-b5edc2e965bf"
+      },
+      "description": "From the boardwalk, Grand Prismatic Spring is a cloud of steam. From this hillside it becomes what people come to see: a vast pool of deep blue ringed by bands of orange and gold, spread out across Midway Geyser Basin below you. The trail climbs gently, so grandparents and children can make the walk together and stand side by side at the top. Few colors in nature are this vivid, and it is a fitting place to remember a life lived brightly.",
+      "plan": {
+        "distance": "1.2 mi round trip",
+        "difficulty": "Easy",
+        "time": "1 to 2 hours",
+        "elevation": "105 ft",
+        "accessibility": "Gradual climb on a dirt trail; wheelchair access not published",
+        "bestTime": "Winter, summer and fall (NPS season)",
+        "scattering": "Not at this spot: only in undeveloped, non-thermal areas, with a free permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Grand Loop Road to the Fairy Falls Parking Lot, 1 mile south of Midway Geyser Basin. Parking is very limited.",
+        "points": [{ "label": "Fairy Falls Parking Lot", "lat": 44.51516, "lon": -110.83258 }]
+      },
+      "trail": {
+        "name": "Grand Prismatic Overlook Trail (via the Fairy Falls Trail)",
+        "steps": [
+          "Start at the Fairy Falls Trailhead.",
+          "Follow the trail as it gradually climbs 105 feet over 0.6 mile to the overlook above Grand Prismatic Spring.",
+          "Return the same way."
+        ],
+        "notes": ["Pets are not allowed on the trail."]
+      },
+      "final": [{ "label": "Overlook", "lat": 44.52353, "lon": -110.84004 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed near hot springs, geysers or other hydrothermal features. Propose an undeveloped, non-thermal location well away from buildings, roads and parking areas in your Special Use Permit application; the park decides whether to approve it."
+      },
+      "links": [{ "label": "Grand Prismatic Overlook Trail", "url": "https://www.nps.gov/thingstodo/yell-trail-grand-prismatic-overlook.htm" }]
+    },
+    {
+      "id": "artist-point",
+      "name": "Artist Point",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/yellowstone/artist-point.jpg",
+        "srcWebp": "/images/last-adventure/yellowstone/artist-point.webp",
+        "alt": "Looking through a deep canyon full of orange and pink colors",
+        "credit": "NPS/Diane Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/287f74cf-9bf1-4196-a534-a08b9b432fbe"
+      },
+      "description": "The Grand Canyon of the Yellowstone glows in shades of yellow, pink and cream, and at its head the Lower Falls drop 308 feet in a white roar of spray. Artist Point frames it all from the South Rim, with the river curving away through the canyon below. A paved walkway leads out to the viewing areas, so everyone in the family can reach the rail. Morning light paints the canyon walls; stand together and take your time before you turn back.",
+      "plan": {
+        "distance": "Short paved walkway from the parking area; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Sidewalk out to the second viewing area meets wheelchair accessibility standards; accessible vault toilets (NPS)",
+        "scattering": "Not at this spot: only in undeveloped, non-thermal areas, with a free permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Canyon Junction, drive south about 2 miles on the Grand Loop Road and turn left onto South Rim Drive, then continue about 1 mile to the parking area at the end of the road.",
+        "points": [{ "label": "Artist Point parking", "lat": 44.71951, "lon": -110.4805 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 44.72127, "lon": -110.47941 }],
+      "scatterNote": {
+        "text": "Developed overlooks such as Artist Point do not qualify. Propose an undeveloped, non-thermal location well away from roads, parking and buildings in your Special Use Permit application; the park decides whether to approve it."
+      },
+      "links": [
+        { "label": "Artist Point Trailhead", "url": "https://www.nps.gov/places/000/artist-point-trailhead-4k8.htm" },
+        { "label": "Grand Canyon of the Yellowstone", "url": "https://www.nps.gov/thingstodo/yell-grand-canyon-of-the-yellowstone.htm" }
+      ]
+    },
+    {
+      "id": "lamar-valley",
+      "name": "Lamar Valley",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/yellowstone/lamar-valley.jpg",
+        "srcWebp": "/images/last-adventure/yellowstone/lamar-valley.webp",
+        "alt": "A wide open, green river valley with blue skies and mountains in the background",
+        "credit": "NPS/Neal Herbert",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9da42609-9f2d-4886-94fd-a9e5d4d66529"
+      },
+      "description": "Some families measure a life in quiet mornings, and Lamar Valley rewards patience. Wide grasslands roll toward the mountains, and some of the largest wild herds of bison and elk in North America graze along the river. The park calls this northern range one of the best places in the world to watch wolves. Pull over with a thermos and binoculars, pass them around, and tell the stories your loved one liked best while the valley wakes up around you.",
+      "plan": {
+        "distance": "Roadside pullouts",
+        "difficulty": "Easy",
+        "accessibility": "Viewing from roadside pullouts; surface details not published",
+        "bestTime": "Year-round; the road through the valley is generally open to regular vehicles all year",
+        "scattering": "Not at this spot: only in undeveloped, non-thermal areas, with a free permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the North Entrance at Gardiner, drive through Mammoth Hot Springs and Tower Junction, then east on the Northeast Entrance Road into the valley. Park only in pullouts and do not block traffic.",
+        "points": [{ "label": "Roadside pullout, Northeast Entrance Road", "lat": 44.87029, "lon": -110.19296 }]
+      },
+      "final": [{ "label": "Roadside pullout", "lat": 44.87029, "lon": -110.19296 }],
+      "scatterNote": {
+        "text": "Roadsides and pullouts do not qualify. Propose an undeveloped location well away from roads and parking in your Special Use Permit application; the park decides whether to approve it. Stay 100 yards from bears and wolves and 25 yards from all other animals."
+      },
+      "links": [{ "label": "Lamar Valley wildlife watching", "url": "https://www.nps.gov/places/000/lamar-valley-wildlife-watching.htm" }]
+    },
+    {
+      "id": "mount-washburn",
+      "name": "Mount Washburn",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/yellowstone/mount-washburn.jpg",
+        "srcWebp": "/images/last-adventure/yellowstone/mount-washburn.webp",
+        "alt": "Looking across a grassy slope at a mountain with patches of snow on it",
+        "credit": "NPS/D. Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a0d1022e-155d-451f-672a-ff93267a3f03"
+      },
+      "description": "The trail from Dunraven Pass climbs steadily through wildflower meadows where bighorn sheep often graze, and the views widen with every switchback. At the 10,219-foot summit stands a working fire lookout, and on a clear day the panorama stretches 20 to 50 miles across the heart of the park. For a family that loves high places, carrying someone dear to this summit is a fitting tribute. Rest inside the shelter at the base of the lookout and look out across Yellowstone together.",
+      "plan": {
+        "distance": "6 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "3 to 6 hours",
+        "accessibility": "Mountain trail; not recommended for people with heart or respiratory problems (NPS)",
+        "bestTime": "Summer and fall (NPS season)",
+        "scattering": "Not at this spot: only in undeveloped, non-thermal areas, with a free permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Grand Loop Road to the parking lot at Dunraven Pass, 4.5 miles north of Canyon Junction. The Dunraven Pass road opens late in spring and closes in fall (projected 2027: May 28 to about October 11).",
+        "points": [{ "label": "Dunraven Pass Trailhead parking", "lat": 44.7848, "lon": -110.45382 }]
+      },
+      "trail": {
+        "name": "Dunraven Pass - Mount Washburn Trail",
+        "steps": [
+          "Start at the parking lot at Dunraven Pass.",
+          "Climb the trail to the summit, staying on the trail to protect fragile alpine vegetation.",
+          "Visit the exhibits in the shelter at the base of the fire lookout, then return the same way."
+        ],
+        "notes": [
+          "No water along the trail. Be aware of lightning above the treeline.",
+          "Grizzly bears frequent the area in fall. Hike in groups of 3 or more, make noise and carry bear spray.",
+          "Pets are not allowed on the trail."
+        ]
+      },
+      "final": [{ "label": "Summit fire lookout", "lat": 44.79741, "lon": -110.43387 }],
+      "scatterNote": {
+        "text": "The summit lookout is a developed site. Propose an undeveloped location well away from buildings, roads and parking areas in your Special Use Permit application; the park decides whether to approve it."
+      },
+      "links": [{ "label": "Dunraven Pass - Mount Washburn Trail", "url": "https://www.nps.gov/thingstodo/yell-trail-dunraven-pass-mount-washburn.htm" }]
+    }
+  ]
+}

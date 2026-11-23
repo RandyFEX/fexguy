@@ -1,0 +1,184 @@
+{
+  "id": "petrified-forest",
+  "name": "Petrified Forest National Park",
+  "short": "Petrified Forest",
+  "state": "Arizona",
+  "states": ["Arizona"],
+  "tagline": "Painted Desert badlands and ancient logs turned to stone.",
+  "photo": {
+    "src": "/images/last-adventure/petrified-forest/park.jpg",
+    "srcWebp": "/images/last-adventure/petrified-forest/park.webp",
+    "alt": "Red badlands in front of distant bluish mesas, mostly cloudy with a small sunny highlight",
+    "credit": "NPS/Stuart Holmes",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7fce3d3-f490-464b-b5f8-5ed3642acfdb",
+    "caption": "Petrified Forest National Wilderness Area"
+  },
+  "intro": "Petrified Forest stretches 28 miles between Interstate 40 and Highway 180, from the red badlands of the Painted Desert in the north to great fields of colorful petrified logs in the south. Along one scenic road a family can stand at a rim overlook, walk among blue and purple clay hills, visit an ancestral Puebloan village and touch the edge of an ancient log jam from the Late Triassic. Scattering ashes is not possible here at present, but it is a remarkable place to share memories together.",
+  "homepage": "https://www.nps.gov/pefo/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/pefo/planyourvisit/maps.htm" },
+    { "label": "Trails (NPS)", "url": "https://www.nps.gov/pefo/planyourvisit/trails.htm" }
+  ],
+  "scatterAllowed": "Prohibited",
+  "scatterSummary": "A permit is required to scatter ashes, and the park has suspended issuing those permits, so scattering is not allowed anywhere in the park at present.",
+  "scatterFacts": [
+    "Superintendent's Compendium, 36 CFR 2.62(b): a permit is required for the scattering of ashes from cremated human remains, and issuance of permits is suspended.",
+    "The suspension continues while the park goes through an interdisciplinary review and formal comment process with the 37 traditionally associated tribes.",
+    "The park explains that scattering human remains can conflict with the spiritual or cultural practices of Indigenous people traditionally associated with the park, and could affect the protection of human remains that are themselves cultural resources."
+  ],
+  "planNote": {
+    "heading": "A Farewell Without Scattering",
+    "text": "Ash scattering is not allowed anywhere in Petrified Forest National Park: a permit is required, and the park has suspended issuing scattering permits while it consults with the 37 traditionally associated tribes. If you plan to bring your loved one's cremated remains for a visit, keep them in a secure, non-breakable container, confirm your plans with the park first, and take the remains with you when you leave. Arrange any scattering separately at a location where it is legally permitted."
+  },
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/pefo/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/pefo/contacts.htm" }
+  ],
+  "beforeYouGo": "The park is open every day except Thanksgiving and Christmas; in winter opening may be delayed until roads are safe. Arizona stays on Mountain Standard Time all year. Westbound on I-40, take Exit 311 and drive the 28-mile park road south to Highway 180; eastbound, take Exit 285 into Holbrook and follow Highway 180 south 19 miles to the south entrance. Monsoon season runs June 15 to September 30, with possible flash floods and lightning. Leave all petrified wood where it lies.",
+  "destinations": [
+    {
+      "id": "kachina-point",
+      "name": "Kachina Point and the Painted Desert Rim",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/petrified-forest/kachina-point.jpg",
+        "srcWebp": "/images/last-adventure/petrified-forest/kachina-point.webp",
+        "alt": "Woman standing at the edge overlooking red striped badlands with a wayside exhibit nearby",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/53f8d29f-7652-4462-ab27-8bba7e5471b2"
+      },
+      "description": "Behind the historic Painted Desert Inn, the land drops away into the red hills of the Painted Desert, banded and rolling as far as you can see. The park calls this one of the best places to see the red part of the desert, and an easy accessible path leads to the overlook. Those who want a little more can follow the rim trail through the woodland to Tawa Point, named for the Hopi Sun Spirit. Linger as the light shifts across the hills.",
+      "plan": {
+        "distance": "Short accessible path to the overlook; Painted Desert Rim Trail to Tawa Point 1 mi round trip",
+        "difficulty": "Easy at the overlook; the rim trail is not rated",
+        "accessibility": "Overlook reached by an easy accessible trail (NPS). The unpaved rim trail has no stairs, but waterbars, a dirt-gravel surface and grades up to 25.6% may make it unsuitable for strollers or mobility vehicles",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "From I-40 Exit 311, enter at the north entrance; Kachina Point and the Painted Desert Inn are about 2 miles in. Tawa Point is about 1.5 miles in.",
+        "points": [
+          { "label": "Kachina Point parking", "lat": 35.08339, "lon": -109.78858 },
+          { "label": "Tawa Point parking", "lat": 35.0801, "lon": -109.7836 }
+        ]
+      },
+      "trail": {
+        "name": "Painted Desert Rim Trail (optional)",
+        "steps": [
+          "Walk the accessible path behind the Painted Desert Inn to the Kachina Point overlook.",
+          "For more, follow the Painted Desert Rim Trail through the rim woodland to Tawa Point, then return."
+        ]
+      },
+      "final": [
+        { "label": "Kachina Point", "lat": 35.08454, "lon": -109.78809 },
+        { "label": "Tawa Point", "lat": 35.0804, "lon": -109.78374 }
+      ],
+      "links": [
+        { "label": "Kachina Point", "url": "https://www.nps.gov/places/kachina-point.htm" },
+        { "label": "Tawa Point", "url": "https://www.nps.gov/places/tawa-point.htm" }
+      ]
+    },
+    {
+      "id": "puerco-pueblo",
+      "name": "Puerco Pueblo",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/petrified-forest/puerco-pueblo.jpg",
+        "srcWebp": "/images/last-adventure/petrified-forest/puerco-pueblo.webp",
+        "alt": "Stone walls of the ancestral Puerco Pueblo",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/be8670b6-155d-451f-67a6-5cf63d62b362"
+      },
+      "description": "More than 650 years ago, families made their homes in this hundred-room village near the Puerco River, and the low stone walls they left still trace its rooms. A short paved loop winds through the site, past petroglyphs carved into boulders near the trail. The place remains culturally significant to the Hopi and Zuni people. Walking here together is a gentle reminder that people have always gathered in places like this to remember those who came before.",
+      "plan": {
+        "distance": "0.3 mi loop",
+        "difficulty": "Easy",
+        "accessibility": "Paved; suitable for strollers and power and manual mobility equipment, except on a short spur (NPS)",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "On the main park road at mile marker 11, 11 miles from the north entrance.",
+        "points": [{ "label": "Parking", "lat": 34.97636, "lon": -109.79388 }]
+      },
+      "trail": {
+        "name": "Puerco Pueblo Trail (loop)",
+        "steps": [
+          "Follow the paved loop through the pueblo, with exhibits along the way and a mini-museum in the historic check station halfway around.",
+          "Look for petroglyphs along the south end of the trail."
+        ],
+        "notes": ["Do not climb on the boulders or walls, and do not touch the petroglyphs."]
+      },
+      "final": [{ "label": "Puerco Pueblo", "lat": 34.97485, "lon": -109.79415 }],
+      "links": [{ "label": "Puerco Pueblo", "url": "https://www.nps.gov/places/puerco-pueblo.htm" }]
+    },
+    {
+      "id": "blue-mesa",
+      "name": "Blue Mesa",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/petrified-forest/blue-mesa.jpg",
+        "srcWebp": "/images/last-adventure/petrified-forest/blue-mesa.webp",
+        "alt": "Petrified logs erode from the top of a ridge at Blue Mesa under stormy skies",
+        "credit": "Jacob Holgerson, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e5590615-de3e-4726-967f-ae7926b2c948"
+      },
+      "description": "Park staff count Blue Mesa among their favorite places, and it is easy to see why. Hills of bluish clay rise in bands of blue, purple, gray and peach, with petrified logs balanced on pedestals of stone. A loop road climbs the mesa past overlooks, and a trail descends from a sun shelter right down among the badlands. Walk slowly, notice the colors change with the light, and let everyone find their own favorite view.",
+      "plan": {
+        "distance": "Blue Mesa Road about 5 mi round trip with roadside overlooks; trail 1 mi loop",
+        "difficulty": "Easy at the roadside overlooks; the trail is not rated (steep grade at the start)",
+        "accessibility": "Overlooks from the road. The trail alternates paved and gravel and begins with a steep grade",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Turn off the main park road at about mile marker 15 onto the Blue Mesa Road loop. The trailhead is at the sun shelter halfway around the loop.",
+        "points": [{ "label": "Blue Mesa Trailhead", "lat": 34.93944, "lon": -109.75622 }]
+      },
+      "trail": {
+        "name": "Blue Mesa Trail (loop)",
+        "steps": ["Descend from the sun shelter on the mesa top into the badlands.", "Follow the loop among the clay hills and petrified wood, then climb back to the shelter."]
+      },
+      "final": [{ "label": "Blue Mesa Viewpoint", "lat": 34.93946, "lon": -109.75624 }],
+      "links": [
+        { "label": "Blue Mesa", "url": "https://www.nps.gov/places/blue-mesa.htm" },
+        { "label": "Blue Mesa Trail", "url": "https://www.nps.gov/places/blue-mesa-trail.htm" }
+      ]
+    },
+    {
+      "id": "long-logs",
+      "name": "Long Logs",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/petrified-forest/long-logs.jpg",
+        "srcWebp": "/images/last-adventure/petrified-forest/long-logs.webp",
+        "alt": "Long Logs Hills Night Sky with Stars",
+        "credit": "NPS/Jacob Holgerson",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/7b1473bd-3935-43a0-af27-1d7e8860c576"
+      },
+      "description": "At the southern end of the park, an ancient log jam lies at the foot of gray badlands, one of the largest concentrations of petrified wood anywhere in the park. Logs that were once towering trees now gleam with color, broken into sections as if a giant had stacked them. Walk the loop at an unhurried pace and stop wherever the colors catch your eye. Few places put a single life in perspective quite like standing among trees that grew in the Late Triassic, some 200 million years ago.",
+      "plan": {
+        "distance": "1.6 mi loop; can be combined with Agate House for 2.6 mi round trip",
+        "difficulty": "Easy on the paved first half mile; the full loop is not rated",
+        "accessibility": "First half mile paved and suitable for mobility equipment and strollers; the rest of the loop has narrow turns and a rough surface, not recommended for most wheelchairs. Stairs to the shade shelter can be avoided",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "From Holbrook, Highway 180 south 19 miles to the south entrance, then to the Rainbow Forest Museum. The trailhead is at the end of the Rainbow Forest parking area farthest from the museum.",
+        "points": [{ "label": "Rainbow Forest parking", "lat": 34.81549, "lon": -109.8635 }]
+      },
+      "trail": {
+        "name": "Long Logs Trail (loop)",
+        "steps": [
+          "Follow the paved access trail for the first half mile.",
+          "Continue around the loop through the log jam at the base of the gray badlands.",
+          "Optionally add Agate House from the junction of the Long Logs and Agate House trails."
+        ],
+        "notes": ["Leave all petrified wood where it lies, and report any removal to park staff. Agate House itself is closed; stay at least 15 feet from the structure."]
+      },
+      "final": [{ "label": "Long Logs", "lat": 34.8088, "lon": -109.85752 }],
+      "links": [{ "label": "Long Logs Trail", "url": "https://www.nps.gov/places/long-logs-trail.htm" }]
+    }
+  ]
+}

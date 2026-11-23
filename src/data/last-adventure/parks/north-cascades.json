@@ -1,0 +1,177 @@
+{
+  "id": "north-cascades",
+  "name": "North Cascades National Park",
+  "short": "North Cascades",
+  "state": "Washington",
+  "states": ["Washington"],
+  "tagline": "Turquoise glacial lakes beneath jagged, glacier-hung peaks.",
+  "photo": {
+    "src": "/images/last-adventure/north-cascades/park.jpg",
+    "srcWebp": "/images/last-adventure/north-cascades/park.webp",
+    "alt": "Mountain slopes with blue sky",
+    "credit": "NPS Photo/Deby Dixon",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8cb90bdb-1dd8-b71b-0bff-36e9c7f37be0",
+    "caption": "Cascade Pass and Pelton Basin"
+  },
+  "intro": "The North Cascades National Park Service Complex protects some of the finest mountain country in North America, and 93 percent of it is designated wilderness. The North Cascades Highway (State Route 20) crosses it past old-growth forest, waterfalls and the turquoise water of Diablo Lake, colored by glacial flour washed down from the peaks. A final adventure here can be a short boardwalk to a mountain view, a gentle climb above the lake or a full day's hike to an alpine pass.",
+  "homepage": "https://www.nps.gov/noca/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/noca/planyourvisit/maps.htm" },
+    { "label": "North Cascades Highway (NPS)", "url": "https://www.nps.gov/noca/planyourvisit/north-cascades-highway.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permission letter",
+  "scatterSummary": "Scattering is permitted under a letter of authorization from the superintendent, except within 500 feet of any developed area, established campsite or water source.",
+  "scatterFacts": [
+    "A Letter of Authorization is required for scattering ashes in the park complex. Contact the Commercial Services Office for application materials (park phone: 360-854-7200).",
+    "Not within 500 feet of any developed area, established campsite or water source (Superintendent's Compendium, 36 CFR 2.62).",
+    "The park lists a non-refundable $50 application fee, paid through Pay.gov, for non-filming special use permits, and its compendium lists event fees for ash spreading ceremonies. Confirm what applies to your letter with the Commercial Services Office.",
+    "Paying the application fee does not by itself create a permit; application materials go to the Commercial Services Office."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits and memorial activities (NPS)", "url": "https://www.nps.gov/noca/getinvolved/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/noca/learn/management/superintendent-compendium.htm" }
+  ],
+  "beforeYouGo": "State Route 20, the North Cascades Highway, is the main access, from Interstate 5 (Exit 230) at Burlington in the west and from Twisp and Okanogan in the east; allow at least an hour to drive the roughly 30 miles across the park. Snow and avalanche hazards usually close the highway between Ross Dam Trailhead and Lone Fir Campground from late November or early December until April or early May. The Cascade River Road to Cascade Pass typically opens by the end of June. There is no road access to Stehekin.",
+  "destinations": [
+    {
+      "id": "sterling-munro-boardwalk",
+      "name": "Sterling Munro Boardwalk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/sterling-munro-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/sterling-munro-boardwalk.webp",
+        "alt": "Forest and mountains framing a view of the jagged Picket Mountains",
+        "credit": "NPS / Anthony Killion",
+        "sourceUrl": "https://www.nps.gov/places/sterling-munro-boardwalk.htm"
+      },
+      "description": "Behind the North Cascades Visitor Center, a short boardwalk winds down through Douglas fir and western hemlock and then opens onto the distant Picket Range, one of the most rugged corners of the park, with the Terror Glacier among its peaks. Benches wait at the end, so everyone can sit together and take it in. Bring binoculars to look for mountain goats on the steep slopes, and take a quiet moment for the person who would have loved this view.",
+      "plan": {
+        "distance": "330 ft one way",
+        "difficulty": "Easy",
+        "accessibility": "Fully accessible boardwalk; the shortest and most accessible trail in the park complex. Benches at the viewpoint (NPS)",
+        "scattering": "With a letter of authorization, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "State Route 20 to milepost 120 near Newhalem, then to the North Cascades Visitor Center parking area.",
+        "points": [{ "label": "Visitor center parking", "lat": 48.66596, "lon": -121.26861 }]
+      },
+      "trail": {
+        "name": "Sterling Munro Boardwalk",
+        "steps": ["Start outside the northwest corner of the North Cascades Visitor Center.", "Follow the boardwalk through the forest to the viewpoint and benches."]
+      },
+      "final": [{ "label": "North Cascades Visitor Center (boardwalk start)", "lat": 48.6663, "lon": -121.26677 }],
+      "scatterNote": { "text": "Scattering is not allowed within 500 feet of developed areas such as the visitor center. With a letter of authorization, scattering is allowed elsewhere in the park complex at least 500 feet from developed areas, established campsites and water sources." },
+      "links": [{ "label": "Sterling Munro Boardwalk", "url": "https://www.nps.gov/places/sterling-munro-boardwalk.htm" }]
+    },
+    {
+      "id": "diablo-lake-overlook",
+      "name": "Diablo Lake Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/diablo-lake-overlook.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/diablo-lake-overlook.webp",
+        "alt": "A blue lake surrounded by forested mountains",
+        "credit": "NPS / M. Bluestein",
+        "sourceUrl": "https://www.nps.gov/places/diablo-lake-overlook.htm"
+      },
+      "description": "The color stops people in their tracks. In summer Diablo Lake glows turquoise, tinted by fine rock particles called glacial flour that wash down from the surrounding mountains, and rugged peaks rise straight from its shores with the historic Diablo Dam in the distance. Pull into the overlook, gather together at the viewpoint and let the youngest ones guess how the water got its color. There is a picnic table too, a fine place for a shared meal and a toast to the one you came to honor.",
+      "plan": {
+        "distance": "Roadside overlook",
+        "difficulty": "Easy",
+        "accessibility": "View from the overlook beside the parking area; surface details not published. Parking for cars, buses and RVs; vault toilet",
+        "bestTime": "Summer, when the lake is most turquoise",
+        "scattering": "With a letter of authorization, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "State Route 20 to the Diablo Lake Overlook at milepost 131.7.",
+        "points": [{ "label": "Parking", "lat": 48.71005, "lon": -121.09634 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 48.70981, "lon": -121.09715 }],
+      "scatterNote": { "text": "The overlook is a developed area above a lake, so scattering is not allowed here. With a letter of authorization, scattering is allowed elsewhere in the park complex at least 500 feet from developed areas, established campsites and water sources." },
+      "links": [{ "label": "Diablo Lake Overlook", "url": "https://www.nps.gov/places/diablo-lake-overlook.htm" }]
+    },
+    {
+      "id": "thunder-knob",
+      "name": "Thunder Knob",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/thunder-knob.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/thunder-knob.webp",
+        "alt": "A blue lake surrounded by forested mountains",
+        "credit": "NPS / Astudillo",
+        "sourceUrl": "https://www.nps.gov/places/thunder-knob-trail.htm"
+      },
+      "description": "Thunder Knob is the kind of walk where children run ahead and grandparents set the pace, and nobody minds. The well-built trail crosses a series of footbridges over Colonial Creek, then switchbacks gently up to a knob above Diablo Lake, where benches face the water and high peaks rise on every side. Settle onto a bench together, pass around a thermos and some favorite photographs, and let the mountains keep you company while you remember.",
+      "plan": {
+        "distance": "1.9 mi one way (trail page); 3.6 mi round trip (places page)",
+        "difficulty": "Easy to moderate",
+        "elevation": "680 ft (trail page); 425 ft (places page)",
+        "accessibility": "Well-constructed trail with a moderate grade and footbridges; not described as wheelchair accessible",
+        "scattering": "With a letter of authorization, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "State Route 20 to milepost 130, Colonial Creek Campground (24 miles east of Marblemount, 63 miles west of Winthrop). Park at the signed trailhead on the north side of the highway at the campground entrance.",
+        "points": [{ "label": "Thunder Knob Trailhead parking", "lat": 48.69114, "lon": -121.09957 }]
+      },
+      "trail": {
+        "name": "Thunder Knob Trail",
+        "steps": [
+          "Walk back through the north side of Colonial Creek Campground to a series of footbridges.",
+          "Cross the branches of the creek and follow the trail as it switchbacks gently up.",
+          "Continue to the benches and views of Diablo Lake at the top of the knob."
+        ],
+        "notes": ["NPS pages disagree on distance and elevation gain. Leashed dogs are allowed."]
+      },
+      "final": [{ "label": "Viewpoint", "lat": 48.7042, "lon": -121.10793 }],
+      "scatterNote": { "text": "The trail starts in a campground and overlooks a lake, so describe a location at least 500 feet from developed areas, established campsites and water sources when you request your letter of authorization." },
+      "links": [
+        { "label": "Thunder Knob Trail", "url": "https://www.nps.gov/noca/planyourvisit/thunder-knob-trail.htm" },
+        { "label": "Thunder Knob Trail (place)", "url": "https://www.nps.gov/places/thunder-knob-trail.htm" }
+      ]
+    },
+    {
+      "id": "cascade-pass",
+      "name": "Cascade Pass",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/cascade-pass.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/cascade-pass.webp",
+        "alt": "Snowy peaks above the valley seen from Cascade Pass",
+        "credit": "NPS/Michael Liang",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f24e571f-d384-b3ad-ccc1-10cfe13daf19"
+      },
+      "description": "The trail to Cascade Pass switchbacks through cool forest and then crosses open meadows, while ice cracks and falls from the hanging glaciers of Johannesburg Mountain and waterfalls spill down the slopes. At the pass you stand where Native Americans, fur traders and prospectors once crossed the range, with peaks such as Eldorado, Magic and McGregor all around. For the hikers in your family, it is a day to walk in old footsteps and carry someone you love to the top of the mountains.",
+      "plan": {
+        "distance": "3.7 mi one way (7.4 mi round trip)",
+        "difficulty": "Moderate",
+        "elevation": "1,700 ft",
+        "accessibility": "Mountain trail with switchbacks; steep snow sections may require an ice axe as late as July. No pets",
+        "bestTime": "Summer, after the Cascade River Road opens (typically by the end of June)",
+        "scattering": "With a letter of authorization, away from developed areas, campsites and water"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "State Route 20 to Marblemount, then the Cascade River Road 23.1 miles to the trailhead. The road is paved for about the first 10 miles, then gravel and narrow, with steep sections near the end; it is not suitable for sedans or low-clearance vehicles, and RVs, large trailers and vehicles over 22 feet are not allowed.",
+        "points": [{ "label": "Cascade Pass Trailhead", "lat": 48.47549, "lon": -121.07516 }]
+      },
+      "trail": {
+        "name": "Cascade Pass Trail",
+        "steps": [
+          "Switchback up through the forest.",
+          "Traverse the meadows to the pass.",
+          "Optional: the Sahale Arm Trail continues steeply north to the Sahale Glacier (5.9 mi one way from the trailhead, 3,940 ft gain, Strenuous)."
+        ],
+        "notes": ["Cascade Pass is the site of a major revegetation effort: stay on the trail and rest only on trail, snow or rock. No camping at the pass itself."]
+      },
+      "final": [{ "label": "Cascade Pass", "lat": 48.46762, "lon": -121.05908 }],
+      "scatterNote": { "text": "With a letter of authorization, scattering is allowed in the park complex at least 500 feet from developed areas, established campsites and water sources. Ask the Commercial Services Office whether a location in this area would qualify; the park asks hikers at the pass to stay on durable surfaces to protect revegetation." },
+      "links": [
+        { "label": "Cascade Pass / Sahale Arm Trail", "url": "https://www.nps.gov/noca/planyourvisit/cascade-pass-trail.htm" },
+        { "label": "Road conditions", "url": "https://www.nps.gov/noca/planyourvisit/road-conditions.htm" }
+      ]
+    }
+  ]
+}

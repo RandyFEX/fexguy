@@ -1,0 +1,162 @@
+{
+  "id": "great-sand-dunes",
+  "name": "Great Sand Dunes National Park",
+  "short": "Great Sand Dunes",
+  "state": "Colorado",
+  "states": ["Colorado"],
+  "tagline": "The tallest dunes in North America, cradled by snowy peaks.",
+  "photo": {
+    "src": "/images/last-adventure/great-sand-dunes/park.jpg",
+    "srcWebp": "/images/last-adventure/great-sand-dunes/park.webp",
+    "alt": "Panoramic View of Dunefield from Sangre de Cristo Mountains",
+    "credit": "NPS/Patrick Myers",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6ed5b09a-08c0-4a77-9116-1363a02bb447",
+    "caption": "Panoramic View of Dunefield from Sangre de Cristo Mountains"
+  },
+  "intro": "A 30-square-mile sea of sand rises against the Sangre de Cristo Mountains in Colorado's San Luis Valley, holding the tallest dunes in North America. In late spring, snowmelt from the peaks becomes Medano Creek, a shallow stream that flows in waves across the sand at the foot of the dunes. There are no trails in the dunefield, so every family finds its own way up the ridgelines.",
+  "homepage": "https://www.nps.gov/grsa/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/grsa/planyourvisit/maps.htm" },
+    { "label": "Hiking and dunes exploration (NPS)", "url": "https://www.nps.gov/grsa/planyourvisit/hiking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted in the park with a permit, under restrictions and conditions the park sets with each request.",
+  "scatterFacts": [
+    "The park states that scattering of ashes is permitted with certain restrictions and conditions, and that a permit is required.",
+    "The specific restrictions, locations and any fee are not published online. Contact the permit office by email through the park website or by phone at 719-378-6321.",
+    "The Superintendent's Compendium lists 36 CFR 2.62 (Memorialization) among the activities that require a permit.",
+    "A separate special event permit (application fee $200) applies to events that draw a crowd; wedding and ceremony permits have their own page."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits, scattering of ashes (NPS)", "url": "https://www.nps.gov/grsa/planyourvisit/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium 2026 (NPS)", "url": "https://www.nps.gov/grsa/learn/management/superintendent-s-compendium-great-sand-dunes-national-park-2026.htm" }
+  ],
+  "beforeYouGo": "The park and preserve are open 24 hours a day, all year. Reach the main area (Dunes Parking Lot, Visitor Center and Piñon Flats Campground) by Highway 150 from the south or County Lane 6 from the west; the park advises against relying on phone mapping apps. The campground is open April through October. In summer the sand surface can reach 150 degrees F and afternoon thunderstorms bring lightning, so plan dune hikes for early morning or evening. Medano Creek usually peaks in late May and early June and is often dry at the main area by July.",
+  "destinations": [
+    {
+      "id": "medano-creek",
+      "name": "Medano Creek",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/great-sand-dunes/medano-creek.jpg",
+        "srcWebp": "/images/last-adventure/great-sand-dunes/medano-creek.webp",
+        "alt": "Dune Ridges Above Medano Creek and Cottonwood Trees",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/dfb04102-d210-4830-ad0b-798bde51cc09"
+      },
+      "description": "In late spring, snowmelt from the mountains spreads across the sand in a wide, shallow stream, and every twenty seconds or so a small wave rolls down the creek bed. The park calls this surge flow, and Medano Creek is one of the few places on earth to see it. Grandparents can settle in at the water's edge while children splash and build sand castles, with the dunes rising straight ahead. It feels less like a farewell than a beach day your loved one would have wanted for everyone.",
+      "plan": {
+        "distance": "Beside the Dunes Parking Area; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Accessible mat from the Dunes Parking Area to the edge of the creek and sand; free sand wheelchairs by reservation at the Visitor Center (719-378-6395)",
+        "bestTime": "Late May and early June for surge flow; weekdays are less crowded",
+        "scattering": "Permit required; locations set by the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 150 into the park, then 1 mile north of the Visitor Center to the Dunes Parking Area.",
+        "points": [{ "label": "Dunes Parking Area", "lat": 37.7395, "lon": -105.51713 }]
+      },
+      "final": [{ "label": "Creek bed", "lat": 37.74032, "lon": -105.51719 }],
+      "scatterNote": {
+        "text": "The park publishes no designated scattering locations or conditions. Describe the place you have in mind when you contact the permit office (719-378-6321), and the park will tell you whether and where scattering can be permitted."
+      },
+      "links": [
+        { "label": "Medano Creek", "url": "https://www.nps.gov/places/medano-creek.htm" },
+        { "label": "Medano Creek conditions and forecast", "url": "https://www.nps.gov/grsa/planyourvisit/medano-creek.htm" }
+      ]
+    },
+    {
+      "id": "high-dune-on-first-ridge",
+      "name": "High Dune on First Ridge",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.jpg",
+        "srcWebp": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.webp",
+        "alt": "The top of a tall dune is illuminated by the rising sun, as clouds swirl in blue sky",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://www.nps.gov/places/high-dune-on-first-ridge.htm"
+      },
+      "description": "From the parking lot, this crest looks like the highest point in the dunefield, and that is reason enough to climb it. There is no trail: you cross the creek bed and zigzag up the ridgelines together, leaving footprints the wind will smooth away by evening. At the top the entire dunefield opens around you, wave after wave of sand rolling toward the mountains. Sit on the ridge, catch your breath, and share the stories that made this person who they were.",
+      "plan": {
+        "distance": "About 2.5 mi round trip, with no trail",
+        "difficulty": "Not rated by NPS; not an easy walk: no trail, loose sand, high elevation",
+        "time": "About 2 hours on average; up to 4 hours if not acclimated",
+        "elevation": "About 688 ft from base to top (692 ft on the NPS place page)",
+        "accessibility": "Loose sand and steep ridgelines; not wheelchair accessible",
+        "bestTime": "Early morning, to avoid hot sand and afternoon lightning",
+        "scattering": "Permit required; locations set by the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 150 into the park, then 1 mile north of the Visitor Center to the Dunes Parking Area.",
+        "points": [{ "label": "Dunes Parking Area", "lat": 37.7395, "lon": -105.51713 }]
+      },
+      "trail": {
+        "name": "Cross-country route (no trail)",
+        "steps": [
+          "Cross about half a mile of the Medano Creek bed from the parking area.",
+          "Zigzag up along the ridgelines to the high point of the first ridge."
+        ],
+        "notes": [
+          "The park warns that popular third-party hiking apps are often inaccurate for the dunes.",
+          "Wear closed shoes or boots: the sand surface can reach 150 degrees F in summer."
+        ]
+      },
+      "final": [{ "label": "Dune summit", "lat": 37.74908, "lon": -105.53278, "source": "nps" }],
+      "scatterNote": {
+        "text": "The park publishes no designated scattering locations or conditions. Ask the permit office (719-378-6321) whether a location on or near this ridge can be permitted."
+      },
+      "links": [
+        { "label": "High Dune on First Ridge", "url": "https://www.nps.gov/places/high-dune-on-first-ridge.htm" },
+        { "label": "Hiking and dunes exploration", "url": "https://www.nps.gov/grsa/planyourvisit/hiking.htm" }
+      ]
+    },
+    {
+      "id": "hidden-dune",
+      "name": "Hidden Dune",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-sand-dunes/hidden-dune.jpg",
+        "srcWebp": "/images/last-adventure/great-sand-dunes/hidden-dune.webp",
+        "alt": "A panoramic view of dunes, with mountains in the distance and blue sky above",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://www.nps.gov/places/hidden-dune.htm"
+      },
+      "description": "Hidden Dune earns its name: tucked deep in the dunefield, it cannot be seen from the main visitor areas, and a false summit keeps the true top out of sight for much of the climb. The park lists it among the two tallest dunes in North America. Reaching it takes most of a day of walking through open sand, just you, the people you love and the long shadows of the ridges. For a family that never did anything halfway, it is a summit worth carrying someone to.",
+      "plan": {
+        "distance": "About 7 mi round trip from the Dunes Parking Lot, with no trail",
+        "difficulty": "Not rated by NPS; not an easy walk: no trail, loose sand, high elevation",
+        "time": "About 6 hours",
+        "elevation": "Dune height 741 ft (NPS)",
+        "accessibility": "Loose sand with no trail; not wheelchair accessible",
+        "bestTime": "Early morning or evening in summer",
+        "scattering": "Permit required; locations set by the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 150 into the park, then 1 mile north of the Visitor Center to the Dunes Parking Area. With high-clearance 4WD, the hike can also start from Sand Pit or Castle Creek Picnic Areas on the Medano Pass Primitive Road.",
+        "points": [{ "label": "Dunes Parking Area", "lat": 37.7395, "lon": -105.51713 }]
+      },
+      "trail": {
+        "name": "Cross-country route (no trail)",
+        "steps": [
+          "From the Dunes Parking Lot, hike north and northwest across the dunefield.",
+          "Most hikers cross a slightly lower false summit before reaching the true summit about a quarter mile farther north."
+        ],
+        "notes": [
+          "From November through April, snow falls on the dunes about once a week. Wind is possible in any season, most often on spring afternoons.",
+          "NPS pages differ on the dune rankings: the place page lists Hidden Dune as tied with Star Dune at 741 ft; the hiking page lists Star Dune at 736 ft."
+        ]
+      },
+      "final": [{ "label": "Dune summit", "lat": 37.77592, "lon": -105.53191, "source": "nps" }],
+      "scatterNote": {
+        "text": "The park publishes no designated scattering locations or conditions. Ask the permit office (719-378-6321) whether a location in this part of the dunefield can be permitted."
+      },
+      "links": [
+        { "label": "Hidden Dune", "url": "https://www.nps.gov/places/hidden-dune.htm" },
+        { "label": "Hiking and dunes exploration", "url": "https://www.nps.gov/grsa/planyourvisit/hiking.htm" }
+      ]
+    }
+  ]
+}

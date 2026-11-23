@@ -1,0 +1,182 @@
+{
+  "id": "badlands",
+  "name": "Badlands National Park",
+  "short": "Badlands",
+  "state": "South Dakota",
+  "states": ["South Dakota"],
+  "tagline": "Striped buttes and spires rising above the mixed-grass prairie.",
+  "photo": {
+    "src": "/images/last-adventure/badlands/park.jpg",
+    "srcWebp": "/images/last-adventure/badlands/park.webp",
+    "alt": "badlands formations with red layers extend far into the horizon",
+    "credit": "NPS/Ed Welsh",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/4b522cd5-5593-4065-9569-f019548c09cf",
+    "caption": "Big Badlands Overlook"
+  },
+  "intro": "In the Badlands, layered buttes and pinnacles in bands of tan, red and yellow rise straight out of the South Dakota prairie. The paved Badlands Loop Road links overlooks and short boardwalk trails, so a family can stand together at the edge of this eroded landscape within minutes of the car. Bison, bighorn sheep and wide open skies complete a place that feels both ancient and wide awake.",
+  "homepage": "https://www.nps.gov/badl/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/badl/planyourvisit/maps.htm" },
+    { "label": "Hiking trail map (PDF)", "url": "https://www.nps.gov/badl/planyourvisit/upload/BADL-Hiking-Trail-Map.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit under the conditions in the Superintendent's Compendium, at least 100 feet from any trail, road, overlook, developed facility or body of water.",
+  "scatterFacts": [
+    "No permit is needed for the scattering itself. Permits are required for ceremonies or assemblies that might conflict with normal park operations or result in impact to park resources.",
+    "The remains must have been processed by pulverization after cremation.",
+    "Total group size is limited to 25 people or less.",
+    "On the ground: at least 100 feet from any trail, road, overlook, developed facility or body of water. Remains cannot be scattered over developed areas or park facilities.",
+    "From the air: at least 2,000 feet above ground level.",
+    "No markers or memorials. Containers must be removed from the area."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/badl/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Permits (NPS)", "url": "https://www.nps.gov/badl/planyourvisit/permits.htm" }
+  ],
+  "beforeYouGo": "Open 24 hours a day, seven days a week, all year. Interstate 90 runs just north of the park: take Exit 131 (Interior) about three miles south to the Northeast Entrance, or Exit 110 at Wall about seven miles south to the Pinnacles Entrance. The paved Badlands Loop Road (Highway 240) runs through the North Unit. Roads may close in winter or extreme weather, and Sage Creek Rim Road (gravel) may close after heavy rain or snow. Carry water: two quarts per person per two-hour hike.",
+  "destinations": [
+    {
+      "id": "door-trail",
+      "name": "Door Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/badlands/door-trail.jpg",
+        "srcWebp": "/images/last-adventure/badlands/door-trail.webp",
+        "alt": "a boardwalk trail leading through a low-point between two buttes",
+        "credit": "NPS/Brad Barker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c0fb15ae-b8d7-44c9-9ba6-f3226875a549"
+      },
+      "description": "A boardwalk carries you through a break in the Badlands Wall known as the Door, and suddenly the whole maze of pale, eroded formations opens in front of you. It is one of the gentlest walks in the park, so a wheelchair, a stroller and a grandparent with a cane can all arrive at the overlook together. Stand at the rail and take it in as a family. Some of you may wander a little farther among the formations while others stay behind and share a story.",
+      "plan": {
+        "distance": "0.26 mi round trip on the boardwalk",
+        "difficulty": "Easy",
+        "time": "20 minutes",
+        "accessibility": "Accessible 226-yard boardwalk to the overlook (NPS); beyond it, a primitive route marked by posts",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "I-90 Exit 131 to the Northeast Entrance, then the Badlands Loop Road (Highway 240) to the Door and Window parking area.",
+        "points": [{ "label": "Door and Window parking area", "lat": 43.762, "lon": -101.92717 }]
+      },
+      "trail": {
+        "name": "Door Trail",
+        "steps": [
+          "Follow the accessible boardwalk through the Door to the overlook.",
+          "Beyond the boardwalk, posts mark the rest of the route through the formations; travel there is at your own risk."
+        ]
+      },
+      "final": [{ "label": "Overlook", "lat": 43.76408, "lon": -101.92487 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed at trails or overlooks. Without a permit, it is allowed at least 100 feet from any trail, road, overlook, developed facility or body of water, with no more than 25 people."
+      },
+      "links": [
+        { "label": "Door Trailhead", "url": "https://www.nps.gov/places/door-trail.htm" },
+        { "label": "Hiking in Badlands", "url": "https://www.nps.gov/badl/planyourvisit/hiking-in-badlands.htm" }
+      ]
+    },
+    {
+      "id": "notch-trail",
+      "name": "Notch Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/badlands/notch-trail.jpg",
+        "srcWebp": "/images/last-adventure/badlands/notch-trail.webp",
+        "alt": "A large ladder climbs up a steep formation, surrounded by more badlands formations",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3bf23b27-d62d-4f62-b144-9ccfa6a9d04b"
+      },
+      "description": "The Notch Trail is a small adventure packed into a short distance. It winds through a canyon, climbs a log ladder up the wall, then follows a narrow ledge to a gap in the formations called the Notch. There the ground falls away and the White River Valley spreads out far below. For the steady-footed members of your family, reaching this window in the rock together, carrying someone you love, makes a proud and memorable tribute.",
+      "plan": {
+        "distance": "1.25 mi round trip (hiking page); 1.5 mi round trip (trailhead page)",
+        "difficulty": "Moderate to Strenuous",
+        "time": "1.5 to 2 hours",
+        "accessibility": "Log ladder, ledges, drop-offs and loose gravel; not recommended for anyone with a fear of heights",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "I-90 Exit 131 to the Northeast Entrance, then the Badlands Loop Road (Highway 240) to the Door and Window parking area. The trail begins at the south end of the lot.",
+        "points": [{ "label": "Door and Window parking area", "lat": 43.762, "lon": -101.92717 }]
+      },
+      "trail": {
+        "name": "Notch Trail",
+        "steps": [
+          "Start at the south end of the Door and Window parking area and walk up the canyon.",
+          "Climb the log ladder.",
+          "Follow the ledge to the Notch and its view of the White River Valley, then return the same way."
+        ],
+        "notes": [
+          "Treacherous during and after rain or snow. Good hiking boots with ankle support are recommended.",
+          "NPS sources differ on the length: 1.25 mi on the hiking page, 1.5 mi on the trailhead page."
+        ]
+      },
+      "final": [{ "label": "The Notch viewpoint", "lat": 43.75299, "lon": -101.92962 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed on trails or at overlooks. Without a permit, it is allowed at least 100 feet from any trail, road, overlook, developed facility or body of water, with no more than 25 people."
+      },
+      "links": [
+        { "label": "Notch Trailhead", "url": "https://www.nps.gov/places/notch-trail.htm" },
+        { "label": "Hiking in Badlands", "url": "https://www.nps.gov/badl/planyourvisit/hiking-in-badlands.htm" }
+      ]
+    },
+    {
+      "id": "yellow-mounds-overlook",
+      "name": "Yellow Mounds Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/badlands/yellow-mounds-overlook.jpg",
+        "srcWebp": "/images/last-adventure/badlands/yellow-mounds-overlook.webp",
+        "alt": "Toward the bottom of badlands buttes, layers turn bright red and yellow",
+        "credit": "NPS/Ed Welsh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/bb649945-5932-4a1c-9428-384eff4c9d80"
+      },
+      "description": "This is the most colorful corner of the Badlands. Soft yellow mounds rise from the ground, banded above by purple, gray and reddish layers, each one a chapter of a story millions of years long. The colors shift with the light and the clouds, so the scene seems to change while you watch. Pull in, step out together and let the quiet settle. It is an easy, gentle stop, and a good place to talk about the many colors of a life.",
+      "plan": {
+        "distance": "Roadside overlook",
+        "difficulty": "Easy",
+        "accessibility": "Accessible site (NPS); surface details not published",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Badlands Loop Road (Highway 240) in the North Unit, east of Pinnacles Overlook. From I-90 Exit 110 at Wall, drive south to the Pinnacles Entrance, then east on the Loop Road.",
+        "points": [{ "label": "Overlook parking", "lat": 43.84337, "lon": -102.19469 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 43.84339, "lon": -102.19448 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed at overlooks or roads. Without a permit, it is allowed at least 100 feet from any trail, road, overlook, developed facility or body of water, with no more than 25 people."
+      },
+      "links": [{ "label": "Yellow Mounds Overlook", "url": "https://www.nps.gov/places/yellow-mounds-overlook.htm" }]
+    },
+    {
+      "id": "pinnacles-overlook",
+      "name": "Pinnacles Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/badlands/pinnacles-overlook.jpg",
+        "srcWebp": "/images/last-adventure/badlands/pinnacles-overlook.webp",
+        "alt": "five bighorn sheep lambs surround an adult ewe on a Badlands formation, with more buttes in the background",
+        "credit": "NPS/Ed Welsh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/28e0d0d3-8ab3-483f-9a33-bd5f405fce16"
+      },
+      "description": "Pinnacles Overlook sits at the highest point in the North Unit, and from its edge the spires fall away toward the Sage Creek Wilderness. On a clear day the Black Hills line the horizon, bison may graze in the valley below, and bighorn sheep often gather on the nearby slopes. In late April and early May you might even spot lambs picking their way across the rock. Watch the light change over this wide country together, and let the stillness speak for all of you.",
+      "plan": {
+        "distance": "Roadside overlook",
+        "difficulty": "Easy",
+        "accessibility": "Accessible site, with restrooms (NPS); surface details not published",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "I-90 Exit 110 at Wall, then about seven miles south to the Pinnacles Entrance and on along the Badlands Loop Road (Highway 240) to the overlook.",
+        "points": [{ "label": "Overlook parking", "lat": 43.86976, "lon": -102.23325 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 43.86927, "lon": -102.23459 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed at overlooks or roads. Without a permit, it is allowed at least 100 feet from any trail, road, overlook, developed facility or body of water, with no more than 25 people."
+      },
+      "links": [{ "label": "Pinnacles Overlook", "url": "https://www.nps.gov/places/pinnacles-overlook.htm" }]
+    }
+  ]
+}

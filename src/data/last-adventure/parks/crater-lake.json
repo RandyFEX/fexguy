@@ -1,0 +1,178 @@
+{
+  "id": "crater-lake",
+  "name": "Crater Lake National Park",
+  "short": "Crater Lake",
+  "state": "Oregon",
+  "states": ["Oregon"],
+  "tagline": "The deepest lake in the United States, cradled in the shell of a collapsed volcano.",
+  "photo": {
+    "src": "/images/last-adventure/crater-lake/park.jpg",
+    "srcWebp": "/images/last-adventure/crater-lake/park.webp",
+    "alt": "A view of the Phantom Ship, with Mount Scott in the distance",
+    "credit": "National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/bfde4d39-1dd8-b71b-0bfb-3a4ebef89458",
+    "caption": "The Phantom Ship and Mount Scott from Garfield Peak"
+  },
+  "intro": "Crater Lake fills the shell of Mount Mazama, a volcano that collapsed after a major eruption 7,700 years ago. Fed only by rain and snow, it is 1,943 feet deep, the deepest lake in the United States. The 33-mile Rim Drive circles the caldera past 30 historic overlooks, so a family can share the view from a stone balcony at Rim Village, a quiet meadow trail or a fire lookout high above the water.",
+  "homepage": "https://www.nps.gov/crla/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/crla/planyourvisit/maps.htm" },
+    { "label": "Hiking trails (NPS)", "url": "https://www.nps.gov/crla/planyourvisit/hiking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "The park's Superintendent's Compendium prohibits scattering ashes except under the terms and conditions of a permit, issued as a Special Use Permit.",
+  "scatterFacts": [
+    "Scattering of ashes is listed as a special event that requires a Special Use Permit (application form NPS 10-930).",
+    "Applications are submitted by email to crla_permits@nps.gov. Park phone: 541-594-3000.",
+    "The park's web pages do not publish an application fee, lead time, designated scattering locations or specific conditions. Ask the permit office before you plan the day.",
+    "No monument, memorial, tablet or other commemorative installation may be placed without authorization (36 CFR 2.62(a))."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/crla/planyourvisit/permits.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/crla/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Special Use Permit application (PDF)", "url": "https://www.nps.gov/crla/planyourvisit/upload/CRLA-NPS-10-930-Application-for-SUP-Long-Form.pdf" }
+  ],
+  "beforeYouGo": "The park is open all year, 24 hours a day, but many roads, trails and facilities close seasonally for snow. The West Entrance (Highway 62 from Medford) and South Entrance (Highway 62 from Highway 97 and Klamath Falls) are open year-round. The North Entrance (Highway 138) and Rim Drive close with the first big snowstorm or on November 1, whichever comes first; all roads are typically open by mid-July. Cleetwood Cove Trail, the only legal access to the lakeshore, is closed for rehabilitation for the 2026, 2027 and 2028 seasons.",
+  "destinations": [
+    {
+      "id": "sinnott-memorial-overlook",
+      "name": "Sinnott Memorial Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/crater-lake/sinnott-memorial-overlook.jpg",
+        "srcWebp": "/images/last-adventure/crater-lake/sinnott-memorial-overlook.webp",
+        "alt": "Visitors in the covered overlook are silhouetted against the blue expanse of lake and sky",
+        "credit": "NPS Photo, Gjesfjeld, 2010",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/70f2cbaa-b57b-8965-4d0f-308630367c23"
+      },
+      "description": "Tucked into a rock outcrop called Victor Rock, 50 feet below the rim, the Sinnott Memorial feels like a stone balcony hung over the caldera. The park calls it its most popular viewpoint, and from the sheltered railing the blue water fills the frame below you. Inside, a short film and exhibits tell the story of Mount Mazama. Lean on the rail together, let the youngest ones count the colors in the water, and tell the story of the first time your loved one saw this lake.",
+      "plan": {
+        "distance": "Short walk from Rim Village; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Reached by native stone steps and a walkway; the Rim Village promenade is a 3/4-mile paved walk with uneven surfaces and grades under 5%, with accessible parking near the Rim Visitor Center (NPS)",
+        "bestTime": "Open late June to mid-October; hours vary",
+        "scattering": "Only with a Special Use Permit; ask the park about locations"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 62 to the West or South Entrance, then north on Munson Valley Road past park headquarters to Rim Village.",
+        "points": [{ "label": "Rim Village parking", "lat": 42.91103, "lon": -122.14599 }]
+      },
+      "trail": {
+        "name": "Rim Village promenade",
+        "steps": [
+          "Walk the paved promenade to the Rim Visitor Center.",
+          "Take the native stone steps and walkway down to the memorial overlook."
+        ]
+      },
+      "final": [{ "label": "Overlook", "lat": 42.9116, "lon": -122.14294 }],
+      "scatterNote": { "text": "The park requires a Special Use Permit for scattering and does not publish designated locations. Describe the place you have in mind when you contact crla_permits@nps.gov." },
+      "links": [{ "label": "Sinnott Memorial Overlook", "url": "https://www.nps.gov/places/sinnott-memorial-overlook.htm" }]
+    },
+    {
+      "id": "sun-notch",
+      "name": "Sun Notch and the Phantom Ship",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/crater-lake/sun-notch.jpg",
+        "srcWebp": "/images/last-adventure/crater-lake/sun-notch.webp",
+        "alt": "The Phantom Ship, as seen from the Sun Notch Trail",
+        "credit": "National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c1ae9215-1dd8-b71b-0b8c-ccfa5f9bd50c"
+      },
+      "description": "The path to Sun Notch curves uphill around a grassy meadow ringed by forest, and then the rim opens beneath you. Far below sits the Phantom Ship, a small island of rock resting on the blue water against the steep caldera walls. It is a short, gentle outing, the kind where everyone arrives together and nobody is rushed. Pause here and talk about the voyages your loved one took, and the ones they always meant to take.",
+      "plan": {
+        "distance": "0.8 mi round trip",
+        "difficulty": "Easy",
+        "elevation": "150 ft",
+        "accessibility": "Short uphill trail; accessible to strong wheelchair users with assistance (NPS)",
+        "scattering": "Only with a Special Use Permit; ask the park about locations"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "East Rim Drive, 4.4 miles from park headquarters, to the Sun Notch trailhead.",
+        "points": [{ "label": "Sun Notch Trailhead", "lat": 42.90001, "lon": -122.09571 }]
+      },
+      "trail": {
+        "name": "Sun Notch Trail",
+        "steps": [
+          "Walk uphill around the grassy meadow.",
+          "Continue to the rim for the view of the lake and the Phantom Ship."
+        ],
+        "notes": ["Most high-elevation trails are snow and ice covered from December into June."]
+      },
+      "final": [{ "label": "Phantom Ship Overlook", "lat": 42.90234, "lon": -122.09826 }],
+      "scatterNote": { "text": "The park requires a Special Use Permit for scattering and does not publish designated locations. Describe the place you have in mind when you contact crla_permits@nps.gov." },
+      "links": [{ "label": "Hiking trails", "url": "https://www.nps.gov/crla/planyourvisit/hiking.htm" }]
+    },
+    {
+      "id": "plaikni-falls",
+      "name": "Plaikni Falls",
+      "kinds": ["accessible"],
+      "photo": null,
+      "description": "Away from the crowds on the rim, this trail wanders through quiet forest to a waterfall fed by snowmelt, with wildflowers blooming along the way in season. When the path bends to the right, the park suggests listening for pikas, marmots and songbirds. It is an unhurried walk that lets conversation come easily, and the sound of falling water makes a gentle backdrop for reading a letter aloud or sharing a favorite memory beside the falls.",
+      "plan": {
+        "distance": "2.0 mi round trip",
+        "difficulty": "Easy",
+        "elevation": "100 ft",
+        "accessibility": "First three-quarters accessible to wheelchair users with assistance; the final short climb to the falls might be too steep (NPS)",
+        "scattering": "Only with a Special Use Permit; ask the park about locations"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "East Rim Drive to the Pinnacles Road near the Phantom Ship Overlook, then 1.2 miles to the trailhead. Limited parking on the left.",
+        "points": [{ "label": "Plaikni Falls Trailhead", "lat": 42.90176, "lon": -122.06074 }]
+      },
+      "trail": {
+        "name": "Plaikni Falls Trail",
+        "steps": [
+          "Stroll through the forest toward the falls.",
+          "Where the trail bends to the right, make the final short climb to the falls."
+        ]
+      },
+      "final": [{ "label": "Waterfall", "lat": 42.90949, "lon": -122.04929 }],
+      "scatterNote": { "text": "The park requires a Special Use Permit for scattering and does not publish designated locations. Describe the place you have in mind when you contact crla_permits@nps.gov." },
+      "links": [
+        { "label": "Hiking trails", "url": "https://www.nps.gov/crla/planyourvisit/hiking.htm" },
+        { "label": "Accessibility", "url": "https://www.nps.gov/crla/planyourvisit/accessibility.htm" }
+      ]
+    },
+    {
+      "id": "watchman-peak",
+      "name": "Watchman Peak",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/crater-lake/watchman-peak.jpg",
+        "srcWebp": "/images/last-adventure/crater-lake/watchman-peak.webp",
+        "alt": "The rock structure of the observation station appears to grow out of the natural rock formations of a hillside",
+        "credit": "NPS, 2001",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7e303e5-c38b-8388-86b7-790f9a7db49d"
+      },
+      "description": "A steady climb from West Rim Drive ends at an old fire lookout on the summit, where the view turns a full circle: across the deep blue lake on one side and out over the surrounding volcanic landscape on the other. The park warns that the trail is extremely crowded at sunset, so an earlier hour can feel more private. Find a rock to sit on together, let everyone catch their breath, and watch the light move across the water you came all this way to see.",
+      "plan": {
+        "distance": "1.6 mi round trip",
+        "difficulty": "Moderate",
+        "elevation": "420 ft",
+        "accessibility": "Mountain trail; not described as accessible",
+        "bestTime": "Sunset (extremely crowded at that hour, per NPS)",
+        "scattering": "Only with a Special Use Permit; ask the park about locations"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Rim Village, drive 3.8 miles northwest on West Rim Drive to Watchman Overlook.",
+        "points": [{ "label": "Watchman Overlook parking", "lat": 42.94592, "lon": -122.16926 }]
+      },
+      "trail": {
+        "name": "Watchman Peak Trail",
+        "steps": [
+          "Start at the Watchman Overlook parking area.",
+          "Climb the moderate ascent to the fire lookout on the summit."
+        ],
+        "notes": ["Often snow covered into summer. The Compendium allows seasonal closures of this trail when needed for safety or to protect resources."]
+      },
+      "final": [{ "label": "Watchman Lookout", "lat": 42.94295, "lon": -122.17246 }],
+      "scatterNote": { "text": "The park requires a Special Use Permit for scattering and does not publish designated locations. Describe the place you have in mind when you contact crla_permits@nps.gov." },
+      "links": [{ "label": "Hiking trails", "url": "https://www.nps.gov/crla/planyourvisit/hiking.htm" }]
+    }
+  ]
+}

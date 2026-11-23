@@ -1,0 +1,77 @@
+{
+  "id": "kobuk-valley",
+  "name": "Kobuk Valley National Park",
+  "short": "Kobuk Valley",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "Golden sand dunes above the Arctic Circle, crossed by migrating caribou.",
+  "photo": {
+    "src": "/images/last-adventure/kobuk-valley/park.jpg",
+    "srcWebp": "/images/last-adventure/kobuk-valley/park.webp",
+    "alt": "Aerial view of a motor boat on a river",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c5595bf7-1dd8-b71c-077c-542dc5d52abd",
+    "caption": "The Kobuk River"
+  },
+  "intro": "Kobuk Valley lies above the Arctic Circle in northwest Alaska, a roadless park with no campgrounds, reached by small plane from Kotzebue or Bettles. Along the Kobuk River, people have lived and hunted caribou for at least 8,000 years, and the Western Arctic Caribou Herd still passes through twice a year. Its most surprising sight is a field of golden sand dunes rising out of the tundra and forest. The park's rules open all areas to scattering ashes without a permit.",
+  "homepage": "https://www.nps.gov/kova/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/kova/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit: the Western Arctic National Parklands compendium opens all areas to scattering of ashes.",
+  "scatterFacts": [
+    "Western Arctic National Parklands Superintendent's Compendium (2026; Cape Krusenstern, Kobuk Valley and Noatak), 36 CFR 2.62(b): \"All areas are open to scattering of ashes without a permit.\"",
+    "No permit and no fee are required for the scattering itself.",
+    "Installing a monument or other commemorative installation requires a permit (36 CFR 2.62(a)).",
+    "Questions: Northwest Arctic Heritage Center, Kotzebue, 907 318-2230."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/2026-WEAR-Superintendent-s-Compendium-508.pdf" }
+  ],
+  "beforeYouGo": "There are no roads into the park. Commercial airlines fly from Anchorage to Kotzebue and from Fairbanks to Bettles; from there, authorized air taxis fly into the park. Charter flightseeing out of Kotzebue or Bettles averages $1,000 per hour or more, and planes carry three to ten passengers. The park is open all year but has no trails, campgrounds or facilities. Stock up on supplies in Kotzebue, carry sunscreen, rain gear and a head net, and allow extra days for weather delays.",
+  "destinations": [
+    {
+      "id": "great-kobuk-sand-dunes",
+      "name": "Great Kobuk Sand Dunes",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/kobuk-valley/great-kobuk-sand-dunes.jpg",
+        "srcWebp": "/images/last-adventure/kobuk-valley/great-kobuk-sand-dunes.webp",
+        "alt": "Wolf tracks on sand",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c5c8791d-1dd8-b71c-076e-c9771f933a9a"
+      },
+      "description": "Picture 25 square miles of shifting, golden sand, with dunes more than 100 feet high, rising out of spruce forest and tundra above the Arctic Circle. Tracks of grizzly bears, caribou and wolves cross the ripples, and in spring and fall the Western Arctic Caribou Herd leaves its hoof prints here. Walk together along a dune crest in the long northern light, find a sheltered hollow out of the wind and let the vast quiet hold your memories.",
+      "plan": {
+        "distance": "Wheeled planes land on the sand; by floatplane, about 2 mi each way across tundra from the Kobuk River",
+        "difficulty": "Strenuous by floatplane route: no marked route, orienteering skills required",
+        "time": "About 4 hours round trip from the river, not counting time on the dunes",
+        "accessibility": "No trails or facilities in the park; exposed, windy terrain",
+        "bestTime": "Summer and fall; summer temperatures can reach 100 degrees F",
+        "scattering": "Allowed without a permit (park-wide rule)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach the park. Charter an authorized air taxi from Kotzebue or Bettles: aircraft on wheels can land on the sand, or a floatplane can land on the Kobuk River for the hike in. The Northwest Arctic Heritage Center in Kotzebue has route information.",
+        "points": []
+      },
+      "trail": {
+        "name": "No marked route (floatplane option)",
+        "steps": [
+          "Land on the Kobuk River by floatplane.",
+          "Cross about 2 mi of tundra south to the dunes, navigating by map and compass.",
+          "Return the same way to meet your pilot."
+        ],
+        "notes": [
+          "Help is several hours away. It can be windy and fully exposed on the dunes; bring layers, sunscreen and rain gear.",
+          "Bugs abound in summer: bring a head net."
+        ]
+      },
+      "final": [{ "label": "Great Kobuk Sand Dunes", "lat": 67.05465, "lon": -158.9057 }],
+      "links": [
+        { "label": "Great Kobuk Sand Dunes", "url": "https://www.nps.gov/places/great-kobuk-sand-dunes.htm" },
+        { "label": "Visit the Great Kobuk Sand Dunes", "url": "https://www.nps.gov/thingstodo/explore-the-great-kobuk-sand-dunes.htm" },
+        { "label": "Flightseeing", "url": "https://www.nps.gov/kova/planyourvisit/flightseeing.htm" }
+      ]
+    }
+  ]
+}

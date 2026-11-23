@@ -1,0 +1,213 @@
+{
+  "id": "hawaii-volcanoes",
+  "name": "Hawaiʻi Volcanoes National Park",
+  "short": "Hawaiʻi Volcanoes",
+  "state": "Hawaii",
+  "states": ["Hawaii"],
+  "tagline": "Living volcanoes, steaming craters and rainforest on the edge of Kīlauea.",
+  "photo": {
+    "src": "/images/last-adventure/hawaii-volcanoes/park.jpg",
+    "srcWebp": "/images/last-adventure/hawaii-volcanoes/park.webp",
+    "alt": "Fountains of lava erupt from a crater floor hundreds of feet into the air",
+    "credit": "NPS Photo/J.Wei",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8bdebb05-6b2b-49e9-8c53-e8fabb69b926",
+    "caption": "Lava fountains from an eruption viewing overlook near Keanakākoʻi crater"
+  },
+  "intro": "On the Island of Hawaiʻi, the summit of Kīlauea opens into a vast caldera, with rainforest on its rim and Mauna Loa rising beyond. A final adventure here can be a quiet morning at a crater overlook, an easy walk along an old road at the caldera's edge, or a hike across the floor of a lava lake that cooled in living memory. The park names the overlooks where families may scatter ashes with a permit, and it asks that every scattering be small, private and discreet.",
+  "homepage": "https://www.nps.gov/havo/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/havo/planyourvisit/maps.htm" },
+    { "label": "Park map (image)", "url": "https://www.nps.gov/havo/planyourvisit/images/HAVO_S2_2022.png" },
+    { "label": "Parking areas and coordinates (NPS)", "url": "https://www.nps.gov/havo/planyourvisit/parking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a written permit, only at the overlooks the park lists.",
+  "scatterFacts": [
+    "Permit: apply by email to havo_commercial_services@nps.gov or by mail to the Commercial Services Office, PO Box 52, Hawaii National Park, HI 96718. Non-refundable $25 application fee, paid through Pay.gov (call 808-985-6027 for the permit number). Park entrance fees still apply.",
+    "The request must give the applicant's and the deceased's names, the date, time and length of the ceremony, the number of people, the exact location, and include a certified copy of the death certificate.",
+    "Listed locations: Kīlauea Overlook, Kīlauea Iki Overlook, Kūpinaʻi Pali (Waldron Ledge), Hilina Pali Overlook, Kīpukapuaulu, the pit crater overlooks and the Hōlei Pali overlooks.",
+    "Never at or in Halemaʻumaʻu Crater. The Superintendent may prohibit scattering at specific points.",
+    "Plan a small, private, discreet ceremony away from high visitor use areas. Ashes must not be identifiable as human remains. Leave no memorials: no rock piles, plaques, photos or flowers.",
+    "Scattering into the ocean within 3 nautical miles of the coastline is unlawful under the Clean Water Act."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits: scattering of ashes (NPS)", "url": "https://www.nps.gov/havo/learn/management/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/havo/learn/management/superintendents-compendium.htm" }
+  ],
+  "beforeYouGo": "The park is open 24 hours a day, every day. From Hilo it is 30 miles southwest on Highway 11 (about 45 minutes); from Kailua-Kona, 95 miles southeast on Highway 11 (2 to 2.5 hours). There is no shuttle or public transportation inside the park. Kīlauea Visitor Center is closed for about two years during summit construction, so start at the Welcome Center on Crater Rim Drive West and expect closures and delays. Parking lots can be full by 10 am, and volcanic gases can affect air quality.",
+  "destinations": [
+    {
+      "id": "kupinai-pali",
+      "name": "Kūpinaʻi Pali (Waldron Ledge)",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/kupinai-pali.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/kupinai-pali.webp",
+        "alt": "Ferns and forest framing a misty view of the Kīlauea caldera rim",
+        "credit": "NPS, 2005",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c9c4d59d-cfd7-abfb-764f-b4e8764e3b61"
+      },
+      "description": "This stretch of the Crater Rim Trail was once part of the road around the summit, until a 1983 earthquake broke it apart. Painted road lines still show through the cracked pavement as you stroll toward the ledge, where Kaluapele, the Kīlauea caldera, opens below you with Halemaʻumaʻu crater at its heart. The walk is gentle enough for wheelchairs and strollers, so grandparents and grandchildren can go side by side. It is also one of the places the park lists for scattering, so the farewell can stay right here.",
+      "plan": {
+        "distance": "About 1 mi round trip to the overlook",
+        "difficulty": "Easy",
+        "time": "45 minutes to 1 hour",
+        "accessibility": "Wheelchair accessible and stroller friendly (NPS); mostly paved, with some cracked and tilted sections. The larger overlook is level; the first small overlook has a very steep descent.",
+        "scattering": "Allowed here with a permit (never into Halemaʻumaʻu Crater)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Highway 11 to the park entrance, then Crater Rim Drive to the Kīlauea Visitor Center parking area (the visitor center itself is closed for renovation). The trail begins across the street, to the left of Volcano House, down the service road to the rock wall on the left.",
+        "points": [{ "label": "Kīlauea Visitor Center parking", "lat": 19.4295, "lon": -155.2571, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Crater Rim Trail, Kūpinaʻi Pali section",
+        "steps": [
+          "From the service road to the left of Volcano House, join the Crater Rim Trail at the rock wall.",
+          "Follow the old road surface along the rim; skip the first small overlook, which has a very steep descent.",
+          "Continue to the larger, level overlook."
+        ]
+      },
+      "final": [{ "label": "Overlook", "lat": 19.42275, "lon": -155.25688 }],
+      "links": [
+        { "label": "Day hike: Kūpinaʻi Pali (Waldron Ledge)", "url": "https://www.nps.gov/havo/planyourvisit/hike_day_waldron.htm" },
+        { "label": "Crater Rim Trail", "url": "https://www.nps.gov/thingstodo/hike-crater-rim-trail.htm" }
+      ]
+    },
+    {
+      "id": "kilauea-overlook",
+      "name": "Kīlauea Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/kilauea-overlook.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-overlook.webp",
+        "alt": "Lava lake within a volcanic crater at night",
+        "credit": "NPS Photo/Janice Wei",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/de1ff2f2-8758-4149-b0a8-a49f258a6df0"
+      },
+      "description": "Kīlauea Overlook looks straight across the summit caldera to the floor of Halemaʻumaʻu, and during an eruption it can be one of the most remarkable views on earth. It sits just minutes from the entrance, and a paved path leads from the parking area to the rim. Come before sunrise, when the crowds are thin and the air is cool, wrap up in warm layers, and let the steam and the quiet set the pace for remembering together.",
+      "plan": {
+        "distance": "Short walk from parking; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS); asphalt, typical grade over 5%, maximum 8%, some loose gravel",
+        "bestTime": "Before sunrise; the park advises avoiding 5 pm to 9 pm",
+        "scattering": "Allowed here with a permit (never into Halemaʻumaʻu Crater)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "From the entrance station, about 2.5 miles (7 minutes) on Crater Rim Drive West to the Kīlauea Overlook parking area (36 stalls).",
+        "points": [{ "label": "Kīlauea Overlook parking", "lat": 19.4236, "lon": -155.28434, "source": "nps" }]
+      },
+      "final": [{ "label": "Overlook", "lat": 19.42319, "lon": -155.28406 }],
+      "scatterNote": {
+        "text": "Kīlauea Overlook is a listed location, but it is also a busy eruption viewing area. The park asks for a small private ceremony away from high visitor use, so choose a quiet hour, and remember that scattering at or in Halemaʻumaʻu Crater is not permitted."
+      },
+      "links": [{ "label": "Eruption viewing from Kīlauea Overlook", "url": "https://www.nps.gov/places/eruption-viewing-from-kapalikapuokamohoalii.htm" }]
+    },
+    {
+      "id": "kilauea-iki-overlook",
+      "name": "Kīlauea Iki Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-overlook.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-overlook.webp",
+        "alt": "An expansive view from high above the flat, dark crater is framed by tree branches",
+        "credit": "NPS, 2005",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c9c5488c-9ddc-eedf-ad9d-2f99178fc0c5"
+      },
+      "description": "In 1959 this crater was a seething lake of lava, with fountains reaching 1,900 feet. Today the floor lies still and silver 400 feet below the rim, a mile long, with the cinder cone Puʻupuaʻi on one side and Mauna Loa looming beyond. Standing at the railing, it is hard to take in the scale. It is a good place to slow down together, notice how the forest has returned around the edges, and share what your loved one meant to each of you.",
+      "plan": {
+        "distance": "At the parking area",
+        "difficulty": "Easy",
+        "accessibility": "Viewpoint at the parking area; surface details not published",
+        "scattering": "Allowed here with a permit"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Crater Rim Drive to the Kīlauea Iki Overlook parking lot. Parking is extremely limited and may be full at peak hours; during eruptions the park advises using Crater Rim Drive East.",
+        "points": [{ "label": "Kīlauea Iki Overlook parking", "lat": 19.41658, "lon": -155.24289, "source": "nps" }]
+      },
+      "final": [{ "label": "Overlook", "lat": 19.41566, "lon": -155.24268 }],
+      "links": [{ "label": "Kīlauea Iki Overlook", "url": "https://www.nps.gov/places/kilauea-iki-overlook.htm" }]
+    },
+    {
+      "id": "kilauea-iki-trail",
+      "name": "Kīlauea Iki Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-trail.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-trail.webp",
+        "alt": "Hikers walk across rough, hardened lava on a crater floor",
+        "credit": "NPS Photo/Janice Wei",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/aa660089-1225-4b9a-a86f-5c23e7307d9a"
+      },
+      "description": "The trail drops through lush rainforest of ferns and ʻōhiʻa, then steps out onto the hardened crust of a lava lake. Out on the crater floor, steam rises from cracks, small ʻōhiʻa push through the black rock, and you can peer toward the vent below Puʻupuaʻi that once sent lava 1,900 feet into the sky. Walking across it together feels like crossing another world, a fitting journey for someone who loved to explore.",
+      "plan": {
+        "distance": "3.3 mi loop from Kīlauea Iki Overlook; 6.0 mi round trip from Devastation Trailhead",
+        "difficulty": "Moderate to challenging (NPS rating)",
+        "time": "2 to 3 hours from the overlook; 4 to 5 hours from Devastation Trailhead",
+        "elevation": "400 ft descent and ascent",
+        "accessibility": "Steep and rocky; deep earth cracks, uneven ground and razor-sharp lava on the crater floor",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Crater Rim Drive to the Kīlauea Iki Overlook lot, which is extremely limited. For a longer hike the park recommends starting at Devastation Trailhead or the Puʻupuaʻi parking area.",
+        "points": [
+          { "label": "Kīlauea Iki Overlook parking", "lat": 19.41658, "lon": -155.24289, "source": "nps" },
+          { "label": "Devastation Trail parking", "lat": 19.40647, "lon": -155.25294, "source": "nps" }
+        ]
+      },
+      "trail": {
+        "name": "Kīlauea Iki Trail (loop)",
+        "steps": [
+          "From Kīlauea Iki Overlook, descend through rainforest to the solidified lava lake on the crater floor.",
+          "Cross the crater floor, passing the 1959 vent below the Puʻupuaʻi cinder cone.",
+          "Climb back through the forest to complete the loop. Nāhuku lava tube can be added to the hike."
+        ],
+        "notes": [
+          "Bring water, food, a hat, sunscreen and rain gear; weather can be hot, dry, wet or windy.",
+          "Do not stack rocks: the park says it can be culturally offensive, disorienting to hikers and against the law."
+        ]
+      },
+      "final": [{ "label": "Crater floor (trail)", "lat": 19.41374, "lon": -155.2491 }],
+      "scatterNote": {
+        "text": "The crater floor is not a listed scattering location. The trail begins at Kīlauea Iki Overlook, which is listed, so with a permit the farewell can happen at the rim before or after the hike.",
+        "points": [{ "label": "Kīlauea Iki Overlook", "lat": 19.41566, "lon": -155.24268 }]
+      },
+      "links": [
+        { "label": "Day hike: Kīlauea Iki", "url": "https://www.nps.gov/havo/planyourvisit/hike_day_kilaueaiki.htm" },
+        { "label": "Kīlauea Iki Trail Guide (PDF)", "url": "https://www.nps.gov/havo/planyourvisit/upload/kilauea-iki-trail-guide-2013.pdf" }
+      ]
+    },
+    {
+      "id": "hilina-pali-overlook",
+      "name": "Hilina Pali Overlook",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.webp",
+        "alt": "Stone shelter at Hilina Pali Overlook above the ocean",
+        "credit": "NPS Photo/M. Szoenyi",
+        "sourceUrl": "https://www.nps.gov/places/hilina-pali-overlook.htm"
+      },
+      "description": "Far from the busy summit, a narrow road winds for miles across volcanic desert and ends at the edge of a great cliff. From Hilina Pali Overlook the land falls away toward the coastline and the open Pacific. It is a place for a family that wants a quieter goodbye: a long drive across open lava, a small shelter, and a wide view to sit with together. The park lists it among the places where ashes may be scattered with a permit.",
+      "plan": {
+        "distance": "Roadside overlook at the end of a 9-mile road",
+        "difficulty": "Easy",
+        "accessibility": "Viewpoint at the end of the road; surface details not published",
+        "scattering": "Allowed here with a permit"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "From Crater Rim Drive, take Chain of Craters Road, then turn onto Hilina Pali Road: a narrow, 9-mile, single-lane paved road through volcanic desert to the overlook. Two-wheel drive is fine, but the road is winding and remote, there are no services, and the park asks visitors to check road conditions and closures first.",
+        "points": [{ "label": "Hilina Pali Overlook parking", "lat": 19.29576, "lon": -155.30692 }]
+      },
+      "final": [{ "label": "Hilina Pali Overlook and shelter", "lat": 19.29528, "lon": -155.30772, "source": "nps" }],
+      "links": [
+        { "label": "Drive Hilina Pali Road", "url": "https://www.nps.gov/havo/planyourvisit/hilina-pali-tour.htm" },
+        { "label": "GPS coordinates (NPS)", "url": "https://www.nps.gov/havo/planyourvisit/gps-coordinates.htm" }
+      ]
+    }
+  ]
+}

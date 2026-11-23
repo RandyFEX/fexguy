@@ -1,0 +1,276 @@
+{
+  "id": "carlsbad-caverns",
+  "name": "Carlsbad Caverns National Park",
+  "short": "Carlsbad Caverns",
+  "state": "New Mexico",
+  "states": [
+    "New Mexico"
+  ],
+  "tagline": "A vast lit cavern beneath the desert, and a nightly river of bats.",
+  "photo": {
+    "src": "/images/last-adventure/carlsbad-caverns/park.jpg",
+    "srcWebp": "/images/last-adventure/carlsbad-caverns/park.webp",
+    "alt": "Visitor stands in a room among massive cave formations",
+    "credit": "NPS Photo/Peter Jones",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/00a4066b-155d-451f-6760-3b8f7f3dd89a",
+    "caption": "Queen's Chamber"
+  },
+  "intro": "Beneath the Chihuahuan Desert of southeastern New Mexico lies Carlsbad Cavern, a world of great domes and hanging formations that visitors explore on paved, dimly lit trails. Families can ride an elevator down to the Big Room or walk in through the cave's enormous Natural Entrance. On summer evenings, Brazilian free-tailed bats pour out of that same entrance in search of food, a sight shared quietly from the amphitheater above.",
+  "homepage": "https://www.nps.gov/cave/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/cave/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Accessibility Guide with Big Room map (PDF)",
+      "url": "https://www.nps.gov/cave/planyourvisit/upload/Accessibility_WO-Loop-Road.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted only under a permit, at least 100 yards from any trail, road, developed facility or cave, and never in a cave.",
+  "scatterFacts": [
+    "Superintendent's Compendium (2026), 36 CFR 2.62: scattering human ashes is prohibited except under the terms and conditions of a permit, or in designated areas under conditions the Superintendent may set.",
+    "Remains must be cremated and pulverized.",
+    "On the ground: at least 100 yards from any trail, road, developed facility or cave. No scattering may occur in any cave.",
+    "From the air: at least 2,000 feet above the ground, and never over developed areas, facilities or caves with regular or permitted public access.",
+    "Apply with the Special Use Permit Application by email to CAVE_Fees@nps.gov and allow 10 business days; park staff request credit card payment after approval. The fee for a scattering permit is not published. Special Use Permits Office: 3225 National Parks Highway, Carlsbad, NM 88220; park phone 575-785-2232."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium 2026 (PDF)",
+      "url": "https://www.nps.gov/cave/learn/management/upload/2026-CAVE-Superintendent-s-Compendium-version-01-29-2026.pdf"
+    },
+    {
+      "label": "Permits and special use permits (NPS)",
+      "url": "https://www.nps.gov/cave/planyourvisit/permitsandreservations.htm"
+    }
+  ],
+  "beforeYouGo": "The turnoff is at White's City on US 62/180, about 20 miles south of Carlsbad; the steep, narrow and winding park road continues 7 miles to the visitor center. The park is closed on Thanksgiving, Christmas and New Year's Day. Timed entry reservations for the cavern are strongly recommended (online or 877-444-6777), and entrance tickets are bought at the visitor center. Check current cavern hours before you go: the park has listed a last cavern entry of 2:30 pm. The cavern is 56°F all year, and Walnut Canyon Desert Drive remains closed after 2022 flood damage.",
+  "destinations": [
+    {
+      "id": "big-room",
+      "name": "The Big Room",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/big-room.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/big-room.webp",
+        "alt": "A column formation surrounded by many stalactites",
+        "credit": "NPS Photo/Peter Jones",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/fd06fb94-155d-451f-673b-698df7a0706a"
+      },
+      "description": "An elevator carries the family down from the desert into the Big Room, where a paved trail winds past great domes and delicate formations in soft, low light. The air is cool and still, and voices naturally drop to a whisper. Benches along the way invite everyone to sit and take it in together. Walk the full loop or take the shortcut, and find a quiet bench where you can share a memory in one of the most extraordinary rooms on earth.",
+      "plan": {
+        "distance": "About 1.25 mi loop; a shortcut cuts the length and time in half",
+        "difficulty": "Not rated by NPS; paved, but not an easy walk throughout: some sections are steep and wet",
+        "time": "1 to 2 hours",
+        "accessibility": "About two-thirds of the trail is wheelchair and walker accessible, with assistance, using marked turnaround points. The park does not provide wheelchairs. Accessible restrooms in the Underground Lunchroom.",
+        "scattering": "Never in a cave; permit for surface sites only"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 62/180 to White's City, then the park road 7 miles to the visitor center. Elevators to the cavern start in the visitor center.",
+        "points": [
+          {
+            "label": "Visitor Center",
+            "lat": 32.17543,
+            "lon": -104.44421
+          }
+        ]
+      },
+      "trail": {
+        "name": "Big Room Trail",
+        "steps": [
+          "Take the elevator down from the visitor center to the Underground Lunchroom, where the trail begins.",
+          "Follow the loop around the Big Room, or use the marked shortcut."
+        ],
+        "notes": [
+          "Wear closed-toe shoes with good traction: some areas are wet from natural drips and steep.",
+          "Food and drinks other than plain water are not allowed in the cavern. Everyone must walk on bio-cleaning mats after leaving the cave."
+        ]
+      },
+      "final": [
+        {
+          "label": "Visitor Center (elevators to the Big Room)",
+          "lat": 32.17543,
+          "lon": -104.44421
+        }
+      ],
+      "scatterNote": {
+        "text": "No scattering may occur in any cave. A permit can allow scattering on the surface only, at least 100 yards from any trail, road, developed facility or cave; propose a location that meets these conditions in your application."
+      },
+      "links": [
+        {
+          "label": "First-time visitors",
+          "url": "https://www.nps.gov/cave/planyourvisit/first-time-visitors.htm"
+        },
+        {
+          "label": "Frequently asked questions",
+          "url": "https://www.nps.gov/cave/faqs.htm"
+        }
+      ]
+    },
+    {
+      "id": "natural-entrance",
+      "name": "Natural Entrance Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/natural-entrance.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/natural-entrance.webp",
+        "alt": "Switchbacks on a paved trail lead into the natural entrance of Carlsbad Caverns",
+        "credit": "NPS Photo/Peter Jones",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d1777edc-155d-451f-67b1-cadb531e5fe0"
+      },
+      "description": "Walking in through the Natural Entrance, the family leaves the bright desert daylight behind and follows the trail down into the cool, dim cavern. Step by step the opening shrinks behind you, and the path descends the equivalent of about 79 stories before it reaches the Big Room. It is a slow, shared journey from one world into another, and a fitting way to carry someone you love into a place of deep quiet and wonder.",
+      "plan": {
+        "distance": "About 1.25 mi, one way down to the Big Room",
+        "difficulty": "Not rated by NPS; a steep descent, not an easy walk",
+        "time": "About 1 hour",
+        "elevation": "Descent equivalent to about 79 stories",
+        "accessibility": "Not accessible to wheelchairs or walkers. The park does not recommend it for visitors with heart or respiratory conditions.",
+        "scattering": "Never in a cave; permit for surface sites only"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 62/180 to White's City, then the park road 7 miles to the visitor center. The Natural Entrance is about a five-minute walk from the visitor center.",
+        "points": [
+          {
+            "label": "Visitor Center",
+            "lat": 32.17543,
+            "lon": -104.44421
+          }
+        ]
+      },
+      "trail": {
+        "name": "Natural Entrance Trail",
+        "steps": [
+          "Walk from the visitor center to the Natural Entrance.",
+          "Descend the steep trail into the cavern to the Big Room.",
+          "Continue on the Big Room Trail, then return to the surface by elevator."
+        ],
+        "notes": [
+          "The park has listed hiking into the cavern from 9:30 am to 2:30 pm. Check current hours.",
+          "Some areas are wet and steep; wear closed-toe shoes with good traction and use the handrails."
+        ]
+      },
+      "final": [
+        {
+          "label": "Natural Entrance",
+          "lat": 32.17708,
+          "lon": -104.44103
+        }
+      ],
+      "scatterNote": {
+        "text": "No scattering may occur in any cave. A permit can allow scattering on the surface only, at least 100 yards from any trail, road, developed facility or cave; propose a location that meets these conditions in your application."
+      },
+      "links": [
+        {
+          "label": "Frequently asked questions",
+          "url": "https://www.nps.gov/cave/faqs.htm"
+        }
+      ]
+    },
+    {
+      "id": "bat-flight-amphitheater",
+      "name": "Bat Flight Amphitheater",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/bat-flight-amphitheater.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/bat-flight-amphitheater.webp",
+        "alt": "Bats flying out of Carlsbad Cavern at sunset",
+        "credit": "NPS / Nick Hristov",
+        "sourceUrl": "https://www.nps.gov/cave/planyourvisit/bat_flight_program.htm"
+      },
+      "description": "As evening falls, the family finds seats in the outdoor amphitheater at the cave's Natural Entrance and listens to a ranger talk about the Brazilian free-tailed bats that live inside. Then the bats emerge from the darkness and fly overhead into the desert sky in search of food. Cameras and phones stay away to protect them, so everyone simply watches together, fully present. It is a beautiful moment to hold hands and think about life continuing, night after night.",
+      "plan": {
+        "distance": "About a five-minute walk from the visitor center",
+        "difficulty": "Easy",
+        "accessibility": "Reserved accessible parking in the lower lot near the Natural Entrance; wheelchair spaces at the entrance to the amphitheater; fully accessible restrooms",
+        "bestTime": "Evenings, April through October; best flights normally August through September",
+        "scattering": "Permit required, at least 100 yards from trails, roads, facilities and caves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 62/180 to White's City, then the park road 7 miles to the visitor center; accessible parking is in the lower lot near the Natural Entrance.",
+        "points": [
+          {
+            "label": "Visitor Center",
+            "lat": 32.17543,
+            "lon": -104.44421
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Amphitheater",
+          "lat": 32.17696,
+          "lon": -104.44144
+        }
+      ],
+      "scatterNote": {
+        "text": "The amphitheater is a developed facility beside a cave entrance. A permit can allow scattering on the surface only, at least 100 yards from any trail, road, developed facility or cave; propose a location that meets these conditions in your application."
+      },
+      "links": [
+        {
+          "label": "Bat Flight Program",
+          "url": "https://www.nps.gov/cave/planyourvisit/bat_flight_program.htm"
+        }
+      ]
+    },
+    {
+      "id": "rattlesnake-springs",
+      "name": "Rattlesnake Springs",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.webp",
+        "alt": "Fruit trees with thick, leafy canopies grow in a flat area of short turf, framed by other trees",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5cd0d6d7-2417-4ef0-8a0f-e9d196a734f2"
+      },
+      "description": "Away from the cavern, Rattlesnake Springs is a green oasis in the desert, where a natural spring waters a grove of tall cottonwood trees planted by the Civilian Conservation Corps. Shaded picnic tables and grills make it an easy place for the family to share a long, unhurried meal, and birds fill the trees all year. After the drama of the cave, it offers something gentler: shade, birdsong and time to talk about the person who brought you all here.",
+      "plan": {
+        "distance": "Picnic area beside the parking area; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Accessible picnic table and accessible restrooms (NPS)",
+        "bestTime": "Daylight hours (day use only); bird watching all year",
+        "scattering": "Permit required, at least 100 yards from trails, roads, facilities and caves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Rattlesnake Springs is about 15 miles from the visitor center, reached by Rattlesnake Springs Road.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 32.111,
+            "lon": -104.46711
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Picnic area",
+          "lat": 32.11101,
+          "lon": -104.46591
+        }
+      ],
+      "scatterNote": {
+        "text": "The picnic area is a developed facility. A permit can allow scattering on the surface only, at least 100 yards from any trail, road, developed facility or cave; propose a location that meets these conditions in your application. Swimming is not allowed in the spring."
+      },
+      "links": [
+        {
+          "label": "Rattlesnake Springs",
+          "url": "https://www.nps.gov/places/rattlesnake-springs.htm"
+        }
+      ]
+    }
+  ]
+}

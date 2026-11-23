@@ -1,0 +1,194 @@
+{
+  "id": "indiana-dunes",
+  "name": "Indiana Dunes National Park",
+  "short": "Indiana Dunes",
+  "state": "Indiana",
+  "states": ["Indiana"],
+  "tagline": "Towering sand dunes, quiet wetlands and the long southern shore of Lake Michigan.",
+  "photo": {
+    "src": "/images/last-adventure/indiana-dunes/park.jpg",
+    "srcWebp": "/images/last-adventure/indiana-dunes/park.webp",
+    "alt": "Sun setting over a beach with large ice shelves on the coast",
+    "credit": "NPS/Victoria Stauffenberg",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9e28d883-bf95-4aee-b6a7-cc078b026f8b",
+    "caption": "Sunset at Kemil Beach"
+  },
+  "intro": "Along the southern tip of Lake Michigan, Indiana Dunes gathers sand dunes, oak savanna, marshes and long beaches into a park you can explore in a single day. On a clear evening the Chicago skyline rises across the water. A final adventure here can be an easy lakefront walk, a quiet hour beside a restored marsh or a climb up 270 stairs to the top of a dune.",
+  "homepage": "https://www.nps.gov/indu/",
+  "map": [
+    { "label": "Official park maps and trail maps", "url": "https://www.nps.gov/indu/planyourvisit/maps.htm" },
+    { "label": "Hiking trails (NPS)", "url": "https://www.nps.gov/indu/planyourvisit/hiking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a free permit, at an exact location you give the park, under conditions set by the Office of Special Park Uses.",
+  "scatterFacts": [
+    "Permit required; there are no fees. The Office of Special Park Uses sets conditions under 36 CFR 2.62(b).",
+    "Give the park's Permit Coordinator the exact area (GPS coordinates preferred) and the date and time.",
+    "Away from developed areas (facilities, buildings, parking lots, trailheads, campgrounds, picnic areas), and not on any trail or road.",
+    "At least 100 yards from any body of water, including the Little Calumet River and Lake Michigan.",
+    "No more than 25 people. No going off trail or road where marram grass is planted, and no moving soil, rocks, branches or plants.",
+    "Ashes pulverized and scattered so as to disperse their identity. No monument or marker, and no release of birds, butterflies, balloons or other objects.",
+    "Lead time is not published; contact the park well ahead of your visit."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations: scattering of ashes (NPS)", "url": "https://www.nps.gov/indu/planyourvisit/permitsandreservations.htm" },
+    { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/indu/contacts.htm" }
+  ],
+  "beforeYouGo": "The park is reached by I-94, the Indiana Toll Road (I-80/90), US 12 and US 20 and Indiana State Road 49; most facilities are off US 12. The Indiana Dunes Visitor Center is at 1215 SR-49, Porter. An entrance pass is required at most sites. Every featured destination is a beach, a trail or a marsh, so the scattering itself must happen at a separate location you propose, at least 100 yards from water.",
+  "destinations": [
+    {
+      "id": "portage-lakefront",
+      "name": "Portage Lakefront and Riverwalk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/indiana-dunes/portage-lakefront.jpg",
+        "srcWebp": "/images/last-adventure/indiana-dunes/portage-lakefront.webp",
+        "alt": "A small pond surrounded by grass covered sand dunes at Portage Lakefront",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/82ec2193-1adb-4fdf-af8f-4ec940f9ecdb"
+      },
+      "description": "This stretch of shore was once settling ponds for a steel mill, and today it is restored dune and open beach facing the whole width of Lake Michigan. The park calls it a place to watch the seasons change: storm clouds building over the water, spring birds passing through, shelf ice along the beach in winter. A paved path loops through the dunes, so a grandparent in a wheelchair can come along. Walk out together, then stand at the water's edge and watch the waves roll in.",
+      "plan": {
+        "distance": "0.9 mi loop",
+        "difficulty": "Easy",
+        "time": "45 minutes",
+        "elevation": "39 ft",
+        "accessibility": "Paved with some boardwalk; wheelchair accessible except the stairs at the southern end of the riverwalk boardwalk (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "100 Riverwalk Road, Portage. From US 20 take State Road 49 north over US 12, turn left at the stop sign, cross Burns Waterway, then turn right toward the lake. Hours are temporarily 8 am to 9 pm; gates lock at 9 pm.",
+        "points": [{ "label": "Trailhead", "lat": 41.63099, "lon": -87.17838, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Lakefront and Riverwalk Trail",
+        "steps": [
+          "From the pavilion, take the trail heading south on the east side of the road off the traffic circle, through restored dune habitat.",
+          "After about half a mile the trail crosses the road, goes down a set of stairs and returns north on a boardwalk along Burns Waterway."
+        ],
+        "notes": ["Part of the trail along Burns Waterway is closed because of erosion damage; pier access remains open on either side of the closure."]
+      },
+      "final": [{ "label": "Beach", "lat": 41.63068, "lon": -87.18096 }],
+      "links": [
+        { "label": "Portage Lakefront and Riverwalk Trail", "url": "https://www.nps.gov/indu/planyourvisit/pl16.htm" },
+        { "label": "Portage Lakefront and Riverwalk Beach", "url": "https://www.nps.gov/indu/planyourvisit/portage-beach.htm" }
+      ]
+    },
+    {
+      "id": "great-marsh",
+      "name": "Great Marsh",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/indiana-dunes/great-marsh.jpg",
+        "srcWebp": "/images/last-adventure/indiana-dunes/great-marsh.webp",
+        "alt": "Marsh area with tall grasses, trees, and cloudy sky changing colors before sunset",
+        "credit": "NPS/Victoria Stauffenberg",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/00b6d968-b80b-4deb-853d-68d65afd9ecc"
+      },
+      "description": "Drained for farms and homes a century ago and restored since 1998, the Great Marsh is now the largest wetland of its kind in the Lake Michigan watershed. From the observation deck you look across sedge meadows and open water where great blue herons, sandhill cranes, ducks and geese gather in their seasons. It is a quiet, level place, well suited to slow conversation and binoculars passed from hand to hand. For someone who loved birds or early mornings, this is a natural place to remember them.",
+      "plan": {
+        "distance": "1.3 mi loop; short paved path from the north lot to the overlook",
+        "difficulty": "Easy",
+        "time": "1 hour",
+        "elevation": "9 ft",
+        "accessibility": "Main trail not wheelchair accessible; a paved, wheelchair accessible trail leads from the north parking lot to an overlook of the marsh (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Both lots are north of US 12 on Broadway Avenue, Beverly Shores. The south lot (gravel) is the main trailhead; the paved north lot has one accessible and one regular space.",
+        "points": [
+          { "label": "South lot (main trailhead)", "lat": 41.67483, "lon": -86.98661, "source": "nps" },
+          { "label": "North lot", "lat": 41.67752, "lon": -86.98822, "source": "nps" }
+        ]
+      },
+      "trail": {
+        "name": "Great Marsh Trail",
+        "steps": [
+          "From the south lot, follow the trail generally north to the T-junction.",
+          "Turn right and complete the lollipop-shaped loop.",
+          "Return to the T-junction and go straight to the Great Marsh observation deck, then back to the junction and right to the south lot."
+        ],
+        "notes": ["The trail can be very wet and muddy. No restrooms or drinking water."]
+      },
+      "final": [{ "label": "Observation deck", "lat": 41.67825, "lon": -86.98706 }],
+      "links": [{ "label": "Great Marsh Trail", "url": "https://www.nps.gov/indu/planyourvisit/gm16.htm" }]
+    },
+    {
+      "id": "dune-succession-trail",
+      "name": "Dune Succession Trail at West Beach",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/indiana-dunes/dune-succession-trail.jpg",
+        "srcWebp": "/images/last-adventure/indiana-dunes/dune-succession-trail.webp",
+        "alt": "An image of flat land that was once covered in hills of sand at Indiana Dunes",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/98c0a003-d6bd-4b49-a487-1620c4292577"
+      },
+      "description": "This short loop climbs from bare beach sand through grasses, jack pines and finally forest, tracing the four stages of a dune's life. Then come the 270 stairs, and at the top a wide view over Lake Michigan to the Chicago skyline. Take the climb at your own pace, pausing on the landings to catch your breath and trade stories. Afterward, walk down to the beach together and let the youngest ones run ahead to the water.",
+      "plan": {
+        "distance": "0.9 mi loop",
+        "difficulty": "Moderate (NPS hiking list); the park calls the 270-stair climb strenuous",
+        "time": "45 minutes",
+        "elevation": "81 ft",
+        "accessibility": "Not wheelchair accessible; packed dirt, loose sand and 270+ stairs. The walkway to the bathhouse and beach is wheelchair accessible (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "West Beach, 376 North County Line Road, Gary, off US 12. Open daily 6 am to 9 pm Central Time. Large paved lot.",
+        "points": [{ "label": "Trailhead", "lat": 41.62293, "lon": -87.20775, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Dune Succession Trail (Loop 1)",
+        "steps": [
+          "From the parking lot, follow the road north toward the lake and pick up the trail west of the bathhouse.",
+          "Climb the 270 stairs through the jack pine pinery to the viewpoint over Lake Michigan and Chicago.",
+          "Complete the loop back toward the bathhouse."
+        ],
+        "notes": ["Trail conditions can change quickly with high lake levels and storms. Ticks and poison ivy are present."]
+      },
+      "final": [{ "label": "Viewpoint at the top of the stairs", "lat": 41.62252, "lon": -87.20473 }],
+      "links": [{ "label": "West Beach Trails", "url": "https://www.nps.gov/indu/planyourvisit/wb16.htm" }]
+    },
+    {
+      "id": "paul-h-douglas-trail",
+      "name": "Paul H. Douglas Trail (Miller Woods)",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/indiana-dunes/paul-h-douglas-trail.jpg",
+        "srcWebp": "/images/last-adventure/indiana-dunes/paul-h-douglas-trail.webp",
+        "alt": "A boardwalk and small pond at Miller Woods",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/20c0a9f9-b1c2-4f3e-a24a-7015d3c694ea"
+      },
+      "description": "Few walks change character as completely as this one. It begins along a wetland where beavers live, crosses rare black oak savanna bright with lupine in spring, and then, past the bridge over the Grand Calumet River, enters a world of towering dunes that lead all the way to Lake Michigan. Arriving at the shore after the soft sand feels earned. Sit down together near the water, share lunch and the stories you brought, and rest before the walk back.",
+      "plan": {
+        "distance": "3.4 mi out and back",
+        "difficulty": "Moderate",
+        "time": "2 hours",
+        "elevation": "46 ft",
+        "accessibility": "Trails not wheelchair accessible; mostly sand. The Douglas Center, restrooms and the walkway to the marsh boardwalk are wheelchair accessible (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Paul H. Douglas Center for Environmental Education, 100 North Lake Street, Gary. Trails and lot open daily 6 am to 11 pm Central Time; no passes required here.",
+        "points": [{ "label": "Trailhead", "lat": 41.60647, "lon": -87.26853, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Paul H. Douglas Trail",
+        "steps": [
+          "From the Douglas Center, go north (counterclockwise) around the wetland complex, then west along its top.",
+          "At the trail junction, turn right and head north; from here the trail is out and back to the beach.",
+          "Cross the bridge over the Grand Calumet River and follow the trail through the dunes to the shore of Lake Michigan.",
+          "Return to the junction and turn right along the wetland back to the Douglas Center."
+        ],
+        "notes": ["Loose sand makes the hike take longer than you think. The beach is in full sun; bring water and layers. Stay single file: poison ivy lines the trail."]
+      },
+      "final": [{ "label": "Lake Michigan shore at the trail's end", "lat": 41.62033, "lon": -87.274 }],
+      "links": [{ "label": "Paul H. Douglas Trail (Miller Woods)", "url": "https://www.nps.gov/indu/planyourvisit/mw16.htm" }]
+    }
+  ]
+}

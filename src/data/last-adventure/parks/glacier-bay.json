@@ -1,0 +1,281 @@
+{
+  "id": "glacier-bay",
+  "name": "Glacier Bay National Park",
+  "short": "Glacier Bay",
+  "state": "Alaska",
+  "states": [
+    "Alaska"
+  ],
+  "tagline": "Tidewater glaciers, fjords and a wilderness reborn from the ice in 250 years.",
+  "photo": {
+    "src": "/images/last-adventure/glacier-bay/park.jpg",
+    "srcWebp": "/images/last-adventure/glacier-bay/park.webp",
+    "alt": "An inflated raft with paddles faces a glacier and mountains",
+    "credit": "National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c23208c9-0d86-4999-907e-66ae464eebb6",
+    "caption": "Sunset at Walker Glacier"
+  },
+  "intro": "Just 250 years ago a glacier about 100 miles long filled Bartlett Cove; today Glacier Bay is a maze of fjords where tidewater glaciers calve into the sea and wildlife returns to newly uncovered shores. No roads lead here: families arrive by plane or ferry at Gustavus, then walk the forest and shoreline trails of Bartlett Cove or ride the daily tour boat up the bay to the ice. This is also the ancestral homeland of the Huna Tlingit clans. All areas of the park are open to scattering of ashes without a permit.",
+  "homepage": "https://www.nps.gov/glba/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/glba/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Bartlett Cove trails map",
+      "url": "https://www.nps.gov/glba/planyourvisit/bartlett-cove-trails.htm"
+    }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "All areas of the park are open to scattering of ashes without a permit.",
+  "scatterFacts": [
+    "2025 Superintendent's Compendium, 36 CFR 2.62(b): all areas are open to scattering of ashes without a permit.",
+    "No designated sites and no application: the rule covers the whole park.",
+    "The day tour boat is run by the park's concessioner; ask the operator before planning to scatter from the deck.",
+    "Park phone: 907-697-2230."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium 2025 (PDF)",
+      "url": "https://www.nps.gov/locations/alaska/upload/GLBACompendium-2025_FINAL_11-25_SuptSigOnFile_508.pdf"
+    },
+    {
+      "label": "Laws and policies (NPS)",
+      "url": "https://www.nps.gov/glba/learn/management/regs.htm"
+    }
+  ],
+  "beforeYouGo": "Glacier Bay lies west of Juneau and can only be reached by plane or boat. Alaska Airlines flies from Juneau to Gustavus daily in summer (about 30 minutes), smaller air taxis fly year-round, and in summer the Alaska state ferry typically stops in Gustavus twice weekly. The park's only road runs about 10 miles from Gustavus and its airport to park headquarters at Bartlett Cove, the park's only developed area. The day tour boat runs each morning through the summer. Trails are often muddy and slippery, so wear sturdy shoes.",
+  "destinations": [
+    {
+      "id": "huna-tribal-house",
+      "name": "Xunaa Shuká Hít (Huna Tribal House)",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/glacier-bay/huna-tribal-house.jpg",
+        "srcWebp": "/images/last-adventure/glacier-bay/huna-tribal-house.webp",
+        "alt": "The moon rising over snowy mountains and still water at Bartlett Cove",
+        "credit": "NPS Photo / G. Ketchner",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e1154591-c0de-46c2-a536-123d023eed58"
+      },
+      "description": "On the shoreline of Bartlett Cove stands Xunaa Shuká Hít, the Huna Tribal House, completed in 2016 as a place of discovery and reconnection for the Huna Tlingit clans whose homeland this is. The flat Tlingit Trail leads there past a traditional dugout canoe and a complete whale skeleton, with views across the cove. Admire the carved totems and house screen, and in summer step inside to see the four house posts that tell the clans' stories. It is a fitting place to remember that every family carries its history forward.",
+      "plan": {
+        "distance": "Tlingit Trail, 1/2 mi one way",
+        "difficulty": "Easy",
+        "accessibility": "Flat, accessible gravel path between the public dock parking area and the front of the tribal house (NPS)",
+        "bestTime": "Summer, during regular visitor hours",
+        "scattering": "Allowed without a permit; out of respect, choose a spot away from the tribal house (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Fly or take the ferry to Gustavus, then follow the park road about 10 miles to Bartlett Cove. Park at the public dock parking area and follow the Tlingit Trail along the shore in front of Glacier Bay Lodge.",
+        "points": [
+          {
+            "label": "Public dock parking area",
+            "lat": 58.45397,
+            "lon": -135.88596
+          }
+        ]
+      },
+      "trail": {
+        "name": "Tlingit Trail",
+        "steps": [
+          "From the public dock parking area, walk the flat gravel Tlingit Trail along the forested shoreline.",
+          "Pass the traditional dugout canoe and the whale skeleton in front of Glacier Bay Lodge.",
+          "Continue to the front of Xunaa Shuká Hít."
+        ]
+      },
+      "final": [
+        {
+          "label": "Xunaa Shuká Hít",
+          "lat": 58.45548,
+          "lon": -135.88025
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of Glacier Bay are open to scattering of ashes without a permit, so no special site is needed. Out of respect for this cultural place, choose a spot away from the tribal house, such as along the Forest Trail or the Bartlett River Trail."
+      },
+      "links": [
+        {
+          "label": "Huna Tribal House",
+          "url": "https://www.nps.gov/glba/learn/historyculture/huna-tribal-house-project.htm"
+        },
+        {
+          "label": "Exploring Bartlett Cove",
+          "url": "https://www.nps.gov/glba/planyourvisit/exploring-bartlett-cove.htm"
+        }
+      ]
+    },
+    {
+      "id": "forest-trail",
+      "name": "Forest Trail and Blackwater Pond",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/glacier-bay/forest-trail.jpg",
+        "srcWebp": "/images/last-adventure/glacier-bay/forest-trail.webp",
+        "alt": "Trees reflected in the water of Blackwater Pond",
+        "credit": "National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2f0b656c-1dd8-b71c-07a0-a0a540eeebcf"
+      },
+      "description": "This loop wanders through the spruce and hemlock rainforest of Bartlett Cove, past quiet ponds, then down to the beach. A wooden boardwalk leads to a viewing deck over a serene pond, and two benches invite you to sit for a while and listen to the forest. Every afternoon in summer a ranger leads a walk here. It is an easy, unhurried hour, the kind of walk where stories come out naturally, and the beach at the end is a lovely place to stand together and look out over the cove.",
+      "plan": {
+        "distance": "1 mi loop",
+        "difficulty": "Easy",
+        "time": "30 minutes to 1.5 hours",
+        "accessibility": "The 1/2-mile boardwalk section to the Blackwater Pond viewing deck is accessible (NPS); elsewhere dirt, gravel and boardwalk with possible roots and rocks",
+        "bestTime": "Daily ranger-led walk at 1:30 pm (90 minutes) from the lodge front doors",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Fly or take the ferry to Gustavus, then follow the park road about 10 miles to Bartlett Cove. Start in front of Glacier Bay Lodge (just off the parking lot) or south of the boat ramp between the docks.",
+        "points": [
+          {
+            "label": "Glacier Bay Lodge",
+            "lat": 58.45464,
+            "lon": -135.8825
+          }
+        ]
+      },
+      "trail": {
+        "name": "Forest Trail (Forest Loop)",
+        "steps": [
+          "Begin in front of the lodge or south of the boat ramp.",
+          "Wind through the pond-studded spruce and hemlock forest; the boardwalk leads to the Blackwater Pond viewing deck.",
+          "The loop descends to the beach and returns to Bartlett Cove."
+        ],
+        "notes": [
+          "A self-guided tour of the Forest Loop Trail is available in the official NPS app (wifi at the Visitor Information Station and the lodge)."
+        ]
+      },
+      "final": [
+        {
+          "label": "Forest Trail",
+          "lat": 58.45082,
+          "lon": -135.88523
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of Glacier Bay are open to scattering of ashes without a permit."
+      },
+      "links": [
+        {
+          "label": "Glacier Bay hiking",
+          "url": "https://www.nps.gov/glba/planyourvisit/hiking.htm"
+        },
+        {
+          "label": "Accessibility",
+          "url": "https://www.nps.gov/glba/planyourvisit/accessibility.htm"
+        }
+      ]
+    },
+    {
+      "id": "bartlett-river-trail",
+      "name": "Bartlett River Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "The Bartlett River Trail follows an intertidal lagoon, slips through spruce and hemlock forest and comes out at the open estuary where the river meets the sea. Ducks, geese and other water birds gather on the tidal flats, and late in the summer salmon run upriver, drawing hungry harbor seals. Watch the beach for coyotes, moose, bears and river otters. It is a half-day walk with room for long pauses, and the estuary at the end feels made for quiet remembering.",
+      "plan": {
+        "distance": "4 mi round trip (the Bartlett Cove page gives 5 mi round trip from the lodge)",
+        "difficulty": "Easy: not difficult, with a few muddy spots (NPS)",
+        "time": "4 to 5 hours",
+        "accessibility": "Forest and lagoon trail; a few muddy spots in rainy periods",
+        "bestTime": "Late summer for the salmon run",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Fly or take the ferry to Gustavus, then follow the park road toward Bartlett Cove to the Bartlett River / Bartlett Lake Trailhead.",
+        "points": [
+          {
+            "label": "Trailhead",
+            "lat": 58.45427,
+            "lon": -135.869
+          }
+        ]
+      },
+      "trail": {
+        "name": "Bartlett River Trail",
+        "steps": [
+          "From the trailhead, follow the trail along an intertidal lagoon and into the spruce and hemlock forest.",
+          "About 1/4 mile in, the Bartlett Lake Trail branches off at a signpost; stay on the Bartlett River Trail.",
+          "The trail ends at the Bartlett River estuary. Return the same way."
+        ],
+        "notes": [
+          "Be bear aware and moose alert. Trails are often muddy and slick: wear sturdy shoes or rubber boots."
+        ]
+      },
+      "final": [
+        {
+          "label": "Bartlett River estuary (trail end)",
+          "lat": 58.4713,
+          "lon": -135.84877
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of Glacier Bay are open to scattering of ashes without a permit."
+      },
+      "links": [
+        {
+          "label": "Glacier Bay hiking",
+          "url": "https://www.nps.gov/glba/planyourvisit/hiking.htm"
+        }
+      ]
+    },
+    {
+      "id": "day-boat-tidewater-glaciers",
+      "name": "Tidewater Glaciers by Day Boat",
+      "kinds": [
+        "accessible",
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.jpg",
+        "srcWebp": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.webp",
+        "alt": "A reflective inlet with calm water- steep snowcapped mountains rise above a fjord with a glacier in the center",
+        "credit": "NPS Photo/S. Tevebaugh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/daffbcbe-b7ad-4467-bfc3-946e23e06597"
+      },
+      "description": "Each summer morning a tour boat leaves Bartlett Cove for a seven-hour journey up the bay, with a park ranger aboard. Puffins and hundreds of roaring sea lions crowd South Marble Island, mountain goats cling to the cliffs, and the shoreline grows younger as the ice draws closer. Then the tidewater glaciers appear, rivers of ice about a mile wide, and the boat waits at one for at least half an hour so you can watch and hear it calve. Bundle up together on deck for this.",
+      "plan": {
+        "distance": "130-mile trip by boat from Bartlett Cove",
+        "difficulty": "Easy by boat",
+        "time": "About 7 hours",
+        "accessibility": "Not detailed by the park; ask the concessioner, Glacier Bay Lodge & Tours, when booking",
+        "bestTime": "Summer, when the boat departs each morning",
+        "scattering": "Allowed in the park without a permit; ask the operator first (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Fly or take the ferry to Gustavus, then follow the park road about 10 miles to Bartlett Cove. The day boat leaves the Bartlett Cove dock each morning; reserve through Glacier Bay Lodge & Tours. Passengers usually stay the night before in Gustavus or at Glacier Bay Lodge.",
+        "points": []
+      },
+      "final": [
+        {
+          "label": "Margerie Glacier face (seen from the boat)",
+          "lat": 59.03443,
+          "lon": -137.06208
+        }
+      ],
+      "scatterNote": {
+        "text": "Glacier Bay's rules open all areas of the park to scattering of ashes without a permit. The day boat is run by the park's concessioner, so ask the operator before you plan to scatter from the deck. All boats must stay at least a quarter mile from the glaciers."
+      },
+      "links": [
+        {
+          "label": "Glacier Bay tour boat",
+          "url": "https://www.nps.gov/glba/planyourvisit/glacier-bay-tour-boat.htm"
+        },
+        {
+          "label": "Tour Glacier Bay",
+          "url": "https://www.nps.gov/glba/planyourvisit/tour.htm"
+        }
+      ]
+    }
+  ]
+}

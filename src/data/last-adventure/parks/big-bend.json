@@ -1,0 +1,201 @@
+{
+  "id": "big-bend",
+  "name": "Big Bend National Park",
+  "short": "Big Bend",
+  "state": "Texas",
+  "states": ["Texas"],
+  "tagline": "Desert, mountains and river canyons along the Rio Grande.",
+  "photo": {
+    "src": "/images/last-adventure/big-bend/park.jpg",
+    "srcWebp": "/images/last-adventure/big-bend/park.webp",
+    "alt": "A view of the Rio Grande from a cliff above the river. From top to bottom, the image shows blue cloudless sky, steep beige cliffs dotted with green desert vegetation, a",
+    "credit": "NPS/HYoung",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8c974c7e-9cfa-4482-b0b4-75177ae837b5",
+    "caption": "The Lower Canyons of the Rio Grande"
+  },
+  "intro": "Big Bend holds three worlds in one park: the Chihuahuan Desert, the forested Chisos Mountains rising to 7,832 feet on Emory Peak, and the Rio Grande cutting deep limestone canyons along the border with Mexico. A final adventure here can be a paved sunset walk in the Chisos Basin, a short stroll into a river canyon or a climb to a high ridge. The park allows the scattering of ashes with a permit, as a small private affair away from busy areas and water.",
+  "homepage": "https://www.nps.gov/bibe/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/bibe/planyourvisit/maps.htm" },
+    { "label": "Mountain hikes (NPS)", "url": "https://www.nps.gov/bibe/planyourvisit/mountain_hikes.htm" },
+    { "label": "River hikes (NPS)", "url": "https://www.nps.gov/bibe/planyourvisit/river_hikes.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a permit, as a small, private and discreet affair held away from high visitor use areas.",
+  "scatterFacts": [
+    "The Superintendent's Compendium lists memorialization (scattering of human ashes, 36 CFR 2.62(b)) among the activities that require a permit.",
+    "Apply with the park's Special Use Permit application, emailed to bibe_special_permits@nps.gov or mailed to Big Bend National Park, PO Box 129, Big Bend National Park, TX 79834. Special use permit applications carry a $100.00 non-refundable fee, paid through Pay.gov with the application. Lead time is not published.",
+    "Not within 100 yards of any water source, spring or archeological site, and not in any developed area.",
+    "Ashes must be pulverized and fully dispersed so no obvious piles remain. No container, urn, flowers or memorial markers may be left.",
+    "Areas stay open to the public: nothing is closed off, parking cannot be reserved, and other visitors cannot be excluded."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits and spreading cremated remains (NPS)", "url": "https://www.nps.gov/bibe/getinvolved/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/bibe/learn/management/superintendents-compendium.htm" }
+  ],
+  "beforeYouGo": "Park entrances are open 24 hours a day, all year. Reach the park by TX 118 from Alpine or FM 170 from Presidio to Study Butte (then 26 miles east to park headquarters), or by US 90 or US 385 to Marathon (then 70 miles south). Services are far apart: carry plenty of fuel, food and water. Summer heat begins in May, and the rainy season runs July through September with possible flash flooding. The paved road between Cottonwood Campground and Santa Elena Canyon is currently closed after weather damage; check the park's alerts.",
+  "destinations": [
+    {
+      "id": "window-view-trail",
+      "name": "Window View Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/big-bend/window-view-trail.jpg",
+        "srcWebp": "/images/last-adventure/big-bend/window-view-trail.webp",
+        "alt": "Gold and purple streaks light the gap between two silhouetted mountains",
+        "credit": "NPS/K. Cardenas",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/cc6a9fdd-0047-4e34-b3bb-ca18a89fe451"
+      },
+      "description": "In the evening, the peaks around the Chisos Basin turn gold, and a notch in the mountains called the Window frames the desert falling away beyond. This short paved loop circles a low hill right beside the basin parking area, with benches placed for watching the sun go down. Everyone can come, from the youngest grandchild to someone using a wheelchair. Sit together, let the light fade through the Window, and talk about the person who would have loved this sunset most.",
+      "plan": {
+        "distance": "0.3 mi loop",
+        "difficulty": "Easy",
+        "time": "30 minutes",
+        "elevation": "50 ft",
+        "accessibility": "Paved and wheelchair accessible (NPS); slopes gently down to the end of the loop and back up",
+        "bestTime": "Sunset",
+        "scattering": "Not here: a developed area. With a permit, at a site away from busy areas (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Take the Chisos Basin Road up into the Chisos Basin. The trail begins at the paved parking lot near the Chisos Mountains Lodge and Chisos Basin Visitor Center.",
+        "points": [{ "label": "Chisos Basin parking", "lat": 29.27006, "lon": -103.30061 }]
+      },
+      "final": [{ "label": "Viewpoint", "lat": 29.27071, "lon": -103.3031 }],
+      "scatterNote": { "text": "The park's rules exclude developed areas such as the Chisos Basin. Describe a location away from high visitor use areas and at least 100 yards from water, springs and archeological sites in your permit application." },
+      "links": [
+        { "label": "Window View Trail", "url": "https://www.nps.gov/places/window-view-trail.htm" },
+        { "label": "Mountain hikes", "url": "https://www.nps.gov/bibe/planyourvisit/mountain_hikes.htm" }
+      ]
+    },
+    {
+      "id": "santa-elena-canyon",
+      "name": "Santa Elena Canyon",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/big-bend/santa-elena-canyon.jpg",
+        "srcWebp": "/images/last-adventure/big-bend/santa-elena-canyon.webp",
+        "alt": "The Rio Grande flowing between the high walls of Santa Elena Canyon",
+        "credit": "NPS Photo/Ann Wildermuth",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2d217fd0-155d-451f-67d2-195dce0779f7"
+      },
+      "description": "The Rio Grande slips out of a gap between limestone cliffs 1,500 feet high, and from the overlook the whole family can take in the canyon mouth at once. Those who want to go farther can cross Terlingua Creek, climb a short flight of steps to a high viewpoint, then follow the river between boulders until the canyon wall meets the water. Rest there and listen for the falling notes of a canyon wren. It is a place that makes everyone lower their voices.",
+      "plan": {
+        "distance": "Overlook beside the road; trail 1.6 mi round trip (the park's river hikes page lists 1.7 mi)",
+        "difficulty": "Easy at the overlook; Moderate on the trail",
+        "time": "1 hour for the trail",
+        "elevation": "80 ft",
+        "accessibility": "Overlook from the parking area; the trail requires crossing Terlingua Creek (dry sand, thick mud or flowing water) and climbing a short, steep bank, then concrete steps",
+        "scattering": "Not here: within 100 yards of the river. With a permit, elsewhere (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Ross Maxwell Scenic Drive to its end; the overlook is just before the trailhead. The paved road between Cottonwood Campground and Santa Elena Canyon is currently closed after weather damage, so check the park's alerts first. The trailhead lot holds about 20 vehicles.",
+        "points": [
+          { "label": "Overlook parking", "lat": 29.16932, "lon": -103.60322 },
+          { "label": "Trailhead parking", "lat": 29.16762, "lon": -103.60999 }
+        ]
+      },
+      "trail": {
+        "name": "Santa Elena Canyon Trail",
+        "steps": [
+          "Cross the bed of Terlingua Creek and climb the short, steep bank.",
+          "Climb the concrete steps to a high viewpoint at the canyon mouth.",
+          "Descend gradually to the river's edge and wind among boulders until the canyon wall meets the Rio Grande."
+        ],
+        "notes": [
+          "If the water at the creek crossing is deep and swift, do not cross; enjoy the view and try again in drier weather. The trail may be impassable during the summer rainy season.",
+          "Do not try to keep your feet dry by following Terlingua Creek into the cliffs: that is not the maintained trail and can be extremely dangerous."
+        ]
+      },
+      "final": [
+        { "label": "Overlook", "lat": 29.16849, "lon": -103.60411 },
+        { "label": "Trail in the canyon mouth", "lat": 29.16443, "lon": -103.6155 }
+      ],
+      "scatterNote": { "text": "Scattering is not allowed within 100 yards of any water source. Describe a location away from the river and from high visitor use areas in your permit application." },
+      "links": [
+        { "label": "Santa Elena Canyon Overlook", "url": "https://www.nps.gov/places/santa-elena-canyon-overlook.htm" },
+        { "label": "Santa Elena Canyon Trail", "url": "https://www.nps.gov/places/santa-elena-canyon-trail.htm" }
+      ]
+    },
+    {
+      "id": "boquillas-canyon",
+      "name": "Boquillas Canyon",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/big-bend/boquillas-canyon.jpg",
+        "srcWebp": "/images/last-adventure/big-bend/boquillas-canyon.webp",
+        "alt": "Canoeing into Boquillas Canyon",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/02165832-aedd-4e36-8292-24753042f11b"
+      },
+      "description": "On the east side of the park, the Rio Grande enters a great limestone gorge that splits the Sierra del Carmen. The trail rises over a small bluff where ancient grinding holes are worn into the rock, then drops to the river for an easy, sandy walk until the walls close in. Late in the day the Sierra del Carmen glows with color. Walk it slowly, side by side, and let the river carry the conversation for a while.",
+      "plan": {
+        "distance": "1.5 mi round trip (the park's river hikes page lists 1.4 mi)",
+        "difficulty": "Moderate",
+        "time": "1 hour",
+        "elevation": "150 ft",
+        "accessibility": "Rock and dirt over a small rise, then flat sand along the river; accessible restroom at the trailhead",
+        "bestTime": "Mornings in summer, when daytime temperatures often exceed 110 degrees; sunset for color on the Sierra del Carmen",
+        "scattering": "Not here: within 100 yards of the river. With a permit, elsewhere (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Drive to the end of the Boquillas Canyon road in the southeast of the park. The paved lot holds about 15 vehicles.",
+        "points": [{ "label": "Trailhead parking", "lat": 29.20075, "lon": -102.9195 }]
+      },
+      "trail": {
+        "name": "Boquillas Canyon Trail",
+        "steps": [
+          "Climb the small rise from the parking lot to the top of a cliff overlooking the Rio Grande.",
+          "Descend to the river and follow the sandy bank into the canyon.",
+          "Turn around where the limestone walls and the river prevent further travel."
+        ]
+      },
+      "final": [{ "label": "Trail along the Rio Grande", "lat": 29.20042, "lon": -102.91595 }],
+      "scatterNote": { "text": "Scattering is not allowed within 100 yards of any water source or archeological site. Describe a location away from the river and from high visitor use areas in your permit application." },
+      "links": [{ "label": "Boquillas Canyon Trail", "url": "https://www.nps.gov/places/boquillas-canyon-trail.htm" }]
+    },
+    {
+      "id": "lost-mine-trail",
+      "name": "Lost Mine Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/big-bend/lost-mine-trail.jpg",
+        "srcWebp": "/images/last-adventure/big-bend/lost-mine-trail.webp",
+        "alt": "Hikers on the Lost Mine Trail in winter",
+        "credit": "NPS Photo/Jennette Jurado",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1d63ad08-155d-451f-67d4-317497b036f8"
+      },
+      "description": "This trail climbs into the cool forest of the Chisos Mountains, through juniper, oak and pine, to a ridge that suddenly levels out above Pine Canyon with the Sierra del Carmen of Mexico on the horizon. A mile in, a saddle opens views of Casa Grande Peak and Juniper Canyon, a good place for anyone who wants to stop early. For the rest of you, the ridge is a place to sit together in the mountain air and share the stories that matter.",
+      "plan": {
+        "distance": "4.8 mi round trip; the saddle is about 1 mi in",
+        "difficulty": "Moderate",
+        "time": "3 hours",
+        "elevation": "1,100 ft",
+        "accessibility": "Wheelchair-accessible sidewalk to an information panel only; beyond it a dirt and rock trail with numerous log steps",
+        "scattering": "With a permit, at a site away from the trail and busy areas (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Chisos Basin Road to the trailhead at about mile 5 (NPS gives 5.1 and 5.5 miles on different pages). The lot holds 15 vehicles and regularly fills between 8 and 9 am from November through April.",
+        "points": [{ "label": "Trailhead parking", "lat": 29.27453, "lon": -103.28668 }]
+      },
+      "trail": {
+        "name": "Lost Mine Trail",
+        "steps": [
+          "Hike about 1 mile to the saddle with views of Casa Grande Peak and Juniper Canyon.",
+          "Continue as the trail climbs steeply in and out of juniper, oak and pine forest.",
+          "The trail levels out at the ridge above Pine Canyon."
+        ],
+        "notes": ["Pets are not allowed on any trail in the park. Carry 1 liter of water per person per hour of hiking."]
+      },
+      "final": [
+        { "label": "Trail viewpoint", "lat": 29.27018, "lon": -103.2769 },
+        { "label": "Ridge viewpoint (end of trail)", "lat": 29.26711, "lon": -103.2667 }
+      ],
+      "scatterNote": { "text": "The park's published rules name no specific scattering sites. Describe a location away from high visitor use areas and at least 100 yards from water, springs and archeological sites in your permit application; the park reviews each request." },
+      "links": [{ "label": "Lost Mine Trail", "url": "https://www.nps.gov/places/lost-mine-trail.htm" }]
+    }
+  ]
+}

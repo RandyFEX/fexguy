@@ -1,0 +1,183 @@
+{
+  "id": "hot-springs",
+  "name": "Hot Springs National Park",
+  "short": "Hot Springs",
+  "state": "Arkansas",
+  "states": ["Arkansas"],
+  "tagline": "Thermal springs, historic bathhouses and forested mountains above a small city.",
+  "photo": {
+    "src": "/images/last-adventure/hot-springs/park.jpg",
+    "srcWebp": "/images/last-adventure/hot-springs/park.webp",
+    "alt": "A large green, rectangular awning hangs over the Fordyce Porch. People sit on rocking chairs, while others are walking up the steps. In the distance, more bathhouses and the",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7069b8a-fe60-4aa3-848b-7e021a11c9c2",
+    "caption": "The Fordyce Bathhouse"
+  },
+  "intro": "Hot Springs National Park wraps around the city of Hot Springs in the Ouachita Mountains of Arkansas, about an hour west of Little Rock. Here a family can walk a brick promenade behind historic Bathhouse Row, touch thermal water from the springs, ride to the top of a mountain tower and hike to a rock overlook above the forest. Scattering requires a permit and must take place well away from trails, roads, overlooks and water.",
+  "homepage": "https://www.nps.gov/hosp/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/hosp/planyourvisit/maps.htm" },
+    { "label": "Hot Springs and North Mountain trails (NPS)", "url": "https://www.nps.gov/hosp/planyourvisit/hot-springs-and-north-mountain-trails.htm" },
+    { "label": "Directions to trails (NPS)", "url": "https://www.nps.gov/hosp/planyourvisit/directions-to-trails.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "A permit is required to scatter ashes; on the ground it must be done at least 100 yards from any trail, road, developed facility or area, or body of water.",
+  "scatterFacts": [
+    "Superintendent's Compendium (36 CFR 2.62(b)): a permit is required for the scattering of ashes from cremated human remains in the park.",
+    "The remains must have been cremated and pulverized.",
+    "On the ground: at least 100 yards from any trail, road, developed facility, developed area (designated picnic areas, camping areas, Bathhouse Row, the Grand Promenade, parking lots, overlooks) or body of water.",
+    "From the air: at least 2,000 feet above the ground, and never over developed areas, facilities or bodies of water.",
+    "The park does not publish a fee specific to scattering. Its special use permit pages list a minimum non-refundable application processing fee of $100, paid online after you apply; confirm the charge with the park.",
+    "Apply with the Special Use Permit application, returned by mail or by email to hosp_permits@nps.gov. Lead time is not published."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/hosp/learn/management/superintendents-compendium.htm" },
+    { "label": "General special use permits (NPS)", "url": "https://www.nps.gov/hosp/planyourvisit/general-special-use-permits.htm" },
+    { "label": "Special Use Permit application (PDF)", "url": "https://www.nps.gov/hosp/planyourvisit/upload/HOSP-NPS-10-930s-Application-for-SUP-Short-Form-No-Hunting-2024-OMB-Approved.pdf" },
+    { "label": "Cost recovery charges (NPS)", "url": "https://www.nps.gov/hosp/planyourvisit/cost-recovery-charges.htm" }
+  ],
+  "beforeYouGo": "The park lies within the city of Hot Springs in southwest central Arkansas, about 1 hour west of Little Rock. Start at the Fordyce Bathhouse Visitor Center on Bathhouse Row (369 Central Ave). Park trails are open from 5 am to 10 pm. Hot Springs Mountain Drive leads up from Fountain Street to the Mountain Tower and North Mountain. No reservations are required to visit the park. Every featured place is a trail, road, overlook or developed area, so none can be the scattering site itself.",
+  "destinations": [
+    {
+      "id": "grand-promenade",
+      "name": "Grand Promenade",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/grand-promenade.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/grand-promenade.webp",
+        "alt": "Iron railings and low stone walls border a red brick walkway, built along a hillside",
+        "credit": "NPS, 2010",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0facb228-a2be-f031-f07d-5211a68bf190"
+      },
+      "description": "The Grand Promenade is a wide brick walkway running along the hillside behind historic Bathhouse Row, shaded by trees and threaded with the paths that lead up the mountain. It is a place for slow walking side by side, with the old bathhouses below and the forest above. Take your time, find a bench, and let the conversation wander from old family trips to the small habits that made your loved one who they were.",
+      "plan": {
+        "distance": "0.5 mi one way",
+        "difficulty": "Easy",
+        "time": "30 to 60 minutes",
+        "accessibility": "Paved brick path 8 ft wide, typical grade 3.7%. Ramp access from Fountain Street and behind the Fordyce Bathhouse; stairs at Reserve Street and the Stephen's Balustrade (NPS)",
+        "scattering": "Not here: with a permit, at least 100 yards from trails, roads, developed areas and water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Park in downtown Hot Springs and walk to the Fordyce Bathhouse Visitor Center on Central Avenue. From there, walk between the Fordyce and the Maurice bathhouses and take the ramp to the right (or the grand staircase) up to the Grand Promenade.",
+        "points": [{ "label": "Fordyce Bathhouse Visitor Center", "lat": 34.51372, "lon": -93.05347 }]
+      },
+      "trail": {
+        "name": "Grand Promenade National Recreation Trail",
+        "steps": [
+          "From the visitor center, take the access ramp between the Fordyce and Maurice bathhouses up to the Grand Promenade.",
+          "Walk the brick promenade along the hillside behind Bathhouse Row; the Oertel, Peak and Tufa Terrace trails branch off it."
+        ]
+      },
+      "final": [{ "label": "Grand Promenade", "lat": 34.51434, "lon": -93.05306 }],
+      "scatterNote": { "text": "The Grand Promenade and Bathhouse Row are developed areas. Scattering needs a permit and must be on the ground at least 100 yards from any trail, road, developed facility or area, or body of water." },
+      "links": [
+        { "label": "Grand Promenade National Recreation Trail (NPS)", "url": "https://www.nps.gov/thingstodo/grand-promenade-national-recreation-trail.htm" },
+        { "label": "Grand Promenade (NPS)", "url": "https://www.nps.gov/places/grand-promenade.htm" }
+      ]
+    },
+    {
+      "id": "hot-water-cascade",
+      "name": "Hot Water Cascade",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/hot-water-cascade.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/hot-water-cascade.webp",
+        "alt": "Hot spring water cascading down rock into a display pool",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/places/hot-water-cascade.htm"
+      },
+      "description": "At the Hot Water Cascade, the largest visible spring in the park, thermal water spills down a green hillside on Arlington Lawn into two pools. It leaves the ground far too hot to touch, but by the time it reaches the pools you can put your hands in it. Feeling that warmth together, children and grandparents side by side, is a simple and memorable way to share a moment of comfort and remember someone whose warmth you still carry.",
+      "plan": {
+        "distance": "On Arlington Lawn beside Central Avenue; distance not published",
+        "difficulty": "Easy",
+        "time": "15 to 45 minutes",
+        "accessibility": "ADA accessible (NPS). The water is very hot where it emerges: use caution with children",
+        "scattering": "Not here: with a permit, at least 100 yards from trails, roads, developed areas and water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Arlington Lawn is at the north end of Bathhouse Row on Central Avenue, a short walk from the Fordyce Bathhouse Visitor Center. The cascade is against the hillside.",
+        "points": [{ "label": "Fordyce Bathhouse Visitor Center", "lat": 34.51372, "lon": -93.05347 }]
+      },
+      "final": [{ "label": "Arlington Lawn", "lat": 34.51524, "lon": -93.05198 }],
+      "scatterNote": { "text": "Never into the springs or pools. Scattering needs a permit and must be on the ground at least 100 yards from any trail, road, developed facility or area, or body of water." },
+      "links": [
+        { "label": "Visit the Hot Water Cascade (NPS)", "url": "https://www.nps.gov/thingstodo/visit-the-hot-water-cascade.htm" },
+        { "label": "Hot Water Cascade (NPS)", "url": "https://www.nps.gov/places/hot-water-cascade.htm" }
+      ]
+    },
+    {
+      "id": "hot-springs-mountain-tower",
+      "name": "Hot Springs Mountain Tower",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/hot-springs-mountain-tower.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/hot-springs-mountain-tower.webp",
+        "alt": "Observation tower overlooking mountain",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/thingstodo/ride-to-the-top-of-the-hot-springs-mountain-tower.htm"
+      },
+      "description": "An elevator carries you up the 216-foot tower on top of Hot Springs Mountain to an open-air deck 1,256 feet above sea level. From there you can see about 140 square miles of countryside: the whole park, the town below and a stretch of the Ouachita Mountains rolling away to the horizon. Standing together in the wind at the top, pointing out the places your loved one knew or would have loved, gives the whole family the same wide view at once.",
+      "plan": {
+        "distance": "Elevator ride to the observation decks",
+        "difficulty": "Easy",
+        "accessibility": "Listed by the park as wheelchair accessible, with an elevator and restrooms. The lower deck is enclosed and air conditioned (NPS)",
+        "scattering": "Not here: with a permit, at least 100 yards from trails, roads, developed areas and water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the visitor center head north on Central Avenue, turn right on Fountain Street, then right on Hot Springs Mountain Drive. Follow it up the mountain; past the Pavilion, turn left to the Mountain Tower.",
+        "points": [{ "label": "Parking near the tower", "lat": 34.51779, "lon": -93.04535 }]
+      },
+      "final": [{ "label": "Tower observation deck", "lat": 34.51728, "lon": -93.04622 }],
+      "scatterNote": { "text": "The tower area is a developed facility. Scattering needs a permit and must be on the ground at least 100 yards from any trail, road, developed facility or area, or body of water." },
+      "links": [
+        { "label": "Hot Springs Mountain Tower (NPS)", "url": "https://www.nps.gov/places/hot-springs-mountain-tower.htm" },
+        { "label": "Ride to the top of the tower (NPS)", "url": "https://www.nps.gov/thingstodo/ride-to-the-top-of-the-hot-springs-mountain-tower.htm" }
+      ]
+    },
+    {
+      "id": "goat-rock",
+      "name": "Goat Rock Overlook",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/goat-rock.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/goat-rock.webp",
+        "alt": "A small viewing area overlooking the rolling Ouachita hills",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/hosp/planyourvisit/hot-springs-and-north-mountain-trails.htm"
+      },
+      "description": "The Goat Rock Trail leaves the overlook on North Mountain and winds through forest past novaculite stones and open, flowery glades with views of Indian Mountain and east Hot Springs. Then it passes beneath huge boulders and a stairway climbs to Goat Rock Overlook, perched above the valley with the Ouachita Mountains spread out beyond. It feels far from town, a quiet place to sit on the stone, look across the hills and say what you came to say.",
+      "plan": {
+        "distance": "1.1 mi one way",
+        "difficulty": "Not rated by NPS: no Easy, Moderate or Strenuous rating is published; typical grade 3.2% on a rocky, uneven trail",
+        "time": "30 to 75 minutes",
+        "elevation": "Ranges from 886 to 1,067 ft",
+        "accessibility": "Rocky, packed gravel and packed dirt trail; not ADA compliant. Stone bars across the trail are a trip hazard (NPS)",
+        "scattering": "Not here: with a permit, at least 100 yards from trails, roads, developed areas and water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the visitor center head north on Central Avenue, turn right on Fountain Street, then right on Hot Springs Mountain Drive. Pass the picnic area and the Pavilion, stay straight toward North Mountain Loop, and park at the top on the right; the Goat Rock Trailhead is to the right of the overlook parking area. Parking is limited.",
+        "points": [{ "label": "Goat Rock Trailhead at North Mountain Loop", "lat": 34.52738, "lon": -93.04038 }]
+      },
+      "trail": {
+        "name": "Goat Rock Trail",
+        "steps": [
+          "Take the short hike below the North Mountain overlook and stay right.",
+          "Below the second curve, the trail opens into glades with views of Indian Mountain and east Hot Springs.",
+          "The trail becomes uneven and rocky; after several hundred feet it passes beneath large novaculite boulders.",
+          "A trail sign marks the stairway up to Goat Rock Overlook."
+        ],
+        "notes": ["The trail can also be reached from Gulpha Gorge Campground by the Gulpha Gorge Trail. Park trails are open 5 am to 10 pm."]
+      },
+      "final": [{ "label": "Goat Rock Overlook", "lat": 34.52726, "lon": -93.03918 }],
+      "scatterNote": { "text": "Overlooks and trails are excluded. Scattering needs a permit and must be on the ground at least 100 yards from any trail, road, developed facility or area, or body of water." },
+      "links": [
+        { "label": "Goat Rock Trail (NPS)", "url": "https://www.nps.gov/thingstodo/goat-rock-trail.htm" },
+        { "label": "Goat Rock View Point (NPS)", "url": "https://www.nps.gov/places/goat-rock-view-point.htm" }
+      ]
+    }
+  ]
+}

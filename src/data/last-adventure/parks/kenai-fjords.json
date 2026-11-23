@@ -1,0 +1,202 @@
+{
+  "id": "kenai-fjords",
+  "name": "Kenai Fjords National Park",
+  "short": "Kenai Fjords",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "Glaciers pouring from the Harding Icefield into deep fjords and the sea.",
+  "photo": {
+    "src": "/images/last-adventure/kenai-fjords/park.jpg",
+    "srcWebp": "/images/last-adventure/kenai-fjords/park.webp",
+    "alt": "Two people stand next to a dirt trail, looking across Exit Glacier and the Harding Icefield",
+    "credit": "NPS Photo/P. Calamari",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/873da43b-fc88-4027-bb01-c40599784277",
+    "caption": "Top of the Cliffs"
+  },
+  "intro": "Kenai Fjords is a land shaped by ice, where glaciers flow out of the Harding Icefield into valleys and down to the sea, and nearly 51 percent of the park is still covered by ice. Only one short road reaches the park, at Exit Glacier, where gentle trails and one demanding climb lead to the glacier and the icefield above it. The rest, a rock-bound coast of fjords, tidewater glaciers and whales, is seen from the water. All areas of the park are open to scattering of ashes without a permit.",
+  "homepage": "https://www.nps.gov/kefj/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/kefj/planyourvisit/maps.htm" },
+    { "label": "Exit Glacier trails map (PDF)", "url": "https://www.nps.gov/kefj/planyourvisit/upload/NPS-Kenai-Fjords-Exit-Glacier-Map-508.pdf" },
+    { "label": "Harding Icefield Trail map (PDF)", "url": "https://www.nps.gov/kefj/planyourvisit/upload/NPS-Kenai-Fjords-HIT-Map-508.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "All areas of the park are open to scattering of ashes without a permit.",
+  "scatterFacts": [
+    "Superintendent's Compendium (2025), 36 CFR 2.62(b): all areas are open to scattering of ashes without a permit.",
+    "The park's permits page repeats it: all areas of the park are open to scattering of ashes without a permit.",
+    "The park's pages do not address scattering from commercial tour boats; ask the park and your operator.",
+    "Park main line: 907-318-2040."
+  ],
+  "scatterLink": [
+    { "label": "Permits (NPS)", "url": "https://www.nps.gov/kefj/planyourvisit/permits.htm" },
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/KEFJ-Compendium-2025_508.pdf" }
+  ],
+  "beforeYouGo": "Kenai Fjords lies just outside Seward, 126 miles south of Anchorage by the Seward Highway; the Alaska Railroad also runs to Seward from May to September. The only road into the park, Herman Leirer Road (Exit Glacier Road), leaves the Seward Highway at mile 3.7 and runs 8.6 miles to the Exit Glacier parking lot. The area is open all year, but the road is usually closed to cars from late October to mid-May, so check current conditions. Summer parking is limited from about 10 am to 3:30 pm. The fjords and tidewater glaciers are reached by boat tours from Seward's small boat harbor. There is no cell service in the park, and pets are not allowed on trails.",
+  "destinations": [
+    {
+      "id": "glacier-view",
+      "name": "Glacier View",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/kenai-fjords/glacier-view.jpg",
+        "srcWebp": "/images/last-adventure/kenai-fjords/glacier-view.webp",
+        "alt": "Visitors on an overlook looking at a large glacier",
+        "credit": "NPS/Victoria Stauffenberg",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/7548a4e7-5587-4c5c-871c-5a8c623e284f"
+      },
+      "description": "A gentle path through cottonwood forest leads to one of Alaska's most approachable glaciers. At the Glacier View, Exit Glacier spills down from the Harding Icefield in a broad sweep of fractured blue and white ice, framed by the steep walls of the valley it carved. The loop is wheelchair accessible and the nature center lends a few wheelchairs, so grandparents and grandchildren can make the walk side by side. Stand together at the view, share a favorite story and let the glacier set the pace.",
+      "plan": {
+        "distance": "1 mi accessible loop (the park map gives 1.2 mi); Glacier View is 0.6 mi from the nature center",
+        "difficulty": "Easy",
+        "elevation": "Negligible: 393 ft at the nature center, 391 ft at Glacier View (park map)",
+        "accessibility": "Wheelchair accessible, partly paved and partly compacted gravel, with a slight descent on the return; a limited number of wheelchairs can be borrowed at the Exit Glacier Nature Center (NPS)",
+        "bestTime": "Summer; snow may make the trail inaccessible when the road opens, usually in May",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Seward Highway to mile 3.7, then Herman Leirer Road (Exit Glacier Road) 8.6 miles to the Exit Glacier parking lot. Turn left at the nature center onto the Glacier View Loop Trail.",
+        "points": [{ "label": "Parking", "lat": 60.18872, "lon": -149.62943 }]
+      },
+      "trail": {
+        "name": "Glacier View Loop Trail",
+        "steps": [
+          "From the nature center, turn left onto the Glacier View Loop Trail through the cottonwood forest.",
+          "Continue to the Glacier View, a panoramic vista of Exit Glacier.",
+          "Loop back to the parking area (clockwise or counterclockwise)."
+        ],
+        "notes": ["The canyon below the glacier is closed because of outburst flood risk; stay on designated trails."]
+      },
+      "final": [{ "label": "Glacier View", "lat": 60.18419, "lon": -149.63185 }],
+      "scatterNote": {
+        "text": "All areas of Kenai Fjords are open to scattering of ashes without a permit. Stay on designated trails: the Exit Glacier canyon is closed for safety."
+      },
+      "links": [
+        { "label": "Exit Glacier area", "url": "https://www.nps.gov/kefj/planyourvisit/exit-glacier-area.htm" },
+        { "label": "Accessibility", "url": "https://www.nps.gov/kefj/planyourvisit/accessibility.htm" }
+      ]
+    },
+    {
+      "id": "exit-glacier-overlook",
+      "name": "Exit Glacier Overlook",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/kenai-fjords/exit-glacier-overlook.jpg",
+        "srcWebp": "/images/last-adventure/kenai-fjords/exit-glacier-overlook.webp",
+        "alt": "View of valley glacier, with creek flowing from the base",
+        "credit": "NPS/Fiona Ritter-Davis",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2eb5da10-1dd8-b71c-0787-7c19a7986c66"
+      },
+      "description": "Beyond the Glacier View, a well-kept trail climbs to a higher perch where Exit Glacier fills the valley it carved, its crevassed ice pouring down from the Harding Icefield. The climb is short but steady, enough to feel like an accomplishment, and the view rewards everyone who makes it. In summer, a ranger-led walk can add the story of the glacier's retreat. Bring a warm layer, find a spot along the overlook, and take time to remember someone who loved wild, changing places.",
+      "plan": {
+        "distance": "0.6 mi beyond the Glacier View trail-side kiosk; Glacier View to Glacier Overlook loop 1.8 mi (park map)",
+        "difficulty": "Moderately strenuous (NPS)",
+        "elevation": "Overlook at 557 ft; nature center at 393 ft (park map)",
+        "accessibility": "Well-maintained trail; not described as accessible beyond the Glacier View Loop",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Seward Highway to mile 3.7, then Herman Leirer Road (Exit Glacier Road) 8.6 miles to the Exit Glacier parking lot.",
+        "points": [{ "label": "Parking", "lat": 60.18872, "lon": -149.62943 }]
+      },
+      "trail": {
+        "name": "Glacier View Loop Trail, then the Glacier Overlook Trail",
+        "steps": [
+          "From the nature center, turn left on the Glacier View Loop Trail.",
+          "At the trail-side kiosk, turn left onto the Glacier Overlook Trail and continue 0.6 mi to the overlook.",
+          "Return by the loop to the parking area."
+        ],
+        "notes": ["No restrooms on the trails (restrooms near the nature center). Bears and moose frequent the area."]
+      },
+      "final": [{ "label": "Exit Glacier Overlook", "lat": 60.18014, "lon": -149.64536 }],
+      "scatterNote": {
+        "text": "All areas of Kenai Fjords are open to scattering of ashes without a permit. Stay on designated trails: the Exit Glacier canyon below is closed for safety."
+      },
+      "links": [{ "label": "Exit Glacier area", "url": "https://www.nps.gov/kefj/planyourvisit/exit-glacier-area.htm" }]
+    },
+    {
+      "id": "harding-icefield-trail",
+      "name": "Harding Icefield Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/kenai-fjords/harding-icefield-trail.jpg",
+        "srcWebp": "/images/last-adventure/kenai-fjords/harding-icefield-trail.webp",
+        "alt": "Shapes and ridges formed on the white expanse of an ice field",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7edaa43-1dd8-b71c-0772-2f94f9aaeb4c"
+      },
+      "description": "This is a climb to the edge of an ice age. The trail rises from cottonwood and alder forest through heather meadows and well above tree line, to a horizon of ice and snow broken only by lonely peaks called nunataks. Black bears are seen almost every day among the salmonberry thickets. Even a short way up, the valley and Exit Glacier's terminus spread out below you, and for the hikers in your family, reaching the top together is a tribute your loved one would have cheered.",
+      "plan": {
+        "distance": "7.8 mi round trip from the trail register (end of trail 3.9 mi)",
+        "difficulty": "Strenuous",
+        "time": "At least 6 to 8 hours",
+        "elevation": "3,102 ft vertical rise (about 1,000 ft per mile)",
+        "accessibility": "Steep mountain trail with mud, snow and rockfall possible; not recommended for people with certain medical conditions",
+        "bestTime": "Mid to late summer: snow and avalanche risk can persist on the upper trail into July",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Seward Highway to mile 3.7, then Herman Leirer Road (Exit Glacier Road) 8.6 miles to the Exit Glacier parking lot. Follow the signs from the nature center to the Harding Icefield Trail register (see the trail map).",
+        "points": [{ "label": "Parking", "lat": 60.18872, "lon": -149.62943 }]
+      },
+      "trail": {
+        "name": "Harding Icefield Trail",
+        "steps": [
+          "From the trail register (426 ft), climb through cottonwood and alder to the bridge at 0.7 mi.",
+          "Continue to Marmot Meadows at 1.5 mi and the Top of Cliffs at 2.3 mi.",
+          "Climb above tree line to the emergency shelter at 3.7 mi and the end of the trail at 3.9 mi (3,527 ft).",
+          "Return the same way."
+        ],
+        "notes": [
+          "Check current trail conditions first; follow orange flags across snow if present. Carry at least 2 liters of water per person; there is no water or restroom on the trail.",
+          "Bear country: carrying bear spray is recommended. In winter and the shoulder seasons the trail is a mountaineering route.",
+          "The shelter at the top is for emergencies only."
+        ]
+      },
+      "final": [{ "label": "Emergency shelter near the end of the trail", "lat": 60.18004, "lon": -149.70614 }],
+      "scatterNote": {
+        "text": "All areas of Kenai Fjords are open to scattering of ashes without a permit. Alpine plants here are fragile: stay on the trail."
+      },
+      "links": [{ "label": "Harding Icefield Trail", "url": "https://www.nps.gov/kefj/planyourvisit/harding_icefield_trail.htm" }]
+    },
+    {
+      "id": "tidewater-glaciers-boat",
+      "name": "Tidewater Glaciers by Boat",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.jpg",
+        "srcWebp": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.webp",
+        "alt": "Profile of Aialik Glacier - 2010",
+        "credit": "NPS/Jim Pfeiffenberger",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5b16bf62-1dd8-b71c-07fb-a7fc498c5e21"
+      },
+      "description": "Much of Kenai Fjords can only be seen from the water. Full-day tours from Seward head out past sea stacks along a rock-bound coast to the park's tidewater glaciers, where you can watch and listen as ice meets the sea. Humpback whales feed in these waters from late spring through summer, and orcas travel the coast. Gather at the rail in warm layers, pass around a thermos, and watch the glacier together for a while; few families ever share a farewell in a setting like this.",
+      "plan": {
+        "distance": "Full-day boat tour from Seward; Holgate Arm is about 2 to 4 hours by boat from Seward (NPS)",
+        "difficulty": "Easy by boat",
+        "accessibility": "Most tour boats are wheelchair accessible, but not all; ask when booking (NPS)",
+        "bestTime": "Summer, when tours depart daily",
+        "scattering": "Not addressed for tour boats. Check with the park and your operator."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Drive the Seward Highway to Seward and its small boat harbor, where the Kenai Fjords National Park Visitor Center stands. Tours are run by private local companies (the park has no concessioners and does not recommend operators); reserve ahead and ask which tidewater glacier each tour visits.",
+        "points": [
+          { "label": "Kenai Fjords National Park Visitor Center", "lat": 60.11625, "lon": -149.43973 },
+          { "label": "Seward Small Boat Harbor", "lat": 60.11802, "lon": -149.43503 }
+        ]
+      },
+      "final": [{ "label": "Holgate Glacier face, Aialik Bay", "lat": 59.85456, "lon": -149.87036 }],
+      "scatterNote": {
+        "text": "The park opens all of its areas to scattering without a permit, but its pages do not address scattering from a commercial tour boat. Ask your operator and the park (907-318-2040) before you plan to scatter on the water."
+      },
+      "links": [
+        { "label": "Boat tours", "url": "https://www.nps.gov/kefj/planyourvisit/boattours.htm" },
+        { "label": "Holgate Public Use Cabin (Holgate Arm)", "url": "https://www.nps.gov/kefj/planyourvisit/holgate-public-use-cabin.htm" }
+      ]
+    }
+  ]
+}

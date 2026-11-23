@@ -1,0 +1,307 @@
+{
+  "id": "rocky-mountain",
+  "name": "Rocky Mountain National Park",
+  "short": "Rocky Mountain",
+  "state": "Colorado",
+  "states": [
+    "Colorado"
+  ],
+  "tagline": "Alpine lakes, wide mountain meadows and a road above the trees.",
+  "photo": {
+    "src": "/images/last-adventure/rocky-mountain/park.jpg",
+    "srcWebp": "/images/last-adventure/rocky-mountain/park.webp",
+    "alt": "fallen tree reflected on bear lake",
+    "credit": "NPS Photo/Aubry Andreas",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/287a97f7-a94b-41a2-ad50-b68f985f44b2",
+    "caption": "Bear Lake"
+  },
+  "intro": "Rocky Mountain National Park stretches from quiet montane meadows to alpine tundra above 12,000 feet, where Trail Ridge Road crosses the top of the range. Mountain lakes such as Bear Lake and Sprague Lake sit at the foot of the Continental Divide, a short walk from the car. The park also suggests its own scenic areas for scattering ashes, so a family can plan the farewell and the scattering on the same trip.",
+  "homepage": "https://www.nps.gov/romo/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/romo/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Access Guide (PDF)",
+      "url": "https://www.nps.gov/romo/planyourvisit/upload/Access-Guide-508-updated-July-7-2026.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a free permit, away from developed areas and at least 200 feet from any lake or stream.",
+  "scatterFacts": [
+    "Permit required; there is no charge. Email the Scattering Ashes Application to ROMO_fees_permits@nps.gov. Questions: Commercial Services Office, 970-586-1210.",
+    "Name one specific date and one specific location on the application (not a range of dates or a general area such as \"RMNP\").",
+    "No designated sites, but the location must be away from developed areas (parking lots, trailheads, campgrounds, picnic areas) and at least 200 feet (70 adult steps) from any water source such as a lake or stream.",
+    "Recommended locations: Hollowell Park, Moraine Park, Upper Beaver Meadows, Horseshoe Park, Hidden Valley, Endovalley, Mill Creek Basin, Harbison Meadow, Coyote Valley, Medicine Bow Curve and East Inlet Trail (200 feet from water). Other sites may be requested.",
+    "Spread ashes downwind; do not bury them or leave them in a pile. No markers, cairns, displays, signs or plaques.",
+    "The park suggests early morning, when there is more privacy and solitude."
+  ],
+  "scatterLink": [
+    {
+      "label": "Scattering ashes (NPS)",
+      "url": "https://www.nps.gov/romo/planyourvisit/scattering_ashes.htm"
+    },
+    {
+      "label": "Scattering Ashes Application (PDF)",
+      "url": "https://www.nps.gov/romo/planyourvisit/upload/ASHES-2024-OMB-Approved_Updated-9-3-26.pdf"
+    }
+  ],
+  "beforeYouGo": "The park is open 24 hours a day, all year, weather permitting. Trail Ridge Road (US 34) is a seasonal road, closed to through travel from about mid-October to late May. In 2026, timed entry reservations were required from May 22 to mid-October: Timed Entry from 9 a.m. to 2 p.m. for most of the park, and Timed Entry+ Bear Lake Road from 5 a.m. to 6 p.m. for the Bear Lake Road Corridor, which includes Moraine Park, Sprague Lake and Bear Lake. Check the park website for the current season's dates.",
+  "destinations": [
+    {
+      "id": "bear-lake",
+      "name": "Bear Lake",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/rocky-mountain/bear-lake.jpg",
+        "srcWebp": "/images/last-adventure/rocky-mountain/bear-lake.webp",
+        "alt": "Yellow aspens line the trail",
+        "credit": "NPS Photo/Karen Daugherty",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8d1f8a64-3b76-4af4-9c6e-ecba868f0e2b"
+      },
+      "description": "At the end of Bear Lake Road, a short marked path leads from the parking area to a small mountain lake with Hallett Peak rising above it. The park calls the loop around the lake its most popular hike, and it is easy to see why: every few steps the mountains frame the water from a new angle. Walk part of the way together or simply stand at the shore. In winter the lake freezes white, and the quiet is almost complete.",
+      "plan": {
+        "distance": "Short walk from parking to the lake; Bear Lake Loop 0.6 mi",
+        "difficulty": "Easy walk to the lakeshore; the loop is not rated by NPS",
+        "elevation": "Lake at 9,475 ft",
+        "accessibility": "Firm packed gravel and wooden bridges; the loop has 25 log steps and steep sections and is not designed for mobility devices (NPS Access Guide). 5 accessible and 2 van-accessible parking spaces.",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "US 36 to the Beaver Meadows Entrance, then Bear Lake Road to its end, about 9 miles. In summer, the Bear Lake shuttle runs from the Park & Ride.",
+        "points": [
+          {
+            "label": "Bear Lake Trailhead",
+            "lat": 40.31196,
+            "lon": -105.64595
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Lakeshore",
+          "lat": 40.3123,
+          "lon": -105.64685
+        }
+      ],
+      "scatterNote": {
+        "text": "Bear Lake is a developed trailhead beside water, so it cannot be the scattering spot. The park recommends Hollowell Park and Moraine Park, both on Bear Lake Road, for a scattering ceremony; the location must be away from developed areas and at least 200 feet from water. Free permit required.",
+        "points": [
+          {
+            "label": "Hollowell Park (area)",
+            "lat": 40.34233,
+            "lon": -105.60334
+          },
+          {
+            "label": "Moraine Park (area)",
+            "lat": 40.35373,
+            "lon": -105.59724
+          }
+        ]
+      },
+      "links": [
+        {
+          "label": "Bear Lake",
+          "url": "https://www.nps.gov/places/bear-lake.htm"
+        }
+      ]
+    },
+    {
+      "id": "sprague-lake",
+      "name": "Sprague Lake",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/rocky-mountain/sprague-lake.jpg",
+        "srcWebp": "/images/last-adventure/rocky-mountain/sprague-lake.webp",
+        "alt": "Sprague Lake with mountains reflected in the water",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2e983fc2-155d-451f-670c-dcdaed8e5625"
+      },
+      "description": "Sprague Lake is one of the gentlest places in the park to be together. A mostly flat path circles the water, with benches along the way, boardwalks, a small fishing pier and views across the lake to the Continental Divide. Moose are often seen here at dawn and dusk. Bring a picnic, find a bench facing the peaks, and let the slow walk around the shore become its own quiet tribute, at whatever pace your family needs.",
+      "plan": {
+        "distance": "Loop around the lake: 0.7 mi (NPS place page) or 0.8 mi (NPS Access Guide)",
+        "difficulty": "Easy",
+        "elevation": "Lake at 8,690 ft",
+        "accessibility": "Compacted gravel and boardwalks, mostly flat, average slope under 3% with some steeper short sections; 3-inch rises onto bridges and boardwalks (NPS Access Guide). 3 accessible and 1 van-accessible parking spaces.",
+        "bestTime": "Dawn and dusk for wildlife",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "US 36 to the Beaver Meadows Entrance, then Bear Lake Road about 6 miles to Sprague Lake.",
+        "points": [
+          {
+            "label": "Sprague Lake Trailhead",
+            "lat": 40.32045,
+            "lon": -105.60786
+          }
+        ]
+      },
+      "trail": {
+        "name": "Sprague Lake Trail (loop)",
+        "steps": [
+          "Start at the trailhead beside the parking area.",
+          "Going clockwise, the fishing pier is about 0.25 mile from the trailhead."
+        ],
+        "notes": [
+          "Large puddles after rain; snow and ice can remain on the trail through mid-June."
+        ]
+      },
+      "final": [
+        {
+          "label": "Lakeshore",
+          "lat": 40.32076,
+          "lon": -105.60683
+        }
+      ],
+      "scatterNote": {
+        "text": "Sprague Lake is a developed area beside water, so it cannot be the scattering spot. The park recommends Hollowell Park and Moraine Park, both on Bear Lake Road, for a scattering ceremony; the location must be away from developed areas and at least 200 feet from water. Free permit required.",
+        "points": [
+          {
+            "label": "Hollowell Park (area)",
+            "lat": 40.34233,
+            "lon": -105.60334
+          },
+          {
+            "label": "Moraine Park (area)",
+            "lat": 40.35373,
+            "lon": -105.59724
+          }
+        ]
+      },
+      "links": [
+        {
+          "label": "Sprague Lake",
+          "url": "https://www.nps.gov/places/sprague-lake.htm"
+        }
+      ]
+    },
+    {
+      "id": "many-parks-curve",
+      "name": "Many Parks Curve",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": null,
+      "description": "On the climb up Trail Ridge Road, Many Parks Curve opens onto expansive views of the park and the lands around it, with forested valleys and ridges spreading toward the horizon. A boardwalk runs along the overlook, so the whole family can walk out together and take it all in. It is a good place to pause on the way up the mountain, pass around a favorite photograph, and point out the places your loved one walked or always hoped to see.",
+      "plan": {
+        "distance": "Boardwalk 500 ft; 76 ft from the lower lot or 188 ft from the upper lot",
+        "difficulty": "Easy",
+        "elevation": "9,625 ft",
+        "accessibility": "Easiest from the lower lot (eastbound only), with 1 accessible space and a route under 6% slope; the boardwalk slopes 6 to 9% with no flat resting areas. The upper lot path is very steep (NPS Access Guide).",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Trail Ridge Road (US 34), 1.2 miles west of Hidden Valley. The lower lot can only be reached traveling east, the upper lot traveling west.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 40.38781,
+            "lon": -105.63277
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 40.38728,
+          "lon": -105.63127
+        }
+      ],
+      "scatterNote": {
+        "text": "The overlook is a developed area. Hidden Valley, 1.2 miles east on Trail Ridge Road, and Horseshoe Park are among the park's recommended scattering areas; the location must be away from developed areas and at least 200 feet from water. Free permit required.",
+        "points": [
+          {
+            "label": "Hidden Valley (area)",
+            "lat": 40.39553,
+            "lon": -105.65204
+          },
+          {
+            "label": "West Horseshoe Park pullout",
+            "lat": 40.40126,
+            "lon": -105.62687
+          }
+        ]
+      },
+      "links": [
+        {
+          "label": "Access Guide (PDF)",
+          "url": "https://www.nps.gov/romo/planyourvisit/upload/Access-Guide-508-updated-July-7-2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "tundra-communities-trail",
+      "name": "Tundra Communities Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/rocky-mountain/tundra-communities-trail.jpg",
+        "srcWebp": "/images/last-adventure/rocky-mountain/tundra-communities-trail.webp",
+        "alt": "People walking along a paved tundra trail in the summer with mountains in the background",
+        "credit": "Rachel Williams, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/74fbed32-6ee8-4bba-b997-4e8a424cfa4b"
+      },
+      "description": "Rock Cut is one of the highest overlooks in the park, at more than 12,000 feet, with views south into Forest Canyon and across to the mountains. From here a paved trail climbs onto the alpine tundra, a world of low plants, open sky and weathered rock. The air is thin, so go slowly and stop often. Walk until you find a place where the family can stand together near the top of the world and remember someone who loved high places.",
+      "plan": {
+        "distance": "0.6 mi (NPS Access Guide)",
+        "difficulty": "Not rated by NPS; paved but very steep in places, not an easy walk at 12,000 ft",
+        "elevation": "Rock Cut at 12,110 ft",
+        "accessibility": "Asphalt, average slope 7.6% with a maximum of 26.2%; the park notes the trail is very steep and that people with mobility devices or limited mobility may need assistance. The right-hand entrance from the north lot is sloped; the left has stone steps (NPS Access Guide).",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Trail Ridge Road (US 34) to Rock Cut, 2 miles west of Forest Canyon Overlook. Accessible parking is only in the north lot, by the restrooms. Trail Ridge Road is closed to through travel from about mid-October to late May.",
+        "points": [
+          {
+            "label": "Rock Cut parking (north side)",
+            "lat": 40.41217,
+            "lon": -105.73304
+          }
+        ]
+      },
+      "trail": {
+        "name": "Tundra Communities Trail",
+        "steps": [
+          "Start from the parking lot on the north side of the road; the right-hand entrance is a sloped route, the left-hand one has stone steps.",
+          "Follow the paved trail up onto the tundra and return the same way."
+        ],
+        "notes": [
+          "Stay on the trail: tundra plants are fragile. Watch for lightning and fast-changing weather at this elevation."
+        ]
+      },
+      "final": [
+        {
+          "label": "Along the trail",
+          "lat": 40.41291,
+          "lon": -105.72894
+        }
+      ],
+      "scatterNote": {
+        "text": "The trail and Rock Cut are developed areas. Medicine Bow Curve, farther west on Trail Ridge Road, is one of the park's recommended scattering areas; the location must be away from developed areas and at least 200 feet from water. Free permit required.",
+        "points": [
+          {
+            "label": "Medicine Bow Curve",
+            "lat": 40.44723,
+            "lon": -105.75421
+          }
+        ]
+      },
+      "links": [
+        {
+          "label": "Access Guide (PDF)",
+          "url": "https://www.nps.gov/romo/planyourvisit/upload/Access-Guide-508-updated-July-7-2026.pdf"
+        }
+      ]
+    }
+  ]
+}

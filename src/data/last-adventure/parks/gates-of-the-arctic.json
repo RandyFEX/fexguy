@@ -1,0 +1,107 @@
+{
+  "id": "gates-of-the-arctic",
+  "name": "Gates of the Arctic National Park and Preserve",
+  "short": "Gates of the Arctic",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "A trail-less Arctic wilderness of granite spires and wild rivers.",
+  "photo": {
+    "src": "/images/last-adventure/gates-of-the-arctic/park.jpg",
+    "srcWebp": "/images/last-adventure/gates-of-the-arctic/park.webp",
+    "alt": "Pink light shines through a valley in the Brooks Range",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e2ab9da4-1dd8-b71b-0b4a-c5de85bd99d4",
+    "caption": "Sunset in the Brooks Range"
+  },
+  "intro": "Gates of the Arctic covers more than 8 million acres of the Brooks Range, larger than the state of Maryland, with no roads, no trails and six Wild and Scenic Rivers. Congress set it aside as trail-less wilderness so every visitor finds their own way. Families who are not equipped for an expedition can still come: local air taxis offer flightseeing trips, day trips and overnight camp-outs at remote lakes and rivers. The park's rules open all areas to scattering ashes without a permit.",
+  "homepage": "https://www.nps.gov/gaar/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/gaar/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit: the Superintendent's Compendium opens all areas of the park and preserve to scattering of ashes.",
+  "scatterFacts": [
+    "Superintendent's Compendium (2026), 36 CFR 2.62(b): \"All areas are open to scattering of ashes without a permit.\"",
+    "No permit and no fee are required for the scattering itself.",
+    "Installing a monument or other commemorative installation requires a permit (36 CFR 2.62(a)).",
+    "Group size limit: 10 people. Respect subsistence camps, traps and private and Native lands.",
+    "Questions: 907-459-3730."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/2026-GAAR-Superintendent-s-Compendium-508.pdf" }
+  ],
+  "beforeYouGo": "There are no roads or trails into the park; visitors fly or hike in, starting from Fairbanks. Small airlines fly daily from Fairbanks to Bettles and Anaktuvuk Pass, with flag stops at Coldfoot, which can also be reached by driving 280 miles up the mostly unpaved Dalton Highway. Most visitors then take an air taxi with floats or tundra tires. The Bettles Ranger Station is open 8 am to 5 pm daily from July 1 to September 25, and the Arctic Interagency Visitor Center at mile 175 of the Dalton Highway is open daily in summer. Bear-resistant food containers are required, cell phones do not work, and weather often delays flights.",
+  "destinations": [
+    {
+      "id": "the-gates",
+      "name": "The Gates of the Arctic: Frigid Crags and Boreal Mountain",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/gates-of-the-arctic/the-gates.jpg",
+        "srcWebp": "/images/last-adventure/gates-of-the-arctic/the-gates.webp",
+        "alt": "Aerial view of the Gates of the Arctic on the North Fork of the Koyukuk Wild and Scenic River",
+        "credit": "NPS/Carl Johnson",
+        "sourceUrl": "https://www.nps.gov/places/gates-of-the-arctic.htm"
+      },
+      "description": "Two mountains face each other across the North Fork of the Koyukuk River, and the park takes its name from them. Bob Marshall, a forester who came looking for blank spaces on the map in 1929, called them the Gates of the Arctic and wrote of the wild sublimity he found here. Whether you see them from the window of a small plane or from a gravel bar on the river below, passing between them together feels like stepping through a doorway.",
+      "plan": {
+        "distance": "Fly-in or river trip; no trails",
+        "difficulty": "Strenuous on the ground (trail-less wilderness, river crossings); flightseeing requires no hiking",
+        "accessibility": "No trails or facilities in the park; access by air taxi or as a river trip",
+        "scattering": "Allowed without a permit (park-wide rule)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach the park. Book an air taxi from Bettles, Coldfoot or Fairbanks for a flightseeing trip or a drop-off on the North Fork of the Koyukuk, and confirm with the operator where it can land and pick you up.",
+        "points": []
+      },
+      "final": [
+        { "label": "Frigid Crags", "lat": 67.82563, "lon": -150.94144 },
+        { "label": "Boreal Mountain", "lat": 67.82744, "lon": -150.78297 }
+      ],
+      "links": [
+        { "label": "The Gates of the Arctic", "url": "https://www.nps.gov/places/gates-of-the-arctic.htm" },
+        { "label": "Directions", "url": "https://www.nps.gov/gaar/planyourvisit/directions.htm" }
+      ]
+    },
+    {
+      "id": "arrigetch-peaks",
+      "name": "Arrigetch Peaks",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/gates-of-the-arctic/arrigetch-peaks.jpg",
+        "srcWebp": "/images/last-adventure/gates-of-the-arctic/arrigetch-peaks.webp",
+        "alt": "Arrigetch Creek flowing out of the Arrigetch Peaks in the Brooks Range of Gates of the Arctic",
+        "credit": "NPS/Eric Tidwell",
+        "sourceUrl": "https://www.nps.gov/places/arrigetch-peaks.htm"
+      },
+      "description": "Granite pinnacles carved by glacial ice rise thousands of feet above valleys of tundra and boreal forest, long a landmark to the Nunamiut people of northwest Alaska. Arrigetch Creek runs out from beneath them through a valley that few people ever see. For the backpackers in your family, walking up this valley and sitting quietly beneath these walls is a tribute that asks everything of you and gives it back.",
+      "plan": {
+        "distance": "Fly-in, then trail-less backcountry travel; distances not published",
+        "difficulty": "Strenuous: no trails, tussocks, boggy ground and river crossings",
+        "accessibility": "Backcountry only; experienced hikers consider six miles a good day's travel here",
+        "scattering": "Allowed without a permit (park-wide rule)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach the park. Most visitors fly in by air taxi from Bettles, Coldfoot or Fairbanks; air taxi operators decide where they can drop off and pick up, so plan your route with them.",
+        "points": []
+      },
+      "trail": {
+        "name": "No trail (route of your own choosing)",
+        "steps": [
+          "Plan your route on topographic maps with your air taxi operator; the park does not provide route planning.",
+          "File a Backcountry Visitor Registration and leave it with a dependable person.",
+          "Travel on game trails or durable surfaces, and walk side by side rather than single file to avoid creating paths."
+        ],
+        "notes": [
+          "River crossings are among the most dangerous activities in the park. Search and rescue is not readily available.",
+          "Group size limit is 10. Bear-resistant food containers are required."
+        ]
+      },
+      "final": [{ "label": "Arrigetch Peaks", "lat": 67.4288, "lon": -154.21397 }],
+      "links": [
+        { "label": "Arrigetch Peaks", "url": "https://www.nps.gov/places/arrigetch-peaks.htm" },
+        { "label": "Backpacking and hiking", "url": "https://www.nps.gov/gaar/planyourvisit/backpackingandhiking.htm" }
+      ]
+    }
+  ]
+}

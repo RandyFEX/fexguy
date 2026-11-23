@@ -1,0 +1,214 @@
+{
+  "id": "joshua-tree",
+  "name": "Joshua Tree National Park",
+  "short": "Joshua Tree",
+  "state": "California",
+  "states": ["California"],
+  "tagline": "Twisted Joshua trees, granite boulders and two deserts meeting.",
+  "photo": {
+    "src": "/images/last-adventure/joshua-tree/park.jpg",
+    "srcWebp": "/images/last-adventure/joshua-tree/park.webp",
+    "alt": "A rock that looks like half a heart with stars overhead and the beginning of a sunrise at the horizon",
+    "credit": "NPS/Hannah Schwalbe",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/296e994e-3b59-4279-a25e-44a6bdfaca85",
+    "caption": "Heartbreak Rock at Dawn"
+  },
+  "intro": "Joshua Tree is where the Mojave and Colorado deserts meet, a landscape of spiky Joshua trees, rounded granite boulders and open sky. A final adventure here can be a quiet sunset at a mountain overlook, a gentle loop through a hidden valley, or a climb to a summit that looks out across the whole park. Scattering is allowed with a permit, in one area the park assigns.",
+  "homepage": "https://www.nps.gov/jotr/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/jotr/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a Special Use Permit, in the one area the park assigns and names on the permit.",
+  "scatterFacts": [
+    "Special Use Permit required; $120.00 fee. Email the application to jotr_permit_office@nps.gov at least two weeks (10 business days) ahead. Phone: (760) 367-5551.",
+    "The park assigns the location, names it on the permit and provides a map. You are given a two-hour window, and only one activity is permitted at a time.",
+    "Not in or near buildings, parking lots or campgrounds. The area stays open to other visitors.",
+    "Ashes fully refined and completely dispersed; not piled or buried. No rocks or plants moved.",
+    "No monument, plaque, urn, photo or other item may be left, and no potted plants, dried flowers or plants with seeds.",
+    "Permits are not issued on federal holidays or NPS free entrance days. Carry the signed permit during the scattering."
+  ],
+  "scatterLink": [
+    { "label": "Scattering ashes (NPS)", "url": "https://www.nps.gov/jotr/planyourvisit/scattering-ashes.htm" },
+    { "label": "Special Use Permit application (DOCX)", "url": "https://www.nps.gov/jotr/planyourvisit/upload/NPS-10-930-Application-for-SUP-2024-OMB-Updated-3.docx" }
+  ],
+  "beforeYouGo": "Approach from Interstate 10 or California Highway 62. The West Entrance is five miles south of Highway 62 at Joshua Tree Village, the North Entrance is in Twentynine Palms, and the South Entrance near Cottonwood Spring is on Interstate 10, 25 miles east of Indio. Do not rely on GPS inside the park. Summers are over 100°F during the day; plan to avoid hiking between 10 am and 5 pm in summer. There is no cell service on most trails.",
+  "destinations": [
+    {
+      "id": "keys-view",
+      "name": "Keys View",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/keys-view.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/keys-view.webp",
+        "alt": "View from Keys View toward Palm Springs, the San Andreas Fault and the Salton Sea",
+        "credit": "NPS Photo by Robb Hannawacker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d451976f-b457-7381-367f-63daa9958a4c"
+      },
+      "description": "Perched in the Little San Bernardino Mountains, Keys View looks out as the mountains fall away into the Coachella Valley below. The park's paved loop points out Mount San Jacinto, Mount San Gorgonio, the San Andreas Fault and the Salton Sea, and on a very clear day you can see Signal Mountain in Mexico, 90 miles south. Stand at the rail together as the light changes over the valley, and let the long view carry the conversation.",
+      "plan": {
+        "distance": "Upper Keys View: 0.25 mi paved loop; Lower Keys View: 0.1 mi paved path",
+        "difficulty": "Easy",
+        "time": "30 minutes",
+        "elevation": "25 ft on the upper loop; minimal at Lower Keys View",
+        "accessibility": "The upper path is steep; the park recommends Lower Keys View for visitors with mobility concerns. Van-accessible parking at both lots (NPS)",
+        "scattering": "Only in the area the park assigns on your permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Park Boulevard to the Cap Rock junction, then south on Keys View Road to its end.",
+        "points": [
+          { "label": "Upper Keys View parking", "lat": 33.92709, "lon": -116.18626 },
+          { "label": "Lower Keys View parking", "lat": 33.92655, "lon": -116.1811 }
+        ]
+      },
+      "final": [
+        { "label": "Upper Keys View", "lat": 33.92658, "lon": -116.18764 },
+        { "label": "Lower Keys View (accessible)", "lat": 33.92607, "lon": -116.18131 }
+      ],
+      "links": [{ "label": "Keys View", "url": "https://www.nps.gov/places/keys-view.htm" }]
+    },
+    {
+      "id": "cholla-cactus-garden",
+      "name": "Cholla Cactus Garden",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/cholla-cactus-garden.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/cholla-cactus-garden.webp",
+        "alt": "Pink clouds over dark mountains and cholla cactus",
+        "credit": "NPS/Hannah Schwalbe",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a13c7e4a-9459-46ed-89b6-624586669df2"
+      },
+      "description": "Thousands of teddy bear cholla grow shoulder to shoulder here, so dense they seem planted, though every one is wild. The path meanders through them on the edge of the Pinto Basin, with views across the basin to the surrounding mountains, and dawn and dusk are lovely times to come. The path is short and gentle, so everyone can walk it at their own pace, pause together at the far end of the loop and watch the evening settle over the desert.",
+      "plan": {
+        "distance": "0.25 mi loop",
+        "difficulty": "Easy",
+        "time": "15 to 30 minutes",
+        "elevation": "10 ft",
+        "accessibility": "Dirt trail, mostly flat with occasional mild inclines (NPS). No shade",
+        "bestTime": "Dawn or dusk; in summer start before 10 am",
+        "scattering": "Only in the area the park assigns on your permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Pinto Basin Road, 20 miles north of the Cottonwood Visitor Center, to the Cholla Cactus Garden parking area.",
+        "points": [{ "label": "Parking", "lat": 33.92526, "lon": -115.92874 }]
+      },
+      "trail": {
+        "name": "Cholla Cactus Garden Nature Trail",
+        "steps": ["Follow the loop through the cholla and back to the parking area."],
+        "notes": ["Wear closed shoes, stay on the trail and keep clear of the cactus. No cell service."]
+      },
+      "final": [{ "label": "Cactus garden", "lat": 33.92484, "lon": -115.92935 }],
+      "links": [{ "label": "Cholla Cactus Garden", "url": "https://www.nps.gov/thingstodo/hike-cholla-cactus-garden.htm" }]
+    },
+    {
+      "id": "hidden-valley",
+      "name": "Hidden Valley",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/hidden-valley.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/hidden-valley.webp",
+        "alt": "a hiker stands atop rocks, looking out over a desert valley",
+        "credit": "NPS/Hannah Schwalbe",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7c8d626-1dd8-b71b-0b64-2a9c5a31c27c"
+      },
+      "description": "A ring of giant boulders closes around this small valley, which local legend says once hid cattle rustlers. The loop winds between rock walls, Joshua trees and desert plants, with signs along the way about the land and its wildlife. It feels secluded, almost private, once you are inside. Walk it slowly, stop where the rocks offer a little shade, and trade the stories that belong to the person you came to remember.",
+      "plan": {
+        "distance": "1 mi loop",
+        "difficulty": "Easy",
+        "time": "30 to 60 minutes",
+        "elevation": "100 ft",
+        "accessibility": "Packed dirt, soft sand, gravel and boulders, some with steps; trail about 1.5 to 3 ft wide; average grade 4%, maximum 19% (NPS)",
+        "scattering": "Only in the area the park assigns on your permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Park Boulevard to the Hidden Valley Picnic Area in the Intersection Rock area.",
+        "points": [{ "label": "Hidden Valley Trailhead", "lat": 34.01239, "lon": -116.16805 }]
+      },
+      "trail": {
+        "name": "Hidden Valley Trail",
+        "steps": ["Start near the picnic area and enter the valley between the rocks.", "Follow the loop around the valley and back to the start."],
+        "notes": ["Little shade and no cell service. In summer carry at least one liter of water per person."]
+      },
+      "final": [{ "label": "Loop trail in the valley", "lat": 34.01549, "lon": -116.17111 }],
+      "links": [{ "label": "Hidden Valley Trail", "url": "https://www.nps.gov/thingstodo/hike-hidden-valley-trail.htm" }]
+    },
+    {
+      "id": "barker-dam",
+      "name": "Barker Dam",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/barker-dam.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/barker-dam.webp",
+        "alt": "Three people with bouldering crash pads on their backs walking along a trail with Joshua trees as the sun sets",
+        "credit": "NPS/Brad Sutton",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3aae4068-d491-96fc-70be-63b2009f2a25"
+      },
+      "description": "This easy loop wanders between towering monzogranite boulders to a small dam built by early cattle ranchers. After rain, water pools behind it and mirrors the rocks; at other times you may spot bighorn sheep or rock climbers on the walls. Farther along, a rock art site tells of people who lived here long before. Pause on the flat boulder above the dam and share a few stories about the generations that shaped your own family.",
+      "plan": {
+        "distance": "1.1 mi loop",
+        "difficulty": "Easy",
+        "time": "30 to 45 minutes",
+        "elevation": "50 ft",
+        "accessibility": "Not wheelchair accessible; strollers prohibited. Compact dirt, granite steps, a tight squeeze between boulders and a sandy wash (NPS)",
+        "scattering": "Only in the area the park assigns on your permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Park Boulevard to the Intersection Rock area, then turn at the sign for Hidden Valley Campground, Keys Ranch and Barker Dam and follow the road about 1.5 miles to its end. Parking is scarce from September to May; Echo T lot to the west is the alternative.",
+        "points": [
+          { "label": "Barker Dam parking", "lat": 34.02491, "lon": -116.14204 },
+          { "label": "Echo T parking", "lat": 34.02277, "lon": -116.15634 }
+        ]
+      },
+      "trail": {
+        "name": "Barker Dam Trail",
+        "steps": [
+          "Walk the flat dirt path into the boulders.",
+          "Climb the granite steps to the viewpoint of the dam on a flat boulder.",
+          "Squeeze between the boulders, descend more steps into a sandy wash and pass the rock art site back to the start."
+        ],
+        "notes": [
+          "View the rock art from the signs; do not touch or climb on the rock.",
+          "From Echo T parking, the connector trail adds about 0.6 mi (1.7 mi total)."
+        ]
+      },
+      "final": [{ "label": "Barker Dam", "lat": 34.03092, "lon": -116.14636 }],
+      "links": [{ "label": "Barker Dam Trail", "url": "https://www.nps.gov/jotr/planyourvisit/barker-dam-trail.htm" }]
+    },
+    {
+      "id": "ryan-mountain",
+      "name": "Ryan Mountain",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/ryan-mountain.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/ryan-mountain.webp",
+        "alt": "A person hiking a dirt trail on a mountain with mountains in the distance",
+        "credit": "NPS / Alison Taggart-Barone",
+        "sourceUrl": "https://www.nps.gov/thingstodo/hike-ryan-mountain.htm"
+      },
+      "description": "The trail starts out level, then climbs steadily up stone steps toward the sky. At the summit of Ryan Mountain, sweeping panoramic views open across the heart of the park in every direction. It is one of the most popular hikes in the park, and the effort is part of the tribute. Rest together at the top, catch your breath and take in a view your loved one would have savored.",
+      "plan": {
+        "distance": "3 mi round trip",
+        "difficulty": "Difficult (listed by the park among its strenuous hikes)",
+        "time": "1.5 to 3 hours (NPS pages differ)",
+        "elevation": "1,050 ft",
+        "accessibility": "Rough dirt and rock trail with many steps and steep sections; very little shade",
+        "bestTime": "Winter, spring or fall; not in summer or whenever it is hot",
+        "scattering": "Only in the area the park assigns on your permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Park Boulevard to the Ryan Mountain parking area between Ryan Campground and Sheep Pass Campground. Sheep Pass has no parking for non-campers.",
+        "points": [{ "label": "Ryan Mountain Trailhead", "lat": 34.00252, "lon": -116.13592 }]
+      },
+      "trail": {
+        "name": "Ryan Mountain Trail",
+        "steps": ["The first section is relatively flat.", "The trail then climbs steadily up the mountain to the summit; return the same way."],
+        "notes": ["Do not attempt in the heat. Every year visitors are rescued on the park's strenuous hikes."]
+      },
+      "final": [{ "label": "Summit", "lat": 33.98612, "lon": -116.13473 }],
+      "links": [{ "label": "Ryan Mountain hike", "url": "https://www.nps.gov/thingstodo/hike-ryan-mountain.htm" }]
+    }
+  ]
+}

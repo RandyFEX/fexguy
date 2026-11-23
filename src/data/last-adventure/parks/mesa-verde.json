@@ -1,0 +1,251 @@
+{
+  "id": "mesa-verde",
+  "name": "Mesa Verde National Park",
+  "short": "Mesa Verde",
+  "state": "Colorado",
+  "states": [
+    "Colorado"
+  ],
+  "tagline": "Ancestral Pueblo cliff dwellings tucked into sandstone alcoves.",
+  "photo": {
+    "src": "/images/last-adventure/mesa-verde/park.jpg",
+    "srcWebp": "/images/last-adventure/mesa-verde/park.webp",
+    "alt": "Red rock canyon and mesas covered in green vegetation",
+    "credit": "NPS/Sandy Groves",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6018ffcc-c7a5-4503-9aae-76db303cbd36",
+    "caption": "Navajo Canyon"
+  },
+  "intro": "For more than 700 years, Ancestral Pueblo people made their homes on these mesas and in the alcoves of their canyon walls, and Mesa Verde remains an ancestral home sacred to 27 tribes. Paved overlooks along the Mesa Top Loop Road look across the canyons to cliff dwellings such as Cliff Palace and Square Tower House. Out of respect for that heritage, scattering ashes is not allowed anywhere in the park, but it is a deeply meaningful place to gather and remember.",
+  "homepage": "https://www.nps.gov/meve/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/meve/planyourvisit/maps.htm"
+    }
+  ],
+  "scatterAllowed": "Prohibited",
+  "scatterSummary": "Scattering ashes from human cremation is prohibited throughout Mesa Verde National Park.",
+  "scatterFacts": [
+    "Superintendent's Compendium (January 2026), 36 CFR 2.62(b): scattering ashes from human cremation is prohibited.",
+    "The park's reason: Mesa Verde is a culturally sensitive area that continues to be used by affiliated Tribes, and the prohibition protects the integrity of the cultural landscape and respects the wishes of the affiliated tribes."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium 2026 (PDF)",
+      "url": "https://www.nps.gov/meve/learn/management/upload/MEVE_Superintendents_Compendium_01-09-26_508.pdf"
+    },
+    {
+      "label": "Superintendent's Compendium (NPS)",
+      "url": "https://www.nps.gov/meve/learn/management/superintendents-compendium.htm"
+    }
+  ],
+  "planNote": {
+    "heading": "A Farewell Without Scattering",
+    "text": "Ash scattering is not allowed anywhere in Mesa Verde National Park. If you plan to bring your loved one's cremated remains for a visit, keep them in a secure, non-breakable container, confirm your plans with the park first, and take the remains with you when you leave. Arrange any scattering separately at a location where it is legally permitted."
+  },
+  "beforeYouGo": "The park entrance is on Highway 160 between Mancos and Cortez, about 35 miles west of Durango. The main park road is open all year, 24 hours a day (the park is closed Thanksgiving, Christmas and New Year's Day), but the first cliff dwelling view is 21 miles, about 45 minutes, up a steep, narrow and winding road. The Mesa Top Loop Road is open daily from 8 am to sunset. Elevations run from 7,000 to 8,500 feet, snow is possible in winter and spring, and many facilities, including Morefield Campground, close in winter. Hiking is allowed only on designated trails.",
+  "destinations": [
+    {
+      "id": "square-tower-house",
+      "name": "Square Tower House Overlook",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/mesa-verde/square-tower-house.jpg",
+        "srcWebp": "/images/last-adventure/mesa-verde/square-tower-house.webp",
+        "alt": "Square Tower House cliff dwelling in its alcove",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/ff61b098-155d-451f-679b-c769a97c1679"
+      },
+      "description": "From a short paved path on the Mesa Top Loop, the family looks across the canyon to Square Tower House, where a four-story, 27-foot structure stands beneath a sandstone overhang. The park notes that 90 percent of it is original, and from the overlook you can pick out roof beams and plastered walls left by the people who built here centuries ago. Standing among so many generations of family life is a gentle way to reflect on your own.",
+      "plan": {
+        "distance": "Short paved trail from parking; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS)",
+        "bestTime": "Mesa Top Loop Road open 8 am to sunset",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Highway 160 to the park entrance, then the main park road about 20 miles to Chapin Mesa and the Mesa Top Loop Road.",
+        "points": [
+          {
+            "label": "Mesa Top Loop parking",
+            "lat": 37.16884,
+            "lon": -108.48954
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 37.16572,
+          "lon": -108.49159
+        }
+      ],
+      "links": [
+        {
+          "label": "Square Tower House",
+          "url": "https://www.nps.gov/places/square-tower-house.htm"
+        },
+        {
+          "label": "Mesa Top Loop Road",
+          "url": "https://www.nps.gov/meve/planyourvisit/self_guided_activities.htm"
+        }
+      ]
+    },
+    {
+      "id": "sun-temple",
+      "name": "Sun Temple and Cliff Palace View",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/mesa-verde/sun-temple.jpg",
+        "srcWebp": "/images/last-adventure/mesa-verde/sun-temple.webp",
+        "alt": "View of Cliff Palace from across the canyon",
+        "credit": "NPS/Sandy Groves",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/99bbda10-1dd8-b71b-0b66-cb99b6ce5035"
+      },
+      "description": "At Sun Temple, a D-shaped building with four-foot-thick walls that the park calls the only one of its kind in the Pueblo world, the family can walk around the ancient masonry and then turn toward the canyon. From the accessible paved overlook here, Cliff Palace comes into view in its alcove across the way. Some experts think the walls may have marked the winter solstice sunset. It is a place to think about time, about light, and about the people we carry with us.",
+      "plan": {
+        "distance": "Short paved walk from parking; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Accessible paved overlook with a view of Cliff Palace; accessible restroom (NPS)",
+        "bestTime": "Mesa Top Loop Road open 8 am to sunset",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Highway 160 to the park entrance, then the main park road about 20 miles to Chapin Mesa and the Sun Temple stop on the Mesa Top Loop Road.",
+        "points": [
+          {
+            "label": "Sun Temple parking",
+            "lat": 37.16495,
+            "lon": -108.47583
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Sun Temple",
+          "lat": 37.16468,
+          "lon": -108.47567
+        },
+        {
+          "label": "Cliff Palace Overlook",
+          "lat": 37.16523,
+          "lon": -108.47551
+        }
+      ],
+      "links": [
+        {
+          "label": "Sun Temple",
+          "url": "https://www.nps.gov/places/sun-temple.htm"
+        },
+        {
+          "label": "Mesa Top Loop Road",
+          "url": "https://www.nps.gov/meve/planyourvisit/self_guided_activities.htm"
+        }
+      ]
+    },
+    {
+      "id": "park-point",
+      "name": "Park Point",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/mesa-verde/park-point.jpg",
+        "srcWebp": "/images/last-adventure/mesa-verde/park-point.webp",
+        "alt": "View of green and tan landscape, eroding hills in the foreground and valley covered in white, fluffy clouds in the background",
+        "credit": "NPS/Jacob W. Frank",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/50d46cfb-0e82-4845-a7b7-96d888fa834a"
+      },
+      "description": "Park Point is the highest place in Mesa Verde, 8,572 feet above sea level, crowned by a historic fire lookout. A short but steep paved path climbs from the parking area to two viewpoints with 360-degree views across the Four Corners region, and Ute Mountain rises 17 miles to the west. Take it slowly, rest at the top, and let everyone find a direction to look. Picnic tables by the parking area make it easy to linger together afterward.",
+      "plan": {
+        "distance": "Short walk from parking; distance not published",
+        "difficulty": "Not rated by NPS; short, but not an easy climb: very steep paved path",
+        "elevation": "Summit at 8,572 ft",
+        "accessibility": "Accessible parking, restrooms and picnic tables; the paved path to the top is very steep (NPS)",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Highway 160 to the park entrance, then the main park road to the Park Point turnoff near milepost ten, on the right.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 37.27929,
+            "lon": -108.46174
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Fire lookout",
+          "lat": 37.28063,
+          "lon": -108.46148
+        }
+      ],
+      "links": [
+        {
+          "label": "Park viewpoints",
+          "url": "https://www.nps.gov/meve/planyourvisit/park-viewpoints.htm"
+        }
+      ]
+    },
+    {
+      "id": "point-lookout",
+      "name": "Point Lookout",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "Point Lookout is the great rock formation that towers above the park entrance, the first landmark every visitor sees. The trail climbs steep switchbacks out of Morefield Canyon to its top, where the views open to the San Juan and La Plata Mountains and down over the Mancos and Montezuma Valleys. It is a fine morning's climb for a family that loves to walk. At the top, gather close, look out over the valleys and share the memories that brought you here.",
+      "plan": {
+        "distance": "2.2 mi round trip",
+        "difficulty": "Moderate",
+        "elevation": "400 ft",
+        "accessibility": "Steep switchbacks on a natural surface; not wheelchair accessible",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Highway 160 to the park entrance, then the main park road to the Morefield Campground turnoff. Morefield Campground closes in winter; the park describes winter access from the Morefield Campground Store parking.",
+        "points": [
+          {
+            "label": "Point Lookout Trailhead",
+            "lat": 37.30711,
+            "lon": -108.42011
+          }
+        ]
+      },
+      "trail": {
+        "name": "Point Lookout Trail",
+        "steps": [
+          "Start at the trailhead at Morefield Campground.",
+          "Climb the switchbacks out of Morefield Canyon to the top of Point Lookout, then return the same way."
+        ],
+        "notes": [
+          "The park elevation is over 7,000 feet, where it is windy and dry. Drink plenty of water and acclimate before hiking.",
+          "Hiking is allowed only on designated trails."
+        ]
+      },
+      "final": [
+        {
+          "label": "Viewpoint",
+          "lat": 37.3166,
+          "lon": -108.41949
+        }
+      ],
+      "links": [
+        {
+          "label": "Hiking Mesa Verde",
+          "url": "https://www.nps.gov/meve/planyourvisit/hiking.htm"
+        }
+      ]
+    }
+  ]
+}

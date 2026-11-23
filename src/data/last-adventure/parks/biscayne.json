@@ -1,0 +1,162 @@
+{
+  "id": "biscayne",
+  "name": "Biscayne National Park",
+  "short": "Biscayne",
+  "state": "Florida",
+  "states": ["Florida"],
+  "tagline": "Turquoise bay, mangrove islands and coral reefs within sight of Miami.",
+  "photo": {
+    "src": "/images/last-adventure/biscayne/park.jpg",
+    "srcWebp": "/images/last-adventure/biscayne/park.webp",
+    "alt": "Biscayne Bay near Elliott Key",
+    "credit": "NPS image by Matt Johnson",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3c2e0756-1dd8-b71b-0be9-c27ff9969cf4",
+    "caption": "Biscayne Bay near Elliott Key"
+  },
+  "intro": "Within sight of downtown Miami, Biscayne protects aquamarine waters, mangrove shorelines, the northernmost Florida Keys and living coral reefs. The park is 95% water, so a final adventure here often means a boat ride across the bay to a historic island. It is also a park that allows scattering, but only at sea, at least three nautical miles offshore.",
+  "homepage": "https://www.nps.gov/bisc/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/bisc/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a free Special Park Use Permit, only in the ocean at least three nautical miles from land; there are no land areas in the park where it is authorized.",
+  "scatterFacts": [
+    "Special Park Use Permit required; the park lists it as a no-fee permit. Mail the Application for Special Use Permit to Biscayne National Park, Attn: Special Park Uses Coordinator, 9700 SW 328 Street, Homestead, FL 33033. Questions: BISC_Permits@nps.gov.",
+    "Allow at least 15 business days for review. The approved permit, signed by the superintendent, must be with you at the ceremony.",
+    "At sea only, a minimum of three nautical miles from land. Not permitted at Convoy Point or anywhere on land in the park.",
+    "EPA and Clean Water Act rules also apply: every burial or scattering at sea must be reported in writing to EPA Region 4 within 30 days.",
+    "Ashes fully refined and completely dispersed, not piled or buried. Leave no monument, plaque, urn, photo or other item, and bring no potted plants, dried flowers or plants with seeds. No release of birds, butterflies or other wildlife.",
+    "Keep it small, private and discreet; other visitors may not be excluded. If you need a boat, the permit office can provide a list of authorized commercial operators."
+  ],
+  "scatterLink": [
+    { "label": "Scattering of ashes permit information (NPS)", "url": "https://www.nps.gov/bisc/planyourvisit/special-use-permit-for-scattering-of-ashes.htm" },
+    { "label": "Application for Special Use Permit (PDF)", "url": "https://www.nps.gov/bisc/planyourvisit/upload/10-930-Application-for-SUP-Long-Form-2017-2.pdf" },
+    { "label": "EPA burial at sea", "url": "https://www.epa.gov/ocean-dumping/burial-sea" }
+  ],
+  "beforeYouGo": "The Dante Fascell Visitor Center is at Convoy Point, 9700 SW 328th Street, Homestead, at the end of SW 328th Street (North Canal Drive), reached from Florida Turnpike exit 6 or US Highway 1. There is no entrance fee. Convoy Point grounds are open 7 am to 5:30 pm and the visitor center 9 am to 5 pm, every day. Everything beyond the visitor center requires a boat: there are no bridges or ferries to the islands. Boca Chita Key and Elliott Key charge a $25 day use fee Friday to Monday and on federal holidays. Mosquitoes are present year round.",
+  "destinations": [
+    {
+      "id": "convoy-point-jetty-walk",
+      "name": "Convoy Point Jetty Walk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/biscayne/convoy-point-jetty-walk.jpg",
+        "srcWebp": "/images/last-adventure/biscayne/convoy-point-jetty-walk.webp",
+        "alt": "Convoy Point at dawn",
+        "credit": "NPS image by Matt Johnson",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3c26a87d-1dd8-b71b-0b54-609adbc06528"
+      },
+      "description": "This short walk from the visitor center follows the edge of Biscayne Bay, crosses a bridge lined with mangroves and ends at a quiet point looking out over shallow, seagrass-covered water. Benches along the way invite you to sit, and with good eyes or binoculars you may pick out Boca Chita Key and Elliott Key on the horizon. The park's own guide suggests reading its stations aloud as a family, and the final bench is a gentle place for your own words.",
+      "plan": {
+        "distance": "0.8 mi round trip from the visitor center",
+        "difficulty": "Easy",
+        "accessibility": "Accessible by wheelchair and other mobility devices (NPS); mostly boardwalk, with a compact natural surface on the last part, which may puddle after rain",
+        "scattering": "Not here; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Florida Turnpike exit 6 (Speedway Boulevard), south to SW 328th Street (North Canal Drive), then four miles east to the end of the road. The park entrance is on the left just before Homestead Bayfront Marina.",
+        "points": [{ "label": "Convoy Point parking", "lat": 25.46102, "lon": -80.33753 }]
+      },
+      "trail": {
+        "name": "Convoy Point Jetty Walk (self-guided)",
+        "steps": [
+          "Begin at the compass rose on the first floor of the Dante Fascell Visitor Center.",
+          "Follow the sidewalk to the Jetty Walk trailhead by the canoe launch, then walk east along the water's edge past the flagpole.",
+          "At the bend, continue south to the bridge, then on to the benches and the east end of the walk; return the same way."
+        ]
+      },
+      "final": [{ "label": "Jetty Walk", "lat": 25.46397, "lon": -80.33361 }],
+      "scatterNote": { "text": "Scattering is not permitted at Convoy Point or anywhere on land in the park. It is allowed only in the ocean, at least three nautical miles from land, with a free park permit and a written report to EPA Region 4 within 30 days." },
+      "links": [
+        { "label": "Convoy Point Jetty Walk", "url": "https://www.nps.gov/bisc/planyourvisit/convoy-point-jetty-walk-self-guided.htm" },
+        { "label": "Accessibility", "url": "https://www.nps.gov/bisc/planyourvisit/accessibility.htm" }
+      ]
+    },
+    {
+      "id": "boca-chita-key-lighthouse",
+      "name": "Boca Chita Key Lighthouse",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/biscayne/boca-chita-key-lighthouse.jpg",
+        "srcWebp": "/images/last-adventure/biscayne/boca-chita-key-lighthouse.webp",
+        "alt": "Boca Chita lighthouse",
+        "credit": "NPS image by Matt Johnson",
+        "sourceUrl": "https://www.nps.gov/bisc/planyourvisit/bocachita.htm"
+      },
+      "description": "Cross the bay by boat and a stone lighthouse appears at the mouth of a small island harbor, framed by palms and turquoise water. Industrialist Mark Honeywell built it in 1938 for his private retreat, and much of the island still looks as it did in the 1940s. From the observation deck of the 65-foot tower you can see islands, bay, ocean and the Miami skyline. It feels like a family's own hidden island for an afternoon.",
+      "plan": {
+        "distance": "Boat trip from the mainland; a half-mile trail on the island",
+        "difficulty": "Easy on the island; boat required",
+        "accessibility": "Reached only by boat; the observation deck is reached by stairs",
+        "bestTime": "The lighthouse reopened to visitors in June 2026; the park notes the deck may be opened when park employees are present",
+        "scattering": "Not here; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Drive to the Dante Fascell Visitor Center at Convoy Point. Without your own boat, book a cruise to Boca Chita Key with the Biscayne National Park Institute (786-335-3644 or at the park store) or another authorized operator; advance reservations are advised.",
+        "points": [{ "label": "Convoy Point parking", "lat": 25.46102, "lon": -80.33753 }]
+      },
+      "trail": {
+        "name": "Boca Chita Key",
+        "steps": [
+          "Arrive by boat at Boca Chita harbor; the cleated bulkhead is the only docking area.",
+          "Walk to the lighthouse at the harbor entrance.",
+          "A half-mile trail starts just east of the restrooms and runs to the south end of the island, emerging near the pavilion."
+        ],
+        "notes": [
+          "No drinking water, electricity, sales facilities, sinks or showers. Pack out all trash.",
+          "Pets other than service animals are not permitted on the island or on boats in the harbor.",
+          "The harbor entrance is about four feet deep at low tide."
+        ]
+      },
+      "final": [{ "label": "Lighthouse", "lat": 25.52472, "lon": -80.17607 }],
+      "scatterNote": { "text": "Scattering is not permitted on the islands. It is allowed only in the ocean, at least three nautical miles from land, with a free park permit and a written report to EPA Region 4 within 30 days. The permit office can provide a list of authorized boat operators." },
+      "links": [
+        { "label": "Boca Chita Key", "url": "https://www.nps.gov/bisc/planyourvisit/bocachita.htm" },
+        { "label": "Lighthouse reopening (2026)", "url": "https://www.nps.gov/bisc/learn/news/boca-chita-key-lighthouse-reopens-at-biscayne-national-park.htm" },
+        { "label": "Guided tours", "url": "https://www.nps.gov/bisc/planyourvisit/guidedtours.htm" }
+      ]
+    },
+    {
+      "id": "elliott-key",
+      "name": "Elliott Key",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/biscayne/elliott-key.jpg",
+        "srcWebp": "/images/last-adventure/biscayne/elliott-key.webp",
+        "alt": "Elliott Key aerial view",
+        "credit": "NPS image by Christy Thibodeau",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/36393178-1dd8-b71b-0b52-9a6331c46719"
+      },
+      "description": "The largest island in the park was once home to pioneers who farmed pineapples, gathered sponges and salvaged wrecks. Today it is quiet, with a picnic area by the bay, a mile-long loop trail and the old Spite Highway running about six miles through maritime forest. Pack a picnic, walk the loop together and look back across the clear shallows toward the mainland, imagining the families who made a life out here long before you came.",
+      "plan": {
+        "distance": "Boat trip from the mainland; mile-long loop trail on the island",
+        "difficulty": "Easy at the harbor and picnic area; the loop trail is not rated by the park",
+        "accessibility": "Reached only by boat; there are no ferry services",
+        "scattering": "Not here; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Drive to the Dante Fascell Visitor Center at Convoy Point, then cross the bay by private or chartered boat to Elliott Key Harbor (33 slips; about 2.5 feet deep at low tide).",
+        "points": [
+          { "label": "Convoy Point parking", "lat": 25.46102, "lon": -80.33753 },
+          { "label": "Elliott Key Harbor", "lat": 25.45317, "lon": -80.19644 }
+        ]
+      },
+      "trail": {
+        "name": "Elliott Key loop trail",
+        "steps": [
+          "From the harbor, walk to the campground on the Biscayne Bay side.",
+          "The mile-long loop trail starts near the campground.",
+          "For a longer walk, Spite Highway runs about six miles down the center of the island."
+        ],
+        "notes": [
+          "Mosquitoes and no-see-ums are prevalent year round. There are no sales facilities; bring your own water in case the generator fails.",
+          "Picnic tables and grills are in the campground and marina."
+        ]
+      },
+      "final": [{ "label": "Nature trail", "lat": 25.45308, "lon": -80.19627 }],
+      "scatterNote": { "text": "Scattering is not permitted on the islands. It is allowed only in the ocean, at least three nautical miles from land, with a free park permit and a written report to EPA Region 4 within 30 days." },
+      "links": [{ "label": "Elliott Key", "url": "https://www.nps.gov/bisc/planyourvisit/elliottkey.htm" }]
+    }
+  ]
+}

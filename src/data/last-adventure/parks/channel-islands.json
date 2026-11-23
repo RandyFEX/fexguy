@@ -1,0 +1,150 @@
+{
+  "id": "channel-islands",
+  "name": "Channel Islands National Park",
+  "short": "Channel Islands",
+  "state": "California",
+  "states": ["California"],
+  "tagline": "Wild island cliffs and ocean views, reached only by boat.",
+  "photo": {
+    "src": "/images/last-adventure/channel-islands/park.jpg",
+    "srcWebp": "/images/last-adventure/channel-islands/park.webp",
+    "alt": "View from Scorpion Anchorage looking towards shore with the new pier in the foreground",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/09cd2140-17a2-49e4-8aad-e880e6d1acd3",
+    "caption": "Scorpion Anchorage, Santa Cruz Island"
+  },
+  "intro": "Off the coast of Southern California, five islands rise from the Pacific with sea cliffs, coves and plants and animals shaped by millions of years of isolation. The islands can only be reached by boat, so a final adventure here begins with a crossing from the harbor and ends on a clifftop trail high above the sea. Scattering ashes requires a park permit.",
+  "homepage": "https://www.nps.gov/chis/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/chis/planyourvisit/maps.htm" },
+    { "label": "Santa Cruz Island hiking map and guide (PDF)", "url": "https://www.nps.gov/chis/planyourvisit/upload/sci-hiking-2022-ADA.pdf" },
+    { "label": "Anacapa Island hiking map and guide (PDF)", "url": "https://www.nps.gov/chis/planyourvisit/upload/ai-hiking-2022-ADA.pdf" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is prohibited except under the terms of a park permit; the park does not publish designated locations, fees or lead times for it.",
+  "scatterFacts": [
+    "Superintendent's Compendium, 36 CFR 2.62(b): scattering human ashes from cremation is prohibited except pursuant to the terms and conditions of a permit.",
+    "Remains must be cremated and pulverized, as outlined by California law.",
+    "Scattering over park waters is subject to 40 CFR 229.1 (burial at sea).",
+    "No designated scattering areas, fee or lead time are published for scattering. Contact the park's Special Use Coordinator at (805) 658-5726 before planning."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/chis/learn/management/upload/CHIS-Superintendent-s-Compendium-12-18-2025.pdf" },
+    { "label": "Special use permits (NPS)", "url": "https://www.nps.gov/chis/learn/management/special-use-permits.htm" }
+  ],
+  "beforeYouGo": "The islands can only be reached by boat; advance planning is highly recommended. The park concessioner Island Packers runs public boats year-round from Ventura Harbor and Channel Islands Harbor ((805) 642-1393). There is no transportation on the islands, no trash cans, and no water on Anacapa Island; pack out everything you bring. The Robert J. Lagomarsino Visitor Center in Ventura is fully accessible, but the islands are not readily accessible for wheelchair users or people with limited mobility.",
+  "destinations": [
+    {
+      "id": "inspiration-point",
+      "name": "Inspiration Point, Anacapa Island",
+      "kinds": ["extraordinary"],
+      "photo": null,
+      "description": "The park calls this one of its most spectacular views, and it is easy to see why. From the western tip of East Anacapa, the narrow islets of Middle and West Anacapa stretch away across blue water, with Santa Cruz Island beyond. The walk there is gentle, over the island's open, relatively flat top. Find a place to stand together at the edge of the viewing area, feel the sea wind, and say the words you came to say.",
+      "plan": {
+        "distance": "1.5 mi round trip from the island visitor center",
+        "difficulty": "Easy (after a 154-step stair climb from the landing)",
+        "accessibility": "Boat landing by ladder onto a dock, then 154 stairs (120 ft) with handrails and benches; no lift. Trails are narrow dirt and gravel (NPS)",
+        "scattering": "Only under a park permit; ask the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Drive to Ventura Harbor or Channel Islands Harbor and take an Island Packers boat to the Landing Cove on East Anacapa. Climb the stairs to the top of the island and the visitor center.",
+        "points": [
+          { "label": "Island Packers, Ventura Harbor", "lat": 34.24418, "lon": -119.26529 },
+          { "label": "Landing Cove", "lat": 34.01676, "lon": -119.36229 },
+          { "label": "Island visitor center", "lat": 34.01548, "lon": -119.36368 }
+        ]
+      },
+      "trail": {
+        "name": "East Anacapa trail system",
+        "steps": [
+          "From the top of the stairs, walk to the visitor center.",
+          "Follow the figure-eight trail system west over gentle slopes to Inspiration Point.",
+          "Shorter side trips lead to Pinniped Point, Cathedral Cove and the lighthouse."
+        ],
+        "notes": [
+          "Stay on the designated trails; no off-trail hiking. Do not step past the wood railroad ties that mark the safe viewing boundary; some cliff edges are unmarked.",
+          "Know your boat's departure time and be back at the landing on time."
+        ]
+      },
+      "final": [{ "label": "Inspiration Point", "lat": 34.01289, "lon": -119.37414 }],
+      "links": [
+        { "label": "Inspiration Point Hike", "url": "https://www.nps.gov/places/inspiration-point-hike.htm" },
+        { "label": "Hiking Anacapa Island", "url": "https://www.nps.gov/chis/planyourvisit/hiking-anacapa-island.htm" }
+      ]
+    },
+    {
+      "id": "cavern-point",
+      "name": "Cavern Point, Santa Cruz Island",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/channel-islands/cavern-point.jpg",
+        "srcWebp": "/images/last-adventure/channel-islands/cavern-point.webp",
+        "alt": "Cavern Point View with Fog",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/050469fb-6377-43d3-906c-b5c35b3ceade"
+      },
+      "description": "The park's own guide simply says this one is not to be missed. The loop climbs from Scorpion Valley onto open bluffs, and at Cavern Point the coastline falls away beneath you with Anacapa Island floating on the horizon. In season, you may see whales moving past offshore. It is a fine place to sit close together on the headland, share a meal and a few favorite stories, and watch the sea that surrounds this wild island.",
+      "plan": {
+        "distance": "2 mi round trip (loop from Scorpion Beach)",
+        "difficulty": "Moderate",
+        "accessibility": "Narrow dirt and gravel trail; boat landing at Scorpion Anchorage is onto a platform with a ramp to the pier (NPS)",
+        "bestTime": "Seasonal whale viewing",
+        "scattering": "Only under a park permit; ask the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Drive to Ventura Harbor or Channel Islands Harbor and take an Island Packers boat to Scorpion Anchorage on Santa Cruz Island.",
+        "points": [
+          { "label": "Island Packers, Ventura Harbor", "lat": 34.24418, "lon": -119.26529 },
+          { "label": "Scorpion Anchorage pier", "lat": 34.04933, "lon": -119.55621 }
+        ]
+      },
+      "trail": {
+        "name": "Cavern Point Loop",
+        "steps": [
+          "To avoid a steep climb, hike clockwise: start from the campground near site 22.",
+          "Climb to the bluffs and Cavern Point.",
+          "Loop back down to Scorpion Anchorage."
+        ],
+        "notes": ["Stay well back from cliff edges, which are crumbly and unstable. Carry plenty of water; no pets on the islands."]
+      },
+      "final": [{ "label": "Cavern Point Overlook", "lat": 34.05423, "lon": -119.56471 }],
+      "links": [
+        { "label": "Cavern Point Loop Hike", "url": "https://www.nps.gov/places/cavern-point-loop-hike.htm" },
+        { "label": "Hiking Santa Cruz Island", "url": "https://www.nps.gov/chis/planyourvisit/hiking-santa-cruz-island.htm" }
+      ]
+    },
+    {
+      "id": "potato-harbor",
+      "name": "Potato Harbor Overlook, Santa Cruz Island",
+      "kinds": ["extraordinary"],
+      "photo": null,
+      "description": "Follow the North Bluff Trail west along the island's edge, and the walk ends high above Potato Harbor, a rounded cove ringed by steep cliffs. There is no way down to the water, only the view, which makes the overlook feel quiet and removed from everything. The park promises spectacular coastal views the whole way. For the walkers in your family, it is a longer, unhurried day for talking side by side and pausing wherever the coast invites you to stop.",
+      "plan": {
+        "distance": "5 mi round trip from Scorpion Beach",
+        "difficulty": "Moderate",
+        "accessibility": "Narrow dirt and gravel trail and dirt roads; no beach access (NPS)",
+        "scattering": "Only under a park permit; ask the park"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Drive to Ventura Harbor or Channel Islands Harbor and take an Island Packers boat to Scorpion Anchorage on Santa Cruz Island.",
+        "points": [
+          { "label": "Island Packers, Ventura Harbor", "lat": 34.24418, "lon": -119.26529 },
+          { "label": "Scorpion Anchorage pier", "lat": 34.04933, "lon": -119.55621 }
+        ]
+      },
+      "trail": {
+        "name": "Cavern Point Loop and North Bluff Trail",
+        "steps": [
+          "Climb from Scorpion Valley to Cavern Point.",
+          "From Cavern Point, follow the North Bluff Trail west for 2 miles to the overlook above Potato Harbor, then return the same way."
+        ],
+        "notes": ["Stay on trails and well back from the crumbly cliff edges. Leave enough time to meet your boat."]
+      },
+      "final": [{ "label": "Trail end above Potato Harbor", "lat": 34.04826, "lon": -119.58874 }],
+      "links": [{ "label": "Hiking Santa Cruz Island", "url": "https://www.nps.gov/chis/planyourvisit/hiking-santa-cruz-island.htm" }]
+    }
+  ]
+}

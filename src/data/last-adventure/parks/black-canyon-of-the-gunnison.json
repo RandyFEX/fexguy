@@ -1,0 +1,326 @@
+{
+  "id": "black-canyon-of-the-gunnison",
+  "name": "Black Canyon of the Gunnison National Park",
+  "short": "Black Canyon",
+  "state": "Colorado",
+  "states": [
+    "Colorado"
+  ],
+  "tagline": "Sheer dark walls dropping straight to a roaring river.",
+  "photo": {
+    "src": "/images/last-adventure/black-canyon-of-the-gunnison/park.jpg",
+    "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/park.webp",
+    "alt": "Rock outcropping on a canyon rim with people standing at a fenced overlook. Canyon walls are in the background",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3eed778b-2e27-43e7-83e0-3a86fc026741",
+    "caption": "Pulpit Rock Overlook"
+  },
+  "intro": "The Gunnison River has carved a canyon of sheer dark walls, its gneiss laced with pink veins of pegmatite, most famously on the Painted Wall, the tallest cliff in Colorado at 2,250 feet from river to rim. Overlooks along the South Rim Road bring the edge within a short walk, while the remote North Rim offers quieter trails and fewer people. It is a place of stillness and scale, made for standing close together and looking down.",
+  "homepage": "https://www.nps.gov/blca/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/blca/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Hiking and trail guide (PDF)",
+      "url": "https://www.nps.gov/blca/planyourvisit/upload/BLCA-CURE_Trails_2025_508.pdf"
+    },
+    {
+      "label": "Park brochure (PDF)",
+      "url": "https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a special use permit, away from developed areas and at least 100 yards from any trail, road or facility.",
+  "scatterFacts": [
+    "Permit: special use permit (NPS Form 10-930), emailed to BLCA_CURE_commercialservices@nps.gov. The park lists a non-refundable $100 application fee paid through Pay.gov; additional processing fees may be charged if the permit is approved.",
+    "Most requests can be handled within 10 working days; complex requests may take at least four weeks.",
+    "Remains must be cremated and pulverized, with no recognizable pieces of bone or teeth.",
+    "Not within developed areas. On the ground, at least 100 yards from any trail, road, developed facility, or known archeological or historic site.",
+    "From the air, at least 2,000 feet above ground level.",
+    "No monument, memorial or marker may be installed without the Director's authorization."
+  ],
+  "scatterLink": [
+    {
+      "label": "Special use permits (NPS)",
+      "url": "https://www.nps.gov/blca/planyourvisit/special-use-permits.htm"
+    },
+    {
+      "label": "Superintendent's Compendium, section 2.62 (NPS)",
+      "url": "https://www.nps.gov/blca/learn/management/superintendents-compendium.htm"
+    }
+  ],
+  "beforeYouGo": "The park is open all year, 24 hours a day, but no bridge or road connects the two rims: allow 2 to 3 hours to drive between them. The South Rim is 15 miles east of Montrose via US 50 and CO 347; the South Rim Road is usually open to vehicles from late April to mid-November, and in winter only to Gunnison Point at the visitor center. The North Rim is 11 miles south of Crawford via CO 92 and the unpaved Black Canyon Road, which typically closes mid-November and reopens in May. There is no water in the park from November through April, and many overlooks have no guardrails.",
+  "destinations": [
+    {
+      "id": "painted-wall-view",
+      "name": "Painted Wall View",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/painted-wall-view.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/painted-wall-view.webp",
+        "alt": "Soft light on Painted Wall. Blue sky in background",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/12359233-510c-41e2-9b8c-4702b68c07c1"
+      },
+      "description": "Across the gorge, the Painted Wall rises 2,250 feet from river to rim, the tallest cliff in Colorado, its dark stone streaked with pale pink bands like brushstrokes. A short walk from the car brings everyone to the edge, where the scale takes a moment to sink in. Stand together, let the quiet settle, and look for the river far below. It is a view people carry with them for years, and a natural place to say what needs saying.",
+      "plan": {
+        "distance": "200 yards from parking on an unpaved trail",
+        "difficulty": "Easy",
+        "accessibility": "Unpaved trail; wheelchair access not listed by the park",
+        "scattering": "Permit required, at least 100 yards from trails, roads and facilities"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 50 and CO 347 to the South Rim, then the South Rim Road past the visitor center to the Painted Wall View parking area.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 38.58056,
+            "lon": -107.71633
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 38.58094,
+          "lon": -107.71819
+        }
+      ],
+      "scatterNote": {
+        "text": "Overlooks are developed areas and sit on trails, so they cannot be the scattering spot. Describe a location in your permit application that is at least 100 yards from any trail, road or facility."
+      },
+      "links": [
+        {
+          "label": "Painted Wall Overlook",
+          "url": "https://www.nps.gov/places/overlook_paintedwall.htm"
+        }
+      ]
+    },
+    {
+      "id": "chasm-view",
+      "name": "Chasm View",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/chasm-view.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/chasm-view.webp",
+        "alt": "A view of a river far below two steep narrow canyon walls",
+        "credit": "NPS/Lisa Lynch",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/7c7e292e-769d-4407-99e3-24b98a017c83"
+      },
+      "description": "Chasm View looks straight down into the inner gorge, where the Gunnison River threads between walls of dark rock far below the rim. The packed gravel path from the parking area is wheelchair accessible, so everyone in the family can come right to the edge, from the youngest grandchild to the oldest friend. Take a few minutes in silence before anyone speaks. Then share a memory or two, and let the depth of the canyon remind you how much a single life holds.",
+      "plan": {
+        "distance": "Short walk from parking; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible: packed gravel trail to the overlook (NPS); accessible restroom",
+        "scattering": "Permit required, at least 100 yards from trails, roads and facilities"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 50 and CO 347 to the South Rim, then the South Rim Road past the visitor center to the Chasm View parking area, just beyond Painted Wall View.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 38.58108,
+            "lon": -107.7147
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 38.58144,
+          "lon": -107.71437
+        }
+      ],
+      "scatterNote": {
+        "text": "Overlooks are developed areas and sit on trails, so they cannot be the scattering spot. Describe a location in your permit application that is at least 100 yards from any trail, road or facility."
+      },
+      "links": [
+        {
+          "label": "Chasm View Overlook",
+          "url": "https://www.nps.gov/places/overlook_chasmviewsouth.htm"
+        }
+      ]
+    },
+    {
+      "id": "sunset-view",
+      "name": "Sunset View",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/sunset-view.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/sunset-view.webp",
+        "alt": "Backlit canyon at sunset",
+        "credit": "NPS/Victoria Stauffenberg",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5fd31c6e-efcf-4220-942e-ee8abbf79e1a"
+      },
+      "description": "Near the end of the South Rim Road, Sunset View earns its name in the evening, when the light fades over the canyon and the shadows grow long. There are picnic tables close by, so the family can share a simple meal, raise a glass and linger together while the day ends. The overlook is wheelchair accessible, which means nobody has to watch from the car. Let the last light of the evening close a long day of remembering someone you love.",
+      "plan": {
+        "distance": "Beside the parking area; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible overlook (NPS); accessible restroom; picnic tables",
+        "bestTime": "Sunset",
+        "scattering": "Permit required, at least 100 yards from trails, roads and facilities"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 50 and CO 347 to the South Rim, then the South Rim Road to Sunset View, the overlook before High Point at the end of the road.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 38.56865,
+            "lon": -107.73328
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 38.5693,
+          "lon": -107.73373
+        }
+      ],
+      "scatterNote": {
+        "text": "Overlooks are developed areas, so they cannot be the scattering spot. Describe a location in your permit application that is at least 100 yards from any trail, road or facility."
+      },
+      "links": [
+        {
+          "label": "Sunset View Overlook",
+          "url": "https://www.nps.gov/places/overlook_sunsetview.htm"
+        }
+      ]
+    },
+    {
+      "id": "warner-point",
+      "name": "Warner Point",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/warner-point.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/warner-point.webp",
+        "alt": "View into the Black Canyon of the Gunnison from the Warner Point Trail",
+        "credit": "NPS/de Anguera",
+        "sourceUrl": "https://www.nps.gov/thingstodo/warner-trail.htm"
+      },
+      "description": "At the far end of the South Rim Road, a trail leaves High Point, the last overlook, and heads out to Warner Point. The park promises beautiful mountain vistas and canyon views along the way, and the walk is long enough for unhurried conversation yet short enough for most families to share. At the point, find a place to sit, look out over the gorge toward the distant peaks, and tell the stories that only the people in your circle know.",
+      "plan": {
+        "distance": "0.8 mi one way",
+        "difficulty": "Moderate",
+        "elevation": "200 ft elevation change",
+        "accessibility": "Rocky, uneven natural surface with drop-offs; not wheelchair accessible",
+        "scattering": "Permit required, at least 100 yards from trails, roads and facilities"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 50 and CO 347 to the South Rim, then the South Rim Road to its end at High Point.",
+        "points": [
+          {
+            "label": "High Point trailhead parking",
+            "lat": 38.56275,
+            "lon": -107.74158
+          }
+        ]
+      },
+      "trail": {
+        "name": "Warner Point Trail",
+        "steps": [
+          "Start at High Point, the last overlook on the South Rim Road.",
+          "Follow the trail 0.8 mile to Warner Point, then return the same way."
+        ],
+        "notes": [
+          "The canyon rims are around 8,000 feet in elevation. Bring water and sun protection.",
+          "Many places have no guardrails. Never throw anything into the canyon."
+        ]
+      },
+      "final": [
+        {
+          "label": "Viewpoint",
+          "lat": 38.56691,
+          "lon": -107.75078
+        }
+      ],
+      "scatterNote": {
+        "text": "The trail and its viewpoint cannot be the scattering spot. Describe a location in your permit application that is at least 100 yards from any trail, road or facility."
+      },
+      "links": [
+        {
+          "label": "High Point Overlook (trailhead)",
+          "url": "https://www.nps.gov/places/overlook_highpoint.htm"
+        },
+        {
+          "label": "Hiking and trail guide (PDF)",
+          "url": "https://www.nps.gov/blca/planyourvisit/upload/BLCA-CURE_Trails_2025_508.pdf"
+        }
+      ]
+    },
+    {
+      "id": "exclamation-point",
+      "name": "Exclamation Point",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/exclamation-point.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/exclamation-point.webp",
+        "alt": "Straight view looking up canyon from rim. Gunnison River in center of image with canyon walls on either side",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/51f4de40-801e-4dc0-baa7-8e5e8d267ded"
+      },
+      "description": "The North Rim is far from the highway and quieter than the South, and the North Vista Trail rewards the effort of getting there. After 1.4 miles it reaches Exclamation Point, which the park describes as a breathtaking view, where the canyon opens beneath you and the far rim stands across the gorge. With fewer people around, a family can find real privacy here. Bring a favorite photograph, sit close together, and let the canyon hold the silence.",
+      "plan": {
+        "distance": "1.4 mi one way to Exclamation Point (3.2 mi one way to Green Mountain)",
+        "difficulty": "Moderate to Exclamation Point; Strenuous to Green Mountain",
+        "elevation": "840 ft climb from Exclamation Point to Green Mountain",
+        "accessibility": "Rocky, uneven trail with drop-offs; not wheelchair accessible",
+        "scattering": "Permit required, at least 100 yards from trails, roads and facilities"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "CO 92 to Crawford, then the unpaved Black Canyon Road 11 miles to the North Rim Ranger Station. The road typically closes mid-November and reopens in May.",
+        "points": [
+          {
+            "label": "North Rim Ranger Station parking",
+            "lat": 38.58671,
+            "lon": -107.70477
+          }
+        ]
+      },
+      "trail": {
+        "name": "North Vista Trail",
+        "steps": [
+          "Start at the North Rim Ranger Station.",
+          "Follow the North Vista Trail 1.4 miles to Exclamation Point.",
+          "Strong hikers can continue, climbing 840 feet to the summit of Green Mountain (3.2 miles one way from the trailhead)."
+        ],
+        "notes": [
+          "Services are limited on the North Rim, and there is no water in the park from November through April."
+        ]
+      },
+      "final": [
+        {
+          "label": "Viewpoint",
+          "lat": 38.5869,
+          "lon": -107.72093
+        }
+      ],
+      "scatterNote": {
+        "text": "The trail and its viewpoint cannot be the scattering spot. Describe a location in your permit application that is at least 100 yards from any trail, road or facility."
+      },
+      "links": [
+        {
+          "label": "Hiking and trail guide (PDF)",
+          "url": "https://www.nps.gov/blca/planyourvisit/upload/BLCA-CURE_Trails_2025_508.pdf"
+        }
+      ]
+    }
+  ]
+}

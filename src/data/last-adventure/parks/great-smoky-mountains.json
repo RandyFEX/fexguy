@@ -1,0 +1,193 @@
+{
+  "id": "great-smoky-mountains",
+  "name": "Great Smoky Mountains National Park",
+  "short": "Great Smoky Mountains",
+  "state": "North Carolina and Tennessee",
+  "states": ["Tennessee", "North Carolina"],
+  "tagline": "Ridge upon ridge of misty forest, high overlooks and old mountain homesteads.",
+  "photo": {
+    "src": "/images/last-adventure/great-smoky-mountains/park.jpg",
+    "srcWebp": "/images/last-adventure/great-smoky-mountains/park.webp",
+    "alt": "Rolling mountains in the distance on a mostly sunny day with blue sky. Green trees in foreground",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9b335b70-cbca-41d1-9df4-d519363c5dfc",
+    "caption": "Cataloochee and Balsam Mountain Area"
+  },
+  "intro": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee, often wrapped in the mist that gives the Smokies their name. The park is known for its diversity of plant and animal life, its ancient mountains and the remnants of Southern Appalachian mountain culture. A final adventure here can be a drive to a high gap, a climb to the park's highest peak or a slow loop through a valley of old homesteads, and the park grants free permission letters for scattering.",
+  "homepage": "https://www.nps.gov/grsm/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/grsm/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permission letter",
+  "scatterSummary": "Scattering is permitted at no cost under the park's Letter of Permission, at a chosen site away from roads, trails, buildings and water.",
+  "scatterFacts": [
+    "No fee. The Letter of Permission (36 CFR 2.62(b)) is downloadable; the person scattering must carry a copy on site. No other contact with the park is needed unless more than 25 people will attend, which requires a Special Use Permit.",
+    "At least 300 feet from any buildings, towers or historic sites, including historic structures and cemeteries.",
+    "At least 150 feet from roads, trails, campgrounds, picnic areas and other developed areas, and 150 feet from any stream or watercourse.",
+    "Ashes must be scattered, not left in any container and not buried. Identifying tags and crematory containers must be disposed of outside the park.",
+    "No marker or memorial of any kind, no flowers or memorial trees, and no release of birds, butterflies or other objects. Cremation must follow state law.",
+    "The park asks that scattering be a small, private affair away from high visitor use areas; it suggests early morning for more privacy. Permission does not exempt you from the parking tag requirement."
+  ],
+  "scatterLink": [
+    { "label": "Scatter cremated ashes (NPS)", "url": "https://www.nps.gov/grsm/planyourvisit/scatter-cremated-ashes.htm" },
+    { "label": "Letter of Permission (PDF)", "url": "https://www.nps.gov/grsm/planyourvisit/upload/7-2026_Letter-of-Permission-to-Scatter-Cremains_508-Compliant.pdf" },
+    { "label": "Special use permits for groups over 25 (NPS)", "url": "https://www.nps.gov/grsm/planyourvisit/special-event-permits.htm" }
+  ],
+  "beforeYouGo": "A parking tag is required to park anywhere in the park for more than 15 minutes; most trailheads have no tag machines, so buy one in advance online or on arrival. Newfound Gap Road (US 441) crosses the park between Gatlinburg, Tennessee, and Cherokee, North Carolina, and with Little River Road and the Cades Cove Loop Road is open year-round, weather permitting. Kuwohi Road (formerly Clingmans Dome Road) is open April 1 to November 29 in 2026 and can close for snow and ice. Popular parking areas fill; the park suggests a back-up plan or a shuttle. None of the featured places can be the scattering spot itself; choose a site that meets the distance rules.",
+  "destinations": [
+    {
+      "id": "newfound-gap-overlook",
+      "name": "Newfound Gap Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/great-smoky-mountains/newfound-gap-overlook.jpg",
+        "srcWebp": "/images/last-adventure/great-smoky-mountains/newfound-gap-overlook.webp",
+        "alt": "A tree with fall foliage and other distant trees on mountain ridges",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8883ed9b-1dd8-b71c-0791-9cb6a778b2fe"
+      },
+      "description": "At 5,046 feet, Newfound Gap is the lowest drivable pass through the park, a saddle on the crest where Tennessee meets North Carolina and the mountains fall away in long blue ridges on either side. Step out of the car into air noticeably cooler than the valleys below, and the whole family can stand together at the overlook within moments. It is a fine place to share a thermos, a few photographs and the stories that brought you here.",
+      "plan": {
+        "distance": "Roadside overlook",
+        "difficulty": "Easy",
+        "elevation": "5,046 ft at the gap",
+        "accessibility": "Parking at the overlook; surface details not published",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Newfound Gap Road (US 441) from Gatlinburg, Tennessee, or Cherokee, North Carolina, to the overlook at the state line. Check current conditions first; precipitation that falls as rain in the towns may be snow at the gap.",
+        "points": [{ "label": "Newfound Gap parking", "lat": 35.61057, "lon": -83.42596 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 35.61109, "lon": -83.4246 }],
+      "scatterNote": { "text": "Not at the overlook: under the free Letter of Permission, the chosen site must be at least 150 feet from roads, trails and other developed areas and from any stream, and 300 feet from buildings and historic sites." },
+      "links": [{ "label": "Newfound Gap Overlook", "url": "https://www.nps.gov/places/newfound-gap-overlook.htm" }]
+    },
+    {
+      "id": "kuwohi-observation-tower",
+      "name": "Kuwohi Observation Tower",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-smoky-mountains/kuwohi-observation-tower.jpg",
+        "srcWebp": "/images/last-adventure/great-smoky-mountains/kuwohi-observation-tower.webp",
+        "alt": "Sunset over the mountains. Viewed from the Observation Tower on Kuwohi",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2845f95e-1dd8-b71c-072b-8d90f8c9136b"
+      },
+      "description": "Kuwohi, formerly Clingmans Dome, is the highest point in the park at 6,643 feet. A steep paved path climbs through spruce and fir to a round 1959 tower, where a 375-foot ramp spirals up to a platform above the treetops. On a clear day the Smokies spread out in every direction; on a misty one you stand together inside the clouds. Benches along the way let everyone rest, and reaching the top side by side becomes its own small tribute.",
+      "plan": {
+        "distance": "1 mi round trip",
+        "difficulty": "Not rated by the park: short, paved and very steep, with benches to rest; not an Easy walk",
+        "time": "1 hour",
+        "elevation": "Summit 6,643 ft",
+        "accessibility": "Trail is paved but very steep (NPS)",
+        "bestTime": "Kuwohi Road is open April 1 to November 29 (2026); expect crowds and full parking",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Newfound Gap Road (US 441) to Newfound Gap, then Kuwohi Road (formerly Clingmans Dome Road) to the parking area at its end. Consider a shuttle; parking often exceeds capacity.",
+        "points": [{ "label": "Kuwohi parking", "lat": 35.55684, "lon": -83.49603 }]
+      },
+      "trail": {
+        "name": "Kuwohi trail",
+        "steps": [
+          "Walk from the parking area past the visitor information center.",
+          "Climb the steep paved path to the summit.",
+          "Follow the ramp up the tower to the observation platform."
+        ],
+        "notes": [
+          "Temperatures can be 10 to 20 degrees cooler than the lowlands, and clouds, rain and cold are common. Bring a jacket, even in summer.",
+          "Pets are not allowed on the trail. Pit toilets near the parking lot close in winter."
+        ]
+      },
+      "final": [{ "label": "Summit", "lat": 35.56286, "lon": -83.49838 }],
+      "scatterNote": { "text": "Not at the summit: the tower and trail are excluded. Under the free Letter of Permission, the chosen site must be at least 300 feet from buildings and towers and 150 feet from roads, trails and water." },
+      "links": [
+        { "label": "Kuwohi Observation Tower", "url": "https://www.nps.gov/places/kuwohi-observation-tower.htm" },
+        { "label": "Hike to Kuwohi", "url": "https://www.nps.gov/thingstodo/kuwohi.htm" }
+      ]
+    },
+    {
+      "id": "cades-cove",
+      "name": "Cades Cove",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/great-smoky-mountains/cades-cove.jpg",
+        "srcWebp": "/images/last-adventure/great-smoky-mountains/cades-cove.webp",
+        "alt": "Image of Primitive Baptist Church Cades Cove Great Smoky Mountains National Park TN 2024",
+        "credit": "NPS/Heidi Ogle",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/450d04dd-6464-4b5d-b1d1-6cf02e403f91"
+      },
+      "description": "Mountains surround this broad green valley on every side, and an unhurried road circles through its meadows past log homes, barns, churches and the Cable Mill. Deer, wild turkeys and sometimes bears graze in the open fields. Drive it slowly with the windows down, stop at a homestead or a quiet churchyard, and let the cove's long human story sit beside your own family's. Every generation in the car can enjoy this one.",
+      "plan": {
+        "distance": "11-mile one-way loop road",
+        "difficulty": "Easy (scenic drive)",
+        "time": "At least 2 to 4 hours",
+        "accessibility": "Viewed from the car and paved pullouts; the Cades Cove Visitor Center area, including the Cable Mill historic area, is listed for off-road wheelchair access",
+        "bestTime": "Open sunrise to sunset; closed to vehicles on Wednesdays, typically May through September",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Cades Cove lies south of Townsend, Tennessee. Begin the 11-mile one-way loop road there. Traffic is heavy in summer, fall and on weekends; use paved pullouts to stop.",
+        "points": [{ "label": "Cades Cove Picnic Area", "lat": 35.60537, "lon": -83.77139 }]
+      },
+      "trail": {
+        "name": "Cades Cove Loop Road",
+        "steps": [
+          "Drive the 11-mile one-way loop around the cove.",
+          "Stop at the historic homesites, churches and cemeteries reached by short trails from the road.",
+          "Visit the Cable Mill historic area and the Cades Cove Visitor Center along the loop."
+        ],
+        "notes": ["Keep your distance from wildlife; even turkeys have been known to attack people in the Smokies. The park's mobile app has a self-guided Cades Cove driving tour."]
+      },
+      "final": [{ "label": "Cable Mill Visitor Center", "lat": 35.58497, "lon": -83.84308 }],
+      "scatterNote": { "text": "Not along the loop: the chosen site must be at least 300 feet from historic structures and cemeteries and 150 feet from roads, trails and streams, under the free Letter of Permission." },
+      "links": [{ "label": "Cades Cove", "url": "https://www.nps.gov/grsm/planyourvisit/cadescove.htm" }]
+    },
+    {
+      "id": "alum-cave-trail",
+      "name": "Alum Cave Trail: Arch Rock and Alum Cave Bluffs",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.jpg",
+        "srcWebp": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.webp",
+        "alt": "A cave like overhang over a trail with a mountain view",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/thingstodo/alum-cave-to-the-bluffs.htm"
+      },
+      "description": "This trail climbs through old-growth forest and across cool mountain streams, then threads straight through Arch Rock on stone steps, the only rock formation in the park you can hike through. Farther up, Alum Cave Bluffs rewards the climb with some of the best views in the Smokies. It is a real mountain day for the hikers in your family, and a fitting climb to carry someone who loved these hills.",
+      "plan": {
+        "distance": "5 mi round trip to the bluffs; 2.8 mi round trip to Arch Rock",
+        "difficulty": "Moderate to Strenuous",
+        "time": "About 4 hours",
+        "accessibility": "Mountain trail with stream crossings and stone steps",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Newfound Gap Road (US 441) to the Alum Cave Trailhead. Parking is limited and often full; prepare a back-up plan or use a shuttle.",
+        "points": [
+          { "label": "Alum Cave Trailhead parking", "lat": 35.62953, "lon": -83.4515 },
+          { "label": "Overflow parking", "lat": 35.62862, "lon": -83.45079 }
+        ]
+      },
+      "trail": {
+        "name": "Alum Cave Trail",
+        "steps": [
+          "Follow the trail through old-growth forest and across mountain streams.",
+          "At 1.4 miles, climb the stone steps through Arch Rock, built by the park's trail crew in 2015 and 2016.",
+          "Continue to Alum Cave Bluffs, then return the same way. Strong hikers can continue to Mt. LeConte (about 10 miles round trip)."
+        ]
+      },
+      "final": [
+        { "label": "Arch Rock", "lat": 35.63908, "lon": -83.43831 },
+        { "label": "Alum Cave Bluffs", "lat": 35.63877, "lon": -83.44593 }
+      ],
+      "scatterNote": { "text": "Not on the trail: the chosen site must be at least 150 feet from trails and any stream or watercourse, under the free Letter of Permission." },
+      "links": [
+        { "label": "Arch Rock", "url": "https://www.nps.gov/places/arch-rock.htm" },
+        { "label": "Itinerary from Sugarlands (Alum Cave)", "url": "https://www.nps.gov/grsm/planyourvisit/svc-itinerary.htm" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "id": "mammoth-cave",
+  "name": "Mammoth Cave National Park",
+  "short": "Mammoth Cave",
+  "state": "Kentucky",
+  "states": ["Kentucky"],
+  "tagline": "Huge passages under the hills, and springs where hidden rivers meet the light.",
+  "photo": {
+    "src": "/images/last-adventure/mammoth-cave/park.jpg",
+    "srcWebp": "/images/last-adventure/mammoth-cave/park.webp",
+    "alt": "Visitors listening to park guide on Cleaveland Avenue tour inside Mammoth Cave",
+    "credit": "NPS photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8e6866b4-4aa2-45f5-8010-9389c7b6d955",
+    "caption": "Cleaveland Avenue, Mammoth Cave"
+  },
+  "intro": "Beneath the wooded hills of central Kentucky lies Mammoth Cave, where people have walked the same tunnels for thousands of years. A family can follow rangers through the huge rooms that gave the cave its name, see the sparkling flowstone of Frozen Niagara, then come back up into the forest to watch an underground river surface at a spring. Above ground, scattering is permitted with a free permission letter you download and carry.",
+  "homepage": "https://www.nps.gov/maca/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/maca/planyourvisit/maps.htm" },
+    { "label": "Mammoth Cave map and guide (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permission letter",
+  "scatterSummary": "Scattering is permitted at no charge under the park's Scattering of Ashes Letter, which you download, carry and follow; never inside the cave.",
+  "scatterFacts": [
+    "No fee. Permission under 36 CFR 2.62(b) is given by the park's Scattering of Ashes Letter: download it, and a copy must accompany the person performing the scattering.",
+    "At least 300 feet from any buildings, towers or historic sites, including historic structures, cave entrances and cemeteries.",
+    "At least 150 feet from other developed areas (roads, trails, campgrounds and picnic areas) and 150 feet from any stream or other watercourse.",
+    "Scattering inside the cave is prohibited. Ashes must be scattered, not buried or left in a container; dispose of the crematory container and identifying tags outside the park.",
+    "No marker or memorial of any kind, no flowers or memorial trees, and no release of birds, butterflies or objects. Cremation must follow state law.",
+    "Questions: (270) 758-2180 or MACA_Permits@nps.gov."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits: scattering cremated remains (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/special-use-permits.htm" },
+    { "label": "Scattering of Ashes Letter (PDF)", "url": "https://www.nps.gov/maca/planyourvisit/upload/MACA-Scattering-of-Ashes-Letter-508.pdf" }
+  ],
+  "beforeYouGo": "Cave tours, tickets and most visitor services are on the south side of the Green River, around the Mammoth Cave Visitor Center (1 Mammoth Cave Parkway). From the north, take I-65 exit 53 (Cave City) and follow KY 70/255, which becomes the Mammoth Cave Parkway; from the south, I-65 exit 48 (Park City), then KY 255 and Park City Road to the Parkway. Cave tour schedules change through the year; reserve tour tickets at Recreation.gov. The Heritage Trail, Old Guides Trail and the visitor center pedestrian bridge have been closed for a rehabilitation project, so check trail status before you go.",
+  "destinations": [
+    {
+      "id": "historic-tour",
+      "name": "Historic Tour and the Historic Entrance",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/historic-tour.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/historic-tour.webp",
+        "alt": "Stairs lead down into the cave entrance",
+        "credit": "NPS Photo/Deb Spillman",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3364a429-b892-40ce-b558-961396015109"
+      },
+      "description": "The classic Mammoth Cave tour begins at the Historic Entrance, a natural opening people have used for 5,000 years, and follows tunnels through the huge rooms that gave the cave its name before descending into much tighter passages deep inside. Walking together where generations of guides and visitors have walked before, gives a family time to think about all the people who came before them, and about the one you are carrying with you now.",
+      "plan": {
+        "distance": "2 mi (guided tour)",
+        "difficulty": "Moderate",
+        "time": "2 hours",
+        "accessibility": "540 stairs, including 155 at Mammoth Dome, and several steep inclines with no alternative routes (NPS). For a tour with no stairs, ask about the Accessible Tour",
+        "scattering": "Never inside the cave; with the free letter, 300 ft from cave entrances"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Drive to the Mammoth Cave Visitor Center (I-65 exit 53, then KY 70/255 and the Mammoth Cave Parkway). Tours start from the visitor center area; check in with your Recreation.gov ticket.",
+        "points": [{ "label": "Mammoth Cave Visitor Center", "lat": 37.18698, "lon": -86.10144, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Historic Tour (ranger-guided)",
+        "steps": [
+          "Reserve a Historic Tour ticket at Recreation.gov; tickets are limited for each tour time.",
+          "Follow the ranger through the Historic Entrance and the large historic rooms.",
+          "The route ascends and descends hundreds of stairs and several steep inclines, including 155 stairs at Mammoth Dome."
+        ],
+        "notes": ["Individuals under 16 must be accompanied by an adult 18 or older. Restrooms are on the tour."]
+      },
+      "final": [{ "label": "Historic Entrance", "lat": 37.18729, "lon": -86.10342 }],
+      "scatterNote": { "text": "Scattering inside the cave is prohibited. Under the park's free Scattering of Ashes Letter, choose a site above ground at least 300 feet from cave entrances, buildings, historic sites and cemeteries, and at least 150 feet from roads, trails, picnic areas and streams, and carry the letter." },
+      "links": [{ "label": "Cave tours (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/explore-all-tours.htm" }]
+    },
+    {
+      "id": "frozen-niagara-tour",
+      "name": "Frozen Niagara Tour",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/frozen-niagara-tour.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/frozen-niagara-tour.webp",
+        "alt": "A large flowstone formation with stairs leading in front of it",
+        "credit": "NPS Photo/Dominique Sanchez",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3a5752d7-86a5-4e15-806e-1e1b796c9332"
+      },
+      "description": "Frozen Niagara is one of the most famous decorated sections of Mammoth Cave, its flowstone hanging like a waterfall turned to stone. Many tours hike a long way and climb many stairs to reach it, but this short tour brings you straight there. It suits grandparents and young children alike, and standing together before stone shaped over ages is a quiet reminder of how much time can build.",
+      "plan": {
+        "distance": "0.25 mi (guided tour)",
+        "difficulty": "Easy",
+        "time": "1.25 hours",
+        "accessibility": "64 stairs, plus an optional 98. The park calls it ideal for anyone with difficulty walking long distances or negotiating stairs. No restrooms on the tour (NPS)",
+        "scattering": "Never inside the cave; with the free letter, 300 ft from cave entrances"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Check in at the Mammoth Cave Visitor Center; the tour includes a short bus ride from the visitor center to the cave entrance and back.",
+        "points": [{ "label": "Mammoth Cave Visitor Center", "lat": 37.18698, "lon": -86.10144, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Frozen Niagara Tour (ranger-guided)",
+        "steps": [
+          "Reserve a ticket at Recreation.gov.",
+          "Ride the tour bus from the visitor center to the Frozen Niagara entrance.",
+          "Walk the short route to the Frozen Niagara section; an optional 98 extra stairs lead farther down."
+        ],
+        "notes": ["Individuals under 16 must be accompanied by an adult 18 or older."]
+      },
+      "final": [{ "label": "Frozen Niagara Entrance", "lat": 37.14945, "lon": -86.05805 }],
+      "scatterNote": { "text": "Scattering inside the cave is prohibited. Under the park's free Scattering of Ashes Letter, choose a site above ground that meets the letter's distances (300 feet from cave entrances, buildings, historic sites and cemeteries; 150 feet from roads, trails, picnic areas and streams), and carry the letter." },
+      "links": [{ "label": "Accessible activities and Frozen Niagara Tour (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/accessible-activities.htm" }]
+    },
+    {
+      "id": "echo-river-spring-trail",
+      "name": "Echo River Spring Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/echo-river-spring-trail.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/echo-river-spring-trail.webp",
+        "alt": "A hiker beside Echo River Spring",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8989bf2f-1dd8-b71c-0722-8ac061e30607"
+      },
+      "description": "On this forest trail you follow the water to Echo River Spring, where the underground Echo River flows out of Mammoth Cave and into daylight. Boardwalks and overlooks with clear glass panels are built so everyone, including anyone in a wheelchair, can see into the lush hollow. It is a gentle walk with a meaningful ending: a river that spent its life in darkness, coming out into the light. The accessible picnic area at the trailhead makes room for a shared meal afterward.",
+      "plan": {
+        "distance": "0.6 mi",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible: boardwalks designed for visibility from a wheelchair, clear glass panels at overlooks, and tactile wayside exhibits with audio description. Accessible picnic area at the trailhead (NPS)",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Drive to the Green River Ferry parking lot, where the trail begins.",
+        "points": [{ "label": "Trailhead parking at Green River Ferry", "lat": 37.17967, "lon": -86.11145 }]
+      },
+      "trail": {
+        "name": "Echo River Spring Trail",
+        "steps": ["From the Green River Ferry parking lot, follow the trail through the forest to the overlooks at Echo River Spring."],
+        "notes": ["The park also offers a ranger-led Echo River Spring Walk (45 minutes) from the Green River Ferry parking lot; check the ranger program schedule."]
+      },
+      "final": [{ "label": "On the Echo River Spring Trail", "lat": 37.18773, "lon": -86.10887 }],
+      "scatterNote": { "text": "Not at the spring or along the trail: the letter requires at least 150 feet from trails, picnic areas and any stream or watercourse, and 300 feet from cave entrances." },
+      "links": [{ "label": "Accessible activities: Echo River Spring Trail (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/accessible-activities.htm" }]
+    },
+    {
+      "id": "sloans-crossing-pond",
+      "name": "Sloans Crossing Pond",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/sloans-crossing-pond.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/sloans-crossing-pond.webp",
+        "alt": "The sun sets over a pond",
+        "credit": "NPS Photo/Kait Evensen",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1df121e0-d7d9-4819-a49b-3c14998ca260"
+      },
+      "description": "A boardwalk circles the edge of this marshy pond on the south side of the park, close enough to the water to watch turtles sunning, hear frogs calling and see red-winged blackbirds among the reeds. Wayside exhibits explain the pond's unique environment. It is an easy, peaceful loop for every member of the family, and the accessible picnic area beside it is a good place to linger afterward, sharing food and stories the way your loved one would have liked.",
+      "plan": {
+        "distance": "0.4 mi boardwalk",
+        "difficulty": "Easy",
+        "accessibility": "Accessible boardwalk with wayside exhibits; accessible picnic area (NPS)",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Follow the Mammoth Cave Parkway to Sloans Crossing Pond.",
+        "points": [{ "label": "Parking beside the Mammoth Cave Parkway", "lat": 37.15117, "lon": -86.09814 }]
+      },
+      "trail": {
+        "name": "Sloans Crossing Pond Trail",
+        "steps": ["Follow the boardwalk around the edge of the pond and back to the parking area."]
+      },
+      "final": [{ "label": "Pond boardwalk", "lat": 37.15071, "lon": -86.09894 }],
+      "scatterNote": { "text": "Not at the pond: the letter requires at least 150 feet from trails, roads, picnic areas and water, as well as the other conditions in the letter." },
+      "links": [{ "label": "Accessible activities: Sloans Crossing Pond Trail (NPS)", "url": "https://www.nps.gov/maca/planyourvisit/accessible-activities.htm" }]
+    }
+  ]
+}

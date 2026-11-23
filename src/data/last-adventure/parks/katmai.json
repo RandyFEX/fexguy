@@ -1,0 +1,168 @@
+{
+  "id": "katmai",
+  "name": "Katmai National Park and Preserve",
+  "short": "Katmai",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "Brown bears at a salmon falls and a valley buried by a volcano.",
+  "photo": {
+    "src": "/images/last-adventure/katmai/park.jpg",
+    "srcWebp": "/images/last-adventure/katmai/park.webp",
+    "alt": "Aerial view looking northwestward of Katmai caldera with Mount Griggs and the Valley of Ten Thousand Smokes",
+    "credit": "NPS photograph by Chuck Lindsay",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/61c6cfea-befc-4279-8b12-9089afa63b88",
+    "caption": "Katmai Caldera"
+  },
+  "intro": "Katmai lies on the northern Alaska Peninsula, a 4.2-million-acre wilderness of volcanoes, lakes and rivers with no road from the outside world. Most visitors fly in by floatplane to Brooks Camp, on the shore of Naknek Lake, where brown bears fish for salmon at Brooks Falls. From there a daily summer tour climbs to the Valley of Ten Thousand Smokes, shaped by the largest volcanic eruption of the 20th century. The park's rules open all areas to scattering ashes without a permit.",
+  "homepage": "https://www.nps.gov/katm/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/katm/planyourvisit/maps.htm" },
+    { "label": "Brooks River permit and closure map (PDF)", "url": "https://www.nps.gov/katm/planyourvisit/upload/Brooks-River-Permit-and-Closure.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit: the Superintendent's Compendium opens all areas of the park to scattering of ashes.",
+  "scatterFacts": [
+    "Superintendent's Compendium (Katmai, Aniakchak and Alagnak, January 2026), 36 CFR 2.62(b): \"All areas are open to scattering of ashes without a permit.\"",
+    "No permit and no fee are required for the scattering itself.",
+    "Installing a monument or other commemorative installation requires a permit (36 CFR 2.62(a)).",
+    "From June 15 to October 31, a separate permit ($6 booking fee on Recreation.gov) is needed for any activity in the Brooks River Corridor: the river and 50 yards from the water on either side, from the Lake Brooks inlet down to the elevated bridge. Roads, trails, boardwalks and the viewing platforms are not part of the corridor.",
+    "Questions: park headquarters, King Salmon, 907 246-3305."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/KATM-Compendium-2026_final_508.pdf" },
+    { "label": "Laws and policies (NPS)", "url": "https://www.nps.gov/katm/learn/management/lawsandpolicies.htm" }
+  ],
+  "beforeYouGo": "No roads reach Katmai. Most visitors take a commercial flight from Anchorage to King Salmon, about 290 air miles southwest, then a floatplane or water taxi into the park; air taxis also fly directly from Anchorage, Kenai, Kodiak and Homer. Allow extra days for weather delays. At Brooks Camp the visitor center, ranger station and campground operate from June 1 to September 17, and every visitor must first attend a brief bear safety talk. Expect wind, rain and cold, even in summer.",
+  "destinations": [
+    {
+      "id": "brooks-falls",
+      "name": "Brooks Falls",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/katmai/brooks-falls.jpg",
+        "srcWebp": "/images/last-adventure/katmai/brooks-falls.webp",
+        "alt": "Bears fishing above and below waterfall. Water flows from left to right",
+        "credit": "NPS/Michael Fitz",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/97a24470-1dd8-b71b-0ba1-d0ef6e859812"
+      },
+      "description": "A quiet walk through boreal forest ends on a raised wooden platform beside a six-foot waterfall, where migrating salmon leap and brown bears wait for them. In the peak of the July run, more than 25 bears can be in view at once, the largest males claiming the lip of the falls. Stand together at the rail, listen to the water and watch the bears fish just below you. Few places feel so completely alive.",
+      "plan": {
+        "distance": "1.2 mi one way from the Brooks Camp Visitor Center",
+        "difficulty": "Easy",
+        "accessibility": "Unpaved trail and platforms are wheelchair accessible (NPS); it is hard to move off the trail during a bear encounter",
+        "bestTime": "July salmon run for bear viewing; platforms closed 10 pm to 7 am from June 15 to August 15",
+        "scattering": "Allowed without a permit (park-wide rule); see the Brooks River Corridor note"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach Brooks Camp. Most visitors arrive by small float-equipped aircraft, usually from King Salmon or Anchorage, then walk from the visitor center.",
+        "points": []
+      },
+      "trail": {
+        "name": "Brooks Falls Trail",
+        "steps": [
+          "From the Brooks Camp Visitor Center, cross the Brooks River bridge near its outlet; bear activity can delay the crossing.",
+          "The Brooks Falls Trail begins across from the vault toilets, 0.3 mi from the South Platform.",
+          "Walk 0.6 mi through the forest to the Riffles Platform and the Falls Platform."
+        ],
+        "notes": [
+          "The Falls Platform holds 40 people. When it is full, rangers keep a waiting list and limit visits to half an hour; waits in July commonly exceed 1.5 hours.",
+          "Bears often walk and sleep along the trail. Be prepared to step off the trail to let them pass."
+        ]
+      },
+      "final": [
+        { "label": "Falls Platform", "lat": 58.55476, "lon": -155.79193 },
+        { "label": "Riffles Platform", "lat": 58.55403, "lon": -155.79101 }
+      ],
+      "scatterNote": {
+        "text": "The compendium opens all areas to scattering without a permit. The river and its banks within 50 yards, from the Lake Brooks inlet to the elevated bridge, form the Brooks River Corridor, which requires a separate Recreation.gov permit from June 15 to October 31; the platforms and trails are outside it."
+      },
+      "links": [
+        { "label": "Brooks Falls Platform", "url": "https://www.nps.gov/places/brooks-falls-platform.htm" },
+        { "label": "Brooks Falls Trailhead", "url": "https://www.nps.gov/places/brooks-falls-trailhead.htm" },
+        { "label": "Brooks Camp", "url": "https://www.nps.gov/katm/planyourvisit/brooks-camp.htm" }
+      ]
+    },
+    {
+      "id": "dumpling-mountain",
+      "name": "Dumpling Mountain Overlook",
+      "kinds": ["extraordinary"],
+      "photo": null,
+      "description": "Behind the campground, a steady climb leaves the forest behind and opens onto a perch above Brooks Camp. Naknek Lake spreads out in one direction, Lake Brooks in the other, and the Brooks River threads between them. It is a good place to sit in the wind with the people who matter, trade stories and look back over the water. Hikers with energy left can keep going through meadows and alpine tundra to the summit of Dumpling Mountain.",
+      "plan": {
+        "distance": "1.5 mi one way to the overlook; summit another 2.5 mi beyond",
+        "difficulty": "Moderate to Strenuous",
+        "elevation": "800 ft to the overlook; summit 2,440 ft",
+        "accessibility": "Unpaved mountain trail; not wheelchair accessible",
+        "scattering": "Allowed without a permit (park-wide rule)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "No roads reach Brooks Camp. Fly in by floatplane, then walk to the trailhead in the Brooks Camp Campground.",
+        "points": []
+      },
+      "trail": {
+        "name": "Dumpling Mountain Trail",
+        "steps": [
+          "Start at the trailhead in the Brooks Camp Campground.",
+          "Climb 800 ft over 1.5 mi to the overlook above Brooks Camp.",
+          "Optional: continue 2.5 mi through subalpine meadows and alpine tundra to the summit."
+        ],
+        "notes": [
+          "Bears and moose can be met anywhere around Brooks Camp. Make noise, carry rain gear and follow the food storage rules."
+        ]
+      },
+      "final": [
+        { "label": "Overlook", "lat": 58.56924, "lon": -155.79573 },
+        { "label": "Dumpling Mountain summit", "lat": 58.58152, "lon": -155.85893 }
+      ],
+      "links": [
+        { "label": "Brooks Camp hiking trails", "url": "https://www.nps.gov/katm/planyourvisit/hiking-in-brooks-camp.htm" }
+      ]
+    },
+    {
+      "id": "valley-of-ten-thousand-smokes",
+      "name": "Valley of Ten Thousand Smokes",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/katmai/valley-of-ten-thousand-smokes.jpg",
+        "srcWebp": "/images/last-adventure/katmai/valley-of-ten-thousand-smokes.webp",
+        "alt": "Photograph of an inactive fumarole",
+        "credit": "NPS photographs by Mike Fitz",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/57f19573-06fa-4611-894e-381fa3b8d734"
+      },
+      "description": "On June 6, 1912, the largest volcanic eruption of the 20th century buried this valley in ash, and the steaming vents that followed gave it its name. Today a ranger-led bus carries you along a gravel road to a visitor center at its edge, where the bare, tan valley floor stretches toward snow-covered peaks. Some of you can rest at the overlook while others walk down to the floor. It is a humbling place to talk about endings and new beginnings.",
+      "plan": {
+        "distance": "23 mi each way by bus; optional hike 3.4 mi round trip",
+        "difficulty": "Easy by bus; Moderate on the hike",
+        "time": "7 hours",
+        "elevation": "1,000 ft on the optional hike",
+        "accessibility": "The bus is accessible (NPS); the hike has steep sections, downhill all the way to the valley floor and a continuous climb back",
+        "bestTime": "Summer and fall tour season",
+        "scattering": "Allowed without a permit (park-wide rule)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "The all-day ranger-led tour leaves Brooks Camp by bus on the Valley of Ten Thousand Smokes Road, with two overlook stops before the Robert F. Griggs Visitor Center. A fee is charged and reservations are required, at Brooks Lodge or through Katmailand.",
+        "points": []
+      },
+      "trail": {
+        "name": "Ranger-guided hike to the valley floor",
+        "steps": [
+          "After lunch at the Robert F. Griggs Visitor Center, join the optional ranger-guided hike.",
+          "Descend to the valley floor, then climb back to the visitor center for the return bus."
+        ],
+        "notes": [
+          "One restroom stop on the way out; the next restroom is at the visitor center."
+        ]
+      },
+      "final": [
+        { "label": "Road end at the visitor center overlook", "lat": 58.36874, "lon": -155.38315 }
+      ],
+      "links": [
+        { "label": "Guided tour to the Valley of Ten Thousand Smokes", "url": "https://www.nps.gov/thingstodo/valley-of-ten-thousand-smokes-guided-tour.htm" },
+        { "label": "Valley of Ten Thousand Smokes", "url": "https://www.nps.gov/places/valley-of-ten-thousand-smokes.htm" }
+      ]
+    }
+  ]
+}
