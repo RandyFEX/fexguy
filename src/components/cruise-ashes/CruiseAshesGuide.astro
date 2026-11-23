@@ -106,8 +106,8 @@ const lawRegions = [
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
     <ArticleByline updated={updated} />
     {/* Opening (Randy, November 2026), modeled on the national parks guide's introduction. */}
-    <p class="cra-lead">
-      <strong>For someone who loved the sea, few farewells feel more fitting than a ceremony on the open water.</strong>
+    <p>
+      <strong>For someone who loved the sea, few farewells feel more fitting than a ceremony on the open water.</strong>{' '}
       Families gather at the rail at sunset, share a few stories, and let their loved one go where the horizon runs out
       of land.
     </p>
@@ -117,7 +117,7 @@ const lawRegions = [
       remember and celebrate a life.
     </p>
     <p>
-      <strong>But you can’t simply scatter ashes from your balcony.</strong> Every cruise line sets its own rules, and
+      <strong>But you can’t simply scatter ashes from your balcony.</strong>{' '}Every cruise line sets its own rules, and
       many don’t publish them at all. Some arrange a private ceremony with an officer on deck; others require a
       biodegradable urn, copies of the death and cremation certificates, or permission before you sail. And the ship’s
       permission doesn’t override the law of the waters it’s sailing through.
@@ -761,9 +761,6 @@ const lawRegions = [
       padding-inline: var(--space-6);
       bottom: 2.5rem;
     }
-  }
-  .cra-lead {
-    font-size: 1.25rem;
   }
   .cra {
     padding-block: var(--space-8) var(--space-12);
