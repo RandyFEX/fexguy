@@ -678,6 +678,11 @@ const lawRegions = [
   .cra {
     padding-block: var(--space-8) var(--space-12);
   }
+  /* Randy (November 2026): no quote sidebar, so the article uses the full
+     page width (the site container) instead of the narrow reading column. */
+  .cra > .prose {
+    max-width: none;
+  }
   .cra :global(.byline) {
     margin-block: var(--space-4) var(--space-6);
   }
