@@ -19,6 +19,9 @@ interface Props {
   preview?: boolean;
 }
 const { path, h1, updated, preview = false } = Astro.props;
+// The H1 is shown on the hero in two lines: before the colon, then the rest.
+const [h1Main, ...h1Rest] = h1.split(': ');
+const h1Sub = h1Rest.join(': ');
 
 type Op = (typeof data.operators)[number];
 const operators = data.operators as Op[];
@@ -78,11 +81,27 @@ const lawRegions = [
 ];
 ---
 
+{/* Hero banner (Randy, November 2026): full-width image with the H1 over it,
+   modeled on the national parks guide. The image is an AI-generated
+   illustration Randy supplied (generic, unbranded ship). The H1 text is
+   unchanged; the part after the colon displays as the subtitle line. */}
+<header class="cra-hero">
+  <picture>
+    <source type="image/avif" srcset="/images/cruise-ashes/cruise-ship-hero-800.avif 800w, /images/cruise-ashes/cruise-ship-hero-1200.avif 1200w, /images/cruise-ashes/cruise-ship-hero-1600.avif 1600w" sizes="100vw" />
+    <source type="image/webp" srcset="/images/cruise-ashes/cruise-ship-hero-800.webp 800w, /images/cruise-ashes/cruise-ship-hero-1200.webp 1200w, /images/cruise-ashes/cruise-ship-hero-1600.webp 1600w" sizes="100vw" />
+    <img class="cra-hero__img" src="/images/cruise-ashes/cruise-ship-hero.jpg" alt="A white cruise ship sailing on calm blue water past green mountains at sunset" width="1600" height="800" fetchpriority="high" />
+  </picture>
+  <div class="cra-hero__shade"></div>
+  <div class="cra-hero__text">
+    <h1>{h1Main}:<span class="cra-hero__sub"> {h1Sub}</span></h1>
+  </div>
+  <p class="cra-hero__credit">AI-generated illustration</p>
+</header>
+
 {/* Randy (November 2026): no Quick Answer or Key Points; an introductory paragraph replaces them. */}
 <div class="container page page--article cra" data-article-layout="content" data-article-exceptions="quick-answer key-points">
   <div class="prose wp-content">
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
-    <h1>{h1}</h1>
     <ArticleByline updated={updated} />
     <p>
       Scattering ashes at sea can be a meaningful way to honor a loved one, but cruise lines have different policies,
@@ -669,6 +688,63 @@ const lawRegions = [
 </script>
 
 <style>
+  /* Hero banner (modeled on the national parks guide's .ola-hero). */
+  .cra-hero {
+    position: relative;
+    color: #fff;
+    background: #1f2926;
+  }
+  .cra-hero__img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 68% 50%;
+  }
+  .cra-hero__shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(0 0 0 / 0.05) 30%, rgb(0 0 0 / 0.65) 100%);
+  }
+  .cra-hero__text {
+    position: absolute;
+    inset: auto 0 var(--space-12);
+    padding-inline: var(--space-4);
+    max-width: var(--container-max);
+    margin-inline: auto;
+  }
+  .cra-hero h1 {
+    font-size: clamp(2.25rem, 1.6rem + 3.4vw, 4.25rem);
+    line-height: 1.05;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 12px rgb(0 0 0 / 0.4);
+  }
+  .cra-hero__sub {
+    display: block;
+    font-size: clamp(1.125rem, 1rem + 0.8vw, 1.625rem);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: var(--space-3);
+    text-shadow: 0 1px 8px rgb(0 0 0 / 0.5);
+  }
+  .cra-hero__credit {
+    position: absolute;
+    right: var(--space-2);
+    bottom: var(--space-2);
+    margin: 0;
+    font-size: 0.75rem;
+    color: rgb(255 255 255 / 0.85);
+  }
+  @media (min-width: 40rem) {
+    .cra-hero__img {
+      aspect-ratio: 16 / 9;
+    }
+    .cra-hero__text {
+      padding-inline: var(--space-6);
+      bottom: 2.5rem;
+    }
+  }
   .cra {
     padding-block: var(--space-8) var(--space-12);
   }
