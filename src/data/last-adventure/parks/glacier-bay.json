@@ -56,9 +56,9 @@
       "photo": {
         "src": "/images/last-adventure/glacier-bay/huna-tribal-house.jpg",
         "srcWebp": "/images/last-adventure/glacier-bay/huna-tribal-house.webp",
-        "alt": "The Huna Tribal house paints a serene scene along the shoreline of Glacier Bay",
-        "credit": "NPS/K. Boomer",
-        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6354ac7f-1dd8-b71b-0b81-2f7a290147b6"
+        "alt": "The moon rising over snowy mountains and still water at Bartlett Cove",
+        "credit": "NPS Photo / G. Ketchner",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e1154591-c0de-46c2-a536-123d023eed58"
       },
       "description": "On the shoreline of Bartlett Cove stands Xunaa Shuká Hít, the Huna Tribal House, completed in 2016 as a place of discovery and reconnection for the Huna Tlingit clans whose homeland this is. The flat Tlingit Trail leads there past a traditional dugout canoe and a complete whale skeleton, with views across the cove. Admire the carved totems and house screen, and in summer step inside to see the four house posts that tell the clans' stories. It is a fitting place to remember that every family carries its history forward.",
       "plan": {
@@ -179,13 +179,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/glacier-bay/bartlett-river-trail.jpg",
-        "srcWebp": "/images/last-adventure/glacier-bay/bartlett-river-trail.webp",
-        "alt": "An angler fishing the Bartlett River",
-        "credit": "National Park Service",
-        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2ead575d-1dd8-b71c-070a-528db23f055e"
-      },
+      "photo": null,
       "description": "The Bartlett River Trail follows an intertidal lagoon, slips through spruce and hemlock forest and comes out at the open estuary where the river meets the sea. Ducks, geese and other water birds gather on the tidal flats, and late in the summer salmon run upriver, drawing hungry harbor seals. Watch the beach for coyotes, moose, bears and river otters. It is a half-day walk with room for long pauses, and the estuary at the end feels made for quiet remembering.",
       "plan": {
         "distance": "4 mi round trip (the Bartlett Cove page gives 5 mi round trip from the lodge)",

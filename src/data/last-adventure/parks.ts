@@ -170,9 +170,9 @@ const pilotParks: Park[] = [
         photo: {
           src: "/images/last-adventure/canyonlands/mesa-arch.jpg",
           srcWebp: "/images/last-adventure/canyonlands/mesa-arch.webp",
-          alt: "Person snaps picture of a large arch made out of rock",
-          credit: "NPS/Nicole Segnini",
-          sourceUrl: "https://npgallery.nps.gov/AssetDetail/5bfd9036-2621-44de-8a37-f02aafbc653a",
+          alt: "Mesa Arch seen from far below, a small opening in the rim of a long sandstone cliff",
+          credit: "NPS/Chris Wonderly",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/845f2b11-9cf9-4596-a1f0-9cd3bebbb522",
         },
         description:
           'There is a hush at Mesa Arch just before dawn, when everyone stops talking and waits. Then the sun clears the horizon and light pours through the 27-foot arch, framing the canyon far below and the La Sal Mountains in the distance. The walk is short enough for most of the family, and the park calls this its classic sunrise spot. Begin your loved one\'s last adventure here, and let the first light of the day belong to them.',
@@ -430,13 +430,7 @@ const pilotParks: Park[] = [
         id: 'inspiration-point',
         name: 'Inspiration Point',
         kinds: ['accessible', 'extraordinary'],
-        photo: {
-          src: "/images/last-adventure/grand-teton/inspiration-point.jpg",
-          srcWebp: "/images/last-adventure/grand-teton/inspiration-point.webp",
-          alt: "Hikers make their way down a steep path on the side of a cliff",
-          credit: "NPS/K. Grossman",
-          sourceUrl: "https://npgallery.nps.gov/AssetDetail/bb89c243-0417-415c-bf13-b29cf832bf40",
-        },
+        photo: null,
         description:
           'Start with a boat ride across Jenny Lake, the kind of simple adventure your loved one might have enjoyed most. On the far shore, the trail climbs past Hidden Falls, a 100-foot cascade, and up to a rocky ledge high above the lake. Below you, the water stretches back toward the valley of Jackson Hole. It is a wonderful place to pause, pass around old photographs and let the view do the talking for a while.',
         plan: {
