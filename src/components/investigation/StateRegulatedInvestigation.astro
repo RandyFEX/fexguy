@@ -1,0 +1,200 @@
+---
+// The state-regulated life insurance investigation (Randy's approved article;
+// every reader-visible character is his). Rendered at its permanent URL,
+// /burial-insurance/state-regulated-life-insurance/, and on the noindex
+// review copy /state-regulated-investigation-preview/ (`preview`, which also
+// shows the review-only notice line). Its own layout: not the article template.
+import ArticleByline from '@/components/article/ArticleByline.astro';
+import ArticleSummary from '@/components/article/ArticleSummary.astro';
+import QuoteBox from '@/components/lead/QuoteBox.astro';
+import StateMap from '@/components/home/StateMap.astro';
+import ImpactCalculator from '@/components/impact/ImpactCalculator.astro';
+import MailerDecoder from '@/components/impact/MailerDecoder.astro';
+import { lead } from '@/config/lead';
+import { INVESTIGATION } from '@/config/investigation';
+
+interface Props { preview?: boolean }
+const { preview = false } = Astro.props;
+
+const quickAnswer = "State-Regulated Life Insurance cards and letters are considered by many to be the most misleading and untruthful forms of life insurance marketing. I’m going to show you real examples of these deceptive letters below, and explain how to spot the misleading claims so you don’t get misled and have your personal information misused.";
+const keyPoints = [
+  "All life insurance products sold in every state are ”State-regulated.” The card or letter you received does not describe a special program, and the state is not going to pay for your funeral if you give the sender your personal information.",
+  "The card shown says it in its own small print: “Not affiliated with or endorsed by any government agency.”",
+  "Insurance regulators in many states, such as Washington, D.C., Iowa, and Nebraska, have warned about or taken legal action against these types of mailers.",
+  "When you send a card back or letter like this, your information can now be sold to the highest-bidding life insurance agent and your personal information is no longer personal.",
+  "You don’t need to provide your personal information to a deceptive a card or letter to compare your options before you buy.",
+];
+---
+  <div class="container inv-layout">
+  <article class="inv" data-page-type="investigation" data-page-reason="Custom investigation layout (mailers, claims tables, calculator, state map, quote sidebar); not the article template.">
+    {preview && <p class="inv__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
+
+    <h1>{INVESTIGATION.h1}</h1>
+    <ArticleByline />
+    <div class="inv__summary">
+      <ArticleSummary quickAnswer={quickAnswer} takeaways={{ label: 'Key Points', items: keyPoints }} />
+    </div>
+
+    <div class="inv__intro">
+      <p>What these state-regulated life insurance cards and letters don't tell you is that they are promoting ordinary whole life insurance, commonly referred to as <a href="/final-expense-life-insurance-complete-guide/">final expense insurance</a>, <a href="/burial-insurance/">burial insurance</a>,  cremation insurance, or funeral funding insurance. The problem with the deceptive advertising you'll see in this report is that it's designed to fool you into thinking you're being offered some special government benefit instead of an ordinary whole life insurance. Most whole life insurance plans offer $50,000 or less in coverage. Each carrier will have its own health questions you'll have to answer to get the lowest rates.  At Funeral Funds, we match people up with the best plan based on their health to get them the lowest rates.</p>
+    </div>
+
+    <section class="inv__mailer" aria-labelledby="mailer-2026">
+      <div class="inv__banner"><h2 id="mailer-2026">8 Misleading “State Regulated Life Insurance Claims</h2></div>
+      <p>Here's one example of a 2026 state-regulated life insurance mailer. I've numbered eight claims on it that I think every senior life insurance shopper ought to understand before mailing one of these cards or letters back.</p>
+      <MailerDecoder part="figure" />
+      <MailerDecoder part="claims" heading={false} />
+    </section>
+
+    <section class="inv__mailer" aria-labelledby="mailer-2027">
+      <div class="inv__banner"><h2 id="mailer-2027">Another State-Regulated Life Insurance Mailer Exposed</h2></div>
+      <p>Here's another State-Regulated Life Insurance mailer example, this time advertising up to $35,000 for 2027. The wording often changes depending on who mails these cards, but take a look at how many of the same misleading marketing phrases show up again.</p>
+      <MailerDecoder part="figure" mailer="2027" />
+      <MailerDecoder part="claims" mailer="2027" heading={false} />
+    </section>
+
+    <section class="inv__mailer" aria-labelledby="mailer-notice">
+      <div class="inv__banner"><h2 id="mailer-notice">Important Life Insurance Benefit Notice That's Bad</h2></div>
+      <p>This State-Regulated Life Insurance example shows how an ordinary life insurance ad can be dressed up as an "Important Benefit Notice," complete with a respond-by date to create urgency.</p>
+      <MailerDecoder part="figure" mailer="notice" />
+      <MailerDecoder part="claims" mailer="notice" heading={false} />
+    </section>
+
+    <h2 id="regulators">What Insurance Regulators Discovered<br class="br-desk" /> About These Mailers</h2>
+    <p>Many state insurance regulators have looked into mailers similar to the ones shown above. Many have issued warnings to inform and protect their state residents from these deceptive cards and letters.</p>
+    <div class="inv__findings">
+      <section class="inv__finding">
+        <h3>Washington, D.C. (2020): A Consumer Warning</h3>
+        <p>The D.C. Department of Insurance, Securities and Banking (DISB) warned residents about a mailer titled "F-1 2020 Benefit Information for District of Columbia Residents Only." DISB said the mailer didn't come from the District government and wasn't sanctioned by DISB, and that the information people sent back could be used by, or sold to, insurance companies so their agents could contact them.</p>
+      </section>
+      <section class="inv__finding">
+        <h3>Iowa (2020): A Cease-and-Desist Order</h3>
+        <p>Two Georgia companies, Direct Mail Processing, LLC and Rehg Data Assets, Inc., sent official-looking insurance mailers to older Iowans. One of them referred to a "state-regulated program" for final expenses. People who returned a card got a call from an insurance salesperson, and the mailer company was paid for each lead. The Iowa Insurance Division ordered the operation to cease and desist. Separately, the two companies reached a consent judgment with the Iowa Attorney General's Office: they agreed to pay the state $40,000 and denied violating Iowa's Consumer Fraud Act.</p>
+      </section>
+      <section class="inv__finding">
+        <h3>Nebraska (2022): Consumer Education</h3>
+        <p>In a presentation on misleading insurance marketing, the Nebraska Department of Insurance showed a "<a href="/t2-life-insurance/">T-2</a>" card headed "2020 Benefit Information for Nebraska Citizens Only" and explained how lead generation works.</p>
+      </section>
+    </div>
+    <p>The Texas Department of Insurance sums it up in its consumer fraud guide: "The government doesn't sell insurance. Agents who say they're with the government are breaking the law."</p>
+    <p>Different states, different letters in the corner of the card, same basic idea. Those findings are about those mailers; they don't identify who sent the 2026 card above or show that its sender broke the law.</p>
+
+    <h2 id="before-you-respond">Before You Respond to This Mailer…<br class="br-desk" />Know This</h2>
+    <p>Your home state doesn't sponsor, fund, or give away private life insurance policies to its residents. Legitimate government options are limited and specific. For example, Social Security's one-time $255 death payment to an eligible spouse or child, <a href="/burial-insurance/veterans/">VA burial benefits</a> and <a href="https://www.va.gov/life-insurance/options-eligibility/valife/">VALife</a> for eligible veterans, and a few others for particular groups. The government's options are rarely your best and most affordable option.</p>
+    <ol class="inv__cards">
+      <li class="inv__card-cta"><span>NEVER respond to these deceptive cards or letters. Call Funeral Funds, and we'll help you cut through the crap.</span> <a class="btn art-cta__btn" href="https://funeralfunds.com/free-quote/">GET 3 RATES NOW</a></li>
+      <li>If any life insurance agent calls you, ask what your family would receive if you died on the day your policy was approved or your 1st premium was made..</li>
+      <li>Check to confirm that the agent and the life insurance company you are considering are licensed through your state's insurance department.</li>
+      <li>Your actual price and eligibility depend on your age, health, coverage amount, and the insurance company. Most people will qualify for 1st-day coverage with the right plan.</li>
+    </ol>
+    <p>The majority of the people I help qualify for <a href="/burial-insurance/with-first-day-coverage/">first-day coverage</a> and the lowest rates. My process is simple and often lets me compare rates from 20 to 30 insurance companies. Depending on your state, age, and health, you can qualify for first-day coverage options with the lowest rates. If you'd like me to look at or compare any other offer you received, call me at <a href="tel:8888629456">888-862-9456</a>.</p>
+
+    <h2 id="send-back">One Letter Can Result in 100’s<br class="br-desk" /> of Telephone or Robocalls</h2>
+    <p>Here's how a reply card can turn into a phone call:</p>
+    <ol class="inv__cards">
+      <li><strong>You fill it out.</strong> Name, home address, phone number, age, and maybe even your spouse's name and age. Then you drop it in the mail.</li>
+      <li><strong>Your reply becomes a lead.</strong> Many of these companies specialize in mailing these cards and selling the replies to new or desperate life insurance agents.</li>
+      <li><strong>An agent buys it.</strong> It is not uncommon for agents to pay up to $40, $50, or $60 for each letter with your information. This depends on the specific lead program and agent contracts.</li>
+      <li><strong>The agent contacts you.</strong> Get ready for the avalanche of phone calls, or the knocks on the door, that the card or letter was really set up to produce.</li>
+    </ol>
+    <p>The agent who buys your personal information (now called a “lead”) may represent one insurance company or several. What you're offered depends on which products that agent has, how well the agent knows his/lher underwriting (which companies accept which health conditions), and your own health and budget.</p>
+    <p>Some agents may lean toward <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/">guaranteed-acceptance insurance</a> with 2-year waiting periods because these types of policies don't ask health questions and are easy to get approved (at a much higher cost). That isn't true of every agent, and you can't tell how an agent works, or how they're paid, just from the card or letter that ended up in your mailbox. Guaranteed acceptance can be the right fit for someone who can't qualify for simplified issue coverage. But it will cost more than first-day coverage for a comparable applicant, and it comes with that mandatory 2-year waiting period before the full benefit is paid for anything other than an accident..</p>
+
+    <h2 id="right-plan">Finding the Right Life Insurance Plan</h2>
+    <p>Finding the right life insurance plan isn't about responding to a misleading official-looking advertisement or choosing the company with the biggest advertised benefit. You should always look for coverage that fits your needs, your health, and your budget.</p>
+    <p>I've spent over a decade helping people compare life insurance companies, and one of the biggest mistakes I see is people buying a policy without knowing what better plans they may qualify for.</p>
+    <p>Most of the people I help qualify for coverage that pays from day one. Others may need a policy with a waiting period. The important thing is knowing which option will actually be available to you, and at a price you can afford.</p>
+    <p>Some people already have enough money set aside to cover their final expenses, and don’t need a new life insurance policy at all.</p>
+    <p>My job is to help you find out whether you need coverage and, if you do, which of the many policies available makes the most sense.</p>
+
+    <div class="inv__map"><StateMap balancedTitle /></div>
+    <p>Just because these mailers advertise $25,000 to $35,000 in coverage doesn't mean you need that much. Some people only need enough to cover today's final expenses, while others want coverage that accounts for rising costs over the next 20 years or even a lifetime. Use our funeral cost estimates by state and life expectancy to help determine how much coverage makes sense for you. Or call Funeral Funds directly, and I'll help you estimate what you might need today and in the future.</p>
+
+    <ImpactCalculator variant="embedded" display="gut" mealCost={8} title="Not Sure Which Policy to Get? Trust Your Gut.">
+      <p>See how much food the extra premium on a more expensive policy could buy instead.</p>
+    </ImpactCalculator>
+
+    <h2 id="randy-recommends">What Funeral Funds Recommends</h2>
+    <p>Hi, I’m Randy from Funeral Funds. I've sold life insurance for over a decade, and here's what I recommend before buying anything advertised in one of these “State Regulated” cards or letters.</p>
+    <p>First, figure out how much coverage you actually need. Just because a mailer advertises $25,000 or $35,000 doesn't mean you need that much to cover your current and future needs..</p>
+    <p>Second, find out whether you qualify for coverage that pays from the 1st day. Don't automatically settle for a policy with a mandatory 2-year waiting period just because a deceptive ad says you don't have to answer health questions, or qualify through the state..</p>
+    <p>Third, compare prices from several insurance companies. I recommend you let me help you with that by using <a href="/free-quote/">my free life insurance quoting tool</a> on this page. You'll see actual rates from multiple companies without having to talk to me or any other life insurance agent.</p>
+    <p>And if you'd rather talk to me, call me directly at <a href="tel:8888629456">888-862-9456</a>. I'll help you compare your options, find the best coverage that fits your current and future needs and budget, and save you from overpaying on the wrong policy.</p>
+
+    <h2 id="sources">Sources and Method</h2>
+    <ul class="inv__sources">
+      <li>D.C. Department of Insurance, Securities and Banking: "DISB Warns District Residents of Deceptive Mailers Selling Funeral Insurance Policies" (2020).</li>
+      <li>Iowa Insurance Division: "Georgia Mailers Sent to Seniors" (December 28, 2020); Iowa Attorney General consent judgment (Polk County, EQCE086323).</li>
+      <li>Nebraska Department of Insurance: "Misleading Marketing" presentation (2022), page 11.</li>
+      <li>Texas Department of Insurance: <a href="https://www.tdi.texas.gov/pubs/consumer/cb044.html">consumer fraud guide</a>.</li>
+      <li><a href="https://www.irs.gov/publications/p525">IRS Publication 525</a>; 20 CFR 404.390 (Social Security lump-sum death payment).</li>
+      <li>Premiums: Mutual of Omaha Living Promise Level and Aetna Accendo Preferred from the companies' 2026 rate guides; Gerber Life Guaranteed Life from rate card GL-RC 0922 (monthly ACH); Colonial Penn at $9.95 per unit with coverage per unit by age and sex. Non-tobacco where the plan asks, Texas rates. Totals are simple sums of level premiums.</li>
+      <li>2026 &amp; 2007 cards are examples with redacted addresses. Senders are unknown.</li>
+    </ul>
+  </article>
+  <aside class="inv-layout__aside">
+    <QuoteBox />
+  </aside>
+  </div>
+
+
+<style>
+  /* The site's standard quote sidebar (same component and column split as
+     ContentLayout's sidebar pages): content column up to 48rem plus a 20rem
+     sidebar from 64rem; on phones the box follows the article. */
+  @media (min-width: 64rem) {
+    .inv-layout { display: grid; grid-template-columns: minmax(0, 48rem) 20rem; justify-content: space-between; align-items: start; gap: var(--space-8); }
+    .inv-layout__aside { margin-top: 0; align-self: stretch; padding-top: var(--space-6); }
+  }
+  .inv { padding-block: var(--space-6); }
+  /* Text uses the full article width, like the mailer banners. */
+  .inv > h1 { max-width: var(--prose-max); }
+  .inv h2 { margin-top: var(--space-12); }
+  .inv__flag { font-size: 0.875rem; color: var(--color-text-muted); }
+  .inv__summary { max-width: 52rem; margin-block: var(--space-4); }
+  .inv__intro { font-size: 1.0625rem; }
+  .inv__findings { display: grid; gap: var(--space-3); margin-block: var(--space-4); }
+  .inv__finding { background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); }
+  .inv__finding h3 { font-size: 1rem; margin: 0 0 var(--space-1); color: var(--color-primary); }
+  .inv__finding p { margin: 0; font-size: 0.9375rem; }
+  .inv__finding { text-align: center; }
+  /* Numbered cards in the regulator-card style: 1 / 2 / 4 across. */
+  .inv__cards { list-style: none; padding: 0; margin-block: var(--space-4); display: grid; gap: var(--space-3); counter-reset: inv-card; max-width: none !important; }
+  .inv__cards li { counter-increment: inv-card; background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); font-size: 0.9375rem; text-align: center; }
+  .inv__cards li::before { content: counter(inv-card); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; margin: 0 auto var(--space-2); }
+  .inv__cards li strong { display: block; color: var(--color-primary); }
+  .inv__card-cta { display: flex; flex-direction: column; gap: var(--space-1); }
+  .inv__card-cta .btn { margin-top: auto; align-self: center; min-height: var(--tap-target); font-size: 0.9375rem; padding-inline: var(--space-4); display: inline-flex; align-items: center; }
+  .inv__sources { font-size: 0.9375rem; }
+  /* V11.6: mailer 1's claims heading (in its section banner) in capitals. */
+  #mailer-2026 { text-transform: uppercase; }
+  /* V11.9: deliberate line breaks for balanced two-line banners, desktop only
+     (the sidebar layout); tablets and phones wrap naturally. */
+  :global(.br-desk) { display: none; }
+  @media (min-width: 64rem) { :global(.br-desk) { display: inline; } }
+  .inv :global(.imp .imp__head .imp__title) { text-wrap: balance; }
+  /* V11.8: major section headings as dark green banners (white bold text,
+     centered, same rounded corners); wording, size and spacing unchanged. */
+  .inv > h2, .inv :global(.home-map__title), .inv :global(.imp__title) { background: #173f35; color: #ffffff; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); }
+  /* Every section heading in the article is centered across the full width,
+     including the calculator's title (its component is shared, so only here). */
+  /* Fill each line before breaking: the site-wide text-wrap: balance (global.css)
+     would split a long heading into two short halves. */
+  .inv > h2, .inv :global(.imp__title), .inv :global(.home-map__title) { text-align: center; text-wrap: wrap; }
+  .inv :global(.imp__head > p:not(.imp__profile)) { text-align: center; max-width: none; }
+  /* The homepage map tucks under the section above it there; here it starts below its heading. */
+  .inv__map :global(.home-map) { margin-top: 0; padding-bottom: var(--space-4); }
+  /* Mailer sections: a full-width green banner opens each one. */
+  .inv__mailer { margin-top: var(--space-12); }
+  .inv__banner { background: #173f35; border-radius: var(--radius); padding: var(--space-4) var(--space-6); margin-bottom: var(--space-4); }
+  .inv__banner h2 { color: #ffffff; margin: 0; text-align: center; font-weight: 800; font-size: clamp(1.375rem, 1.1rem + 1.2vw, 2rem); line-height: 1.2; }
+  .inv__mailer :global(.mdec__figure) { margin-top: var(--space-4); }
+  @media (max-width: 47.99rem) { .inv__banner { padding: var(--space-3) var(--space-4); } }
+  @media (min-width: 48rem) {
+    .inv__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 60rem) {
+    .inv__findings { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .inv__cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+</style>

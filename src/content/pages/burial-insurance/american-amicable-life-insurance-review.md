@@ -307,7 +307,7 @@ Many seniors believe "no medical exam" means automatic full coverage. It doesn't
 
 Another sales tactic is emphasizing the word guaranteed. Agents often say "guaranteed acceptance," but none of American Amicable's policies described in this review is guaranteed acceptance. Even the Senior Choice Return of Premium plan can turn you down based on your health answers, and its tradeoff is a waiting period of at least two years with no full payout if you pass away early.
 
-These tactics work because they sound official and urgent. Some mailers even include fake government seals or talk about "state-regulated programs" to build trust. They're designed to make you respond emotionally, not logically.
+These tactics work because they sound official and urgent. <a href="/burial-insurance/state-regulated-life-insurance/">Some mailers even include fake government seals</a> or talk about "state-regulated programs" to build trust. They're designed to make you respond emotionally, not logically.
 
 ## How to compare first-day coverage options
 

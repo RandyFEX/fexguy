@@ -1,0 +1,4143 @@
+[
+  {
+    "conflicts": [
+      "Minimum cruise length: the committal page says committal cannot be performed on cruises of 6 nights or less; the Celebrate at Sea FAQ says cruises of five nights or more. Both are official; ask P&O."
+    ],
+    "unresolved": [
+      "Full page text not opened (bot protection); confirm wording in a browser.",
+      "Lead time and contact department not shown in the indexed content."
+    ],
+    "needsDirectContact": false,
+    "notes": "All P&O text was obtained from search-result snippets because pocruises.com could not be fetched from this environment. s1 snippets also stated: Certificate of Cremation must be brought on board; the person scattering must be booked on the cruise; ceremony on a sea day at least 12 nautical miles from land; not possible in protected waters such as the Norwegian Fjords; \"the ceremony is not a formal or religious ceremony\"; a certificate with latitude and longitude from the ship's log is provided.",
+    "id": "po-cruises-uk",
+    "name": "P&O Cruises (UK)",
+    "parent": "Carnival Corporation & plc (Carnival UK)",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "Mediterranean",
+      "Canary Islands",
+      "Caribbean",
+      "World cruises"
+    ],
+    "headquarters": "Southampton, England, UK",
+    "status": "officially-permitted",
+    "statusRationale": "Version 1.6: the line's own policy page, read through the search engine's index of that official page (the page refuses automated requests), explicitly permits it, subject to its published requirements.",
+    "evidenceLevel": "official-policy",
+    "sources": [
+      {
+        "id": "v6a",
+        "url": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
+        "title": "Committal of ashes at sea (P&O Cruises)",
+        "type": "official-policy-page",
+        "quote": "There is a admin charge of £270 to conduct the scattering of ashes from our P&O Cruises ships.",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened.",
+        "otherIndexedQuotes": [
+          "committal of ashes cannot be performed on cruises of 6 nights duration or less",
+          "Latitude & Longitude"
+        ]
+      },
+      {
+        "id": "v6b",
+        "url": "https://pocruises.com/ceremonies-at-sea/faqs",
+        "title": "Celebrate at Sea FAQs (P&O Cruises)",
+        "type": "official-faq",
+        "quote": "on cruises of five nights or more",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.6: read through the search engine's index of this official page on 2026-11-21 (the page itself refuses automated requests: HTTP 403/401). Quote as shown in the indexed copy; the full page was not opened."
+      },
+      {
+        "id": "v6c",
+        "url": "https://www.pocruises.com/content/dam/po/pdfs/ceremonies-sea-shore/POC_Ceremonies_Sea_and_Shore_TCs-March2026.pdf",
+        "title": "Ceremonies Sea and Shore Terms and Conditions, March 2026 (P&O Cruises)",
+        "type": "official-pdf",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Listed in the search index; the PDF returned HTTP 403 to a direct request on 2026-11-21. Content not read."
+      },
+      {
+        "id": "r1-s1",
+        "url": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
+        "title": "Committal of ashes at sea",
+        "type": "official-policy-page",
+        "quote": "There is a admin charge of £270 to conduct the scattering of ashes from our P&O Cruises ships.",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s2",
+        "url": "https://www.pocruises.com/en-au/help",
+        "title": "Travel Help & Advice",
+        "type": "official-faq",
+        "quote": "Yes it's possible to scatter ashes from our ships at sea on cruises of five nights or more. You'll require approval from the Captain in advance of your cruise",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "r1-s3",
+        "url": "https://www.pocruises.com/en-au/login-test/scattering-test",
+        "title": "Committal of ashes at sea (test URL)",
+        "type": "official-policy-page",
+        "quote": "The Captain or Senior Officer will accompany you to an outside area, typically a lower deck.",
+        "verified": "2026-11-21",
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing. (Earlier-round record, kept.)"
+      }
+    ],
+    "answers": {
+      "permitted": {
+        "answer": "Yes, with the Captain's approval in advance of the cruise.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented policy; each committal needs the Captain's approval before the cruise starts.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Required: Captain's approval in advance of the start of the cruise.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Bring the Certificate of Cremation on board.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Ashes in a biodegradable container, carried as hand luggage, with a certificate or equivalent proof that it is biodegradable.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Required, with proof of biodegradability.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "The ashes are lowered into the water in their container.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "privateCeremony": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "The ceremony is conducted by the Captain or a senior officer.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Admin charge of GBP 270, not reduced if elements are removed; includes pre-cruise and on-board planning, the ceremony and a certificate, with some floral and Champagne extras for up to four guests.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published in the indexed official page content (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "On a sea day; not in protected bodies of water such as the Norwegian Fjords; minimum cruise length (see conflicts).",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a",
+          "v6b"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Yes: latitude and longitude from the ship's log on a ceremony certificate.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "certificateConfirmation": {
+        "answer": "A ceremony certificate with the position from the ship's log.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "differsByVesselItinerary": {
+        "answer": "Yes: cruise length, sea days and protected waters.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not permitted: P&O is not permitted to scatter the ashes of pets.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "P&O does not assist with scatterings ashore; local approvals in that country would apply.",
+        "basis": "official-indexed",
+        "sources": [
+          "v6a"
+        ]
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection",
+    "researchLog": [
+      "Round 3: pocruises.com committal page HTTP 403 (bot protection). pocruises.com.au now redirects to carnival.com.au (P&O Australia brand retired; utm_campaign=po-transition). web.archive.org not reachable; archived copies not attempted further (permission policy).",
+      "Version 1.6 (2026-11-21): domain-restricted web searches of the official site returned the search engine's indexed copy of the policy page; requirements recorded from it. Direct requests and official PDFs still HTTP 403/401."
+    ],
+    "previousStatus": "conditionally-permitted",
+    "round3": "reclassified-unconfirmed-official-page",
+    "previousAnswersRound1": {
+      "permitted": {
+        "answer": "Yes, with the Captain's approval in advance, on qualifying cruises (see conflict on minimum length).",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented policy, but each committal requires the Captain's approval in advance of the cruise.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Required: approval from the Captain in advance of the start of the cruise.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Certificate of Cremation must be brought on board.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Ashes must be in a biodegradable container.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Required (biodegradable container).",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Yes; the Captain or Senior Officer accompanies the party to an outside area (test-page wording). The ceremony is not formal or religious.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s3"
+        ]
+      },
+      "designatedArea": {
+        "answer": "An outside area, typically a lower deck (from a test-labelled URL only).",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s3"
+        ]
+      },
+      "crewParticipation": {
+        "answer": "If requested, the Captain or Senior Officer will say a prayer.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not offered as such; the page says the ceremony is not a formal or religious ceremony.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "fees": {
+        "answer": "Admin charge of £270.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Must take place on a sea day; not possible in protected bodies of water such as the Norwegian Fjords; not on short cruises (6 nights or less per s1; five nights or more allowed per s2).",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Yes; latitude and longitude from the ship's log are given on a certificate.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "certificateConfirmation": {
+        "answer": "Yes; a certificate with the position from the ship's log.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "differsByVesselItinerary": {
+        "answer": "Yes by itinerary: cruise length, sea days and protected waters.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1",
+          "s2"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not permitted (stated only on a test-labelled URL).",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s3"
+        ]
+      },
+      "otherMemorialAssistance": {
+        "answer": "The person wishing to scatter the ashes must be booked on the cruise; no other memorial services captured.",
+        "basis": "unconfirmed-official",
+        "sources": [
+          "s1"
+        ]
+      }
+    },
+    "evidenceMethod": "search-index-of-official-page",
+    "round16": "recovered-official-indexed"
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "Fee, coordinates or certificate afterward, and pet ashes not published."
+    ],
+    "needsDirectContact": false,
+    "notes": "Snippets also stated: ashes are to be kept in a secure, leakproof and sealed container; an on-board team member contacts the guest to make arrangements; wreaths must be free of ribbons, imitation flowers, containers, balloons and other non-biodegradable adornments (\"A small amount of wire or non-plastic string is permitted to hold the wreath together\"); \"we reserve the right to limit the number of guests attending the service.\" The FAQ lists a Guest Services phone number and email that were not captured verbatim.",
+    "id": "fred-olsen-cruise-lines",
+    "name": "Fred. Olsen Cruise Lines",
+    "parent": "Bonheur ASA (Fred. Olsen group)",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "Norwegian Fjords",
+      "British Isles",
+      "Mediterranean",
+      "Canary Islands"
+    ],
+    "headquarters": "Ipswich, England, UK",
+    "status": "officially-permitted",
+    "statusRationale": "Fred. Olsen's FAQ, read directly on 2026-11-21, allows guests to bring cremated remains or a wreath aboard for a memorial commemoration and publishes the full procedure; each service is subject to ship management approval.",
+    "evidenceLevel": "official-policy",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.fredolsencruises.com/faqs/on-board/can-i-scatter-ashes-at-sea",
+        "title": "Fred. Olsen FAQ: Can I scatter ashes at sea?",
+        "type": "official-faq",
+        "quote": "The ship must be at least 12 nautical miles from land before a commemorative service can take place.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, page HTML read); quote checked word for word against the page. Email addresses were Cloudflare-obfuscated in the HTML and decoded locally."
+      },
+      {
+        "id": "s2",
+        "url": "https://faqs.fredolsencruises.com/portal/en/kb/articles/can-i-scatter-ashes-at-sea",
+        "title": "Can I scatter ashes at sea? (help-centre copy)",
+        "type": "official-faq",
+        "quote": "please present a certificate confirming that it is bio-degradable.",
+        "verified": "2026-11-21",
+        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. (Round 1 record, not re-verified in round 2.)"
+      }
+    ],
+    "answers": {
+      "permitted": {
+        "answer": "Yes: guests may bring cremated remains or a commemorative wreath aboard \"to carry out a memorial commemoration during your cruise.\"",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented policy; each service \"is subject to the approval of the ships management and cannot be guaranteed.\"",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Yes.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "leadTime": {
+        "answer": "At least seven days before the cruise.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "contactDepartment": {
+        "answer": "Guest Services, 0800 0355 122 or guest.services@fredolsen.co.uk; an on-board team member then makes the arrangements.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "writtenApplication": {
+        "answer": "No form; Guest Services takes details by phone or email.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Ashes kept in \"a secure, leakproof and sealed container.\"",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "If the container goes into the sea, present a certificate that it is biodegradable once on board.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Either: ashes may be scattered, or dispersed with the container if it is certified biodegradable.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "privateCeremony": {
+        "answer": "A senior crew member supervises \"to ensure your privacy\"; the line may limit the number of guests attending.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "designatedArea": {
+        "answer": "Deck areas used for commemorative services; place agreed with ship management.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "crewParticipation": {
+        "answer": "A member of senior crew supervises the commemoration.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Place, date and time are agreed between guests and the ship's management team.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "familyRequestLocation": {
+        "answer": "Place, date and time are agreed between guests and the ship's management team.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "weatherItineraryLimits": {
+        "answer": "Subject to ship management approval; cannot be guaranteed.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Biodegradable wreaths allowed (a small amount of wire or non-plastic string permitted); ribbons, imitation flowers, balloons and other non-biodegradable items prohibited. Remains cannot be taken ashore once on board.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      }
+    },
+    "wordingConfirmed": true,
+    "round2": "verified-direct"
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No container, document, fee, distance or ceremony details published."
+    ],
+    "needsDirectContact": true,
+    "notes": "Snippet also stated: \"Enquiries can be made, but approval may take some time.\" Guests are directed to Guest Services at guestservices@ambassadorcruiseline.com. Fleet: Ambience, Ambition, Renaissance.",
+    "id": "ambassador-cruise-line",
+    "name": "Ambassador Cruise Line",
+    "parent": "Ambassador Cruise Holidays Ltd",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "British Isles",
+      "Mediterranean",
+      "Canary Islands"
+    ],
+    "headquarters": "Purfleet, Essex, England, UK",
+    "status": "conditionally-permitted",
+    "statusRationale": "Ambassador's FAQ, read directly on 2026-11-21, says only that it \"may be able to offer this\" at the discretion of local port authorities, after enquiries that may take time.",
+    "evidenceLevel": "official-policy",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.ambassadorcruiseline.com/faqs/",
+        "title": "Ambassador Cruise Line FAQs (Can I scatter a loved one's ashes during my cruise?)",
+        "type": "official-faq",
+        "quote": "We may be able to offer this however, this is at the discretion of the local port authorities and we must follow their regulations.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, page HTML read); quote checked word for word against the page. Round 1 quote was a paraphrase; replaced with the exact wording."
+      }
+    ],
+    "answers": {
+      "permitted": {
+        "answer": "Possibly: \"We may be able to offer this however, this is at the discretion of the local port authorities\".",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Individual enquiry; approval \"may take some time\".",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Implied: contact Guest Services before the cruise to start the enquiry.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Guest Services Team, guestservices@ambassadorcruiseline.com",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "writtenApplication": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Depends on the local port authorities' regulations.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "petAshes": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": true,
+    "round2": "verified-direct"
+  },
+  {
+    "conflicts": [
+      "Distance: \"12 nautical miles from land\" and \"12 miles out to sea from any port\" both appear on the same FAQ (round 1 thought they were two copies). Read together: international waters, at least 12 nm from land. Resolved."
+    ],
+    "unresolved": [
+      "Verification limitation (Version 1.5): the complete official policy wording has not been independently verified. The tui.co.uk page refused automated reading (HTTP 403); on 2026-11-21 a page-reading tool returned a paraphrase plus one exact quote (\"Ashes can be scattered in international waters\"). The status rests on that read; confirm the full text in a browser before publication.",
+      "Notice period, urn type for release, fees and ceremony format not published."
+    ],
+    "needsDirectContact": false,
+    "notes": "Snippets also stated: scatterings follow international regulations including MARPOL; non-biodegradable decorations such as ribbon, plastic flowers and balloons are prohibited and wreaths/flowers must be decomposable; remains must stay on board until the commemoration and cannot be taken ashore once on board; a copy of the death certificate is required; date and time depend on environmental restrictions; the family is responsible for the ashes and Marella does not accept liability.",
+    "id": "marella-cruises",
+    "name": "Marella Cruises",
+    "parent": "TUI Group (TUI UK)",
+    "fleetType": "ocean",
+    "regions": [
+      "Mediterranean",
+      "Canary Islands",
+      "Caribbean",
+      "Northern Europe"
+    ],
+    "headquarters": "Luton, England, UK",
+    "status": "officially-permitted",
+    "statusRationale": "Marella's FAQ on tui.co.uk, read on 2026-11-21 through a fetch tool (paraphrased except one exact quote), says ashes can be scattered in international waters and sets out the conditions.",
+    "evidenceLevel": "official-policy",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.tui.co.uk/destinations/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered",
+        "title": "Can I bring a loved one's ashes onboard a Marella cruise ship to be scattered?",
+        "type": "official-faq",
+        "quote": "Ashes can be scattered in international waters - that's 12 miles out to sea from any port",
+        "verified": "2026-11-21",
+        "accessNote": "curl refused (HTTP 403, bot protection). Read on 2026-11-21 through a fetch tool that returned a paraphrase plus this exact quote (the page uses an en dash, shown here as a hyphen). Re-read the full wording in a browser before publishing."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.tuiholidays.ie/f/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered",
+        "title": "Can I bring a loved one's ashes onboard a Marella cruise ship to be scattered? (TUI Ireland)",
+        "type": "official-faq",
+        "quote": "Ashes can be scattered in international waters - that's 12 miles out to sea from any port - and we're happy to help in any way we can.",
+        "verified": "2026-11-21",
+        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. (Round 1 record, not re-verified in round 2.)"
+      }
+    ],
+    "answers": {
+      "permitted": {
+        "answer": "Yes, in international waters, under stated conditions.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Documented FAQ policy; arranged on board with the Guest Experience Coordinator.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "advanceNotice": {
+        "answer": "Contact TUI with booking details before travelling, and tell the airline.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "leadTime": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "TUI (contact page) before travelling; Guest Experience Coordinator on board.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "writtenApplication": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "A copy of the death certificate.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "containerRequirements": {
+        "answer": "Leak-proof, sealed container that can pass X-ray.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "biodegradableUrns": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "At least 12 nautical miles from land and outside marine protected areas; the FAQ also says \"12 miles out to sea from any port\".",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Follows international rules including MARPOL; outside marine protected areas.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      },
+      "gpsCoordinates": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published on the official page (read 2026-11-21).",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Anything else thrown overboard must be biodegradable; ribbon, plastic flowers and balloons prohibited. Remains stay aboard until the service and cannot be taken ashore. The ashes are the guest's responsibility.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "verified-via-fetch-tool-paraphrase",
+    "verificationLimitation": "Verification limitation (Version 1.5): the complete official policy wording has not been independently verified. The tui.co.uk page refused automated reading (HTTP 403); on 2026-11-21 a page-reading tool returned a paraphrase plus one exact quote (\"Ashes can be scattered in international waters\"). The status rests on that read; confirm the full text in a browser before publication."
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does TUI Cruises (Mein Schiff) allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Searched \"Seebestattung\", \"Asche verstreuen\", \"Urne an Bord\" with Mein Schiff/TUI Cruises. Mein Schiff FAQ pages returned (sustainability, arrival, booking, service) did not address it. Sister brand Marella's policy does not apply. German law context (secondary): sea burial in Germany uses a closed water-soluble urn, not loose scattering.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "b1",
+        "url": "https://fernwehblog.net/seebestattung-kreuzfahrt/",
+        "title": "Seebestattung Kreuzfahrt: Reedereien, Ablauf, Urne & Kosten",
+        "type": "secondary-blog",
+        "quote": "AIDA, TUI Cruises mit Mein Schiff und Hapag-Lloyd Cruises haben keine öffentliche Regelung zur Seebestattung an Bord.",
+        "verified": "2026-11-21",
+        "accessNote": "Text from search snippet; not fetched. English: \"AIDA, TUI Cruises with Mein Schiff and Hapag-Lloyd Cruises have no public rule on sea burial on board.\""
+      },
+      {
+        "id": "s2",
+        "url": "https://www.meinschiff.com/faq/an-bord",
+        "title": "FAQ - An Bord | Mein Schiff",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. Redirected to https://www.meinschiff.com/de/faq/an-bord."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.meinschiff.com/faq/service",
+        "title": "FAQ - Service | Mein Schiff",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. Redirected to /de/faq/service."
+      },
+      {
+        "id": "s4",
+        "url": "https://assets.ctfassets.net/ewp1r825fxg0/1dXvWyh8k0PmvpCi3p0HHy/433c6db53d5647e6967456bb7f229f0f/261027_Reisebedingungen_Formblatt_Merkblatt_DEU.pdf",
+        "title": "TUI Cruises Reisebedingungen (AGB, Stand November 2026)",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); searched for Urne, Asche, Bestattung, ueber Bord; no mention found."
+      }
+    ],
+    "id": "tui-cruises-mein-schiff",
+    "name": "TUI Cruises (Mein Schiff)",
+    "parent": "TUI AG / Royal Caribbean Group joint venture",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "Baltic",
+      "Mediterranean",
+      "Canary Islands",
+      "Caribbean",
+      "Asia"
+    ],
+    "headquarters": "Hamburg, Germany",
+    "statusRationale": "The official Mein Schiff FAQs (An Bord, Service, Vor der Reise, An- und Abreise) and the November 2026 Reisebedingungen contain no wording on ashes or urns; only a blog says no public rule exists.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.tuicruises.com/faq 000: connection failed (domain now redirects elsewhere)",
+      "https://tuicruises.com/ 200: redirects to https://www.meinschiff.com/de",
+      "https://www.meinschiff.com/sitemap.xml 200: 1889 URLs, none with Bestattung/Asche/Urne/Trauer slugs",
+      "https://www.meinschiff.com/faq/an-bord 200: FAQ readable (questions such as 'Kann ich an Bord Geld wechseln?'), no mention of ashes",
+      "https://www.meinschiff.com/faq/service, /faq/vor-der-reise, /faq/an-und-abreise 200: no mention",
+      "https://www.meinschiff.com/faq/sicherheit-gesundheit and /faq/buchung-zahlung: redirected to the FAQ index, no mention",
+      "https://www.meinschiff.com/agb 200 and AGB PDF (Stand November 2026) 200: no mention of Urne, Asche, Bestattung or items overboard",
+      "web.archive.org: connection reset in this environment (not usable)",
+      "Version 1.6: German-language domain-restricted search found no ashes page."
+    ],
+    "officialContact": "Contact options listed at https://www.meinschiff.com/de/kontakt (not opened).",
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.meinschiff.com/de/kontakt",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "Read the full AIDA Bordordnung for overboard-disposal and urn wording.",
+      "Contact AIDA guest service directly.",
+      "Does AIDA Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued.",
+      "Read the full AIDA Bordordnung (https://aida.de/unternehmen/bordordnung; archived snapshot 20261101130254) for urn or overboard wording once accessible."
+    ],
+    "needsDirectContact": true,
+    "notes": "The claim that the Bordordnung bans throwing objects overboard comes from the secondary blog (b1) and was not verified. AIDA FAQ pages (aida.de/faq) returned no urn or ashes entry.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "b1",
+        "url": "https://fernwehblog.net/seebestattung-kreuzfahrt/",
+        "title": "Seebestattung Kreuzfahrt: Reedereien, Ablauf, Urne & Kosten",
+        "type": "secondary-blog",
+        "quote": "AIDA, TUI Cruises mit Mein Schiff und Hapag-Lloyd Cruises haben keine öffentliche Regelung zur Seebestattung an Bord.",
+        "verified": "2026-11-21",
+        "accessNote": "Text from search snippet; not fetched. English: \"AIDA, TUI Cruises with Mein Schiff and Hapag-Lloyd Cruises have no public rule on sea burial on board.\""
+      },
+      {
+        "id": "o1",
+        "url": "https://aida.de/unternehmen/bordordnung",
+        "title": "AIDA Bordordnung",
+        "type": "passenger-contract",
+        "quote": "Folgende Gegenstände sind an Bord ausnahmslos verboten",
+        "verified": "2026-11-21",
+        "accessNote": "Search snippet only; the prohibited-items list itself was truncated, so whether urns or overboard disposal are mentioned could not be checked. English: \"The following items are prohibited on board without exception\"."
+      }
+    ],
+    "id": "aida-cruises",
+    "name": "AIDA Cruises",
+    "parent": "Carnival Corporation & plc (Costa Group)",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "Baltic",
+      "Mediterranean",
+      "Canary Islands",
+      "Caribbean"
+    ],
+    "headquarters": "Rostock, Germany",
+    "statusRationale": "AIDA's official site (Bordordnung, FAQ) returned HTTP 403 from bot protection, and the archived copy could not be reached, so no official wording was read.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://aida.de/unternehmen/bordordnung 403: WAF block page",
+      "https://www.aida.de/unternehmen/bordordnung 403: WAF block page",
+      "https://www.aida.de/kreuzfahrt/faq 403: WAF block page",
+      "https://aida.de/robots.txt 403",
+      "archive.org availability API: snapshot 20261101130254 exists; web.archive.org fetch reset by peer",
+      "WebFetch aida.de: host not allowed in this session",
+      "Web search (German, Bordordnung Urne Asche): no AIDA policy page surfaced; search listed https://www.aida.de/kreuzfahrt/agb/bordordnung.24588.html and https://aida.de/faq/bordleben (not readable)",
+      "Version 1.6: German-language domain-restricted search of aida.de found no Seebestattung or ashes page."
+    ],
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.aida.de/",
+      "method": "search-engine index of the official site (403); only department-specific contact pages found",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Costa Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Italian legal context (secondary summary): scattering at sea in Italy needs an authorization from the municipal civil registrar and from the local Capitaneria di Porto; distances vary by maritime district. This is not Costa policy.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "g1",
+        "url": "https://www.guardiacostiera.gov.it/portale/documents/121759/0/Ord+97+del+07-09-2023+Dispersione+delle+ceneri+funebri+in+mare.pdf/df0e6413-6c14-1a90-20a3-6d45de39a849?version=1.0&t=1742803425272null",
+        "title": "Ordinanza 97 del 07-09-2023, Dispersione delle ceneri funebri in mare (Italian Coast Guard)",
+        "type": "government",
+        "quote": "Not captured verbatim",
+        "verified": "2026-11-21",
+        "accessNote": "Located by search only; not fetched. Local Italian coast guard ordinance; applies to Italian coastal waters, not Costa policy."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.costacrociere.it/condizioni-generali/condizioni-generali-valide-dal-130726.html",
+        "title": "Condizioni Generali di Contratto | Costa Crociere",
+        "type": "passenger-contract",
+        "quote": "Qualsiasi atto volontario o negligente di scarico o rilascio in mare di oggetti non autorizzati, senza il consenso esplicito del personale di bordo, può comportare l’applicazione di una sanzione per ogni violazione",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); text read from the page HTML (clause 10.13 Politica ambientale); quote checked word for word. No mention of ceneri or urne."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.costacrociere.it/faq.html",
+        "title": "FAQs - Domande e Risposte Frequenti | Costa Crociere",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. FAQ text read from embedded JSON."
+      }
+    ],
+    "id": "costa-cruises",
+    "name": "Costa Cruises (Costa Crociere)",
+    "parent": "Carnival Corporation & plc",
+    "fleetType": "ocean",
+    "regions": [
+      "Mediterranean",
+      "Northern Europe",
+      "Caribbean",
+      "South America",
+      "Asia"
+    ],
+    "headquarters": "Genoa, Italy",
+    "statusRationale": "Costa's general contract conditions and FAQ say nothing about ashes; clause 10.13 only bans releasing unauthorised items into the sea without the express consent of the ship's staff, which neither permits nor forbids a committal.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.costacrociere.it/sitemap.xml 200: 5645 URLs, none about ceneri/funerali/memoriale",
+      "https://www.costacrociere.it/faq.html 200: FAQ in embedded JSON; no ceneri/urna/dispersione",
+      "https://www.costacruises.com/faq.html 404",
+      "https://www.costacrociere.it/condizioni-generali/condizioni-generali-valide-dal-130726.html 200: clause 10.13 environmental policy found; no ceneri",
+      "https://progressive.costa.it/costa/brochure/gen-apr/brochure_2027.pdf 403",
+      "Web search (Italian, dispersione ceneri Costa): no Costa policy page",
+      "Version 1.6: Italian-language domain-restricted search of Costa sites found no page on dispersing ashes."
+    ],
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://www.costacruises.com/",
+      "method": "direct (no customer-service page found)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Celestyal Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Searched in English only; Greek-language and passenger-contract searches not completed (search limit reached).",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://celestyal.com/faqs",
+        "title": "FAQS - Frequently Asked Questions | Celestyal cruises",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); page and raw HTML searched for ash/urn/cremation/burial and Greek terms; no mention found, but the FAQ answers appear to load by script, so the full FAQ may not have been visible."
+      },
+      {
+        "id": "s2",
+        "url": "https://celestyal.com/terms-and-conditions/booking-conditions",
+        "title": "Booking Conditions",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "celestyal-cruises",
+    "name": "Celestyal Cruises",
+    "parent": "Not captured in this round",
+    "fleetType": "ocean",
+    "regions": [
+      "Greek Islands",
+      "Eastern Mediterranean",
+      "Arabian Gulf"
+    ],
+    "headquarters": "Piraeus, Greece",
+    "statusRationale": "Celestyal's booking conditions and FAQ page contain no wording on ashes; no other official source found.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://celestyal.com/sitemap.xml 200: 3697 URLs, none about ashes/memorials",
+      "https://celestyal.com/faqs 200 and https://celestyal.com/gb/faqs 200: no mention (answers partly script-loaded)",
+      "https://celestyal.com/terms-and-conditions/booking-conditions 200: no mention",
+      "Web search (Celestyal scatter ashes): no Celestyal page"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://celestyal.com/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "Read the MS Europa / Europa 2 \"Information from A-Z\" pages and booking conditions for urn or ashes wording.",
+      "Does Hapag-Lloyd Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued.",
+      "Read the MS EUROPA / EUROPA 2 'Informationen von A-Z' entries (script-loaded) for any Urne/Seebestattung entry."
+    ],
+    "needsDirectContact": true,
+    "notes": "German search (\"Seebestattung Urne an Bord Europa\") found only ship information and the Europa \"Information from A-Z\" page title (hl-cruises.com/ships/ms-europa/on-board/information-from-a-z), whose content was not read. English search not completed (search limit).",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "b1",
+        "url": "https://fernwehblog.net/seebestattung-kreuzfahrt/",
+        "title": "Seebestattung Kreuzfahrt: Reedereien, Ablauf, Urne & Kosten",
+        "type": "secondary-blog",
+        "quote": "AIDA, TUI Cruises mit Mein Schiff und Hapag-Lloyd Cruises haben keine öffentliche Regelung zur Seebestattung an Bord.",
+        "verified": "2026-11-21",
+        "accessNote": "Text from search snippet; not fetched. English: \"AIDA, TUI Cruises with Mein Schiff and Hapag-Lloyd Cruises have no public rule on sea burial on board.\""
+      },
+      {
+        "id": "s2",
+        "url": "https://www.hl-cruises.de/service/faq",
+        "title": "Häufig gestellte Fragen zu unseren Reisen | Hapag-Lloyd Cruises",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200) but the FAQ content loads by script; only navigation text was readable. No mention found in what was readable."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.hl-cruises.de/flotte/ms-europa/an-bord/informationen-a-bis-z",
+        "title": "Informationen von A-Z zur EUROPA | Hapag-Lloyd Cruises",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200) but the A-Z entries load by script; not readable. Same for the EUROPA 2 page."
+      },
+      {
+        "id": "s4",
+        "url": "https://www.hl-cruises.com/hapag-lloyd-cruises/safety-on-board",
+        "title": "Safety on board | Hapag-Lloyd Cruises",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "hapag-lloyd-cruises",
+    "name": "Hapag-Lloyd Cruises",
+    "parent": "TUI Cruises GmbH",
+    "fleetType": "ocean",
+    "regions": [
+      "Worldwide",
+      "Polar",
+      "Northern Europe",
+      "Mediterranean"
+    ],
+    "headquarters": "Hamburg, Germany",
+    "statusRationale": "The Hapag-Lloyd FAQ and Information A-Z pages load their content by script and could not be read; the readable safety page has no wording on ashes. Only a blog says there is no public rule.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.hl-cruises.de/sitemap.site_1.xml 200: 684 URLs, none with Bestattung/Asche/Urne slugs",
+      "https://www.hl-cruises.de/service/faq 200: script-loaded, only navigation readable",
+      "https://www.hl-cruises.com/service/faq 200: same",
+      "https://www.hl-cruises.de/flotte/ms-europa/an-bord/informationen-a-bis-z 200 and ms-europa-2 200: script-loaded",
+      "https://hl-cruises.com/ships/ms-europa/on-board/information-from-a-z 404",
+      "https://www.hl-cruises.com/hapag-lloyd-cruises/safety-on-board 200: no mention",
+      "Web search (German, Hapag-Lloyd Seebestattung Urne): nothing official",
+      "Version 1.6: German-language domain-restricted search found no ashes page."
+    ],
+    "officialContact": "Kontaktcenter 040 307030-555 (shown on https://www.hl-cruises.de pages).",
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.hl-cruises.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "Search Norwegian-language Hurtigruten help pages.",
+      "Does Hurtigruten allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued.",
+      "Whether Hurtigruten requires the Norwegian Statsforvalteren permit (askespredning) before any scattering from its coastal ships."
+    ],
+    "needsDirectContact": true,
+    "notes": "English search only; Norwegian search (\"spredning av aske\", \"askespredning\") could not be run (search limit). Norwegian law on scattering ashes was not researched here.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.hurtigruten.com/en/help/life-on-board",
+        "title": "Life on board FAQ | Hurtigruten",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.hurtigruten.com/en/help/medical-safety",
+        "title": "Medical & safety FAQ | Hurtigruten",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s3",
+        "url": "https://assets.ctfassets.net/7mmwp5vb96tc/i4j2ab1VvpWgpe5mdxlPe/7cd96cae9888d508652f776ebb7711f9/2023-09-04_New_General_terms_and_conditions_for_Hurtigruten_Norge_and_Hurtigruten_Expeditions_-__Global.pdf",
+        "title": "General Terms and Conditions (Hurtigruten Norge and Hurtigruten Expeditions, effective 4 September 2023)",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); searched for ash/urn/cremation/overboard; no mention found."
+      },
+      {
+        "id": "s4",
+        "url": "https://www.statsforvalteren.no/nordland/folk-og-samfunn/askespredning",
+        "title": "Askespredning (Statsforvalteren i Nordland)",
+        "type": "government",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Seen only as a search result on 2026-11-21 (not opened); Norwegian county-governor permit page for scattering ashes, not a Hurtigruten policy."
+      }
+    ],
+    "id": "hurtigruten",
+    "name": "Hurtigruten (Norwegian Coastal Express)",
+    "parent": "Hurtigruten AS",
+    "fleetType": "coastal",
+    "regions": [
+      "Norwegian coast"
+    ],
+    "headquarters": "Oslo, Norway",
+    "statusRationale": "Hurtigruten's English help pages (life on board, medical and safety, port-to-port) and its general terms contain no wording on ashes; Norway requires a county-governor permit for scattering, but that is not a line policy.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.hurtigruten.com/en/sitemaps/en/sitemap.xml 200: 571 URLs, no memorial/ashes page",
+      "https://www.hurtigruten.com/en/help/life-on-board 200: no mention",
+      "https://www.hurtigruten.com/en/help/medical-safety 200: no mention",
+      "https://www.hurtigruten.com/en/help/port-to-port 200: no mention (pets mentioned only for live animals)",
+      "https://www.hurtigruten.com/en/help/further-information/general-terms-and-conditions 200 and linked 2023 GTC PDF 200: no mention",
+      "Web search (Norwegian askespredning Hurtigruten; English): no Hurtigruten page",
+      "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
+    ],
+    "officialContact": "UK phone shown on the English help pages: +44 208 131 4058 (tel link on https://www.hurtigruten.com/en/help/life-on-board).",
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.hurtigruten.com/en-us/help/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Havila Voyages allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Only one combined English search with Hurtigruten was run; no Norwegian search (search limit).",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.havilavoyages.com/en/faq",
+        "title": "Havila Voyages FAQ - Havila Voyages",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. FAQ text (EN, NB, DE, SV) read from the embedded JSON."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.havilavoyages.com/en/terms",
+        "title": "Terms and Conditions - Havila Voyages",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with the three linked terms PDFs (UK booking conditions, travel package terms, port-to-port terms) converted with pdftotext; no mention of ash, urn, cremation or overboard."
+      }
+    ],
+    "id": "havila-voyages",
+    "name": "Havila Voyages (Havila Kystruten)",
+    "parent": "Havila Kystruten AS",
+    "fleetType": "coastal",
+    "regions": [
+      "Norwegian coast"
+    ],
+    "headquarters": "Fosnavaag, Norway",
+    "statusRationale": "Havila's multilingual FAQ and its booking, package and port-to-port terms contain no wording on ashes.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.havilavoyages.com/sitemap.xml 200: 944 URLs, none about ashes/memorials",
+      "https://www.havilavoyages.com/en/faq and /nb/faq 200: no mention",
+      "https://www.havilavoyages.com/en/terms 200 and /de/reisebedingungen 200, plus 3 terms PDFs on brand.havilavoyages.com 200: no mention",
+      "Web search (askespredning Havila): nothing relevant",
+      "Version 1.6: Norwegian and English domain-restricted search found no ashes page."
+    ],
+    "officialContact": "Phone: +47 70 00 70 71 (shown on https://www.havilavoyages.com/en/faq).",
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.havilavoyages.com/en/contact-us",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Ponant allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "French legal context from a separate operator (Compagnie Corsaire, secondary): scattering at least 3 nautical miles from the coast with a biodegradable urn and a town-hall declaration. Not Ponant policy.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.ponant.com/faq",
+        "title": "Foire aux Questions | PONANT",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. The only 'urne' hit is the tips box at reception ('une urne prévue à cet effet à la réception'), unrelated to ashes."
+      }
+    ],
+    "id": "ponant",
+    "name": "Ponant",
+    "parent": "Artemis (Pinault family)",
+    "fleetType": "expedition",
+    "regions": [
+      "Worldwide",
+      "Polar",
+      "Mediterranean"
+    ],
+    "headquarters": "Marseille, France",
+    "statusRationale": "Ponant's French FAQ contains no wording on cendres or dispersion; the only 'urne' is a tips box. No other official source found.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.ponant.com/sitemap.xml 200: index of dynamic sitemaps, no memorial page found",
+      "https://www.ponant.com/faq 200: French FAQ readable, no cendres/dispersion",
+      "https://www.ponant.com/en/faq: redirected to the homepage",
+      "Web search (French cendres dispersion Ponant; English): no Ponant page",
+      "Version 1.6: ponant.com blocks the search engine's crawler, so no indexed content is available; direct site reading was done in round 3 (FAQ silent)."
+    ],
+    "officialContact": "+33 4 91 36 41 65 (tel link on https://www.ponant.com/faq).",
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.ponant.com/contact",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does AROYA Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Single ship, Aroya Manara (ex World Dream). No Arabic-language search run (search limit).",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [],
+    "id": "aroya-cruises",
+    "name": "Aroya Cruises",
+    "parent": "Cruise Saudi (Public Investment Fund)",
+    "fleetType": "ocean",
+    "regions": [
+      "Red Sea",
+      "Arabian Gulf"
+    ],
+    "headquarters": "Jeddah, Saudi Arabia",
+    "statusRationale": "aroya.com returned HTTP 403 (bot protection) for every page tried, so no official wording was read.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.aroya.com/robots.txt 200 (sitemap https://aroya.com/sitemap.xml)",
+      "https://aroya.com/sitemap.xml 403",
+      "https://aroya.com/ 403",
+      "https://aroya.com/en/faq 403"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://cruisearoya.com/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Resorts World Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Secondary reports say the brands were relaunched as Dream Cruises and StarCruises; Genting Dream is reported to return to the Dream Cruises brand. No Chinese-language search run.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [],
+    "id": "resorts-world-cruises",
+    "name": "Resorts World Cruises (Dream Cruises / StarCruises)",
+    "parent": "Resorts World Cruises (Lim Kok Thay)",
+    "fleetType": "ocean",
+    "regions": [
+      "Southeast Asia",
+      "Hong Kong"
+    ],
+    "headquarters": "Singapore / Hong Kong",
+    "statusRationale": "The official site rwcruises.com could not be reached from this environment (connection failure), and no official page was read.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.rwcruises.com/robots.txt 000: connection failed",
+      "https://rwcruises.com/ and https://www.rwcruises.com/en/faq 000: connection failed",
+      "https://www.resortsworldcruises.com/ 200: parked domain for sale (not the operator)",
+      "Web search (Resorts World Cruises scattering ashes): no operator page"
+    ],
+    "officialLinks": {
+      "kind": "website",
+      "url": "https://rwcruises.com/",
+      "method": "search-engine index of the official site (no direct connection)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Saga Cruises allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Saga ships: Spirit of Discovery, Spirit of Adventure.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "b1",
+        "url": "https://www.saga.co.uk/magazine/relationships/bereavement/burial-at-sea",
+        "title": "Burial at sea (Saga Magazine)",
+        "type": "secondary-news",
+        "quote": "Not captured verbatim",
+        "verified": "2026-11-21",
+        "accessNote": "Located by search; not fetched. General bereavement article, not a cruise policy."
+      }
+    ],
+    "id": "saga-cruises",
+    "name": "Saga Cruises",
+    "parent": "Saga plc",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "British Isles",
+      "Mediterranean",
+      "Caribbean"
+    ],
+    "headquarters": "Folkestone, England, UK",
+    "statusRationale": "travel.saga.co.uk returned HTTP 403 and was not reachable by WebFetch; no official Saga Cruises wording on ashes was read.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://travel.saga.co.uk/robots.txt 403",
+      "https://travel.saga.co.uk/cruises/faqs.aspx 403",
+      "WebFetch travel.saga.co.uk: host not allowed in this session",
+      "Web search restricted to saga.co.uk/travel.saga.co.uk: only blog pages (first time on board, activities), no ashes wording in the result summaries",
+      "Version 1.6: domain-restricted search of saga.co.uk found no cruise ashes policy (only a general bereavement guide)."
+    ],
+    "round16": "searched-index-no-policy",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://travel.saga.co.uk/cruises/contact-us",
+      "method": "search-engine index of the official page (403)",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Phoenix Reisen allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Phoenix charters its ships (Amadea and Artania appeared in results).",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html",
+        "title": "Häufig gestellte Fragen FAQ zu unseren Kreuzfahrten und Reisen",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found. Page has A-Z entries such as 'Darf ich mein Haustier mit an Bord nehmen?'."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.phoenixreisen.com/reise-und-geschaeftsbedingungen.html",
+        "title": "Reise- und Geschäftsbedingungen - Phoenix Reisen GmbH",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "phoenix-reisen",
+    "name": "Phoenix Reisen",
+    "parent": "Phoenix Reisen GmbH",
+    "fleetType": "ocean",
+    "regions": [
+      "Worldwide",
+      "Northern Europe",
+      "Mediterranean"
+    ],
+    "headquarters": "Bonn, Germany",
+    "statusRationale": "Phoenix Reisen's 'Gut zu wissen von A-Z' FAQ and its Reise- und Geschäftsbedingungen contain no wording on Urne, Asche or Seebestattung.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.phoenixreisen.com/sitemap.xml 200: 1447 URLs, none about Seebestattung",
+      "https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html 200: no mention",
+      "https://www.phoenixreisen.com/reise-und-geschaeftsbedingungen.html 200: no mention",
+      "Web search (Phoenix Reisen Seebestattung Asche): nothing official"
+    ],
+    "officialContact": "+49 228 92600 (tel link on https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html).",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.phoenixreisen.com/kontakt.html",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Carnival Cruise Line (Australia) allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued.",
+      "Does Carnival's help answer 'Scattering of Ashes' (help.carnival.com a_id 1132) apply to ships sailing from Australia?"
+    ],
+    "needsDirectContact": true,
+    "notes": "The P&O-branded \"en-au\" scattering page (pocruises.com/en-au/login-test/scattering-test) is on the UK P&O site and labelled as a test; see the P&O Cruises (UK) record. Carnival generally: 12 nautical miles offshore, no charge (secondary). Applicability to Australian-homeported ships unconfirmed.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "b1",
+        "url": "https://www.cruisehive.com/carnival-fleet-expands-as-po-cruises-australia-era-ends",
+        "title": "Carnival Fleet Expands as P&O Cruises Australia Era Ends",
+        "type": "secondary-news",
+        "quote": "Not captured verbatim",
+        "verified": "2026-11-21",
+        "accessNote": "Title from search result only."
+      },
+      {
+        "id": "b2",
+        "url": "https://www.cruisehive.com/carnival-cruise-line-clarifies-scattering-ceremony-at-sea/147734",
+        "title": "Carnival Cruise Line Clarifies Scattering Ceremony at Sea",
+        "type": "secondary-news",
+        "quote": "subject to individual itineraries and the operational needs of the vessel on specific sailings",
+        "verified": "2026-11-21",
+        "accessNote": "Search snippet; Carnival Cruise Line generally, not confirmed for Australian ships."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.carnival.com.au/~/media/A58FC38024B84BEEB88804DD80C96059.pdf",
+        "title": "Carnival Cruise Line Ticket Contract, effective 21 January 2026 (Australia)",
+        "type": "passenger-contract",
+        "quote": "Any wilful or negligent act of discharging or releasing any unauthorised item overboard, without the express permission of the ship's staff, may result in a $500 charge, per violation, posted to Your onboard account.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); clause 37 Environmental Policy; quote checked word for word. No mention of ashes."
+      },
+      {
+        "id": "s4",
+        "url": "https://www.carnival.com.au/safety-information",
+        "title": "Important Information to Know Before You Go (Carnival Australia)",
+        "type": "official-policy-page",
+        "quote": "We are obligated to report any items going overboard, intentionally or not, so please advise a crew member should that occur.",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+      },
+      {
+        "id": "s5",
+        "url": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
+        "title": "Scattering of Ashes - Carnival Cruise Lines (US help site)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Not read: HTTP 403 to curl on 2026-11-21 and WebFetch returned only 'Oracle B2C Service'; content known only from a search-result summary (death certificate, proof of cremation, urn, beyond 12 nautical miles, Guest Services escort). Same answer id 1132 also appears on help.goccl.co.uk (403). It is the US site; whether it applies to Australian sailings is not stated."
+      }
+    ],
+    "id": "carnival-australia",
+    "name": "Carnival Australia brands",
+    "parent": "Carnival Corporation & plc",
+    "fleetType": "ocean",
+    "regions": [
+      "Australia",
+      "New Zealand",
+      "South Pacific"
+    ],
+    "headquarters": "Sydney, Australia",
+    "statusRationale": "The Australian ticket contract and safety page only bar releasing unauthorised items overboard without the express permission of ship's staff; Carnival's US help answer on scattering ashes (a_id 1132) was blocked and known only from a search summary, and the Australian help site (help.carnival.com.au) returned 403.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.carnival.com.au/robots.txt 200",
+      "https://www.carnival.com.au/faq: redirected to https://help.carnival.com.au/ 403",
+      "https://help.carnival.com.au/app/answers/detail/a_id/1132 403",
+      "https://www.carnival.com.au/help/answers/detail/a_id/1132 200 but near-empty (541 bytes, no content)",
+      "https://www.carnival.com.au/~/media/A58FC38024B84BEEB88804DD80C96059.pdf 200: ticket contract, clause 37 overboard rule, no ashes",
+      "https://www.carnival.com.au/safety-information 200: 'Items Overboard' section, no ashes",
+      "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes 403 (curl); WebFetch empty; archive.org has snapshot 20201112014441 but web.archive.org reset the connection",
+      "https://help.goccl.co.uk/app/answers/detail/a_id/1132 403",
+      "Web searches restricted to carnival domains: surfaced the US 'Scattering of Ashes' answer (summary only)"
+    ]
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "Read the 旅客運送約款 (passenger carriage terms) for remains.",
+      "Does Mitsui Ocean Cruises (MITSUI OCEAN FUJI) allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "Japanese search run: 三井オーシャンクルーズ 散骨 遺骨 持ち込み. Ship: Mitsui Ocean Fuji.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "o1",
+        "url": "https://www.mitsuioceancruises.com/assets/download/pdf/f_guide.pdf",
+        "title": "Mitsui Ocean Fuji cruise guide (PDF)",
+        "type": "official-pdf",
+        "quote": "Not captured verbatim",
+        "verified": "2026-11-21",
+        "accessNote": "Search summary only; only the opening page content was visible; no mention of remains seen. The guide is said to include the passenger carriage terms (約款) at the end, not read."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.mitsuioceancruises.com/assets/terms/pdf/terms.pdf",
+        "title": "旅客運送約款 (商船三井クルーズ株式会社, 2024年10月改定)",
+        "type": "passenger-contract",
+        "quote": "(9) 海中投棄を禁止された物を本船から海中に投棄すること",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); clause 12 (旅客の禁止行為等), item 9; quote checked word for word. No mention of 散骨 or 遺骨."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.mitsuioceancruises.com/fuji/faq/",
+        "title": "よくあるご質問【公式】MITSUI OCEAN FUJI（三井オーシャンフジ）",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "mitsui-ocean-cruises",
+    "name": "Mitsui Ocean Cruises",
+    "parent": "Mitsui O.S.K. Lines",
+    "fleetType": "ocean",
+    "regions": [
+      "Japan",
+      "Asia"
+    ],
+    "headquarters": "Tokyo, Japan",
+    "statusRationale": "Mitsui Ocean Cruises' passenger carriage terms only prohibit throwing into the sea items whose ocean dumping is prohibited; neither the terms, the FAQ nor the onboard guide mention 散骨 (ash scattering).",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.mitsuioceancruises.com/robots.txt 404",
+      "https://www.mitsuioceancruises.com/ 200: links to /guideline/, /assets/terms/pdf/terms.pdf",
+      "https://www.mitsuioceancruises.com/faq/ 200 (redirected to /fuji/faq/): no 散骨/遺骨",
+      "https://www.mitsuioceancruises.com/guideline/ 200: no mention",
+      "https://www.mitsuioceancruises.com/assets/terms/pdf/terms.pdf 200: clause 12(9) general ocean-dumping prohibition",
+      "https://www.mitsuioceancruises.com/assets/download/pdf/f_guide.pdf 200: no mention"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.mitsuioceancruises.com/contact/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does NYK Asuka Cruise (Asuka II / Asuka III) allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued.",
+      "Read Asuka's 旅客運送約款 for any ocean-dumping clause (not located in this round)."
+    ],
+    "needsDirectContact": true,
+    "notes": "Japanese search run: 飛鳥II 散骨 クルーズ 郵船クルーズ 遺骨. In Japan sea scattering is usually done by specialist charter operators.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.asukacruise.co.jp/inquiries/cruiselifefaq/",
+        "title": "「飛鳥Ⅱ」「飛鳥Ⅲ」クルーズライフ よくあるご質問",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.asukacruise.co.jp/inquiries/reservationfaq/",
+        "title": "クルーズ予約 よくあるご質問",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.asukacruise.co.jp/cruisedesk/reservationguide/",
+        "title": "飛鳥クルーズ 予約ガイド",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s4",
+        "url": "https://www.asukacruise.co.jp/chartercruise/faq/",
+        "title": "チャータークルーズ よくあるご質問",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "nyk-asuka-cruise",
+    "name": "NYK Cruises (Asuka II / Asuka III)",
+    "parent": "NYK Line",
+    "fleetType": "ocean",
+    "regions": [
+      "Japan",
+      "Asia",
+      "World cruises"
+    ],
+    "headquarters": "Yokohama, Japan",
+    "statusRationale": "The Asuka cruise-life FAQ, reservation FAQ, reservation guide and charter FAQ contain no wording on 散骨 or 遺骨.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.asukacruise.co.jp/robots.txt 200 (no sitemap)",
+      "https://www.asukacruise.co.jp/faq/ 404",
+      "https://www.asukacruise.co.jp/inquiries/cruiselifefaq/ 200: no mention",
+      "https://www.asukacruise.co.jp/inquiries/reservationfaq/ 200: no mention",
+      "https://www.asukacruise.co.jp/cruisedesk/reservationguide/ 200: no mention",
+      "https://www.asukacruise.co.jp/chartercruise/faq/ 200: no mention",
+      "Web search (Japanese 飛鳥II 散骨 遺骨): only travel-agency pages"
+    ],
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.asukacruise.co.jp/inquiries/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does Plantours Kreuzfahrten allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "One combined German search with nicko cruises returned nothing on Plantours.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.plantours-kreuzfahrten.de/infos-service/reiseplanung/infos-von-a-z-hochsee/",
+        "title": "Wichtige Hinweise (Hochsee) - PLANTOURS Kreuzfahrten",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.plantours-kreuzfahrten.de/reisebedingungen-agb/",
+        "title": "Reisebedingungen / AGB - PLANTOURS Kreuzfahrten",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s3",
+        "url": "https://www.plantours-kreuzfahrten.de/infos-service/verschiedenes/bordmanifest/",
+        "title": "Bordmanifest - PLANTOURS Kreuzfahrten",
+        "type": "official-policy-page",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      }
+    ],
+    "id": "plantours-kreuzfahrten",
+    "name": "Plantours Kreuzfahrten",
+    "parent": "Not captured in this round",
+    "fleetType": "ocean",
+    "regions": [
+      "Northern Europe",
+      "Polar",
+      "Mediterranean"
+    ],
+    "headquarters": "Bremen, Germany",
+    "statusRationale": "Plantours' ocean 'Infos von A-Z', Reisebedingungen and Bordmanifest contain no wording on Urne, Asche or Seebestattung.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.plantours-kreuzfahrten.de/wp-sitemap.xml 200 and page sitemap 200: no Seebestattung page",
+      "infos-von-a-z-hochsee 200, reisebedingungen-agb 200, bordmanifest 200, infos-service/verschiedenes 200, infos-service/reiseplanung 200: no mention"
+    ],
+    "officialContact": "Kontaktformular: https://www.plantours-kreuzfahrten.de/infos-service/das-sind-wir/kontakt/",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.plantours-kreuzfahrten.de/kontakt/",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  },
+  {
+    "conflicts": [],
+    "unresolved": [
+      "No operator-published policy on cremated remains found in this round; contact the line directly.",
+      "Does nicko cruises (ocean, VASCO DA GAMA) allow guests to scatter cremated remains, or commit a biodegradable urn, from its ships? If so: how much advance notice, which department to contact, which documents (death and cremation certificates), what container is required, where and when on board it happens, whether crew attend, any fee, and whether a certificate with the ship's position is issued."
+    ],
+    "needsDirectContact": true,
+    "notes": "nicko cruises runs the ocean ship Vasco da Gama (some Hamburg departures). German search only.",
+    "status": "unverified",
+    "evidenceLevel": "none",
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.nicko-cruises.de/faq",
+        "title": "FAQ (nicko cruises)",
+        "type": "official-faq",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s2",
+        "url": "https://www.nicko-cruises.de/agb",
+        "title": "AGB (nicko cruises)",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); full text searched for ash/urn/cremation/burial terms in the page language; no mention found."
+      },
+      {
+        "id": "s3",
+        "url": "https://cdnsio.nicko-cruises.de/1dbefc26-80c1-4be9-bea0-f123a9518c55/ocean-2026-27-de-agbs.pdf",
+        "title": "Reisebedingungen Hochsee 2026/27 (PDF)",
+        "type": "passenger-contract",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, PDF converted with pdftotext); searched for Urne, Asche, Bestattung, ueber Bord; no mention found."
+      }
+    ],
+    "id": "nicko-cruises-ocean",
+    "name": "nicko cruises (ocean, Vasco da Gama)",
+    "parent": "nicko cruises Schiffsreisen GmbH",
+    "fleetType": "ocean",
+    "regions": [
+      "Worldwide",
+      "Northern Europe"
+    ],
+    "headquarters": "Stuttgart, Germany",
+    "statusRationale": "nicko cruises' FAQ, AGB page and ocean Reisebedingungen 2026/27 contain no wording on Urne, Asche or Seebestattung.",
+    "answers": {
+      "permitted": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "documentedOrIndividualApproval": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "advanceNotice": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "leadTime": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "contactDepartment": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "writtenApplication": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "deathOrCremationCertificate": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "containerRequirements": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "biodegradableUrns": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "scatterOrReleaseUrn": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "privateCeremony": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "designatedArea": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "crewParticipation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "chaplainCelebrant": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "fees": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "distanceOffshore": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "shipSelectsLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "familyRequestLocation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "weatherItineraryLimits": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "gpsCoordinates": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "certificateConfirmation": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "differsByVesselItinerary": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "petAshes": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      },
+      "otherMemorialAssistance": {
+        "answer": "Not published",
+        "basis": "unknown",
+        "sources": []
+      }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed",
+    "round3": "searched-no-official-policy",
+    "researchLog": [
+      "https://www.nicko-cruises.de/nicko-sitemap-index.xml 200 and sitemaps 0/1: no Seebestattung page",
+      "https://www.nicko-cruises.de/faq 200: no mention",
+      "https://www.nicko-cruises.de/agb 200: no mention",
+      "ocean-2026-27-de-agbs.pdf 200: no mention"
+    ],
+    "officialContact": "+49 711 248980 44 (shown on https://www.nicko-cruises.de/faq).",
+    "officialLinks": {
+      "kind": "service",
+      "url": "https://www.nicko-cruises.de/kontaktieren",
+      "method": "direct",
+      "verified": "2026-11-22"
+    }
+  }
+]

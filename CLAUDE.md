@@ -1735,6 +1735,19 @@ Prioritize the shortest reliable path to completing approved changes.
   pages apart by page path (no new events). Start New Quote stays on the
   page it was used on.
 
+## Cruise ship ash scattering guide (Randy, November 2026)
+
+- /scattering-ashes-from-a-cruise-ship/ (src/pages/scattering-ashes-from-a-cruise-ship.astro,
+  src/components/cruise-ashes/, data src/data/cruise-ashes/operators.json built by
+  scripts/cruise-ashes/build-data.mjs) was published at Randy's instruction:
+  indexable and in the sitemap. Research, sources and the gap report are in
+  docs/investigations/cruise-ship-ashes-2026-11/. It reuses the article
+  Get Pricing module (QuoteBox: sidebar from 64rem, in-article copy before
+  "Cruise lines with an established policy" on phones). Its first Key Point
+  is Randy's wording. Test: tests/cruise-ashes/directory.browser.mjs.
+  Linked from the mega menu: Guides & Tools > Guides > "Scattering Ashes at
+  Sea" (Randy, V1.18; desktop and phone).
+
 ## Permanent review links (Randy, November 2026, V2.0)
 
 - Fixed Preview address (Vercel branch alias of the `review` branch; Vercel
@@ -1964,7 +1977,7 @@ Prioritize the shortest reliable path to completing approved changes.
   RESOURCES, REVIEWS, ABOUT; one row from 64rem, unchanged); /facebook/, /free-quote/ and /help/ keep their
   own simplified headers. Phone menu (Randy, November 2026, V2.1): under
   48rem each category shows its priority links plus its directory link (Life
-  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 13,
+  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 15,
   About Us 6); links marked `phoneHidden` are left out there only when the
   category's directory page (/a-z-companies/, /a-z-health/) or the
   /burial-insurance/ hub links to them. CICA Life stays in Company Reviews on

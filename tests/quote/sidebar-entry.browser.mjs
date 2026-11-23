@@ -58,7 +58,7 @@ async function finish(page, phone) {
 const funnelHtml = readFileSync(new URL('../../dist/free-quote/index.html', import.meta.url), 'utf8');
 const articleHtml = readFileSync(new URL(`../../dist${ARTICLE}index.html`, import.meta.url), 'utf8');
 await check('the sidebar shows the funnel\'s exact Male and Female illustrations, and no old lead form', async () => {
-  const a = svgs(articleHtml.match(/<div class="quote-box[^"]*gp--article-aside"[\s\S]*?data-gp-call/)?.[0] ?? '');
+  const a = svgs(articleHtml.match(/<div class="quote-box[^"]*gp--article-aside"[\s\S]*?gp__note/)?.[0] ?? '');
   const f = svgs(funnelHtml);
   assert(a.length === 2 && f.length === 2 && a[0] === f[0] && a[1] === f[1], `illustrations differ (${a.length}/${f.length})`);
   assert(!/data-lead-form|Request Rates or Info/.test(articleHtml), 'old sidebar form still on the article');
@@ -71,7 +71,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 // also with reduced motion (the global 0.01ms transition must not skew the fit).
 for (const [n, o] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['iphone13', devices['iPhone 13']], ['320', { viewport: { width: 320, height: 640 }, isMobile: true, hasTouch: true }]])
   for (const motion of ['no-preference', 'reduce'])
-    await check(`${n} (${motion} motion): the module header SEE PRICES NOW fits on one line`, async () => {
+    await check(`${n} (${motion} motion): the module header GET 3 RATES NOW fits on one line`, async () => {
       const { ctx, page } = await newPage({ ...o, reducedMotion: motion });
       await page.goto(`${srv.base}${ARTICLE}`);
       await page.evaluate(() => document.fonts.ready);
@@ -80,7 +80,7 @@ for (const [n, o] of [['desktop', { viewport: { width: 1440, height: 900 } }], [
         const cs = getComputedStyle(t);
         return { text: t.textContent, fs: parseFloat(cs.fontSize), fits: t.scrollWidth <= t.clientWidth + 1, lines: Math.round(t.getBoundingClientRect().height / parseFloat(cs.lineHeight)), color: cs.color, weight: cs.fontWeight };
       });
-      assert(r.text === 'SEE PRICES NOW' && r.fits && r.lines === 1 && r.fs >= 26 && r.fs <= 40 && r.color === 'rgb(255, 235, 59)' && r.weight === '900', JSON.stringify(r));
+      assert(r.text === 'GET 3 RATES NOW' && r.fits && r.lines === 1 && r.fs >= 26 && r.fs <= 40 && r.color === 'rgb(255, 235, 59)' && r.weight === '900', JSON.stringify(r));
       await ctx.close();
       return `${r.fs}px`;
     });
@@ -121,7 +121,7 @@ for (const [w, h] of [[1920, 1080], [1440, 900], [1366, 768], [1280, 720]]) {
     const reach = await page.evaluate(() => {
       const b = document.querySelector('[data-get-prices="article-aside"]');
       const f = b.querySelector('[data-gp-gender="female"]');
-      const c = b.querySelector('[data-gp-call]');
+      const c = b.querySelector('.gp__note');
       c.scrollIntoView({ block: 'nearest' });
       const br = b.getBoundingClientRect(), cr = c.getBoundingClientRect(), fr = f.getBoundingClientRect();
       return { fits: b.scrollHeight <= b.clientHeight + 1, callIn: cr.bottom <= Math.min(br.bottom, innerHeight) + 1 && cr.top >= br.top - 1, femaleH: fr.height, h: Math.round(br.height), vh: innerHeight };
@@ -137,7 +137,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const { ctx, page } = await newPage(opts);
     await page.goto(`${srv.base}/free-quote/`);
     await page.waitForSelector('[data-step="1"]:not([hidden])');
-    assert((await page.textContent('#qf-s1')).trim() === "I'm shopping for burial or life insurance for a...", 'first screen');
+    assert((await page.textContent('#qf-s1')).trim() === 'Show me 3 rates for a...', 'first screen');
     const ev = await page.evaluate(() => window.__ev.find((e) => e.name === 'quote_funnel_entry'));
     assert(ev && ev.entryType === 'direct' && !ev.entryPath, `entry event ${JSON.stringify(ev)}`);
     await ctx.close();
@@ -154,42 +154,30 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       await box.scrollIntoViewIfNeeded();
       const t = await box.evaluate((b) => {
         const [m, f] = [...b.querySelectorAll('a.qf-person')].map((a) => a.getBoundingClientRect());
-        const call = b.querySelector('[data-gp-call]');
-        const cr = call.getBoundingClientRect(), body = b.querySelector('.gp__body').getBoundingClientRect();
-        const cs = getComputedStyle(call);
         const prev = b.previousElementSibling;
         let next = b.nextElementSibling;
         while (next && next.tagName === 'SCRIPT') next = next.nextElementSibling;
         return { title: b.querySelector('.quote-box__title').textContent.trim(), q: b.querySelector('.gp__q').textContent.trim(), links: [...b.querySelectorAll('a.qf-person')].map((a) => a.textContent.trim()),
           stacked: f.top >= m.bottom - 1 && Math.abs(f.left - m.left) < 2, sideBySide: Math.abs(f.top - m.top) < 2 && f.left > m.right - 1,
-          talk: b.querySelector('.gp__talk')?.textContent.trim(), callText: call.textContent.replace(/\s+/g, ' ').trim(), href: call.getAttribute('href'), icon: !!call.querySelector('svg path'),
-          bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - b.querySelector('.qf-people').getBoundingClientRect().width) < 2 && Math.abs(cr.width / b.querySelector('.gp__body').clientWidth - 0.91) < 0.01, callOneLine: new Set([...call.querySelectorAll('.gp__call-text > span')].map((x) => Math.round(x.getBoundingClientRect().top))).size === 1,
+          note: b.querySelector('.gp__note').textContent.trim(), noCall: !b.querySelector('[data-gp-call], a[href^="tel:"]'), noteLast: b.querySelector('.gp__body').lastElementChild === b.querySelector('.gp__note'),
           prev: prev?.tagName ?? null, next: next?.tagName ?? null };
       });
-      assert(t.title === 'SEE PRICES NOW' && t.q === 'I need pricing for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(t.title === 'GET 3 RATES NOW' && t.q === 'Show me 3 rates for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
-      assert(t.talk === undefined && t.callOneLine && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
-      assert(t.callFull, `call width ${JSON.stringify(t)}`);
+      // V14.4: no call button in the module; the note is the last element.
+      assert(t.note === '3 rates in 30 seconds.' && t.noCall && t.noteLast, `module note / no call button ${JSON.stringify(t)}`);
       if (name === 'mobile') assert(t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
       if (name === 'mobile') {
         const look = await page.evaluate(() => {
           const one = (sel) => { const b = document.querySelector(sel); const g = (q) => getComputedStyle(b.querySelector(q)); const title = b.querySelector('.quote-box__title').getBoundingClientRect(), body = b.querySelector('.gp__body').getBoundingClientRect();
-            return { gap: Math.round(body.top - title.bottom), q: [g('.gp__q').fontSize, g('.gp__q').color, g('.gp__q').marginBottom], talk: [g('.gp__call-text').fontSize, g('.gp__body').rowGap, g('.gp__body').paddingBottom], call: [g('[data-gp-call]').color, g('.gp__call-label').color, g('[data-gp-call]').textDecorationLine], person: g('a.qf-person').textDecorationLine }; };
+            return { gap: Math.round(body.top - title.bottom), q: [g('.gp__q').fontSize, g('.gp__q').color, g('.gp__q').marginBottom], talk: [g('.gp__note').fontSize, g('.gp__body').rowGap, g('.gp__body').paddingBottom], person: g('a.qf-person').textDecorationLine }; };
           document.querySelector('[data-get-prices="article-aside"]').style.display = 'block';
           const r = { inline: one('[data-get-prices="inline"]'), aside: one('[data-get-prices="article-aside"]') };
           document.querySelector('[data-get-prices="article-aside"]').style.display = '';
           return r;
         });
-        assert(JSON.stringify(look.inline) === JSON.stringify(look.aside) && look.inline.gap === 0 && look.inline.call[1] === 'rgb(255, 255, 255)', `phone copy differs from the sidebar copy ${JSON.stringify(look)}`);
-        await box.locator('[data-gp-call]').hover();
-        const hoverColor = await box.locator('.gp__call-label').evaluate((e) => getComputedStyle(e).color);
-        assert(hoverColor === 'rgb(255, 255, 255)', `CALL NOW text on hover ${hoverColor}`);
+        assert(JSON.stringify(look.inline) === JSON.stringify(look.aside) && look.inline.gap === 0, `phone copy differs from the sidebar copy ${JSON.stringify(look)}`);
       }
-      // CALL NOW: a tap is recorded with the article (never as a completed call).
-      await page.evaluate(() => document.addEventListener('click', (e) => { if (e.target.closest('a[href^="tel:"]')) e.preventDefault(); }, true));
-      await box.locator('[data-gp-call]').click();
-      const callEv = await page.evaluate(() => window.__ev.find((e) => e.name === 'quote_module_call_click'));
-      assert(callEv && callEv.entryType === 'article-sidebar' && callEv.entryPath === ARTICLE_PATH && callEv.placement === (name === 'desktop' ? 'sidebar' : 'in-article'), `call event ${JSON.stringify(callEv)}`);
       if (OUT && gender === 'male') await box.screenshot({ path: `${OUT}/sidebar-${name}.png` });
       await box.locator(`[data-gp-gender="${gender}"]`).click();
       await page.waitForURL(/\/free-quote\//);

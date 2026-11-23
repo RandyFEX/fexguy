@@ -91,6 +91,9 @@ export default defineConfig({
           path !== '/get-rates/' &&
           path !== '/help/' &&
           path !== '/health-question-search-preview/' &&
+          // V5.6 previews (not approved): the investigation draft and the calculator.
+          path !== '/state-regulated-investigation-preview/' &&
+          path !== '/impact-calculator-preview/' &&
           path !== '/trin-fbl/' &&
           path !== '/scattering-ashes-in-us-national-parks/' &&
           !excluded.has(path)

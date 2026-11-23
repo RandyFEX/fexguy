@@ -863,8 +863,14 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
 // module's Male/Female choices (data-gp-gender) and ordinary editorial links
 // (no button class), unless their text is an old pricing label.
 const CTA_TEXT = 'SEE PRICES NOW';
+// The pricing module's green header reads Randy's V14.1 wording.
+const CTA_MODULE_TEXT = 'GET 3 RATES NOW';
+// Every orange quote button (hero, pre-footer, article and page buttons) reads
+// Randy's V14.9 wording; the green menu button and the /roku/ top link keep CTA_TEXT.
+const CTA_ORANGE_TEXT = 'GET 3 RATES NOW';
+const CTA_MENU_CLASS = /\b(?:nav__quote|nav__top-link)\b/;
 // The funeral cost map's CTA reads Randy's own wording for that page (Map V3.0, November 2026).
-const CTA_PAGE_TEXT = { '/funeral-cost-map/': 'GET MY PERSONALIZED COVERAGE QUOTE' };
+// The state-regulated investigation's first closing card reads Randy's own wording (V6.7, November 2026), at its URL and on its preview copy.
 const FREE_QUOTE_HREF = /^(?:https?:\/\/(?:www\.)?(?:funeralfunds|fexguy)\.com)?\/free-quote(?:\/|\?|#|$)/i;
 const CTA_CLASS = /\b(?:btn|button|button-link|nav__quote|nav__top-link|cta)\b/;
 const OLD_PRICING_LABEL = /\b(?:GET PRICING|GET (?:A |MY |YOUR )?(?:FREE )?(?:QUOTES?|PRICES?|RATES)|SEE PRICES|VIEW PRICES|FREE FINAL EXPENSE QUOTE)\b/i;
@@ -882,14 +888,15 @@ for (const file of pages) {
     const text = textOf(m[2]);
     if (CTA_CLASS.test(cls)) {
       ctaChecked++;
-      if (text !== CTA_TEXT && text !== CTA_PAGE_TEXT[page]) ctaProblems.push(`${page}: pricing CTA to ${href} reads "${text}" (class "${cls}"); it must read ${CTA_TEXT}`);
+      const want = CTA_MENU_CLASS.test(cls) ? CTA_TEXT : CTA_ORANGE_TEXT;
+      if (text !== want) ctaProblems.push(`${page}: pricing CTA to ${href} reads "${text}" (class "${cls}"); it must read ${want}`);
     } else if (text !== CTA_TEXT && OLD_PRICING_LABEL.test(text)) {
       ctaProblems.push(`${page}: link to ${href} uses an old pricing label "${text}"`);
     }
   }
   for (const m of html.matchAll(/<([a-z]+)\b[^>]*\bdata-gp-title\b[^>]*>([\s\S]*?)<\/\1>/g)) {
     ctaTitles++;
-    if (textOf(m[2]) !== CTA_TEXT) ctaProblems.push(`${page}: pricing module header reads "${textOf(m[2])}"; it must read ${CTA_TEXT}`);
+    if (textOf(m[2]) !== CTA_MODULE_TEXT) ctaProblems.push(`${page}: pricing module header reads "${textOf(m[2])}"; it must read ${CTA_MODULE_TEXT}`);
   }
   if (/\bGET PRICING HERE\b/i.test(textOf(html.replace(/<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>/g, '')))) ctaProblems.push(`${page}: old label GET PRICING HERE still shown`);
 }
@@ -899,7 +906,7 @@ for (const file of pages) {
   if (!hero) ctaProblems.push('/: homepage hero pricing button not found');
   else {
     if ((hero[1].match(/\bhref="([^"]*)"/) || [])[1] !== '/free-quote/') ctaProblems.push('/: homepage hero button does not link to /free-quote/');
-    if (textOf(hero[2]) !== CTA_TEXT) ctaProblems.push(`/: homepage hero button reads "${textOf(hero[2])}"; it must read ${CTA_TEXT}`);
+    if (textOf(hero[2]) !== CTA_ORANGE_TEXT) ctaProblems.push(`/: homepage hero button reads "${textOf(hero[2])}"; it must read ${CTA_ORANGE_TEXT}`);
   }
 }
 

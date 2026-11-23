@@ -12,12 +12,16 @@ import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
 import { allHubNavLinks, HUB_SUMMARIES } from '@/config/hub-nav';
 import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
 import { LEGACY_INTROS } from '@/config/article-intros';
+import { INVESTIGATION } from '@/config/investigation';
 
 export async function getStaticPaths() {
   const pages = await getPublishedPages();
   const h1s = new Map(
     pages.map((p) => [pagePath(p), htmlToText(p.rendered?.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? p.data.title)]),
   );
+  // Published pages that are .astro routes, not Markdown: the investigation
+  // (src/config/investigation.ts) at its established URL.
+  h1s.set(INVESTIGATION.path, INVESTIGATION.h1);
   // Every listed page must exist and be published.
   for (const path of Object.keys(ARTICLE_PAGES)) {
     if (!h1s.has(path)) throw new Error(`src/config/article-pages.ts lists ${path}, which is not a published page`);

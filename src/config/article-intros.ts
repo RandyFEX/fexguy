@@ -166,7 +166,6 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/burial-insurance/sister/': ["Burial insurance for a sister is possible, but there"],
   '/burial-insurance/skin-cancer/': ["Getting burial insurance with skin cancer depends on the"],
   '/burial-insurance/sleep-apnea/': ["Burial insurance with sleep apnea is more flexible than most"],
-  '/burial-insurance/state-regulated-life-insurance/': ["State regulated life insurance is just a marketing phrase,"],
   '/burial-insurance/stent/': ["Getting burial insurance after a heart stent is very doable,"],
   '/burial-insurance/stroke-tia/': ["Getting burial insurance after a stroke or TIA depends"],
   '/burial-insurance/terminally-ill-patients/': ["Getting burial insurance for terminally ill patients is possible, but"],

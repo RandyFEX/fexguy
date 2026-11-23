@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ["I'm shopping for burial or life insurance for a...", 'What is your current age?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ['Show me 3 rates for a...', 'What is your current age?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
@@ -820,8 +820,8 @@ await check('/facebook/: no phone number shows or can be tapped before this visi
 await check('homepage SEE PRICES NOW opens the pricing funnel at the first question (not the old homepage form)', async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);
-  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero SEE PRICES NOW href');
-  if ((await p.innerText('.hero__btn--primary')).trim() !== 'SEE PRICES NOW') throw new Error('hero button wording');
+  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero GET 3 RATES NOW href');
+  if ((await p.innerText('.hero__btn--primary')).trim() !== 'GET 3 RATES NOW') throw new Error('hero button wording');
   await p.click('.hero__btn--primary');
   await p.waitForURL(/\/free-quote\/$/);
   await p.waitForSelector('[data-step="1"]:not([hidden])');

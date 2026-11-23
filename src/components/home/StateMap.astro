@@ -13,11 +13,14 @@ import labels from '@/data/funeral-map/state-labels.json';
 // column of small Northeastern states at phone label size.
 type Label = { x: number; y: number; lx?: number; ly?: number };
 const LABELS = labels as Record<string, Label>;
+// balancedTitle: a desktop-only line break after "&" (used on the state-regulated
+// investigation page; the homepage leaves it off and is unchanged).
+const { balancedTitle = false } = Astro.props as { balancedTitle?: boolean };
 ---
 
 <section class="home-map" aria-labelledby="cover-map-title">
   <div class="container">
-    <h2 class="home-map__title" id="cover-map-title">Research Costs By State &amp; Life Expectancy</h2>
+    <h2 class="home-map__title" id="cover-map-title">Research Costs By State &amp;{balancedTitle && <br class="br-desk" />} Life Expectancy</h2>
     <div class="cover-map" data-home-map>
       <p class="home-map__hint">
         <span class="home-map__bubble"><span class="home-map__hover">Hover Over Any State for Information</span><span class="home-map__tap">Tap Any State for Information</span></span>

@@ -1,0 +1,175 @@
+[
+  {
+    "id": "antarctica",
+    "area": "Antarctica (Antarctic Treaty area, south of 60 degrees S)",
+    "governingFramework": "Antarctic Treaty; Protocol on Environmental Protection (Madrid Protocol), including Annex III on waste; IAATO operator guidelines",
+    "finding": "No IAATO or Antarctic Treaty document addressing cremated remains or ashes was found. IAATO's general principle is leave-no-trace; a CNN first-person essay reports an expedition guide saying scattering would breach the Antarctic Treaty. Whether scattering at sea in the Treaty area (as opposed to on land) is addressed by the Protocol or national permitting authorities is unverified.",
+    "status": "unverified",
+    "sources": [
+      {
+        "id": "p-iaato",
+        "url": "https://iaato.org/field-operations-manual",
+        "title": "IAATO Field Operations Manual",
+        "type": "official-policy-page",
+        "quote": "KEEP ANTARCTICA PRISTINE – LEAVE NO TRACE OF YOUR VISIT",
+        "verified": "2026-11-21",
+        "accessNote": "Page not reachable; text from search snippet. General principle; does not mention human remains or ashes."
+      },
+      {
+        "id": "p-cnn",
+        "url": "https://www.cnn.com/travel/scatter-ashes-while-traveling-antarctica/index.html",
+        "title": "I wanted to scatter Dad's ashes in Antarctica. It didn't go as planned (CNN, Will McGough, 2025-02-24)",
+        "type": "secondary-news",
+        "quote": "According to the guide on my trip, spreading Dad's remains in Antarctica would run afoul of the Antarctic Treaty",
+        "verified": "2026-11-21",
+        "accessNote": "Page not reachable from this session; quote from search-engine snippet. First-person essay; the guide's statement is not an official rule."
+      },
+      {
+        "id": "p-iaato-waste",
+        "url": "https://www.auroraexpeditions.com.au/wp-content/uploads/2023/09/IAATO-Reducing-Waste-Guidelines-for-Visitors42.pdf",
+        "title": "IAATO Reducing Waste Guidelines for Visitors",
+        "type": "official-pdf",
+        "quote": "Not quoted: search summary states waste is disposed of in accordance with Annexes III and IV of the Protocol; no mention of remains seen.",
+        "verified": "2026-11-21",
+        "accessNote": "Not reachable; search summary only."
+      }
+    ],
+    "unresolved": [
+      "Exact Madrid Protocol Annex III text on materials that may not be disposed of in the Treaty area.",
+      "Whether national competent authorities (e.g. US EPA/NSF, UK FCDO) have ruled on ashes.",
+      "Ask IAATO in writing (iaato@iaato.org per its yacht outreach pamphlet, per search summary)."
+    ],
+    "conflicts": [
+      "Secondary sources (CNN guide statement; Jadetimes rewrite; a Rick Steves forum post) say or imply it is prohibited, but none cites a specific provision."
+    ]
+  },
+  {
+    "id": "south-georgia",
+    "area": "South Georgia",
+    "governingFramework": "Government of South Georgia and the South Sandwich Islands",
+    "finding": "Not researched beyond the historical 2011 reinterment of Frank Wild's ashes at Grytviken (Oceanwide blog, search summary). Not evidence of any visitor permission.",
+    "status": "unverified",
+    "sources": [
+      {
+        "id": "p-wild",
+        "url": "https://oceanwide-expeditions.com/blog/shackletons-tower-of-strength-right-hand-man-the-antarctic-exploits-of-frank-wild",
+        "title": "Oceanwide blog: Frank Wild",
+        "type": "secondary-blog",
+        "quote": "Not quoted: summary states his ashes were reinterred next to Shackleton's grave at Grytviken in 2011.",
+        "verified": "2026-11-21",
+        "accessNote": "Search summary only."
+      }
+    ],
+    "unresolved": [
+      "GSGSSI rules on scattering ashes."
+    ],
+    "conflicts": []
+  },
+  {
+    "id": "svalbard",
+    "area": "Svalbard (Norway)",
+    "governingFramework": "Forskrift om kirkegårder i Longyearbyen og askespredning på Svalbard (FOR-2008-02-15-153)",
+    "finding": "Ash scattering on Svalbard requires a permit from the Governor (Sysselmesteren) on application. Per search summary of the regulation: not in built-up areas or where it causes nuisance; conditions may be attached; permit possible where the deceased (over 15) applied or is shown to have wanted scattering; appeals go to the Ministry.",
+    "status": "conditionally-permitted",
+    "sources": [
+      {
+        "id": "p-svalbard",
+        "url": "https://lovdata.no/dokument/SF/forskrift/2008-02-15-153",
+        "title": "Forskrift om kirkegårder i Longyearbyen og askespredning på Svalbard (FOR-2008-02-15-153)",
+        "type": "government",
+        "quote": "Sysselmesteren på Svalbard kan etter søknad gi tillatelse til askespredning på øygruppen.",
+        "verified": "2026-11-21",
+        "accessNote": "Lovdata not reachable; quote from search snippet. Current consolidated version not checked."
+      },
+      {
+        "id": "p-norgeguide",
+        "url": "https://norgeguide.com/en/faq/safety-rules-and-fines/illegal-to-die-on-svalbard/",
+        "title": "Norgeguide: Is it illegal to die on Svalbard?",
+        "type": "secondary-blog",
+        "quote": "Not quoted: summary states the Governor can give permission on application to scatter ashes, but not in built-up areas.",
+        "verified": "2026-11-21",
+        "accessNote": "Search summary only."
+      }
+    ],
+    "unresolved": [
+      "Current consolidated text of the regulation and the Sysselmesteren application form/process.",
+      "Whether the permit covers scattering at sea from a ship in Svalbard territorial waters."
+    ],
+    "conflicts": []
+  },
+  {
+    "id": "alaska",
+    "area": "Alaska (US)",
+    "governingFramework": "US EPA MPRSA general permit (ocean, beyond 3 nm); state and federal land/park rules; operator policies",
+    "finding": "Federal rule for ocean scattering: at least three nautical miles from land, reported to EPA within 30 days (search summaries). Alaska has no general state statute on where ashes may be scattered (Nolo, secondary). Cunard's own policy bars lowering ashes in Alaska state waters. Glacier Bay National Park rules not found.",
+    "status": "conditionally-permitted",
+    "sources": [
+      {
+        "id": "p-epa",
+        "url": "https://www.epa.gov/marine-protection-permitting/burial-sea",
+        "title": "US EPA: Burial at Sea",
+        "type": "government",
+        "quote": "at least three nautical miles from land",
+        "verified": "2026-11-21",
+        "accessNote": "Not reachable; quote from search snippet. US MPRSA general permit, US waters only."
+      },
+      {
+        "id": "p-cunard-ak",
+        "url": "https://www.cunard.com/en-us/activity-types/ceremonies/committal-of-ashes-at-sea",
+        "title": "Cunard: Committal of ashes at sea",
+        "type": "official-policy-page",
+        "quote": "Ashes cannot be lowered from Cunard ships in protected bodies of water such as the Norwegian fjords or Alaska state waters.",
+        "verified": "2026-11-21",
+        "accessNote": "Cunard's own policy only; not reachable directly, quote from search snippet. Shows how one line treats Alaska state waters; does not bind other operators."
+      },
+      {
+        "id": "p-nolo",
+        "url": "https://www.nolo.com/legal-encyclopedia/burial-cremation-laws-alaska.html",
+        "title": "Nolo: Burial and Cremation Laws in Alaska",
+        "type": "secondary-blog",
+        "quote": "Not quoted: summary states Alaska lacks a statute generally governing where ashes may be scattered.",
+        "verified": "2026-11-21",
+        "accessNote": "Search summary only."
+      }
+    ],
+    "unresolved": [
+      "NPS Glacier Bay and other park rules.",
+      "Inside Passage waters are largely within 3 nm of land; how operators handle this is unverified."
+    ],
+    "conflicts": []
+  },
+  {
+    "id": "galapagos",
+    "area": "Galapagos Marine Reserve and Galapagos National Park (Ecuador)",
+    "governingFramework": "Galapagos National Park Directorate; Ley Organica de Regimen Especial de Galapagos (not checked)",
+    "finding": "No rule on scattering ashes was found in search results. Status unknown.",
+    "status": "unverified",
+    "sources": [],
+    "unresolved": [
+      "Galapagos National Park Directorate rules on human remains; contact the Directorate or operators."
+    ],
+    "conflicts": []
+  },
+  {
+    "id": "norwegian-fjords",
+    "area": "Norwegian fjords (protected waters)",
+    "governingFramework": "Norwegian ash-scattering rules (not researched); operator policies",
+    "finding": "Cunard's own policy bars lowering ashes in protected waters such as the Norwegian fjords. Norwegian law itself not researched.",
+    "status": "unverified",
+    "sources": [
+      {
+        "id": "p-cunard-ak",
+        "url": "https://www.cunard.com/en-us/activity-types/ceremonies/committal-of-ashes-at-sea",
+        "title": "Cunard: Committal of ashes at sea",
+        "type": "official-policy-page",
+        "quote": "Ashes cannot be lowered from Cunard ships in protected bodies of water such as the Norwegian fjords or Alaska state waters.",
+        "verified": "2026-11-21",
+        "accessNote": "Cunard's own policy only; not reachable directly, quote from search snippet. Shows how one line treats Alaska state waters; does not bind other operators."
+      }
+    ],
+    "unresolved": [
+      "Norwegian mainland permit rules (statsforvalteren) for scattering at sea."
+    ],
+    "conflicts": []
+  }
+]
