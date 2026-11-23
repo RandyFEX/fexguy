@@ -9,7 +9,6 @@
 // form is a progressive enhancement (hidden until its script runs).
 // No insurance or sales content in the article body, by design.
 import ArticleByline from '@/components/article/ArticleByline.astro';
-import ArticleSummary from '@/components/article/ArticleSummary.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import data from '@/data/cruise-ashes/operators.json';
 
@@ -35,17 +34,6 @@ const checkedLabel = new Date(`${data.checked}T12:00:00Z`).toLocaleDateString('e
 
 const established = operators.filter((o) => o.status !== 'unverified');
 const unverified = operators.filter((o) => o.status === 'unverified');
-const quickAnswer =
-  'Yes, on many major cruise lines, but only with the line’s permission and on its terms. Carnival, Royal Caribbean, Princess, MSC, Virgin Voyages, P&O Cruises, Cunard, Fred. Olsen and Marella publish a written process. Ambassador says it may be possible case by case, and Crystal does not offer it from the ship. Norwegian, Celebrity, Holland America, Disney, Viking and most smaller lines publish no policy we could find, so ask them in writing before you book. Plan on a biodegradable urn, copies of the death and cremation certificates, permission arranged before or at the start of the cruise, and a ceremony at least 12 nautical miles offshore.';
-const keyPoints = [
-  'Final expense life insurance through Funeral Funds is often used to fund a cruise to scatter ashes at sea, anywhere in the world where scattering is permitted.',
-  'Never scatter ashes from your balcony or a public deck on your own. Ask the cruise line first; the ship arranges the time and place.',
-  'Published policies require a biodegradable container, and several require the whole urn to go into the sea rather than loose ashes.',
-  'Some lines charge: P&O Cruises lists a GBP 270 admin charge and Cunard sells a paid package; MSC says there is no fee.',
-  'A cruise line’s permission does not override the law of the country whose waters the ship is in.',
-  'From a US port, cremated remains must be placed at least 3 nautical miles from land and the burial reported to the EPA within 30 days.',
-  'Airport rules differ by country and airline. Air Canada, for example, no longer accepts cremated remains in checked bags from August 28, 2026.',
-];
 const toc = [
   { id: 'which-lines', text: 'Which cruise lines allow scattering ashes?' },
   { id: 'profiles', text: 'Cruise lines with an established policy' },
@@ -90,12 +78,18 @@ const lawRegions = [
 ];
 ---
 
-<div class="container page page--article cra" data-article-layout="content">
+{/* Randy (November 2026): no Quick Answer or Key Points; an introductory paragraph replaces them. */}
+<div class="container page page--article cra" data-article-layout="content" data-article-exceptions="quick-answer key-points">
   <div class="prose wp-content">
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
     <h1>{h1}</h1>
     <ArticleByline updated={updated} />
-    <ArticleSummary quickAnswer={quickAnswer} takeaways={{ label: 'Key Points', items: keyPoints }} />
+    <p>
+      Scattering ashes at sea can be a meaningful way to honor a loved one, but cruise lines have different policies,
+      procedures, and requirements. We've researched individual cruise lines to help you understand which ones permit ash
+      scattering, what arrangements are necessary, and what to expect. Find your cruise line below to review its specific
+      policies, requirements, and available options.
+    </p>
     <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
       <ul class="cra-jump__list">
         {jump.map((j) => <li><a class="cra-jump__link" href={j.href}>{j.label}</a></li>)}
