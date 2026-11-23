@@ -1745,6 +1745,8 @@ Prioritize the shortest reliable path to completing approved changes.
   Get Pricing module (QuoteBox: sidebar from 64rem, in-article copy before
   "Cruise lines with an established policy" on phones). Its first Key Point
   is Randy's wording. Test: tests/cruise-ashes/directory.browser.mjs.
+  Linked from the mega menu: Guides & Tools > Guides > "Scattering Ashes at
+  Sea" (Randy, V1.18; desktop and phone).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
@@ -1975,7 +1977,7 @@ Prioritize the shortest reliable path to completing approved changes.
   RESOURCES, REVIEWS, ABOUT; one row from 64rem, unchanged); /facebook/, /free-quote/ and /help/ keep their
   own simplified headers. Phone menu (Randy, November 2026, V2.1): under
   48rem each category shows its priority links plus its directory link (Life
-  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 13,
+  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 15,
   About Us 6); links marked `phoneHidden` are left out there only when the
   category's directory page (/a-z-companies/, /a-z-health/) or the
   /burial-insurance/ hub links to them. CICA Life stays in Company Reviews on
