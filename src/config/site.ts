@@ -256,6 +256,7 @@ export const site: SiteConfig = {
             { label: 'Funeral Planning Guide', href: '/12-step-final-planning-guide/' },
             { label: 'IUL Playbook', href: '/iul-book/' },
             { label: 'Buyers Guide', href: '/buyers-guide/' },
+            { label: 'Scattering Ashes at Sea', href: '/scattering-ashes-from-a-cruise-ship/' },
           ],
         },
         {
