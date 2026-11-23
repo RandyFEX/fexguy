@@ -37,6 +37,8 @@ const checkedLabel = new Date(`${data.checked}T12:00:00Z`).toLocaleDateString('e
 
 const established = operators.filter((o) => o.status !== 'unverified');
 const unverified = operators.filter((o) => o.status === 'unverified');
+// Every cruise line in the guide (the comparison plus the directory).
+const lineCount = operators.length;
 const toc = [
   { id: 'which-lines', text: 'Which cruise lines allow scattering ashes?' },
   { id: 'profiles', text: 'Cruise lines with an established policy' },
@@ -103,11 +105,26 @@ const lawRegions = [
   <div class="prose wp-content">
     {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
     <ArticleByline updated={updated} />
+    {/* Opening (Randy, November 2026), modeled on the national parks guide's introduction. */}
+    <p class="cra-lead">
+      <strong>For someone who loved the sea, few farewells feel more fitting than a ceremony on the open water.</strong>
+      Families gather at the rail at sunset, share a few stories, and let their loved one go where the horizon runs out
+      of land.
+    </p>
     <p>
-      Scattering ashes at sea can be a meaningful way to honor a loved one, but cruise lines have different policies,
-      procedures, and requirements. We've researched individual cruise lines to help you understand which ones permit ash
-      scattering, what arrangements are necessary, and what to expect. Find your cruise line below to review its specific
-      policies, requirements, and available options.
+      A cruise can make that moment possible almost anywhere in the world: the Caribbean, Alaska, the Mediterranean, the
+      fjords of Norway or the South Pacific. It can also turn a goodbye into one last trip together, with time to grieve,
+      remember and celebrate a life.
+    </p>
+    <p>
+      <strong>But you can’t simply scatter ashes from your balcony.</strong> Every cruise line sets its own rules, and
+      many don’t publish them at all. Some arrange a private ceremony with an officer on deck; others require a
+      biodegradable urn, copies of the death and cremation certificates, or permission before you sail. And the ship’s
+      permission doesn’t override the law of the waters it’s sailing through.
+    </p>
+    <p>
+      We checked the official policies of {lineCount} cruise lines so your family knows what to expect before you book.
+      Find your cruise line below.
     </p>
     <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
       <ul class="cra-jump__list">
@@ -744,6 +761,9 @@ const lawRegions = [
       padding-inline: var(--space-6);
       bottom: 2.5rem;
     }
+  }
+  .cra-lead {
+    font-size: 1.25rem;
   }
   .cra {
     padding-block: var(--space-8) var(--space-12);
