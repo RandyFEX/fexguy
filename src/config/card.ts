@@ -16,7 +16,7 @@ export const card = {
   fullName: 'Randy VanderVaate',
   title: 'Founder of Funeral Funds',
   org: 'Funeral Funds',
-  licensing: 'Licensed in most states.',
+  licensing: 'Licensed Agent',
   phone: { display: lead.phone.display, href: lead.phone.href, e164: site.phoneE164 },
   /** Text-only line (SMS-capable, toll-free verified); never shown as a calling number. */
   sms: SMS_NUMBER ? { href: `sms:+1${SMS_NUMBER}` } : null,
