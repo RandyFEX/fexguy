@@ -1759,7 +1759,8 @@ Prioritize the shortest reliable path to completing approved changes.
   HttpOnly cookie `ff_rs` for a year on that browser; changing the password
   signs every browser out. Production only: upsert by normalized phone with the number fields
   callback_delay_hours, callback_frequency_hours and callback_duration_days,
-  then remove the contact from `CALLBACK_WORKFLOW_ID` (optional) and remove
+  then remove the contact from the workflow "2026 Callback Follow-Up"
+  (`DEFAULT_CALLBACK_WORKFLOW_ID` in handler.js; env `CALLBACK_WORKFLOW_ID` overrides) and remove
   the tag, append the note, and add the tag "Callback Scheduled" last.
   Previews validate only (dry run, nothing sent to Agent CRM). All waiting
   and calling logic lives in the GoHighLevel workflow, never on the site.

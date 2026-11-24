@@ -29,6 +29,10 @@ const API = 'https://services.leadconnectorhq.com';
 const TIMEOUT_MS = 8000;
 
 export const CALLBACK_TAG = 'Callback Scheduled';
+/** Agent CRM workflow "2026 Callback Follow-Up" (Randy, November 2026). Not a
+ * secret (it only works with the server-side token); the environment variable
+ * CALLBACK_WORKFLOW_ID overrides it. */
+export const DEFAULT_CALLBACK_WORKFLOW_ID = '4689ea7a-83cd-4c27-a0c3-bff8363248a7';
 export const FIELD_DELAY = 'callback_delay_hours';
 export const FIELD_FREQUENCY = 'callback_frequency_hours';
 export const FIELD_DURATION = 'callback_duration_days';
@@ -177,7 +181,7 @@ export async function sendSchedule(env, parsed, fetchImpl, now) {
     // Rescheduling: end any running sequence first (best effort: a contact
     // that isn't in the workflow or has no tag answers with an error here).
     step = 'cleanup';
-    const workflowId = (env.CALLBACK_WORKFLOW_ID ?? '').trim();
+    const workflowId = (env.CALLBACK_WORKFLOW_ID ?? '').trim() || DEFAULT_CALLBACK_WORKFLOW_ID;
     if (workflowId) await call(`/contacts/${id}/workflow/${encodeURIComponent(workflowId)}`, 'DELETE', {}).catch(() => null);
     await call(`/contacts/${id}/tags`, 'DELETE', { tags: [CALLBACK_TAG] }).catch(() => null);
     step = 'note';
