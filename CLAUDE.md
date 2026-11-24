@@ -942,7 +942,7 @@ Prioritize the shortest reliable path to completing approved changes.
   - Never merge or deploy without explicit approval unless the owner has
     specifically authorized that action (see "Production safety").
 
-## Author voice standard (Randy, November 2026, V1.3)
+## Author voice standard (Randy, November 2026, V1.3; updated V2.2)
 
 Applies to every future Funeral Funds article Claude creates or revises
 when Randy assigns that work. It adds to "Editorial authority and
@@ -951,9 +951,17 @@ carrier policy and the company-review specification, and never relaxes
 them; it authorizes no edit to any existing article. Knowledge-base rule:
 KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
+- **The defining standard** (V2.2): exceptional subject-matter knowledge
+  combined with exceptional communication efficiency. Readers must
+  recognize Randy's expertise through the precision, substance, maturity
+  and clarity of the writing, never through self-description or claims of
+  authority. Professional authority, analytical precision and
+  communication efficiency take precedence over conversational writing
+  devices.
 - Write as Randy VanderVaate, an independent life insurance broker with 11
   years of hands-on experience, personally advising the reader. Write as
-  Randy, not about Randy.
+  Randy, not about Randy. Use first-person opinions selectively, where
+  they carry a real judgment.
 - The voice reference is writing demonstrably authored or approved by
   Randy, never other AI-generated articles just because they carry his
   name. Approved reference so far: the "What Randy thinks about Lincoln
@@ -961,19 +969,28 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   commit `825242a`). Use references for tone, sentence style and
   directness only, never as content to copy; new references need Randy's
   approval.
-- Research supports Randy's advice, recommendations and professional
-  judgment; it isn't the article. Include a fact only when it helps the
-  reader decide, solve a problem, avoid an expense or understand an option.
-- Organize from highest to lowest reader intent. For each major section:
-  the reader's problem, what Randy recommends, why, and what to do next.
-  Prioritize recommendations instead of presenting every option as equal,
-  and connect sections with natural transitions and useful conclusions.
-- Direct language, natural contractions, varied sentence and paragraph
-  length, conversational structure. Adding first-person pronouns is not
-  the same as establishing the voice.
-- No generic AI writing: encyclopedia-style explanations, research-report
-  language, corporate marketing language, unnecessary statistics,
-  repetitive summaries, filler or forced empathy. No em or en dashes.
+- Every article must:
+  - communicate the maximum useful insight with the minimum necessary
+    wording (high information value per sentence, not an arbitrary word
+    count; never at the expense of accuracy or needed context);
+  - demonstrate professional judgment rather than merely report facts;
+  - evaluate financial options, their limitations, reliability and failure
+    points, and recommend rather than present every option as equal;
+  - explain complex concepts clearly without oversimplifying them, and
+    respect the reader's intelligence;
+  - establish the value of life insurance through sound financial
+    reasoning, never promotional language, and acknowledge sound
+    alternatives (including savings that already cover the cost).
+- Research supports Randy's advice and judgment; it isn't the article.
+  Include a fact only when it helps the reader decide, solve a problem,
+  avoid an expense or understand an option. Organize from highest to
+  lowest reader intent, with natural transitions and useful conclusions.
+- Eliminate generic AI prose, artificial conversational transitions,
+  obvious statements, repetition and unnecessary filler, as well as
+  encyclopedia-style explanations, corporate marketing language,
+  unnecessary statistics and forced empathy. Direct, professional
+  language with natural contractions; adding first-person pronouns is not
+  the same as establishing the voice. No em or en dashes.
 - Never manufacture personal experiences, client anecdotes or professional
   observations (no "in my experience" or "I've seen" unless Randy supplied
   it; KB-STYLE-001 to 003 still apply).
@@ -982,9 +999,9 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   placement rules win (Quick Answer and Key Points give direct answers;
   broker opinions go in the opinion section).
 - Before presenting any article for owner review, read it as one
-  continuous piece and ask whether it sounds like Randy personally advising
-  a reader or like an AI assembling research into an SEO article. If the
-  latter, revise it first.
+  continuous piece and correct any writing that fails this standard. Randy
+  expects to make final personal refinements, not reconstruct inferior
+  writing.
 
 ## Company reviews (Randy, October 2026)
 
