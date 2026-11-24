@@ -13,8 +13,9 @@ const DURATION_OPTIONS = [7, 14, 30, 45, 60];
 
 /** @param {{ preview: boolean }} opts */
 export function renderReschedulePage({ preview }) {
-  const freq = FREQUENCY_OPTIONS.map(([h, l]) => `<option value="${h}"${h === 3 ? ' selected' : ''}>${l}</option>`).join('');
-  const dur = DURATION_OPTIONS.map((d) => `<option value="${d}"${d === 30 ? ' selected' : ''}>${d} days</option>`).join('');
+  // Tap-to-select buttons (radio inputs), not dropdowns (Randy, November 2026).
+  const freq = FREQUENCY_OPTIONS.map(([h, l]) => `<label class="opt"><input type="radio" name="frequency" value="${h}"${h === 3 ? ' checked' : ''}><span>${l}</span></label>`).join('');
+  const dur = DURATION_OPTIONS.map((d) => `<label class="opt"><input type="radio" name="duration" value="${d}"${d === 30 ? ' checked' : ''}><span>${d} days</span></label>`).join('');
   return `<!doctype html>
 <html lang="en-US">
 <head>
@@ -40,6 +41,14 @@ input,select,textarea{width:100%;font:inherit;color:var(--text);background:#fff;
 textarea{min-height:8rem;resize:vertical}
 input:focus,select:focus,textarea:focus,button:focus{outline:3px solid #1a1a1a;outline-offset:2px}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.opts{display:grid;gap:.5rem}
+.opts--freq{grid-template-columns:repeat(4,1fr)}
+.opts--dur{grid-template-columns:repeat(5,1fr)}
+.opt{display:block;margin:0;font-weight:400;cursor:pointer}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt span{display:flex;align-items:center;justify-content:center;height:100%;min-height:2.75rem;padding:.375rem .25rem;font-size:.9375rem;border:1px solid #8a8f8b;border-radius:.5rem;background:#fff;text-align:center;line-height:1.2}
+.opt input:checked+span{background:var(--primary);border-color:var(--primary);color:#fff;font-weight:700}
+.opt input:focus-visible+span{outline:3px solid #1a1a1a;outline-offset:2px}
 .pair label{font-weight:600;font-size:.9375rem}
 .err{display:block;color:var(--error);font-size:.9375rem;margin-top:.25rem}
 .err:empty{display:none}
@@ -71,8 +80,8 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
 <div><label for="rf-days">Days</label><input id="rf-days" name="days" type="number" inputmode="numeric" min="0" max="365" step="1" value="1" aria-describedby="rf-days-err"><span class="err" id="rf-days-err"></span></div>
 <div><label for="rf-hours">Hours</label><input id="rf-hours" name="hours" type="number" inputmode="numeric" min="0" max="999" step="1" value="8" aria-describedby="rf-hours-err"><span class="err" id="rf-hours-err"></span></div>
 </div></fieldset>
-<div class="field"><label for="rf-frequency">Follow-up frequency</label><select id="rf-frequency" name="frequency">${freq}</select><span class="err" id="rf-frequency-err"></span></div>
-<div class="field"><label for="rf-duration">Continue follow-up for</label><select id="rf-duration" name="duration">${dur}</select><span class="err" id="rf-duration-err"></span></div>
+<fieldset><legend class="legend">Follow-up frequency</legend><div class="opts opts--freq">${freq}</div><span class="err" id="rf-frequency-err"></span></fieldset>
+<fieldset><legend class="legend">Continue follow-up for</legend><div class="opts opts--dur">${dur}</div><span class="err" id="rf-duration-err"></span></fieldset>
 <div class="field"><label for="rf-method">Calling method</label><select id="rf-method" name="method"><option value="manual" selected>Manual calls / dialer queue</option></select><span class="err" id="rf-method-err"></span></div>
 <div class="summary" aria-live="polite"><p id="rf-summary"></p></div>
 <button type="submit" id="rf-submit">Schedule Follow-Up</button>
@@ -129,6 +138,7 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
             var el = document.getElementById('rf-' + k + '-err');
             if (el) el.textContent = res.errors[k];
             var input = f.elements[k];
+            if (input && !input.setAttribute && input.length) input = input[0];
             if (input) { input.setAttribute('aria-invalid', 'true'); first = first || input; }
           });
           status.className = 'status fail';
