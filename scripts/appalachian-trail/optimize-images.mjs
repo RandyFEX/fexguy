@@ -5,7 +5,7 @@
 // records to src/data/appalachian-trail/image-rights.json.
 // Usage: node scripts/appalachian-trail/optimize-images.mjs <download-dir>
 import sharp from 'sharp';
-import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -27,6 +27,37 @@ const PHOTOS = [
   { id: 'no-wayah-bald-lookout-tower', file: 'wayah.jpg', dir: 'north-carolina', name: 'wayah-bald', alt: 'Layered ridges and valley fog east of Wayah Bald before sunrise', caption: 'View east from Wayah Bald before sunrise', credit: 'Jud McCranie', title: 'Wayah Bald, NC, view to the east before sunrise', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wayah_Bald,_NC,_view_to_the_east_before_sunrise.jpg', license: { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' }, changed: true },
   { id: 'te-charlies-bunion', file: 'charlies.jpg', dir: 'tennessee', name: 'charlies-bunion', alt: 'The rock outcrop of Charlies Bunion with forested ridges beyond', caption: 'Charlies Bunion', credit: 'Brian Stansberry', title: 'Charlies-bunion-protrusion', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Charlies-bunion-protrusion.jpg', license: { name: 'CC BY 2.5', url: 'https://creativecommons.org/licenses/by/2.5/' }, changed: true },
 ];
+
+// Further approved photos from the November 24, 2026 photo research
+// (docs/investigations/appalachian-trail-2026-11/photos-2026-11-24.json):
+// downloaded once as <download-dir>/<id>.jpg.
+const LICENSE_URLS = {
+  'CC0 1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
+};
+const extraFile = path.join(root, 'docs/investigations/appalachian-trail-2026-11/photos-2026-11-24.json');
+if (existsSync(extraFile)) {
+  const dest = JSON.parse(readFileSync(path.join(root, 'src/data/appalachian-trail/destinations.json'), 'utf8')).destinations;
+  for (const r of JSON.parse(readFileSync(extraFile, 'utf8'))) {
+    if (r.status !== 'APPROVED' || PHOTOS.some((p) => p.id === r.id)) continue;
+    const d = dest.find((x) => x.id === r.id);
+    if (!d) throw new Error(`photo for unknown destination ${r.id}`);
+    const name = r.license;
+    const url = r.licenseUrl || LICENSE_URLS[name];
+    PHOTOS.push({
+      id: r.id,
+      file: `${r.id}.jpg`,
+      dir: d.state.toLowerCase().replace(/[^a-z]+/g, '-'),
+      name: r.id.replace(/^[a-z]{2}-/, ''),
+      alt: r.depicts,
+      caption: r.caption,
+      credit: r.author,
+      ...(/^CC BY/.test(name) ? { title: r.fileTitle.replace(/\.(jpe?g|png|tiff?)$/i, '') } : {}),
+      sourceUrl: r.sourcePageUrl,
+      license: /^public domain/i.test(name) ? PD : { name, ...(url ? { url } : {}) },
+      ...(/^CC BY/.test(name) ? { changed: true } : {}),
+    });
+  }
+}
 
 const out = { checked: '2026-11-24', note: 'Only APPROVED rows of C-photography-manifest.csv. A record whose file is missing is left out (the page shows its placeholder).', hero: null, photos: {} };
 for (const p of PHOTOS) {

@@ -1,0 +1,30 @@
+---
+// GPS buttons for the Appalachian Trail guide (preview), in the national parks
+// guide's style (the page's .ola-gps styles are global to this list via
+// :global). Each point carries its source note under the button.
+import { mapsUrl, type AtPoint } from '@/data/appalachian-trail/guide';
+interface Props { points: AtPoint[]; name: string }
+const { points, name } = Astro.props;
+const coord = (p: AtPoint) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
+const note = (pt: AtPoint) =>
+  pt.kind === 'official'
+    ? pt.source
+    : pt.kind === 'osm'
+      ? 'Mapped by Funeral Funds from OpenStreetMap. Not an official coordinate.'
+      : 'Published on the Appalachian Trail Conservancy map. Whether it marks the trailhead or the destination is not established.';
+---
+
+<ul class="ola-gps">
+  {
+    points.map((pt) => (
+      <li>
+        <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label} for ${name}, ${coord(pt)}, in Google Maps`}>
+          <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+          <span class="ola-gps__label">{pt.label}</span>
+          <span class="ola-gps__coord">{coord(pt)}</span>
+        </a>
+        <p class="at-src">{note(pt)}</p>
+      </li>
+    ))
+  }
+</ul>

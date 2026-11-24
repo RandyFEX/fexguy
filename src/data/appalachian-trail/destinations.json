@@ -242,8 +242,11 @@
         }
       ],
       "links": [
-        "https://appalachiantrail.org/hikes/blood-mountain-and-freeman-trail/"
+        {
+          "url": "https://appalachiantrail.org/hikes/blood-mountain-and-freeman-trail/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The highest point on the Georgia section of the Trail, Blood Mountain rises to 4,461 feet, with a historic stone shelter on the summit. The out-and-back from Byron Reece is about 4.3 miles with almost 1,500 feet of climbing; a longer loop via the Freeman Trail is about 6.2 miles and rated difficult. Treat the stone shelter as the historic structure it is. Between March 1 and June 1, campers between Jarrard Gap and Neel Gap must carry a hard-sided bear canister."
@@ -285,8 +288,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/three-forks-to-long-creek-falls/"
+        {
+          "url": "https://appalachiantrail.org/hikes/three-forks-to-long-creek-falls/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A gentle walk of about 1.8 miles round trip follows the Trail along the water, then a short side trail leads to the falls. The road in, Forest Service Road 58, is rough. Families who want a shorter, softer day in the north Georgia woods often find this one fits."
@@ -346,9 +352,14 @@
         }
       ],
       "links": [
-        "https://appalachiantrail.org/hikes/springer-mountain/",
-        "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/springer-mountain-trailhead"
+        {
+          "url": "https://appalachiantrail.org/hikes/springer-mountain/"
+        },
+        {
+          "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/springer-mountain-trailhead"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "Springer Mountain is where the Appalachian Trail begins. A bronze plaque and the first white blaze mark the southern terminus at 3,782 feet. From the Forest Service Road 42 trailhead, the walk is about 2 miles round trip. For anyone who ever dreamed of hiking the whole Trail, there may be no more fitting place to start one last journey. Leave the plaque and blaze area exactly as you found it."
@@ -389,6 +400,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 35.893627,
           "lon": -82.827162,
@@ -398,9 +410,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/lovers-leap/",
-        "https://fs.usda.gov/r08/northcarolina/recreation/trails/lovers-leap-loop-trail"
+        {
+          "url": "https://appalachiantrail.org/hikes/lovers-leap/"
+        },
+        {
+          "url": "https://fs.usda.gov/r08/northcarolina/recreation/trails/lovers-leap-loop-trail"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "From the Trail town of Hot Springs, the climb to Lover's Leap is about 2.6 miles round trip, with a shorter 1.6-mile loop from the Silvermine parking area. The Forest Service manages it as part of the Appalachian Ranger District."
@@ -460,8 +477,11 @@
         }
       ],
       "links": [
-        "https://appalachiantrail.org/hikes/max-patch/"
+        {
+          "url": "https://appalachiantrail.org/hikes/max-patch/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "Max Patch is an open, grassy bald with views in every direction, reached on about 1.6 miles round trip. It is one of the most loved places on the southern Trail, and its grasses are fragile, so stay on the path. Camping and fire restrictions have been in place since 2021."
@@ -521,8 +541,11 @@
         }
       ],
       "links": [
-        "https://appalachiantrail.org/hikes/wayah-bald-lookout-tower/"
+        {
+          "url": "https://appalachiantrail.org/hikes/wayah-bald-lookout-tower/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A paved path of about 0.3 miles leads from the parking area to a historic stone lookout tower, and the Appalachian Trail Conservancy describes the path as wheelchair accessible. For a family member who can no longer manage a mountain trail, this may be the most welcoming summit in the state. The final 4.5 miles of road are gravel, and seasonal closures have been reported."
@@ -584,9 +607,14 @@
         }
       ],
       "links": [
-        "https://www.nps.gov/thingstodo/charlies-bunion-via-appalachian-trail.htm",
-        "https://www.nps.gov/places/charlies-bunion.htm"
+        {
+          "url": "https://www.nps.gov/thingstodo/charlies-bunion-via-appalachian-trail.htm"
+        },
+        {
+          "url": "https://www.nps.gov/places/charlies-bunion.htm"
+        }
       ],
+      "parking": null,
       "verification": "verified",
       "description": [
         "The Park Service describes this hike from Newfound Gap as about 8 miles round trip on the Appalachian Trail. Charlies Bunion is a rock outcrop surrounded by steep cliffs. Be careful at the edge, and remember the park's 150-foot distance from the trail."
@@ -629,6 +657,7 @@
       "points": [
         {
           "kind": "official",
+          "role": "trailhead",
           "label": "Kuwohi parking area",
           "lat": 35.556209,
           "lon": -83.495269,
@@ -656,9 +685,14 @@
         }
       ],
       "links": [
-        "https://www.nps.gov/places/kuwohi-observation-tower.htm",
-        "https://www.nps.gov/thingstodo/kuwohi.htm"
+        {
+          "url": "https://www.nps.gov/places/kuwohi-observation-tower.htm"
+        },
+        {
+          "url": "https://www.nps.gov/thingstodo/kuwohi.htm"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "At 6,643 feet, Kuwohi is the highest point in the Smokies, and the Trail crosses the summit. The observation tower is on the National Register of Historic Places, so any scattering must be at least 300 feet from it. The tower and summit are a remembrance place; a scattering spot that meets the park's distances must be away from the tower, the paved path and the parking area. The park publishes coordinates for the Kuwohi parking area: 35.556209, -83.495269."
@@ -700,8 +734,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/laurel-fork-gorge-and-falls/"
+        {
+          "url": "https://appalachiantrail.org/hikes/laurel-fork-gorge-and-falls/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "About 5 miles round trip from a Forest Service lot near Hampton, the Trail follows Laurel Fork through a gorge to a waterfall. The Laurel Fork Shelter burned in 2024, and the area is closed to camping."
@@ -743,8 +780,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/round-bald-and-jane-bald/"
+        {
+          "url": "https://appalachiantrail.org/hikes/round-bald-and-jane-bald/"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "In the Roan Highlands on the state line, the Trail crosses open balds on a walk of about 2.6 miles round trip. The parking area fills quickly. The vegetation on the balds is fragile, so stay on the trail. We could not establish which agency manages this land, so ask before you plan anything."
@@ -788,9 +828,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/bear-den-mountain/",
-        "https://www.nps.gov/shen/learn/news/firefighters-work-to-suppress-bear-den-mountain-fire-in-shenandoah-national-park.htm"
+        {
+          "url": "https://appalachiantrail.org/hikes/bear-den-mountain/"
+        },
+        {
+          "url": "https://www.nps.gov/shen/learn/news/firefighters-work-to-suppress-bear-den-mountain-fire-in-shenandoah-national-park.htm"
+        }
       ],
+      "parking": null,
       "verification": "verified",
       "description": [
         "From a small parking area at Beagle Gap, Skyline Drive milepost 99.3, the Trail climbs to the open summit of Bear Den Mountain in the park's South District. The Appalachian Trail Conservancy lists the walk at about 2.2 miles round trip. Shenandoah's conditions apply."
@@ -833,6 +878,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 38.2231099737515,
           "lon": -78.733426026237,
@@ -842,8 +888,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.nps.gov/thingstodo/blackrock-summit.htm"
+        {
+          "url": "https://www.nps.gov/thingstodo/blackrock-summit.htm"
+        }
       ],
+      "parking": null,
       "verification": "verified",
       "description": [
         "From the Blackrock parking area at Skyline Drive mile 84.4, a short walk on the Trail leads to a rocky summit. The Appalachian Trail Conservancy lists the walk at about 1 mile round trip with about 160 feet of climbing. Scatter on the ground at least 100 feet from the trail."
@@ -887,8 +936,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.nps.gov/thingstodo/compton-peak.htm"
+        {
+          "url": "https://www.nps.gov/thingstodo/compton-peak.htm"
+        }
       ],
+      "parking": null,
       "verification": "verified",
       "description": [
         "From the Compton Gap parking area at Skyline Drive mile 10.4, the Trail climbs to Compton Peak in the park's North District, about 2.4 miles round trip. Shenandoah's conditions apply."
@@ -930,8 +982,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/rhododendron-gap/"
+        {
+          "url": "https://appalachiantrail.org/hikes/rhododendron-gap/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "From Massie Gap in Grayson Highlands State Park, the Rhododendron Trail reaches the Appalachian Trail in about half a mile. Continuing to Rhododendron Gap is about 5.2 miles round trip. Wild ponies graze the rocky balds; do not feed or touch them. Past the fence the land is Jefferson National Forest. Neither Virginia State Parks nor the national forest has a published rule we could find."
@@ -973,9 +1028,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.ratc.org/at-hiking/mcafee-knob-and-the-triple-crown/",
-        "https://appalachiantrail.org/news/mcafee-knob-pedestrian-bridge-opens/"
+        {
+          "url": "https://www.ratc.org/at-hiking/mcafee-knob-and-the-triple-crown/"
+        },
+        {
+          "url": "https://appalachiantrail.org/news/mcafee-knob-pedestrian-bridge-opens/"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "The Roanoke Appalachian Trail Club, which maintains it, describes the hike as just under 8 miles round trip, with about 1,400 feet of climbing. A pedestrian bridge over Route 311 opened in March 2025, and a shuttle runs from the I-81 Exit 140 Park and Ride. We could not establish who manages the land at the Knob, so this is a remembrance place until the manager confirms a rule."
@@ -1019,9 +1079,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.nps.gov/places/thunder-ridge.htm",
-        "https://www.nps.gov/blri/planyourvisit/va-trails.htm"
+        {
+          "url": "https://www.nps.gov/places/thunder-ridge.htm"
+        },
+        {
+          "url": "https://www.nps.gov/blri/planyourvisit/va-trails.htm"
+        }
       ],
+      "parking": null,
       "verification": "verified",
       "description": [
         "At milepost 74, the overlook is part of the Appalachian Trail and looks out over the Arnold Valley. A short loop trail leaves from it. The Parkway's conditions apply. The wilderness area next to the overlook is not Park Service land."
@@ -1065,6 +1130,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 39.3252817,
           "lon": -77.7405101,
@@ -1101,8 +1167,11 @@
         }
       ],
       "links": [
-        "https://www.nps.gov/hafe/planyourvisit/permitsandreservations.htm"
+        {
+          "url": "https://www.nps.gov/hafe/planyourvisit/permitsandreservations.htm"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The Trail runs right through Harpers Ferry. The historic Lower Town is a remembrance place. The Point, where the Shenandoah meets the Potomac, is the setting for one of the park's designated scattering areas, the Shenandoah River shoreline."
@@ -1147,8 +1216,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.nps.gov/hafe/learn/historyculture/jefferson-rock.htm"
+        {
+          "url": "https://www.nps.gov/hafe/learn/historyculture/jefferson-rock.htm"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The Trail passes Jefferson Rock between the Lower Town and Camp Hill. The rock itself is closed to climbing, standing and sitting, so it is a remembrance place. The vegetation beside it is one of the park's three designated scattering areas, with a permit."
@@ -1190,6 +1262,7 @@
       "photo": null,
       "photos": [],
       "links": [],
+      "parking": null,
       "verification": "partial",
       "description": [
         "About half a mile on the Trail, the War Correspondents Memorial Arch stands at Crampton Gap, a historic structure in a quiet park setting."
@@ -1230,6 +1303,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 39.4989656355905,
           "lon": -77.6234945495519,
@@ -1239,8 +1313,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://dnr.maryland.gov/publiclands/Pages/Regulations.aspx"
+        {
+          "url": "https://dnr.maryland.gov/publiclands/Pages/Regulations.aspx"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A short walk of about 0.4 miles on the Trail reaches the park's stone monument, a historic structure. It is a peaceful remembrance place with a view over the valley."
@@ -1281,6 +1358,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 39.3331320468428,
           "lon": -77.6831436927193,
@@ -1290,8 +1368,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/weverton-cliffs/"
+        {
+          "url": "https://appalachiantrail.org/hikes/weverton-cliffs/"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "Weverton Cliffs is about 2 miles round trip with about 625 feet of climbing. Whether the cliffs are Park Service land or state land is not established."
@@ -1333,8 +1414,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/bake-oven-knob/"
+        {
+          "url": "https://appalachiantrail.org/hikes/bake-oven-knob/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A short, easy walk of about 0.8 miles round trip leads to a rocky knob at 1,560 feet. The land is reported to be State Game Lands 217, managed by the Pennsylvania Game Commission. Wear blaze orange during hunting season. We could not find a Game Commission rule on scattering ashes.",
@@ -1376,6 +1460,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 41.3027968,
           "lon": -74.66754909999997,
@@ -1385,8 +1470,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/high-point-monument/"
+        {
+          "url": "https://appalachiantrail.org/hikes/high-point-monument/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The obelisk at High Point marks the highest point in New Jersey, 1,803 feet. The Appalachian Trail Conservancy lists about 3 miles round trip to the viewing platform with about 300 feet of climbing, plus about half a mile more to the monument. The tower is closed in winter."
@@ -1428,8 +1516,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/pochuck-boardwalk/"
+        {
+          "url": "https://appalachiantrail.org/hikes/pochuck-boardwalk/"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "A flat walk of about 2 miles round trip on a long boardwalk through wetlands. The Appalachian Trail Conservancy notes that it is not certified as accessible under federal standards, and parking is along the shoulder of Route 517. It is a gentle choice for family members who cannot climb."
@@ -1471,9 +1562,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.nps.gov/dewa/planyourvisit/dunnfield-creek-trail.htm",
-        "https://dep.nj.gov/wp-content/uploads/parksandforests/NJSPS_AT_information.pdf"
+        {
+          "url": "https://www.nps.gov/dewa/planyourvisit/dunnfield-creek-trail.htm"
+        },
+        {
+          "url": "https://dep.nj.gov/wp-content/uploads/parksandforests/NJSPS_AT_information.pdf"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A glacial pond in the Kittatinny Ridge, Sunfish Pond lies on the Trail in Worthington State Forest. From the Dunnfield Creek trailhead the Park Service lists the trail at about 3.4 to 3.5 miles each way, about 7 miles round trip, with about 966 feet of elevation change. Keep well back from the water."
@@ -1516,6 +1612,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 41.3117103562312,
           "lon": -74.0073974786081,
@@ -1525,8 +1622,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/bear-mountain/"
+        {
+          "url": "https://appalachiantrail.org/hikes/bear-mountain/"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "Perkins Memorial Drive leads close to the summit, with accessible parking along the road, and the Trail passes through the summit area. The drive is open April 1 through November 30, weather permitting. Bear Mountain is a beautiful remembrance place. Scattering here needs the state's approval first.",
@@ -1568,6 +1668,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 42.637391,
           "lon": -73.166942,
@@ -1577,8 +1678,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://www.mass.gov/locations/mount-greylock-state-reservation"
+        {
+          "url": "https://www.mass.gov/locations/mount-greylock-state-reservation"
+        }
       ],
+      "parking": null,
       "verification": "unverified",
       "description": [
         "The highest point in Massachusetts can be reached by the summit road, and the Trail crosses the top. The Veterans War Memorial Tower and Bascom Lodge are historic structures. For hikers, the state's suggested day hike is about 6.2 miles round trip with about 1,070 feet of climbing. Vehicles over 22 feet are not allowed on the road. We could not find a Department of Conservation and Recreation rule on scattering ashes."
@@ -1619,6 +1723,7 @@
       "points": [
         {
           "kind": "atc",
+          "role": "atc",
           "label": "ATC map point",
           "lat": 43.6806858,
           "lon": -72.7823607,
@@ -1628,9 +1733,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/thundering-falls/",
-        "https://www.fs.usda.gov/r09/gmfl/recreation/thundering-falls"
+        {
+          "url": "https://appalachiantrail.org/hikes/thundering-falls/"
+        },
+        {
+          "url": "https://www.fs.usda.gov/r09/gmfl/recreation/thundering-falls"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A universally accessible route of about 0.6 miles round trip, with a 700-foot boardwalk and about 500 feet of gravel, leads to a view of the falls near Killington. Grades reach 7 percent on the boardwalk and 9 percent on the gravel, and part of the gravel can be wet. The Forest Service describes an accessible parking lot on River Road; the Appalachian Trail Conservancy says there are no designated accessible spaces, so check before you go. The land is Green Mountain National Forest, which has no published scattering rule we could find."
@@ -1672,8 +1782,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://blog.nhstateparks.org/at-the-heart-of-the-notch-lafayette-place/"
+        {
+          "url": "https://blog.nhstateparks.org/at-the-heart-of-the-notch-lafayette-place/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The Trail runs along an open, above-treeline ridge with long views in every direction. The classic loop from Lafayette Place in Franconia Notch State Park is about 8.9 miles and is rated a difficult, all-day hike. Weather on the ridge can turn severe. Who manages the ridge crest is not established, so this is a remembrance place until it is."
@@ -1715,8 +1828,11 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://baxterstatepark.org/general-info/"
+        {
+          "url": "https://baxterstatepark.org/general-info/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "The northern end of the Appalachian Trail. Baxter State Park lists the Hunt Trail at about 10.4 miles round trip with about 4,188 feet of climbing, taking 8 to 12 hours. This is a serious mountain hike, and the trail closes for winter, roughly mid-October to late May. For a hiker who finished the Trail here, or always meant to, it is the summit that says \"you made it.\""
@@ -1758,9 +1874,14 @@
       "photo": null,
       "photos": [],
       "links": [
-        "https://appalachiantrail.org/hikes/little-and-big-niagara-falls/",
-        "https://baxterstatepark.org/day-hikes/"
+        {
+          "url": "https://appalachiantrail.org/hikes/little-and-big-niagara-falls/"
+        },
+        {
+          "url": "https://baxterstatepark.org/day-hikes/"
+        }
       ],
+      "parking": null,
       "verification": "partial",
       "description": [
         "A gentler Baxter walk of about 2.6 miles round trip along Nesowadnehunk Stream leads to two waterfalls. It is a good choice for family members who want to be near the end of the Trail without the summit climb."

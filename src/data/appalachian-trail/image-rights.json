@@ -35,6 +35,32 @@
         "name": "Public domain"
       }
     },
+    "ge-springer-mountain": {
+      "src": "/images/appalachian-trail/georgia/springer-mountain.jpg",
+      "srcWebp": "/images/appalachian-trail/georgia/springer-mountain.webp",
+      "alt": "View from the Springer Mountain summit area over forest to distant ridges",
+      "caption": "Springer Mountain",
+      "credit": "Thomson200 / Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Springer_Mountain_view.JPG",
+      "license": {
+        "name": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "title": "Springer Mountain view"
+    },
+    "ge-blood-mountain-via-byron-reece-trail": {
+      "src": "/images/appalachian-trail/georgia/blood-mountain.jpg",
+      "srcWebp": "/images/appalachian-trail/georgia/blood-mountain.webp",
+      "alt": "Blood Mountain in fall color, seen from Vogel State Park",
+      "caption": "Blood Mountain from Vogel State Park",
+      "credit": "Thomson200 / Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blood_Mountain_from_Vogel_State_Park,_Oct_2016_1.jpg",
+      "license": {
+        "name": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "title": "Blood Mountain from Vogel State Park, Oct 2016 1"
+    },
     "no-max-patch": {
       "src": "/images/appalachian-trail/north-carolina/max-patch.jpg",
       "srcWebp": "/images/appalachian-trail/north-carolina/max-patch.webp",
@@ -46,6 +72,34 @@
         "name": "Public domain"
       },
       "title": "Appalachian Trail crosses the grassy bald area atop Max Patch Mountain"
+    },
+    "no-wayah-bald-lookout-tower": {
+      "src": "/images/appalachian-trail/north-carolina/wayah-bald.jpg",
+      "srcWebp": "/images/appalachian-trail/north-carolina/wayah-bald.webp",
+      "alt": "Layered ridges and valley fog east of Wayah Bald before sunrise",
+      "caption": "View east from Wayah Bald before sunrise",
+      "credit": "Jud McCranie",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wayah_Bald,_NC,_view_to_the_east_before_sunrise.jpg",
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "title": "Wayah Bald, NC, view to the east before sunrise",
+      "changed": true
+    },
+    "te-charlies-bunion": {
+      "src": "/images/appalachian-trail/tennessee/charlies-bunion.jpg",
+      "srcWebp": "/images/appalachian-trail/tennessee/charlies-bunion.webp",
+      "alt": "The rock outcrop of Charlies Bunion with forested ridges beyond",
+      "caption": "Charlies Bunion",
+      "credit": "Brian Stansberry",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charlies-bunion-protrusion.jpg",
+      "license": {
+        "name": "CC BY 2.5",
+        "url": "https://creativecommons.org/licenses/by/2.5/"
+      },
+      "title": "Charlies-bunion-protrusion",
+      "changed": true
     }
   }
 }

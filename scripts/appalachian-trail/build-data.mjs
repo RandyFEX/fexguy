@@ -143,6 +143,55 @@ const splitLinks = (s) => s.split(' ; ').map((u) => u.trim()).filter((u) => /^ht
 const ORDER = Object.keys(STATE_HEADINGS);
 
 const rows = A.filter((r) => r.publish === 'YES');
+
+// ---- Follow-up research (November 24, 2026): route facts, mapped GPS points
+// and scattering-rule findings, each with its source and evidence label. ----
+const UPDATES_FILE = path.join(docs, 'updates-2026-11-24.json');
+const UPDATES = existsSync(UPDATES_FILE) ? JSON.parse(readFileSync(UPDATES_FILE, 'utf8')).destinations : {};
+const LEVEL = [[/very strenuous|strenuous|very difficult/i, 5], [/difficult|challenging|hard/i, 4], [/moderate/i, 3], [/easy/i, 2]];
+const srcText = (f) => [f.source, f.evidence && `(${f.evidence})`].filter(Boolean).join(' ');
+function applyUpdates(d) {
+  const u = UPDATES[d.id];
+  if (!u) return d;
+  if (u.distance) { d.distance = Number(u.distance.miles); d.distanceSource = srcText(u.distance); }
+  if (u.elevationGainFt) { d.elevation = Number(u.elevationGainFt.value); d.elevationSource = srcText(u.elevationGainFt); }
+  if (u.time) { d.time = u.time.text; d.timeSource = srcText(u.time); }
+  if (u.difficulty) {
+    const lvl = LEVEL.find(([re]) => re.test(u.difficulty.text))?.[1];
+    if (!lvl) fail(`${d.id}: difficulty "${u.difficulty.text}" not on the scale`);
+    d.difficulty = lvl; d.difficultyWord = DIFF[lvl]; d.difficultySource = `${u.difficulty.text}: ${srcText(u.difficulty)}`;
+  }
+  if (u.parking) d.parking = { text: u.parking.text, source: srcText(u.parking) };
+  for (const l of u.mapLinks ?? []) if (!d.links.some((x) => x.url === l.url)) d.links.push({ url: l.url, label: l.label });
+  const mapped = [];
+  for (const role of ['trailhead', 'destination']) {
+    const pt = u[role];
+    if (!pt) continue;
+    if (!Number.isFinite(pt.lat) || !Number.isFinite(pt.lon) || !pt.source) fail(`${d.id}: bad ${role} point`);
+    if (d.points.some((x) => x.role === role)) continue; // an official point wins
+    mapped.push({ kind: /NPS/.test(pt.source) ? 'official' : 'osm', role, label: pt.label, lat: pt.lat, lon: pt.lon, source: pt.source });
+  }
+  d.points.push(...mapped);
+  // ATC map points stay only where no trailhead or destination point exists.
+  if (d.points.some((x) => x.role !== 'atc')) d.points = d.points.filter((x) => x.role !== 'atc');
+  if (u.policy) {
+    const p = u.policy;
+    const cls = CLASS[p.classification];
+    if (!cls) fail(`${d.id}: unknown classification ${p.classification}`);
+    d.scatter = {
+      classification: cls,
+      remembranceOnly: p.remembranceOnly ?? (cls === 'unconfirmed' || cls === 'prohibited'),
+      remembranceNote: p.remembranceNote ?? null,
+      alternative: p.alternative ?? d.scatter.alternative,
+      conditions: p.conditions,
+      contact: p.contact ?? d.scatter.contact,
+      sourceUrls: p.sourceUrls?.length ? p.sourceUrls : d.scatter.sourceUrls,
+      evidence: p.evidence,
+    };
+    if (p.landManager) d.landManager = p.landManager;
+  }
+  return d;
+}
 const destinations = rows.map((r) => {
   for (const f of ['id', 'state', 'name', 'category', 'land_manager', 'scattering_classification', 'scattering_conditions']) {
     if (!r[f]) fail(`${r.id || r.name}: missing ${f}`);
@@ -158,12 +207,12 @@ const destinations = rows.map((r) => {
   const points = [];
   if (r.parking_lat && r.parking_lon) {
     if (!NE(r.parking_point_source)) fail(`${r.id}: parking point without a source`);
-    points.push({ kind: 'official', label: 'Kuwohi parking area', lat: Number(r.parking_lat), lon: Number(r.parking_lon), source: r.parking_point_source });
+    points.push({ kind: 'official', role: 'trailhead', label: 'Kuwohi parking area', lat: Number(r.parking_lat), lon: Number(r.parking_lon), source: r.parking_point_source });
   }
   if (r.destination_lat && r.destination_lon) fail(`${r.id}: destination coordinates are not expected in this dataset`);
   if (r.atc_map_lat && r.atc_map_lon) {
     if (!r.atc_map_point_role) fail(`${r.id}: ATC map point without a role note`);
-    points.push({ kind: 'atc', label: 'ATC map point', lat: Number(r.atc_map_lat), lon: Number(r.atc_map_lon), source: r.atc_map_point_role });
+    points.push({ kind: 'atc', role: 'atc', label: 'ATC map point', lat: Number(r.atc_map_lat), lon: Number(r.atc_map_lon), source: r.atc_map_point_role });
   }
   for (const p of points) if (!Number.isFinite(p.lat) || !Number.isFinite(p.lon)) fail(`${r.id}: bad coordinate`);
   const ph = (photos[r.id] ?? []).map((p) => ({
@@ -211,11 +260,12 @@ const destinations = rows.map((r) => {
     points,
     photo: ph[0] ?? null,
     photos: ph,
-    links: splitLinks(r.official_links),
+    links: splitLinks(r.official_links).map((url) => ({ url })),
+    parking: null,
     verification: r.verification,
     description: paragraphs(text),
   };
-});
+}).map(applyUpdates);
 
 const states = ORDER.map((s, i) => ({
   state: s,

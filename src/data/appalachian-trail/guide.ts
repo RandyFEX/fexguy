@@ -7,7 +7,7 @@ import data from './destinations.json';
 import rights from './image-rights.json';
 
 export type Classification = 'permitted' | 'permit-required' | 'prohibited' | 'unconfirmed';
-export interface AtPoint { kind: 'official' | 'atc'; label: string; lat: number; lon: number; source: string }
+export interface AtPoint { kind: 'official' | 'atc' | 'osm'; role: 'trailhead' | 'destination' | 'atc'; label: string; lat: number; lon: number; source: string }
 export interface AtPhoto {
   src: string;
   srcWebp: string;
@@ -32,6 +32,8 @@ export interface AtDestination {
   elevation: number | null;
   elevationSource: string;
   time: string | null;
+  timeSource?: string;
+  parking: { text: string; source: string } | null;
   difficulty: number | null;
   difficultyWord: string | null;
   difficultySource: string | null;
@@ -50,7 +52,7 @@ export interface AtDestination {
     evidence: string;
   };
   points: AtPoint[];
-  links: string[];
+  links: { url: string; label?: string }[];
   verification: 'verified' | 'partial' | 'unverified';
   description: string[];
 }
