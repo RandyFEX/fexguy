@@ -26,9 +26,9 @@ const icons = {
 };
 
 const actions = [
-  { key: 'call', label: 'Call Me', href: card.phone.href },
-  card.sms && { key: 'text', label: 'Text Me', href: card.sms.href },
-  card.email && { key: 'email', label: 'Email Me', href: `mailto:${card.email}` },
+  { key: 'call', label: 'Call Randy', href: card.phone.href },
+  card.sms && { key: 'text', label: 'Text Randy', href: card.sms.href },
+  card.email && { key: 'email', label: 'Email Randy', href: `mailto:${card.email}` },
   { key: 'web', label: 'Website', href: card.website.href },
 ].filter(Boolean) as { key: keyof typeof icons; label: string; href: string }[];
 const trackName: Record<string, string> = { call: 'call', text: 'text', email: 'email', web: 'website' };
@@ -54,7 +54,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     <section class="rc-card" aria-labelledby="rc-name">
       <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="30" height="30"><path d={icons.save} /></svg>
-        <span>Save Randy's Info to Your Phone</span>
+        <span>Save Randy's Info To Your Phone</span>
       </a>
       <p class="rc-save__help">After you tap it, choose <strong>Create New Contact</strong> or <strong>Save</strong>.</p>
 
@@ -88,20 +88,17 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </section>
 
     <section class="rc-qr" aria-labelledby="rc-qr-title">
-      <h2 class="rc-qr__title" id="rc-qr-title">Get Randy's Info on Another Phone</h2>
+      <h2 class="rc-qr__title" id="rc-qr-title">Save Randy's Info Using Your Phone Camera</h2>
       <ol class="rc-steps">
-        <li>Open the <strong>camera</strong> on the other phone.</li>
+        <li>Open the <strong>camera</strong> on your phone.</li>
         <li>Point it at the square code below. Hold still for a moment.</li>
         <li>Tap the <strong>link</strong> that pops up on the screen.</li>
-        <li>Tap the orange <strong>Save Randy's Info to Your Phone</strong> button.</li>
+        <li>Tap the orange <strong>Save Randy's Info To Your Phone</strong> button.</li>
       </ol>
       <div class="rc-qr__code" role="img" aria-label={`QR code for ${card.url}`} set:html={qr} />
       <p class="rc-qr__url">Or type this address: <strong>{card.url.replace(/^https:\/\//, '')}</strong></p>
     </section>
 
-    <footer class="rc-foot">
-      <p>{card.org}<br />{card.address.street}<br />{card.address.city}, {card.address.region} {card.address.postal}</p>
-    </footer>
   </div>
 </BaseLayout>
 
@@ -135,7 +132,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
   .rc {
     max-width: 30rem;
     margin-inline: auto;
-    padding: 0 1rem 2rem;
+    padding: 0 1rem 2.5rem;
     font-size: 1.1875rem;
     line-height: 1.5;
   }
@@ -288,14 +285,5 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
   .rc-qr__url {
     margin: 0.5rem 0 0;
     color: var(--color-text-muted);
-  }
-  .rc-foot {
-    margin-top: 1.25rem;
-    text-align: center;
-    color: var(--color-text-muted);
-    font-size: 1rem;
-  }
-  .rc-foot p {
-    margin: 0;
   }
 </style>
