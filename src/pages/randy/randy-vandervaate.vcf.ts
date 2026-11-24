@@ -24,7 +24,6 @@ const fold = (line: string) => {
 
 export const GET: APIRoute = () => {
   const photo = readFileSync(join(process.cwd(), 'public', card.photo.jpg)).toString('base64');
-  const a = card.address;
   const lines = [
     'BEGIN:VCARD',
     'VERSION:3.0',
@@ -35,7 +34,6 @@ export const GET: APIRoute = () => {
     `TEL;TYPE=WORK,VOICE,PREF:${card.phone.e164}`,
     ...(card.email ? [`EMAIL;TYPE=INTERNET,WORK:${card.email}`] : []),
     `URL:${card.website.href}`,
-    `ADR;TYPE=WORK:;;${esc(a.street)};${esc(a.city)};${esc(a.region)};${esc(a.postal)};${esc(a.country)}`,
     `NOTE:${esc(`Digital card: ${card.url}`)}`,
     `PHOTO;ENCODING=b;TYPE=JPEG:${photo}`,
     'END:VCARD',
