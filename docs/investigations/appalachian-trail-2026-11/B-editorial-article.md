@@ -193,23 +193,23 @@ The Trail passes Jefferson Rock between the Lower Town and Camp Hill. The rock i
 
 ## Maryland
 
-We could not find a Maryland Department of Natural Resources rule on scattering ashes in state parks, so the Maryland destinations are Unconfirmed. Call the park office first.
+Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands, so the Maryland state park destinations are remembrance places only. The nearby C&O Canal National Historical Park, run by the National Park Service, allows scattering with its free letter permit: notify the permits office in advance, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
 
 ### Weverton Cliffs
 
-**Extraordinary · Unconfirmed**
+**Extraordinary · Prohibited**
 
-Weverton Cliffs is about 2 miles round trip with about 625 feet of climbing. Whether the cliffs are Park Service land or state land is not established.
+Weverton Cliffs is about 2 miles round trip with about 625 feet of climbing. Maryland DNR lists the overlook as part of South Mountain State Park, so it is a remembrance place. Below the cliffs, the Trail follows the C&O Canal towpath, where the canal park's letter permit applies.
 
 ### Washington Monument State Park
 
-**Accessible · Unconfirmed**
+**Accessible · Prohibited**
 
 A short walk of about 0.4 miles on the Trail reaches the park's stone monument, a historic structure. It is a peaceful remembrance place with a view over the valley.
 
 ### Gathland State Park at Crampton Gap
 
-**Accessible · Unconfirmed**
+**Accessible · Prohibited**
 
 About half a mile on the Trail, the War Correspondents Memorial Arch stands at Crampton Gap, a historic structure in a quiet park setting.
 

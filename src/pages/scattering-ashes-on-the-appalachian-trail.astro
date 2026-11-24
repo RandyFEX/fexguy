@@ -263,7 +263,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                             <p>{d.scatter.conditions}</p>
                             {d.scatter.contact && <p><strong>Contact:</strong> {d.scatter.contact}</p>}
                             {d.scatter.sourceUrls.length > 0 && (
-                              <p class="at-rule-links"><strong>Official rule:</strong> {d.scatter.sourceUrls.map((u) => <a href={u} rel="noopener" target="_blank">{linkLabel(u)}</a>)}</p>
+                              <p class="at-rule-links"><strong>Official rule:</strong> {d.scatter.sourceUrls.map((l) => <a href={l.url} rel="noopener" target="_blank">{l.label ?? linkLabel(l.url)}</a>)}</p>
                             )}
                             <p class="at-src">{evidence(d.scatter.evidence)}</p>
                           </dd>
@@ -279,7 +279,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                                     ? `${d.scatter.remembranceNote.charAt(0).toUpperCase()}${d.scatter.remembranceNote.slice(1)}.`
                                     : c === 'unconfirmed'
                                       ? 'No published rule allows scattering here. Treat it as a place to remember, not to scatter, unless the land manager confirms otherwise.'
-                                      : 'Scattering here needs the land manager’s approval first.'}
+                                      : 'The land manager does not allow scattering here.'}
                                 </p>
                               )}
                               {d.scatter.alternative && <p><strong>Designated scattering area:</strong> {d.scatter.alternative}</p>}

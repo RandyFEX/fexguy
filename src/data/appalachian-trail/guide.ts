@@ -48,7 +48,7 @@ export interface AtDestination {
     alternative: string | null;
     conditions: string;
     contact: string | null;
-    sourceUrls: string[];
+    sourceUrls: { url: string; label?: string }[];
     evidence: string;
   };
   points: AtPoint[];

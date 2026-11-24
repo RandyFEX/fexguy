@@ -148,7 +148,7 @@ const rows = A.filter((r) => r.publish === 'YES');
 // and scattering-rule findings, each with its source and evidence label. ----
 const UPDATES_FILE = path.join(docs, 'updates-2026-11-24.json');
 const UPDATES = existsSync(UPDATES_FILE) ? JSON.parse(readFileSync(UPDATES_FILE, 'utf8')).destinations : {};
-const LEVEL = [[/very strenuous|strenuous|very difficult/i, 5], [/difficult|challenging|hard/i, 4], [/moderate/i, 3], [/easy/i, 2]];
+const LEVEL = [[/easiest|very easy/i, 1], [/very strenuous|strenuous|very difficult/i, 5], [/difficult|challenging|hard/i, 4], [/moderate/i, 3], [/easy/i, 2]];
 const srcText = (f) => [f.source, f.evidence && `(${f.evidence})`].filter(Boolean).join(' ');
 function applyUpdates(d) {
   const u = UPDATES[d.id];
@@ -185,7 +185,7 @@ function applyUpdates(d) {
       alternative: p.alternative ?? d.scatter.alternative,
       conditions: p.conditions,
       contact: p.contact ?? d.scatter.contact,
-      sourceUrls: p.sourceUrls?.length ? p.sourceUrls : d.scatter.sourceUrls,
+      sourceUrls: p.sourceLinks?.length ? p.sourceLinks : d.scatter.sourceUrls,
       evidence: p.evidence,
     };
     if (p.landManager) d.landManager = p.landManager;
@@ -254,7 +254,7 @@ const destinations = rows.map((r) => {
       alternative: alt,
       conditions: r.scattering_conditions,
       contact: NE(r.scattering_contact),
-      sourceUrls: splitLinks(r.scattering_source_url),
+      sourceUrls: splitLinks(r.scattering_source_url).map((url) => ({ url })),
       evidence: r.scattering_evidence,
     },
     points,
