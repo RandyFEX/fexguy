@@ -141,7 +141,7 @@ export function rescheduleNote({ value: v }, now) {
  * @param {ReturnType<typeof parseSubmission> & { ok: true }} parsed
  * @param {typeof fetch} fetchImpl
  * @param {Date} now
- * @returns {Promise<{ ok: boolean, step: string, status?: number, error?: string, contactId?: string, isNew?: boolean }>}
+ * @returns {Promise<{ ok: boolean, step: string, status?: number, error?: string, contactId?: string, isNew?: boolean, commentsField?: string }>}
  */
 export async function sendSchedule(env, parsed, fetchImpl, now) {
   const token = env.AGENT_CRM_TOKEN ?? '';
@@ -187,13 +187,60 @@ export async function sendSchedule(env, parsed, fetchImpl, now) {
     step = 'note';
     const note = await call(`/contacts/${id}/notes`, 'POST', { body: rescheduleNote(parsed, now) });
     if (!note.res.ok) return { ok: false, step, status: note.res.status, contactId };
+    // Comments field (Randy, November 2026): the newest comments go on top of
+    // the contact's "Comments" field with the date; older text stays below.
+    // Best effort: a failure never blocks the schedule, but is reported.
+    step = 'comments';
+    /** @type {string} */
+    let commentsField = 'skipped';
+    if (v.notes) {
+      try {
+        commentsField = await prependComments(call, locationId, id, v.notes, now);
+      } catch (e) {
+        commentsField = e instanceof Error ? e.name : 'error';
+      }
+    }
     step = 'tag';
     const tag = await call(`/contacts/${id}/tags`, 'POST', { tags: [CALLBACK_TAG] });
-    if (!tag.res.ok) return { ok: false, step, status: tag.res.status, contactId };
-    return { ok: true, step: 'done', contactId, isNew: up.data?.new === true };
+    if (!tag.res.ok) return { ok: false, step, status: tag.res.status, contactId, commentsField };
+    return { ok: true, step: 'done', contactId, isNew: up.data?.new === true, commentsField };
   } catch (e) {
     return { ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
+}
+
+export const COMMENTS_FIELD_KEY = 'comments';
+const COMMENTS_MAX = 50000;
+
+/** "11/24/2026 3:52 PM" in Randy's time zone (Central). @param {Date} now */
+export const commentStamp = (now) =>
+  now.toLocaleString('en-US', { timeZone: 'America/Chicago', month: 'numeric', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }).replace(',', '');
+
+/** New comments on top, then the earlier text. @param {string} comments @param {string} existing @param {Date} now */
+export function stackComments(comments, existing, now) {
+  const top = `${commentStamp(now)}: ${comments}`;
+  const old = existing.trim();
+  return (old ? `${top}\n\n${old}` : top).slice(0, COMMENTS_MAX);
+}
+
+/**
+ * Reads the contact's current Comments value and writes the new comments on top.
+ * Returns "updated" or the step that failed ("field-lookup-<status>", "read-<status>", "write-<status>").
+ * @param {(path: string, method: string, body?: unknown) => Promise<{ res: Response, data: any }>} call
+ * @param {string} locationId @param {string} id encoded contact id @param {string} comments @param {Date} now
+ */
+async function prependComments(call, locationId, id, comments, now) {
+  // The contact's custom fields come back by id, so find the Comments field's id first.
+  const defs = await call(`/locations/${encodeURIComponent(locationId)}/customFields?model=contact`, 'GET');
+  if (!defs.res.ok) return `field-lookup-${defs.res.status}`;
+  const field = (defs.data?.customFields ?? []).find((/** @type {any} */ f) => f?.fieldKey === `contact.${COMMENTS_FIELD_KEY}`);
+  if (!field?.id) return 'field-not-found';
+  const contact = await call(`/contacts/${id}`, 'GET');
+  if (!contact.res.ok) return `read-${contact.res.status}`;
+  const current = (contact.data?.contact?.customFields ?? []).find((/** @type {any} */ f) => f?.id === field.id)?.value;
+  const value = stackComments(comments, typeof current === 'string' ? current : '', now);
+  const put = await call(`/contacts/${id}`, 'PUT', { customFields: [{ id: field.id, field_value: value }] });
+  return put.res.ok ? 'updated' : `write-${put.res.status}`;
 }
 
 const FAIL_MESSAGES = {
@@ -243,7 +290,10 @@ export async function handleReschedule(request, env, deps = {}) {
     return json(200, { status: 'scheduled', dryRun: true, summary: { delayHours: parsed.value.delayHours, frequencyHours: parsed.value.frequencyHours, durationDays: parsed.value.durationDays }, note: rescheduleNote(parsed, now) });
   }
   const result = await sendSchedule(env, parsed, deps.fetchImpl ?? fetch, now);
-  console.log(JSON.stringify({ event: 'reschedule', ok: result.ok, step: result.step, status: result.status ?? null, error: result.error ?? null, isNew: result.isNew ?? null }));
+  console.log(JSON.stringify({ event: 'reschedule', ok: result.ok, step: result.step, status: result.status ?? null, error: result.error ?? null, isNew: result.isNew ?? null, commentsField: result.commentsField ?? null }));
   if (!result.ok) return json(502, { status: 'failed', step: result.step, message: FAIL_MESSAGES[/** @type {keyof typeof FAIL_MESSAGES} */ (result.step)] ?? 'Agent CRM could not be reached. Nothing was lost on this form: submit again.' });
-  return json(200, { status: 'scheduled', dryRun: false });
+  const commentsWarning = result.commentsField && !['updated', 'skipped'].includes(result.commentsField)
+    ? `The comments were saved in Notes, but the Comments field could not be updated (${result.commentsField}).`
+    : null;
+  return json(200, { status: 'scheduled', dryRun: false, commentsWarning });
 }

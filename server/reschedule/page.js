@@ -117,7 +117,7 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
       .then(function (res) {
         if (res.status === 'scheduled') {
           status.className = 'status ok';
-          status.textContent = res.dryRun ? 'Preview check passed for ' + data.name.trim() + '. Nothing was sent to Agent CRM.' : 'Follow-up scheduled for ' + data.name.trim() + '.';
+          status.textContent = res.dryRun ? 'Preview check passed for ' + data.name.trim() + '. Nothing was sent to Agent CRM.' : 'Follow-up scheduled for ' + data.name.trim() + '.' + (res.commentsWarning ? ' ' + res.commentsWarning : '');
           f.reset();
           update();
           f.name.focus();
