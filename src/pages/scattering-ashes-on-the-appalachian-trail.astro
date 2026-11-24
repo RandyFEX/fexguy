@@ -282,7 +282,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                                       : 'The land manager does not allow scattering here.'}
                                 </p>
                               )}
-                              {d.scatter.alternative && <p><strong>Designated scattering area:</strong> {d.scatter.alternative}</p>}
+                              {d.scatter.alternative && <p><strong>{d.scatter.classification === 'prohibited' && /C&O Canal/.test(d.scatter.alternative) ? 'Nearby authorized option:' : 'Designated scattering area:'}</strong> {d.scatter.alternative}</p>}
                             </dd>
                           </div>
                         )}
@@ -1247,6 +1247,9 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
   }
 
   /* Appalachian Trail additions (this page only). */
+  .ola-credit {
+    overflow-wrap: anywhere;
+  }
   .at-rules {
     padding-block: 0 var(--space-12);
   }

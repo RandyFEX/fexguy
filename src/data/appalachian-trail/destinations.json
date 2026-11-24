@@ -270,13 +270,13 @@
       ],
       "parking": {
         "text": "Byron Reece trailhead lot near Neel Gap on US 19/129: free but limited, and it fills quickly on weekends and in fall. Vehicles outside designated spaces are ticketed.",
-        "source": "Hiking guides (SECONDARY)"
+        "source": "Hiking guides [secondary source]"
       },
       "verification": "partial",
       "description": [
         "The highest point on the Georgia section of the Trail, Blood Mountain rises to 4,461 feet, with a historic stone shelter on the summit. The out-and-back from Byron Reece is about 4.3 miles with almost 1,500 feet of climbing; a longer loop via the Freeman Trail is about 6.2 miles and rated difficult. Treat the stone shelter as the historic structure it is. Between March 1 and June 1, campers between Jarrard Gap and Neel Gap must carry a hard-sided bear canister."
       ],
-      "timeSource": "Hiking guides (atlantatrails.com, hikethesouth.com); no official time (SECONDARY)"
+      "timeSource": "Hiking guides (atlantatrails.com, hikethesouth.com); no official time [secondary source]"
     },
     {
       "id": "ge-long-creek-falls-from-three-forks",
@@ -342,7 +342,7 @@
       ],
       "parking": {
         "text": "Three Forks on Forest Road 58, a rough Forest Service road. Room for about a dozen cars; no facilities.",
-        "source": "ATC and hiking guides (OFFICIAL (via search summary) and SECONDARY)"
+        "source": "ATC and hiking guides [official source, via search summary; secondary source]"
       },
       "verification": "partial",
       "description": [
@@ -362,7 +362,7 @@
       "distance": 2,
       "distanceSource": "ATC and USDA FS (OFFICIAL via search summary)",
       "elevation": 374,
-      "elevationSource": "Komoot route from the FS Road 42 lot; no official figure (SECONDARY)",
+      "elevationSource": "Komoot route from the FS Road 42 lot; no official figure [secondary source]",
       "time": null,
       "difficulty": 2,
       "difficultyWord": "Easy",
@@ -434,7 +434,7 @@
       ],
       "parking": {
         "text": "Springer Mountain Trailhead on Forest Service Road 42 (gravel). The Forest Service lists it as open all year and free. The lot holds about 20 cars, is often full on weekends, and has a 14-day limit.",
-        "source": "USDA Forest Service and Georgia Appalachian Trail Club (OFFICIAL (via search summary) and SECONDARY)"
+        "source": "USDA Forest Service and Georgia Appalachian Trail Club [official source, via search summary; secondary source]"
       },
       "verification": "partial",
       "description": [
@@ -458,7 +458,7 @@
       "time": "About one hour one way on the Lover's Leap Loop Trail",
       "difficulty": 4,
       "difficultyWord": "Challenging",
-      "difficultySource": "Difficult: USDA Forest Service, Lover's Leap Loop Trail (ATC rates the hike Moderate) (OFFICIAL (via search summary))",
+      "difficultySource": "Difficult: USDA Forest Service, Lover's Leap Loop Trail (ATC rates the hike Moderate) [official source, via search summary]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -508,13 +508,13 @@
       ],
       "parking": {
         "text": "The Forest Service lists the Silvermine trailhead parking area, off US 25/70 just before the French Broad River bridge. The ATC route starts at the Hot Springs visitor center, with street parking in town.",
-        "source": "USDA Forest Service and ATC (OFFICIAL (via search summary))"
+        "source": "USDA Forest Service and ATC [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
         "From the Trail town of Hot Springs, the climb to Lover's Leap is about 2.6 miles round trip, with a shorter 1.6-mile loop from the Silvermine parking area. The Forest Service manages it as part of the Appalachian Ranger District."
       ],
-      "timeSource": "USDA Forest Service, Lover's Leap Loop Trail (OFFICIAL (via search summary))"
+      "timeSource": "USDA Forest Service, Lover's Leap Loop Trail [official source, via search summary]"
     },
     {
       "id": "no-max-patch",
@@ -529,7 +529,7 @@
       "distance": 1.6,
       "distanceSource": "ATC (OFFICIAL via search summary)",
       "elevation": 430,
-      "elevationSource": "Explore Asheville; no official figure (SECONDARY)",
+      "elevationSource": "Explore Asheville; no official figure [secondary source]",
       "time": null,
       "difficulty": 2,
       "difficultyWord": "Easy",
@@ -602,7 +602,7 @@
       ],
       "parking": {
         "text": "No restrooms. If the main lot is full, a larger Forest Service lot is 0.5 mile farther up Max Patch Road; do not park on the road. Camping and fire restrictions are in place through June 21, 2029.",
-        "source": "USDA Forest Service and ATC (OFFICIAL (via search summary))"
+        "source": "USDA Forest Service and ATC [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
@@ -691,7 +691,7 @@
       ],
       "parking": {
         "text": "Gravel Forest Service Road 69 runs about 4.5 miles from Wayah Gap to the parking area, with accessible vault toilets and a paved path to the tower. The road closes for part of the winter; dates vary.",
-        "source": "USDA Forest Service and hiking guides (SECONDARY)"
+        "source": "USDA Forest Service and hiking guides [secondary source]"
       },
       "verification": "partial",
       "description": [
@@ -711,11 +711,11 @@
       "distance": 8,
       "distanceSource": "NPS (OFFICIAL, fetched): 8 mi round trip from Newfound Gap",
       "elevation": 1640,
-      "elevationSource": "Tennessee state trail sheet for Charlies Bunion (8.1 mi round trip) (OFFICIAL (via search summary))",
+      "elevationSource": "Tennessee state trail sheet for Charlies Bunion (8.1 mi round trip) [official source, via search summary]",
       "time": null,
       "difficulty": 5,
       "difficultyWord": "Strenuous",
-      "difficultySource": "Strenuous: Tennessee state trail sheet (OFFICIAL (via search summary))",
+      "difficultySource": "Strenuous: Tennessee state trail sheet [official source, via search summary]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -790,7 +790,7 @@
       ],
       "parking": {
         "text": "Newfound Gap Overlook on US 441; the trail starts at the end of the parking area, left of the overlook. Expect a full lot. A Smokies parking tag is required to park more than 15 minutes.",
-        "source": "NPS, Charlies Bunion via the Appalachian Trail (OFFICIAL (fetched))"
+        "source": "NPS, Charlies Bunion via the Appalachian Trail [official website]"
       },
       "verification": "verified",
       "description": [
@@ -808,9 +808,9 @@
       "landManager": "Great Smoky Mountains National Park",
       "landManagerEvidence": "OFFICIAL (nps.gov places page, fetched)",
       "distance": 1,
-      "distanceSource": "NPS, Hike to Kuwohi: one mile round trip on a steep, paved path (OFFICIAL (fetched))",
+      "distanceSource": "NPS, Hike to Kuwohi: one mile round trip on a steep, paved path [official website]",
       "elevation": 337,
-      "elevationSource": "Gatlinburg.com and explore.com; NPS publishes no figure (SECONDARY)",
+      "elevationSource": "Gatlinburg.com and explore.com; NPS publishes no figure [secondary source]",
       "time": null,
       "difficulty": null,
       "difficultyWord": null,
@@ -893,7 +893,7 @@
       ],
       "parking": {
         "text": "Park at the end of Kuwohi Road. A Smokies parking tag is required to park more than 15 minutes ($5 daily, $15 weekly, $40 annual). Kuwohi Road is closed in winter (2026 season April 1 to November 29). NPS warns of crowding and limited parking.",
-        "source": "NPS, Hike to Kuwohi and Great Smoky Mountains fees (OFFICIAL (fetched))"
+        "source": "NPS, Hike to Kuwohi and Great Smoky Mountains fees [official website]"
       },
       "verification": "partial",
       "description": [
@@ -960,7 +960,7 @@
       ],
       "parking": {
         "text": "The 5-mile hike starts from the Forest Service gravel lot on US 321 on the east side of Hampton. A second, small lot is on Dennis Cove Road where the A.T. crosses. Overnight parking at the Hampton trailhead is not recommended.",
-        "source": "USDA Forest Service, Laurel Fork Falls Hike, and ATC (OFFICIAL (via search summary))"
+        "source": "USDA Forest Service, Laurel Fork Falls Hike, and ATC [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
@@ -1026,7 +1026,7 @@
       ],
       "parking": {
         "text": "Free parking at Carvers Gap on the Tennessee and North Carolina line (TN 143 / NC 261). The lot fills quickly on weekends.",
-        "source": "ATC and news reports (OFFICIAL (via search summary) and SECONDARY)"
+        "source": "ATC and news reports [official source, via search summary; secondary source]"
       },
       "verification": "unverified",
       "description": [
@@ -1046,7 +1046,7 @@
       "distance": 2.2,
       "distanceSource": "ATC (OFFICIAL via search summary); ATC hike page rates it easy, ATC Virginia page moderate",
       "elevation": 353,
-      "elevationSource": "SummitPost, one way from Beagle Gap; no official figure (SECONDARY)",
+      "elevationSource": "SummitPost, one way from Beagle Gap; no official figure [secondary source]",
       "time": null,
       "difficulty": 2,
       "difficultyWord": "Easy",
@@ -1107,7 +1107,7 @@
       ],
       "parking": {
         "text": "Beagle Gap on Skyline Drive: NPS describes a small parking lot with portable toilets and access to the Appalachian Trail. A Shenandoah entrance pass is required.",
-        "source": "NPS, Beagle Gap and Shenandoah fees (OFFICIAL (fetched))"
+        "source": "NPS, Beagle Gap and Shenandoah fees [official website]"
       },
       "verification": "verified",
       "description": [
@@ -1125,13 +1125,13 @@
       "landManager": "Shenandoah National Park",
       "landManagerEvidence": "OFFICIAL (nps.gov, fetched)",
       "distance": 1,
-      "distanceSource": "NPS, Blackrock Summit (OFFICIAL (fetched))",
+      "distanceSource": "NPS, Blackrock Summit [official website]",
       "elevation": 175,
-      "elevationSource": "NPS, Blackrock Summit (OFFICIAL (fetched))",
+      "elevationSource": "NPS, Blackrock Summit [official website]",
       "time": "45 minutes",
       "difficulty": 1,
       "difficultyWord": "Very Easy",
-      "difficultySource": "Easiest: NPS, Blackrock Summit (OFFICIAL (fetched))",
+      "difficultySource": "Easiest: NPS, Blackrock Summit [official website]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -1185,13 +1185,13 @@
       ],
       "parking": {
         "text": "Blackrock parking area, Skyline Drive mile 84.4. A Shenandoah entrance pass is required (the park does not accept cash).",
-        "source": "NPS, Blackrock Summit and Shenandoah fees (OFFICIAL (fetched))"
+        "source": "NPS, Blackrock Summit and Shenandoah fees [official website]"
       },
       "verification": "verified",
       "description": [
         "From the Blackrock parking area at Skyline Drive mile 84.4, a short walk on the Trail leads to a rocky summit. The Appalachian Trail Conservancy lists the walk at about 1 mile round trip with about 160 feet of climbing. Scatter on the ground at least 100 feet from the trail."
       ],
-      "timeSource": "NPS, Blackrock Summit (OFFICIAL (fetched))"
+      "timeSource": "NPS, Blackrock Summit [official website]"
     },
     {
       "id": "vi-compton-peak-shenandoah",
@@ -1204,13 +1204,13 @@
       "landManager": "Shenandoah National Park",
       "landManagerEvidence": "OFFICIAL (nps.gov, fetched)",
       "distance": 2.4,
-      "distanceSource": "NPS, Compton Peak (OFFICIAL (fetched))",
+      "distanceSource": "NPS, Compton Peak [official website]",
       "elevation": 855,
-      "elevationSource": "NPS, Compton Peak (OFFICIAL (fetched))",
+      "elevationSource": "NPS, Compton Peak [official website]",
       "time": "1 hour 45 minutes",
       "difficulty": 3,
       "difficultyWord": "Moderate",
-      "difficultySource": "Moderate: NPS, Compton Peak (OFFICIAL (fetched))",
+      "difficultySource": "Moderate: NPS, Compton Peak [official website]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -1264,13 +1264,13 @@
       ],
       "parking": {
         "text": "Compton Gap parking area, Skyline Drive mile 10.4; cross Skyline Drive to the A.T. concrete marker. A Shenandoah entrance pass is required.",
-        "source": "NPS, Compton Peak and Shenandoah fees (OFFICIAL (fetched))"
+        "source": "NPS, Compton Peak and Shenandoah fees [official website]"
       },
       "verification": "verified",
       "description": [
         "From the Compton Gap parking area at Skyline Drive mile 10.4, the Trail climbs to Compton Peak in the park's North District, about 2.4 miles round trip. Shenandoah's conditions apply."
       ],
-      "timeSource": "NPS, Compton Peak (OFFICIAL (fetched))"
+      "timeSource": "NPS, Compton Peak [official website]"
     },
     {
       "id": "vi-grayson-highlands-and-rhododendron-gap",
@@ -1331,7 +1331,7 @@
       ],
       "parking": {
         "text": "A Virginia State Parks parking fee is charged for each day a vehicle is parked. Massie Gap parking is limited and set aside for overnight backpackers; day hikers use the park's other lots. Overnight parking needs a reservation.",
-        "source": "Virginia DCR and ATC (OFFICIAL (via search summary))"
+        "source": "Virginia DCR and ATC [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
@@ -1409,13 +1409,13 @@
       ],
       "parking": {
         "text": "The VA 311 trailhead lot is small; parking on Route 311 is not allowed and is towed, and there is no overnight parking. Roanoke County runs a weekend trailhead shuttle from the I-81 Park and Ride ($6 one way, $11 round trip; book ahead).",
-        "source": "Roanoke County, McAfee Knob and trailhead shuttle pages (OFFICIAL (via search summary))"
+        "source": "Roanoke County, McAfee Knob and trailhead shuttle pages [official source, via search summary]"
       },
       "verification": "unverified",
       "description": [
         "The Roanoke Appalachian Trail Club, which maintains it, describes the hike as just under 8 miles round trip, with about 1,400 feet of climbing. A pedestrian bridge over Route 311 opened in March 2025, and a shuttle runs from the I-81 Exit 140 Park and Ride. We could not establish who manages the land at the Knob, so this is a remembrance place until the manager confirms a rule."
       ],
-      "timeSource": "Roanoke County, McAfee Knob page (OFFICIAL (via search summary))"
+      "timeSource": "Roanoke County, McAfee Knob page [official source, via search summary]"
     },
     {
       "id": "vi-thunder-ridge-overlook-blue-ridge-parkway",
@@ -1428,13 +1428,13 @@
       "landManager": "Blue Ridge Parkway",
       "landManagerEvidence": "OFFICIAL (nps.gov, fetched)",
       "distance": 0.1,
-      "distanceSource": "NPS, Thunder Ridge: a 0.1 mile leg stretcher loop (OFFICIAL (fetched))",
+      "distanceSource": "NPS, Thunder Ridge: a 0.1 mile leg stretcher loop [official website]",
       "elevation": null,
       "elevationSource": "Not established",
       "time": null,
       "difficulty": 2,
       "difficultyWord": "Easy",
-      "difficultySource": "Easy: NPS, Blue Ridge Parkway Virginia trails (OFFICIAL (fetched))",
+      "difficultySource": "Easy: NPS, Blue Ridge Parkway Virginia trails [official website]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -1491,7 +1491,7 @@
       ],
       "parking": {
         "text": "Small overlook lot at milepost 74 with a single entrance and exit; NPS says longer RVs, buses and vehicles pulling trailers should not use it. The Parkway can close, especially November to March.",
-        "source": "NPS, Thunder Ridge (OFFICIAL (fetched))"
+        "source": "NPS, Thunder Ridge [official website]"
       },
       "verification": "verified",
       "description": [
@@ -1515,7 +1515,7 @@
       "time": "30 minutes to 1 hour each way on the Visitor Center to Lower Town Trail",
       "difficulty": 3,
       "difficultyWord": "Moderate",
-      "difficultySource": "Moderate: NPS, Visitor Center to Lower Town Trail: moderate due to one steep section (OFFICIAL (fetched))",
+      "difficultySource": "Moderate: NPS, Visitor Center to Lower Town Trail: moderate due to one steep section [official website]",
       "terrain": null,
       "accessibility": null,
       "seasonal": null,
@@ -1603,13 +1603,13 @@
       ],
       "parking": {
         "text": "NPS recommends the Visitor Center lot at 171 Shoreline Drive (1,000 spaces) and the shuttle bus to Lower Town; Lower Town parking is extremely limited. The park entrance fee ($20 per vehicle, 3 days) covers parking.",
-        "source": "NPS, Harpers Ferry parking (OFFICIAL (fetched))"
+        "source": "NPS, Harpers Ferry parking [official website]"
       },
       "verification": "partial",
       "description": [
         "The Trail runs right through Harpers Ferry. The historic Lower Town is a remembrance place. The Point, where the Shenandoah meets the Potomac, is the setting for one of the park's designated scattering areas, the Shenandoah River shoreline."
       ],
-      "timeSource": "NPS, Visitor Center to Lower Town Trail (OFFICIAL (fetched))"
+      "timeSource": "NPS, Visitor Center to Lower Town Trail [official website]"
     },
     {
       "id": "we-jefferson-rock-harpers-ferry",
@@ -1685,7 +1685,7 @@
       ],
       "parking": {
         "text": "NPS recommends the Visitor Center lot at 171 Shoreline Drive (1,000 spaces) and the shuttle bus to Lower Town; Lower Town parking is extremely limited. The park entrance fee ($20 per vehicle, 3 days) covers parking.",
-        "source": "NPS, Harpers Ferry parking (OFFICIAL (fetched))"
+        "source": "NPS, Harpers Ferry parking [official website]"
       },
       "verification": "partial",
       "description": [
@@ -1769,7 +1769,7 @@
       ],
       "parking": {
         "text": "900 Arnoldstown Road, Jefferson, Maryland, with parking, an accessible restroom and drinking water.",
-        "source": "NPS, Gathland State Park (OFFICIAL (fetched))"
+        "source": "NPS, Gathland State Park [official website]"
       },
       "verification": "partial",
       "description": [
@@ -1856,7 +1856,7 @@
       ],
       "parking": {
         "text": "6620 Zittlestown Road, Middletown, Maryland; visitors park in the upper lot. Maryland DNR charges a small vehicle service fee.",
-        "source": "NPS place page and Maryland DNR (OFFICIAL (fetched) and OFFICIAL (via search summary))"
+        "source": "NPS place page and Maryland DNR [official website; official source, via search summary]"
       },
       "verification": "partial",
       "description": [
@@ -1939,7 +1939,7 @@
       ],
       "parking": {
         "text": "Free gravel park and ride lot at 1939 Weverton Road, Knoxville, Maryland; it fills quickly. Park only in designated areas.",
-        "source": "C&O Canal Trust and Maryland DNR (SECONDARY and OFFICIAL (via search summary))"
+        "source": "C&O Canal Trust and Maryland DNR [secondary source; official source, via search summary]"
       },
       "verification": "unverified",
       "description": [
@@ -2005,7 +2005,7 @@
       ],
       "parking": {
         "text": "Large dirt lot at the top of the ridge on Bake Oven Road (narrow gravel road); the trail starts behind the Game Commission signboard.",
-        "source": "Hiking guides (SECONDARY)"
+        "source": "Hiking guides [secondary source]"
       },
       "verification": "partial",
       "description": [
@@ -2080,7 +2080,7 @@
       ],
       "parking": {
         "text": "The A.T. trailhead lot is on NJ Route 23 at park headquarters. The park charges an entrance fee at the monument area from Memorial Day weekend to Labor Day.",
-        "source": "New Jersey State Parks and hiking guides (OFFICIAL (via search summary) and SECONDARY)"
+        "source": "New Jersey State Parks and hiking guides [official source, via search summary; secondary source]"
       },
       "verification": "partial",
       "description": [
@@ -2151,7 +2151,7 @@
       ],
       "parking": {
         "text": "Curbside parking with a small dirt pull-off on NJ 517 just south of the trail crossing; park only where signs allow. Nearby residential streets are permit-only.",
-        "source": "ATC and NY-NJ Trail Conference (OFFICIAL (via search summary) and SECONDARY)"
+        "source": "ATC and NY-NJ Trail Conference [official source, via search summary; secondary source]"
       },
       "verification": "unverified",
       "description": [
@@ -2229,7 +2229,7 @@
       ],
       "parking": {
         "text": "Dunnfield Creek trailhead lot off I-80; NPS says it fills quickly on summer weekends. Restroom at the trailhead.",
-        "source": "NPS, Dunnfield Creek Trail (OFFICIAL (fetched))"
+        "source": "NPS, Dunnfield Creek Trail [official website]"
       },
       "verification": "partial",
       "description": [
@@ -2303,7 +2303,7 @@
       ],
       "parking": {
         "text": "Large paved summit lot along Perkins Memorial Drive with accessible spaces. The drive and tower are open April 1 to November 30, weather permitting. Bear Mountain State Park charges a $10 vehicle fee.",
-        "source": "ATC and NY State Parks (OFFICIAL (via search summary))"
+        "source": "ATC and NY State Parks [official source, via search summary]"
       },
       "verification": "unverified",
       "description": [
@@ -2387,7 +2387,7 @@
       ],
       "parking": {
         "text": "Summit parking is limited and a fee is charged. Visitor Center parking is free. Vehicles over 22 feet are not allowed on the auto roads.",
-        "source": "Massachusetts DCR, Mount Greylock State Reservation (OFFICIAL (via search summary))"
+        "source": "Massachusetts DCR, Mount Greylock State Reservation [official source, via search summary]"
       },
       "verification": "unverified",
       "description": [
@@ -2411,7 +2411,7 @@
       "time": null,
       "difficulty": 2,
       "difficultyWord": "Easy",
-      "difficultySource": "Easy: Vermont Trailfinder; ATC describes it as universally accessible (SECONDARY)",
+      "difficultySource": "Easy: Vermont Trailfinder; ATC describes it as universally accessible [secondary source]",
       "terrain": null,
       "accessibility": "700 ft boardwalk (max 7%) plus about 500 ft gravel (max 9%), part of the gravel can be wet (ATC). Parking: FS describes an accessible lot on River Road; ATC says no designated ADA spaces (conflict).",
       "seasonal": null,
@@ -2461,7 +2461,7 @@
       ],
       "parking": {
         "text": "Packed dirt lot off River Road in Killington, about 1.6 miles north of the VT 100 and US 4 junction; the accessible trail starts beside it. ATC says the lot has no designated accessible spaces; the Forest Service describes accessible parking.",
-        "source": "USDA Forest Service and ATC (OFFICIAL (via search summary))"
+        "source": "USDA Forest Service and ATC [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
@@ -2532,13 +2532,13 @@
       ],
       "parking": {
         "text": "Lafayette Place trailhead parking off the Franconia Notch Parkway (I-93), with a second lot across the parkway. Parking on the parkway shoulder is illegal.",
-        "source": "Hiking guides (SECONDARY)"
+        "source": "Hiking guides [secondary source]"
       },
       "verification": "partial",
       "description": [
         "The Trail runs along an open, above-treeline ridge with long views in every direction. The classic loop from Lafayette Place in Franconia Notch State Park is about 8.9 miles and is rated a difficult, all-day hike. Weather on the ridge can turn severe. Who manages the ridge crest is not established, so this is a remembrance place until it is."
       ],
-      "timeSource": "NH State Parks blog and hiking guides (OFFICIAL (via search summary) and SECONDARY)"
+      "timeSource": "NH State Parks blog and hiking guides [official source, via search summary; secondary source]"
     },
     {
       "id": "ma-katahdin-via-the-hunt-trail",
@@ -2608,13 +2608,13 @@
       ],
       "parking": {
         "text": "Day hikers need a Katahdin Trailhead Pass ($10 per vehicle) reserving a space at Katahdin Stream; reservations often fill months ahead. Non-residents pay a park entrance fee. Dogs are not allowed in the park.",
-        "source": "Baxter State Park reservation and general information (OFFICIAL (via search summary))"
+        "source": "Baxter State Park reservation and general information [official source, via search summary]"
       },
       "verification": "partial",
       "description": [
         "The northern end of the Appalachian Trail. Baxter State Park lists the Hunt Trail at about 10.4 miles round trip with about 4,188 feet of climbing, taking 8 to 12 hours. This is a serious mountain hike, and the trail closes for winter, roughly mid-October to late May. For a hiker who finished the Trail here, or always meant to, it is the summit that says \"you made it.\""
       ],
-      "timeSource": "Baxter State Park, general information (OFFICIAL (via search summary))"
+      "timeSource": "Baxter State Park, general information [official source, via search summary]"
     },
     {
       "id": "ma-little-and-big-niagara-falls",
@@ -2629,7 +2629,7 @@
       "distance": 2.6,
       "distanceSource": "ATC (OFFICIAL via search summary)",
       "elevation": 150,
-      "elevationSource": "Maine Trail Finder; no Baxter figure (SECONDARY)",
+      "elevationSource": "Maine Trail Finder; no Baxter figure [secondary source]",
       "time": null,
       "difficulty": 3,
       "difficultyWord": "Moderate",
@@ -2683,7 +2683,7 @@
       ],
       "parking": {
         "text": "The trail starts at Daicey Pond Campground, off the Park Tote Road; use the day-use parking there. Non-residents pay a park entrance fee. Dogs are not allowed in the park.",
-        "source": "Maine Trail Finder and Baxter State Park fees (SECONDARY and OFFICIAL (via search summary))"
+        "source": "Maine Trail Finder and Baxter State Park fees [secondary source; official source, via search summary]"
       },
       "verification": "partial",
       "description": [

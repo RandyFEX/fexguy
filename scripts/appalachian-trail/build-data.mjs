@@ -149,7 +149,14 @@ const rows = A.filter((r) => r.publish === 'YES');
 const UPDATES_FILE = path.join(docs, 'updates-2026-11-24.json');
 const UPDATES = existsSync(UPDATES_FILE) ? JSON.parse(readFileSync(UPDATES_FILE, 'utf8')).destinations : {};
 const LEVEL = [[/easiest|very easy/i, 1], [/very strenuous|strenuous|very difficult/i, 5], [/difficult|challenging|hard/i, 4], [/moderate/i, 3], [/easy/i, 2]];
-const srcText = (f) => [f.source, f.evidence && `(${f.evidence})`].filter(Boolean).join(' ');
+const EVIDENCE_WORDS = (e) =>
+  e
+    .split(/ and (?=OFFICIAL|SECONDARY)/)
+    .map((x) =>
+      /^OFFICIAL \(fetched\)/.test(x) ? 'official website' : /^OFFICIAL/.test(x) ? 'official source, via search summary' : /^SECONDARY/.test(x) ? 'secondary source' : x,
+    )
+    .join('; ');
+const srcText = (f) => [f.source, f.evidence && `[${EVIDENCE_WORDS(f.evidence)}]`].filter(Boolean).join(' ');
 function applyUpdates(d) {
   const u = UPDATES[d.id];
   if (!u) return d;

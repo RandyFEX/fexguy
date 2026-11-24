@@ -13,3 +13,12 @@ Research and editorial production only. Nothing on FuneralFunds.com was changed,
 | work/ | Full research notes (NPS quotations, land-manager findings, the raw photo manifest). |
 | scripts/build_dataset.py | Rebuilds A from the v6 inventory and the research. |
 | inputs/ | The v6 inventory and brief you supplied. |
+
+## Follow-up research (November 24, 2026)
+
+| File | What it is |
+|---|---|
+| updates-2026-11-24.json | Route facts, parking, official map links, mapped GPS points (OpenStreetMap via Nominatim, labeled as not official; NPS coordinates where published) and scattering findings, each with its source and evidence label. Applied on top of A by scripts/appalachian-trail/build-data.mjs. |
+| photos-2026-11-24.json | Photo licensing results for the destinations without a photo (file-page license checks on Wikimedia Commons). Weverton Cliffs was approved but not used (panorama too narrow). |
+
+Scattering totals after the follow-up: 4 Permitted, 4 Permit or permission required, 4 Prohibited (Bear Mountain NY, and the Maryland state park destinations Washington Monument, Gathland and Weverton Cliffs, from Maryland DNR's statement that spreading ashes on public lands is not legal, seen via search summary), 19 Unconfirmed.

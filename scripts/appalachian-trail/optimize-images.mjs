@@ -51,10 +51,11 @@ if (existsSync(extraFile)) {
       alt: r.depicts,
       caption: r.caption,
       credit: r.author,
-      ...(/^CC BY/.test(name) ? { title: r.fileTitle.replace(/\.(jpe?g|png|tiff?)$/i, '') } : {}),
+      ...(/^CC BY/.test(name) ? { title: r.fileTitle.replace(/\.(jpe?g|png|tiff?)$/i, '').replace(/_/g, ' ') } : {}),
       sourceUrl: r.sourcePageUrl,
       license: /^public domain/i.test(name) ? PD : { name, ...(url ? { url } : {}) },
       ...(/^CC BY/.test(name) ? { changed: true } : {}),
+      ...(r.cropAlign ? { cropAlign: r.cropAlign } : {}),
     });
   }
 }
@@ -66,7 +67,14 @@ for (const p of PHOTOS) {
   const dir = path.join(root, 'public/images/appalachian-trail', p.dir);
   mkdirSync(dir, { recursive: true });
   const width = p.id === 'hero' ? 1600 : 1200;
-  const img = sharp(input).rotate().resize({ width, withoutEnlargement: true });
+  // Very wide panoramas are center-cropped to 16:9 so they fill a destination photo.
+  const meta = await sharp(input).rotate().metadata();
+  let base = sharp(input).rotate();
+  if (meta.width / meta.height > 2) {
+    const w = Math.round((meta.height * 16) / 9);
+    base = base.extract({ left: p.cropAlign === 'right' ? meta.width - w : Math.round((meta.width - w) / 2), top: 0, width: w, height: meta.height });
+  }
+  const img = base.resize({ width, withoutEnlargement: true });
   await img.clone().jpeg({ quality: 82, progressive: true, mozjpeg: true }).toFile(path.join(dir, `${p.name}.jpg`));
   await img.clone().webp({ quality: 80 }).toFile(path.join(dir, `${p.name}.webp`));
   const rec = { src: `/images/appalachian-trail/${p.dir}/${p.name}.jpg`, srcWebp: `/images/appalachian-trail/${p.dir}/${p.name}.webp`, alt: p.alt, caption: p.caption, credit: p.credit, sourceUrl: p.sourceUrl, license: p.license, ...(p.title ? { title: p.title } : {}), ...(p.changed ? { changed: true } : {}) };
