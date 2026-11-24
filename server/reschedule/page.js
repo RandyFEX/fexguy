@@ -40,7 +40,7 @@ legend{padding:0}
 input,select,textarea{width:100%;font:inherit;color:var(--text);background:#fff;border:1px solid #8a8f8b;border-radius:.5rem;padding:.625rem .75rem;min-height:2.75rem}
 textarea{min-height:8rem;resize:vertical}
 input:focus,select:focus,textarea:focus,button:focus{outline:3px solid #1a1a1a;outline-offset:2px}
-.pair{display:grid;grid-template-columns:1fr 1fr auto;gap:.75rem;align-items:start}
+.pair{display:grid;grid-template-columns:auto 1fr 1fr;gap:.75rem;align-items:start}
 .now{align-self:start;margin-top:1.75rem;width:auto;min-height:2.75rem;padding:0 1.25rem;border:1px solid #8a8f8b;border-radius:.5rem;background:#fff;color:var(--text);font-size:1rem;font-weight:700}
 .now:hover{filter:none;background:#f4f7f5}
 .now[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#fff}
@@ -80,9 +80,9 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
 <div class="field"><label for="rf-notes">Comments / conversation notes</label><textarea id="rf-notes" name="notes" aria-describedby="rf-notes-err"></textarea><span class="err" id="rf-notes-err"></span></div>
 <fieldset><legend class="legend">Start calling in</legend>
 <div class="pair">
+<button type="button" class="now" id="rf-now" aria-pressed="false">Now</button>
 <div><label for="rf-days">Days</label><input id="rf-days" name="days" type="number" inputmode="numeric" min="0" max="365" step="1" value="1" aria-describedby="rf-days-err"><span class="err" id="rf-days-err"></span></div>
 <div><label for="rf-hours">Hours</label><input id="rf-hours" name="hours" type="number" inputmode="numeric" min="0" max="999" step="1" value="8" aria-describedby="rf-hours-err"><span class="err" id="rf-hours-err"></span></div>
-<button type="button" class="now" id="rf-now" aria-pressed="false">Now</button>
 </div></fieldset>
 <fieldset><legend class="legend">Follow-up frequency</legend><div class="opts opts--freq">${freq}</div><span class="err" id="rf-frequency-err"></span></fieldset>
 <fieldset><legend class="legend">Continue follow-up for</legend><div class="opts opts--dur">${dur}</div><span class="err" id="rf-duration-err"></span></fieldset>
