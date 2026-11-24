@@ -1748,6 +1748,20 @@ Prioritize the shortest reliable path to completing approved changes.
   Linked from the mega menu: Guides & Tools > Guides > "Scattering Ashes at
   Sea" (Randy, V1.18; desktop and phone).
 
+## Reschedule Follow-Up form (Randy, November 2026, V3)
+
+- /reschedule/ is a private callback-scheduling form served only by the
+  Vercel Function api/reschedule.js (vercel.json rewrite; code in
+  server/reschedule/). It is not a static page: no sitemap, navigation,
+  llms.txt or search entry, noindex/nofollow. HTTP Basic password
+  `RESCHEDULE_PASSWORD` (server-only, 8+ characters; without it the URL is a
+  404). Production only: upsert by normalized phone with the number fields
+  callback_delay_hours, callback_frequency_hours and callback_duration_days,
+  then remove the contact from `CALLBACK_WORKFLOW_ID` (optional) and remove
+  the tag, append the note, and add the tag "Callback Scheduled" last.
+  Previews validate only (dry run, nothing sent to Agent CRM). All waiting
+  and calling logic lives in the GoHighLevel workflow, never on the site.
+
 ## Permanent review links (Randy, November 2026, V2.0)
 
 - Fixed Preview address (Vercel branch alias of the `review` branch; Vercel
