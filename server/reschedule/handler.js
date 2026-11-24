@@ -44,7 +44,7 @@ export const FREQUENCIES = /** @type {const} */ ([
   { hours: 48, label: 'Every other day' },
 ]);
 export const DURATIONS = /** @type {const} */ ([7, 14, 30, 45, 60]);
-export const DEFAULTS = { days: 1, hours: 8, frequency: 3, duration: 30 };
+export const DEFAULTS = { days: 1, hours: 0, frequency: 3, duration: 30 };
 const MAX_DAYS = 365;
 const MAX_HOURS = 999;
 

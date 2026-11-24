@@ -82,7 +82,7 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
 <div class="pair">
 <button type="button" class="now" id="rf-now" aria-pressed="false">Now</button>
 <div><label for="rf-days">Days</label><input id="rf-days" name="days" type="number" inputmode="numeric" min="0" max="365" step="1" value="1" aria-describedby="rf-days-err"><span class="err" id="rf-days-err"></span></div>
-<div><label for="rf-hours">Hours</label><input id="rf-hours" name="hours" type="number" inputmode="numeric" min="0" max="999" step="1" value="8" aria-describedby="rf-hours-err"><span class="err" id="rf-hours-err"></span></div>
+<div><label for="rf-hours">Hours</label><input id="rf-hours" name="hours" type="number" inputmode="numeric" min="0" max="999" step="1" value="0" aria-describedby="rf-hours-err"><span class="err" id="rf-hours-err"></span></div>
 </div></fieldset>
 <fieldset><legend class="legend">Follow-up frequency</legend><div class="opts opts--freq">${freq}</div><span class="err" id="rf-frequency-err"></span></fieldset>
 <fieldset><legend class="legend">Continue follow-up for</legend><div class="opts opts--dur">${dur}</div><span class="err" id="rf-duration-err"></span></fieldset>
