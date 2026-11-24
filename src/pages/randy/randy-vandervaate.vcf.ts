@@ -36,7 +36,7 @@ export const GET: APIRoute = () => {
     ...(card.email ? [`EMAIL;TYPE=INTERNET,WORK:${card.email}`] : []),
     `URL:${card.website.href}`,
     `ADR;TYPE=WORK:;;${esc(a.street)};${esc(a.city)};${esc(a.region)};${esc(a.postal)};${esc(a.country)}`,
-    `NOTE:${esc(`${card.licensing}. Digital card: ${card.url}`)}`,
+    `NOTE:${esc(`Digital card: ${card.url}`)}`,
     `PHOTO;ENCODING=b;TYPE=JPEG:${photo}`,
     'END:VCARD',
   ];

@@ -26,7 +26,7 @@ const icons = {
 };
 
 const actions = [
-  { key: 'call', label: 'Call Randy', href: card.phone.href },
+  { key: 'call', label: 'Call Randy Now', href: card.phone.href },
   card.sms && { key: 'text', label: 'Text Randy', href: card.sms.href },
   card.email && { key: 'email', label: 'Email Randy', href: `mailto:${card.email}` },
   { key: 'web', label: 'Website', href: card.website.href },
@@ -65,7 +65,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
       </picture>
       <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
       <p class="rc-title">{card.title}</p>
-      <p class="rc-lic">{card.licensing}</p>
+      <p class="rc-lic">{card.org}</p>
 
       <ul class="rc-btns" role="list">
         {actions.map((a) => (
