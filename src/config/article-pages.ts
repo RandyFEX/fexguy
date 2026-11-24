@@ -1275,7 +1275,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     section: 'none',
     crumb: 'Paying for a Funeral',
     quickAnswer:
-      'If someone died without life insurance, their estate pays for the funeral first, and anyone who signs the funeral home contract becomes responsible for the bill. Start with a lower-cost arrangement such as direct cremation, use the person’s own accounts and any benefits they earned, and borrow only as a last resort. If you’re planning ahead, savings can take years to build, so many people use a small life insurance policy to cover the gap.',
+      'Cut the cost before you go looking for money. Get prices before anyone signs the funeral home contract, because whoever signs it owes the bill. Then use the person’s own accounts and any benefits they earned, and borrow only as a last resort. If you’re planning ahead for yourself, saving takes years, and a small life insurance policy can cover your family if you don’t live long enough to finish.',
   },
   '/prepaid-caskets-pros-and-cons/': {
     section: 'none',
