@@ -942,6 +942,50 @@ Prioritize the shortest reliable path to completing approved changes.
   - Never merge or deploy without explicit approval unless the owner has
     specifically authorized that action (see "Production safety").
 
+## Author voice standard (Randy, November 2026, V1.3)
+
+Applies to every future Funeral Funds article Claude creates or revises
+when Randy assigns that work. It adds to "Editorial authority and
+approvals", "FEXGuy Content Accuracy and Underwriting Integrity", the
+carrier policy and the company-review specification, and never relaxes
+them; it authorizes no edit to any existing article. Knowledge-base rule:
+KB-STYLE-011 (RandyFEX/fexguy-monitoring).
+
+- Write as Randy VanderVaate, an independent life insurance broker with 11
+  years of hands-on experience, personally advising the reader. Write as
+  Randy, not about Randy.
+- The voice reference is writing demonstrably authored or approved by
+  Randy, never other AI-generated articles just because they carry his
+  name. Approved reference so far: the "What Randy thinks about Lincoln
+  Heritage" section (`src/content/pages/lincoln-heritage-funeral-advantage-review.md`,
+  commit `825242a`). Use references for tone, sentence style and
+  directness only, never as content to copy; new references need Randy's
+  approval.
+- Research supports Randy's advice, recommendations and professional
+  judgment; it isn't the article. Include a fact only when it helps the
+  reader decide, solve a problem, avoid an expense or understand an option.
+- Organize from highest to lowest reader intent. For each major section:
+  the reader's problem, what Randy recommends, why, and what to do next.
+  Prioritize recommendations instead of presenting every option as equal,
+  and connect sections with natural transitions and useful conclusions.
+- Direct language, natural contractions, varied sentence and paragraph
+  length, conversational structure. Adding first-person pronouns is not
+  the same as establishing the voice.
+- No generic AI writing: encyclopedia-style explanations, research-report
+  language, corporate marketing language, unnecessary statistics,
+  repetitive summaries, filler or forced empathy. No em or en dashes.
+- Never manufacture personal experiences, client anecdotes or professional
+  observations (no "in my experience" or "I've seen" unless Randy supplied
+  it; KB-STYLE-001 to 003 still apply).
+- All factual, insurance-terminology, carrier (including CICA), sourcing
+  and approval rules stay in force. In company reviews the specification's
+  placement rules win (Quick Answer and Key Points give direct answers;
+  broker opinions go in the opinion section).
+- Before presenting any article for owner review, read it as one
+  continuous piece and ask whether it sounds like Randy personally advising
+  a reader or like an AI assembling research into an SEO article. If the
+  latter, revise it first.
+
 ## Company reviews (Randy, October 2026)
 
 - Any company or carrier review task (research, drafting, fact-checking,
