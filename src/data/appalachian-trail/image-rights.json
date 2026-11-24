@@ -1,0 +1,51 @@
+{
+  "checked": "2026-11-24",
+  "note": "Only APPROVED rows of C-photography-manifest.csv. A record whose file is missing is left out (the page shows its placeholder).",
+  "hero": {
+    "src": "/images/appalachian-trail/tennessee/kuwohi-sunset-hero.jpg",
+    "srcWebp": "/images/appalachian-trail/tennessee/kuwohi-sunset-hero.webp",
+    "alt": "Sunset over layered blue ridges of the Great Smoky Mountains, seen from the Kuwohi observation tower",
+    "caption": "Sunset from the Kuwohi Observation Tower, Great Smoky Mountains National Park",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2845f95e-1dd8-b71c-072b-8d90f8c9136b",
+    "license": {
+      "name": "Public domain"
+    }
+  },
+  "photos": {
+    "te-kuwohi-formerly-clingmans-dome": {
+      "src": "/images/appalachian-trail/tennessee/kuwohi.jpg",
+      "srcWebp": "/images/appalachian-trail/tennessee/kuwohi.webp",
+      "alt": "Sunset over layered blue ridges of the Great Smoky Mountains, seen from the Kuwohi observation tower",
+      "caption": "Sunset from the Kuwohi Observation Tower",
+      "credit": "NPS",
+      "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2845f95e-1dd8-b71c-072b-8d90f8c9136b",
+      "license": {
+        "name": "Public domain"
+      }
+    },
+    "we-harpers-ferry-lower-town-and-the-point": {
+      "src": "/images/appalachian-trail/west-virginia/harpers-ferry-lower-town.jpg",
+      "srcWebp": "/images/appalachian-trail/west-virginia/harpers-ferry-lower-town.webp",
+      "alt": "Snow-covered brick buildings of Harpers Ferry Lower Town with Loudoun Heights behind",
+      "caption": "Lower Town in winter, Harpers Ferry National Historical Park",
+      "credit": "NPS / Amy Dozier",
+      "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d98c62d5-c163-4e4f-b88a-ad4b6ea077ac",
+      "license": {
+        "name": "Public domain"
+      }
+    },
+    "no-max-patch": {
+      "src": "/images/appalachian-trail/north-carolina/max-patch.jpg",
+      "srcWebp": "/images/appalachian-trail/north-carolina/max-patch.webp",
+      "alt": "The Appalachian Trail crossing the open grassy bald on top of Max Patch",
+      "caption": "The Appalachian Trail on Max Patch",
+      "credit": "Washedwithblood7 / Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appalachian_Trail_crosses_the_grassy_bald_area_atop_Max_Patch_Mountain.jpg",
+      "license": {
+        "name": "Public domain"
+      },
+      "title": "Appalachian Trail crosses the grassy bald area atop Max Patch Mountain"
+    }
+  }
+}
