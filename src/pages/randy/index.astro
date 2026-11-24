@@ -52,11 +52,12 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </div>
 
     <section class="rc-card" aria-labelledby="rc-name">
+      <p class="rc-alert">IMPORTANT: DO THIS FIRST</p>
       <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="30" height="30"><path d={icons.save} /></svg>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.save} /></svg>
         <span>Save Randy's Info To Your Phone</span>
       </a>
-      <p class="rc-save__help">After you tap it, choose <strong>Create New Contact</strong> or <strong>Save</strong>.</p>
+      <p class="rc-save__help">Then tap <strong>Create New Contact</strong> or <strong>Save</strong>.</p>
 
       <picture class="rc-photo">
         <source type="image/avif" srcset={card.photo.avif} />
@@ -64,8 +65,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
         <img src={card.photo.jpg} alt={card.fullName} width="160" height="160" />
       </picture>
       <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
-      <p class="rc-title">{card.title}</p>
-      <p class="rc-lic">{card.org}</p>
+      <a class="rc-site" href={card.website.href} data-card-action="website">{card.website.display}</a>
 
       <ul class="rc-btns" role="list">
         {actions.map((a) => (
@@ -174,28 +174,38 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     line-height: 1.2;
     color: var(--color-primary);
   }
-  .rc-title {
-    margin: 0.25rem 0 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-text);
+  .rc-site {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    margin-top: 0.25rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
   }
-  .rc-lic {
-    margin: 0.25rem 0 0;
-    color: var(--color-text-muted);
+  .rc-alert {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--color-cta);
   }
   .rc-save {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.625rem;
+    gap: 0.5rem;
     min-height: 4.5rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem;
     border-radius: 0.75rem;
     background: var(--color-cta);
     color: var(--color-on-cta);
     font-size: 1.25rem;
     font-weight: 700;
+    line-height: 1.3;
+    text-wrap: balance;
     text-decoration: none;
   }
   .rc-btns {
