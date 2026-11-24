@@ -217,7 +217,6 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/mutual-of-omaha-burial-insurance/': ["Mutual of Omaha burial insurance is a whole life policy designed"],
   '/open-care-life-insurance-review/': ["Open Care life insurance is a marketing platform that"],
   '/oxford-life-burial-insurance-review/': ["Oxford Life burial insurance is a type of whole"],
-  '/pay-for-a-funeral-without-life-insurance/': ["If you die without life insurance, your family is"],
   '/phoenix-life-burial-insurance-review-pros-cons/': ["Phoenix Life burial insurance, now part of Nassau Re,"],
   '/prepaid-caskets-pros-and-cons/': ["Prepaid caskets are part of a prepaid funeral plan"],
   '/prepaid-funeral/': ["Prepaid funeral plans let you pay a funeral home"],

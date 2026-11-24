@@ -124,8 +124,8 @@
     "/pay-for-a-funeral-without-life-insurance/": {
       "elements": [
         {
-          "starts": "We Sell With Final Expense Life Insurance!",
-          "reason": "Service notice: Funeral Funds sells insurance and does not give money for funerals; stops misdirected calls."
+          "starts": "Someone has died",
+          "reason": "Two jump links (Someone has died / I'm planning ahead) that send each audience straight to its part of the article (Randy, November 2026, article rewrite V1.0)."
         }
       ]
     },

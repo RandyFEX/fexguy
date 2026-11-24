@@ -6,6 +6,7 @@ import { satteri } from '@astrojs/markdown-satteri';
 import { quoteFormPlugin } from './src/lib/lead/quote-form-plugin.ts';
 import { unitTablePlugin } from './src/lib/coverage/unit-table.ts';
 import { hubNavPlugin } from './src/lib/hub-nav.ts';
+import { savingsCalculatorPlugin } from './src/lib/funeral/savings-calculator.ts';
 
 // Keep in sync with `url` in src/config/site.ts.
 const SITE_URL = 'https://funeralfunds.com';
@@ -72,7 +73,7 @@ export default defineConfig({
     // <div data-hub-nav="ID"></div> -> hub navigation (src/lib/hub-nav.ts);
     // <div data-unit-table="colonial-penn"></div> -> the Colonial Penn
     // coverage-per-unit tables (src/lib/coverage/unit-table.ts).
-    processor: satteri({ hastPlugins: [quoteFormPlugin, hubNavPlugin, unitTablePlugin] }),
+    processor: satteri({ hastPlugins: [quoteFormPlugin, hubNavPlugin, unitTablePlugin, savingsCalculatorPlugin] }),
   },
   integrations: [
     sitemap({

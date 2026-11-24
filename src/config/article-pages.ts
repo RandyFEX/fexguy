@@ -1273,8 +1273,9 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   },
   '/pay-for-a-funeral-without-life-insurance/': {
     section: 'none',
+    crumb: 'Paying for a Funeral',
     quickAnswer:
-      'Without life insurance, the family typically pays the funeral costs, and most funeral homes require full payment upfront before services are scheduled. Most families scramble by using savings, credit, retirement money, loans, or online fundraisers, which drain savings or add high-interest debt. Simpler choices like direct cremation, green burial, or a memorial service without the body present can lower costs significantly. Government help is limited, such as Social Security’s one-time $255 death benefit.',
+      'If someone died without life insurance, their estate pays for the funeral first, and anyone who signs the funeral home contract becomes responsible for the bill. Start with a lower-cost arrangement such as direct cremation, use the person’s own accounts and any benefits they earned, and borrow only as a last resort. If you’re planning ahead, savings can take years to build, so many people use a small life insurance policy to cover the gap.',
   },
   '/prepaid-caskets-pros-and-cons/': {
     section: 'none',
