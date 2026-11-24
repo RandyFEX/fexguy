@@ -147,3 +147,65 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
 </body>
 </html>`;
 }
+
+/** The one-field sign-in page (no user name). A correct password sets a
+ * year-long cookie and reloads into the form. */
+export function renderLoginPage() {
+  return `<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Reschedule Follow-Up | Funeral Funds</title>
+<link rel="icon" href="/images/favicon/funeral-funds-favicon-32.png" sizes="32x32">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#efebe2;color:#202522;font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:1.0625rem;line-height:1.5}
+.top{display:flex;justify-content:center;padding:1rem}
+.top img{width:11rem;height:auto;display:block}
+main{max-width:24rem;margin:0 auto;padding:0 1rem 2rem}
+.card{background:#fff;border:1px solid #ddd7ca;border-radius:.75rem;padding:1.25rem}
+h1{margin:0 0 1rem;font-size:1.5rem;line-height:1.2;color:#173f35}
+label{display:block;font-weight:700;margin-bottom:.25rem}
+input{width:100%;font:inherit;border:1px solid #8a8f8b;border-radius:.5rem;padding:.625rem .75rem;min-height:2.75rem;margin-bottom:1rem}
+input:focus,button:focus{outline:3px solid #1a1a1a;outline-offset:2px}
+button{width:100%;min-height:3rem;border:0;border-radius:.625rem;background:#c2410c;color:#fff;font:inherit;font-size:1.125rem;font-weight:700;cursor:pointer}
+button[disabled]{opacity:.6;cursor:wait}
+.err{color:#b91c1c;font-weight:600;margin:.75rem 0 0}
+.err:empty{display:none}
+</style>
+</head>
+<body>
+<div class="top"><a href="https://funeralfunds.com/" aria-label="Funeral Funds home"><img src="/images/logo/funeral-funds-wordmark-400.webp" width="1987" height="285" alt="Funeral Funds"></a></div>
+<main><div class="card">
+<h1>Reschedule Follow-Up</h1>
+<form id="lg">
+<label for="lg-pw">Password</label>
+<input id="lg-pw" name="password" type="password" autocomplete="current-password" required autofocus>
+<button type="submit" id="lg-btn">Open Form</button>
+<p class="err" id="lg-err" role="alert"></p>
+</form>
+</div></main>
+<script>
+(function () {
+  var f = document.getElementById('lg'), btn = document.getElementById('lg-btn'), err = document.getElementById('lg-err');
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.textContent = '';
+    btn.disabled = true;
+    fetch(location.pathname, { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action: 'login', password: f.password.value }) })
+      .then(function (r) { return r.json().catch(function () { return {}; }); })
+      .then(function (res) {
+        if (res.status === 'signed-in') { location.reload(); return; }
+        err.textContent = 'That password is not right. Try again.';
+        f.password.select();
+      })
+      .catch(function () { err.textContent = 'Connection problem. Try again.'; })
+      .then(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>`;
+}
