@@ -1275,7 +1275,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     section: 'none',
     crumb: 'Paying for a Funeral',
     quickAnswer:
-      'Cut the cost before you go looking for money. Get prices before anyone signs the funeral home contract, because whoever signs it owes the bill. Then use the person’s own accounts and any benefits they earned, and borrow only as a last resort. If you’re planning ahead for yourself, saving takes years, and a small life insurance policy can cover your family if you don’t live long enough to finish.',
+      "If you want to ensure your family has money to pay for your funeral, life insurance is often the most practical solution, particularly if you don't have sufficient savings. If someone has already died without life insurance or money set aside, the remaining options generally involve financial assistance, contributions from family and friends, borrowing money, or reducing funeral expenses to an amount the family can afford.",
   },
   '/prepaid-caskets-pros-and-cons/': {
     section: 'none',
