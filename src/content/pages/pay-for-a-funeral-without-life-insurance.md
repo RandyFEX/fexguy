@@ -27,20 +27,22 @@ You don't have to make every decision in the first few hours. Take these steps b
 2. **Ask for prices.** Funeral homes must give you prices over the phone, and they must hand you an itemized General Price List when you meet in person to talk about arrangements. These rights come from the Federal Trade Commission's [Funeral Rule](https://www.ecfr.gov/current/title-16/part-453).
 3. **Ask for the two lowest-cost options by name:** direct cremation and immediate burial. Both skip the viewing and ceremony.
 4. **Ask about holding fees.** If you need a few days to gather money, ask what the funeral home charges per day to keep the body.
-5. **Look for money the person left behind.** Check for bank accounts with a payable-on-death beneficiary, joint accounts, and life insurance from an employer, union, credit union or old policy. Bank statements showing premium payments are a good clue. State insurance regulators also run a free NAIC Life Insurance Policy Locator that searches for policies after a death.
+5. **Look for money the person left behind.** Check for bank accounts with a payable-on-death beneficiary, joint accounts, and life insurance from an employer, union, credit union or old policy. Bank statements showing premium payments are a good clue. State insurance regulators also run a free [NAIC Life Insurance Policy Locator](https://eapps.naic.org/life-policy-locator/) that searches for policies after a death.
 6. **Find out whether the person served in the military.** Veterans may qualify for burial benefits (see below). Look for discharge papers, often called a DD-214.
 
 <div class="fp-after-death">
 
 ## Who is responsible for paying for the funeral?
 
-Two questions often get mixed up: who can make the arrangements, and who has to pay.
+Several questions often get mixed up: who can make the arrangements, who agrees to pay the funeral home, and what the estate pays. These rules come from state law, not federal law, so they vary from state to state.
 
-**Who makes the arrangements.** State law sets the order. It usually starts with a person the deceased named in writing, then the spouse, adult children, parents and siblings. Having the right to decide doesn't make you personally responsible for the cost.
+**Who makes the arrangements.** Each state sets its own order. Many start with a person the deceased named in writing, then the spouse, adult children, parents and siblings, but the order and who qualifies differ by state. In some states, the person with the right to make the arrangements can also be responsible for the reasonable cost, so check your state's rule.
 
-**Who pays.** The deceased person's estate pays first. Many states let reasonable funeral expenses be paid ahead of most other debts of the estate. If the estate has no money, the bill falls on whoever signed the funeral home contract or agreed to pay.
+**Who signs the contract.** A funeral home contract is a personal agreement to pay. Whoever signs it, or otherwise agrees to pay, owes the funeral home, even if the estate later pays them back.
 
-In most cases, adult children and other relatives don't have to pay for a funeral just because they're family. State laws differ, so if you aren't sure, ask your county probate court or a local attorney before you sign.
+**What the estate pays.** Funeral costs can be paid from the deceased person's estate. In states that follow the Uniform Probate Code, reasonable funeral expenses come right after the costs of handling the estate and ahead of most other debts when there isn't enough money to pay everyone. Other states set their own order. If the estate has no money, there's nothing to pay the bill back.
+
+**Family members.** The FTC says relatives generally don't have to pay a deceased person's debts out of their own money. There are exceptions, such as a co-signer, a surviving spouse in some states, or a state law that makes a relative responsible. If you aren't sure what applies in your state, ask your county probate court or a local attorney before you sign.
 
 ## Ways to pay for a funeral with no money
 
@@ -66,7 +68,7 @@ Help exists, but most of it is limited, and some of it is only for certain peopl
 - For a death caused by military service, up to $2,000 for deaths on or after September 11, 2001.
 - For other deaths on or after October 1, 2026, up to $1,032 toward burial and $1,032 toward a plot, when the veteran meets VA's eligibility rules. For deaths from October 1, 2025 through September 30, 2026, the amounts are $1,002 each.
 - VA usually pays these allowances back to you after the funeral.
-- Many veterans can also be buried in a VA national cemetery with a government headstone or marker at no cost to the family. See our guide to [burial insurance for veterans](/burial-insurance/veterans/).
+- Veterans who didn't receive a dishonorable discharge, and certain family members, can generally be buried in a VA national cemetery. The gravesite (where space is available), opening and closing the grave, a burial liner, a government headstone or marker and ongoing care of the grave are provided at no cost to the family. Funeral home charges aren't included. See our guide to [burial insurance for veterans](/burial-insurance/veterans/).
 
 **State and county burial assistance.** Many states, counties and cities help pay for a basic burial or cremation when the person who died, and sometimes the family, can't afford it. Each program sets its own:
 
