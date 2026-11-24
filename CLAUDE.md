@@ -1761,7 +1761,10 @@ Prioritize the shortest reliable path to completing approved changes.
   callback_delay_hours, callback_frequency_hours and callback_duration_days,
   then remove the contact from the workflow "2026 Callback Follow-Up"
   (`DEFAULT_CALLBACK_WORKFLOW_ID` in handler.js; env `CALLBACK_WORKFLOW_ID` overrides) and remove
-  the tag, append the note, and add the tag "Callback Scheduled" last.
+  the tag, append the note, put the comments on top of the contact's
+  Comments field ({{contact.comments}}, dated, older text kept below; Randy,
+  November 2026; best effort, the confirmation warns if it fails), and add
+  the tag "Callback Scheduled" last.
   Previews validate only (dry run, nothing sent to Agent CRM). All waiting
   and calling logic lives in the GoHighLevel workflow, never on the site.
 
