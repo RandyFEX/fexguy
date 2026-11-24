@@ -52,7 +52,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </div>
 
     <section class="rc-card" aria-labelledby="rc-name">
-      <p class="rc-alert">IMPORTANT:<br /><span class="rc-alert__do">TOUCH ORANGE BUTTON NOW</span></p>
+      <p class="rc-alert">IMPORTANT:<br /><span class="rc-alert__do">TOUCH <span class="rc-alert__orange">ORANGE</span> BUTTON NOW</span></p>
       <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.save} /></svg>
         <span>Save Randy's Info To Your Phone</span>
@@ -201,6 +201,9 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     font-size: clamp(1rem, 4.6vw, 1.25rem);
     font-weight: 800;
     letter-spacing: 0.02em;
+    color: var(--color-primary);
+  }
+  .rc-alert__orange {
     color: var(--color-cta);
   }
   .rc-save {
