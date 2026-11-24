@@ -1944,6 +1944,28 @@
       ]
     },
     {
+      "source": "/randy/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/randy/randy-vandervaate.vcf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vcard; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"randy-vandervaate.vcf\""
+        }
+      ]
+    },
+    {
       "source": "/trin-fbl/",
       "headers": [
         {

@@ -1,0 +1,293 @@
+---
+// /randy/: Randy's digital business card (Randy, November 2026). Standalone
+// (landing layout: no site header, navigation, pre-footer or footer), noindex,
+// out of the sitemap (astro.config.mjs), llms.txt and site search, and served
+// with X-Robots-Tag noindex (vercel.json). Contact facts: src/config/card.ts.
+// The vCard: src/pages/randy/randy-vandervaate.vcf.ts.
+//
+// Tracking (src/scripts/tracking.ts, GA4 only, nothing to Meta): every
+// [data-card-action] tap sends `card_action` with its action name, and the
+// Save button sends `card_save_contact`. Taps on the website number also send
+// the site-wide click_to_call, as everywhere else.
+//
+// The quote button reads GET 3 RATES NOW, the site's required wording for
+// links to /free-quote/ (npm run verify rejects the retired "Get a Quote").
+import { renderSVG } from 'uqr';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeaderLogo from '@/components/HeaderLogo.astro';
+import { card } from '@/config/card';
+
+const qr = renderSVG(card.url, { ecc: 'M', border: 2 });
+
+const icons = {
+  save: 'M12 3v12m0 0l-5-5m5 5l5-5M5 21h14',
+  call: 'M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z',
+  text: 'M4 5h16v11H8l-4 4V5z',
+  email: 'M3 6h18v12H3V6zm0 0l9 7 9-7',
+  web: 'M12 3a9 9 0 100 18 9 9 0 000-18zm-9 9h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z',
+  quote: 'M9 4h6v3H9zM6 6h12v15H6zM9 12h6M9 16h4',
+  share: 'M12 15V3m0 0L8 7m4-4l4 4M5 12v8h14v-8',
+};
+
+const actions = [
+  { key: 'call', label: 'Call Me', href: card.phone.href },
+  card.sms && { key: 'text', label: 'Text Me', href: card.sms.href },
+  card.email && { key: 'email', label: 'Email Me', href: `mailto:${card.email}` },
+  { key: 'web', label: 'Website', href: card.website.href },
+  { key: 'quote', label: 'GET 3 RATES NOW', href: card.quotePath },
+].filter(Boolean) as { key: keyof typeof icons; label: string; href: string }[];
+const trackName: Record<string, string> = { call: 'call', text: 'text', email: 'email', web: 'website', quote: 'quote' };
+---
+
+<BaseLayout
+  title={`${card.fullName} | ${card.org}`}
+  description={`Save ${card.fullName}'s contact information. ${card.title}.`}
+  robots="noindex, nofollow"
+  noindex={true}
+  layout="landing"
+  stickyCall={false}
+  preFooter={false}
+  bodyClass="page-card"
+>
+  <div class="rc" data-page-type="utility" data-page-reason="Randy's digital business card, shared by direct link and QR code.">
+    <div class="rc-top">
+      <HeaderLogo>
+        <img class="rc-top__logo" src="/images/logo/funeral-funds-wordmark-800.webp" width="1987" height="285" alt="Funeral Funds" fetchpriority="high" />
+      </HeaderLogo>
+    </div>
+
+    <section class="rc-card" aria-labelledby="rc-name">
+      <picture class="rc-photo">
+        <source type="image/avif" srcset={card.photo.avif} />
+        <source type="image/webp" srcset={card.photo.webp} />
+        <img src={card.photo.jpg} alt={card.fullName} width="160" height="160" />
+      </picture>
+      <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
+      <p class="rc-title">{card.title}</p>
+      <p class="rc-lic">{card.licensing}</p>
+      <a class="rc-phone" href={card.phone.href} data-card-action="call">{card.phone.display}</a>
+
+      <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d={icons.save} /></svg>
+        <span>Save My Contact Information</span>
+      </a>
+
+      <ul class="rc-btns" role="list">
+        {actions.map((a) => (
+          <li>
+            <a class="rc-btn" href={a.href} data-card-action={trackName[a.key]}>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons[a.key]} /></svg>
+              <span>{a.label}</span>
+            </a>
+          </li>
+        ))}
+        <li>
+          <button class="rc-btn" type="button" data-card-action="share" data-card-share>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.share} /></svg>
+            <span>Share Card</span>
+          </button>
+        </li>
+      </ul>
+      <p class="rc-status" role="status" aria-live="polite" data-card-status></p>
+    </section>
+
+    <section class="rc-qr" aria-labelledby="rc-qr-title">
+      <h2 class="rc-qr__title" id="rc-qr-title">Scan to Open This Card</h2>
+      <div class="rc-qr__code" role="img" aria-label={`QR code for ${card.url}`} set:html={qr} />
+      <p class="rc-qr__url">{card.url.replace(/^https:\/\//, '')}</p>
+    </section>
+
+    <footer class="rc-foot">
+      <p>{card.org}<br />{card.address.street}<br />{card.address.city}, {card.address.region} {card.address.postal}</p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ url: card.url, title: `${card.fullName}, ${card.org}` }}>
+  (function () {
+    var btn = document.querySelector('[data-card-share]');
+    var status = document.querySelector('[data-card-status]');
+    if (!btn) return;
+    var say = function (msg) { if (status) status.textContent = msg; };
+    btn.addEventListener('click', function () {
+      if (navigator.share) {
+        navigator.share({ title: title, text: 'Contact information for ' + title, url: url }).catch(function () {});
+        return;
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { say('Link copied. You can paste it in a text or email.'); }, function () { say('Card link: ' + url); });
+        return;
+      }
+      say('Card link: ' + url);
+    });
+  })();
+</script>
+
+<style is:global>
+  body.page-card {
+    background: var(--color-surface);
+  }
+</style>
+
+<style>
+  .rc {
+    max-width: 30rem;
+    margin-inline: auto;
+    padding: 0 1rem 2rem;
+    font-size: 1.1875rem;
+    line-height: 1.5;
+  }
+  .rc-top {
+    display: flex;
+    justify-content: center;
+    padding-block: 1.25rem;
+  }
+  .rc-top__logo {
+    display: block;
+    width: 13rem;
+    height: auto;
+  }
+  .rc-card,
+  .rc-qr {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+  }
+  .rc-photo {
+    display: block;
+    width: 10rem;
+    margin: 0 auto 1rem;
+    padding: 4px;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+  .rc-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .rc-name {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-primary);
+  }
+  .rc-title {
+    margin: 0.25rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  .rc-lic {
+    margin: 0.25rem 0 0;
+    color: var(--color-text-muted);
+  }
+  .rc-phone {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    min-height: var(--tap-target);
+  }
+  .rc-save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-top: 1.25rem;
+    min-height: 4rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .rc-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .rc-actions li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .rc-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    width: 100%;
+    min-height: 5rem;
+    padding: 0.75rem 0.5rem;
+    border: 0;
+    border-radius: 0.75rem;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    font: inherit;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .rc-btn:hover {
+    background: var(--color-primary-hover);
+  }
+  .rc-save:hover {
+    filter: brightness(0.92);
+  }
+  .rc svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .rc-status {
+    min-height: 1.5em;
+    margin: 0.75rem 0 0;
+    font-weight: 600;
+    word-break: break-word;
+  }
+  .rc-qr {
+    margin-top: 1rem;
+  }
+  .rc-qr__title {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+  }
+  .rc-qr__code {
+    width: 12rem;
+    margin-inline: auto;
+    color: #000;
+    background: #fff;
+  }
+  .rc-qr__code :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .rc-qr__url {
+    margin: 0.5rem 0 0;
+    color: var(--color-text-muted);
+  }
+  .rc-foot {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+  }
+  .rc-foot p {
+    margin: 0;
+  }
+</style>
