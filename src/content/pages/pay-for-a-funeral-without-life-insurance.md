@@ -12,137 +12,108 @@ source: "new"
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Whoever signs the funeral home contract is personally responsible for the bill<br>• An itemized price list lets you decline the goods and services you don't need<br>• Social Security's $255 death payment goes only to certain surviving spouses and children, never to the funeral home<br>• Savings fund a funeral only if the full amount is there, and accessible, when it's needed</p>
+<p>• Fundraisers, family contributions, assistance programs and loans respond to a funeral bill that already exists; none of them is a dependable plan for your own<br>• Signing a funeral home contract as the responsible party can make you liable for the bill, so read it before you sign<br>• Comparing itemized prices and choosing direct cremation or immediate burial lowers the amount every other source has to cover<br>• Savings can replace burial insurance once the full amount is set aside and your family can reach it</p>
+
+If someone you love has died without life insurance or money set aside for a funeral, there aren't many good financial options available.
+
+Families often find themselves organizing fundraisers, setting up GoFundMe accounts, asking relatives for money or using credit cards to pay for funeral expenses. These are generally good people trying to solve a financial problem that already exists.
+
+If you're researching how your own funeral will be paid for, you have an opportunity these families no longer have. You can make financial arrangements now that eliminate the need for your family to raise or borrow money after your death.
+
+Understanding the advantages and disadvantages of each funeral funding option can help you decide which makes the most financial sense.
 
 <ul class="fp-paths">
-<li><a href="#ways-to-pay-for-a-funeral-without-life-insurance">Someone has died</a></li>
-<li><a href="#how-to-pay-for-your-own-funeral-without-life-insurance">I’m planning ahead</a></li>
+<li><a href="#first-look-for-money-that-already-exists">Someone has died</a></li>
+<li><a href="#planning-for-your-own-funeral">I’m planning ahead</a></li>
 </ul>
 
-## Ways to pay for a funeral without life insurance
+## First, look for money that already exists
 
-Funeral money differs sharply in reliability. Money the person left behind can be counted on; donations depend on other people, and borrowing creates new debt. Each source goes further once the arrangements have been [reduced to what the family can afford](#how-to-reduce-funeral-expenses).
+Families sometimes assume there's nothing when there is. Payable-on-death and joint accounts usually pass directly to the named person or surviving owner within days. An account in the deceased's name alone becomes part of the estate and may take weeks to release, so ask whether the funeral home will wait to be paid from the estate.
 
-### The person's own money and insurance
+Check for overlooked life insurance through a current or former employer, a union, a credit union or a fraternal organization, and look for premium payments on bank statements. The free [NAIC Life Insurance Policy Locator](https://eapps.naic.org/life-policy-locator/) searches for policies after a death, although results aren't immediate.
 
-The most dependable funeral money is what the person left behind, provided the family can reach it in time. Payable-on-death and joint accounts usually pass directly to the named person or co-owner within days. An account in the deceased's name alone generally becomes part of the estate and may not be released until an executor is appointed or a small-estate procedure is completed, which can take weeks. If you're the named beneficiary of an IRA or 401(k), withdrawals after the owner's death aren't subject to the [10% early-withdrawal tax](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions), though regular income tax applies.
-
-A family that believes there's no life insurance may still find some, through an employer, union, credit union, fraternal organization or an old policy; premium payments on bank statements are one of the best clues. The free [NAIC Life Insurance Policy Locator](https://eapps.naic.org/life-policy-locator/) searches for policies after a death, but results aren't immediate. Some funeral homes accept an assignment of a policy's benefit as payment.
-
-### Government benefits
-
-Government funeral assistance either pays limited, fixed amounts to eligible survivors or provides basic disposition for people with insufficient resources; none of it is designed to fund the arrangements a family would otherwise choose. It's worth pursuing, but I wouldn't rely on it as a funding strategy.
-
-**Social Security** pays a one-time [$255](https://www.ecfr.gov/current/title-20/section-404.390) death payment to the surviving spouse if they lived together, or otherwise to a spouse or child already receiving benefits on the person's record. No one else can receive it, and it must be claimed within two years.
-
-**Veterans benefits** are worth checking whenever the person served. VA pays [burial allowances](https://www.va.gov/burials-memorials/veterans-burial-allowance/) to eligible survivors, usually as a reimbursement after the funeral:
-
-- For a death caused by military service, up to $2,000 for deaths on or after September 11, 2001.
-- For other deaths on or after October 1, 2026, up to $1,032 toward burial and $1,032 toward a plot, when the veteran meets VA's eligibility rules. For deaths from October 1, 2025 through September 30, 2026, the amounts are $1,002 each.
-
-Burial in a VA national cemetery can be worth more than the allowance. Veterans who didn't receive a dishonorable discharge, and certain family members, can generally be buried there with the gravesite (where space is available), opening and closing the grave, a burial liner, a government headstone or marker and ongoing care of the grave provided at no cost. Funeral home charges aren't included. My guide to [burial insurance for veterans](/burial-insurance/veterans/) covers these benefits in more detail.
-
-**State and county programs** help pay for a basic burial or cremation when the person who died, and in some programs the family, can't afford it. Each sets its own financial limits, dollar limits and restrictions on the arrangements, and some won't help after the funeral has taken place, so contact the county's human services office before committing to anything.
-
-### Family, crowdfunding and charity
-
-Dividing the cost among relatives works when everyone agrees on the arrangements and the budget before anything is signed. Its failure point is the contract: the person who signs carries the legal obligation, whatever the others have promised. Agree in writing on who signs and how much each person pays.
-
-Crowdfunding and help from churches, employers or community groups can raise meaningful money, but the amount depends on the family's network and is rarely known in advance. I consider both supplemental sources rather than a dependable financial plan; neither should determine what you agree to spend.
-
-### Borrowing
-
-A funeral home payment plan, credit card or personal loan lets the funeral proceed on schedule, but it converts the funeral into debt, usually with interest, that a family member carries long after the service. I wouldn't borrow until every other source has been exhausted and the arrangements reduced to what the family can afford.
+If that search doesn't turn up enough money, the family is left with the options below.
 
 <div class="fp-after-death">
 
-## How to reduce funeral expenses
+## Fundraisers and GoFundMe
 
-Cost reduction produces no money, but it lowers the amount every other source has to cover, and the decisions that matter are made before the contract is signed. The [National Funeral Directors Association](https://content.nfda.org/Portals/0/12-8-2023--2023%20GPL%20Survey.pdf) reported these national median prices for 2023, before cemetery charges:
+Fundraisers are often organized by well-intentioned friends and family members trying to help after an unexpected death. Unfortunately, the generosity of others doesn't always translate into enough money to pay for a funeral. The amount raised depends on the family's network and how quickly people give, the funeral home's payment deadline doesn't wait for either, and platforms may deduct fees.
 
-<table>
-<thead><tr><th>Item</th><th>National median (2023)</th></tr></thead>
-<tbody>
-<tr><td>Funeral with viewing and burial, without a vault</td><td>$8,300</td></tr>
-<tr><td>Funeral with viewing and burial, with a vault</td><td>$9,995</td></tr>
-<tr><td>Funeral with viewing and cremation</td><td>$6,280</td></tr>
-<tr><td>Basic services fee</td><td>$2,459</td></tr>
-<tr><td>Metal casket</td><td>$2,500</td></tr>
-<tr><td>Embalming</td><td>$845</td></tr>
-</tbody>
-</table>
+While I certainly wouldn't discourage a family from organizing a fundraiser when they need financial help, I would never recommend making one part of your own funeral funding strategy.
 
-The basic services fee is the one charge most families can't avoid. The casket, embalming and viewing are among the largest items, and all three are optional. Prices also vary by area; my [funeral cost map](/funeral-cost-map/) compares states.
+## Asking family members to contribute
 
-The FTC's [Funeral Rule](https://www.ecfr.gov/current/title-16/part-453) is what makes those savings possible. Funeral homes must quote prices by phone and provide an itemized price list in person, so you can compare two or three providers before choosing one. Apart from the basic services fee and anything your state requires, you can buy only the goods and services you want rather than a package. You can buy the casket or urn elsewhere without a handling fee, and a funeral home can't claim embalming is legally required when it isn't.
+Dividing the cost among relatives is people doing the right thing under difficult circumstances, and it often works. Its weakness is that the promise to contribute and the obligation to pay aren't the same thing. If you're the one signing the funeral home contract, agree in writing beforehand on what each person will pay.
 
-The largest savings come from direct cremation or immediate burial. Both skip embalming and the viewing, and direct cremation needs only an alternative container rather than a casket. A memorial service can be held afterward at a church or family home without the funeral home's facility and staff charges. My guides to [cremation costs](/cremation-cost-and-info/) and [burial versus cremation](/burial-vs-cremation/) compare the two.
+As a plan for your own funeral, counting on your children to divide the bill assumes each of them will have the money when the time comes.
 
-## Who is financially responsible for funeral expenses?
+## Government and charitable assistance
 
-Responsibility is set by state law and contract law, and three questions are often confused.
+Government help is narrow. Most programs pay a limited amount to certain survivors or cover only a basic burial or cremation, and none is designed to pay for the funeral a family would otherwise choose.
 
-The authority to arrange the funeral follows an order each state sets, often beginning with a person the deceased named in writing, then the spouse, adult children, parents and siblings. In some states that authority carries responsibility for the reasonable cost.
+- **Social Security** pays a one-time [$255](https://www.ecfr.gov/current/title-20/section-404.390) death payment, only to a surviving spouse or to certain children, and never to the funeral home.
+- **Veterans** may qualify for VA [burial allowances](https://www.va.gov/burials-memorials/veterans-burial-allowance/), usually paid as a reimbursement after the funeral. For a death caused by military service, the allowance is up to $2,000 for deaths on or after September 11, 2001. For other deaths on or after October 1, 2026, it's up to $1,032 toward burial and $1,032 toward a plot when the veteran meets VA's eligibility rules. Eligible veterans can also be buried in a VA national cemetery, where the gravesite, opening and closing the grave, a burial liner, a government headstone or marker and ongoing care are provided at no cost. Funeral home charges aren't included. See my guide to [burial insurance for veterans](/burial-insurance/veterans/).
+- **State and county programs** help pay for a basic burial or cremation for people who can't afford one. Each sets its own limits, and some won't help after the funeral has taken place, so contact the county's human services office first.
 
-Personal liability comes from the contract. Whoever signs the funeral home contract, or otherwise agrees to pay, owes the bill, even if the estate later reimburses them. Settle the budget and the source of the money before anyone signs.
+Churches, employers and community groups sometimes help as well, though rarely in an amount anyone can count on. All of this is worth pursuing after a death. For your own planning, only veterans benefits are predictable, and only for what they cover.
 
-The estate can pay funeral expenses, and in states that follow the Uniform Probate Code they're paid right after the costs of administering the estate, ahead of most other debts. An estate with no assets reimburses no one. Beyond that, the FTC says relatives generally don't have to pay a deceased person's debts from their own money, with exceptions such as a co-signer, a surviving spouse in some states, or a state law that makes a relative responsible.
+## Credit cards, personal loans and payment plans
 
-When neither the estate nor the family can pay, the county or city where the person died generally arranges a basic burial or cremation under its own policies, which determine the method and place and may not include a service. Contact the county's human services office, or the medical examiner's or coroner's office, as early as possible.
+Borrowing money can solve the immediate problem of paying for a funeral, but it creates a financial obligation that may take surviving family members years to repay. It's a reasonable last resort, and borrowing less makes the debt easier to carry.
+
+As a strategy for your own funeral, borrowing simply shifts the bill to the people you leave behind. Your family could end up making monthly payments on your funeral long after you're gone.
+
+## Who pays the funeral home
+
+Whoever signs a funeral home contract as the party responsible for payment is generally liable for the bill, even if the estate reimburses them later. Liability depends on the contract's terms and the capacity in which you sign, so read it before you do. The estate can pay reasonable funeral expenses, usually ahead of most other debts, but an estate with no assets reimburses no one. Relatives generally aren't required to pay a deceased person's debts from their own money unless they agreed to or state law makes them responsible.
+
+When no one can pay, the county or city where the person died generally arranges a basic burial or cremation under its own policies.
+
+## Reducing what the funeral costs
+
+Cutting the cost doesn't produce money, but it reduces what every other source has to cover. The [National Funeral Directors Association](https://content.nfda.org/Portals/0/12-8-2023--2023%20GPL%20Survey.pdf) reported a 2023 national median of $8,300 for a funeral with a viewing and burial and $6,280 for a funeral with a viewing and cremation, before cemetery charges. Much of that is optional.
+
+The FTC's [Funeral Rule](https://www.ecfr.gov/current/title-16/part-453) lets you get prices by phone and an itemized price list in person, so compare two or three funeral homes. Apart from a basic services fee and anything your state requires, you can buy only what you want, bring a casket or urn bought elsewhere without a handling fee, and decline embalming where it isn't legally required.
+
+The largest savings come from direct cremation or immediate burial. Both skip embalming and the viewing, and a memorial service can still be held afterward at a church or at home. My guides to [cremation costs](/cremation-cost-and-info/) and [how much a funeral costs](/how-much-does-a-funeral-cost/) explain each charge.
 
 </div>
 
-## How to pay for your own funeral without life insurance
+## Planning for your own funeral
 
-Without life insurance, a future funeral is funded with savings or a prepaid funeral arrangement.
+If you're planning ahead, you don't have to rely on any of the options above. The realistic choices are savings, a prepaid funeral or burial insurance.
 
-A preneed contract selects your arrangements and pays for them now, with one funeral home. Its strength is that the decisions are made and the money committed; its weaknesses come from the contract. Before signing, the FTC suggests asking whether the prices are guaranteed, whether you can cancel for a refund, whether the plan transfers if you move, and what happens if the funeral home closes. State protections vary; my guide to [prepaid funerals](/prepaid-funeral/) covers them.
+### Personal savings
 
-If you receive SSI, up to $1,500 set aside for burial and kept separate isn't counted as a resource; that amount is reduced by the face value of certain life insurance and any [irrevocable burial arrangements](https://www.ecfr.gov/current/title-20/section-416.1231). My guide to [Medicaid and life insurance](/final-expense-life-insurance-medicaid/) explains how these limits apply.
+If you've already saved enough money to pay for your funeral and your family will have access to that money when you die, you've accomplished much of what burial insurance is designed to accomplish. A payable-on-death beneficiary on the account keeps the money out of probate.
 
-## Saving money vs. buying life insurance
-
-Saving for your funeral is a perfectly reasonable financial strategy if you live long enough to fully fund it. Life insurance addresses the financial risk of dying before that happens. The calculator shows how long that period lasts.
+The financial risk of relying on savings exists primarily during the years it takes to accumulate enough money.
 
 <div data-savings-calculator></div>
 
-At $50 a month, your family would have $600 after one year and $3,000 after five. Savings also have to survive every other demand on them before death, remain accessible (a payable-on-death beneficiary avoids waiting for probate) and keep pace with rising funeral prices.
+### Burial insurance
 
-Life insurance removes that exposure by transferring the risk to an insurance company. With a first-day policy, the full death benefit is available from the day coverage starts,* whether death occurs in the first month or many years later.
+Burial insurance covers exactly that risk. With a first-day policy, the full death benefit is available from the day coverage starts,* whether death occurs in the first month or twenty years later.
 
-Insurance isn't the less expensive choice in every case. Someone who lives a long time can pay more in premiums than the policy pays out, and savings remain available if plans change. What insurance buys is certainty about the amount your family receives, not a lower total cost. My [burial insurance calculator](/burial-insurance-calculator/) estimates how much coverage you'd need.
+It isn't always the less expensive choice. Someone who lives a long time can pay more in premiums than the policy pays out. What insurance buys is certainty that the money will be there whenever it's needed. That certainty lasts only while the policy stays in force, so choose a premium you can keep paying for life. A smaller policy you keep is worth more than a larger one you drop.
 
-<p class="fp-note">* First-day coverage is subject to the policy's terms and exclusions, including any applicable suicide exclusion.</p>
-
-## When life insurance is the better option
-
-Life insurance is the better option when you don't have enough accessible money for your funeral and couldn't accumulate it quickly. It isn't necessary if savings or other life insurance already cover the cost.
-
-A policy protects your family only while it stays in force, so the premium has to fit your budget for life. Final expense policies generally have level premiums, but a policy that lapses because the premium became unaffordable leaves the family with nothing. I'd rather see someone keep a smaller policy for life than buy a larger one they can't maintain.
-
-Health problems don't automatically mean a waiting period. Many people with common conditions qualify for [first-day coverage](/burial-insurance/with-first-day-coverage/); whether they do depends on each insurance company's health questions, which differ, so comparing companies matters. My [health question search](/life-insurance-health-questions/) shows those questions before you apply. If first-day coverage isn't available:
+Health problems don't automatically mean a waiting period. Many people with common conditions qualify for [first-day coverage](/burial-insurance/with-first-day-coverage/), depending on each insurance company's health questions. If they don't:
 
 - **Graded benefit.** If death from natural causes occurs in the first years, the policy pays a reduced amount. The benefit increases to the full amount over time.
 - **Guaranteed acceptance.** Guaranteed-acceptance life insurance doesn't ask health questions, and you can't be turned down because of your health as long as you meet the policy's eligibility requirements. These policies are commonly available to people ages 50 through 85, although the exact age limits depend on the insurance company. Most have a waiting period, set by the policy's contract, before the full benefit is paid for a death from natural causes. During that time, your beneficiary usually gets back the premiums you paid plus interest or a set percentage, as the policy states.
 
-Guaranteed acceptance should come only after you've determined whether you qualify for something better; my guide to [guaranteed issue life insurance for seniors](/burial-insurance/guaranteed-issue-life-insurance-for-seniors/) explains the trade-offs.
+Guaranteed acceptance should come only after you've found out whether you qualify for something better.
+
+<p class="fp-note">* First-day coverage is subject to the policy's terms and exclusions, including any applicable suicide exclusion.</p>
 
 As an independent broker, I compare policies from several insurance companies to find coverage that fits your age, health and budget. You can [compare your rates online](/free-quote/) or call me at <a href="tel:8888629456">888-862-9456</a>.
 
+### Prepaid funerals
+
+A prepaid funeral contract pays for your arrangements now, with one funeral home. Before signing, the FTC suggests asking whether the prices are guaranteed, whether you can cancel for a refund, whether the plan transfers if you move, and what happens if the funeral home closes. My guide to [prepaid funerals](/prepaid-funeral/) covers the trade-offs.
+
 ## Bottom line
 
-A funeral paid without insurance depends on money that may be slow to reach, benefits that cover only part of the cost and help that can't be predicted. That uncertainty is the real cost of not planning. Savings remove it once they're fully funded and accessible; until then, an affordable policy you can keep is the most practical way to be certain the money will be there.
-
-## Frequently asked questions
-
-### Is there free burial insurance?
-
-No. Some groups can get real government life insurance, such as VA life insurance for service members and veterans, group life insurance for most federal employees, and Wisconsin's State Life Insurance Fund for its residents. The amounts and rules vary by program.
-
-### Can a funeral home ask for payment before the service?
-
-Yes. The FTC's Funeral Rule doesn't cover when or how you pay, so each funeral home sets its own payment and deposit policy.
-
-### Are funeral expenses tax deductible?
-
-Not on your personal income tax return. The IRS lists [burial and funeral expenses](https://www.irs.gov/publications/p529) as nondeductible.
+Fundraisers, family contributions, assistance programs and loans exist because families are left with a bill and no money to pay it. They help people respond to that problem, but they don't prevent it. If you have time to plan, either set aside enough money and make sure your family can reach it, or own an affordable policy you can keep for life.

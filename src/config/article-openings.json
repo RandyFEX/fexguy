@@ -124,6 +124,22 @@
     "/pay-for-a-funeral-without-life-insurance/": {
       "elements": [
         {
+          "starts": "If someone you love has died",
+          "reason": "Randy's own opening (owner-written, article V5.0, November 2026)."
+        },
+        {
+          "starts": "Families often find themselves",
+          "reason": "Randy's own opening (owner-written, article V5.0, November 2026)."
+        },
+        {
+          "starts": "If you",
+          "reason": "Randy's own opening (owner-written, article V5.0, November 2026)."
+        },
+        {
+          "starts": "Understanding the advantages",
+          "reason": "Randy's own opening (owner-written, article V5.0, November 2026)."
+        },
+        {
           "starts": "Someone has died",
           "reason": "Two jump links (Someone has died / I'm planning ahead) that send each audience straight to its part of the article (Randy, November 2026, article rewrite V1.0)."
         }
