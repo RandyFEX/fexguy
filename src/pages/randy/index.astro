@@ -52,7 +52,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </div>
 
     <section class="rc-card" aria-labelledby="rc-name">
-      <p class="rc-alert">IMPORTANT: DO THIS FIRST</p>
+      <p class="rc-alert">IMPORTANT:<br /><span class="rc-alert__do">TOUCH ORANGE BUTTON NOW</span></p>
       <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.save} /></svg>
         <span>Save Randy's Info To Your Phone</span>
@@ -65,6 +65,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
         <img src={card.photo.jpg} alt={card.fullName} width="160" height="160" />
       </picture>
       <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
+      <p class="rc-title">{card.title}</p>
       <a class="rc-site" href={card.website.href} data-card-action="website">{card.website.display}</a>
 
       <ul class="rc-btns" role="list">
@@ -174,6 +175,12 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     line-height: 1.2;
     color: var(--color-primary);
   }
+  .rc-title {
+    margin: 0.25rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
   .rc-site {
     display: inline-flex;
     align-items: center;
@@ -185,9 +192,13 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     text-decoration: underline;
     text-underline-offset: 0.2em;
   }
+  .rc-alert__do {
+    white-space: nowrap;
+  }
   .rc-alert {
     margin: 0 0 0.5rem;
-    font-size: 1.25rem;
+    line-height: 1.3;
+    font-size: clamp(1rem, 4.6vw, 1.25rem);
     font-weight: 800;
     letter-spacing: 0.02em;
     color: var(--color-cta);
