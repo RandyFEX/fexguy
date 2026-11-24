@@ -4,6 +4,7 @@
 // no external scripts, fonts or trackers.
 
 const FREQUENCY_OPTIONS = [
+  [1, 'Every hour'],
   [2, 'Every 2 hours'],
   [3, 'Every 3 hours'],
   [24, 'Once a day'],
@@ -15,7 +16,7 @@ const DURATION_OPTIONS = [7, 14, 30, 45, 60];
 export function renderReschedulePage({ preview }) {
   // Tap-to-select buttons (radio inputs), not dropdowns (Randy, November 2026).
   const freq = FREQUENCY_OPTIONS.map(([h, l]) => `<label class="opt"><input type="radio" name="frequency" value="${h}"${h === 3 ? ' checked' : ''}><span>${l}</span></label>`).join('');
-  const dur = DURATION_OPTIONS.map((d) => `<label class="opt"><input type="radio" name="duration" value="${d}"${d === 30 ? ' checked' : ''}><span>${d} days</span></label>`).join('');
+  const dur = DURATION_OPTIONS.map((d) => `<label class="opt"><input type="radio" name="duration" value="${d}"${d === 7 ? ' checked' : ''}><span>${d} days</span></label>`).join('');
   return `<!doctype html>
 <html lang="en-US">
 <head>
@@ -45,7 +46,7 @@ input:focus,select:focus,textarea:focus,button:focus{outline:3px solid #1a1a1a;o
 .now:hover{filter:none;background:#f4f7f5}
 .now[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#fff}
 .opts{display:grid;gap:.5rem}
-.opts--freq{grid-template-columns:repeat(4,1fr)}
+.opts--freq{grid-template-columns:repeat(5,1fr)}
 .opts--dur{grid-template-columns:repeat(5,1fr)}
 .opt{display:block;margin:0;font-weight:400;cursor:pointer}
 .opt input{position:absolute;opacity:0;width:1px;height:1px}
@@ -99,7 +100,7 @@ ${preview ? '<p class="preview"><strong>Preview:</strong> submissions are checke
   var summary = document.getElementById('rf-summary');
   var status = document.getElementById('rf-status');
   var btn = document.getElementById('rf-submit');
-  var labels = { 2: 'every 2 hours', 3: 'every 3 hours', 24: 'once a day', 48: 'every other day' };
+  var labels = { 1: 'every hour', 2: 'every 2 hours', 3: 'every 3 hours', 24: 'once a day', 48: 'every other day' };
   var n = function (v) { return /^\\s*\\d+\\s*$/.test(v) ? Number(v) : NaN; };
   var plural = function (x, u) { return x + ' ' + u + (x === 1 ? '' : 's'); };
   function delayText(total) {
