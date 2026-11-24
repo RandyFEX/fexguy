@@ -18,6 +18,12 @@
     }
   },
   "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/reschedule/",
+      "destination": "/api/reschedule"
+    }
+  ],
   "redirects": [
     {
       "source": "/iuls-for-truckers/",
@@ -1936,6 +1942,15 @@
           "value": "fexguy.vercel.app"
         }
       ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/reschedule/(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
