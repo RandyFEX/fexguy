@@ -2,9 +2,11 @@
 // Reschedule Follow-Up (Randy, November 2026, V3): a private callback
 // scheduling form at /reschedule/ (vercel.json rewrites it to
 // api/reschedule.js). Not a page of the static site: it is served only by this
-// function, behind HTTP Basic authentication with the server-only password
-// RESCHEDULE_PASSWORD (without it the URL answers 404), noindex/nofollow, out
-// of the sitemap and navigation.
+// function, behind its own one-field password page (Randy, November 2026: no
+// user name, no browser popup). The server-only password RESCHEDULE_PASSWORD
+// (without it the URL answers 404) unlocks a signed HttpOnly cookie that lasts
+// a year on that browser; changing the password signs every browser out.
+// noindex/nofollow, out of the sitemap and navigation.
 //
 // On submit, through the existing Agent CRM (GoHighLevel) integration
 // (AGENT_CRM_TOKEN, AGENT_CRM_LOCATION_ID; server/quote/crm.js):
@@ -19,9 +21,9 @@
 //      GoHighLevel workflow (all waiting and calling logic lives there)
 // CRM writes happen only on the production deployment (VERCEL_ENV=production);
 // previews validate and answer with a dry run, so nothing reaches Agent CRM.
-import { createHash, timingSafeEqual } from 'node:crypto';
+import { createHash, createHmac, timingSafeEqual } from 'node:crypto';
 import { toE164US } from '../quote/phone.js';
-import { renderReschedulePage } from './page.js';
+import { renderLoginPage, renderReschedulePage } from './page.js';
 
 const API = 'https://services.leadconnectorhq.com';
 const TIMEOUT_MS = 8000;
@@ -54,16 +56,26 @@ const json = (status, body) => new Response(JSON.stringify(body), { status, head
 
 const digest = (/** @type {string} */ s) => createHash('sha256').update(s).digest();
 
-/** Basic auth: any user name, the password must equal RESCHEDULE_PASSWORD. @param {Request} request @param {string} password */
-export function authorized(request, password) {
-  const h = request.headers.get('authorization') ?? '';
-  const m = /^Basic\s+([A-Za-z0-9+/=]+)$/i.exec(h);
+export const COOKIE = 'ff_rs';
+const COOKIE_DAYS = 365;
+const key = (/** @type {string} */ password) => digest(`ff-reschedule:${password}`);
+const sign = (/** @type {string} */ password, /** @type {string} */ exp) => createHmac('sha256', key(password)).update(exp).digest('hex');
+
+/** True when the password matches RESCHEDULE_PASSWORD (constant time). @param {unknown} given @param {string} password */
+export const passwordMatches = (given, password) => typeof given === 'string' && given.length <= 200 && timingSafeEqual(digest(given), digest(password));
+
+/** The Set-Cookie value that keeps this browser signed in. @param {string} password @param {number} nowMs */
+export function loginCookie(password, nowMs) {
+  const exp = String(Math.floor(nowMs / 1000) + COOKIE_DAYS * 86400);
+  return `${COOKIE}=${exp}.${sign(password, exp)}; Max-Age=${COOKIE_DAYS * 86400}; Path=/reschedule/; HttpOnly; Secure; SameSite=Strict`;
+}
+
+/** Whether the request carries a valid, unexpired sign-in cookie. @param {Request} request @param {string} password @param {number} nowMs */
+export function signedIn(request, password, nowMs) {
+  const m = new RegExp(`(?:^|;\\s*)${COOKIE}=(\\d+)\\.([a-f0-9]{64})(?:;|$)`).exec(request.headers.get('cookie') ?? '');
   if (!m) return false;
-  let decoded = '';
-  try { decoded = Buffer.from(m[1], 'base64').toString('utf8'); } catch { return false; }
-  const i = decoded.indexOf(':');
-  if (i < 0) return false;
-  return timingSafeEqual(digest(decoded.slice(i + 1)), digest(password));
+  if (Number(m[1]) * 1000 < nowMs) return false;
+  return timingSafeEqual(Buffer.from(m[2], 'hex'), Buffer.from(sign(password, m[1]), 'hex'));
 }
 
 /** "1 day and 8 hours" @param {number} total hours */
@@ -191,21 +203,18 @@ const FAIL_MESSAGES = {
 /**
  * @param {Request} request
  * @param {Record<string, string | undefined>} env
- * @param {{ fetchImpl?: typeof fetch, now?: () => Date }} [deps]
+ * @param {{ fetchImpl?: typeof fetch, now?: () => Date, loginDelayMs?: number }} [deps]
  */
 export async function handleReschedule(request, env, deps = {}) {
   const password = env.RESCHEDULE_PASSWORD ?? '';
   // Without a configured password the page doesn't exist.
   if (password.length < 8) return new Response('Not found', { status: 404, headers: HEADERS });
-  if (!authorized(request, password)) {
-    return new Response('Authentication required', { status: 401, headers: { ...HEADERS, 'www-authenticate': 'Basic realm="Funeral Funds Reschedule", charset="UTF-8"' } });
-  }
   const production = env.VERCEL_ENV === 'production';
+  const nowMs = (deps.now ? deps.now() : new Date()).getTime();
+  const isIn = signedIn(request, password, nowMs);
   if (request.method === 'GET' || request.method === 'HEAD') {
-    return new Response(request.method === 'HEAD' ? null : renderReschedulePage({ preview: !production }), {
-      status: 200,
-      headers: { ...HEADERS, 'content-type': 'text/html; charset=utf-8' },
-    });
+    const html = isIn ? renderReschedulePage({ preview: !production }) : renderLoginPage();
+    return new Response(request.method === 'HEAD' ? null : html, { status: 200, headers: { ...HEADERS, 'content-type': 'text/html; charset=utf-8' } });
   }
   if (request.method !== 'POST') return json(405, { status: 'method-not-allowed' });
   // Same-origin form posts only.
@@ -214,6 +223,15 @@ export async function handleReschedule(request, env, deps = {}) {
   /** @type {any} */
   let body = null;
   try { body = await request.json(); } catch { return json(400, { status: 'invalid', errors: { form: 'The form could not be read. Try again.' } }); }
+  if (body?.action === 'login') {
+    if (!passwordMatches(body.password, password)) {
+      // Slows down guessing.
+      await new Promise((r) => setTimeout(r, deps.loginDelayMs ?? 1000));
+      return json(401, { status: 'wrong-password' });
+    }
+    return new Response(JSON.stringify({ status: 'signed-in' }), { status: 200, headers: { ...HEADERS, 'content-type': 'application/json; charset=utf-8', 'set-cookie': loginCookie(password, nowMs) } });
+  }
+  if (!isIn) return json(401, { status: 'login-required', message: 'You were signed out. Reload the page and enter the password.' });
   const parsed = parseSubmission(body);
   if (!parsed.ok) return json(400, { status: 'invalid', errors: parsed.errors });
   const now = deps.now ? deps.now() : new Date();

@@ -1753,9 +1753,11 @@ Prioritize the shortest reliable path to completing approved changes.
 - /reschedule/ is a private callback-scheduling form served only by the
   Vercel Function api/reschedule.js (vercel.json rewrite; code in
   server/reschedule/). It is not a static page: no sitemap, navigation,
-  llms.txt or search entry, noindex/nofollow. HTTP Basic password
-  `RESCHEDULE_PASSWORD` (server-only, 8+ characters; without it the URL is a
-  404). Production only: upsert by normalized phone with the number fields
+  llms.txt or search entry, noindex/nofollow. One-field password page, no
+  user name and no browser popup (Randy, November 2026): `RESCHEDULE_PASSWORD`
+  (server-only, 8+ characters; without it the URL is a 404) sets a signed
+  HttpOnly cookie `ff_rs` for a year on that browser; changing the password
+  signs every browser out. Production only: upsert by normalized phone with the number fields
   callback_delay_hours, callback_frequency_hours and callback_duration_days,
   then remove the contact from `CALLBACK_WORKFLOW_ID` (optional) and remove
   the tag, append the note, and add the tag "Callback Scheduled" last.
