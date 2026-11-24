@@ -52,6 +52,12 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </div>
 
     <section class="rc-card" aria-labelledby="rc-name">
+      <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="30" height="30"><path d={icons.save} /></svg>
+        <span>Save Randy's Info to Your Phone</span>
+      </a>
+      <p class="rc-save__help">After you tap it, choose <strong>Create New Contact</strong> or <strong>Save</strong>.</p>
+
       <picture class="rc-photo">
         <source type="image/avif" srcset={card.photo.avif} />
         <source type="image/webp" srcset={card.photo.webp} />
@@ -60,19 +66,14 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
       <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
       <p class="rc-title">{card.title}</p>
       <p class="rc-lic">{card.licensing}</p>
-      <a class="rc-phone" href={card.phone.href} data-card-action="call">{card.phone.display}</a>
-
-      <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d={icons.save} /></svg>
-        <span>Save My Contact Information</span>
-      </a>
 
       <ul class="rc-btns" role="list">
         {actions.map((a) => (
-          <li>
+          <li class:list={[{ 'rc-btns__wide': a.key === 'call' }]}>
             <a class="rc-btn" href={a.href} data-card-action={trackName[a.key]}>
               <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons[a.key]} /></svg>
               <span>{a.label}</span>
+              {a.key === 'call' && <span class="rc-btn__num">{card.phone.display}</span>}
             </a>
           </li>
         ))}
@@ -87,9 +88,15 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     </section>
 
     <section class="rc-qr" aria-labelledby="rc-qr-title">
-      <h2 class="rc-qr__title" id="rc-qr-title">Scan to Open This Card</h2>
+      <h2 class="rc-qr__title" id="rc-qr-title">Get Randy's Info on Another Phone</h2>
+      <ol class="rc-steps">
+        <li>Open the <strong>camera</strong> on the other phone.</li>
+        <li>Point it at the square code below. Hold still for a moment.</li>
+        <li>Tap the <strong>link</strong> that pops up on the screen.</li>
+        <li>Tap the orange <strong>Save Randy's Info to Your Phone</strong> button.</li>
+      </ol>
       <div class="rc-qr__code" role="img" aria-label={`QR code for ${card.url}`} set:html={qr} />
-      <p class="rc-qr__url">{card.url.replace(/^https:\/\//, '')}</p>
+      <p class="rc-qr__url">Or type this address: <strong>{card.url.replace(/^https:\/\//, '')}</strong></p>
     </section>
 
     <footer class="rc-foot">
@@ -180,22 +187,12 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     margin: 0.25rem 0 0;
     color: var(--color-text-muted);
   }
-  .rc-phone {
-    display: inline-block;
-    margin-top: 0.75rem;
-    font-size: 1.625rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    text-decoration: none;
-    min-height: var(--tap-target);
-  }
   .rc-save {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
-    margin-top: 1.25rem;
-    min-height: 4rem;
+    min-height: 4.5rem;
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     background: var(--color-cta);
@@ -212,7 +209,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     padding: 0;
     list-style: none;
   }
-  .rc-actions li:last-child:nth-child(odd) {
+  .rc-btns__wide {
     grid-column: 1 / -1;
   }
   .rc-btn {
@@ -246,6 +243,22 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+  }
+  .rc-save__help {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.0625rem;
+    color: var(--color-text-muted);
+  }
+  .rc-btn__num {
+    font-size: 1.375rem;
+  }
+  .rc-steps {
+    margin: 0 0 1rem;
+    padding-left: 1.75rem;
+    text-align: left;
+  }
+  .rc-steps li + li {
+    margin-top: 0.375rem;
   }
   .rc-status {
     min-height: 1.5em;
