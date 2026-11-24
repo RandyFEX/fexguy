@@ -38,13 +38,14 @@ export const FIELD_FREQUENCY = 'callback_frequency_hours';
 export const FIELD_DURATION = 'callback_duration_days';
 /** Allowed follow-up frequencies, in hours (labels shown on the form). */
 export const FREQUENCIES = /** @type {const} */ ([
+  { hours: 1, label: 'Every hour' },
   { hours: 2, label: 'Every 2 hours' },
   { hours: 3, label: 'Every 3 hours' },
   { hours: 24, label: 'Once a day' },
   { hours: 48, label: 'Every other day' },
 ]);
 export const DURATIONS = /** @type {const} */ ([7, 14, 30, 45, 60]);
-export const DEFAULTS = { days: 1, hours: 0, frequency: 3, duration: 30 };
+export const DEFAULTS = { days: 1, hours: 0, frequency: 3, duration: 7 };
 const MAX_DAYS = 365;
 const MAX_HOURS = 999;
 
