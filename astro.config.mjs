@@ -89,6 +89,8 @@ export default defineConfig({
           path !== '/free-quote/' &&
           path !== '/get-rates/' &&
           path !== '/help/' &&
+          // /randy/ is Randy's digital business card (noindex, direct link and QR only).
+          !path.startsWith('/randy/') &&
           path !== '/health-question-search-preview/' &&
           // V5.6 previews (not approved): the investigation draft and the calculator.
           path !== '/state-regulated-investigation-preview/' &&

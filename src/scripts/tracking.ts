@@ -215,6 +215,16 @@ document.addEventListener('click', (e) => {
   if (digits === lead.phone.digits || document.body.classList.contains('track-page-calls')) ga4('event', 'click_to_call');
 });
 
+// --- Digital business card /randy/ (GA4 only; Randy, November 2026) ----------
+// Only the action name is sent (call, text, email, website, share).
+
+document.addEventListener('click', (e) => {
+  const el = (e.target as Element | null)?.closest?.('[data-card-save], [data-card-action]');
+  if (!el) return;
+  if (el.hasAttribute('data-card-save')) ga4('event', 'card_save_contact');
+  else ga4('event', 'card_action', { card_action: el.getAttribute('data-card-action') ?? '' });
+});
+
 // --- Quote funnel (GA4 only; Randy, November 2026, Quote System v2.2) ---------
 // src/scripts/quote-funnel.ts dispatches `ff:funnel` events on window. Only
 // these event names and a step number or category label are sent, never a
