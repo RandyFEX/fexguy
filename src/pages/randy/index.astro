@@ -9,9 +9,6 @@
 // [data-card-action] tap sends `card_action` with its action name, and the
 // Save button sends `card_save_contact`. Taps on the website number also send
 // the site-wide click_to_call, as everywhere else.
-//
-// The quote button reads GET 3 RATES NOW, the site's required wording for
-// links to /free-quote/ (npm run verify rejects the retired "Get a Quote").
 import { renderSVG } from 'uqr';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
@@ -25,7 +22,6 @@ const icons = {
   text: 'M4 5h16v11H8l-4 4V5z',
   email: 'M3 6h18v12H3V6zm0 0l9 7 9-7',
   web: 'M12 3a9 9 0 100 18 9 9 0 000-18zm-9 9h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z',
-  quote: 'M9 4h6v3H9zM6 6h12v15H6zM9 12h6M9 16h4',
   share: 'M12 15V3m0 0L8 7m4-4l4 4M5 12v8h14v-8',
 };
 
@@ -34,9 +30,8 @@ const actions = [
   card.sms && { key: 'text', label: 'Text Me', href: card.sms.href },
   card.email && { key: 'email', label: 'Email Me', href: `mailto:${card.email}` },
   { key: 'web', label: 'Website', href: card.website.href },
-  { key: 'quote', label: 'GET 3 RATES NOW', href: card.quotePath },
 ].filter(Boolean) as { key: keyof typeof icons; label: string; href: string }[];
-const trackName: Record<string, string> = { call: 'call', text: 'text', email: 'email', web: 'website', quote: 'quote' };
+const trackName: Record<string, string> = { call: 'call', text: 'text', email: 'email', web: 'website' };
 ---
 
 <BaseLayout

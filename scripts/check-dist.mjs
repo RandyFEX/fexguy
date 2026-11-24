@@ -211,6 +211,8 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
     // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/,
     // and in the /free-quote/ "Direct Contact" line (Randy, November 2026, V3.3).
     if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html', 'free-quote/index.html', 'get-rates/index.html'].includes(file.slice(DIST.length))) continue;
+    // Randy's approved email (randy@funeralfunds.com) is allowed only on his digital card, /randy/ (Randy, November 2026).
+    if (label.endsWith('email address') && file.slice(DIST.length) === 'randy/index.html') continue;
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }

@@ -216,7 +216,7 @@ document.addEventListener('click', (e) => {
 });
 
 // --- Digital business card /randy/ (GA4 only; Randy, November 2026) ----------
-// Only the action name is sent (call, text, email, website, quote, share).
+// Only the action name is sent (call, text, email, website, share).
 
 document.addEventListener('click', (e) => {
   const el = (e.target as Element | null)?.closest?.('[data-card-save], [data-card-action]');
