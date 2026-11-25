@@ -1846,7 +1846,9 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   cleared) for the whole journey, repeatable: previews are test mode (no
   Agent CRM, no conversion) and its submissions (`previewJourney`) skip the
   per-IP and per-phone limits on previews only. Captions sit at 80% down
-  the frame (VTT cue setting `line:80%`, Randy, November 2026). Prices load independently: each price request
+  the frame (VTT cue setting `line:80%`, Randy, November 2026). On phones
+  (under 48rem) the video box is at most 75vw wide and 70dvh tall (9:16,
+  centered) so the cards show around it; desktop unchanged. Prices load independently: each price request
   has a 15 s limit and timeouts, network errors and 5xx answers are retried
   automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
   shows, and if every retry fails a message with Try Again (repeats only the
