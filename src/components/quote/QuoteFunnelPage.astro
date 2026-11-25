@@ -309,6 +309,7 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
     <!-- Video introduction over the results (Randy, November 2026; src/scripts/quote-intro.ts). -->
     {QUOTE_INTRO.mp4 && (
       <div class="qv" role="dialog" aria-modal="true" aria-label={QUOTE_INTRO.label} data-qv data-qv-id={QUOTE_INTRO.id} hidden>
+        <div class="qv__backdrop" aria-hidden="true"></div>
         <div class="qv__box">
           <video class="qv__video" playsinline preload="none" poster={QUOTE_INTRO.poster || undefined}>
             <source src={QUOTE_INTRO.mp4} type="video/mp4" />
@@ -357,9 +358,12 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
   /* v1.3: while the video overlay is open, only the price figures are blurred (presentation only). */
   .qf[data-video-veil] .qf-card__amount { filter: blur(4px); }
   /* Video introduction overlay (portrait 9:16). */
-  .qv { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: var(--space-3); background: rgba(255, 255, 255, 0.25); -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px); }
+  .qv { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: var(--space-3); }
+  /* The frosted layer is a sibling behind the video, never its ancestor: WebKit (iPhone, in-app
+     browsers) can fail to render or play a <video> inside an element with backdrop-filter. */
+  .qv__backdrop { position: absolute; inset: 0; background: rgba(255, 255, 255, 0.25); -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px); }
   .qv[hidden], .qv__play[hidden] { display: none; }
-  .qv__box { position: relative; width: min(100%, calc((100dvh - 2 * var(--space-3)) * 9 / 16)); aspect-ratio: 9 / 16; max-height: 100%; }
+  .qv__box { position: relative; z-index: 1; width: min(100%, calc((100dvh - 2 * var(--space-3)) * 9 / 16)); aspect-ratio: 9 / 16; max-height: 100%; }
   .qv__video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 0.75rem; }
   .qv__close { position: absolute; top: 0.5rem; right: 0.5rem; display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; padding: 0; border: 2px solid #fff; border-radius: 50%; background: #1f2926; color: #fff; cursor: pointer; }
   .qv__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-height: 3.5rem; padding: 0 var(--space-6); border: 0; border-radius: 0.5rem; background: var(--color-cta); color: var(--color-on-cta); font-size: 1.25rem; font-weight: 700; cursor: pointer; white-space: nowrap; }

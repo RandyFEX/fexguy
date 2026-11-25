@@ -1836,7 +1836,12 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the funnel root; presentation only, removed on every close: end, close
   button, Escape, failure). Light frosted backdrop (Randy, November 2026):
   rgba(255, 255, 255, 0.25) with backdrop-filter blur(1px) (plus
-  -webkit-backdrop-filter); price figures blurred 4px while it is open. Prices load independently: each price request
+  -webkit-backdrop-filter) on the separate `.qv__backdrop` layer behind the
+  video box, never on an ancestor of the <video> (on the dialog itself it
+  stopped the video on iPhone/WebKit); price figures blurred 4px while it
+  is open. Preview builds only: /free-quote/?preview=video opens the
+  results sample with the overlay on every load (Play With Sound starts it;
+  no lead, no Agent CRM, refused on Production). Prices load independently: each price request
   has a 15 s limit and timeouts, network errors and 5xx answers are retried
   automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
   shows, and if every retry fails a message with Try Again (repeats only the

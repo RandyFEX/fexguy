@@ -26,7 +26,7 @@ const START_LIMIT_MS = 12000;
 export function createIntro(root: HTMLElement, track: Track, visit: () => string, veil: (on: boolean) => void = () => {}) {
   const overlay = root.querySelector<HTMLElement>('[data-qv]');
   const video = overlay?.querySelector<HTMLVideoElement>('video');
-  if (!overlay || !video) return { prepare() {}, prime() {}, open(_after: () => void) {} };
+  if (!overlay || !video) return { prepare() {}, prime() {}, open(_after: () => void) {}, openPreview(_after: () => void) {} };
   const closeBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-close]')!;
   const playBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-play]')!;
   const videoId = overlay.dataset.qvId ?? '';
@@ -161,6 +161,22 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
       } catch {}
       request();
       closeBtn.focus({ preventScroll: true });
+    },
+    /** Preview builds only (?preview=video): open on every load, ignoring
+     *  once-per-session; Play With Sound starts it (a page load has no tap). */
+    openPreview(after: () => void) {
+      if (failed || isOpen) return;
+      afterClose = after;
+      isOpen = true;
+      started = false;
+      ended = false;
+      veil(true);
+      overlay.hidden = false;
+      document.documentElement.classList.add('qv-open');
+      document.addEventListener('keydown', onKey, true);
+      video.preload = 'auto';
+      playBtn.hidden = false;
+      playBtn.focus({ preventScroll: true });
     },
   };
 }

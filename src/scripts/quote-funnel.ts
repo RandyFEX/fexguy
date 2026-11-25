@@ -28,7 +28,9 @@ import { createIntro } from '@/scripts/quote-intro';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
-const preview = previewRequest() === 'results' ? startPreviewVisit() : null;
+// ?preview=video: the same sample, with the video overlay opened on every load.
+const previewKind = previewRequest();
+const preview = previewKind === 'results' || previewKind === 'video' ? startPreviewVisit() : null;
 
 // The session's traffic source (first landing, UTM, ad click) is kept for
 // /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
@@ -825,7 +827,9 @@ if (root) {
       const r = await previewSession(preview).catch(() => null);
       if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) {
         visitorName = String(r.body.firstName ?? '');
-        return unlock(r.body.quote as PriceQuote, true, r.body.expiresAt);
+        unlock(r.body.quote as PriceQuote, true, r.body.expiresAt);
+        if (previewKind === 'video') intro.openPreview(() => resultsTitle.focus({ preventScroll: true }));
+        return;
       }
     }
     const { http, body } = await api({ action: 'session' });
