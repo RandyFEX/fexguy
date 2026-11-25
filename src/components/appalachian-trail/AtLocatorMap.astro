@@ -1,0 +1,66 @@
+---
+// One destination's locator map: the shared base map (AtMapDefs) with the
+// destination marker, a leader line and a callout in the Atlantic, which sits
+// in the same place on every map. The marker uses the destination point;
+// where only a trailhead point exists the callout says so.
+import map from '@/data/appalachian-trail/at-map.json';
+import { project } from '@/data/appalachian-trail/projection.mjs';
+import type { AtPoint } from '@/data/appalachian-trail/guide';
+
+interface Props { name: string; state: string; point: AtPoint | null; compact?: boolean }
+const { name, state, point, compact = false } = Astro.props;
+const [vx, vy, vw, vh] = map.viewBox;
+const xy = point ? project(point.lon, point.lat) : null;
+// Callout box in the ocean, lower right (the same place on every map).
+const box = { x: vx + vw - 152, y: vy + vh - 126, w: 146, h: 0 };
+// Wrap the name into lines of about 19 characters.
+const words = name.split(' ');
+const lines: string[] = [];
+for (const wd of words) {
+  const last = lines[lines.length - 1];
+  if (last && (last + ' ' + wd).length <= 19) lines[lines.length - 1] = last + ' ' + wd;
+  else lines.push(wd);
+}
+const lh = 14;
+const isTrailhead = point?.role === 'trailhead';
+const coordLine = point ? `${point.lat.toFixed(4)}, ${point.lon.toFixed(4)}` : 'GPS not established';
+box.h = 14 + lines.length * lh + (compact ? 0 : 28);
+// Leader: from the marker to the callout's nearest edge point.
+const anchor = xy ? [box.x, Math.min(Math.max(xy[1], box.y + 10), box.y + box.h - 10)] : null;
+const label = point
+  ? `Map of the Appalachian Trail from Georgia to Maine, showing ${isTrailhead ? 'the trailhead for ' : ''}${name}, ${state}, at ${coordLine}.`
+  : `Map of the Appalachian Trail from Georgia to Maine. The location of ${name}, ${state}, is not established.`;
+---
+
+<svg class:list={['at-map', { 'at-map--compact': compact }]} viewBox={map.viewBox.join(' ')} role="img" aria-label={label}>
+  <use href="#at-map-base" />
+  {xy && anchor && (
+    <g>
+      <line x1={xy[0]} y1={xy[1]} x2={anchor[0]} y2={anchor[1]} stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+      <line x1={xy[0]} y1={xy[1]} x2={anchor[0]} y2={anchor[1]} stroke="#c2410c" stroke-width="2" stroke-linecap="round" stroke-dasharray={compact ? undefined : '0'} />
+      <circle cx={xy[0]} cy={xy[1]} r="11" fill="none" stroke="#c2410c" stroke-width="2" opacity="0.55" />
+      <circle cx={xy[0]} cy={xy[1]} r="6" fill="#c2410c" stroke="#ffffff" stroke-width="2.2" />
+    </g>
+  )}
+  <g>
+    <rect x={box.x} y={box.y} width={box.w} height={box.h} rx="6" fill="#173f35" stroke="#c2410c" stroke-width="2" />
+    {lines.map((ln, i) => (
+      <text x={box.x + 9} y={box.y + 18 + i * lh} font-size="12.5" font-weight="700" fill="#ffffff">{ln}</text>
+    ))}
+    {!compact && (
+      <>
+        <text x={box.x + 9} y={box.y + 22 + lines.length * lh} font-size="9" font-weight="700" fill="#ffeb3b">{isTrailhead ? 'TRAILHEAD (no destination point)' : point ? 'DESTINATION' : ''}</text>
+        <text x={box.x + 9} y={box.y + 34 + lines.length * lh} font-size="9.5" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">{coordLine}</text>
+      </>
+    )}
+  </g>
+</svg>
+
+<style>
+  .at-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+  }
+</style>

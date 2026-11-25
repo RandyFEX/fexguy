@@ -1,0 +1,16 @@
+{
+  "checked": "2026-11-24",
+  "note": "Hero photograph only. Destination photographs were replaced by locator maps (Randy, November 2026).",
+  "hero": {
+    "src": "/images/appalachian-trail/tennessee/kuwohi-sunset-hero.jpg",
+    "srcWebp": "/images/appalachian-trail/tennessee/kuwohi-sunset-hero.webp",
+    "alt": "Sunset over layered blue ridges of the Great Smoky Mountains, seen from the Kuwohi observation tower",
+    "caption": "Sunset from the Kuwohi Observation Tower, Great Smoky Mountains National Park",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2845f95e-1dd8-b71c-072b-8d90f8c9136b",
+    "license": {
+      "name": "Public domain"
+    }
+  },
+  "photos": {}
+}

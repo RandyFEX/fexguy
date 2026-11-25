@@ -1,0 +1,1238 @@
+{
+ "note": "Follow-up research, November 24, 2026. Each value carries its source and evidence label. Built from the reviewed research outputs; see the completion report. November 25, 2026: the Maryland DNR statement could not be verified on an official page, so the three Maryland state park destinations were set to UNCONFIRMED (Randy).",
+ "destinations": {
+  "te-kuwohi-formerly-clingmans-dome": {
+   "distance": {
+    "miles": 1.0,
+    "source": "NPS, Hike to Kuwohi: one mile round trip on a steep, paved path",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "elevationGainFt": {
+    "value": 337,
+    "source": "Gatlinburg.com and explore.com; NPS publishes no figure",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "Park at the end of Kuwohi Road. A Smokies parking tag is required to park more than 15 minutes ($5 daily, $15 weekly, $40 annual). Kuwohi Road is closed in winter (2026 season April 1 to November 29). NPS warns of crowding and limited parking.",
+    "source": "NPS, Hike to Kuwohi and Great Smoky Mountains fees",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Great Smoky Mountains trail map (PDF)",
+     "url": "https://www.nps.gov/grsm/planyourvisit/upload/GRSM_Trail_Map.pdf"
+    },
+    {
+     "label": "NPS Great Smoky Mountains park map (PDF)",
+     "url": "https://www.nps.gov/grsm/planyourvisit/upload/grsmmap_2024_reduced_508.pdf"
+    },
+    {
+     "label": "NPS Great Smoky Mountains maps page",
+     "url": "https://www.nps.gov/grsm/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Kuwohi parking area",
+    "lat": 35.556209,
+    "lon": -83.495269,
+    "source": "Official NPS coordinates",
+    "osm": null
+   },
+   "destination": {
+    "label": "Kuwohi observation tower",
+    "lat": 35.5629244,
+    "lon": -83.49839,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/1788524143"
+   }
+  },
+  "te-charlies-bunion": {
+   "elevationGainFt": {
+    "value": 1640,
+    "source": "Tennessee state trail sheet for Charlies Bunion (8.1 mi round trip)",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "difficulty": {
+    "text": "Strenuous",
+    "source": "Tennessee state trail sheet",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "parking": {
+    "text": "Newfound Gap Overlook on US 441; the trail starts at the end of the parking area, left of the overlook. Expect a full lot. A Smokies parking tag is required to park more than 15 minutes.",
+    "source": "NPS, Charlies Bunion via the Appalachian Trail",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Great Smoky Mountains trail map (PDF)",
+     "url": "https://www.nps.gov/grsm/planyourvisit/upload/GRSM_Trail_Map.pdf"
+    },
+    {
+     "label": "NPS Great Smoky Mountains maps page",
+     "url": "https://www.nps.gov/grsm/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Newfound Gap parking area",
+    "lat": 35.6105694,
+    "lon": -83.425963,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/167457735"
+   },
+   "destination": {
+    "label": "Charlies Bunion",
+    "lat": 35.637494,
+    "lon": -83.3765511,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/12156857529"
+   }
+  },
+  "vi-blackrock-shenandoah": {
+   "distance": {
+    "miles": 1.0,
+    "source": "NPS, Blackrock Summit",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "elevationGainFt": {
+    "value": 175,
+    "source": "NPS, Blackrock Summit",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "time": {
+    "text": "45 minutes",
+    "source": "NPS, Blackrock Summit",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "difficulty": {
+    "text": "Easiest",
+    "source": "NPS, Blackrock Summit",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "parking": {
+    "text": "Blackrock parking area, Skyline Drive mile 84.4. A Shenandoah entrance pass is required (the park does not accept cash).",
+    "source": "NPS, Blackrock Summit and Shenandoah fees",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Shenandoah Loft Mountain Area trail map, includes Blackrock Summit Hike (PDF)",
+     "url": "https://www.nps.gov/shen/planyourvisit/upload/2025_LoftMountain_RoadTrail_508.pdf"
+    },
+    {
+     "label": "NPS Shenandoah maps page",
+     "url": "https://www.nps.gov/shen/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Blackrock Summit parking (mile 84.4)",
+    "lat": 38.2229309,
+    "lon": -78.733308,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/195876730"
+   },
+   "destination": {
+    "label": "Blackrock summit",
+    "lat": 38.2199947,
+    "lon": -78.7402524,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/356581730"
+   }
+  },
+  "vi-compton-peak-shenandoah": {
+   "distance": {
+    "miles": 2.4,
+    "source": "NPS, Compton Peak",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "elevationGainFt": {
+    "value": 855,
+    "source": "NPS, Compton Peak",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "time": {
+    "text": "1 hour 45 minutes",
+    "source": "NPS, Compton Peak",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "difficulty": {
+    "text": "Moderate",
+    "source": "NPS, Compton Peak",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "parking": {
+    "text": "Compton Gap parking area, Skyline Drive mile 10.4; cross Skyline Drive to the A.T. concrete marker. A Shenandoah entrance pass is required.",
+    "source": "NPS, Compton Peak and Shenandoah fees",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Shenandoah Compton Gap Area trail map (PDF)",
+     "url": "https://www.nps.gov/shen/planyourvisit/upload/ComptonGap_RoadTrail.pdf"
+    },
+    {
+     "label": "NPS Shenandoah maps page",
+     "url": "https://www.nps.gov/shen/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Compton Gap parking (mile 10.4)",
+    "lat": 38.8238843,
+    "lon": -78.1704555,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/245740931"
+   },
+   "destination": {
+    "label": "Compton Peak summit",
+    "lat": 38.8191028,
+    "lon": -78.1751331,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/356560966"
+   }
+  },
+  "vi-bear-den-mountain-shenandoah": {
+   "elevationGainFt": {
+    "value": 353,
+    "source": "SummitPost, one way from Beagle Gap; no official figure",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "Beagle Gap on Skyline Drive: NPS describes a small parking lot with portable toilets and access to the Appalachian Trail. A Shenandoah entrance pass is required.",
+    "source": "NPS, Beagle Gap and Shenandoah fees",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Shenandoah maps page (no area map covers Beagle Gap; Riprap Area map ends near mile 94)",
+     "url": "https://www.nps.gov/shen/planyourvisit/maps.htm"
+    },
+    {
+     "label": "NPS Shenandoah park brochure and map",
+     "url": "https://www.nps.gov/shen/park-brochure.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Beagle Gap parking (Skyline Drive mile 99.3)",
+    "lat": 38.0730648,
+    "lon": -78.7930741,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1068864771"
+   },
+   "destination": {
+    "label": "Bear Den Mountain summit",
+    "lat": 38.0666226,
+    "lon": -78.798624,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/356560028"
+   }
+  },
+  "vi-thunder-ridge-overlook-blue-ridge-parkway": {
+   "distance": {
+    "miles": 0.1,
+    "source": "NPS, Thunder Ridge: a 0.1 mile leg stretcher loop",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "difficulty": {
+    "text": "Easy",
+    "source": "NPS, Blue Ridge Parkway Virginia trails",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "parking": {
+    "text": "Small overlook lot at milepost 74 with a single entrance and exit; NPS says longer RVs, buses and vehicles pulling trailers should not use it. The Parkway can close, especially November to March.",
+    "source": "NPS, Thunder Ridge",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Blue Ridge Parkway maps page",
+     "url": "https://www.nps.gov/blri/planyourvisit/maps.htm"
+    },
+    {
+     "label": "NPS cartography, Blue Ridge Parkway maps",
+     "url": "https://www.nps.gov/carto/app/#!/maps/alphacode/BLRI"
+    }
+   ],
+   "trailhead": {
+    "label": "Thunder Ridge Overlook parking",
+    "lat": 37.5398417,
+    "lon": -79.4902961,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/992568968"
+   },
+   "destination": {
+    "label": "Thunder Ridge Overlook",
+    "lat": 37.5404089,
+    "lon": -79.4904633,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/5754594053"
+   }
+  },
+  "we-harpers-ferry-lower-town-and-the-point": {
+   "time": {
+    "text": "30 minutes to 1 hour each way on the Visitor Center to Lower Town Trail",
+    "source": "NPS, Visitor Center to Lower Town Trail",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "difficulty": {
+    "text": "Moderate",
+    "source": "NPS, Visitor Center to Lower Town Trail: moderate due to one steep section",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "parking": {
+    "text": "NPS recommends the Visitor Center lot at 171 Shoreline Drive (1,000 spaces) and the shuttle bus to Lower Town; Lower Town parking is extremely limited. The park entrance fee ($20 per vehicle, 3 days) covers parking.",
+    "source": "NPS, Harpers Ferry parking",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Harpers Ferry Visitor Center to Lower Town trail map (PDF)",
+     "url": "https://www.nps.gov/hafe/planyourvisit/upload/Visitor-Center-to-Lower-Town-trail-map.pdf"
+    },
+    {
+     "label": "NPS Harpers Ferry Camp Hill and Virginius Island trail map (PDF)",
+     "url": "https://www.nps.gov/hafe/planyourvisit/upload/Camp-Hill-Virginius-Island-trail-map.pdf"
+    },
+    {
+     "label": "NPS Harpers Ferry maps page",
+     "url": "https://www.nps.gov/hafe/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Harpers Ferry NHP visitor center parking",
+    "lat": 39.3166667,
+    "lon": -77.7563889,
+    "source": "Official NPS coordinates (Harpers Ferry directions page: Visitor Center lot)",
+    "osm": null
+   },
+   "destination": {
+    "label": "Harpers Ferry Lower Town",
+    "lat": 39.3231565,
+    "lon": -77.7302705,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/158486228"
+   }
+  },
+  "ma-katahdin-via-the-hunt-trail": {
+   "time": {
+    "text": "8 to 12 hours round trip on average",
+    "source": "Baxter State Park, general information",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "parking": {
+    "text": "Day hikers need a Katahdin Trailhead Pass ($10 per vehicle) reserving a space at Katahdin Stream; reservations often fill months ahead. Non-residents pay a park entrance fee. Dogs are not allowed in the park.",
+    "source": "Baxter State Park reservation and general information",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "Baxter State Park day hikes page",
+     "url": "https://baxterstatepark.org/day-hikes/"
+    },
+    {
+     "label": "Baxter State Park general info",
+     "url": "https://baxterstatepark.org/general-info/"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Baxter State Park publishes no rule on scattering ashes. Call Park Headquarters before any ceremony.",
+    "contact": "Baxter State Park Headquarters, Millinocket: (207) 723-5140",
+    "sourceLinks": [
+     {
+      "url": "https://baxterstatepark.org/rules-and-permits",
+      "label": "Baxter State Park: Rules and Permits"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Katahdin Stream Campground",
+    "lat": 45.8871166,
+    "lon": -68.9988205,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1104853913"
+   },
+   "destination": {
+    "label": "Katahdin summit (Baxter Peak)",
+    "lat": 45.9043602,
+    "lon": -68.9212786,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358211478"
+   }
+  },
+  "ma-little-and-big-niagara-falls": {
+   "elevationGainFt": {
+    "value": 150,
+    "source": "Maine Trail Finder; no Baxter figure",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "The trail starts at Daicey Pond Campground, off the Park Tote Road; use the day-use parking there. Non-residents pay a park entrance fee. Dogs are not allowed in the park.",
+    "source": "Maine Trail Finder and Baxter State Park fees",
+    "evidence": "SECONDARY and OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "Baxter State Park day hikes page",
+     "url": "https://baxterstatepark.org/day-hikes/"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Baxter State Park publishes no rule on scattering ashes, and the falls are on Nesowadnehunk Stream. Call Park Headquarters before any ceremony.",
+    "contact": "Baxter State Park Headquarters, Millinocket: (207) 723-5140",
+    "sourceLinks": [
+     {
+      "url": "https://baxterstatepark.org/rules-and-permits",
+      "label": "Baxter State Park: Rules and Permits"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Daicey Pond Campground",
+    "lat": 45.8814957,
+    "lon": -69.0298887,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/2079361229"
+   },
+   "destination": {
+    "label": "Big Niagara Falls",
+    "lat": 45.8693463,
+    "lon": -69.0374746,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/2474672536"
+   }
+  },
+  "ne-franconia-ridge": {
+   "time": {
+    "text": "All day (NH State Parks); hiking guides give 5 to 8 hours",
+    "source": "NH State Parks blog and hiking guides",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "parking": {
+    "text": "Lafayette Place trailhead parking off the Franconia Notch Parkway (I-93), with a second lot across the parkway. Parking on the parkway shoulder is illegal.",
+    "source": "Hiking guides",
+    "evidence": "SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Neither the Forest Service nor New Hampshire State Parks publishes a rule. The alpine plants on the ridge are fragile; call the district office and the state park before any ceremony.",
+    "contact": "White Mountain National Forest, Pemigewasset Ranger District: (603) 536-6100",
+    "sourceLinks": [
+     {
+      "url": "https://fs.usda.gov/r09/whitemountain/offices",
+      "label": "Forest Service: White Mountain Offices"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Lafayette Place parking (east)",
+    "lat": 44.1420009,
+    "lon": -71.6814766,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/37656319"
+   },
+   "destination": {
+    "label": "Mount Lafayette summit",
+    "lat": 44.1607104,
+    "lon": -71.6443751,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/357730240"
+   }
+  },
+  "vi-mcafee-knob": {
+   "time": {
+    "text": "Four to six hours",
+    "source": "Roanoke County, McAfee Knob page",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "parking": {
+    "text": "The VA 311 trailhead lot is small; parking on Route 311 is not allowed and is towed, and there is no overnight parking. Roanoke County runs a weekend trailhead shuttle from the I-81 Park and Ride ($6 one way, $11 round trip; book ahead).",
+    "source": "Roanoke County, McAfee Knob and trailhead shuttle pages",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Who owns the summit is not established. If it is National Park Service Appalachian Trail land, the park rule allows scattering without a permit only at least 100 yards from any trail, road, facility, historic site or water, which the narrow rocky summit cannot meet. Ask the Appalachian Trail Park Office first.",
+    "contact": "Appalachian Trail Park Office (NPS), Harpers Ferry: 304 535-6278",
+    "sourceLinks": [
+     {
+      "url": "https://www.nps.gov/appa/learn/management/compendium.htm",
+      "label": "NPS: Appalachian Trail Superintendent's Compendium"
+     },
+     {
+      "url": "https://www.nps.gov/appa/learn/management/compendium.htm",
+      "label": "NPS: Appalachian Trail Superintendent's Compendium"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "McAfee Knob trailhead parking (VA 311)",
+    "lat": 37.3803365,
+    "lon": -80.0902439,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/218368576"
+   },
+   "destination": {
+    "label": "McAfee Knob",
+    "lat": 37.392673,
+    "lon": -80.0368156,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/356573174"
+   }
+  },
+  "ge-springer-mountain": {
+   "elevationGainFt": {
+    "value": 374,
+    "source": "Komoot route from the FS Road 42 lot; no official figure",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "Springer Mountain Trailhead on Forest Service Road 42 (gravel). The Forest Service lists it as open all year and free. The lot holds about 20 cars, is often full on weekends, and has a 14-day limit.",
+    "source": "USDA Forest Service and Georgia Appalachian Trail Club",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "mapLinks": [
+    {
+     "label": "USDA Forest Service, Springer Mountain Trailhead",
+     "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/springer-mountain-trailhead"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Chattahoochee-Oconee National Forest, Blue Ridge Ranger District, Blairsville: 706-745-6928",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/about-area/faqs",
+      "label": "Forest Service: Chattahoochee-Oconee FAQ"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Springer Mountain trailhead parking (FS Road 42)",
+    "lat": 34.6375458,
+    "lon": -84.1950608,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/364677487"
+   },
+   "destination": {
+    "label": "Springer Mountain summit",
+    "lat": 34.6266473,
+    "lon": -84.1935269,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358771759"
+   }
+  },
+  "ge-blood-mountain-via-byron-reece-trail": {
+   "time": {
+    "text": "2 to 4 hours round trip",
+    "source": "Hiking guides (atlantatrails.com, hikethesouth.com); no official time",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "Byron Reece trailhead lot near Neel Gap on US 19/129: free but limited, and it fills quickly on weekends and in fall. Vehicles outside designated spaces are ticketed.",
+    "source": "Hiking guides",
+    "evidence": "SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Chattahoochee-Oconee National Forest, Blue Ridge Ranger District, Blairsville: 706-745-6928",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/about-area/faqs",
+      "label": "Forest Service: Chattahoochee-Oconee FAQ"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Byron Herbert Reece trailhead parking",
+    "lat": 34.7419965,
+    "lon": -83.9227173,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/391486722"
+   },
+   "destination": {
+    "label": "Blood Mountain summit",
+    "lat": 34.7397072,
+    "lon": -83.9370174,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358711470"
+   }
+  },
+  "no-lover-s-leap-hot-springs": {
+   "time": {
+    "text": "About one hour one way on the Lover's Leap Loop Trail",
+    "source": "USDA Forest Service, Lover's Leap Loop Trail",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "difficulty": {
+    "text": "Difficult",
+    "source": "USDA Forest Service, Lover's Leap Loop Trail (ATC rates the hike Moderate)",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "parking": {
+    "text": "The Forest Service lists the Silvermine trailhead parking area, off US 25/70 just before the French Broad River bridge. The ATC route starts at the Hot Springs visitor center, with street parking in town.",
+    "source": "USDA Forest Service and ATC",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "USDA Forest Service, Lover's Leap Loop Trail",
+     "url": "https://fs.usda.gov/r08/northcarolina/recreation/trails/lovers-leap-loop-trail"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Pisgah National Forest, Appalachian Ranger District: (828) 682-6146",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/northcarolina/permits/events-commercial-permits",
+      "label": "Forest Service: North Carolina Event Permits"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Silvermine trailhead parking",
+    "lat": 35.8925494,
+    "lon": -82.8184028,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/395178949"
+   },
+   "destination": {
+    "label": "Lover's Leap overlook",
+    "lat": 35.8910176,
+    "lon": -82.8193879,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/6558318792"
+   }
+  },
+  "no-max-patch": {
+   "elevationGainFt": {
+    "value": 430,
+    "source": "Explore Asheville; no official figure",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "No restrooms. If the main lot is full, a larger Forest Service lot is 0.5 mile farther up Max Patch Road; do not park on the road. Camping and fire restrictions are in place through June 21, 2029.",
+    "source": "USDA Forest Service and ATC",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "USDA Forest Service, Max Patch",
+     "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/max-patch"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Pisgah National Forest, Appalachian Ranger District: (828) 682-6146",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/northcarolina/permits/events-commercial-permits",
+      "label": "Forest Service: North Carolina Event Permits"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Max Patch parking area",
+    "lat": 35.7963731,
+    "lon": -82.9626351,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/501397900"
+   },
+   "destination": {
+    "label": "Max Patch bald",
+    "lat": 35.7966773,
+    "lon": -82.9606689,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1211351169"
+   }
+  },
+  "ve-thundering-falls": {
+   "difficulty": {
+    "text": "Easy",
+    "source": "Vermont Trailfinder; ATC describes it as universally accessible",
+    "evidence": "SECONDARY"
+   },
+   "parking": {
+    "text": "Packed dirt lot off River Road in Killington, about 1.6 miles north of the VT 100 and US 4 junction; the accessible trail starts beside it. ATC says the lot has no designated accessible spaces; the Forest Service describes accessible parking.",
+    "source": "USDA Forest Service and ATC",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "USDA Forest Service, Thundering Falls (Green Mountain NF)",
+     "url": "https://www.fs.usda.gov/r09/gmfl/recreation/thundering-falls"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Green Mountain National Forest, Rochester Ranger Station: (802) 767-4261",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r09/gmfl/recreation/thundering-falls",
+      "label": "Forest Service: Thundering Falls"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Thundering Falls trailhead (River Road)",
+    "lat": 43.6805051,
+    "lon": -72.7822183,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/8307448888"
+   },
+   "destination": {
+    "label": "Thundering Falls",
+    "lat": 43.6806235,
+    "lon": -72.7864133,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/8307448892"
+   }
+  },
+  "we-jefferson-rock-harpers-ferry": {
+   "parking": {
+    "text": "NPS recommends the Visitor Center lot at 171 Shoreline Drive (1,000 spaces) and the shuttle bus to Lower Town; Lower Town parking is extremely limited. The park entrance fee ($20 per vehicle, 3 days) covers parking.",
+    "source": "NPS, Harpers Ferry parking",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NPS Harpers Ferry Camp Hill and Virginius Island trail map (PDF)",
+     "url": "https://www.nps.gov/hafe/planyourvisit/upload/Camp-Hill-Virginius-Island-trail-map.pdf"
+    },
+    {
+     "label": "NPS Harpers Ferry maps page",
+     "url": "https://www.nps.gov/hafe/planyourvisit/maps.htm"
+    }
+   ],
+   "trailhead": {
+    "label": "Harpers Ferry NHP visitor center parking",
+    "lat": 39.3166667,
+    "lon": -77.7563889,
+    "source": "Official NPS coordinates (Harpers Ferry directions page: Visitor Center lot)",
+    "osm": null
+   },
+   "destination": {
+    "label": "Jefferson Rock",
+    "lat": 39.322636,
+    "lon": -77.7333132,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/424624361"
+   }
+  },
+  "ne-sunfish-pond": {
+   "parking": {
+    "text": "Dunnfield Creek trailhead lot off I-80; NPS says it fills quickly on summer weekends. Restroom at the trailhead.",
+    "source": "NPS, Dunnfield Creek Trail",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "NJ DEP Worthington State Forest trail map (PDF)",
+     "url": "https://www.nj.gov/dep/parksandforests/parks/maps/Worthington_TrailMap_reduced.pdf"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published rule. The pond is water and a protected natural area; ask the state forest office before any ceremony.",
+    "contact": "Worthington State Forest office: 908-841-9575",
+    "sourceLinks": [
+     {
+      "url": "https://www.nj.gov/dep/parksandforests/parks/worthingtonstateforest.html",
+      "label": "NJ State Parks: Worthington State Forest"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Dunnfield Creek parking area",
+    "lat": 40.9719366,
+    "lon": -75.1257962,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/7569621017"
+   },
+   "destination": {
+    "label": "Sunfish Pond",
+    "lat": 41.0032878,
+    "lon": -75.0731097,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/41775938"
+   }
+  },
+  "vi-grayson-highlands-and-rhododendron-gap": {
+   "parking": {
+    "text": "A Virginia State Parks parking fee is charged for each day a vehicle is parked. Massie Gap parking is limited and set aside for overnight backpackers; day hikers use the park's other lots. Overnight parking needs a reservation.",
+    "source": "Virginia DCR and ATC",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "Virginia DCR Grayson Highlands trail guide (PDF)",
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-graysonhighlands.pdf"
+    },
+    {
+     "label": "Virginia DCR Grayson Highlands State Park page",
+     "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Neither Virginia State Parks nor the Jefferson National Forest publishes a rule. Treat this as a place to remember, not to scatter, unless the park office or the Mount Rogers National Recreation Area office confirms it.",
+    "contact": null,
+    "sourceLinks": [],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Massie Gap parking",
+    "lat": 36.6331543,
+    "lon": -81.507695,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/827953536"
+   }
+  },
+  "te-laurel-fork-gorge-and-falls": {
+   "parking": {
+    "text": "The 5-mile hike starts from the Forest Service gravel lot on US 321 on the east side of Hampton. A second, small lot is on Dennis Cove Road where the A.T. crosses. Overnight parking at the Hampton trailhead is not recommended.",
+    "source": "USDA Forest Service, Laurel Fork Falls Hike, and ATC",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "USDA Forest Service, Laurel Fork Falls Hike (Cherokee NF)",
+     "url": "https://fs.usda.gov/r08/cherokee/recreation/laurel-fork-falls-hike"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Cherokee National Forest, Watauga Ranger District: (423) 735-1500",
+    "sourceLinks": [
+     {
+      "url": "https://fs.usda.gov/r08/cherokee/recreation/laurel-fork-falls-hike",
+      "label": "Forest Service: Laurel Fork Falls Hike"
+     }
+    ],
+    "evidence": "none found",
+    "landManager": "Cherokee National Forest, Watauga Ranger District"
+   },
+   "destination": {
+    "label": "Laurel Falls (Laurel Fork)",
+    "lat": 36.272754,
+    "lon": -82.134928,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/549908998"
+   }
+  },
+  "te-round-bald-and-jane-bald-from-carvers-gap": {
+   "parking": {
+    "text": "Free parking at Carvers Gap on the Tennessee and North Carolina line (TN 143 / NC 261). The lot fills quickly on weekends.",
+    "source": "ATC and news reports",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "The land manager is not established (Cherokee or Pisgah National Forest), and neither forest publishes a rule. Treat this as a place to remember, not to scatter. Leave no marker, urn or memorial on the fragile balds.",
+    "contact": null,
+    "sourceLinks": [],
+    "evidence": "none found",
+    "landManager": "Not established (Cherokee or Pisgah National Forest)"
+   },
+   "trailhead": {
+    "label": "Carvers Gap parking",
+    "lat": 36.1063168,
+    "lon": -82.1110623,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/120030108"
+   },
+   "destination": {
+    "label": "Jane Bald summit",
+    "lat": 36.1060067,
+    "lon": -82.09335,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/356773754"
+   }
+  },
+  "ne-pochuck-boardwalk": {
+   "parking": {
+    "text": "Curbside parking with a small dirt pull-off on NJ 517 just south of the trail crossing; park only where signs allow. Nearby residential streets are permit-only.",
+    "source": "ATC and NY-NJ Trail Conference",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "Who owns the land is not established, and no rule is published. The boardwalk crosses wetlands and Pochuck Creek, so even the Appalachian Trail park rule (100 yards from trails and water) could not be met on or near it.",
+    "contact": "Appalachian Trail Park Office (NPS), if the land is NPS: 304 535-6278",
+    "sourceLinks": [
+     {
+      "url": "https://www.nps.gov/appa/learn/management/compendium.htm",
+      "label": "NPS: Appalachian Trail Superintendent's Compendium"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "County Route 517 roadside parking",
+    "lat": 41.2349949,
+    "lon": -74.4807576,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1259560141"
+   },
+   "destination": {
+    "label": "Pochuck Boardwalk",
+    "lat": 41.2360342,
+    "lon": -74.4735293,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/339351951"
+   }
+  },
+  "ne-bear-mountain-summit-perkins-memorial-drive": {
+   "parking": {
+    "text": "Large paved summit lot along Perkins Memorial Drive with accessible spaces. The drive and tower are open April 1 to November 30, weather permitting. Bear Mountain State Park charges a $10 vehicle fee.",
+    "source": "ATC and NY State Parks",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "NY State Parks Bear Mountain recreation map and general information (PDF)",
+     "url": "https://www.parks.ny.gov/documents/parks/BearMountainBearMountainRecreationMapGeneralInformation.pdf"
+    }
+   ],
+   "trailhead": {
+    "label": "Bear Mountain summit parking",
+    "lat": 41.3115649,
+    "lon": -74.0073102,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1499430876"
+   },
+   "destination": {
+    "label": "Bear Mountain summit",
+    "lat": 41.3129068,
+    "lon": -74.0061627,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/357595849"
+   }
+  },
+  "ma-mount-greylock-summit": {
+   "parking": {
+    "text": "Summit parking is limited and a fee is charged. Visitor Center parking is free. Vehicles over 22 feet are not allowed on the auto roads.",
+    "source": "Massachusetts DCR, Mount Greylock State Reservation",
+    "evidence": "OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "Mass DCR Mount Greylock State Reservation trail map (download)",
+     "url": "https://www.mass.gov/doc/mount-greylock-state-reservation/download"
+    },
+    {
+     "label": "Mass DCR Mount Greylock hiking trail mileages (download)",
+     "url": "https://www.mass.gov/doc/hiking-trail-mileages-mount-greylock-state-reservation/download"
+    },
+    {
+     "label": "Mass DCR suggested day hikes (download)",
+     "url": "https://www.mass.gov/doc/mount-greylock-state-reservation-suggested-day-hikes/download"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published rule. Massachusetts DCR says a special use permit may be required for group visits and to call the park first. The summit War Memorial is a historic structure.",
+    "contact": "Mount Greylock State Reservation: (413) 499-4262",
+    "sourceLinks": [
+     {
+      "url": "https://www.mass.gov/location-details/visiting-mount-greylock-with-your-group",
+      "label": "Massachusetts DCR: Visiting Mount Greylock With Your Group"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Mount Greylock summit parking",
+    "lat": 42.6378526,
+    "lon": -73.1667166,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/225543322"
+   },
+   "destination": {
+    "label": "Mount Greylock summit",
+    "lat": 42.6372643,
+    "lon": -73.1659939,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358269595"
+   }
+  },
+  "ge-long-creek-falls-from-three-forks": {
+   "parking": {
+    "text": "Three Forks on Forest Road 58, a rough Forest Service road. Room for about a dozen cars; no facilities.",
+    "source": "ATC and hiking guides",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Chattahoochee-Oconee National Forest, Blue Ridge Ranger District, Blairsville: 706-745-6928",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/about-area/faqs",
+      "label": "Forest Service: Chattahoochee-Oconee FAQ"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Three Forks parking",
+    "lat": 34.6636506,
+    "lon": -84.1841056,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/154397236"
+   },
+   "destination": {
+    "label": "Long Creek Falls",
+    "lat": 34.667824,
+    "lon": -84.170829,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/556848430"
+   }
+  },
+  "no-wayah-bald-lookout-tower": {
+   "parking": {
+    "text": "Gravel Forest Service Road 69 runs about 4.5 miles from Wayah Gap to the parking area, with accessible vault toilets and a paved path to the tower. The road closes for part of the winter; dates vary.",
+    "source": "USDA Forest Service and hiking guides",
+    "evidence": "SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published Forest Service rule was found for this national forest, and some national forests elsewhere say scattering is not authorized. Treat this as a place to remember, not to scatter, unless the ranger district confirms it. Leave no marker, urn or memorial.",
+    "contact": "Nantahala National Forest, Nantahala Ranger District: 828-524-6441",
+    "sourceLinks": [
+     {
+      "url": "https://www.fs.usda.gov/r08/northcarolina/permits/events-commercial-permits",
+      "label": "Forest Service: North Carolina Event Permits"
+     }
+    ],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Wayah Bald parking",
+    "lat": 35.1780712,
+    "lon": -83.5627607,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/1531110989"
+   },
+   "destination": {
+    "label": "Wayah Bald Lookout Tower",
+    "lat": 35.1802689,
+    "lon": -83.5607042,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/789993754"
+   }
+  },
+  "pe-bake-oven-knob": {
+   "parking": {
+    "text": "Large dirt lot at the top of the ridge on Bake Oven Road (narrow gravel road); the trail starts behind the Game Commission signboard.",
+    "source": "Hiking guides",
+    "evidence": "SECONDARY"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published rule. State game lands rules prohibit many activities without the Game Commission director's written permission; ask the Game Commission before any ceremony. Wear blaze orange in hunting seasons.",
+    "contact": null,
+    "sourceLinks": [],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "Bake Oven Knob parking (Bake Oven Road)",
+    "lat": 40.7447258,
+    "lon": -75.7380387,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/40877219"
+   },
+   "destination": {
+    "label": "Bake Oven Knob summit",
+    "lat": 40.7485914,
+    "lon": -75.7337696,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/357275926"
+   }
+  },
+  "ne-high-point-monument": {
+   "parking": {
+    "text": "The A.T. trailhead lot is on NJ Route 23 at park headquarters. The park charges an entrance fee at the monument area from Memorial Day weekend to Labor Day.",
+    "source": "New Jersey State Parks and hiking guides",
+    "evidence": "OFFICIAL (via search summary) and SECONDARY"
+   },
+   "mapLinks": [
+    {
+     "label": "NJ DEP High Point State Park trail guide (PDF)",
+     "url": "https://nj.gov/dep/parksandforests/trailguides/docs/HighPoint.pdf"
+    },
+    {
+     "label": "NJ DEP High Point State Park page",
+     "url": "https://www.nj.gov/dep/parksandforests/parks/highpointstatepark.html"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No published rule from New Jersey State Parks. The monument is a historic structure; ask the park office before any ceremony.",
+    "contact": null,
+    "sourceLinks": [],
+    "evidence": "none found"
+   },
+   "trailhead": {
+    "label": "High Point State Park A.T. parking",
+    "lat": 41.3027884,
+    "lon": -74.6675141,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/203044156"
+   },
+   "destination": {
+    "label": "High Point Monument",
+    "lat": 41.320953,
+    "lon": -74.6616239,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/236342206"
+   }
+  },
+  "ma-weverton-cliffs": {
+   "parking": {
+    "text": "Free gravel park and ride lot at 1939 Weverton Road, Knoxville, Maryland; it fills quickly. Park only in designated areas.",
+    "source": "C&O Canal Trust and Maryland DNR",
+    "evidence": "SECONDARY and OFFICIAL (via search summary)"
+   },
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
+    "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
+    "sourceLinks": [
+     {
+      "url": "https://dnr.maryland.gov/publiclands/pages/western/southmountain.aspx",
+      "label": "Maryland DNR: South Mountain State Park"
+     },
+     {
+      "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
+      "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
+     }
+    ],
+    "evidence": "none found",
+    "remembranceOnly": true,
+    "alternative": "Below the cliffs, the A.T. follows the C&O Canal towpath at Weverton. C&O Canal National Historical Park allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.",
+    "landManager": "Maryland DNR, South Mountain State Park"
+   },
+   "trailhead": {
+    "label": "Weverton parking (Weverton Road)",
+    "lat": 39.3329542,
+    "lon": -77.6832674,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/168200763"
+   },
+   "destination": {
+    "label": "Weverton Cliffs overlook",
+    "lat": 39.3320185,
+    "lon": -77.676525,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358253104"
+   }
+  },
+  "ma-washington-monument-state-park": {
+   "parking": {
+    "text": "6620 Zittlestown Road, Middletown, Maryland; visitors park in the upper lot. Maryland DNR charges a small vehicle service fee.",
+    "source": "NPS place page and Maryland DNR",
+    "evidence": "OFFICIAL (fetched) and OFFICIAL (via search summary)"
+   },
+   "mapLinks": [
+    {
+     "label": "Maryland DNR South Mountain Recreation Area park guide (PDF)",
+     "url": "https://dnr.maryland.gov/publiclands/Documents/SMRA-Park-Guide.pdf"
+    },
+    {
+     "label": "Maryland DNR Washington Monument hiking page",
+     "url": "https://dnr.maryland.gov/publiclands/Pages/western/Washington/Hiking-Washington.aspx"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
+    "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
+    "sourceLinks": [
+     {
+      "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
+      "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
+     }
+    ],
+    "evidence": "none found",
+    "remembranceOnly": true,
+    "alternative": "Nearby C&O Canal National Historical Park (National Park Service) allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry National Historical Park also has three designated areas, with a special use permit."
+   },
+   "trailhead": {
+    "label": "Washington Monument State Park parking",
+    "lat": 39.4987052,
+    "lon": -77.6249971,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/416594261"
+   },
+   "destination": {
+    "label": "Washington Monument",
+    "lat": 39.5004351,
+    "lon": -77.6232019,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/4173438321"
+   }
+  },
+  "ma-gathland-state-park-at-crampton-gap": {
+   "parking": {
+    "text": "900 Arnoldstown Road, Jefferson, Maryland, with parking, an accessible restroom and drinking water.",
+    "source": "NPS, Gathland State Park",
+    "evidence": "OFFICIAL (fetched)"
+   },
+   "mapLinks": [
+    {
+     "label": "Maryland DNR South Mountain Recreation Area park guide (PDF)",
+     "url": "https://dnr.maryland.gov/publiclands/Documents/SMRA-Park-Guide.pdf"
+    },
+    {
+     "label": "Maryland DNR Gathland hiking page",
+     "url": "https://dnr.maryland.gov/publiclands/Pages/western/Gathland/Hiking-Gathland.aspx"
+    }
+   ],
+   "policy": {
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
+    "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
+    "sourceLinks": [
+     {
+      "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
+      "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
+     }
+    ],
+    "evidence": "none found",
+    "remembranceOnly": true,
+    "alternative": "Nearby C&O Canal National Historical Park (National Park Service) allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry National Historical Park also has three designated areas, with a special use permit."
+   },
+   "trailhead": {
+    "label": "Gathland State Park parking (Crampton Gap)",
+    "lat": 39.4046558,
+    "lon": -77.6402739,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "way/168200765"
+   },
+   "destination": {
+    "label": "War Correspondents Memorial Arch",
+    "lat": 39.4057516,
+    "lon": -77.6392615,
+    "source": "OpenStreetMap (mapped by Funeral Funds; not an official coordinate)",
+    "osm": "node/358240652"
+   }
+  }
+ }
+}

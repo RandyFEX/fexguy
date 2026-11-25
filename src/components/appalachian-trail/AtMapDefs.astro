@@ -1,0 +1,35 @@
+---
+// The shared Appalachian Trail locator base map (state outlines, state
+// labels and the official trail centerline), defined once per page as an SVG
+// <g>; every AtLocatorMap reuses it with <use>, so the page carries the
+// geography only once. Data: src/data/appalachian-trail/at-map.json
+// (scripts/appalachian-trail/build-map.mjs).
+import map from '@/data/appalachian-trail/at-map.json';
+const [x, y, w, h] = map.viewBox;
+---
+
+<svg class="at-map-defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <clipPath id="at-map-clip"><rect x={x} y={y} width={w} height={h} /></clipPath>
+    <g id="at-map-base">
+      <rect x={x} y={y} width={w} height={h} fill="#dfeaf0" />
+      <g clip-path="url(#at-map-clip)">
+        {map.states.map((s) => <path d={s.d} fill={s.abbr ? '#eef1e8' : '#f7f5ef'} stroke="#9aa79f" stroke-width="0.5" stroke-linejoin="round" />)}
+        {map.states.filter((s) => s.label).map((s) => (
+          <text x={s.label![0]} y={s.label![1]} text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="700" fill="#3d4744" stroke="#ffffff" stroke-width="2.4" paint-order="stroke" letter-spacing="0.5">{s.abbr}</text>
+        ))}
+        <path d={map.trail} fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d={map.trail} fill="none" stroke="#173f35" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<style>
+  .at-map-defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+</style>
