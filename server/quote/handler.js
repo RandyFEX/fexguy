@@ -148,11 +148,17 @@ export async function handleQuote(request, env, deps) {
 
       const phoneHash = hash(`phone:${phone}`);
       const globalDay = Number(env.QUOTE_SMS_DAILY_LIMIT) > 0 ? Number(env.QUOTE_SMS_DAILY_LIMIT) : SUBMIT_LIMITS.globalDayDefault;
+      // Preview journey (?preview=journey; Randy, November 2026): previews only
+      // (test mode: no Agent CRM, no conversion) skip the per-IP and per-phone
+      // limits so the owner can repeat the whole journey; production ignores it.
+      const previewJourney = test && body.previewJourney === true;
       const over = await store.limit([
+        ...(previewJourney ? [] : [
         { key: `ip:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.ipHour, windowMs: HOUR },
         { key: `ip:d:${ipHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.ipDay, windowMs: DAY },
         { key: `ph:h:${phoneHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.phoneHour, windowMs: HOUR },
         { key: `ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.phoneDay, windowMs: DAY },
+        ]),
         { key: `all:d:${Math.floor(now / DAY)}`, limit: globalDay, windowMs: DAY },
       ]);
       if (over) return json(429, { status: 'rate-limited', message: `Too many quote requests. Please try again later or call ${FUNNEL_PHONE}.` }, { 'Retry-After': '3600' });

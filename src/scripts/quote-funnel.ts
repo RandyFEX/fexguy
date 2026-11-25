@@ -31,6 +31,8 @@ import { createIntro } from '@/scripts/quote-intro';
 // ?preview=video: the same sample, with the video overlay opened on every load.
 const previewKind = previewRequest();
 const preview = previewKind === 'results' || previewKind === 'video' ? startPreviewVisit() : null;
+// ?preview=journey: a fresh visit (this browser's quote storage cleared) at the first question.
+const previewJourney = previewKind === 'journey' ? (startPreviewVisit(), true) : false;
 
 // The session's traffic source (first landing, UTM, ad click) is kept for
 // /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
@@ -260,6 +262,7 @@ if (root) {
       consentVersion: root!.dataset.consentVersion,
       // V4.42: which quote page this is (/free-quote/ or /get-rates/); the server validates it.
       funnel: root!.dataset.funnel,
+      ...(previewJourney ? { previewJourney: true } : {}),
       source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
     });
     submitting = false;

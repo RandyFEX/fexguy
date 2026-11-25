@@ -806,3 +806,14 @@ test('v1.3 Start New Quote in an older tab never ends the newer quote another ta
   // The session answer names its lead, so each tab knows which quote it shows.
   assert.equal((await c.call({ action: 'session' })).body.lead, newer.body.lead);
 });
+
+test('preview journey (?preview=journey): previews skip the per-IP and per-phone limits for repeat runs; production never does', async () => {
+  const c = client(PREVIEW, { ip: '10.9.9.77' });
+  const phone = '214-867-0077';
+  for (let i = 0; i < SUBMIT_LIMITS.ipHour + 2; i++) assert.equal((await c.call(startBody({ phone, previewJourney: true }))).http, 200);
+  const crm = fakeCrm();
+  const p = client(PROD, { ip: '10.9.9.78', fetchImpl: crm.fetchImpl });
+  let last;
+  for (let i = 0; i <= SUBMIT_LIMITS.ipHour; i++) last = await p.call(startBody({ previewJourney: true }), { origin: PO.origin });
+  assert.equal(last.http, 429, 'production keeps its limits');
+});

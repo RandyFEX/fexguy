@@ -1841,7 +1841,12 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   stopped the video on iPhone/WebKit); price figures blurred 4px while it
   is open. Preview builds only: /free-quote/?preview=video opens the
   results sample with the overlay on every load (Play With Sound starts it;
-  no lead, no Agent CRM, refused on Production). Prices load independently: each price request
+  no lead, no Agent CRM, refused on Production). /free-quote/?preview=journey
+  starts a fresh visit at the first question (this browser's quote storage
+  cleared) for the whole journey, repeatable: previews are test mode (no
+  Agent CRM, no conversion) and its submissions (`previewJourney`) skip the
+  per-IP and per-phone limits on previews only. Captions sit at 80% down
+  the frame (VTT cue setting `line:80%`, Randy, November 2026). Prices load independently: each price request
   has a 15 s limit and timeouts, network errors and 5xx answers are retried
   automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
   shows, and if every retry fails a message with Try Again (repeats only the
