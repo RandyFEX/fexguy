@@ -1,5 +1,5 @@
 {
- "note": "Follow-up research, November 24, 2026. Each value carries its source and evidence label. Built from the reviewed research outputs; see the completion report.",
+ "note": "Follow-up research, November 24, 2026. Each value carries its source and evidence label. Built from the reviewed research outputs; see the completion report. November 25, 2026: the Maryland DNR statement could not be verified on an official page, so the three Maryland state park destinations were set to UNCONFIRMED (Randy).",
  "destinations": {
   "te-kuwohi-formerly-clingmans-dome": {
    "distance": {
@@ -1111,8 +1111,8 @@
     "evidence": "SECONDARY and OFFICIAL (via search summary)"
    },
    "policy": {
-    "classification": "PROHIBITED",
-    "conditions": "Maryland DNR lists the Weverton Cliffs overlook as part of South Mountain State Park, and says it is not legal in Maryland to spread ashes on public lands.",
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
     "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
     "sourceLinks": [
      {
@@ -1120,19 +1120,11 @@
       "label": "Maryland DNR: South Mountain State Park"
      },
      {
-      "url": "https://eyesonthebay.dnr.maryland.gov/eyesonthebay/FAQandA.cfm",
-      "label": "Maryland DNR: Eyes on the Bay FAQ"
-     },
-     {
-      "url": "https://health.maryland.gov/bom/Documents/cremated_remains.pdf",
-      "label": "Maryland Board of Morticians: Cremated Remains"
-     },
-     {
       "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
       "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
      }
     ],
-    "evidence": "OFFICIAL (via search summary)",
+    "evidence": "none found",
     "remembranceOnly": true,
     "alternative": "Below the cliffs, the A.T. follows the C&O Canal towpath at Weverton. C&O Canal National Historical Park allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.",
     "landManager": "Maryland DNR, South Mountain State Park"
@@ -1169,24 +1161,16 @@
     }
    ],
    "policy": {
-    "classification": "PROHIBITED",
-    "conditions": "Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands; ashes may go only on private property with the owner's agreement.",
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
     "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
     "sourceLinks": [
-     {
-      "url": "https://eyesonthebay.dnr.maryland.gov/eyesonthebay/FAQandA.cfm",
-      "label": "Maryland DNR: Eyes on the Bay FAQ"
-     },
-     {
-      "url": "https://health.maryland.gov/bom/Documents/cremated_remains.pdf",
-      "label": "Maryland Board of Morticians: Cremated Remains"
-     },
      {
       "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
       "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
      }
     ],
-    "evidence": "OFFICIAL (via search summary)",
+    "evidence": "none found",
     "remembranceOnly": true,
     "alternative": "Nearby C&O Canal National Historical Park (National Park Service) allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry National Historical Park also has three designated areas, with a special use permit."
    },
@@ -1222,24 +1206,16 @@
     }
    ],
    "policy": {
-    "classification": "PROHIBITED",
-    "conditions": "Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands; ashes may go only on private property with the owner's agreement.",
+    "classification": "UNCONFIRMED",
+    "conditions": "No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. A Maryland DNR statement seen only in search results says spreading ashes on public lands is not legal in Maryland. Treat this as a place to remember, not to scatter, and ask the park office before any ceremony.",
     "contact": "South Mountain Recreation Area (Maryland DNR): 301-791-4767",
     "sourceLinks": [
-     {
-      "url": "https://eyesonthebay.dnr.maryland.gov/eyesonthebay/FAQandA.cfm",
-      "label": "Maryland DNR: Eyes on the Bay FAQ"
-     },
-     {
-      "url": "https://health.maryland.gov/bom/Documents/cremated_remains.pdf",
-      "label": "Maryland Board of Morticians: Cremated Remains"
-     },
      {
       "url": "https://www.nps.gov/choh/planyourvisit/upload/CHOH-Scattering-Ashes-Permit-2.pdf",
       "label": "NPS: C&O Canal Scattering Ashes Letter Permit"
      }
     ],
-    "evidence": "OFFICIAL (via search summary)",
+    "evidence": "none found",
     "remembranceOnly": true,
     "alternative": "Nearby C&O Canal National Historical Park (National Park Service) allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry National Historical Park also has three designated areas, with a special use permit."
    },

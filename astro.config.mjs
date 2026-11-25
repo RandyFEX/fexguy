@@ -96,8 +96,6 @@ export default defineConfig({
           path !== '/state-regulated-investigation-preview/' &&
           path !== '/impact-calculator-preview/' &&
           path !== '/trin-fbl/' &&
-          // Preview (not approved): the Appalachian Trail ash-scattering guide.
-          path !== '/scattering-ashes-on-the-appalachian-trail/' &&
           !excluded.has(path)
         );
       },

@@ -303,11 +303,11 @@ Jefferson Rock is a slab of shale on stone pillars above Harpers Ferry, on the T
 
 ## Maryland
 
-Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands, so the Maryland state park destinations are remembrance places only. The nearby C&O Canal National Historical Park, run by the National Park Service, allows scattering with its free letter permit: notify the permits office in advance, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
+We could not verify a Maryland Department of Natural Resources rule on scattering ashes on an official state page, so the Maryland state park destinations are Unconfirmed: places for the remembrance, with the ashes brought back and scattered where it is allowed. The nearby C&O Canal National Historical Park, run by the National Park Service, allows scattering with its free letter permit: notify the permits office in advance, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
 
 ### Weverton Cliffs
 
-**Extraordinary · Prohibited**
+**Extraordinary · Unconfirmed**
 
 Weverton Cliffs is an overlook above the Potomac River valley, about 2 miles round trip with about 625 feet of climbing. It is a short, steep walk with a big reward at the top.
 
@@ -315,11 +315,11 @@ Weverton Cliffs is an overlook above the Potomac River valley, about 2 miles rou
 
 **Your ceremony here:** Climb to the overlook together and share your words there. Maryland DNR lists the overlook as part of South Mountain State Park.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands, so keep your loved one's ashes sealed in an unbreakable urn at the cliffs and bring them back with you. Below the cliffs, the Trail follows the C&O Canal towpath, where C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.
+**Where to scatter:** No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page, so keep your loved one's ashes sealed in an unbreakable urn at the cliffs and bring them back with you. Below the cliffs, the Trail follows the C&O Canal towpath, where C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.
 
 ### Washington Monument State Park
 
-**Accessible · Prohibited**
+**Accessible · Unconfirmed**
 
 A short walk of about 0.4 miles on the Trail reaches the park's round stone monument on South Mountain, a historic structure with a view over the valley. It is an easy, peaceful place for a family gathering.
 
@@ -327,11 +327,11 @@ A short walk of about 0.4 miles on the Trail reaches the park's round stone monu
 
 **Your ceremony here:** Walk up together, sit near the monument and take your time. It suits older family members and children alike.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry's designated areas are another option, with a permit.
+**Where to scatter:** No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry's designated areas are another option, with a permit.
 
 ### Gathland State Park at Crampton Gap
 
-**Accessible · Prohibited**
+**Accessible · Unconfirmed**
 
 About half a mile on the Trail, the War Correspondents Memorial Arch stands at Crampton Gap, a tall stone memorial in a quiet park setting. For a family remembering someone who served or told stories for a living, it carries special meaning.
 
@@ -339,7 +339,7 @@ About half a mile on the Trail, the War Correspondents Memorial Arch stands at C
 
 **Your ceremony here:** Gather by the arch for your remembrance. The park has parking, an accessible restroom and drinking water.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
+**Where to scatter:** No Maryland Department of Natural Resources rule on scattering ashes could be verified on an official page. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
 
 ## Pennsylvania
 
@@ -502,8 +502,6 @@ A gentler Baxter walk of about 2.6 miles round trip along Nesowadnehunk Stream l
 ## A final word
 
 A place on the Appalachian Trail can hold a whole life's worth of memories. Taking someone there one last time, and doing it in a way that respects the land and the people who care for it, is a gift to them and to every family who comes after you.
-
-*This guide is not affiliated with, endorsed by or sponsored by the National Park Service, the USDA Forest Service, the Appalachian Trail Conservancy or any state agency. Rules change. Always confirm with the land manager before you plan a ceremony.*
 
 ## Sources
 

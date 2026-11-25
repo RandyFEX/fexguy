@@ -1,8 +1,7 @@
 ---
 // Scattering Ashes Along the Appalachian Trail: One Last Amazing Adventure
-// (Randy, November 2026). PREVIEW ONLY: noindex, nofollow, out of the sitemap,
-// with an X-Robots-Tag header in vercel.json, not linked from the menu or any
-// page. Built as a sibling of the national parks guide
+// (Randy, November 2026). Published at Randy's instruction (November 25,
+// 2026): indexable, in the sitemap, linked from the mega menu (Guides). Built as a sibling of the national parks guide
 // (scattering-ashes-in-us-national-parks.astro), whose layout and styles it
 // reuses. Data: src/data/appalachian-trail/ (see guide.ts).
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -41,15 +40,13 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
 
 <BaseLayout
   title={pageTitle('Scattering Ashes Along the Appalachian Trail: One Last Amazing Adventure')}
-  description="Preview: where families can remember a loved one along the Appalachian Trail, and what each land manager allows for scattering ashes."
+  description="Where families can remember a loved one along the Appalachian Trail, and what each land manager allows for scattering ashes."
   canonical="/scattering-ashes-on-the-appalachian-trail/"
-  robots="noindex, nofollow"
-  noindex
   stickyCall={false}
   preFooter={false}
   bodyClass="page-ola"
 >
-  <article class="ola" data-page-type="guide" data-page-reason="Preview of a standalone guide to scattering ashes along the Appalachian Trail, built from the research dataset with the national parks guide's layout; not an editorial article.">
+  <article class="ola" data-page-type="guide" data-page-reason="Standalone guide to scattering ashes along the Appalachian Trail, built from the research dataset with the national parks guide's layout; not an editorial article.">
     <AtMapDefs />
     <header class="ola-hero">
       <picture>

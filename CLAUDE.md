@@ -2148,3 +2148,15 @@ with a reason; any other text there still counts) and, for the
 pre-existing-conditions page, `noHeadings` (it has no headings; lapses if
 one is added); pages whose ordinary opening paragraph waits for Randy's
 decision are listed under `pendingReview` (warnings). Add `-- --strict` to fail on any.
+
+## Appalachian Trail ash scattering guide (Randy, November 2026)
+
+- /scattering-ashes-on-the-appalachian-trail/ (src/pages/scattering-ashes-on-the-appalachian-trail.astro,
+  src/components/appalachian-trail/, data src/data/appalachian-trail/ built by
+  scripts/appalachian-trail/build-data.mjs from docs/investigations/appalachian-trail-2026-11/)
+  was published at Randy's instruction (November 25, 2026): indexable, in the sitemap, and linked
+  from the mega menu: Guides & Tools > Guides > "Scattering Ashes on the Appalachian Trail"
+  (desktop and phone). Locator maps: the official ANST centerline (NPS/ATC 2023) on the us-atlas
+  Census state outlines (scripts/appalachian-trail/build-map.mjs). The three Maryland state park
+  destinations are Unconfirmed: the Maryland DNR statement could not be verified on an official
+  page. The national parks, cruise ship and Appalachian Trail guides link to each other.

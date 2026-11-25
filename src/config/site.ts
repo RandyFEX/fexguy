@@ -258,6 +258,7 @@ export const site: SiteConfig = {
             { label: 'Buyers Guide', href: '/buyers-guide/' },
             { label: 'Scattering Ashes at Sea', href: '/scattering-ashes-from-a-cruise-ship/' },
             { label: 'Scattering Ashes in National Parks', href: '/scattering-ashes-in-us-national-parks/' },
+            { label: 'Scattering Ashes on the Appalachian Trail', href: '/scattering-ashes-on-the-appalachian-trail/' },
           ],
         },
         {
