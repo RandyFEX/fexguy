@@ -18,7 +18,7 @@ The Appalachian Trail runs through 14 states, and many of public agencies manage
 
 For a lot of people, the Appalachian Trail is more than a path. It is the hike they took with their father at twelve, the section they walked on their honeymoon, the trip they talked about for thirty years and finally made. It is fog lifting off a bald in June, a fire tower at the top of a long climb, a quiet pond after a day on rocky ground.
 
-When someone who loved those places dies, you can take them back one more time. Carry their ashes in a secure, sealed container, walk the Trail together, and stand at the summit, the waterfall or the overlook they loved. Tell the stories, read the letter, take the photographs and celebrate the life you came to honor. That is the heart of this guide: one last amazing adventure.
+When someone who loved those places dies, you can take them back one more time. Carry their ashes securely sealed in an unbreakable urn, walk the Trail together, and stand at the summit, the waterfall or the overlook they loved. Tell the stories, read the letter, take the photographs and celebrate the life you came to honor. That is the heart of this guide: one last amazing adventure.
 
 The place where you say goodbye does not have to be the place where the ashes rest. Many of the Trail's most spectacular places are not open to scattering, or have no published rule. For every destination, we show you how to hold a meaningful remembrance there, and where the ashes can be scattered legally: sometimes at the same spot, sometimes at a nearby park that allows it, and sometimes only after you ask the land manager.
 
@@ -43,7 +43,7 @@ The national forests along the Trail have not published rules on scattering ashe
 
 ### Remembrance places and scattering places
 
-Think of each trip in two parts. The remembrance is the adventure itself: the walk, the view, the words you share. The scattering is the moment the ashes are released, and it must happen where the land manager allows it. At a few places on the Trail, like the Shenandoah summits, the Blue Ridge Parkway and Great Smoky Mountains National Park, the two can happen together under the park's conditions. Everywhere else, keep the ashes sealed during the ceremony and carry them home, then scatter them at a verified location or once the land manager has given permission.
+Think of each trip in two parts. The remembrance is the adventure itself: the walk, the view, the words you share. The scattering is the moment the ashes are released, and it must happen where the land manager allows it. At a few places on the Trail, like the Shenandoah summits, the Blue Ridge Parkway and Great Smoky Mountains National Park, the two can happen together under the park's conditions. Everywhere else, keep your loved one's ashes sealed in an unbreakable urn during the ceremony and bring them back with you, then scatter them at a verified location or once the land manager has given permission.
 
 ### What the National Park Service rules ask of you
 
@@ -63,7 +63,7 @@ Even where scattering is allowed, the land comes first. Stay on durable ground, 
 
 ## Georgia
 
-The Trail begins in the Chattahoochee-Oconee National Forest. We could not find a published Forest Service rule on scattering ashes for this forest, so every Georgia destination in this guide is Unconfirmed: a place for the remembrance, with the ashes carried home sealed and scattered where it is allowed.
+The Trail begins in the Chattahoochee-Oconee National Forest. We could not find a published Forest Service rule on scattering ashes for this forest, so every Georgia destination in this guide is Unconfirmed: a place for the remembrance, with the ashes kept sealed in an unbreakable urn, brought back with you and scattered where it is allowed.
 
 ### Springer Mountain
 
@@ -73,7 +73,7 @@ Springer Mountain is where the Appalachian Trail begins. A bronze plaque and the
 
 **Your ceremony here:** Gather by the plaque and the first blaze, read the words you have been saving, and take the photograph of the people who came to say goodbye where it all begins. Leave the plaque and blaze area exactly as you found it.
 
-**Where to scatter:** No Forest Service rule on scattering ashes is published for the Chattahoochee-Oconee National Forest, so keep the ashes sealed here and bring them home with you. The closest verified options in this guide are Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), and the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. To ask about scattering on the forest itself, call the ranger district listed below and ask for an answer in writing.
+**Where to scatter:** No Forest Service rule on scattering ashes is published for the Chattahoochee-Oconee National Forest, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. The closest verified options in this guide are Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), and the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. To ask about scattering on the forest itself, call the ranger district listed below and ask for an answer in writing.
 
 ### Blood Mountain via the Byron Reece Trail
 
@@ -83,7 +83,7 @@ Blood Mountain is the highest point on the Georgia section of the Trail, 4,461 f
 
 **Your ceremony here:** Reach the top together and share the stories near the summit rocks. Treat the stone shelter as the historic structure it is, and leave nothing behind.
 
-**Where to scatter:** No published rule allows scattering in the Blood Mountain Wilderness, so carry the ashes back down sealed. The closest verified options in this guide are Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), and the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The ranger district below can tell you whether any permission is possible on the forest.
+**Where to scatter:** No published rule allows scattering in the Blood Mountain Wilderness, so keep your loved one's ashes sealed in an unbreakable urn and bring them back down with you. The closest verified options in this guide are Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), and the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The ranger district below can tell you whether any permission is possible on the forest.
 
 ### Long Creek Falls from Three Forks
 
@@ -93,7 +93,7 @@ A gentle walk of about 1.8 miles round trip follows the Trail along the water to
 
 **Your ceremony here:** Stop at the falls for a quiet moment, a prayer or a favorite song. It suits a small family group, and the walk is manageable for most ages. The road in, Forest Service Road 58, is rough.
 
-**Where to scatter:** Ashes never go into the water here: no published rule allows it. Keep them sealed, and scatter at a verified location such as Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), or along the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The ranger district below can answer questions about the forest.
+**Where to scatter:** Ashes never go into the water here: no published rule allows it. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at a verified location such as Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide), or along the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The ranger district below can answer questions about the forest.
 
 ## North Carolina
 
@@ -107,7 +107,7 @@ Max Patch is an open, grassy bald with views in every direction, reached on abou
 
 **Your ceremony here:** Stand together on the open summit, read a letter, and take in the view they would have loved. The grasses are fragile: stay on the path, and keep the gathering small. Forest Service restrictions on camping and fires are in place through June 2029.
 
-**Where to scatter:** No published rule allows scattering on Max Patch, so carry the ashes home sealed. The verified options nearest in this guide are the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). For permission on the national forest, call the Appalachian Ranger District below.
+**Where to scatter:** No published rule allows scattering on Max Patch, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. The verified options nearest in this guide are the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). For permission on the national forest, call the Appalachian Ranger District below.
 
 ### Wayah Bald Lookout Tower
 
@@ -117,7 +117,7 @@ A paved path of about 0.3 miles leads from the parking area to a historic stone 
 
 **Your ceremony here:** Everyone can come: grandparents, small children, a parent in a wheelchair. Climb the tower together, look out over the ridges and share a few words. The last 4.5 miles of road are gravel and close for part of the winter.
 
-**Where to scatter:** No published rule allows scattering at Wayah Bald, so keep the ashes sealed and bring them back. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). The Nantahala Ranger District below can answer questions about the forest.
+**Where to scatter:** No published rule allows scattering at Wayah Bald, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). The Nantahala Ranger District below can answer questions about the forest.
 
 ### Lover's Leap at Hot Springs
 
@@ -127,7 +127,7 @@ From the Trail town of Hot Springs, the climb to Lover's Leap is about 2.6 miles
 
 **Your ceremony here:** Make the climb part of the tribute, then pause on the ledges for a few words before walking back down into town together. Take care near the edges.
 
-**Where to scatter:** No published rule allows scattering here, so carry the ashes back sealed. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). For permission on the national forest, call the Appalachian Ranger District below.
+**Where to scatter:** No published rule allows scattering here, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). For permission on the national forest, call the Appalachian Ranger District below.
 
 ## Tennessee and the Great Smoky Mountains
 
@@ -161,7 +161,7 @@ In the Roan Highlands on the Tennessee and North Carolina line, the Trail crosse
 
 **Your ceremony here:** Walk out across the balds together and choose a high, open spot for your words. The bald vegetation is fragile, so stay on the trail. The Carvers Gap lot fills quickly on weekends.
 
-**Where to scatter:** Who manages these balds is not established, and neither nearby national forest publishes a scattering rule, so keep the ashes sealed. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide).
+**Where to scatter:** Who manages these balds is not established, and neither nearby national forest publishes a scattering rule, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. Verified options in this guide include the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, and Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide).
 
 ### Laurel Fork Gorge and Falls
 
@@ -171,7 +171,7 @@ About 5 miles round trip from a Forest Service lot near Hampton, the Trail follo
 
 **Your ceremony here:** Hold your remembrance by the falls and let the sound of the water carry the moment. The Laurel Fork Shelter burned in 2024, and the area is closed to camping.
 
-**Where to scatter:** Ashes never go into the creek: no published rule allows it. Keep them sealed, and choose a verified location such as the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, or Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). The Watauga Ranger District below can answer questions about the forest.
+**Where to scatter:** Ashes never go into the creek: no published rule allows it. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and choose a verified location such as the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, or Great Smoky Mountains National Park, where the park's free Letter of Permission allows scattering at its published distances (see Kuwohi and Charlies Bunion in this guide). The Watauga Ranger District below can answer questions about the forest.
 
 ## Virginia
 
@@ -229,7 +229,7 @@ McAfee Knob's overhanging rock ledge is the reward at the top of a long climb. T
 
 **Your ceremony here:** Make the full climb part of the tribute and share your words on the ledge, where so many hikers have stood. Parking at the Route 311 trailhead is limited; Roanoke County runs a weekend shuttle.
 
-**Where to scatter:** Who owns the summit is not established, and the Appalachian Trail park rule, if it applies, would require 100 yards from any trail, which the narrow ledge cannot meet. Keep the ashes sealed and scatter at a verified location: the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, or Shenandoah National Park, which allows scattering without a permit under its published conditions (see Blackrock, Bear Den Mountain and Compton Peak in this guide).
+**Where to scatter:** Who owns the summit is not established, and the Appalachian Trail park rule, if it applies, would require 100 yards from any trail, which the narrow ledge cannot meet. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at a verified location: the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge, or Shenandoah National Park, which allows scattering without a permit under its published conditions (see Blackrock, Bear Den Mountain and Compton Peak in this guide).
 
 ### Grayson Highlands and Rhododendron Gap
 
@@ -239,7 +239,7 @@ From Massie Gap in Grayson Highlands State Park, the Rhododendron Trail reaches 
 
 **Your ceremony here:** Walk out into the highlands together and stop where the views open up. Do not feed or touch the ponies. Overnight parking needs a reservation.
 
-**Where to scatter:** Neither Virginia State Parks nor the Jefferson National Forest publishes a scattering rule, so keep the ashes sealed. The closest verified option in this guide is the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The state park office can answer questions about its own land.
+**Where to scatter:** Neither Virginia State Parks nor the Jefferson National Forest publishes a scattering rule, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. The closest verified option in this guide is the Blue Ridge Parkway, which allows scattering without a permit for groups of 25 or fewer, at least 100 feet from trails, roads, developed facilities and water, everywhere except Craggy Gardens, Devils Courthouse and Rough Ridge. The state park office can answer questions about its own land.
 
 ## West Virginia: Harpers Ferry
 
@@ -277,7 +277,7 @@ Weverton Cliffs is an overlook above the Potomac River valley, about 2 miles rou
 
 **Your ceremony here:** Climb to the overlook together and share your words there. Maryland DNR lists the overlook as part of South Mountain State Park.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands, so keep the ashes sealed at the cliffs. Below the cliffs, the Trail follows the C&O Canal towpath, where C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.
+**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands, so keep your loved one's ashes sealed in an unbreakable urn at the cliffs and bring them back with you. Below the cliffs, the Trail follows the C&O Canal towpath, where C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Confirm with the park that your spot is inside the park.
 
 ### Washington Monument State Park
 
@@ -287,7 +287,7 @@ A short walk of about 0.4 miles on the Trail reaches the park's round stone monu
 
 **Your ceremony here:** Walk up together, sit near the monument and take your time. It suits older family members and children alike.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep the ashes sealed here, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry's designated areas are another option, with a permit.
+**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River. Harpers Ferry's designated areas are another option, with a permit.
 
 ### Gathland State Park at Crampton Gap
 
@@ -297,7 +297,7 @@ About half a mile on the Trail, the War Correspondents Memorial Arch stands at C
 
 **Your ceremony here:** Gather by the arch for your remembrance. The park has parking, an accessible restroom and drinking water.
 
-**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep the ashes sealed here, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
+**Where to scatter:** Maryland's Department of Natural Resources says it is not legal in Maryland to spread ashes on public lands. Keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and scatter at C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
 
 ## Pennsylvania
 
@@ -309,7 +309,7 @@ A short, easy walk of about 0.8 miles round trip leads to a rocky knob at 1,560 
 
 **Your ceremony here:** Walk up together and share your memories at the rocks. The land is State Game Lands, so wear blaze orange in hunting season.
 
-**Where to scatter:** The Pennsylvania Game Commission publishes no rule on scattering ashes, and its rules require the director's written permission for many activities, so keep the ashes sealed. To ask about scattering here, contact the Game Commission's regional office and request written permission. The verified options in this guide are farther south, such as C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
+**Where to scatter:** The Pennsylvania Game Commission publishes no rule on scattering ashes, and its rules require the director's written permission for many activities, so keep your loved one's ashes sealed in an unbreakable urn and bring them back with you. To ask about scattering here, contact the Game Commission's regional office and request written permission. The verified options in this guide are farther south, such as C&O Canal National Historical Park, which allows scattering with its free letter permit: notify the permits office in advance at (301) 745-5815, receive a permit number, and stay at least 50 feet from the towpath, roads, trails and the Potomac River.
 
 *Other Pennsylvania candidates (Table Rock, Wolf Rocks, Weathering Knob and the Boiling Springs town walk) are held until their land managers are confirmed.*
 
@@ -325,7 +325,7 @@ Sunfish Pond is a glacial pond on the Kittatinny Ridge in Worthington State Fore
 
 **Your ceremony here:** Walk to the pond together and choose a quiet spot near the water for your remembrance. Keep the moment quiet; the pond is a protected natural area.
 
-**Where to scatter:** Ashes never go into the pond. New Jersey State Parks publishes no scattering rule, so keep the ashes sealed and ask the Worthington State Forest office, listed below, whether any permission is possible. No verified scattering location near the pond was found.
+**Where to scatter:** Ashes never go into the pond. New Jersey State Parks publishes no scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and ask the Worthington State Forest office, listed below, whether any permission is possible. No verified scattering location near the pond was found.
 
 ### High Point Monument
 
@@ -335,7 +335,7 @@ The obelisk at High Point marks the highest point in New Jersey, 1,803 feet. The
 
 **Your ceremony here:** Gather at the monument or the viewing platform for your words. A park entrance fee is charged in summer at the monument area, and the tower is closed in winter.
 
-**Where to scatter:** New Jersey State Parks publishes no scattering rule, so keep the ashes sealed and ask the park office whether any permission is possible. No verified scattering location nearby was found.
+**Where to scatter:** New Jersey State Parks publishes no scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and ask the park office whether any permission is possible. No verified scattering location nearby was found.
 
 ### Pochuck Boardwalk
 
@@ -345,7 +345,7 @@ A flat walk of about 2 miles round trip on a long boardwalk crosses wetlands and
 
 **Your ceremony here:** Walk out together, stop on the boardwalk and share a few words with the open marsh around you.
 
-**Where to scatter:** Ashes never go into the wetland or creek, and who owns this land is not established. Keep them sealed; no verified scattering location nearby was found. The Appalachian Trail Park Office below can say whether this section is National Park Service land.
+**Where to scatter:** Ashes never go into the wetland or creek, and who owns this land is not established. Keep your loved one's ashes sealed in an unbreakable urn and bring them back with you; no verified scattering location nearby was found. The Appalachian Trail Park Office below can say whether this section is National Park Service land.
 
 ## New York
 
@@ -359,7 +359,7 @@ Perkins Memorial Drive climbs close to the summit of Bear Mountain, with accessi
 
 **Your ceremony here:** This is a drive-up remembrance that everyone can reach: gather by the tower and share the view. The drive is open April 1 through November 30, weather permitting.
 
-**Where to scatter:** New York State Parks does not allow ashes to be released in state parks unless the Office of Parks, Recreation and Historic Preservation officially approves. Keep the ashes sealed, or ask the park office in advance for that approval.
+**Where to scatter:** New York State Parks does not allow ashes to be released in state parks unless the Office of Parks, Recreation and Historic Preservation officially approves. Keep your loved one's ashes sealed in an unbreakable urn and bring them back with you, or ask the park office in advance for that approval.
 
 *Other New York candidates (Buchanan Mountain, Prospect Rock, Fitzgerald Falls and the Great Swamp boardwalk) are held until their land managers are confirmed.*
 
@@ -377,7 +377,7 @@ Mount Greylock is the highest point in Massachusetts, crowned by the Veterans Wa
 
 **Your ceremony here:** Gather by the memorial tower, a fitting place to honor a veteran or anyone who loved the hills. Massachusetts DCR says groups may need a special use permit, so call the reservation before a larger gathering.
 
-**Where to scatter:** Massachusetts DCR publishes no scattering rule, so keep the ashes sealed and ask the Mount Greylock State Reservation office, listed below, whether permission is possible. No verified scattering location nearby was found.
+**Where to scatter:** Massachusetts DCR publishes no scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and ask the Mount Greylock State Reservation office, listed below, whether permission is possible. No verified scattering location nearby was found.
 
 ## Vermont
 
@@ -389,7 +389,7 @@ A universally accessible route of about 0.6 miles round trip, with a 700-foot bo
 
 **Your ceremony here:** Bring everyone: the boardwalk makes this a remembrance the whole family can share. Grades reach 7 percent on the boardwalk and 9 percent on the gravel, and part of the gravel can be wet.
 
-**Where to scatter:** Ashes never go into the water. The Green Mountain National Forest publishes no scattering rule, so keep the ashes sealed and ask the ranger station below whether permission is possible. No verified scattering location nearby was found.
+**Where to scatter:** Ashes never go into the water. The Green Mountain National Forest publishes no scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and ask the ranger station below whether permission is possible. No verified scattering location nearby was found.
 
 ## New Hampshire
 
@@ -401,7 +401,7 @@ The Trail runs along an open, above-treeline ridge with long views in every dire
 
 **Your ceremony here:** Walk the ridge together and stop on the crest for your remembrance. Weather on the ridge can turn severe, and the alpine plants are fragile, so stay on the trail.
 
-**Where to scatter:** Neither the White Mountain National Forest nor New Hampshire State Parks publishes a scattering rule, so keep the ashes sealed and call the district office below. No verified scattering location nearby was found.
+**Where to scatter:** Neither the White Mountain National Forest nor New Hampshire State Parks publishes a scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and call the district office below. No verified scattering location nearby was found.
 
 ## Maine
 
@@ -415,7 +415,7 @@ Katahdin is the northern end of the Appalachian Trail. Baxter State Park lists t
 
 **Your ceremony here:** Make the climb together and hold your remembrance at Baxter Peak, the end of the journey. Day hikers need a Katahdin Trailhead Pass, and the trail closes for winter.
 
-**Where to scatter:** Baxter State Park publishes no rule on scattering ashes, so keep the ashes sealed and call Park Headquarters before you go. No verified scattering location nearby was found.
+**Where to scatter:** Baxter State Park publishes no rule on scattering ashes, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and call Park Headquarters before you go. No verified scattering location nearby was found.
 
 ### Little and Big Niagara Falls
 
@@ -425,7 +425,7 @@ A gentler Baxter walk of about 2.6 miles round trip along Nesowadnehunk Stream l
 
 **Your ceremony here:** Stop at the falls for a quiet remembrance in the North Woods. Dogs are not allowed in the park.
 
-**Where to scatter:** Ashes never go into the stream. Baxter State Park publishes no scattering rule, so keep the ashes sealed and call Park Headquarters. No verified scattering location nearby was found.
+**Where to scatter:** Ashes never go into the stream. Baxter State Park publishes no scattering rule, so keep your loved one's ashes sealed in an unbreakable urn, bring them back with you, and call Park Headquarters. No verified scattering location nearby was found.
 
 ## Planning the day
 
