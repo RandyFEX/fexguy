@@ -18,7 +18,7 @@ import { lead } from '@/config/lead';
 import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 import { saveHandoff } from '@/scripts/quote-handoff';
-import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
+import { offerExpiresAt, resetOffers, restartQuote, runCountdown } from '@/scripts/quote-offer';
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
 import { isValidName } from '../../server/quote/name.js';
@@ -282,6 +282,8 @@ if (root) {
     // (the amount chosen on the coverage question stays in the lead record).
     answers.coverage = RESULTS_START_COVERAGE;
     saveSteps();
+    // A new lead: fresh 10-minute results window (never an old visit's expired one).
+    resetOffers();
     unlock({ ...quote, coverage: RESULTS_START_COVERAGE }, body.testMode, body.expiresAt);
     intro.open(() => resultsTitle.focus({ preventScroll: true }));
   });

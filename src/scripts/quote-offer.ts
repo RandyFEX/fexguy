@@ -38,6 +38,18 @@ export function offerExpiresAt(kind: OfferKind, now = Date.now()): number {
   return expiresAt;
 }
 
+/** A newly accepted lead (SEE MY RATES) starts fresh offer windows, so an
+ *  expired window left in this browser by an earlier quote for the same visit
+ *  id never opens the new rates already expired. A refresh still keeps the
+ *  window (only a new submission resets it). */
+export function resetOffers(): void {
+  for (const key of Object.values(KEYS)) {
+    try {
+      localStorage.removeItem(key);
+    } catch {}
+  }
+}
+
 /** m:ss, e.g. 10:00, 1:59, 0:00. */
 export const formatRemaining = (ms: number) => {
   const s = Math.max(0, Math.ceil(ms / 1000));

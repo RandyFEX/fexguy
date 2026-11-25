@@ -55,7 +55,7 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 
-async function open({ breakVideo = false, delay = 6000, blockSound = false } = {}) {
+async function open({ breakVideo = false, delay = 6000, blockSound = false, staleOffer = false, prices = [] } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const page = await ctx.newPage();
   // A browser that refuses sound outside a user action, even on a video
@@ -68,6 +68,14 @@ async function open({ breakVideo = false, delay = 6000, blockSound = false } = {
         if (!navigator.userActivation.isActive) return Promise.reject(new DOMException('blocked', 'NotAllowedError'));
         return play.call(this);
       };
+    });
+  // An earlier quote in this browser, same saved visit id, whose 10-minute
+  // results window ran out a day ago.
+  if (staleOffer)
+    await page.addInitScript(() => {
+      if (localStorage.getItem('ff:quote-visit')) return;
+      localStorage.setItem('ff:quote-visit', 'stalevisit0000000001');
+      localStorage.setItem('ff:quote-offer-results', JSON.stringify({ visit: 'stalevisit0000000001', expiresAt: Date.now() - 86400e3 }));
     });
   await page.addInitScript(() => {
     window.__ev = [];
@@ -84,7 +92,10 @@ async function open({ breakVideo = false, delay = 6000, blockSound = false } = {
     if (body.action === 'session' && session) return route.fulfill({ json: { status: 'verified', quote: { age: 68, gender: 'female', tobacco: false, coverage: 10000 }, firstName: 'Pat', expiresAt: Date.now() + 3600e3 } });
     return route.fulfill({ json: { status: 'none' } });
   });
-  await page.route('**/api/price-explorer/', (route) => route.fulfill({ status: 503, json: { status: 'unavailable' } }));
+  await page.route('**/api/price-explorer/', (route) => {
+    prices.push(route.request().postData());
+    return route.fulfill({ status: 503, json: { status: 'unavailable' } });
+  });
   if (breakVideo) await page.route(/\/videos\/quote-intro\//, (route) => route.fulfill({ status: 404, body: '' }));
   await page.goto(`${BASE}/free-quote/`);
   await page.waitForSelector('[data-step="1"]:not([hidden])');
@@ -186,6 +197,25 @@ await check('video fails after the overlay opened: it closes and records quote_v
   await page.$eval('[data-qv] video', (v) => { Object.defineProperty(v, 'error', { get: () => ({ code: 3 }) }); v.dispatchEvent(new Event('error')); });
   await page.waitForSelector('[data-qv]', { state: 'hidden', timeout: 3000 });
   assert((await names(page)).includes('quote_video_error'), (await names(page)).join());
+  await ctx.close();
+});
+
+await check('an earlier expired quote in this browser: a new SEE MY RATES opens a fresh 10-minute window and requests prices (cards never left blurred)', async () => {
+  const prices = [];
+  const { ctx, page } = await open({ delay: 300, staleOffer: true, prices });
+  await page.click('[data-qf-submit]');
+  await page.waitForSelector('[data-qv]:not([hidden])', { timeout: 8000 });
+  await page.click('[data-qv-close]');
+  await page.waitForFunction(() => document.querySelector('[data-qf-card]').dataset.state !== 'locked', null, { timeout: 5000 });
+  const s = await page.evaluate(() => ({
+    countdown: document.querySelector('[data-qf-countdown]').textContent,
+    restart: !document.querySelector('[data-qf-restart]').hidden,
+    blurred: document.querySelectorAll('[data-qf-card] .qf-blur').length,
+  }));
+  assert(prices.length === 1 && /^(10:00|9:5\d)$/.test(s.countdown) && !s.restart && s.blurred === 0, JSON.stringify({ prices: prices.length, ...s }));
+  // A refresh keeps the same window (it is not reset without a new submission).
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ff:quote-offer-results')).expiresAt);
+  assert(stored > Date.now() + 9 * 60e3, 'window not renewed');
   await ctx.close();
 });
 

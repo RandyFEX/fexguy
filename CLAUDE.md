@@ -1725,7 +1725,10 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the coverage question answer (`RESULTS_START_COVERAGE` in
   src/scripts/quote-funnel.ts); that answer stays in the lead record
   (`quoteAtSubmission`) and Agent CRM. A reload keeps the visitor's current
-  adjustments.
+  adjustments. Each accepted SEE MY RATES starts fresh 10-minute results and
+  2-minute apply windows (`resetOffers` in src/scripts/quote-offer.ts; Randy,
+  November 2026: an earlier quote's expired window in the same browser used to
+  open the new rates already expired and blurred); a refresh keeps the window.
   **V4.31 (Randy, November 2026; supersedes V4.25-V4.28 and the V4.2/V4.4
   logo wall):** the coverage question ("How Much Coverage Would You Like?",
   its buttons, Other box, guidance lines and the logo wall shown with it) is
