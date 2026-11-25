@@ -753,3 +753,67 @@ test('V1.1: a first name alone reaches Agent CRM as name and first name, with no
   assert.ok(!('lastName' in up), 'no last name sent');
   assert.deepEqual(crm.calls.map((x) => x.url.replace('https://services.leadconnectorhq.com', '')), ['/contacts/upsert', '/contacts/c123', '/contacts/c123/tags', '/contacts/c123/notes']);
 });
+
+// ---- Pricing reliability v1.3: session recovery without a new submission ----
+test('v1.3 resume: a lost cookie is re-opened for this visit\'s own accepted lead, with no new lead, CRM call or conversion; never another visit, a forged id, after Start New Quote or after 12 hours', async () => {
+  const crm = fakeCrm();
+  const c = client(PROD, { fetchImpl: crm.fetchImpl });
+  const start = await c.call(startBody(), { origin: PO.origin });
+  assert.equal(start.http, 200);
+  const lead = start.body.lead;
+  const crmCalls = crm.calls.length;
+  // Another tab of this browser replaced the shared cookie: this page has none for its lead.
+  const lost = client(PROD, { fetchImpl: crm.fetchImpl, visit: c.visit });
+  assert.equal(await prodPrice(lost), 401);
+  const r = await lost.call({ action: 'resume', lead }, { origin: PO.origin });
+  assert.equal(r.http, 200);
+  assert.equal(r.body.status, 'verified');
+  assert.equal(r.body.lead, lead);
+  assert.equal(r.body.leadConversion, undefined, 'never a conversion');
+  assert.ok(r.body.expiresAt <= start.body.expiresAt + 1000, 'the 12 hours are never extended');
+  assert.equal(await prodPrice(lost), 200);
+  assert.equal(crm.calls.length, crmCalls, 'no Agent CRM call');
+  assert.deepEqual((await c.store.events(lead)).map((e) => e.type).filter((t) => t !== 'crm-delivered'), ['contact-submitted', 'lead-accepted', 'session-resumed']);
+  // Another visit, a made-up id or the preview sample: refused.
+  const other = client(PROD, { fetchImpl: crm.fetchImpl });
+  assert.equal((await other.call({ action: 'resume', lead }, { origin: PO.origin })).http, 401);
+  assert.equal((await lost.call({ action: 'resume', lead: '00000000-0000-4000-8000-000000000000' }, { origin: PO.origin })).http, 401);
+  assert.equal((await lost.call({ action: 'resume', lead: 'not-a-lead' }, { origin: PO.origin })).http, 401);
+  // After 12 hours: refused.
+  const late = client(PROD, { fetchImpl: crm.fetchImpl, visit: c.visit, now: () => Date.now() + SESSION_MS + 60_000 });
+  assert.equal((await late.call({ action: 'resume', lead }, { origin: PO.origin })).http, 401);
+  // After this lead's own Start New Quote: refused.
+  assert.equal((await lost.call({ action: 'end-session', lead }, { origin: PO.origin })).body.status, 'ended');
+  assert.equal((await lost.call({ action: 'resume', lead }, { origin: PO.origin })).http, 401);
+});
+
+test('v1.3 resume: a lead whose Agent CRM delivery failed is never re-opened', async () => {
+  const c = client(PROD, { fetchImpl: fakeCrm({ fail: true }).fetchImpl });
+  const start = await c.call(startBody(), { origin: PO.origin });
+  assert.equal(start.http, 502);
+  assert.equal((await c.call({ action: 'resume', lead: start.body.lead }, { origin: PO.origin })).http, 401);
+});
+
+test('v1.3 Start New Quote in an older tab never ends the newer quote another tab holds in the shared cookie', async () => {
+  const c = client(PREVIEW);
+  const older = await c.call(startBody());
+  const newer = await c.call(startBody());
+  assert.notEqual(older.body.lead, newer.body.lead);
+  const end = await c.call({ action: 'end-session', lead: older.body.lead });
+  assert.equal(end.body.status, 'ended');
+  assert.equal(end.setCookie, null, 'the shared cookie is kept');
+  assert.equal((await c.price()).http, 200, 'the newer quote keeps its prices');
+  // The session answer names its lead, so each tab knows which quote it shows.
+  assert.equal((await c.call({ action: 'session' })).body.lead, newer.body.lead);
+});
+
+test('preview journey (?preview=journey): previews skip the per-IP and per-phone limits for repeat runs; production never does', async () => {
+  const c = client(PREVIEW, { ip: '10.9.9.77' });
+  const phone = '214-867-0077';
+  for (let i = 0; i < SUBMIT_LIMITS.ipHour + 2; i++) assert.equal((await c.call(startBody({ phone, previewJourney: true }))).http, 200);
+  const crm = fakeCrm();
+  const p = client(PROD, { ip: '10.9.9.78', fetchImpl: crm.fetchImpl });
+  let last;
+  for (let i = 0; i <= SUBMIT_LIMITS.ipHour; i++) last = await p.call(startBody({ previewJourney: true }), { origin: PO.origin });
+  assert.equal(last.http, 429, 'production keeps its limits');
+});

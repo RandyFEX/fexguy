@@ -23,7 +23,12 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 // production: true runs the handlers as Production (crm: a fake Agent CRM API,
 // switched with srv.crm.down; no real request); requests are given the
 // funeralfunds.com origin.
-export async function startFunnelServer({ production = false } = {}) {
+// The video introduction over the results (tests/quote/video-intro.browser.mjs)
+// is left out of the served pages unless `videoIntro: true`, so these suites
+// keep testing the cards without the overlay in front of them.
+// `datasets` replaces the private rate tables (server/rates/private/) with
+// test-only tables, for machines without them (tests/quote/pricing-reliability.browser.mjs).
+export async function startFunnelServer({ production = false, videoIntro = false, datasets = null } = {}) {
   // V3.3: a fake Agent CRM for production runs (srv.crm.down = true makes it fail).
   const crm = { down: false, calls: [] };
   const fetchImpl = async (url, init) => {
@@ -39,7 +44,7 @@ export async function startFunnelServer({ production = false } = {}) {
     for (let i = 1; i <= n; i++)
       qs.push({ id: `aetna-${sec.slice(-1).toLowerCase()}${i}`, carrierId: 'aetna', section: sec, number: String(i), text: `TEST ONLY ${sec} question ${i}?`, yes: { rule }, no: { classification: 'none', explanation: 'No effect.' }, search: { direct: [concept], related: [] } });
   await redis.store.set('hqs:questions:preview', JSON.stringify({ format: 1, target: 'preview', publishedAt: 't', total: qs.length, complete: false, questions: qs }));
-  const engine = createEngine(loadDatasets());
+  const engine = createEngine(datasets ?? loadDatasets());
   const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production', AGENT_CRM_TOKEN: 'fake-token', AGENT_CRM_LOCATION_ID: 'fake-location' } : {}) };
   const store = quoteStore(redis.store, env);
   const getEngine = async () => ({ engine, publishedAt: 'local' });
@@ -76,6 +81,7 @@ export async function startFunnelServer({ production = false } = {}) {
       return res.end('not found');
     }
     res.writeHead(200, { 'content-type': TYPES[extname(p)] ?? 'application/octet-stream' });
+    if (!videoIntro && extname(p) === '.html') return res.end(readFileSync(p, 'utf8').replace(/<div[^>]*\bdata-qv\b[\s\S]*?<\/video>[\s\S]*?<\/div>\s*<\/div>/, ''));
     res.end(readFileSync(p));
   });
   await new Promise((ok) => server.listen(0, '127.0.0.1', () => ok(undefined)));

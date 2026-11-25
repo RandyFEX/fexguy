@@ -10,7 +10,7 @@ const FREQUENCY_OPTIONS = [
   [24, 'Once a day'],
   [48, 'Every other day'],
 ];
-const DURATION_OPTIONS = [7, 14, 30, 45, 60];
+const DURATION_OPTIONS = [3, 7, 14, 30, 45, 60];
 
 /** @param {{ preview: boolean }} opts */
 export function renderReschedulePage({ preview }) {
@@ -47,7 +47,7 @@ input:focus,select:focus,textarea:focus,button:focus{outline:3px solid #1a1a1a;o
 .now[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#fff}
 .opts{display:grid;gap:.5rem}
 .opts--freq{grid-template-columns:repeat(5,1fr)}
-.opts--dur{grid-template-columns:repeat(5,1fr)}
+.opts--dur{grid-template-columns:repeat(6,1fr)}
 .opt{display:block;margin:0;font-weight:400;cursor:pointer}
 .opt input{position:absolute;opacity:0;width:1px;height:1px}
 .opt span{display:flex;align-items:center;justify-content:center;height:100%;min-height:2.75rem;padding:.375rem .25rem;font-size:.9375rem;border:1px solid #8a8f8b;border-radius:.5rem;background:#fff;text-align:center;line-height:1.2}

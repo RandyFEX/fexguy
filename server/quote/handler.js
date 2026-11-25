@@ -33,6 +33,8 @@ import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
 export const PREVIEW_SAMPLE_QUOTE = Object.freeze({ age: 60, gender: 'male', tobacco: false, coverage: 10000 });
 const HOUR = 60 * 60 * 1000;
+// v1.3 session recovery (action `resume`): requests per IP per hour.
+const RESUME_LIMIT_HOUR = 60;
 const DAY = 24 * HOUR;
 // Abuse and duplicate protection (the former SMS limits, kept as submission limits).
 export const SUBMIT_LIMITS = { ipHour: 5, ipDay: 15, phoneHour: 4, phoneDay: 6, globalDayDefault: 300 };
@@ -146,11 +148,17 @@ export async function handleQuote(request, env, deps) {
 
       const phoneHash = hash(`phone:${phone}`);
       const globalDay = Number(env.QUOTE_SMS_DAILY_LIMIT) > 0 ? Number(env.QUOTE_SMS_DAILY_LIMIT) : SUBMIT_LIMITS.globalDayDefault;
+      // Preview journey (?preview=journey; Randy, November 2026): previews only
+      // (test mode: no Agent CRM, no conversion) skip the per-IP and per-phone
+      // limits so the owner can repeat the whole journey; production ignores it.
+      const previewJourney = test && body.previewJourney === true;
       const over = await store.limit([
+        ...(previewJourney ? [] : [
         { key: `ip:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.ipHour, windowMs: HOUR },
         { key: `ip:d:${ipHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.ipDay, windowMs: DAY },
         { key: `ph:h:${phoneHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.phoneHour, windowMs: HOUR },
         { key: `ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.phoneDay, windowMs: DAY },
+        ]),
         { key: `all:d:${Math.floor(now / DAY)}`, limit: globalDay, windowMs: DAY },
       ]);
       if (over) return json(429, { status: 'rate-limited', message: `Too many quote requests. Please try again later or call ${FUNNEL_PHONE}.` }, { 'Retry-After': '3600' });
@@ -238,7 +246,31 @@ export async function handleQuote(request, env, deps) {
       // Texting handoff V4.0: the first word of the visitor's own name, for the
       // prewritten text on /facebook/ (this verified visit only; kept in memory there).
       const firstName = firstNameOf(record.firstName);
-      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
+      return json(200, { status: 'verified', lead: v.leadId, quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
+    }
+
+    // Pricing reliability v1.3 (Randy, November 2026): the page that received
+    // an accepted lead lost its session cookie (another tab of this browser
+    // submitted a quote or pressed Start New Quote; every tab shares the one
+    // cookie). It re-opens that lead's session without submitting again: no
+    // new lead, no Agent CRM call, no conversion. Only for a lead this visit
+    // submitted and that was accepted (delivered to Agent CRM on production;
+    // test mode elsewhere), within the original 12 hours (never extended),
+    // and never after that lead's own Start New Quote.
+    case 'resume': {
+      const leadId = typeof body.lead === 'string' && /^[0-9a-f-]{36}$/.test(body.lead) ? body.lead : null;
+      const visit = visitOf(request);
+      if (!leadId || !visit || leadId === PREVIEW_SAMPLE_LEAD) return json(401, { status: 'verify-required' });
+      const over = await store.limit([{ key: `rs:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: RESUME_LIMIT_HOUR, windowMs: HOUR }]);
+      if (over) return json(429, { status: 'rate-limited' });
+      const record = await store.getLead(leadId);
+      const exp = record ? Date.parse(record.submittedAt) + SESSION_MS : 0;
+      const accepted = record && (test ? record.mode === 'test' : record.mode !== 'test' && record.crm?.delivered === true);
+      if (!accepted || record.visit !== visitHash(visit) || !(exp > now) || record.restartedAt) return json(401, { status: 'verify-required' });
+      const sid = newSid();
+      await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit), resumed: true }, exp - now);
+      await store.event(leadId, { at: iso, type: 'session-resumed' });
+      return json(200, { status: 'verified', lead: leadId, expiresAt: exp }, { 'Set-Cookie': setCookie(sign(key, { sid, lid: leadId, exp })) });
     }
 
     case 'apply': {
@@ -369,11 +401,17 @@ export async function handleQuote(request, env, deps) {
     // evidence and events are kept; only the session record is removed.
     case 'end-session': {
       const claims = unsign(key, readCookie(request), now);
+      // v1.3: a tab names the lead it shows. When the shared cookie now holds
+      // another tab's newer lead, that session is left alone.
+      const own = typeof body.lead === 'string' && /^[0-9a-f-]{36}$/.test(body.lead) ? body.lead : null;
+      if (own && claims && claims.lid !== own) return json(200, { status: 'ended' });
       if (claims) {
         const s = await store.getSession(claims.sid);
         if (s && s.lid === claims.lid) {
           await store.dropSession(claims.sid);
           await store.event(claims.lid, { at: iso, type: 'quote-restarted' });
+          const record = await store.getLead(claims.lid);
+          if (record && claims.lid !== PREVIEW_SAMPLE_LEAD) await store.putLead(claims.lid, { ...record, restartedAt: iso });
         }
       }
       return json(200, { status: 'ended' }, { 'Set-Cookie': clearCookie() });

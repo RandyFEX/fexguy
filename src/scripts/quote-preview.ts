@@ -21,13 +21,16 @@ import { saveHandoff } from '@/scripts/quote-handoff';
 declare const __FF_PREVIEW_TOOLS__: boolean;
 const ENABLED = typeof __FF_PREVIEW_TOOLS__ !== 'undefined' && __FF_PREVIEW_TOOLS__;
 
-export type PreviewPage = 'results' | 'apply';
+// 'video' (Randy, November 2026): the results sample with the video overlay
+// opened every time (Play With Sound starts it); preview builds only.
+// 'journey': a fresh visit at the first question (the whole funnel, repeatable).
+export type PreviewPage = 'results' | 'apply' | 'video' | 'journey';
 
 /** The requested preview page, read once; null on production builds or without ?preview=. */
 export function previewRequest(): PreviewPage | null {
   if (!ENABLED) return null;
   const v = new URLSearchParams(location.search).get('preview');
-  return v === 'results' || v === 'apply' ? v : null;
+  return v === 'results' || v === 'apply' || v === 'video' || v === 'journey' ? v : null;
 }
 
 /** A fresh visit: clears this browser's quote storage, sets a new visit id, drops ?preview= from the address. */

@@ -85,6 +85,15 @@ conversion only then.
   be changed on the results screen; a new tab or visit starts fresh). The lead, its consent record and events are kept, and a
   `quote-restarted` event is added. Each new request is a new lead with its
   own consent choice (never carried forward); the CRM handles duplicates.
+- Pricing reliability v1.3 (Randy, November 2026): every tab of a browser
+  shares the one `ff_qs` cookie. `end-session` takes the page's own `lead`
+  and leaves a newer lead's session in the cookie alone (it also marks the
+  ended lead `restartedAt`); `session` returns `lead`. `resume` re-opens the
+  session of a lead this visit submitted and that was accepted (delivered to
+  Agent CRM on production; test mode elsewhere), until 12 hours after its
+  submission, never after its own Start New Quote: no new lead, no Agent
+  CRM call, no conversion (60 per IP per hour). The page calls it once when
+  a price or intake request returns 401.
 - With one verified standard product (Aetna Standard) the card is "Standard
   Rate" with its own premium. After verification all blurring is removed:
   prices, carrier names (`CARRIER_DISPLAY`, only in verified pricing
