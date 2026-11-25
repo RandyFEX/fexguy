@@ -1826,8 +1826,10 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   quote_video_start, quote_video_complete, quote_video_dismiss,
   quote_video_autoplay_blocked, quote_video_error, with `video_id` and,
   on dismiss/error, `video_position` (seconds).
-- The current video (`test-v1`) is a temporary synthesized test clip, to be
-  replaced by Randy's recording and its exact captions.
+- The video is Randy's own recording (`randy-intro-v1`, November 2026; 21 s,
+  1080x1920 source encoded to 720x1280 MP4 and WebM, poster = first frame);
+  its captions were transcribed from the audio ("quoter" at 15 s, heard as
+  "quarter" by the transcriber). It replaced the temporary test clip.
   Test: tests/quote/video-intro.browser.mjs (headless Chromium only).
 - **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
   overlay is open only the price figures are blurred (`data-video-veil` on

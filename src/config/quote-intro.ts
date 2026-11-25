@@ -13,11 +13,12 @@
 // Leaving `mp4` empty turns the overlay off (nothing is rendered).
 export const QUOTE_INTRO = {
   /** Sent to GA4 as video_id (letters, digits, hyphens). */
-  id: 'test-v1',
-  mp4: '/videos/quote-intro/intro-test-v1.mp4',
-  webm: '/videos/quote-intro/intro-test-v1.webm',
-  captions: '/videos/quote-intro/intro-test-v1.vtt',
-  poster: '/videos/quote-intro/intro-test-v1.jpg',
+  // Randy's recording (November 2026; 1080x1920 source, encoded 720x1280).
+  id: 'randy-intro-v1',
+  mp4: '/videos/quote-intro/randy-intro-v1.mp4',
+  webm: '/videos/quote-intro/randy-intro-v1.webm',
+  captions: '/videos/quote-intro/randy-intro-v1.vtt',
+  poster: '/videos/quote-intro/randy-intro-v1.jpg',
   /** The dialog's accessible name. */
   label: 'Video message from Funeral Funds',
 } as const;
