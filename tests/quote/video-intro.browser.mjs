@@ -94,7 +94,8 @@ async function open({ breakVideo = false, delay = 6000, blockSound = false, stal
   });
   await page.route('**/api/price-explorer/', (route) => {
     prices.push(route.request().postData());
-    return route.fulfill({ status: 503, json: { status: 'unavailable' } });
+    // A definite refusal (not retried); retries are tested in pricing-reliability.browser.mjs.
+    return route.fulfill({ status: 429, json: { status: 'rate-limited' } });
   });
   if (breakVideo) await page.route(/\/videos\/quote-intro\//, (route) => route.fulfill({ status: 404, body: '' }));
   await page.goto(`${BASE}/free-quote/`);

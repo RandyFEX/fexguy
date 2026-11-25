@@ -1829,6 +1829,23 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 - The current video (`test-v1`) is a temporary synthesized test clip, to be
   replaced by Randy's recording and its exact captions.
   Test: tests/quote/video-intro.browser.mjs (headless Chromium only).
+- **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
+  overlay is open only the price figures are blurred (`data-video-veil` on
+  the funnel root; presentation only, removed on every close: end, close
+  button, Escape, failure). Prices load independently: each price request
+  has a 15 s limit and timeouts, network errors and 5xx answers are retried
+  automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
+  shows, and if every retry fails a message with Try Again (repeats only the
+  price request) replaces the placeholders. Every tab shares the one quote
+  cookie: the page keeps its visit id for its lifetime, Start New Quote ends
+  only the page's own lead, and on a 401 the page re-opens its own accepted
+  lead once with the server's `resume` action (no new lead, no Agent CRM
+  call, no conversion; within the original 12 hours; never after that lead's
+  Start New Quote; server/quote/README.md). Root cause fixed: Start New
+  Quote in another tab ended the newer tab's session through the shared
+  cookie, sending a just-submitted prospect back to blurred placeholders and
+  the contact step. Test: tests/quote/pricing-reliability.browser.mjs (real
+  quote and pricing handlers, TEST-ONLY made-up rate tables).
 
 ## Cruise ship ash scattering guide (Randy, November 2026)
 

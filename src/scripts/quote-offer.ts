@@ -75,12 +75,14 @@ export function runCountdown(el: HTMLElement, expiresAt: number, onExpire: () =>
 }
 
 /** Start New Quote after an expired offer: end the session, clear quote storage, open the first question. */
-export async function restartQuote(): Promise<void> {
+// `lead`: the quote this page shows (v1.3), so another tab's newer quote in
+// the shared cookie is never ended by this one.
+export async function restartQuote(lead = ''): Promise<void> {
   try {
     await fetch('/api/quote/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visit() },
-      body: JSON.stringify({ action: 'end-session' }),
+      body: JSON.stringify({ action: 'end-session', ...(lead ? { lead } : {}) }),
       credentials: 'same-origin',
     });
   } catch {}

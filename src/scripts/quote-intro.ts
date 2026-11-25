@@ -20,7 +20,10 @@ const PLAYED_KEY = 'ff:quote-intro-played';
 /** How long a requested playback may take to start before it counts as failed. */
 const START_LIMIT_MS = 12000;
 
-export function createIntro(root: HTMLElement, track: Track, visit: () => string) {
+// v1.3 (Randy, November 2026): `veil(true)` while the overlay is open blurs
+// only the price figures behind it; every way the overlay closes (end, close
+// button, Escape, failure) calls `veil(false)`. Presentation only.
+export function createIntro(root: HTMLElement, track: Track, visit: () => string, veil: (on: boolean) => void = () => {}) {
   const overlay = root.querySelector<HTMLElement>('[data-qv]');
   const video = overlay?.querySelector<HTMLVideoElement>('video');
   if (!overlay || !video) return { prepare() {}, prime() {}, open(_after: () => void) {} };
@@ -80,6 +83,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
     video!.pause();
     if (!ended && !failed) send('quote_video_dismiss', { position: Math.floor(video!.currentTime || 0) });
     overlay!.hidden = true;
+    veil(false);
     document.documentElement.classList.remove('qv-open');
     document.removeEventListener('keydown', onKey, true);
     afterClose();
@@ -148,6 +152,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
       started = false;
       ended = false;
       playBtn.hidden = true;
+      veil(true);
       overlay.hidden = false;
       document.documentElement.classList.add('qv-open');
       document.addEventListener('keydown', onKey, true);

@@ -61,13 +61,19 @@ const track = (name: string, extra: Record<string, unknown> = {}) =>
 const VISIT_KEY = 'ff:quote-visit';
 let memoryVisit = '';
 const newVisitId = () => (crypto.randomUUID?.() ?? `${Date.now()}${Math.random()}`).replace(/[^A-Za-z0-9]/g, '').slice(0, 32).padEnd(16, '0');
+// Pricing reliability v1.3: read once per page. Another tab of this browser
+// can clear or replace the stored id (Start New Quote); this page keeps the id
+// its own quote session was opened with.
+let pageVisit = '';
 function visitId() {
+  if (pageVisit) return pageVisit;
   try {
     let v = localStorage.getItem(VISIT_KEY) ?? '';
     if (!/^[A-Za-z0-9_-]{16,64}$/.test(v)) {
       v = newVisitId();
       localStorage.setItem(VISIT_KEY, v);
     }
+    pageVisit = v;
     return v;
   } catch {
     if (!memoryVisit) memoryVisit = newVisitId();
@@ -110,7 +116,9 @@ if (root) {
   const progressWrap = $('[data-qf-progress-wrap]');
   const testBanner = $('[data-qf-test]');
   // Video introduction over the results (Randy, November 2026; src/scripts/quote-intro.ts).
-  const intro = createIntro(root, track, visitId);
+  // v1.3: while the video is open only the price figures behind it are blurred
+  // (presentation only; pricing, loading and expiry are unaffected).
+  const intro = createIntro(root, track, visitId, (on) => root.toggleAttribute('data-video-veil', on));
 
   const answers: Partial<Quote> & { state?: string } = {};
   try {
@@ -494,27 +502,111 @@ if (root) {
       track('quote_pricing_view');
     }
   }
-  async function reprice(quote: PriceQuote) {
-    if (expired) return;
-    const k = JSON.stringify(quote);
-    const hit = cache.get(k);
-    if (hit) return render(quote, hit);
-    const mine = ++seq;
+  // Pricing reliability v1.3 (Randy, November 2026): every price request has a
+  // time limit; a timeout, network error or server error (5xx) is retried
+  // automatically a few times; a lost session (another tab of this browser
+  // replaced or ended the shared cookie) is re-opened for this page's own
+  // accepted lead (action `resume`: no new lead, no Agent CRM call) and the
+  // request repeated. Only price requests are repeated, never the submission.
+  // If the prices still can't load, a message with Try Again replaces the
+  // placeholders (no new questionnaire or lead needed).
+  const PRICE_TIMEOUT_MS = 15000;
+  const RETRY_DELAYS_MS = [1000, 2500, 5000];
+  const retryBox = $('[data-qf-retry-box]');
+  const retryMsg = $('[data-qf-retry-msg]');
+  const retryBtn = $<HTMLButtonElement>('[data-qf-retry]');
+  let resuming: Promise<boolean> | null = null;
+  /** Re-open this page's accepted lead's quote session (one request at a time). */
+  function resumeSession(): Promise<boolean> {
+    if (!leadId) return Promise.resolve(false);
+    resuming ??= api({ action: 'resume', lead: leadId })
+      .then((r) => r.http === 200 && r.body.status === 'verified')
+      .finally(() => {
+        resuming = null;
+      });
+    return resuming;
+  }
+  function priceStatus(state: 'ok' | 'loading' | 'failed') {
+    retryBox.hidden = state === 'ok';
+    retryBtn.hidden = state !== 'failed';
+    retryMsg.textContent = state === 'loading' ? 'Still loading your rates…' : state === 'failed' ? `Your rates didn't load. Please try again, or call ${funnelPhone}.` : '';
+  }
+  async function fetchPrices(k: string) {
+    const ctl = new AbortController();
+    const t = window.setTimeout(() => ctl.abort(), PRICE_TIMEOUT_MS);
     try {
-      const res = await fetch('/api/price-explorer/', { method: 'POST', headers: jsonHeaders(), body: k, credentials: 'same-origin' });
-      const body = await res.json().catch(() => ({}));
-      if (mine !== seq) return;
-      if (res.status === 401) return sessionLost();
-      if (!res.ok || body.status !== 'ok') {
-        for (const el of cards.values()) setCard(el, null, 'unavailable', body.message ?? 'Prices are not available right now.');
-        return;
-      }
-      cache.set(k, body.categories);
-      if (!expired) render(quote, body.categories);
+      const res = await fetch('/api/price-explorer/', { method: 'POST', headers: jsonHeaders(), body: k, credentials: 'same-origin', signal: ctl.signal });
+      return { http: res.status, body: (await res.json().catch(() => ({}))) as Record<string, any> };
     } catch {
-      if (mine === seq) for (const el of cards.values()) setCard(el, null, 'unavailable', 'Prices are not available right now.');
+      return { http: 0, body: {} as Record<string, any> };
+    } finally {
+      window.clearTimeout(t);
     }
   }
+  let lastQuote: PriceQuote | null = null;
+  async function reprice(quote: PriceQuote) {
+    if (expired) return;
+    lastQuote = quote;
+    const k = JSON.stringify(quote);
+    const hit = cache.get(k);
+    if (hit) {
+      priceStatus('ok');
+      return render(quote, hit);
+    }
+    const mine = ++seq;
+    let resumed = false;
+    // A slow answer (e.g. a server cold start) says so instead of silent placeholders.
+    const slow = window.setTimeout(() => {
+      if (mine === seq && !expired) priceStatus('loading');
+    }, 3000);
+    try {
+      for (let attempt = 0; ; attempt++) {
+        const r = await fetchPrices(k);
+        if (mine !== seq || expired) return;
+        if (r.http === 401) {
+          // Once per request: re-open this page's own accepted lead, then repeat the request.
+          if (!resumed) {
+            resumed = true;
+            if (await resumeSession()) {
+              if (mine !== seq) return;
+              attempt--;
+              continue;
+            }
+          }
+          priceStatus('ok');
+          return sessionLost();
+        }
+        if (r.http === 200 && r.body.status === 'ok') {
+          cache.set(k, r.body.categories);
+          priceStatus('ok');
+          return render(quote, r.body.categories);
+        }
+        const transient = r.http === 0 || r.http >= 500;
+        // Timeout, network error or server error: try again a few times.
+        if (transient && attempt < RETRY_DELAYS_MS.length) {
+          priceStatus('loading');
+          await new Promise((ok) => window.setTimeout(ok, RETRY_DELAYS_MS[attempt]));
+          if (mine !== seq || expired) return;
+          continue;
+        }
+        if (transient) {
+          for (const el of cards.values()) setCard(el, null, 'unavailable', '');
+          return priceStatus('failed');
+        }
+        // A definite answer (bad input, rate limit): shown as before.
+        priceStatus('ok');
+        for (const el of cards.values()) setCard(el, null, 'unavailable', r.body.message ?? 'Prices are not available right now.');
+        return;
+      }
+    } finally {
+      window.clearTimeout(slow);
+    }
+  }
+  retryBtn.addEventListener('click', () => {
+    if (!lastQuote) return;
+    priceStatus('loading');
+    void reprice(lastQuote);
+  });
   adjust.addEventListener('change', () => {
     window.clearTimeout(timer);
     timer = window.setTimeout(() => {
@@ -565,7 +657,7 @@ if (root) {
   }
   restart.addEventListener('click', () => {
     restart.disabled = true;
-    void restartQuote();
+    void restartQuote(leadId);
   });
   function unlock(quote: PriceQuote, test: boolean, expiresAt?: unknown) {
     if (typeof expiresAt === 'number') accessExpiresAt = expiresAt;
@@ -625,7 +717,8 @@ if (root) {
 
   async function intakeStep(body: Record<string, unknown>) {
     setStatus(intakeStatus, '');
-    const r = await api(body);
+    let r = await api(body);
+    if (r.http === 401 && (await resumeSession())) r = await api(body);
     if (r.http === 401) return sessionLost();
     if (r.http !== 200) {
       setStatus(intakeStatus, r.body.message ?? `Sorry, something went wrong. Please call ${funnelPhone}.`, true);
@@ -738,6 +831,7 @@ if (root) {
     const { http, body } = await api({ action: 'session' });
     if (http === 200 && body.status === 'verified' && body.quote) {
       visitorName = String(body.firstName ?? '');
+      if (typeof body.lead === 'string') leadId = body.lead;
       return unlock(quoteReady() ?? (body.quote as PriceQuote), body.testMode, body.expiresAt);
     }
     // Only if the visitor hasn't already answered (an answer given while this
