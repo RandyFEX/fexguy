@@ -503,8 +503,6 @@ A gentler Baxter walk of about 2.6 miles round trip along Nesowadnehunk Stream l
 
 A place on the Appalachian Trail can hold a whole life's worth of memories. Taking someone there one last time, and doing it in a way that respects the land and the people who care for it, is a gift to them and to every family who comes after you.
 
----
-
 *This guide is not affiliated with, endorsed by or sponsored by the National Park Service, the USDA Forest Service, the Appalachian Trail Conservancy or any state agency. Rules change. Always confirm with the land manager before you plan a ceremony.*
 
 ## Sources
