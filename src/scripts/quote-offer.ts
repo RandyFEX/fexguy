@@ -38,6 +38,18 @@ export function offerExpiresAt(kind: OfferKind, now = Date.now()): number {
   return expiresAt;
 }
 
+/** A newly accepted lead (SEE MY RATES) starts fresh offer windows, so an
+ *  expired window left in this browser by an earlier quote for the same visit
+ *  id never opens the new rates already expired. A refresh still keeps the
+ *  window (only a new submission resets it). */
+export function resetOffers(): void {
+  for (const key of Object.values(KEYS)) {
+    try {
+      localStorage.removeItem(key);
+    } catch {}
+  }
+}
+
 /** m:ss, e.g. 10:00, 1:59, 0:00. */
 export const formatRemaining = (ms: number) => {
   const s = Math.max(0, Math.ceil(ms / 1000));
@@ -63,12 +75,14 @@ export function runCountdown(el: HTMLElement, expiresAt: number, onExpire: () =>
 }
 
 /** Start New Quote after an expired offer: end the session, clear quote storage, open the first question. */
-export async function restartQuote(): Promise<void> {
+// `lead`: the quote this page shows (v1.3), so another tab's newer quote in
+// the shared cookie is never ended by this one.
+export async function restartQuote(lead = ''): Promise<void> {
   try {
     await fetch('/api/quote/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visit() },
-      body: JSON.stringify({ action: 'end-session' }),
+      body: JSON.stringify({ action: 'end-session', ...(lead ? { lead } : {}) }),
       credentials: 'same-origin',
     });
   } catch {}

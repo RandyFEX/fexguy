@@ -1314,7 +1314,8 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   INSTANT QUOTER?" sections were removed. tracking.ts keys the lead
   conversion on the path, so the page markup doesn't affect it.
 - Phone placements: header nav, pre-footer CTA, mobile call button
-  (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
+  (`src/components/lead/`). No pop-ups (one exception: the quote funnel's
+  video introduction, below). The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header
   already has GET A QUOTE and the phone number): don't bring it back.
 
@@ -1724,7 +1725,10 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the coverage question answer (`RESULTS_START_COVERAGE` in
   src/scripts/quote-funnel.ts); that answer stays in the lead record
   (`quoteAtSubmission`) and Agent CRM. A reload keeps the visitor's current
-  adjustments.
+  adjustments. Each accepted SEE MY RATES starts fresh 10-minute results and
+  2-minute apply windows (`resetOffers` in src/scripts/quote-offer.ts; Randy,
+  November 2026: an earlier quote's expired window in the same browser used to
+  open the new rates already expired and blurred); a refresh keeps the window.
   **V4.31 (Randy, November 2026; supersedes V4.25-V4.28 and the V4.2/V4.4
   logo wall):** the coverage question ("How Much Coverage Would You Like?",
   its buttons, Other box, guidance lines and the logo wall shown with it) is
@@ -1795,6 +1799,69 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   fallback and the fields-before-tag order are unchanged; GA4 tells the two
   pages apart by page path (no new events). Start New Quote stays on the
   page it was used on.
+
+## Quote funnel video introduction (Randy, November 2026, v1.2)
+
+- The ONLY approved exception to the no-pop-ups rule (the rule itself is
+  unchanged): on /free-quote/ and /get-rates/ (QuoteFunnelPage.astro), a
+  short portrait (9:16, about 20-30 s) captioned video message opens over the
+  pricing results after SEE MY RATES succeeds, plays with sound where the
+  browser allows, closes itself when it ends, and plays once per quote
+  session (localStorage `ff:quote-intro-played` = visit id; Start New Quote
+  clears it). Code: src/scripts/quote-intro.ts; files and settings:
+  src/config/quote-intro.ts (replace the video by adding new files under a
+  new name in public/videos/quote-intro/ and changing that config; empty
+  `mp4` turns it off). Self-hosted on Vercel (MP4 H.264 + WebM, WebVTT
+  captions, poster); no video service or dependency.
+- Sound: prepare() preloads at the contact step; prime() runs play()+pause()
+  synchronously inside the SEE MY RATES submit handler, before any await, so
+  the same <video> may later play with sound (iPhone Safari, Facebook and
+  Instagram in-app browsers, Android WebView); open() plays at once after
+  the rates show (never add a timer before play()). Blocked sound shows a
+  Play With Sound button (not a failure); a load or playback failure, or a
+  requested start that doesn't come within 12 s, closes the overlay. Close
+  button and Escape stop playback. Pricing, lead submission, Agent CRM,
+  existing tracking and the 10-minute countdown are unchanged.
+- GA4-only events (tracking.ts; nothing to Meta, no personal data):
+  quote_video_start, quote_video_complete, quote_video_dismiss,
+  quote_video_autoplay_blocked, quote_video_error, with `video_id` and,
+  on dismiss/error, `video_position` (seconds).
+- The video is Randy's own recording (`randy-intro-v1`, November 2026; 21 s,
+  1080x1920 source encoded to 720x1280 MP4 and WebM, poster = first frame);
+  its captions were transcribed from the audio ("quoter" at 15 s, heard as
+  "quarter" by the transcriber). It replaced the temporary test clip.
+  Test: tests/quote/video-intro.browser.mjs (headless Chromium only).
+- **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
+  overlay is open only the price figures are blurred (`data-video-veil` on
+  the funnel root; presentation only, removed on every close: end, close
+  button, Escape, failure). Light frosted backdrop (Randy, November 2026):
+  rgba(255, 255, 255, 0.25) with backdrop-filter blur(1px) (plus
+  -webkit-backdrop-filter) on the separate `.qv__backdrop` layer behind the
+  video box, never on an ancestor of the <video> (on the dialog itself it
+  stopped the video on iPhone/WebKit); price figures blurred 4px while it
+  is open. Preview builds only: /free-quote/?preview=video opens the
+  results sample with the overlay on every load (Play With Sound starts it;
+  no lead, no Agent CRM, refused on Production). /free-quote/?preview=journey
+  starts a fresh visit at the first question (this browser's quote storage
+  cleared) for the whole journey, repeatable: previews are test mode (no
+  Agent CRM, no conversion) and its submissions (`previewJourney`) skip the
+  per-IP and per-phone limits on previews only. Captions sit at 80% down
+  the frame (VTT cue setting `line:80%`, Randy, November 2026). On phones
+  (under 48rem) the video box is at most 75vw wide and 70dvh tall (9:16,
+  centered) so the cards show around it; desktop unchanged. Prices load independently: each price request
+  has a 15 s limit and timeouts, network errors and 5xx answers are retried
+  automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
+  shows, and if every retry fails a message with Try Again (repeats only the
+  price request) replaces the placeholders. Every tab shares the one quote
+  cookie: the page keeps its visit id for its lifetime, Start New Quote ends
+  only the page's own lead, and on a 401 the page re-opens its own accepted
+  lead once with the server's `resume` action (no new lead, no Agent CRM
+  call, no conversion; within the original 12 hours; never after that lead's
+  Start New Quote; server/quote/README.md). Root cause fixed: Start New
+  Quote in another tab ended the newer tab's session through the shared
+  cookie, sending a just-submitted prospect back to blurred placeholders and
+  the contact step. Test: tests/quote/pricing-reliability.browser.mjs (real
+  quote and pricing handlers, TEST-ONLY made-up rate tables).
 
 ## Cruise ship ash scattering guide (Randy, November 2026)
 

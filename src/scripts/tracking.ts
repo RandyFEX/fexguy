@@ -249,6 +249,12 @@ const FUNNEL_EVENTS = new Set([
   'quote_sidebar_select',
   // v5.9: CALL NOW in an article's Get Pricing module (a tap, never a completed call).
   'quote_module_call_click',
+  // Video introduction over the results (Randy, November 2026, v1.2): GA4 only.
+  'quote_video_start',
+  'quote_video_complete',
+  'quote_video_dismiss',
+  'quote_video_autoplay_blocked',
+  'quote_video_error',
 ]);
 // V3.3: texting taps on /facebook/ (the page's own handoff code is unchanged).
 document.addEventListener('click', (e) => {
@@ -261,7 +267,7 @@ const ENTRY_TYPES = new Set(['article-sidebar', 'direct', 'campaign']);
 const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
 
 window.addEventListener('ff:funnel', (e) => {
-  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown; placement?: unknown; method?: unknown }>).detail ?? {};
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown; placement?: unknown; method?: unknown; videoId?: unknown; position?: unknown }>).detail ?? {};
   if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
   const params: Record<string, string | number> = {};
   if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
@@ -271,6 +277,9 @@ window.addEventListener('ff:funnel', (e) => {
   if (detail.placement === 'sidebar' || detail.placement === 'in-article') params.module_placement = detail.placement;
   if (detail.method === 'sms-app' || detail.method === 'qr-code') params.text_method = detail.method;
   if (typeof detail.entryPath === 'string' && /^\/[A-Za-z0-9._~\-/]{0,200}$/.test(detail.entryPath)) params.entry_path = detail.entryPath;
+  // Video introduction: which video, and the second it stopped at (dismiss, error).
+  if (typeof detail.videoId === 'string' && /^[A-Za-z0-9-]{1,40}$/.test(detail.videoId)) params.video_id = detail.videoId;
+  if (typeof detail.position === 'number' && Number.isInteger(detail.position) && detail.position >= 0 && detail.position <= 600) params.video_position = detail.position;
   // "Call to Get Approved" taps (v3.7): which quote was on the card when the
   // visitor tapped it. A company or plan name, the coverage and premium shown,
   // a random per-visit quote reference and the time; never a name or phone
