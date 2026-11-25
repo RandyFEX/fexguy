@@ -7,13 +7,18 @@
 // reuses. Data: src/data/appalachian-trail/ (see guide.ts).
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import GpsList from '@/components/appalachian-trail/GpsList.astro';
+import AtMapDefs from '@/components/appalachian-trail/AtMapDefs.astro';
+import AtLocatorMap from '@/components/appalachian-trail/AtLocatorMap.astro';
 import { pageTitle } from '@/lib/seo/meta';
-import { intro, destinations, states, photos, hero, CLASS_LABEL, mapsUrl, linkLabel, type AtPoint, type AtPhoto, type Classification } from '@/data/appalachian-trail/guide';
+import { intro, destinations, states, hero, CLASS_LABEL, mapsUrl, linkLabel, type AtPoint, type AtDestination, type Classification } from '@/data/appalachian-trail/guide';
 
 const total = destinations.length;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
 const coord = (p: AtPoint) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
-const isCC = (ph: AtPhoto) => /^CC BY/.test(ph.license?.name ?? '');
+// The map marks the destination point, or the trailhead where no destination point exists.
+const mapPoint = (d: AtDestination) => d.points.find((pt) => pt.role === 'destination') ?? d.points.find((pt) => pt.role === 'trailhead') ?? null;
+const pointSource = (pt: AtPoint) =>
+  pt.kind === 'official' ? pt.source : pt.kind === 'osm' ? 'Mapped by Funeral Funds from OpenStreetMap; not an official coordinate.' : 'Appalachian Trail Conservancy map point; role not established.';
 const miles = (n: number) => `${n} ${n === 1 ? 'mile' : 'miles'} round trip`;
 const ft = (n: number) => (n === 0 ? 'Flat' : `${n.toLocaleString('en-US')} ft`);
 const pill = (c: Classification) => (c === 'permitted' ? 'yes' : c === 'prohibited' ? 'no' : 'check');
@@ -42,6 +47,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
   bodyClass="page-ola"
 >
   <article class="ola" data-page-type="guide" data-page-reason="Preview of a standalone guide to scattering ashes along the Appalachian Trail, built from the research dataset with the national parks guide's layout; not an editorial article.">
+    <AtMapDefs />
     <header class="ola-hero">
       <picture>
         <source srcset={hero.srcWebp} type="image/webp" />
@@ -119,16 +125,11 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
         <ul class="ola-cards">
           {
             destinations.map((d) => {
-              const ph = photos[d.id];
               return (
                 <li class="ola-card" data-state={states.find((s) => s.state === d.state)!.id} data-kind={d.category} data-class={d.scatter.classification}>
                   <a href={`#${d.id}`} class="ola-card__link">
                     <span class="ola-card__img">
-                      {ph ? (
-                        <img src={ph.src} alt={ph.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
-                      ) : (
-                        <span class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${d.name} to come`}><span>{d.name}</span></span>
-                      )}
+                      <AtLocatorMap name={d.name} state={d.state} point={mapPoint(d)} compact />
                     </span>
                     <span class="ola-card__body">
                       <span class="ola-card__state">{d.state}</span>
@@ -179,8 +180,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
               )}
 
               {s.destinations.map((d) => {
-                const ph = photos[d.id];
-                const c = d.scatter.classification;
+                  const c = d.scatter.classification;
                 return (
                   <article class="ola-dest" id={d.id} aria-labelledby={`${d.id}-title`}>
                     <p class="ola-back"><a href="#at-browse" data-at-back><span class="ola-back__arrow" aria-hidden="true">↑</span>Back to State Navigation<span class="ola-back__arrow" aria-hidden="true">↑</span></a></p>
@@ -192,23 +192,34 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                         <span class={`ola-tag at-tag--${pill(c)}`}>{CLASS_LABEL[c]}</span>
                       </p>
                     </header>
-                    {ph ? (
-                      <figure class="ola-dest__photo">
-                        <picture>
-                          <source srcset={ph.srcWebp} type="image/webp" />
-                          <img src={ph.src} alt={ph.alt} width="1200" height="675" loading="lazy" referrerpolicy="no-referrer" />
-                        </picture>
-                        <figcaption class="ola-credit">
-                          {ph.caption}. Photo: {ph.title
-                            ? <>“<a href={ph.sourceUrl} rel="noopener" target="_blank">{ph.title}</a>” by {ph.credit}</>
-                            : <a href={ph.sourceUrl} rel="noopener" target="_blank">{ph.credit}</a>}
-                          , {ph.license.url ? <a href={ph.license.url} rel="noopener license" target="_blank">{ph.license.name}</a> : ph.license.name}
-                          {isCC(ph) && '. Resized and cropped'}
-                        </figcaption>
-                      </figure>
-                    ) : (
-                      <div class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${d.name} to come`}><span>{d.name}</span></div>
-                    )}
+                    <figure class="at-locator">
+                      <div class="at-locator__map"><AtLocatorMap name={d.name} state={d.state} point={mapPoint(d)} /></div>
+                      <figcaption class="at-locator__info">
+                        <p class="at-locator__title">Where It Is</p>
+                        {(() => {
+                          const dest = d.points.find((pt) => pt.role === 'destination');
+                          const th = d.points.find((pt) => pt.role === 'trailhead');
+                          return (
+                            <dl class="at-locator__coords">
+                              <div>
+                                <dt>Destination GPS</dt>
+                                <dd>{dest ? <a href={mapsUrl(dest.lat, dest.lon)} rel="noopener" target="_blank">{dest.lat.toFixed(5)}, {dest.lon.toFixed(5)}<span class="visually-hidden"> ({d.name}, opens Google Maps)</span></a> : 'Not established'}</dd>
+                                {dest && <dd class="at-src">{pointSource(dest)}</dd>}
+                              </div>
+                              <div>
+                                <dt>Trailhead or Parking GPS</dt>
+                                <dd>{th ? <a href={mapsUrl(th.lat, th.lon)} rel="noopener" target="_blank">{th.lat.toFixed(5)}, {th.lon.toFixed(5)}<span class="visually-hidden"> ({th.label}, opens Google Maps)</span></a> : 'Not established'}</dd>
+                                {th && <dd class="at-src">{th.label}. {pointSource(th)}</dd>}
+                              </div>
+                            </dl>
+                          );
+                        })()}
+                        {!d.points.some((pt) => pt.role === 'destination') && d.points.some((pt) => pt.role === 'trailhead') && (
+                          <p class="at-src">The map marks the trailhead because no destination point is established.</p>
+                        )}
+                        <p class="at-src">Map: official Appalachian Trail centerline (National Park Service and Appalachian Trail Conservancy, 2023) on U.S. Census Bureau state boundaries.</p>
+                      </figcaption>
+                    </figure>
 
                     {d.description.map((p) => <p class="ola-dest__desc">{p}</p>)}
 
@@ -351,7 +362,9 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
         land manager before you go.
       </p>
       <p>
-        Photos: {Object.values(photos).map((ph) => `${ph.caption}, ${ph.credit} (${ph.license.name})`).join('; ')}. No claim to original U.S. Government works.
+        Maps: the official Appalachian National Scenic Trail centerline (National Park Service Appalachian National Scenic Trail and
+        Appalachian Trail Conservancy, March 15, 2023) and U.S. Census Bureau state boundaries (us-atlas), drawn by Funeral Funds.
+        Hero photo: {hero.caption}, {hero.credit} ({hero.license.name}). No claim to original U.S. Government works.
       </p>
       <p>
         This guide is not affiliated with, endorsed by or sponsored by the National Park Service, the USDA Forest Service, the Appalachian Trail Conservancy or any state agency.
@@ -1247,6 +1260,70 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
   }
 
   /* Appalachian Trail additions (this page only). */
+  /* Locator maps (replace destination photographs). */
+  .ola-card__img {
+    display: block;
+    background: #dfeaf0;
+  }
+  .at-locator {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    background: #f6f2ea;
+    border: 1px solid #d9d3c4;
+    border-top: 0;
+    border-radius: 0 0 0.75rem 0.75rem;
+    overflow: hidden;
+  }
+  .at-locator__map {
+    background: #dfeaf0;
+  }
+  .at-locator__info {
+    padding: var(--space-4);
+  }
+  .at-locator__title {
+    margin: 0 0 var(--space-2);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+  }
+  .at-locator__coords {
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+  .at-locator__coords dt {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .at-locator__coords dd {
+    margin: 0.15rem 0 0;
+  }
+  .at-locator__coords dd a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.0625rem;
+    font-weight: 700;
+  }
+  .at-locator__info > .at-src {
+    margin-top: var(--space-3);
+  }
+  @media (min-width: 48rem) {
+    .at-locator {
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      align-items: center;
+    }
+    .at-locator__info {
+      padding: var(--space-6);
+    }
+  }
+
   .ola-credit {
     overflow-wrap: anywhere;
   }

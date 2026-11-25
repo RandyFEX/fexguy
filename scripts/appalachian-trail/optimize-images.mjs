@@ -61,7 +61,9 @@ if (existsSync(extraFile)) {
 }
 
 const out = { checked: '2026-11-24', note: 'Only APPROVED rows of C-photography-manifest.csv. A record whose file is missing is left out (the page shows its placeholder).', hero: null, photos: {} };
-for (const p of PHOTOS) {
+// Destination photographs were replaced by locator maps (Randy, November 2026):
+// only the hero is built.
+for (const p of PHOTOS.filter((x) => x.id === 'hero')) {
   const input = path.join(src, p.file);
   if (!existsSync(input)) { console.log(`skip ${p.id}: ${p.file} not downloaded`); continue; }
   const dir = path.join(root, 'public/images/appalachian-trail', p.dir);
