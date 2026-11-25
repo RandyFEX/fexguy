@@ -47,7 +47,7 @@ Think of each trip in two parts. The remembrance is the adventure itself: the wa
 
 ### What the National Park Service rules ask of you
 
-Where the Park Service allows scattering, the conditions are similar:
+If your chosen destination permits ash scattering, the following guidelines will help you plan a respectful ceremony. Specific requirements vary by location.
 
 - The remains must be cremated and pulverized.
 - Scatter on the ground, well away from trails, roads, buildings and water.
