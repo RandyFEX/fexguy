@@ -21,6 +21,7 @@ import { HEADER_PHONE_ICON_PATH, PAGE_PHONES } from '@/config/phones';
 import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../../server/rates/pricing-categories.js';
 import { CONSENT_LINK_TEXT, CONSENT_TEXT, CONSENT_VERSION } from '../../../server/quote/consent.js';
+import { QUOTE_INTRO } from '@/config/quote-intro';
 
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -300,6 +301,23 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
 
     </div>
 
+    <!-- Video introduction over the results (Randy, November 2026; src/scripts/quote-intro.ts). -->
+    {QUOTE_INTRO.mp4 && (
+      <div class="qv" role="dialog" aria-modal="true" aria-label={QUOTE_INTRO.label} data-qv data-qv-id={QUOTE_INTRO.id} hidden>
+        <div class="qv__box">
+          <video class="qv__video" playsinline preload="none" poster={QUOTE_INTRO.poster || undefined}>
+            <source src={QUOTE_INTRO.mp4} type="video/mp4" />
+            {QUOTE_INTRO.webm && <source src={QUOTE_INTRO.webm} type="video/webm" />}
+            {QUOTE_INTRO.captions && <track kind="captions" srclang="en" label="English" src={QUOTE_INTRO.captions} default />}
+          </video>
+          <button class="qv__play" type="button" data-qv-play hidden>Play With Sound</button>
+          <button class="qv__close" type="button" data-qv-close aria-label="Close video">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none" /></svg>
+          </button>
+        </div>
+      </div>
+    )}
+
     <footer class="qh-foot">
       <div class="container">
         <ul class="qh-foot__links" role="list">
@@ -327,6 +345,15 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
   .qh-foot { padding-block: var(--space-6); background: var(--color-bg); color: var(--color-text-muted); }
   .qh-foot__links { list-style: none; margin: 0 0 var(--space-3); padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0 var(--space-4); }
   .qh-foot__links a { display: inline-flex; align-items: center; min-height: var(--tap-target); color: var(--color-primary); font-weight: 700; font-size: 0.9375rem; }
+  /* Video introduction overlay (portrait 9:16). */
+  .qv { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: var(--space-3); background: rgb(0 0 0 / 0.85); }
+  .qv[hidden], .qv__play[hidden] { display: none; }
+  .qv__box { position: relative; width: min(100%, calc((100dvh - 2 * var(--space-3)) * 9 / 16)); aspect-ratio: 9 / 16; max-height: 100%; }
+  .qv__video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 0.75rem; }
+  .qv__close { position: absolute; top: 0.5rem; right: 0.5rem; display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; padding: 0; border: 2px solid #fff; border-radius: 50%; background: #1f2926; color: #fff; cursor: pointer; }
+  .qv__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-height: 3.5rem; padding: 0 var(--space-6); border: 0; border-radius: 0.5rem; background: var(--color-cta); color: var(--color-on-cta); font-size: 1.25rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .qv__play:hover, .qv__close:hover { filter: brightness(0.9); }
+  :global(html.qv-open) { overflow: hidden; }
   .qh-foot__disclaimer { margin: 0 auto; max-width: 60rem; font-size: 0.75rem; line-height: 1.4; }
 
   .qf-body { padding-block: var(--space-4) var(--space-8); max-width: 62rem; }

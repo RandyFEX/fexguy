@@ -23,7 +23,10 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 // production: true runs the handlers as Production (crm: a fake Agent CRM API,
 // switched with srv.crm.down; no real request); requests are given the
 // funeralfunds.com origin.
-export async function startFunnelServer({ production = false } = {}) {
+// The video introduction over the results (tests/quote/video-intro.browser.mjs)
+// is left out of the served pages unless `videoIntro: true`, so these suites
+// keep testing the cards without the overlay in front of them.
+export async function startFunnelServer({ production = false, videoIntro = false } = {}) {
   // V3.3: a fake Agent CRM for production runs (srv.crm.down = true makes it fail).
   const crm = { down: false, calls: [] };
   const fetchImpl = async (url, init) => {
@@ -76,6 +79,7 @@ export async function startFunnelServer({ production = false } = {}) {
       return res.end('not found');
     }
     res.writeHead(200, { 'content-type': TYPES[extname(p)] ?? 'application/octet-stream' });
+    if (!videoIntro && extname(p) === '.html') return res.end(readFileSync(p, 'utf8').replace(/<div[^>]*\bdata-qv\b[\s\S]*?<\/video>[\s\S]*?<\/div>\s*<\/div>/, ''));
     res.end(readFileSync(p));
   });
   await new Promise((ok) => server.listen(0, '127.0.0.1', () => ok(undefined)));

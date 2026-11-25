@@ -1,0 +1,161 @@
+// Quote funnel video introduction (Randy, November 2026, v1.2; config in
+// src/config/quote-intro.ts). Browsers allow sound only after a user action,
+// and iPhones (Safari and the Facebook/Instagram in-app browsers) allow it for
+// about a second, too short to outlast the lead submission. So:
+//   prepare(): the contact step shows; the video starts downloading.
+//   prime():   called synchronously in the SEE MY RATES submit handler (before
+//              any await): play() then pause() on the same <video>, which
+//              unlocks that element for later playback with sound.
+//   open():    after the lead is accepted and the rates are showing: the
+//              overlay opens and play() is called at once (no timer first).
+// Blocked sound: a Play With Sound button (the overlay stays open). A load or
+// playback failure, or a start that never comes while playback is requested,
+// closes the overlay. Ending, the close button and Escape close it. Shown
+// once per quote session (key cleared by Start New Quote with the other
+// ff:quote-* keys). GA4-only events through `track` (tracking.ts).
+
+type Track = (name: string, extra?: Record<string, unknown>) => void;
+
+const PLAYED_KEY = 'ff:quote-intro-played';
+/** How long a requested playback may take to start before it counts as failed. */
+const START_LIMIT_MS = 12000;
+
+export function createIntro(root: HTMLElement, track: Track, visit: () => string) {
+  const overlay = root.querySelector<HTMLElement>('[data-qv]');
+  const video = overlay?.querySelector<HTMLVideoElement>('video');
+  if (!overlay || !video) return { prepare() {}, prime() {}, open(_after: () => void) {} };
+  const closeBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-close]')!;
+  const playBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-play]')!;
+  const videoId = overlay.dataset.qvId ?? '';
+  const send = (name: string, extra: Record<string, unknown> = {}) => track(name, { videoId, ...extra });
+
+  const played = () => {
+    try {
+      return localStorage.getItem(PLAYED_KEY) === visit();
+    } catch {
+      return false;
+    }
+  };
+  let failed = false;
+  let primed = false;
+  let isOpen = false;
+  let started = false;
+  let ended = false;
+  let watchdog = 0;
+  let afterClose: () => void = () => {};
+
+  const fail = () => {
+    if (failed) return;
+    failed = true;
+    if (isOpen) {
+      send('quote_video_error', { position: Math.floor(video.currentTime || 0) });
+      close();
+    }
+  };
+  // A <source> failure doesn't bubble; a capturing listener on the video sees it.
+  video.addEventListener(
+    'error',
+    () => {
+      if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) fail();
+    },
+    true,
+  );
+  video.addEventListener('playing', () => {
+    window.clearTimeout(watchdog);
+    if (!isOpen || started) return;
+    started = true;
+    send('quote_video_start');
+  });
+  video.addEventListener('ended', () => {
+    if (!isOpen) return;
+    ended = true;
+    send('quote_video_complete');
+    close();
+  });
+
+  function close() {
+    if (!isOpen) return;
+    isOpen = false;
+    window.clearTimeout(watchdog);
+    video!.pause();
+    if (!ended && !failed) send('quote_video_dismiss', { position: Math.floor(video!.currentTime || 0) });
+    overlay!.hidden = true;
+    document.documentElement.classList.remove('qv-open');
+    document.removeEventListener('keydown', onKey, true);
+    afterClose();
+  }
+  function onKey(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      close();
+    } else if (e.key === 'Tab') {
+      // Keep focus inside the dialog.
+      const items = [closeBtn, playBtn].filter((b) => !b.hidden);
+      const i = items.indexOf(document.activeElement as HTMLButtonElement);
+      e.preventDefault();
+      items[(i + (e.shiftKey ? items.length - 1 : 1)) % items.length]?.focus();
+    }
+  }
+  function request() {
+    window.clearTimeout(watchdog);
+    watchdog = window.setTimeout(() => {
+      if (isOpen && !started) fail();
+    }, START_LIMIT_MS);
+    video!.muted = false;
+    const p = video!.play();
+    p?.catch((err: DOMException) => {
+      if (!isOpen || started) return;
+      window.clearTimeout(watchdog);
+      if (err?.name === 'NotAllowedError') {
+        send('quote_video_autoplay_blocked');
+        playBtn.hidden = false;
+        playBtn.focus();
+      } else if (err?.name !== 'AbortError') fail();
+    });
+  }
+  playBtn.addEventListener('click', () => {
+    playBtn.hidden = true;
+    closeBtn.focus();
+    request();
+  });
+  closeBtn.addEventListener('click', close);
+
+  return {
+    /** The contact step is showing: start downloading the video. */
+    prepare() {
+      if (failed || played() || video.preload === 'auto') return;
+      video.preload = 'auto';
+      video.load();
+    },
+    /** Synchronously inside the SEE MY RATES submit handler (the user's action). */
+    prime() {
+      if (failed || played()) return;
+      primed = true;
+      video.muted = false;
+      try {
+        video.play()?.catch(() => {});
+        video.pause();
+      } catch {}
+    },
+    /** The rates are showing: open the overlay and play at once. */
+    open(after: () => void) {
+      if (!primed || failed || played() || isOpen) return;
+      try {
+        localStorage.setItem(PLAYED_KEY, visit());
+      } catch {}
+      afterClose = after;
+      isOpen = true;
+      started = false;
+      ended = false;
+      playBtn.hidden = true;
+      overlay.hidden = false;
+      document.documentElement.classList.add('qv-open');
+      document.addEventListener('keydown', onKey, true);
+      try {
+        video.currentTime = 0;
+      } catch {}
+      request();
+      closeBtn.focus({ preventScroll: true });
+    },
+  };
+}

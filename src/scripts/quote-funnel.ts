@@ -24,6 +24,7 @@ import { toE164US } from '../../server/quote/phone.js';
 import { isValidName } from '../../server/quote/name.js';
 import { SMS_NUMBER } from '@/config/phones';
 import { isIOS, isMobileDevice, prewrittenText, smsHref } from '@/scripts/sms-link.js';
+import { createIntro } from '@/scripts/quote-intro';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
@@ -108,6 +109,8 @@ if (root) {
   const progressLabel = $('[data-qf-progress-label]');
   const progressWrap = $('[data-qf-progress-wrap]');
   const testBanner = $('[data-qf-test]');
+  // Video introduction over the results (Randy, November 2026; src/scripts/quote-intro.ts).
+  const intro = createIntro(root, track, visitId);
 
   const answers: Partial<Quote> & { state?: string } = {};
   try {
@@ -141,7 +144,10 @@ if (root) {
     progress.style.width = `${(shownStep / TOTAL) * 100}%`;
     progressLabel.textContent = `Step ${shownStep} of ${TOTAL}`;
     if (!focus) return;
-    if (n === 6) fillSummary();
+    if (n === 6) {
+      fillSummary();
+      intro.prepare();
+    }
     const target = steps.get(n)?.querySelector<HTMLElement>('.qf-q');
     target?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
@@ -234,6 +240,8 @@ if (root) {
     const quote = quoteReady();
     if (!quote || !answers.state) return show(1);
     track('quote_contact_submit');
+    // Must run synchronously in this click/submit, before any await (quote-intro.ts).
+    intro.prime();
     submitting = true;
     submitBtn.disabled = true;
     setStatus(contactStatus, 'Getting your rates…');
@@ -275,6 +283,7 @@ if (root) {
     answers.coverage = RESULTS_START_COVERAGE;
     saveSteps();
     unlock({ ...quote, coverage: RESULTS_START_COVERAGE }, body.testMode, body.expiresAt);
+    intro.open(() => resultsTitle.focus({ preventScroll: true }));
   });
 
   function sourceInfo() {
