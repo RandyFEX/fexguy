@@ -55,6 +55,7 @@ export interface AtDestination {
   links: { url: string; label?: string }[];
   verification: 'verified' | 'partial' | 'unverified';
   description: string[];
+  why: string;
   ceremony: string;
   scatterPlan: string;
 }

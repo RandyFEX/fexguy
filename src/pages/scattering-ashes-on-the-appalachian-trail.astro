@@ -122,6 +122,11 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
             ))
           }
         </div>
+        <div class="at-choose">
+          <h3>Choose Your Last Adventure</h3>
+          <p><strong>Accessible Destinations:</strong> Meaningful remembrance locations that are relatively easy to reach, generally requiring less walking, climbing or physical exertion.</p>
+          <p><strong>Extraordinary Destinations:</strong> Remarkable summits, scenic overlooks, waterfalls and other memorable locations that offer an exceptional final adventure. Some require longer hikes or more challenging terrain.</p>
+        </div>
         <div class="at-filters">
           <div class="at-filter" role="group" aria-label="Type of destination">
             <span class="at-filter__label" aria-hidden="true">Type</span>
@@ -236,6 +241,8 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                     </figure>
 
                     {d.description.map((p) => <p class="ola-dest__desc">{p}</p>)}
+                    <h4 class="at-why__title">Why This Destination Is {kindLabel[d.category]}</h4>
+                    <p class="ola-dest__desc at-why">{d.why}</p>
 
                     <section class="at-plan" aria-label={`Your ceremony plan: ${d.name}`}>
                       <h4 class="at-plan__title">Your Ceremony Plan</h4>
@@ -1272,6 +1279,23 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
 
   /* Appalachian Trail additions (this page only). */
 
+  .at-choose h3 {
+    font-size: 1.25rem;
+    margin: var(--space-6) 0 var(--space-2);
+    color: var(--color-primary);
+  }
+  .at-choose p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #000;
+    margin: 0 0 var(--space-2);
+  }
+  .ola-dest .at-why__title {
+    margin: var(--space-4) 0 var(--space-1);
+  }
+  .ola-dest__desc.at-why {
+    margin-top: 0;
+  }
   /* Your Ceremony Plan (remembrance and scattering, per destination). */
   .at-plan {
     margin-top: var(--space-6);

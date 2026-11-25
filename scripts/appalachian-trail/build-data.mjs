@@ -271,7 +271,8 @@ const destinations = rows.map((r) => {
     links: splitLinks(r.official_links).map((url) => ({ url })),
     parking: null,
     verification: r.verification,
-    description: paragraphs(text).filter((x) => !/^(Your ceremony here|Where to scatter):/.test(x)),
+    description: paragraphs(text).filter((x) => !/^(Your ceremony here|Where to scatter|Why this destination is (accessible|extraordinary)):/.test(x)),
+    why: paragraphs(text).find((x) => /^Why this destination is (accessible|extraordinary):/.test(x))?.replace(/^Why this destination is \w+:\s*/, '') ?? fail(`${r.id}: no why paragraph`),
     ceremony: paragraphs(text).find((x) => x.startsWith('Your ceremony here:'))?.replace(/^Your ceremony here:\s*/, '') ?? fail(`${r.id}: no ceremony paragraph`),
     scatterPlan: paragraphs(text).find((x) => x.startsWith('Where to scatter:'))?.replace(/^Where to scatter:\s*/, '') ?? fail(`${r.id}: no scatter paragraph`),
   };
