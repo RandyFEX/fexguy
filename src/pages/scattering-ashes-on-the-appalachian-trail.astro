@@ -223,6 +223,21 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
 
                     {d.description.map((p) => <p class="ola-dest__desc">{p}</p>)}
 
+                    <section class="at-plan" aria-label={`Your ceremony plan: ${d.name}`}>
+                      <h4 class="at-plan__title">Your Ceremony Plan</h4>
+                      <div class="at-plan__grid">
+                        <div class="at-plan__part">
+                          <p class="at-plan__label">Remember Here</p>
+                          <p>{d.ceremony}</p>
+                        </div>
+                        <div class="at-plan__part">
+                          <p class="at-plan__label">Where to Scatter</p>
+                          <p>{d.scatterPlan}</p>
+                          <p class="at-plan__more">Requirements, contacts and official sources: see Scattering Rules below.</p>
+                        </div>
+                      </div>
+                    </section>
+
                     <section class="ola-plan" aria-label={`Plan your adventure: ${d.name}`}>
                       <h4>Plan Your Adventure</h4>
                       <dl class="ola-plan__grid">
@@ -279,24 +294,6 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
                             <p class="at-src">{evidence(d.scatter.evidence)}</p>
                           </dd>
                         </div>
-                        {(d.scatter.remembranceOnly || d.scatter.alternative) && (
-                          <div class="ola-plan__wide ola-plan__note">
-                            <dt><span class="ola-badge-head">Where Is Ash Scattering Permitted?</span></dt>
-                            <dd>
-                              {d.scatter.remembranceOnly && (
-                                <p>
-                                  <strong>This is a remembrance place.</strong>{' '}
-                                  {d.scatter.remembranceNote
-                                    ? `${d.scatter.remembranceNote.charAt(0).toUpperCase()}${d.scatter.remembranceNote.slice(1)}.`
-                                    : c === 'unconfirmed'
-                                      ? 'No published rule allows scattering here. Treat it as a place to remember, not to scatter, unless the land manager confirms otherwise.'
-                                      : 'The land manager does not allow scattering here.'}
-                                </p>
-                              )}
-                              {d.scatter.alternative && <p><strong>{d.scatter.classification === 'prohibited' && /C&O Canal/.test(d.scatter.alternative) ? 'Nearby authorized option:' : 'Designated scattering area:'}</strong> {d.scatter.alternative}</p>}
-                            </dd>
-                          </div>
-                        )}
                         <div class="ola-plan__wide">
                           <dt>Official Information</dt>
                           <dd class="at-links">
@@ -1260,6 +1257,51 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
   }
 
   /* Appalachian Trail additions (this page only). */
+
+  /* Your Ceremony Plan (remembrance and scattering, per destination). */
+  .at-plan {
+    margin-top: var(--space-6);
+    border-radius: var(--radius);
+    background: var(--ola-sand, #f6f2ea);
+    border-left: 5px solid #b68a35;
+    padding: var(--space-4) var(--space-4) var(--space-2);
+  }
+  .ola-dest .at-plan__title {
+    margin: 0 0 var(--space-3);
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    color: #173f35;
+  }
+  .at-plan__grid {
+    display: grid;
+    gap: var(--space-2) var(--space-6);
+  }
+  .at-plan__part p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #000;
+    margin: 0 0 var(--space-3);
+  }
+  .at-plan__part .at-plan__label {
+    margin: 0 0 var(--space-1);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #173f35;
+  }
+  .at-plan__part .at-plan__more {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+  @media (min-width: 48rem) {
+    .at-plan {
+      padding: var(--space-6) var(--space-6) var(--space-3);
+    }
+    .at-plan__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   /* Locator maps (replace destination photographs). */
   .ola-card__img {
     display: block;

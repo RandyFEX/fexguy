@@ -270,7 +270,9 @@ const destinations = rows.map((r) => {
     links: splitLinks(r.official_links).map((url) => ({ url })),
     parking: null,
     verification: r.verification,
-    description: paragraphs(text),
+    description: paragraphs(text).filter((x) => !/^(Your ceremony here|Where to scatter):/.test(x)),
+    ceremony: paragraphs(text).find((x) => x.startsWith('Your ceremony here:'))?.replace(/^Your ceremony here:\s*/, '') ?? fail(`${r.id}: no ceremony paragraph`),
+    scatterPlan: paragraphs(text).find((x) => x.startsWith('Where to scatter:'))?.replace(/^Where to scatter:\s*/, '') ?? fail(`${r.id}: no scatter paragraph`),
   };
 }).map(applyUpdates);
 
@@ -289,5 +291,5 @@ const json = JSON.stringify(data, null, 2) + '\n';
 if (/—|&mdash;|&#8212;/.test(json)) fail('em dash in output');
 if (destinations.length !== rows.length) fail('count mismatch');
 writeFileSync(out, json);
-console.log(`build-data: ${destinations.length} destinations, ${destinations.filter((d) => d.photo).length} with an approved photo -> ${path.relative(root, out)}`);
+console.log(`build-data: ${destinations.length} destinations -> ${path.relative(root, out)}`);
 if (!existsSync(out)) fail('not written');
