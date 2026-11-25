@@ -9,6 +9,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import GpsList from '@/components/appalachian-trail/GpsList.astro';
 import AtMapDefs from '@/components/appalachian-trail/AtMapDefs.astro';
 import AtLocatorMap from '@/components/appalachian-trail/AtLocatorMap.astro';
+import travel from '@/data/appalachian-trail/travel.json';
 import { pageTitle } from '@/lib/seo/meta';
 import { intro, destinations, states, hero, CLASS_LABEL, mapsUrl, linkLabel, type AtPoint, type AtDestination, type Classification } from '@/data/appalachian-trail/guide';
 
@@ -16,6 +17,8 @@ const total = destinations.length;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
 const coord = (p: AtPoint) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 // The map marks the destination point, or the trailhead where no destination point exists.
+const travelChecked = new Date(`${travel.checked}T12:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const ext = { rel: 'noopener', target: '_blank' };
 const mapPoint = (d: AtDestination) => d.points.find((pt) => pt.role === 'destination') ?? d.points.find((pt) => pt.role === 'trailhead') ?? null;
 const pointSource = (pt: AtPoint) =>
   pt.kind === 'official' ? pt.source : pt.kind === 'osm' ? 'Mapped by Funeral Funds from OpenStreetMap; not an official coordinate.' : 'Appalachian Trail Conservancy map point; role not established.';
@@ -353,6 +356,98 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
         );
       })
     }
+
+    <section class="ola-park at-guide" aria-labelledby="at-travel-title">
+      <div class="ola-wrap">
+        <h2 id="at-travel-title" class="at-bar">Traveling With Cremated Remains</h2>
+        <div class="at-panel">
+          <p>
+            Whatever way you travel, the rule of this guide stays the same: keep your loved one's ashes sealed in an unbreakable
+            urn and bring them back with you unless you are scattering them where it is allowed. If you are flying, the urn also
+            has to be one that airport security can screen. This section covers travel within the United States only.
+          </p>
+
+          <h3>The urn and the paperwork</h3>
+          <ul>
+            <li><strong>A securely sealed, unbreakable urn.</strong> Choose an urn with a closure that cannot work loose, such as a screw-top or a lid sealed by the crematory, made of a material that will not crack if it is dropped.</li>
+            <li><strong>For flights, a material TSA can see through.</strong> TSA suggests a container made of a lighter material, such as wood or plastic. A container that shows up as an opaque image on the X-ray, which can happen with dense materials such as metal or stone, will not be allowed through. A temporary plastic container from the crematory is one option; you can move the ashes into a permanent urn at home.</li>
+            <li><strong>Documents to carry.</strong> A certified copy of the death certificate and the certificate of cremation from the crematory or funeral home. Some airlines ask for them; they also answer questions anywhere along the way. Ask your funeral home which documents your state recommends.</li>
+          </ul>
+
+          <h3>By personal vehicle</h3>
+          <p>
+            Driving gives you the most control. Place the urn where it cannot tip, slide or fall: inside a padded bag or box on the
+            floor, or strapped in, rather than loose on a seat. Keep the documents in the car with the urn, and never leave it
+            in a vehicle where it could be stolen with the car's contents.
+          </p>
+
+          <h3>By commercial airline</h3>
+          <p>
+            TSA allows cremated remains in carry-on bags, with special instructions, and in checked bags, but some airlines do
+            not allow them in checked bags. Out of respect for the deceased, TSA officers will not open the container, even if
+            you ask them to; the officer at the checkpoint decides whether it can go through
+            (<a href="https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains" {...ext}>TSA</a>).
+            We recommend carrying the urn on board, where it stays with you. Tell the gate agent early if the overhead bins
+            are filling up. TSA's contact center can answer screening questions at 866-289-9673.
+          </p>
+          <div class="at-air">
+            <table class="at-stack">
+              <caption>Airline rules we checked ({travelChecked})</caption>
+              <thead><tr><th scope="col">Airline</th><th scope="col">Carry-on</th><th scope="col">Checked bag</th><th scope="col">Special requirements</th></tr></thead>
+              <tbody>
+                {travel.airlines.map((a) => (
+                  <tr>
+                    <th scope="row"><a href={a.url} {...ext}>{a.name}</a></th>
+                    <td data-label="Carry-on">{a.carryOn}</td>
+                    <td data-label="Checked bag">{a.checked}</td>
+                    <td data-label="Special requirements">{a.special}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="at-note">
+            Checked {travelChecked}. JetBlue, Alaska Airlines and Frontier were read on their official pages; American, United and
+            Southwest were checked through search summaries of their official pages because those sites could not be opened
+            from our research tools; Delta's policy could not be verified; Spirit's status comes from news reports. Airline
+            rules change, so confirm with your airline before you fly.
+          </p>
+
+          <h3>By train</h3>
+          <p>
+            Amtrak's published baggage and prohibited-item pages do not mention cremated remains, so we found no specific
+            policy. Amtrak's shipping service says it does not accept human remains, so carry the urn with you rather than
+            sending it. Before you travel, ask Amtrak at 1-800-USA-RAIL
+            (<a href="https://www.amtrak.com/baggage-policy.html" {...ext}>Amtrak baggage policy</a>).
+          </p>
+
+          <h3>By bus</h3>
+          <p>
+            Greyhound's published baggage pages do not mention cremated remains, so we found no specific policy. Keep the urn
+            with you on board rather than in the luggage bay, and ask Greyhound customer service before you travel
+            (<a href="https://www.greyhound.com/en/help-and-info/travel-info/baggage" {...ext}>Greyhound baggage information</a>).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ola-park at-guide" aria-labelledby="at-plan-title">
+      <div class="ola-wrap">
+        <h2 id="at-plan-title" class="at-bar">How to Plan Your Last Amazing Adventure</h2>
+        <div class="at-panel">
+          <ol class="at-steps">
+            <li><strong>Choose a meaningful destination.</strong> Start with the places your loved one talked about: a summit they climbed, a section they hiked, a view they loved. Use the state buttons above to see every destination along the Trail.</li>
+            <li><strong>Choose an accessible or extraordinary destination.</strong> Think about everyone who will come. Accessible destinations need little walking; extraordinary ones may mean a long hike. Read each destination's distance, climbing and parking notes before you decide.</li>
+            <li><strong>Confirm the scattering rules and get any permission.</strong> Check the destination's classification and its Scattering Rules box. Download a letter or apply for a permit where one is required; Harpers Ferry, for example, asks for permit applications at least a month ahead. Where no rule is published, ask the land manager and keep the answer in writing.</li>
+            <li><strong>Prepare a securely sealed, unbreakable urn.</strong> Choose one that suits how you will travel: one that will not break or open on the trail, and one TSA can screen if you are flying. Carry a certified copy of the death certificate and the certificate of cremation.</li>
+            <li><strong>Arrange travel, lodging and hiking supplies.</strong> Check road and seasonal closures, parking limits, park entrance fees and passes. Pack water, layers, sturdy shoes, a map and a padded bag for the urn.</li>
+            <li><strong>Plan the remembrance ceremony.</strong> Decide who will speak, what will be read and which photos you will take. Keep the group small where a park sets a limit, and plan to leave nothing behind.</li>
+            <li><strong>Take your loved one on one last amazing adventure.</strong> Walk the Trail together, share the stories at the place they loved, and take your time. The remembrance is the heart of the day, wherever the ashes will rest.</li>
+            <li><strong>Scatter where it is allowed, or bring the ashes back.</strong> Where scattering is permitted, follow the conditions exactly. Everywhere else, keep the ashes sealed in the urn, bring them back with you, and scatter them later at an authorized location, such as one of the verified places in this guide.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
     <section class="ola-park at-planning" aria-labelledby="at-planning-title">
       <div class="ola-wrap">
@@ -1295,6 +1390,128 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
   }
   .ola-dest__desc.at-why {
     margin-top: 0;
+  }
+  /* Travel and step-by-step planning (structure of the cruise ship guide). */
+  .at-guide {
+    border-top: 0;
+    padding-block: var(--space-6);
+  }
+  .ola-park .at-bar {
+    margin: 0;
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius) var(--radius) 0 0;
+    overflow-wrap: anywhere;
+  }
+  .at-panel {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-top: 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: var(--space-4);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #000;
+  }
+  .at-panel > :first-child {
+    margin-top: 0;
+  }
+  .at-panel > :last-child {
+    margin-bottom: 0;
+  }
+  .at-panel h3 {
+    font-size: 1.25rem;
+    margin: var(--space-6) 0 var(--space-2);
+    color: var(--color-primary);
+  }
+  .at-panel ul,
+  .at-panel ol {
+    padding-left: 1.4rem;
+  }
+  .at-panel li + li {
+    margin-top: var(--space-2);
+  }
+  .at-air {
+    overflow-x: auto;
+    margin: var(--space-4) 0 var(--space-2);
+  }
+  .at-stack {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .at-stack caption {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+  }
+  .at-stack th,
+  .at-stack td {
+    border: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: top;
+  }
+  .at-stack thead th {
+    background: #173f35;
+    color: #fff;
+  }
+  .at-stack tbody th {
+    white-space: nowrap;
+  }
+  .at-note {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .at-steps li::marker {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  @media (max-width: 47.99rem) {
+    .at-stack,
+    .at-stack tbody,
+    .at-stack tr,
+    .at-stack th,
+    .at-stack td {
+      display: block;
+      width: 100%;
+    }
+    .at-stack caption {
+      display: block;
+    }
+    .at-stack thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    .at-stack tr {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      margin-bottom: var(--space-3);
+      padding: var(--space-3);
+    }
+    .at-stack th,
+    .at-stack td {
+      border: 0;
+      padding: var(--space-1) 0;
+    }
+    .at-stack tbody th {
+      white-space: normal;
+    }
+    .at-stack td::before {
+      content: attr(data-label) ': ';
+      font-weight: 700;
+    }
+  }
+  @media (min-width: 48rem) {
+    .at-panel {
+      padding: var(--space-6);
+    }
   }
   /* Your Ceremony Plan (remembrance and scattering, per destination). */
   .at-plan {
