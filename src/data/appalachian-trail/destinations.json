@@ -23,12 +23,14 @@
       "Think of each trip in two parts. The remembrance is the adventure itself: the walk, the view, the words you share. The scattering is the moment the ashes are released, and it must happen where the land manager allows it. At a few places on the Trail, like the Shenandoah summits, the Blue Ridge Parkway and Great Smoky Mountains National Park, the two can happen together under the park's conditions. Everywhere else, keep your loved one's ashes sealed in an unbreakable urn during the ceremony and bring them back with you, then scatter them at a verified location or once the land manager has given permission."
     ],
     "npsRules": [
-      "Where the Park Service allows scattering, the conditions are similar:",
       "The remains must be cremated and pulverized.",
       "Scatter on the ground, well away from trails, roads, buildings and water.",
       "Spread the ashes so they do not collect in one place.",
       "Leave nothing behind: no marker, urn or container.",
-      "Large groups or formal ceremonies may need a separate permit.",
+      "Large groups or formal ceremonies may need a separate permit."
+    ],
+    "npsLead": [
+      "Where the Park Service allows scattering, the conditions are similar:",
       "The exact distances and steps differ by park, and they are listed with each destination below."
     ],
     "leaveNoTrace": [

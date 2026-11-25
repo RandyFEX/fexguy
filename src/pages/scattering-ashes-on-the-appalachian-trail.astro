@@ -71,25 +71,27 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
     <section class="at-rules" aria-labelledby="at-rules-title">
       <div class="ola-wrap">
         <h2 id="at-rules-title">How Scattering Rules Work on the Trail</h2>
-        <div class="ola-park__head">
-          <div class="at-rules__text">
-            {intro.rules.map((p) => <p>{p}</p>)}
-            <h3>Remembrance places and scattering places</h3>
-            {intro.remembrance.map((p) => <p>{p}</p>)}
-            <h3>Leave no trace</h3>
-            {intro.leaveNoTrace.map((p) => <p>{p}</p>)}
-          </div>
-          <aside class="ola-scatter" aria-labelledby="at-classes-title">
-            <h3 id="at-classes-title">The Four Classifications</h3>
-            <ul>
-              {intro.classifications.map((c) => {
-                const i = c.indexOf('.');
-                return <li><strong>{c.slice(0, i + 1)}</strong>{c.slice(i + 1)}</li>;
-              })}
-            </ul>
-            <h3 class="at-rules__nps">What the National Park Service Rules Ask</h3>
-            <ul>{intro.npsRules.map((r) => <li>{r}</li>)}</ul>
-          </aside>
+        <div class="at-rules__text">
+          {intro.rules.map((p) => <p>{p}</p>)}
+          <h3>Remembrance places and scattering places</h3>
+          {intro.remembrance.map((p) => <p>{p}</p>)}
+          <h3>Leave no trace</h3>
+          {intro.leaveNoTrace.map((p) => <p>{p}</p>)}
+        </div>
+        <aside class="ola-scatter at-classes" aria-labelledby="at-classes-title">
+          <h3 id="at-classes-title">The Four Classifications</h3>
+          <ul class="at-classes__list">
+            {intro.classifications.map((c) => {
+              const i = c.indexOf('.');
+              return <li><strong>{c.slice(0, i + 1)}</strong>{c.slice(i + 1)}</li>;
+            })}
+          </ul>
+        </aside>
+        <div class="at-rules__text at-rules__nps-block">
+          <h3>What the National Park Service Rules Ask</h3>
+          {intro.npsLead[0] && <p>{intro.npsLead[0]}</p>}
+          <ul class="at-rules__list">{intro.npsRules.map((r) => <li>{r}</li>)}</ul>
+          {intro.npsLead.slice(1).map((t) => <p>{t}</p>)}
         </div>
       </div>
     </section>
@@ -518,7 +520,7 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
     color: #000;
   }
   .ola-intro p {
-    max-width: 50rem;
+    max-width: none;
   }
   .ola-lead {
     font-size: inherit;
@@ -1377,19 +1379,41 @@ const verification = { verified: 'Verified', partial: 'Partly verified', unverif
     line-height: 1.15;
     margin: 0 0 var(--space-4);
   }
-  .at-rules__text p {
+  .at-rules__text p,
+  .at-rules__list {
     font-size: 1.125rem;
     line-height: 1.7;
     color: #000;
-    max-width: 50rem;
+  }
+  .at-rules__list {
+    padding-left: 1.25rem;
+    margin: 0 0 var(--space-3);
+  }
+  .at-classes {
+    margin-top: var(--space-6);
+  }
+  .ola-scatter .at-classes__list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-2) 0 var(--space-2);
+    display: grid;
+    gap: var(--space-3) var(--space-8);
+  }
+  .ola-scatter .at-classes__list li + li {
+    margin-top: 0;
+  }
+  @media (min-width: 48rem) {
+    .ola-scatter .at-classes__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .at-rules__nps-block {
+    margin-top: var(--space-6);
   }
   .at-rules__text h3 {
     font-size: 1.25rem;
     margin: var(--space-6) 0 var(--space-2);
     color: var(--color-primary);
-  }
-  .at-rules__nps {
-    margin-top: var(--space-4) !important;
   }
   .at-browse__hint {
     margin: 0 0 var(--space-4);
