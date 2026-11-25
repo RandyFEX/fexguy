@@ -1834,7 +1834,9 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 - **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
   overlay is open only the price figures are blurred (`data-video-veil` on
   the funnel root; presentation only, removed on every close: end, close
-  button, Escape, failure). Prices load independently: each price request
+  button, Escape, failure). Light frosted backdrop (Randy, November 2026):
+  rgba(255, 255, 255, 0.25) with backdrop-filter blur(1px) (plus
+  -webkit-backdrop-filter); price figures blurred 4px while it is open. Prices load independently: each price request
   has a 15 s limit and timeouts, network errors and 5xx answers are retried
   automatically (1, 2.5 and 5 s); after 3 s "Still loading your rates…"
   shows, and if every retry fails a message with Try Again (repeats only the
