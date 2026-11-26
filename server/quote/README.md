@@ -182,3 +182,13 @@ Agent CRM API; no SMS is sent and no lead is delivered. It covers:
 iPhone and Android, SEE MY RATES straight to the cards, the delivery-failure
 path and the analytics events, against the production handlers with a fake
 Agent CRM.
+
+## Owner test mode (/test/, V1.1)
+
+https://funeralfunds.com/test/ signs the owner's browser in (FUNNEL_TEST_PASSWORD,
+server-only, 12+ characters). A valid signed `ff_tm` cookie makes every
+/api/quote/ and /api/price-explorer/ request use the `owner-test` namespace
+(records expire after 30 days) in test mode: no Agent CRM, no conversion, no
+submission or price limits, real rates. A request carrying `x-owner-test`
+without a valid cookie is refused (403). See server/quote/owner-test.js and
+the "Owner funnel test mode" section of CLAUDE.md.

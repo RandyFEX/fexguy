@@ -81,7 +81,7 @@ export async function restartQuote(lead = ''): Promise<void> {
   try {
     await fetch('/api/quote/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visit() },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visit(), ...(/(?:^|;\s*)ff_tm_ui=1(?:;|$)/.test(document.cookie) ? { 'X-Owner-Test': '1' } : {}) },
       body: JSON.stringify({ action: 'end-session', ...(lead ? { lead } : {}) }),
       credentials: 'same-origin',
     });

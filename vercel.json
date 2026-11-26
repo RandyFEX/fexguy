@@ -22,6 +22,10 @@
     {
       "source": "/reschedule/",
       "destination": "/api/reschedule"
+    },
+    {
+      "source": "/test/",
+      "destination": "/api/test"
     }
   ],
   "redirects": [

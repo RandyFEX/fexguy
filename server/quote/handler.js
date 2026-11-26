@@ -28,6 +28,7 @@ import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sig
 import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
+import { TEST_SESSION_ENDED, ownerTestState } from './owner-test.js';
 
 /** Direct preview access (preview/local only): the one fixed sample record and its quote. */
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
@@ -94,7 +95,7 @@ function parseSource(src) {
 
 /**
  * @typedef {ReturnType<typeof import('./store.js').quoteStore>} QuoteStore
- * @typedef {{ store: QuoteStore | null, raw?: { get(key: string): Promise<string | null> } | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, now?: () => number }} Deps
+ * @typedef {{ store: QuoteStore | null, testStore?: QuoteStore | null, raw?: { get(key: string): Promise<string | null> } | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, now?: () => number }} Deps
  * @param {Request} request @param {Record<string, string | undefined>} env @param {Deps} deps
  */
 export async function handleQuote(request, env, deps) {
@@ -109,16 +110,24 @@ export async function handleQuote(request, env, deps) {
   try { body = JSON.parse(text); } catch { return bad(); }
   if (!body || typeof body !== 'object' || Array.isArray(body)) return bad();
 
-  const store = deps.store;
+  const now = (deps.now ?? Date.now)();
+  // Owner test mode (V1.1, server/quote/owner-test.js): only a valid signed
+  // /test/ cookie switches it on. Then every action uses the separate
+  // owner-test store and runs as test mode: no production lead record, no
+  // Agent CRM, no conversion, no submission limits. A page that asks for
+  // test mode without a valid cookie is refused, never treated as a lead.
+  const owner = ownerTestState(request, env, now);
+  if (owner === 'invalid') return json(403, { status: 'test-session-ended', message: TEST_SESSION_ENDED });
+  const ownerTest = owner === 'valid';
+  const store = ownerTest ? deps.testStore ?? null : deps.store;
   const key = sessionKey(env);
   const secret = env.QUOTE_SESSION_SECRET || env.HEALTH_SEARCH_SECRET || '';
   // V3.3 (Randy, November 2026): no phone verification. Preview and local
   // builds are test mode (records marked test, no Agent CRM delivery); the
   // production deployment delivers every lead to Agent CRM.
-  const test = env.VERCEL_ENV !== 'production';
+  const test = env.VERCEL_ENV !== 'production' || ownerTest;
   if (!store || !key)
     return json(503, { status: 'unavailable', message: `Quotes are not available right now. Please call ${FUNNEL_PHONE}.` });
-  const now = (deps.now ?? Date.now)();
   const iso = new Date(now).toISOString();
   const hash = (/** @type {string} */ s) => createHmac('sha256', secret).update(s).digest('hex').slice(0, 32);
   const ipHash = hash(`ip:${clientIp(request)}`);
@@ -152,7 +161,8 @@ export async function handleQuote(request, env, deps) {
       // (test mode: no Agent CRM, no conversion) skip the per-IP and per-phone
       // limits so the owner can repeat the whole journey; production ignores it.
       const previewJourney = test && body.previewJourney === true;
-      const over = await store.limit([
+      // Owner test mode: no limits at all (and nothing counts toward the global cap).
+      const over = ownerTest ? 0 : await store.limit([
         ...(previewJourney ? [] : [
         { key: `ip:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.ipHour, windowMs: HOUR },
         { key: `ip:d:${ipHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.ipDay, windowMs: DAY },
@@ -166,6 +176,7 @@ export async function handleQuote(request, env, deps) {
       const consentText = CONSENT_VERSIONS[CONSENT_VERSION];
       const fields = {
         mode: test ? 'test' : 'direct',
+        ...(ownerTest ? { ownerTest: true } : {}),
         firstName,
         phone,
         state,

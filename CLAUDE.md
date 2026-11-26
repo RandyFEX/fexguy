@@ -1863,6 +1863,42 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the contact step. Test: tests/quote/pricing-reliability.browser.mjs (real
   quote and pricing handlers, TEST-ONLY made-up rate tables).
 
+## Owner funnel test mode (Randy, November 2026, V1.1)
+
+- https://funeralfunds.com/test/ (api/test.js via the vercel.json rewrite;
+  code in server/quote/test-page.js and server/quote/owner-test.js) is Randy's
+  permanent, bookmarkable sign-in page for testing the LIVE quote funnels
+  without leads. Password: the server-only env `FUNNEL_TEST_PASSWORD` (12+
+  characters; never in the repo; without it /test/ is a 404 and test mode can
+  never switch on). Signing in sets `ff_tm` (HttpOnly, Secure, signed with a
+  key derived from the password and QUOTE_SESSION_SECRET, 30 days; changing
+  the password signs every browser out) and `ff_tm_ui=1` (readable by the
+  page). The hub links to the real /get-rates/ and /free-quote/ pages: no
+  copies, so every funnel change appears in test mode automatically.
+- Only a valid `ff_tm` switches test mode on, checked server-side in
+  api/quote.js (server/quote/handler.js) and api/price-explorer.js on every
+  request. In test mode every action uses the separate Redis namespace
+  `owner-test` (records expire after 30 days; never a production lead
+  record), runs as test mode (no Agent CRM, so no contact, workflow, text or
+  call; no conversion), and skips the submission and price limits; the rates
+  are the real production calculation. The page sends `x-owner-test` when
+  `ff_tm_ui` is set; a request with that header but no valid `ff_tm` is
+  refused (403 "test-session-ended"), so a test never falls back to a real
+  lead. `ff_tm_ui` also switches GA4 and Meta off in that browser
+  (src/scripts/tracking.ts). A URL parameter or a client-side flag can never
+  switch test mode on. The results show the funnel's existing TEST MODE note.
+- The current funnel has no SMS verification step (V3.3) and no coverage
+  question (V4.31), so test mode has no test code; it mirrors whatever the
+  production funnel does.
+- **Every future quote funnel change must keep owner test mode working**:
+  any new server action, store, outbound integration (CRM, SMS, email,
+  webhooks) or tracking call must respect it (use the request's store, gate
+  integrations on `test`, and send nothing from a test browser). New API
+  calls from the funnel pages must send the `x-owner-test` header like
+  `jsonHeaders()` in src/scripts/quote-funnel.ts. Tests:
+  tests/quote/owner-test.test.js (in `npm run test:quote`) and
+  tests/quote/owner-test.browser.mjs (in `npm run test:quote:browser`).
+
 ## Cruise ship ash scattering guide (Randy, November 2026)
 
 - /scattering-ashes-from-a-cruise-ship/ (src/pages/scattering-ashes-from-a-cruise-ship.astro,

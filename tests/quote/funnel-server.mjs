@@ -15,6 +15,8 @@ import { handlePriceExplorer } from '../../server/rates/public-pricing.js';
 import { handleQuote } from '../../server/quote/handler.js';
 import { quoteStore } from '../../server/quote/store.js';
 import { verifiedLead } from '../../server/quote/session.js';
+import { TEST_LEAD_TTL_MS, TEST_NAMESPACE, ownerTestState } from '../../server/quote/owner-test.js';
+import { handleTestPage } from '../../server/quote/test-page.js';
 import { config as hqsConfig } from '../../server/health-search/config.generated.js';
 
 const DIST = fileURLToPath(new URL('../../dist/', import.meta.url));
@@ -28,7 +30,10 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 // keep testing the cards without the overlay in front of them.
 // `datasets` replaces the private rate tables (server/rates/private/) with
 // test-only tables, for machines without them (tests/quote/pricing-reliability.browser.mjs).
-export async function startFunnelServer({ production = false, videoIntro = false, datasets = null } = {}) {
+// ownerTest: a password (OWNER_TEST_PASSWORD) is configured and /test/ is served, as on
+// production with FUNNEL_TEST_PASSWORD (tests/quote/owner-test.browser.mjs).
+export const OWNER_TEST_PASSWORD = 'local test password only';
+export async function startFunnelServer({ production = false, videoIntro = false, datasets = null, ownerTest = false } = {}) {
   // V3.3: a fake Agent CRM for production runs (srv.crm.down = true makes it fail).
   const crm = { down: false, calls: [] };
   const fetchImpl = async (url, init) => {
@@ -45,8 +50,9 @@ export async function startFunnelServer({ production = false, videoIntro = false
       qs.push({ id: `aetna-${sec.slice(-1).toLowerCase()}${i}`, carrierId: 'aetna', section: sec, number: String(i), text: `TEST ONLY ${sec} question ${i}?`, yes: { rule }, no: { classification: 'none', explanation: 'No effect.' }, search: { direct: [concept], related: [] } });
   await redis.store.set('hqs:questions:preview', JSON.stringify({ format: 1, target: 'preview', publishedAt: 't', total: qs.length, complete: false, questions: qs }));
   const engine = createEngine(datasets ?? loadDatasets());
-  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production', AGENT_CRM_TOKEN: 'fake-token', AGENT_CRM_LOCATION_ID: 'fake-location' } : {}) };
+  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production', AGENT_CRM_TOKEN: 'fake-token', AGENT_CRM_LOCATION_ID: 'fake-location' } : {}), ...(ownerTest ? { FUNNEL_TEST_PASSWORD: OWNER_TEST_PASSWORD } : {}) };
   const store = quoteStore(redis.store, env);
+  const testStore = quoteStore(redis.store, env, { ns: TEST_NAMESPACE, leadTtlMs: TEST_LEAD_TTL_MS });
   const getEngine = async () => ({ engine, publishedAt: 'local' });
 
   const server = createServer(async (req, res) => {
@@ -55,6 +61,10 @@ export async function startFunnelServer({ production = false, videoIntro = false
       res.writeHead(out.status, Object.fromEntries(out.headers));
       res.end(await out.text());
     };
+    if (url.pathname === '/__keys/') {
+      res.writeHead(200, { 'content-type': 'application/json' });
+      return res.end(JSON.stringify(await redis.command(['KEYS', url.searchParams.get('p') ?? 'none'])));
+    }
     if (url.pathname === '/__evidence/') {
       const ids = await redis.command(['KEYS', `qe:${production ? 'production' : 'preview'}:lead:*`]);
       const records = [];
@@ -62,16 +72,31 @@ export async function startFunnelServer({ production = false, videoIntro = false
       res.writeHead(200, { 'content-type': 'application/json' });
       return res.end(JSON.stringify(records));
     }
+    if (ownerTest && url.pathname === '/test/') {
+      const chunks = [];
+      for await (const c of req) chunks.push(c);
+      const headers = /** @type {any} */ ({ ...req.headers, ...(production && req.headers.origin ? { origin: 'https://funeralfunds.com' } : {}) });
+      const out = await handleTestPage(new Request(url, { method: req.method, headers, body: req.method === 'POST' ? Buffer.concat(chunks) : undefined }), env);
+      const h = {};
+      out.headers.forEach((v, k) => { if (k !== 'set-cookie') h[k] = v; });
+      const cookies = out.headers.getSetCookie();
+      res.writeHead(out.status, { ...h, ...(cookies.length ? { 'set-cookie': cookies } : {}) });
+      return res.end(await out.text());
+    }
     if (url.pathname === '/api/quote/' || url.pathname === '/api/price-explorer/') {
       const chunks = [];
       for await (const c of req) chunks.push(c);
       const headers = /** @type {any} */ ({ ...req.headers, ...(production && req.headers.origin ? { origin: 'https://funeralfunds.com' } : {}) });
       const r = new Request(url, { method: req.method, headers, body: req.method === 'POST' ? Buffer.concat(chunks) : undefined });
-      if (url.pathname === '/api/quote/') return send(await handleQuote(r, env, { store, raw: redis.store, getEngine, fetchImpl }));
+      if (url.pathname === '/api/quote/') return send(await handleQuote(r, env, { store, testStore, raw: redis.store, getEngine, fetchImpl }));
+      // The same store choice api/price-explorer.js makes (owner test mode).
+      const owner = ownerTestState(r, env, Date.now());
+      if (owner === 'invalid') return send(Response.json({ status: 'test-session-ended' }, { status: 403 }));
+      const q = owner === 'valid' ? testStore : store;
       return send(await handlePriceExplorer(r, env, {
-        store: redis.store, getEngine,
-        isVerified: async (q) => (await verifiedLead(q, env, store))?.leadId ?? false,
-        onPriced: async (id, input) => { const rec = await store.getLead(id); await store.putLead(id, { ...rec, lastQuote: input }); },
+        store: redis.store, getEngine, unlimited: () => owner === 'valid',
+        isVerified: async (x) => (await verifiedLead(x, env, q))?.leadId ?? false,
+        onPriced: async (id, input) => { const rec = await q.getLead(id); await q.putLead(id, { ...rec, lastQuote: input }); },
       }));
     }
     let p = join(DIST, decodeURIComponent(url.pathname));

@@ -100,7 +100,14 @@ function setTextLink(a: HTMLElement, on: boolean, href = '') {
     a.setAttribute('aria-disabled', 'true');
   }
 }
-const jsonHeaders = () => ({ 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visitId() });
+// Owner test mode (V1.1): a browser signed in at /test/ asks for test mode on
+// every request; the server decides from its signed HttpOnly cookie and
+// refuses the request if that cookie is no longer valid (server/quote/owner-test.js).
+const jsonHeaders = () => ({ 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visitId(), ...ownerTestHeader() });
+
+function ownerTestHeader(): Record<string, string> {
+  return /(?:^|;\s*)ff_tm_ui=1(?:;|$)/.test(document.cookie) ? { 'X-Owner-Test': '1' } : {};
+}
 
 async function api(body: Record<string, unknown>) {
   try {
