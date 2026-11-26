@@ -99,7 +99,19 @@ const hubPage = () =>
  * @param {{ limit?: (key: string, limit: number, windowMs: number) => Promise<boolean>, now?: () => number }} [deps]
  */
 export async function handleTestPage(request, env, deps = {}) {
-  if (!testPassword(env)) return new Response('Not found', { status: 404, headers: { ...HEADERS, 'content-type': 'text/plain; charset=utf-8' } });
+  if (!testPassword(env)) {
+    // TEMPORARY diagnostics (remove once /test/ works): whether the variable
+    // exists and passes validation, never its value or length.
+    const v = env.FUNNEL_TEST_PASSWORD;
+    const diag = [
+      `password=${v === undefined ? 'absent' : v === '' ? 'empty' : 'too-short'}`,
+      `env=${env.VERCEL_ENV ?? 'unset'}`,
+      `commit=${(env.VERCEL_GIT_COMMIT_SHA ?? 'unset').slice(0, 8)}`,
+      `deployment=${env.VERCEL_DEPLOYMENT_ID ?? 'unset'}`,
+      `names=${Object.keys(env).filter((k) => /funnel|test_?pass/i.test(k)).map((k) => JSON.stringify(k)).join(',') || 'none'}`,
+    ].join('; ');
+    return new Response('Not found', { status: 404, headers: { ...HEADERS, 'content-type': 'text/plain; charset=utf-8', 'x-ff-test-diag': diag } });
+  }
   const now = (deps.now ?? Date.now)();
   const html = (/** @type {number} */ status, /** @type {string} */ body, /** @type {string[]} */ cookies = []) => {
     const h = new Headers(HEADERS);
