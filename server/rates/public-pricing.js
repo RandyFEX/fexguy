@@ -109,7 +109,9 @@ export async function handlePriceExplorer(request, env, deps) {
   const now = (deps.now ?? Date.now)();
   const ipKey = createHmac('sha256', secret).update(`px-ip:${clientIp(request)}`).digest('hex').slice(0, 32);
   let allowed = 0;
-  try {
+  // Owner test mode (/test/, server/quote/owner-test.js): no per-network price limits.
+  if (deps.unlimited && deps.unlimited(request)) allowed = 1;
+  else try {
     allowed = Number(await deps.store.eval(LIMIT_SCRIPT, [
       `px:b:${ipKey}:${Math.floor(now / LIMITS.burstWindowMs)}`,
       `px:d:${ipKey}:${Math.floor(now / LIMITS.dailyWindowMs)}`,

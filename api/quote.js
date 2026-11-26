@@ -12,19 +12,23 @@
 //   QUOTE_SESSION_SECRET (or HEALTH_SEARCH_SECRET)       session signing, hashing
 //   QUOTE_SMS_DAILY_LIMIT (optional, default 300)        global daily SMS cap
 //   AGENT_CRM_TOKEN, AGENT_CRM_LOCATION_ID (optional)    Agent CRM contacts (GoHighLevel API)
+//   FUNNEL_TEST_PASSWORD (optional, 12+ characters)      owner test mode at /test/ (server/quote/owner-test.js)
 
 import { handleQuote } from '../server/quote/handler.js';
 import { quoteStore } from '../server/quote/store.js';
+import { TEST_LEAD_TTL_MS, TEST_NAMESPACE } from '../server/quote/owner-test.js';
 import { loadRateEngine } from '../server/rates/rate-store.js';
 import { redisConfig, upstashStore } from '../server/health-search/stores.js';
 
 const cfg = redisConfig(process.env);
 const raw = cfg ? upstashStore(cfg) : null;
 const store = raw ? quoteStore(raw, process.env) : null;
+// Owner test mode (/test/): a separate namespace whose records expire after 30 days.
+const testStore = raw ? quoteStore(raw, process.env, { ns: TEST_NAMESPACE, leadTtlMs: TEST_LEAD_TTL_MS }) : null;
 const getEngine = raw ? () => loadRateEngine(raw, process.env) : undefined;
 
 export async function POST(request) {
-  return handleQuote(request, process.env, { store, raw, getEngine });
+  return handleQuote(request, process.env, { store, testStore, raw, getEngine });
 }
 
 export async function GET(request) {

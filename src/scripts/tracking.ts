@@ -11,9 +11,10 @@
 //   quote funnel steps (Quote System v2.2)  GA4 quote_* events  (nothing to Meta)
 //
 // Rules:
-//  - Runs only on the production hostnames in src/config/lead.ts. Anywhere
-//    else (local dev, Vercel previews) every event is logged to the console
-//    instead of being sent.
+//  - Runs only on the production hostnames in src/config/lead.ts, and never
+//    in a browser signed in to owner test mode (/test/, cookie ff_tm_ui).
+//    Anywhere else (local dev, Vercel previews) every event is logged to the
+//    console instead of being sent.
 //  - Never send personal information. Fillout's form_submit message carries
 //    the visitor's answers; they are ignored.
 //  - Meta: Automatic Advanced Matching off (no user data passed to init) and
@@ -38,7 +39,10 @@ declare global {
 }
 
 const { ga4Id, metaPixelId, productionHosts } = lead.tracking;
-const live = (productionHosts as readonly string[]).includes(location.hostname);
+// Owner test mode (V1.1, /test/): a browser signed in for funnel testing
+// sends nothing to GA4 or Meta (every event is only logged, as on previews).
+const ownerTesting = /(?:^|;\s*)ff_tm_ui=1(?:;|$)/.test(document.cookie);
+const live = (productionHosts as readonly string[]).includes(location.hostname) && !ownerTesting;
 
 // --- Search-term privacy -----------------------------------------------------
 

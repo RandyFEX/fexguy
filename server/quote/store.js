@@ -13,6 +13,8 @@
 //   qf:<ns>:<id>:<what>     one-time notification flags
 //
 // ns = 'production' on the production deployment, 'preview' everywhere else.
+// Owner test mode (server/quote/owner-test.js) uses its own ns 'owner-test',
+// whose lead records and event lists expire on their own (leadTtlMs).
 
 /** @param {Record<string, string | undefined>} env */
 export const namespace = (env) => (env.VERCEL_ENV === 'production' ? 'production' : 'preview');
@@ -32,6 +34,7 @@ return over
 const SET_PX = `if ARGV[2] == '0' then return redis.call('SET', KEYS[1], ARGV[1]) else return redis.call('SET', KEYS[1], ARGV[1], 'PX', ARGV[2]) end`;
 const SET_NX = `local r = redis.call('SET', KEYS[1], ARGV[1], 'NX') if r then return 1 else return 0 end`;
 const RPUSH = `return redis.call('RPUSH', KEYS[1], ARGV[1])`;
+const RPUSH_PX = `local n = redis.call('RPUSH', KEYS[1], ARGV[1]) redis.call('PEXPIRE', KEYS[1], ARGV[2]) return n`;
 const LRANGE = `return redis.call('LRANGE', KEYS[1], 0, -1)`;
 const SADD = `return redis.call('SADD', KEYS[1], ARGV[1])`;
 const SMEMBERS = `return redis.call('SMEMBERS', KEYS[1])`;
@@ -40,9 +43,11 @@ const DEL = `return redis.call('DEL', KEYS[1])`;
 /**
  * @typedef {{ get(key: string): Promise<string | null>, eval(script: string, keys: string[], args: (string | number)[]): Promise<unknown> }} RawStore
  * @param {RawStore} raw @param {Record<string, string | undefined>} env
+ * @param {{ ns?: string, leadTtlMs?: number }} [opts] a separate namespace (owner test mode) whose records expire
  */
-export function quoteStore(raw, env) {
-  const ns = namespace(env);
+export function quoteStore(raw, env, opts = {}) {
+  const ns = opts.ns ?? namespace(env);
+  const ttl = opts.leadTtlMs ?? 0;
   const k = {
     lead: (/** @type {string} */ id) => `qe:${ns}:lead:${id}`,
     events: (/** @type {string} */ id) => `qe:${ns}:ev:${id}`,
@@ -66,10 +71,10 @@ export function quoteStore(raw, env) {
     limit: async (counters) =>
       Number(await raw.eval(COUNTERS_SCRIPT, counters.map((c) => k.limit(c.key)), counters.flatMap((c) => [c.limit, c.windowMs]))),
     getLead: (/** @type {string} */ id) => getJson(k.lead(id)),
-    putLead: (/** @type {string} */ id, /** @type {any} */ rec) => setJson(k.lead(id), rec),
-    event: (/** @type {string} */ id, /** @type {any} */ ev) => raw.eval(RPUSH, [k.events(id)], [JSON.stringify(ev)]),
+    putLead: (/** @type {string} */ id, /** @type {any} */ rec) => setJson(k.lead(id), rec, ttl),
+    event: (/** @type {string} */ id, /** @type {any} */ ev) => (ttl ? raw.eval(RPUSH_PX, [k.events(id)], [JSON.stringify(ev), ttl]) : raw.eval(RPUSH, [k.events(id)], [JSON.stringify(ev)])),
     events: async (/** @type {string} */ id) => /** @type {string[]} */ ((await raw.eval(LRANGE, [k.events(id)], [])) ?? []).map((s) => JSON.parse(s)),
-    indexPhone: (/** @type {string} */ hash, /** @type {string} */ id) => raw.eval(SADD, [k.phone(hash)], [id]),
+    indexPhone: (/** @type {string} */ hash, /** @type {string} */ id) => (ttl ? Promise.resolve(0) : raw.eval(SADD, [k.phone(hash)], [id])),
     leadsForPhone: async (/** @type {string} */ hash) => /** @type {string[]} */ ((await raw.eval(SMEMBERS, [k.phone(hash)], [])) ?? []),
     logAccess: (/** @type {any} */ entry) => raw.eval(RPUSH, [k.access()], [JSON.stringify(entry)]),
     accessLog: async () => /** @type {string[]} */ ((await raw.eval(LRANGE, [k.access()], [])) ?? []).map((s) => JSON.parse(s)),
