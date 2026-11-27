@@ -128,7 +128,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
   const lowest10k = priceCategories(engine, { ...rec.quoteAtSubmission, coverage: 10000 }).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
-  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'OH', source: 'Funeral Funds Website Quote', customFields: [{ key: 'age', field_value: '70' }, { key: 'gender', field_value: 'Female' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'OH', source: 'Funeral Funds Website Quote', customFields: [{ key: 'original_funnel_url', field_value: 'https://funeralfunds.com/free-quote/' }, { key: 'age', field_value: '70' }, { key: 'gender', field_value: 'Female' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
   assert.deepEqual(crm.calls[2].body, { tags: ['Funeral Funds - Website Quote'] });
   assert.equal((await c.store.events(start.body.lead)).find((e) => e.type === 'crm-delivered').customFields, 'accepted');
   const note = crm.calls[3].body.body;
@@ -697,7 +697,7 @@ test('V4.36: coverage_amount ($10,000) and monthly_premium (lowest $10,000 rate)
   assert.equal(start.http, 200, JSON.stringify(start.body));
   const ups = crm.calls.filter((x) => x.url.endsWith('/contacts/upsert'));
   assert.equal(ups.length, 1, 'one upsert');
-  assert.deepEqual(ups[0].body.customFields, [{ key: 'age', field_value: '67' }, { key: 'gender', field_value: 'Male' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest }]);
+  assert.deepEqual(ups[0].body.customFields, [{ key: 'original_funnel_url', field_value: 'https://funeralfunds.com/free-quote/' }, { key: 'age', field_value: '67' }, { key: 'gender', field_value: 'Male' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest }]);
   // Same quote as lowest_10k_rate.
   assert.equal(crm.calls.find((x) => x.headers && x.body.customFields && !x.url.endsWith('/upsert')).body.customFields[0].field_value, lowest);
   // The rest of the lead is unchanged: one tag call and one note.
@@ -735,7 +735,8 @@ test('V4.42: /get-rates/ leads get the Facebook source and tag; /free-quote/ and
     const urls = crm.calls.map((x) => x.url.replace('https://services.leadconnectorhq.com', ''));
     assert.deepEqual(urls, ['/contacts/upsert', '/contacts/c123', '/contacts/c123/tags', '/contacts/c123/notes'], 'contact and fields before the tag');
     assert.equal(crm.calls[0].body.source, source);
-    assert.equal(crm.calls[0].body.customFields.length, 4, 'age, gender, coverage and premium kept');
+    assert.equal(crm.calls[0].body.customFields.length, 5, 'original funnel URL, age, gender, coverage and premium kept');
+    assert.deepEqual(crm.calls[0].body.customFields[0], { key: 'original_funnel_url', field_value: `https://funeralfunds.com${page}` }, 'V2.1: the funnel URL is on the upsert, before the tag');
     assert.deepEqual(crm.calls[2].body, { tags: [tag] });
     assert.ok(crm.calls[3].body.body.includes(`Quote page: ${page}`));
     assert.equal((await c.store.getLead(start.body.lead)).funnel, funnel === 'get-rates' ? 'get-rates' : 'free-quote');

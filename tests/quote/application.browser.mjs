@@ -11,6 +11,15 @@ import { PRODUCTS } from '../../server/rates/products.js';
 import { HEALTH_QUESTIONS, FEEDBACK } from '../../server/quote/application.js';
 const headerCase = (t) => t.replace(/(^|\s)(\S)/g, (_m, sp, ch) => sp + ch.toUpperCase());
 const SUCCESS = "Great News! I've Received Your Answers. I'll Review Your Information To Find Your Best Coverage Options. Randy Funeral Funds";
+// V2.1: the latest upsert carries original_funnel_url, and it comes before the quote tag call.
+const funnelField = (calls, url) => {
+  const ui = calls.map((c) => c.url).lastIndexOf(calls.filter((c) => c.url.endsWith('/contacts/upsert')).at(-1)?.url);
+  const up = [...calls].reverse().find((c) => c.url.endsWith('/contacts/upsert'));
+  const upAt = calls.lastIndexOf(up);
+  const tagAt = calls.findIndex((c, i) => i > upAt && c.url.endsWith('/tags'));
+  const f = up?.body?.customFields?.find((x) => x.key === 'original_funnel_url');
+  return f?.field_value === url && tagAt > upAt ? true : JSON.stringify({ f, upAt, tagAt, ui });
+};
 const successText = (page) => page.$eval('[data-qa-success]', (e) => e.innerText.replace(/\s+/g, ' ').trim());
 
 const { chromium } = createRequire(import.meta.url)('playwright');
@@ -128,6 +137,8 @@ await check('production: the Comments field (not Notes) gets the summary at lead
   const upsert = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/contacts/upsert'));
   const note = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
   assert(upsert.body.state === 'TX' && note.body.body.includes('Lead Source: Facebook\nURL: https://funeralfunds.com/get-rates/'), JSON.stringify([upsert.body.state, note.body.body.slice(0, 160)]));
+  const ff1 = funnelField(srv.crm.calls, 'https://funeralfunds.com/get-rates/');
+  assert(ff1 === true, `get-rates original_funnel_url: ${ff1}`);
   // TEST-ONLY tables price Mutual of Omaha and Aetna (shown as CVS); Gerber has none here.
   assert(pre.join('\n') === '70 | Female | TX | Non-tobacco\n$5,000 Coverage\nMutual of Omaha: $21.00/mo\nCVS: $25.38/mo\nPrefers mornings', JSON.stringify(pre));
   const before = srv.crm.calls.length;
@@ -235,6 +246,8 @@ await check('/apply/ visited directly without a quote: the quote form first, the
   // V1.8: a quote started on /apply/ itself keeps /apply/ as its URL (Website, never Facebook).
   const dnote = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
   assert(dnote.body.body.includes('Lead Source: Website\nURL: https://funeralfunds.com/apply/'), dnote.body.body.slice(0, 200));
+  const ff3 = funnelField(srv.crm.calls, 'https://funeralfunds.com/apply/');
+  assert(ff3 === true, `apply original_funnel_url: ${ff3}`);
   const robots = await page.$eval('meta[name="robots"]', (m) => m.content);
   assert(robots === 'noindex, nofollow', robots);
   await page.goto(`${srv.base}/test/`);
@@ -381,7 +394,7 @@ for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
     // V1.8: the test-mode CRM preview (nothing sent) shows the contact data for the real CRM.
     const pv = await page.textContent('[data-qa-preview]');
     const fb = funnel === 'get-rates';
-    for (const t of ['New contact: no | Note: no', 'State: TX', `Contact source: Funeral Funds ${fb ? 'Facebook' : 'Website'} Quote`, `Lead Source: ${fb ? 'Facebook' : 'Website'}`, `URL: https://funeralfunds.com/${funnel}/`, 'Field contact.comments:', 'Then tag: Application Questionnaire Completed']) assert(pv.includes(t), `preview lacks ${t}: ${pv}`);
+    for (const t of ['New contact: no | Note: no', 'State: TX', `Contact source: Funeral Funds ${fb ? 'Facebook' : 'Website'} Quote`, `Lead Source: ${fb ? 'Facebook' : 'Website'}`, `URL: https://funeralfunds.com/${funnel}/`, `Field contact.original_funnel_url (set with the contact, before the quote tag): https://funeralfunds.com/${funnel}/`, 'Field contact.comments:', 'Then tag: Application Questionnaire Completed']) assert(pv.includes(t), `preview lacks ${t}: ${pv}`);
     await page.screenshot({ path: `/tmp/claude-0/v24-success-${width}.png` });
     await page.waitForURL(/\/about\/$/, { timeout: 8000 });
     await ctx.close();
@@ -417,6 +430,8 @@ await check('V1.9 (/free-quote/, mock CRM): State "TX", note "Lead Source: Websi
   const upsert = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/contacts/upsert'));
   const note = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
   assert(upsert.body.state === 'TX' && upsert.body.source === 'Funeral Funds Website Quote' && note.body.body.includes('Lead Source: Website\nURL: https://funeralfunds.com/free-quote/'), JSON.stringify([upsert.body.state, note.body.body.slice(0, 160)]));
+  const ff2 = funnelField(srv.crm.calls, 'https://funeralfunds.com/free-quote/');
+  assert(ff2 === true, `free-quote original_funnel_url: ${ff2}`);
   const before = srv.crm.calls.length;
   await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
   await page.waitForSelector('[data-qa]:not([hidden])');

@@ -23,7 +23,7 @@ import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
 import { firstNameOf, isValidName } from './name.js';
 import { toE164US } from './phone.js';
-import { APPLICATION_TAG, RATE_FIELD_COVERAGE, crmContact, crmSource, funnelSource, funnelUrl, sendApplicationToCrm, sendLeadToCrm } from './crm.js';
+import { APPLICATION_TAG, FUNNEL_URL_FIELD_KEY, RATE_FIELD_COVERAGE, crmContact, crmSource, funnelSource, funnelUrl, sendApplicationToCrm, sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
@@ -469,7 +469,7 @@ export async function handleQuote(request, env, deps) {
       if (!record) return json(401, { status: 'verify-required' });
       const live = !test && record.mode !== 'test' && record.mode !== 'preview-sample';
       // V1.5: test mode (previews, /test/) shows the Agent CRM update it would make, and sends nothing.
-      const crmPreview = () => ({ contact: record.crm?.contactId ? `existing contact ${record.crm.contactId}` : 'the existing contact saved for this lead at SEE MY RATES (none in test mode)', newContact: false, note: false, commentsField: 'contact.comments', comments: record.application.comments, tagAfterComments: APPLICATION_TAG, lead: v.leadId, state: crmContact(record, '').state ?? '', contactSource: crmSource(record), leadSource: funnelSource(record), url: funnelUrl(record) });
+      const crmPreview = () => ({ contact: record.crm?.contactId ? `existing contact ${record.crm.contactId}` : 'the existing contact saved for this lead at SEE MY RATES (none in test mode)', newContact: false, note: false, commentsField: 'contact.comments', comments: record.application.comments, tagAfterComments: APPLICATION_TAG, lead: v.leadId, state: crmContact(record, '').state ?? '', contactSource: crmSource(record), leadSource: funnelSource(record), url: funnelUrl(record), funnelUrlField: FUNNEL_URL_FIELD_KEY });
       if (record.application && (!live || record.application.crm?.delivered === true)) return json(200, { status: 'ok', saved: true, testMode: !live, ...(!live ? { crmPreview: crmPreview() } : {}) });
       if (!record.application) {
         const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
