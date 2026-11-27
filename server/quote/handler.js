@@ -23,7 +23,7 @@ import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
 import { firstNameOf, isValidName } from './name.js';
 import { toE164US } from './phone.js';
-import { APPLICATION_TAG, RATE_FIELD_COVERAGE, sendApplicationToCrm, sendLeadToCrm } from './crm.js';
+import { APPLICATION_TAG, RATE_FIELD_COVERAGE, crmContact, crmSource, funnelSource, funnelUrl, sendApplicationToCrm, sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
@@ -78,6 +78,13 @@ const clean = (s, max) => (typeof s === 'string' ? s.replace(/[\u0000-\u001f\u00
 
 /** @param {any} src */
 /** V4.42: the quote page the lead came from: 'get-rates' (Facebook ads) or 'free-quote' (website). @param {unknown} v */
+/** V1.8: the funnel page's own URL (only the known quote pages; otherwise the funnel's page). @param {unknown} page @param {string} funnel */
+export function entryUrlOf(page, funnel) {
+  const known = ['/get-rates/', '/free-quote/', '/apply/'];
+  const path = typeof page === 'string' && known.includes(page) ? page : `/${funnel}/`;
+  return `https://funeralfunds.com${path}`;
+}
+
 export function parseFunnel(v) {
   return v === 'get-rates' ? 'get-rates' : 'free-quote';
 }
@@ -200,7 +207,7 @@ export async function handleQuote(request, env, deps) {
         // V4.42: which quote page (validated; anything else is the website funnel).
         funnel: parseFunnel(body.funnel),
         // V1.9: the original funnel page, kept on the lead for the whole journey.
-        entryUrl: `https://funeralfunds.com/${parseFunnel(body.funnel)}/`,
+        entryUrl: entryUrlOf(body.page, parseFunnel(body.funnel)),
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
       };
       // A retry after a failed delivery: the same lead, from the same visit, not yet delivered.
@@ -462,7 +469,7 @@ export async function handleQuote(request, env, deps) {
       if (!record) return json(401, { status: 'verify-required' });
       const live = !test && record.mode !== 'test' && record.mode !== 'preview-sample';
       // V1.5: test mode (previews, /test/) shows the Agent CRM update it would make, and sends nothing.
-      const crmPreview = () => ({ contact: record.crm?.contactId ? `existing contact ${record.crm.contactId}` : 'the existing contact saved for this lead at SEE MY RATES (none in test mode)', newContact: false, note: false, commentsField: 'contact.comments', comments: record.application.comments, tagAfterComments: APPLICATION_TAG, lead: v.leadId });
+      const crmPreview = () => ({ contact: record.crm?.contactId ? `existing contact ${record.crm.contactId}` : 'the existing contact saved for this lead at SEE MY RATES (none in test mode)', newContact: false, note: false, commentsField: 'contact.comments', comments: record.application.comments, tagAfterComments: APPLICATION_TAG, lead: v.leadId, state: crmContact(record, '').state ?? '', contactSource: crmSource(record), leadSource: funnelSource(record), url: funnelUrl(record) });
       if (record.application && (!live || record.application.crm?.delivered === true)) return json(200, { status: 'ok', saved: true, testMode: !live, ...(!live ? { crmPreview: crmPreview() } : {}) });
       if (!record.application) {
         const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
