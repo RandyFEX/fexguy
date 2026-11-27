@@ -1779,6 +1779,15 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   disclosure's supporting-text style (#qf-phone-note, in the phone input's
   aria-describedby). The text itself is the GoHighLevel workflow's message.
 
+- **Quote funnel streamlining V1.0 (Randy, November 2026; supersedes the
+  V4.32 adjust heading and the phone-field note above):** the contact step's
+  "Your Contact Information" heading is screen-reader only, the "We’ll text
+  your rate for $10,000..." note is removed, and the button reads SEE MY
+  RATES INSTANTLY (the consent disclosure text is unchanged). The results'
+  "Easily adjust your rates or coverage below" line is removed (controls
+  unchanged). Card premiums are 3.5rem (were 3rem), scaled on desktop to fit
+  the card; on desktop the plan line stays on one line (scaled to fit) so no
+  blank row is reserved above the price.
 - **Your Name (Randy, November 2026, V1.1; replaces the V3.7 Full Name
   rule):** the contact step's name field reads "Your Name", stays required
   and accepts any nonempty name, a first name alone ("Randy") or a full name
