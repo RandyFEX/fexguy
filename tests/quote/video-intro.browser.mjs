@@ -55,7 +55,7 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 
-async function open({ breakVideo = false, delay = 6000, blockSound = false, staleOffer = false, prices = [] } = {}) {
+async function open({ breakVideo = false, delay = 6000, blockSound = false, stallPlay = '', staleOffer = false, prices = [] } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const page = await ctx.newPage();
   // A browser that refuses sound outside a user action, even on a video
@@ -69,6 +69,21 @@ async function open({ breakVideo = false, delay = 6000, blockSound = false, stal
         return play.call(this);
       };
     });
+  // iPhone-like (V1.0 fix): outside a user action, play() neither starts nor
+  // refuses with NotAllowedError; it stays pending ('pending') or is aborted ('abort').
+  if (stallPlay)
+    await page.addInitScript((mode) => {
+      // Priming (overlay still hidden) and taps inside the overlay play normally;
+      // the automatic start after the lead request stalls.
+      let tap = -1e9;
+      document.addEventListener('click', (e) => { if (e.target.closest?.('[data-qv]')) tap = performance.now(); }, true);
+      const play = HTMLMediaElement.prototype.play;
+      HTMLMediaElement.prototype.play = function () {
+        const overlay = this.closest('[data-qv]');
+        if (!overlay || overlay.hidden || performance.now() - tap < 1000) return play.call(this);
+        return mode === 'abort' ? Promise.reject(new DOMException('aborted', 'AbortError')) : new Promise(() => {});
+      };
+    }, stallPlay);
   // An earlier quote in this browser, same saved visit id, whose 10-minute
   // results window ran out a day ago.
   if (staleOffer)
@@ -179,6 +194,26 @@ await check('blocked sound: Play With Sound shows and stays until tapped, then p
   assert((await names(page)).join() === 'quote_video_autoplay_blocked,quote_video_start', (await names(page)).join());
   await ctx.close();
 });
+
+for (const mode of ['pending', 'abort'])
+  await check(`iPhone-like start that never begins (play() ${mode}): Play With Sound shows within 3 s, a tap plays with sound, the button hides`, async () => {
+    const { ctx, page } = await open({ delay: 6000, stallPlay: mode });
+    await page.click('[data-qf-submit]');
+    await page.waitForSelector('[data-qv]:not([hidden])', { timeout: 10000 });
+    const t0 = Date.now();
+    await page.waitForFunction(() => !document.querySelector("[data-qv-play]").hidden, null, { timeout: 4000 }).catch(async (e) => { throw new Error(JSON.stringify(await state(page)) + JSON.stringify(await names(page))); });
+    assert(Date.now() - t0 < 3500, `button after ${Date.now() - t0} ms`);
+    if (OUT) await page.screenshot({ path: `${OUT}/video-stalled-${mode}.png` });
+    // A tap on the video itself works like the button.
+    await page.click('[data-qv] video', { position: { x: 40, y: 200 } });
+    await page.waitForFunction(() => document.querySelector('[data-qv] video').currentTime > 0.5, null, { timeout: 8000 });
+    const s = await state(page);
+    assert(s.open && !s.paused && !s.muted && !s.play, JSON.stringify(s));
+    assert((await names(page)).join() === 'quote_video_autoplay_blocked,quote_video_start', (await names(page)).join());
+    await page.click('[data-qv-close]');
+    assert(!(await state(page)).open, 'X closes');
+    await ctx.close();
+  });
 
 await check('video fails to load: no overlay is left over the results', async () => {
   const { ctx, page } = await open({ breakVideo: true, delay: 300 });
