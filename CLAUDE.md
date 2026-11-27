@@ -99,7 +99,8 @@ is in place; see src/content/README.md for how pages were migrated.
   page itself (content, traffic, links, SEO value, current purpose) and, if it
   stays, replace the old form appropriately (with Randy's approval).
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
-  redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
+  redirect. Removed so far: /application/, /conservation/, /careers/, /apply/ (rebuilt
+  in November 2026 as the 10 Easy Questions page, below),
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
@@ -1847,6 +1848,63 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   GoHighLevel workflow triggered by that tag (no dialing-status field or
   notification API is used by the site). Tests: tests/quote/vcard.test.js,
   tests/quote/owner-test.browser.mjs.
+
+## 10 Easy Questions application funnel (Randy, November 2026, V1.0)
+
+- Each result card has, directly under the monthly premium, APPLY NOW - 10
+  EASY QUESTIONS and then SAVE THIS QUOTE TO YOUR PHONE (V1.4 order; same
+  style; disabled until real prices show), then the coverage line. All three open the same one-page questionnaire, step 9 of
+  QuoteFunnelPage.astro (src/components/quote/ApplicationQuestions.astro,
+  src/scripts/quote-application.ts), on /free-quote/, /get-rates/, every
+  entry point and /test/. Questions, answer order, None of the above (always
+  last, exclusive) and the three feedback lines are Randy's exact wording,
+  defined once in server/quote/application.js (page and server both use it);
+  never reword, reorder or add questions. Question 1 is height (feet,
+  inches) and weight. A progress line counts completed questions;
+  "Congratulations!" / "You’ve completed all 10 questions." and SUBMIT MY
+  ANSWERS appear when all 10 are done. Not underwriting: no scoring, carrier
+  matching or eligibility decision.
+- POST /api/quote/ action `application` (session-checked, validated against
+  the definitions, the displayed quote re-priced) saves the answers on the
+  EXISTING lead record (`application`, with the full answers and time)
+  before anything else; on production (never previews or owner test mode)
+  the existing Agent CRM contact's Comments field is updated and only then
+  is the tag "Application Questionnaire Completed" added (APPLICATION_TAG,
+  server/quote/crm.js); no note. Success only after the save (and, on
+  production, the delivery); a failed delivery is retried with the same
+  saved answers; a completed lead never sends a second update. Answers never
+  go to GA4, Meta or a URL. Randy's notification and any high-intent status
+  belong to a GoHighLevel workflow on that tag.
+- **/apply/ (Randy, November 2026, application page URL V1.0):** the
+  questionnaire's permanent URL (src/pages/apply.astro renders the same
+  QuoteFunnelPage with `apply`; one questionnaire). Every card's APPLY NOW -
+  10 EASY QUESTIONS on /free-quote/ and /get-rates/ opens /apply/ with the
+  displayed quote (age, sex, tobacco, coverage or budget only) in
+  sessionStorage `ff:apply-quote`; the quote session, lead and Agent CRM
+  contact carry over; nothing personal or medical is in the URL. Without a
+  quote session /apply/ runs the quote form first (website funnel source),
+  then opens the questions (no video). noindex, nofollow; out of the
+  sitemap, llms.txt and site search; linked from the /test/ hub.
+- **CRM Comments summary (V1.4, Randy, November 2026):** written to the
+  contact's existing Comments custom field (fieldKey `contact.comments`,
+  the field the Reschedule form uses; its id is looked up through the
+  location's custom-field definitions; never Notes, never a new field).
+  server/quote/comments.js builds it: at lead delivery (best effort, before
+  the quote tag) "67 | Female | TX | Non-tobacco", "$5,000 Coverage" and one
+  "<Company>: $26.53/mo" line per displayed card (Aetna shown as CVS); after
+  the questionnaire the same lines plus "5’6” | 165 lbs" and the selected
+  conditions alphabetized, with the question's timeframe ("(last 2 years)"
+  for questions 5 and 7, "(currently)" for 10), or "No listed health
+  conditions reported." Plain lines, no blank lines, labels, timestamps,
+  names, phones or None of the above. An earlier generated summary is
+  replaced; other Comments text is kept below it.
+- After success the page sets sessionStorage `ff:application-submitted` and
+  opens /randy/, which only with that fresh flag (12 hours) shows "Randy
+  just received your information!" / "Call Randy now to find out which plans
+  are available to you." above the card, CALL RANDY NOW (tel:8888629456)
+  with "Talk to Randy or leave him a message." under it, and SAVE MY CONTACT
+  INFORMATION; the IMPORTANT alert is hidden in that state. Ordinary
+  visitors see the unchanged card. Test: tests/quote/application.browser.mjs.
 
 ## Quote funnel video introduction (Randy, November 2026, v1.2)
 

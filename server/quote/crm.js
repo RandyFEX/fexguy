@@ -15,6 +15,8 @@
 // retry re-delivers the same lead (server/quote/handler.js 'start'). The
 // token is never logged, returned or sent to the browser.
 
+import { writeComments } from './comments.js';
+
 export const CRM_TAG = 'Funeral Funds - Website Quote';
 // V4.42 (Randy, November 2026): leads from /get-rates/ (Facebook ads) get
 // their own source and tag, for a separate Agent CRM workflow; /free-quote/
@@ -96,9 +98,10 @@ export function crmNote(record, rates = []) {
  * @param {{ label: string, monthlyPremium?: string | null, status: string }[]} [rates]
  * @param {typeof fetch} [fetchImpl]
  * @param {string | null} [lowest10k] the lowest displayed monthly rate for $10,000 ("32.87"), saved on the contact for GoHighLevel's text
- * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }>}
+ * @param {string | null} [comments] the Comments summary (server/quote/comments.js), written before the tag
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null, commentsField?: string | null }>}
  */
-export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, lowest10k = null) {
+export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, lowest10k = null, comments = null) {
   const token = env.AGENT_CRM_TOKEN ?? '';
   const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
   if (!token || !locationId) return { sent: false };
@@ -106,7 +109,7 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
     const res = await fetchImpl(`${API}${path}`, {
       method,
       headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
-      body: JSON.stringify(body),
+      body: body === undefined ? undefined : JSON.stringify(body),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
     /** @type {any} */
@@ -141,12 +144,22 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
         rateField = e instanceof Error ? e.name : 'error';
       }
     }
+    // V1.4: the Comments summary (best effort, logged), also before the tag.
+    /** @type {string | null} */
+    let commentsField = null;
+    if (comments) {
+      try {
+        commentsField = await writeComments(call, locationId, contactId, comments);
+      } catch (e) {
+        commentsField = e instanceof Error ? e.name : 'error';
+      }
+    }
     step = 'tags';
     const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [crmTag(record)] });
     step = 'note';
     const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: crmNote(record, rates) });
     const ok = tag.res.ok && note.res.ok;
-    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField, customFields };
+    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField, customFields, commentsField };
   } catch (e) {
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
@@ -244,6 +257,53 @@ export async function sendQuoteDownloadToCrm(env, record, d, fetchImpl = fetch) 
     const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: quoteDownloadNote(record, d) });
     const ok = tag.res.ok && note.res.ok;
     return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: !tag.res.ok ? tag.res.status : note.res.status, contactId };
+  } catch (e) {
+    return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
+  }
+}
+
+// 10 Easy Questions (Randy, November 2026; server/quote/application.js; V1.4):
+// a submitted questionnaire updates the lead's EXISTING contact once: its
+// Comments field gets the extended summary (server/quote/comments.js; never a
+// note), and only after that write succeeds the tag below is added (a
+// GoHighLevel workflow on it can notify Randy and mark the lead high intent).
+export const APPLICATION_TAG = 'Application Questionnaire Completed';
+
+/**
+ * @param {Record<string, string | undefined>} env @param {any} record
+ * @param {{ comments: string }} d @param {typeof fetch} [fetchImpl]
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, error?: string, commentsField?: string }>}
+ */
+export async function sendApplicationToCrm(env, record, d, fetchImpl = fetch) {
+  const token = env.AGENT_CRM_TOKEN ?? '';
+  const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
+  if (!token || !locationId) return { sent: false };
+  const call = async (/** @type {string} */ path, /** @type {unknown} */ body, method = 'POST') => {
+    const res = await fetchImpl(`${API}${path}`, {
+      method,
+      headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
+      body: body === undefined ? undefined : JSON.stringify(body),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    /** @type {any} */
+    let data = null;
+    try { data = await res.json(); } catch {}
+    return { res, data };
+  };
+  let step = 'contact';
+  try {
+    let contactId = record.crm?.contactId;
+    if (typeof contactId !== 'string' || !contactId) {
+      const up = await call('/contacts/upsert', crmContact(record, locationId));
+      contactId = up.data?.contact?.id;
+      if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
+    }
+    step = 'comments';
+    const commentsField = await writeComments(call, locationId, contactId, d.comments);
+    if (commentsField !== 'updated') return { sent: true, ok: false, step, contactId, commentsField };
+    step = 'tags';
+    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [APPLICATION_TAG] });
+    return { sent: true, ok: tag.res.ok, step: tag.res.ok ? 'done' : 'tags', status: tag.res.status, contactId, commentsField };
   } catch (e) {
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }

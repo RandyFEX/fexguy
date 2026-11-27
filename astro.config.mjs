@@ -88,6 +88,8 @@ export default defineConfig({
           path !== '/facebook/' &&
           path !== '/free-quote/' &&
           path !== '/get-rates/' &&
+          // /apply/ is the 10 Easy Questions application page (noindex; Randy, November 2026).
+          path !== '/apply/' &&
           path !== '/help/' &&
           // /randy/ is Randy's digital business card (noindex, direct link and QR only).
           !path.startsWith('/randy/') &&

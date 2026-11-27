@@ -84,7 +84,8 @@ const hubPage = () =>
 <p>This browser is in test mode for ${TEST_DAYS} days. Choose a quote funnel:</p>
 <a class="go" href="/get-rates/">Test /get-rates/</a>
 <a class="go" href="/free-quote/">Test /free-quote/</a>
-<p class="note">Both buttons open the real, current funnel pages with the live rates. While this browser is in test mode:</p>
+<a class="go" href="/apply/">Test /apply/ (10 Easy Questions)</a>
+<p class="note">These buttons open the real, current funnel pages with the live rates. While this browser is in test mode:</p>
 <ul class="note">
 <li>nothing is sent to Agent CRM, so no contact, workflow, text or call;</li>
 <li>no production lead record is created, and nothing counts toward the submission limits;</li>

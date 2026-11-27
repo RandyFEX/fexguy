@@ -43,17 +43,32 @@ const trackName: Record<string, string> = { call: 'call', web: 'website' };
   bodyClass="page-card"
 >
   <div class="rc" data-page-type="utility" data-page-reason="Randy's digital business card, shared by direct link and QR code.">
+    {/* 10 Easy Questions confirmation state (Randy, November 2026): only right after a
+        successful questionnaire submission in this browser tab (the flag set by
+        src/scripts/quote-application.ts, valid 12 hours). Ordinary visitors see the normal card. */}
+    <script is:inline>
+      try {
+        var t = Number(sessionStorage.getItem('ff:application-submitted'));
+        if (t && Date.now() - t < 12 * 3600 * 1000) document.documentElement.setAttribute('data-card-state', 'received');
+      } catch (e) {}
+    </script>
     <div class="rc-top">
       <HeaderLogo>
         <img class="rc-top__logo" src="/images/logo/funeral-funds-wordmark-800.webp" width="1987" height="285" alt="Funeral Funds" fetchpriority="high" />
       </HeaderLogo>
     </div>
 
+    <div class="rc-received" data-card-post>
+      <p class="rc-received__title">Randy just received your information!</p>
+      <p class="rc-received__text">Call Randy now to find out which plans are available to you.</p>
+    </div>
+
     <section class="rc-card" aria-labelledby="rc-name">
-      <p class="rc-alert">IMPORTANT:<br /><span class="rc-alert__do">TOUCH <span class="rc-alert__orange">ORANGE</span> BUTTON NOW</span></p>
+      <p class="rc-alert" data-card-normal>IMPORTANT:<br /><span class="rc-alert__do">TOUCH <span class="rc-alert__orange">ORANGE</span> BUTTON NOW</span></p>
       <a class="rc-save" href={card.vcfPath} download={card.vcfFilename} data-card-save>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.save} /></svg>
-        <span>Save Randy's Info To Your Phone</span>
+        <span data-card-normal>Save Randy's Info To Your Phone</span>
+        <span data-card-post>SAVE MY CONTACT INFORMATION</span>
       </a>
       <p class="rc-save__help">Then tap <strong>Create New Contact</strong> or <strong>Save</strong>.</p>
 
@@ -72,9 +87,10 @@ const trackName: Record<string, string> = { call: 'call', web: 'website' };
           <li class:list={[{ 'rc-btns__wide': a.key === 'call' }]}>
             <a class="rc-btn" href={a.href} data-card-action={trackName[a.key]}>
               <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons[a.key]} /></svg>
-              <span>{a.label}</span>
+              {a.key === 'call' ? <><span data-card-normal>{a.label}</span><span data-card-post>CALL RANDY NOW</span></> : <span>{a.label}</span>}
               {a.key === 'call' && <span class="rc-btn__num">{card.phone.display}</span>}
             </a>
+            {a.key === 'call' && <p class="rc-call-note" data-card-post>Talk to Randy or leave him a message.</p>}
           </li>
         ))}
         <li>
@@ -126,6 +142,11 @@ const trackName: Record<string, string> = { call: 'call', web: 'website' };
   body.page-card {
     background: var(--color-surface);
   }
+  /* 10 Easy Questions confirmation state (see the inline script at the top of the card). */
+  html:not([data-card-state="received"]) .rc [data-card-post],
+  html[data-card-state="received"] .rc [data-card-normal] {
+    display: none;
+  }
 </style>
 
 <style>
@@ -135,6 +156,32 @@ const trackName: Record<string, string> = { call: 'call', web: 'website' };
     padding: 0 1rem 2.5rem;
     font-size: 1.1875rem;
     line-height: 1.5;
+  }
+  .rc-received {
+    margin: 0 0 1rem;
+    padding: 1.25rem 1rem;
+    border-radius: 1rem;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    text-align: center;
+  }
+  .rc-received__title {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 800;
+  }
+  .rc-received__text {
+    margin: 0.5rem 0 0;
+    font-size: 1.1875rem;
+    font-weight: 600;
+  }
+  .rc-call-note {
+    width: 100%;
+    margin: 0.5rem 0 0;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-align: center;
   }
   .rc-top {
     display: flex;
@@ -230,6 +277,7 @@ const trackName: Record<string, string> = { call: 'call', web: 'website' };
   /* Buttons side by side keep the same height when one label wraps (card V1.1). */
   .rc-btns > li {
     display: flex;
+    flex-wrap: wrap;
   }
   .rc-btn {
     display: flex;

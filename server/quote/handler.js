@@ -23,13 +23,15 @@ import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
 import { firstNameOf, isValidName } from './name.js';
 import { toE164US } from './phone.js';
-import { RATE_FIELD_COVERAGE, sendLeadToCrm } from './crm.js';
+import { RATE_FIELD_COVERAGE, sendApplicationToCrm, sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 import { TEST_SESSION_ENDED, ownerTestState } from './owner-test.js';
 import { TOKEN_TTL_MS, newToken, quoteLines, vcardNote } from './vcard.js';
+import { applicationLines, parseApplication } from './application.js';
+import { commentRates, commentsSummary } from './comments.js';
 
 /** Direct preview access (preview/local only): the one fixed sample record and its quote. */
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
@@ -230,9 +232,11 @@ export async function handleQuote(request, env, deps) {
           lowest10k = at10k.sort((a, b) => (a.monthlyPremiumCents ?? 0) - (b.monthlyPremiumCents ?? 0))[0]?.monthlyPremium ?? null;
         } catch {}
         /** @type {{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }} */
-        const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k).catch(() => ({ sent: true, ok: false, error: 'error' }));
+        // V1.4: the compact Comments summary (server/quote/comments.js).
+        const comments = rates.length ? commentsSummary(record, quote, commentRates(rates)) : null;
+        const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k, comments).catch(() => ({ sent: true, ok: false, error: 'error' }));
         const delivered = crm.sent && crm.ok === true;
-        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null }).catch(() => {});
+        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null, commentsField: /** @type {any} */ (crm).commentsField ?? null }).catch(() => {});
         record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
         await store.putLead(leadId, record);
         if (!delivered)
@@ -430,6 +434,44 @@ export async function handleQuote(request, env, deps) {
       const note = vcardNote({ firstName: firstNameOf(record.firstName ?? '') || 'you', quote, categories, at });
       await store.putPending(`vc:${token}`, { leadId: v.leadId, sid: v.sid, at: at.toISOString(), quote, lines, note, test }, TOKEN_TTL_MS);
       return json(200, { status: 'ok', url: `/api/quote-vcard/?t=${token}` });
+    }
+
+    // 10 Easy Questions (Randy, November 2026; server/quote/application.js):
+    // the answers are saved on the EXISTING lead with the displayed quote
+    // (re-priced here), then (production only) its existing Agent CRM contact
+    // gets the answers note and the Application Questionnaire Completed tag.
+    // Success is reported only once saved (and, on production, delivered); a
+    // repeat never sends a second CRM update, and a failed delivery is retried
+    // with the same saved answers.
+    case 'application': {
+      const v = await verifiedLead(request, env, store, now);
+      if (!v) return json(401, { status: 'verify-required' });
+      const answers = parseApplication(body.answers);
+      const quote = parsePricingInput(body.quote);
+      if (!answers || !quote) return bad();
+      if (await store.limit([{ key: `app:h:${v.leadId}:${Math.floor(now / HOUR)}`, limit: 10, windowMs: HOUR }])) return json(429, { status: 'rate-limited' });
+      const record = await store.getLead(v.leadId);
+      if (!record) return json(401, { status: 'verify-required' });
+      const live = !test && record.mode !== 'test' && record.mode !== 'preview-sample';
+      if (record.application && (!live || record.application.crm?.delivered === true)) return json(200, { status: 'ok', saved: true, testMode: !live });
+      if (!record.application) {
+        const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
+        if (!loaded) return json(503, { status: 'unavailable', message: `Please try again, or call ${FUNNEL_PHONE}.` });
+        const categories = priceCategories(loaded.engine, quote);
+        const rateLines = quoteLines(quote, categories);
+        record.application = { at: iso, quote, rateLines, answers, answerLines: applicationLines(answers), comments: commentsSummary(record, quote, commentRates(categories), answers), crm: { delivered: false } };
+        await store.putLead(v.leadId, record);
+        await store.event(v.leadId, { at: iso, type: 'application-submitted' });
+      }
+      if (!live) return json(200, { status: 'ok', saved: true, testMode: true });
+      const app = record.application;
+      const crm = await sendApplicationToCrm(env, record, { comments: app.comments }, deps.fetchImpl).catch(() => ({ sent: true, ok: false, error: 'error' }));
+      const delivered = crm.sent && crm.ok === true;
+      await store.event(v.leadId, { at: iso, type: delivered ? 'crm-application-delivered' : crm.sent ? 'crm-application-failed' : 'crm-not-configured', ...crm }).catch(() => {});
+      record.application.crm = { delivered, at: iso };
+      await store.putLead(v.leadId, record);
+      if (!delivered) return json(502, { status: 'delivery-failed', message: `We saved your answers but couldn't send them just now. Please tap SUBMIT MY ANSWERS again, or call ${FUNNEL_PHONE}.` });
+      return json(200, { status: 'ok', saved: true, testMode: false });
     }
 
     // Start New Quote: end this visit's verified session. The lead's
