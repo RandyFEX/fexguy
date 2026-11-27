@@ -124,6 +124,10 @@ await check('production: the Comments field (not Notes) gets the summary at lead
   srv.crm.comments = 'Prefers mornings';
   const { ctx, page } = await toRates({ phone: '214-867-5322' });
   const pre = srv.crm.comments.split('\n');
+  // V1.9 (mock CRM payloads): native State as the two-letter code; the note names the original funnel.
+  const upsert = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/contacts/upsert'));
+  const note = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
+  assert(upsert.body.state === 'TX' && note.body.body.includes('Lead Source: Facebook\nURL: https://funeralfunds.com/get-rates/'), JSON.stringify([upsert.body.state, note.body.body.slice(0, 160)]));
   // TEST-ONLY tables price Mutual of Omaha and Aetna (shown as CVS); Gerber has none here.
   assert(pre.join('\n') === '70 | Female | TX | Non-tobacco\n$5,000 Coverage\nMutual of Omaha: $21.00/mo\nCVS: $25.38/mo\nPrefers mornings', JSON.stringify(pre));
   const before = srv.crm.calls.length;
@@ -397,6 +401,29 @@ await check('V2.5: question 7 reads "7. Have You Ever Had Cancer Or Received Can
   await page.waitForSelector('[data-qa-preview]');
   const preview = await page.textContent('[data-qa-preview]');
   assert(preview.includes('Cancer In The Last 2 Years, Currently Have Cancer') && !/\(last 2 years\)/.test(preview), preview);
+  await ctx.close();
+});
+
+await check('V1.9 (/free-quote/, mock CRM): State "TX", note "Lead Source: Website" / its URL, the same contact gets the questionnaire summary in Comments, then the tag; no new contact', async () => {
+  srv.crm.comments = '';
+  const { ctx, page } = await toRates({ phone: '214-867-5920', funnel: 'free-quote' });
+  const upsert = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/contacts/upsert'));
+  const note = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
+  assert(upsert.body.state === 'TX' && upsert.body.source === 'Funeral Funds Website Quote' && note.body.body.includes('Lead Source: Website\nURL: https://funeralfunds.com/free-quote/'), JSON.stringify([upsert.body.state, note.body.body.slice(0, 160)]));
+  const before = srv.crm.calls.length;
+  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+  await page.waitForSelector('[data-qa]:not([hidden])');
+  await page.selectOption('[data-qa-feet]', '5');
+  await page.selectOption('[data-qa-inches]', '6');
+  await page.fill('[data-qa-weight]', '180');
+  for (const q of HEALTH_QUESTIONS) if (q.id !== 'q7') await page.check(`input[name="${q.id}"][value="none"]`);
+  await page.check('input[name="q7"][value="cancer-over-2-years"]');
+  await page.click('[data-qa-submit]');
+  await page.waitForURL(/\/about\/$/, { timeout: 8000 });
+  const calls = srv.crm.calls.slice(before);
+  assert(!calls.some((c) => c.url.endsWith('/contacts/upsert') || c.url.endsWith('/notes')), 'no new contact, no note');
+  assert(calls.filter((c) => c.url.endsWith('/tags')).length === 1, 'one tag call');
+  assert(srv.crm.comments.split('\n').slice(-2).join('|') === '5’6” | 180 lbs|Cancer More Than 2 Years Ago', srv.crm.comments);
   await ctx.close();
 });
 

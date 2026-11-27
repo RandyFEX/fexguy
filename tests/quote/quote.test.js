@@ -128,7 +128,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
   const lowest10k = priceCategories(engine, { ...rec.quoteAtSubmission, coverage: 10000 }).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
-  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote', customFields: [{ key: 'age', field_value: '70' }, { key: 'gender', field_value: 'Female' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'OH', source: 'Funeral Funds Website Quote', customFields: [{ key: 'age', field_value: '70' }, { key: 'gender', field_value: 'Female' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
   assert.deepEqual(crm.calls[2].body, { tags: ['Funeral Funds - Website Quote'] });
   assert.equal((await c.store.events(start.body.lead)).find((e) => e.type === 'crm-delivered').customFields, 'accepted');
   const note = crm.calls[3].body.body;

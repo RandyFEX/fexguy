@@ -49,25 +49,57 @@ test('writes the existing Comments field (fieldKey contact.comments) by its id, 
   const put = calls.find((c) => c.method === 'PUT');
   assert.deepEqual(put.body, { customFields: [{ id: 'abc', field_value: `${BEFORE}\nOld note` }] });
   assert.ok(!calls.some((c) => c.path.endsWith('/notes')));
-  const missing = async (path, body, method) => ({ res: new Response(null, { status: 200 }), data: { customFields: [] } });
-  assert.equal(await writeComments(missing, 'loc', 'c1', BEFORE), 'field-not-found');
+});
+
+test('V1.9: without the field list (lookup refused), Comments is written by key "comments", earlier text kept below', async () => {
+  // A mock contact: field "cf9" is Comments (holds older text); "cf1" is another field.
+  const fields = { cf1: '70', cf9: 'Older comment' };
+  const calls = [];
+  const call = async (path, body, method = 'POST') => {
+    calls.push({ path, method, body });
+    if (path.includes('/customFields')) return { res: new Response(null, { status: 403 }), data: {} };
+    if (method === 'GET') return { res: new Response(null, { status: 200 }), data: { contact: { customFields: Object.entries(fields).map(([id, value]) => ({ id, value })) } } };
+    for (const f of body.customFields) {
+      if (f.key === 'comments') fields.cf9 = f.field_value;
+      else if (f.id) fields[f.id] = f.field_value;
+    }
+    return { res: new Response(null, { status: 200 }), data: {} };
+  };
+  assert.equal(await writeComments(call, 'loc', 'c1', BEFORE), 'updated-by-key');
+  assert.equal(fields.cf9, `${BEFORE}\nOlder comment`);
+  assert.equal(fields.cf1, '70');
+  assert.ok(!calls.some((c) => c.path.endsWith('/notes')));
+  // A refused key write is a failure (the caller adds no tag).
+  const refused = async (path, body, method = 'POST') => ({ res: new Response(null, { status: method === 'PUT' ? 422 : path.includes('/customFields') ? 403 : 200 }), data: { contact: { customFields: [] } } });
+  assert.equal(await writeComments(refused, 'loc', 'c1', BEFORE), 'write-key-422 (lookup 403)');
 });
 
 test('questionnaire delivery: no tag unless the Comments write succeeds; no note ever', async () => {
   const { sendApplicationToCrm } = await import('../../server/quote/crm.js');
   const env = { AGENT_CRM_TOKEN: 't', AGENT_CRM_LOCATION_ID: 'loc' };
-  for (const fieldFound of [false, true]) {
+  for (const writeOk of [false, true]) {
     const calls = [];
     const fetchImpl = async (url, init) => {
       const u = String(url);
       calls.push({ u, method: init.method });
-      if (u.includes('/customFields')) return Response.json({ customFields: fieldFound ? [{ id: 'abc', fieldKey: 'contact.comments' }] : [] });
+      if (u.includes('/customFields')) return Response.json({ customFields: [{ id: 'abc', fieldKey: 'contact.comments' }] });
       if (init.method === 'GET') return Response.json({ contact: { customFields: [] } });
+      if (init.method === 'PUT' && !writeOk) return Response.json({ message: 'refused' }, { status: 422 });
       return Response.json({ ok: true });
     };
     const r = await sendApplicationToCrm(env, { crm: { contactId: 'c1' } }, { comments: BEFORE }, fetchImpl);
-    assert.equal(r.ok, fieldFound);
-    assert.equal(calls.some((c) => c.u.endsWith('/tags')), fieldFound);
+    assert.equal(r.ok, writeOk);
+    assert.equal(calls.some((c) => c.u.endsWith('/tags')), writeOk);
     assert.ok(!calls.some((c) => c.u.endsWith('/notes') || c.u.endsWith('/upsert')));
   }
+});
+
+test('V1.9: the native State field gets the two-letter code; the note keeps the original funnel source and URL', async () => {
+  const { crmContact, crmNote } = await import('../../server/quote/crm.js');
+  assert.equal(crmContact({ firstName: 'Pat', phone: '+12145550100', state: 'Texas' }, 'loc').state, 'TX');
+  assert.equal(crmContact({ firstName: 'Pat', phone: '+12145550100', state: 'New Hampshire', funnel: 'get-rates' }, 'loc').state, 'NH');
+  const fb = crmNote({ leadId: 'x', funnel: 'get-rates', state: 'Texas' });
+  const web = crmNote({ leadId: 'y', funnel: 'free-quote', state: 'Texas' });
+  assert.ok(fb.includes('Lead Source: Facebook\nURL: https://funeralfunds.com/get-rates/'), fb);
+  assert.ok(web.includes('Lead Source: Website\nURL: https://funeralfunds.com/free-quote/'), web);
 });

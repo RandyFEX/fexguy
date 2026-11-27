@@ -1966,6 +1966,21 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   QuoteFunnelPage's scoped .qf-btn-cta never reached it), Congratulations!,
   then the bottom count ("You’ve completed all 10 questions." removed).
   Below 10, only the bottom count shows there.
+- **CRM corrections V1.9 (Randy, November 2026):** (1) Comments: the field is
+  found by fieldKey `contact.comments` or the name "Comments" in the location's
+  custom-field list; if that list can't be read (the token may lack the
+  custom-fields read scope), the summary is written by key `comments` (as the
+  working `lowest_10k_rate` write is), the field that took it is found on the
+  contact and its earlier text is put back below the summary (results
+  "updated" / "updated-by-key"; anything else is a failure and no tag is
+  added). (2) The native State field gets the two-letter code (STATE_ABBR in
+  server/quote/comments.js, e.g. "TX"). (3) The lead keeps `entryUrl`
+  (https://funeralfunds.com/get-rates/ or /free-quote/, from the funnel
+  validated at SEE MY RATES; never /apply/ or /about/) and the CRM note adds
+  "Lead Source: Facebook|Website" and "URL: <that URL>". (4) The site sends no
+  internal SMS: Randy's lead notification is a GoHighLevel workflow; its
+  source/URL lines branch on the funnel tag there. Each CRM outcome is also
+  logged (`quote-crm`, no personal data) in the Vercel runtime logs.
 - (Before V2.4) After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans

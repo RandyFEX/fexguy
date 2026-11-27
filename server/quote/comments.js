@@ -12,7 +12,7 @@ import { HEALTH_QUESTIONS, NONE } from './application.js';
 export const COMMENTS_FIELD_KEY = 'comments';
 const COMMENTS_MAX = 50000;
 
-const STATE_ABBR = /** @type {Record<string, string>} */ ({
+export const STATE_ABBR = /** @type {Record<string, string>} */ ({
   Alabama: 'AL', Alaska: 'AK', Arizona: 'AZ', Arkansas: 'AR', California: 'CA', Colorado: 'CO', Connecticut: 'CT', Delaware: 'DE',
   Florida: 'FL', Georgia: 'GA', Hawaii: 'HI', Idaho: 'ID', Illinois: 'IL', Indiana: 'IN', Iowa: 'IA', Kansas: 'KS', Kentucky: 'KY',
   Louisiana: 'LA', Maine: 'ME', Maryland: 'MD', Massachusetts: 'MA', Michigan: 'MI', Minnesota: 'MN', Mississippi: 'MS', Missouri: 'MO',
@@ -118,15 +118,34 @@ export function mergeComments(summary, existing) {
  */
 export async function writeComments(call, locationId, contactId, summary) {
   const id = encodeURIComponent(contactId);
-  // The contact's custom fields come back by id, so find the Comments field's id first.
+  const values = (/** @type {any} */ c) => /** @type {{ id: string, value: unknown }[]} */ (c.data?.contact?.customFields ?? []);
+  // The contact's custom fields come back by id, so find the Comments field's id first
+  // (key contact.comments, or the field named "Comments").
   const defs = await call(`/locations/${encodeURIComponent(locationId)}/customFields?model=contact`, undefined, 'GET');
-  if (!defs.res.ok) return `field-lookup-${defs.res.status}`;
-  const field = (defs.data?.customFields ?? []).find((/** @type {any} */ f) => f?.fieldKey === `contact.${COMMENTS_FIELD_KEY}`);
-  if (!field?.id) return 'field-not-found';
+  const field = defs.res.ok
+    ? (defs.data?.customFields ?? []).find((/** @type {any} */ f) => f?.fieldKey === `contact.${COMMENTS_FIELD_KEY}`) ??
+      (defs.data?.customFields ?? []).find((/** @type {any} */ f) => String(f?.name ?? '').trim().toLowerCase() === COMMENTS_FIELD_KEY)
+    : null;
   const contact = await call(`/contacts/${id}`, undefined, 'GET');
   if (!contact.res.ok) return `read-${contact.res.status}`;
-  const current = (contact.data?.contact?.customFields ?? []).find((/** @type {any} */ f) => f?.id === field.id)?.value;
-  const value = mergeComments(summary, typeof current === 'string' ? current : '');
-  const put = await call(`/contacts/${id}`, { customFields: [{ id: field.id, field_value: value }] }, 'PUT');
-  return put.res.ok ? 'updated' : `write-${put.res.status}`;
+  if (field?.id) {
+    const current = values(contact).find((f) => f?.id === field.id)?.value;
+    const value = mergeComments(summary, typeof current === 'string' ? current : '');
+    const put = await call(`/contacts/${id}`, { customFields: [{ id: field.id, field_value: value }] }, 'PUT');
+    return put.res.ok ? 'updated' : `write-${put.res.status}`;
+  }
+  // V1.9 (Randy, November 2026): when the field list can't be read (the token may lack
+  // the custom-fields read scope; the contact writes by key already work, as for
+  // lowest_10k_rate), write by the field key, then find which field took the value
+  // and put any earlier text of that field back below the summary.
+  const byKey = await call(`/contacts/${id}`, { customFields: [{ key: COMMENTS_FIELD_KEY, field_value: summary }] }, 'PUT');
+  if (!byKey.res.ok) return `write-key-${byKey.res.status}${defs.res.ok ? '' : ` (lookup ${defs.res.status})`}`;
+  const after = await call(`/contacts/${id}`, undefined, 'GET');
+  const hit = after.res.ok ? values(after).find((f) => f?.value === summary) : null;
+  if (!hit) return 'updated-by-key';
+  const before = values(contact).find((f) => f?.id === hit.id)?.value;
+  const merged = mergeComments(summary, typeof before === 'string' ? before : '');
+  if (merged === summary) return 'updated-by-key';
+  const put = await call(`/contacts/${id}`, { customFields: [{ id: hit.id, field_value: merged }] }, 'PUT');
+  return put.res.ok ? 'updated-by-key' : `write-${put.res.status}`;
 }
