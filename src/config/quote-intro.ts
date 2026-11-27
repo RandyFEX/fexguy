@@ -15,17 +15,17 @@
 // Leaving `mp4` empty turns the overlay off (nothing is rendered).
 export const QUOTE_INTRO = {
   /** Sent to GA4 as video_id (letters, digits, hyphens). */
-  // Pre-rate video V1.0 (Randy, November 2026): his office-background recording
-  // (32.3 s, 1080x1920 H.264/AAC, 16.0 MB) encoded with the recipe above:
-  // 720x1280 H.264 High, AAC 96 kbps, faststart, 2.69 MB. The words at the
-  // bottom ("YOUR RATES WILL APPEAR AFTER THIS VIDEO") are part of the
+  // Pre-rate video V2.0 (Randy, November 2026): his shorter office-background
+  // recording (24.2 s, 1080x1920 H.264/AAC, 11.9 MB) encoded with the recipe
+  // above: 720x1280 H.264 High, AAC 96 kbps, faststart, 2.03 MB. The words at
+  // the bottom ("YOUR RATES WILL APPEAR AFTER THIS VIDEO") are part of the
   // picture; the captions (line:80%) sit above them. Captions transcribed
-  // from the audio. Replaced randy-intro-v1 (21 s).
-  id: 'randy-intro-v2',
-  mp4: '/videos/quote-intro/randy-intro-v2.mp4',
-  webm: '/videos/quote-intro/randy-intro-v2.webm',
-  captions: '/videos/quote-intro/randy-intro-v2.vtt',
-  poster: '/videos/quote-intro/randy-intro-v2.jpg',
+  // from the audio. Replaced randy-intro-v2 (32.3 s).
+  id: 'randy-intro-v3',
+  mp4: '/videos/quote-intro/randy-intro-v3.mp4',
+  webm: '/videos/quote-intro/randy-intro-v3.webm',
+  captions: '/videos/quote-intro/randy-intro-v3.vtt',
+  poster: '/videos/quote-intro/randy-intro-v3.jpg',
   /** The dialog's accessible name. */
   label: 'Video message from Funeral Funds',
 } as const;
