@@ -1788,6 +1788,19 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   unchanged). Card premiums are 3.5rem (were 3rem), scaled on desktop to fit
   the card; on desktop the plan line stays on one line (scaled to fit) so no
   blank row is reserved above the price.
+- **Quote results layout V1.1 (Randy, November 2026):** the results open with
+  one compact centered line, "Call 888-862-9456 for even lower-cost
+  state-specific plans. Rates viewable for <countdown>" (the "Call us to check
+  rates from 30+ insurance companies." sentence removed; 0.875rem on phones,
+  1.125rem from 48rem; the number is the tel: link with the countdown's
+  yellow #ffeb3b; one line on desktop, two on a 390px phone). The cards use a
+  single minmax(0, 1fr) column (an auto column grew to its widest no-wrap
+  child and shifted everything 15px right on desktop), so every element has
+  equal side margins; the desktop button text formula subtracts 75px. The
+  coverage label has no icon, and Gerber's reads "2-Year Wait Plan - $X"
+  (display only; CARRIER_DISPLAY keeps "2-Year Waiting Period" for records
+  and the vCard). APPLY NOW - 10 EASY QUESTIONS text is the GET 3 RATES NOW
+  banner yellow (#ffeb3b, QuoteBox.astro); SAVE keeps white.
 - **Your Name (Randy, November 2026, V1.1; replaces the V3.7 Full Name
   rule):** the contact step's name field reads "Your Name", stays required
   and accepts any nonempty name, a first name alone ("Randy") or a full name

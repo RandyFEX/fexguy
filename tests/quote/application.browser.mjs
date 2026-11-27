@@ -277,6 +277,59 @@ for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
   });
 }
 
+for (const width of [390, 1280]) {
+  await check(`Results layout V1.1 (${width}px): compact top line with the yellow number, symmetric card content, yellow APPLY NOW text, white SAVE text, no icons, "2-Year Wait Plan"`, async () => {
+    const ctx = await browser.newContext({ viewport: { width, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
+    const page = await ctx.newPage();
+    // Gerber has no TEST-ONLY rates here: the price response gets a Gerber card (display data only).
+    await page.route('**/api/price-explorer/', async (route) => {
+      const res = await route.fetch();
+      const body = await res.json();
+      const g = body.categories?.find((c) => c.id === 'guaranteed-acceptance');
+      if (g) Object.assign(g, { status: 'ok', monthlyPremium: '35.18', monthlyPremiumCents: 3518, carriers: [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }], attribution: ['FF-201'] });
+      await route.fulfill({ response: res, json: body });
+    });
+    await page.goto(`${srv.base}/test/`);
+    await page.fill('input[name="password"]', OWNER_TEST_PASSWORD);
+    await page.click('button[type="submit"]');
+    await page.waitForSelector('a[href="/get-rates/"]');
+    await page.goto(`${srv.base}/get-rates/`);
+    for (const sel of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="70"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(sel);
+    await page.selectOption('[data-qf-state]', 'Texas');
+    await page.waitForSelector('[data-step="6"]:not([hidden])');
+    await page.waitForTimeout(300);
+    await page.fill('#qf-first', 'Pat Applicant');
+    await page.fill('#qf-phone', `214-867-57${width === 390 ? 10 : 11}`);
+    await page.click('[data-qf-submit]');
+    await page.waitForSelector('[data-qf-card="guaranteed-acceptance"] [data-qf-apply-q]:not([disabled])', { timeout: 10000 });
+    await page.keyboard.press('Escape');
+    const r = await page.evaluate(() => {
+      const top = document.querySelector('.qf-results-top');
+      const lh = parseFloat(getComputedStyle(top).lineHeight);
+      const tel = top.querySelector('a[href="tel:8888629456"]');
+      const cards = [...document.querySelectorAll('[data-qf-card]')].map((c) => {
+        const cb = c.getBoundingClientRect(), cs = getComputedStyle(c);
+        const L = cb.left + parseFloat(cs.borderLeftWidth) + parseFloat(cs.paddingLeft), R = cb.right - parseFloat(cs.borderRightWidth) - parseFloat(cs.paddingRight);
+        const gaps = ['.qf-card__cat', '[data-qf-apply-q]', '[data-qf-save]', '[data-qf-timing]'].map((s) => { const b = c.querySelector(s).getBoundingClientRect(); return [Math.round(b.left - L), Math.round(R - b.right)]; });
+        return { gaps, timing: c.querySelector('[data-qf-timing]').textContent, svg: c.querySelectorAll('[data-qf-timing] svg').length, apply: getComputedStyle(c.querySelector('[data-qf-apply-q]')).color, save: getComputedStyle(c.querySelector('[data-qf-save]')).color };
+      });
+      return { text: top.textContent.replace(/\s+/g, ' ').trim(), lines: Math.round(top.getBoundingClientRect().height / lh), telBg: tel && getComputedStyle(tel).backgroundColor, countBg: getComputedStyle(top.querySelector('[data-qf-countdown]')).backgroundColor, cards };
+    });
+    assert(/^Call 888-862-9456 for even lower-cost state-specific plans\. Rates viewable for \d+:\d\d$/.test(r.text) && !/30\+/.test(r.text), r.text);
+    assert(r.lines <= (width === 390 ? 2 : 1), `lines ${r.lines}`);
+    assert(r.telBg === 'rgb(255, 235, 59)' && r.countBg === 'rgb(255, 235, 59)', JSON.stringify([r.telBg, r.countBg]));
+    for (const c of r.cards) {
+      assert(c.gaps.every(([l, rt]) => l === 0 && rt === 0), JSON.stringify(c.gaps));
+      assert(c.svg === 0 && c.apply === 'rgb(255, 235, 59)' && c.save === 'rgb(255, 255, 255)', JSON.stringify(c));
+    }
+    assert(r.cards.map((c) => c.timing).join('|') === 'First Day Coverage - $5,000|First Day Coverage - $5,000|2-Year Wait Plan - $5,000', r.cards.map((c) => c.timing).join('|'));
+    await page.click('.qf-adjust input[name="coverage"][value="15000"]', { force: true }).catch(() => page.check('.qf-adjust input[name="coverage"][value="15000"]', { force: true }));
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="guaranteed-acceptance"] [data-qf-timing]')?.textContent === '2-Year Wait Plan - $15,000');
+    await page.screenshot({ path: `/tmp/claude-0/layout11-${width}.png` });
+    await ctx.close();
+  });
+}
+
 await browser.close();
 await srv.close();
 console.log(results.join('\n'));

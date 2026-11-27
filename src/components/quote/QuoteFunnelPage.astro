@@ -217,8 +217,11 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
 
         <!-- Step 7: the pricing screen (shown once the lead is accepted; the cards load in place) -->
         <section class="qf-step qf-results" data-step="7" data-locked="true" aria-labelledby="qf-s7" hidden>
-          <h2 class="qf-q visually-hidden" id="qf-s7" tabindex="-1" data-qf-results-title>Your quote results</h2>
-          <p class="qf-results-lead" data-qf-results-lead hidden>Call us to check rates from 30+ insurance companies. Rates viewable for <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
+          <!-- Layout V1.1 (Randy, November 2026): the call line and the countdown share one compact row. -->
+          <div class="qf-results-top">
+            <h2 class="qf-q visually-hidden" id="qf-s7" tabindex="-1" data-qf-results-title>Your quote results</h2>
+            <p class="qf-results-lead" data-qf-results-lead hidden>{' '}Rates viewable for <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
+          </div>
           <button class="btn qf-btn-cta qf-restart" type="button" data-qf-restart hidden>Start New Quote</button>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
           <div class="qf-cards">
@@ -590,7 +593,13 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
   /* Supporting line under the results headline, directly above the cards
      (Randy, November 2026; after verification only): smaller than the
      headline, centered, wraps on phones. */
-  .qf-results-lead { margin: -8px auto 0; max-width: 46rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: pretty; }
+  /* Layout V1.1: one compact centered row (wraps to two lines on phones); the call line is
+     no longer headline-sized, and its number carries the countdown's yellow. */
+  .qf-results-top { margin: 0 auto var(--space-2); max-width: 60rem; text-align: center; font-size: 0.875rem; line-height: 1.45; text-wrap: balance; }
+  @media (min-width: 48rem) { .qf-results-top { font-size: 1.125rem; } }
+  .qf-results-top .qf-q:not(.visually-hidden) { display: inline; margin: 0; font-size: inherit; line-height: inherit; font-weight: 700; }
+  .qf-results-top :global(.qf-tel-mark) { padding: 0 0.2em; background: #ffeb3b; color: #0b2e22; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .qf-results-lead { display: inline; margin: 0; font-size: inherit; line-height: inherit; font-weight: 500; color: #173f35; }
   .qf-results-lead[hidden] { display: none; }
   /* Countdown (V2.0): only the digits are highlighted, in the module's yellow
      behind dark text (yellow text alone is unreadable on white). */
@@ -600,7 +609,9 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
   .qf-restart[hidden] { display: none; }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(9, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
-    display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);
+    /* Layout V1.1: one column exactly the card's content width (an auto column grew to its
+       widest no-wrap child on desktop and pushed every element 15px to the right). */
+    display: grid; grid-template-columns: minmax(0, 1fr); justify-items: stretch; text-align: center; gap: var(--space-2);
     background: #fff; border: 1.5px solid #173f35; border-top: 8px solid #173f35; border-radius: 0.875rem;
     padding: var(--space-4);
   }
@@ -632,7 +643,6 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
   /* v4.1: compact (5px vertical padding, one line on desktop), about the
      height of Apply Online, close to the call button. */
   .qf-card__timing { margin: 0; min-height: 26px; background: #e3ece0; border-radius: 0.5rem; padding: 4px var(--space-2); font-weight: 800; font-size: 0.9375rem; line-height: 1.2; color: #1c2b26; display: flex; align-items: center; justify-content: center; gap: 0.375rem; }
-  .qf-card__timing :global(svg) { flex: none; width: 1.125rem; height: 1.125rem; }
   @media (min-width: 52rem) { .qf-card__timing { white-space: nowrap; } }
   /* Layout V1.0: on phones the coverage line plus its amount stays on one line (the text scales down only on the narrowest screens). */
   @media (max-width: 51.99rem) { .qf-card__timing { white-space: nowrap; font-size: min(0.9375rem, calc((100vw - 110px) / 16.5)); } }
@@ -676,8 +686,10 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
   }
   .qf-card__apply-icon { flex: none; }
   /* SAVE THIS QUOTE TO YOUR PHONE in each card (the call button's size and orange; longer label). */
+  /* Layout V1.1: APPLY NOW's text in the brand yellow of the GET 3 RATES NOW banner (QuoteBox.astro). */
+  .qf-card .qf-card__apply-q:not(:disabled) { color: #ffeb3b; }
   .qf-card .qf-card__save { font-size: min(1.0625rem, calc((100vw - 124px) / 16)); cursor: pointer; }
-  @media (min-width: 52rem) { .qf-card .qf-card__save { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 60px) / 16)); } }
+  @media (min-width: 52rem) { .qf-card .qf-card__save { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 75px) / 16)); } }
   .qf-card__save:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; filter: none; }
   .qf-card__save-status { margin: 0; font-size: 0.875rem; line-height: 1.35; text-align: center; color: var(--color-text); }
   .qf-card__save-status:empty { display: none; }
