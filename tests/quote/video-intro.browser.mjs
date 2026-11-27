@@ -55,7 +55,7 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 
-async function open({ breakVideo = false, delay = 6000, blockSound = false, stallPlay = '', staleOffer = false, prices = [] } = {}) {
+async function open({ breakVideo = false, delay = 6000, blockSound = false, stallPlay = '', stallAfterStart = false, staleOffer = false, prices = [] } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const page = await ctx.newPage();
   // A browser that refuses sound outside a user action, even on a video
@@ -84,6 +84,27 @@ async function open({ breakVideo = false, delay = 6000, blockSound = false, stal
         return mode === 'abort' ? Promise.reject(new DOMException('aborted', 'AbortError')) : new Promise(() => {});
       };
     }, stallPlay);
+  // V1.1: playback starts, then stalls waiting for data (paused stays false).
+  if (stallAfterStart)
+    await page.addInitScript(() => {
+      let tap = -1e9;
+      document.addEventListener('click', (e) => { if (e.target.closest?.('[data-qv]')) tap = performance.now(); }, true);
+      const play = HTMLMediaElement.prototype.play;
+      HTMLMediaElement.prototype.play = function () {
+        const overlay = this.closest('[data-qv]');
+        if (!overlay || overlay.hidden) return play.call(this);
+        if (performance.now() - tap < 1000) {
+          delete this.readyState;
+          this.playbackRate = 1;
+          return play.call(this);
+        }
+        Object.defineProperty(this, 'readyState', { configurable: true, get: () => 2 });
+        this.playbackRate = 0;
+        const p = play.call(this);
+        setTimeout(() => this.dispatchEvent(new Event('waiting')), 300);
+        return p;
+      };
+    });
   // An earlier quote in this browser, same saved visit id, whose 10-minute
   // results window ran out a day ago.
   if (staleOffer)
@@ -129,9 +150,11 @@ const state = (page) =>
     return { open: !document.querySelector('[data-qv]').hidden, paused: v.paused, muted: v.muted, t: v.currentTime, results: !document.querySelector('[data-step="7"]').hidden, play: !document.querySelector('[data-qv-play]').hidden, focus: document.activeElement?.getAttribute('data-qv-close') !== null ? 'close' : document.activeElement?.id };
   });
 
-await check('contact step preloads the video; SEE MY RATES (6 s lead request) opens the overlay over the results and plays with sound', async () => {
+await check('the video is preloaded by the contact step; SEE MY RATES (6 s lead request) opens the overlay over the results and plays with sound', async () => {
   const { ctx, page } = await open();
-  assert(await page.$eval('[data-qv] video', (v) => v.preload === 'auto'), 'not preloading at the contact step');
+  // V1.1: downloaded in full during the questions (blob:), or preload=auto if that couldn't run.
+  await page.waitForFunction(() => { const v = document.querySelector('[data-qv] video'); return v.preload === 'auto' || v.getAttribute('src')?.startsWith('blob:'); }, null, { timeout: 5000 }).catch(() => {});
+  assert(await page.$eval('[data-qv] video', (v) => v.preload === 'auto' || v.getAttribute('src')?.startsWith('blob:')), 'not preloading at the contact step');
   await page.click('[data-qf-submit]');
   await page.waitForTimeout(1000);
   assert(!(await state(page)).open, 'overlay opened before the rates');
@@ -214,6 +237,32 @@ for (const mode of ['pending', 'abort'])
     assert(!(await state(page)).open, 'X closes');
     await ctx.close();
   });
+
+await check('V1.1: playback that starts then stalls (waiting) shows Play With Sound within 3 s; a tap restarts it with sound', async () => {
+  const { ctx, page } = await open({ delay: 6000, stallAfterStart: true });
+  await page.click('[data-qf-submit]');
+  await page.waitForSelector('[data-qv]:not([hidden])', { timeout: 10000 });
+  await page.waitForFunction(() => !document.querySelector('[data-qv-play]').hidden, null, { timeout: 4000 });
+  await page.click('[data-qv-play]');
+  await page.waitForFunction(() => document.querySelector('[data-qv] video').currentTime > 0.5, null, { timeout: 8000 });
+  const s = await state(page);
+  assert(s.open && !s.paused && !s.muted && !s.play, JSON.stringify(s));
+  await ctx.close();
+});
+
+await check('V1.1: the video is downloaded in full during the questions and plays from memory (blob:); nothing is fetched after the overlay opens', async () => {
+  const { ctx, page } = await open({ delay: 2000 });
+  const late = [];
+  let opened = false;
+  page.on('request', (r) => { if (opened && /\/videos\/quote-intro\/.+\.mp4/.test(r.url())) late.push(r.url()); });
+  await page.waitForFunction(() => document.querySelector('[data-qv] video').getAttribute('src')?.startsWith('blob:'), null, { timeout: 10000 });
+  await page.click('[data-qf-submit]');
+  await page.waitForSelector('[data-qv]:not([hidden])', { timeout: 10000 });
+  opened = true;
+  await page.waitForFunction(() => document.querySelector('[data-qv] video').currentTime > 0.3, null, { timeout: 5000 });
+  assert(late.length === 0, late.join());
+  await ctx.close();
+});
 
 await check('video fails to load: no overlay is left over the results', async () => {
   const { ctx, page } = await open({ breakVideo: true, delay: 300 });
