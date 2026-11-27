@@ -8,8 +8,14 @@
 //              unlocks that element for later playback with sound.
 //   open():    after the lead is accepted and the rates are showing: the
 //              overlay opens and play() is called at once (no timer first).
-// Blocked sound: a Play With Sound button (the overlay stays open). A load or
-// playback failure, or a start that never comes while playback is requested,
+// Blocked sound: a Play With Sound button (the overlay stays open). V1.0 fix
+// (Randy, November 2026): iPhones don't always refuse the unprimed play() with
+// NotAllowedError; the request can stay pending or be aborted, which left a
+// frozen video with no control. So the button now shows whenever an automatic
+// start doesn't begin within AUTO_START_MS, for any refusal other than an
+// unsupported source, and whenever playback pauses before the end; a tap on
+// the video works like the button, and the button hides once playback starts.
+// A load failure, or a tapped start that never comes within START_LIMIT_MS,
 // closes the overlay. Ending, the close button and Escape close it. Shown
 // once per quote session (key cleared by Start New Quote with the other
 // ff:quote-* keys). GA4-only events through `track` (tracking.ts).
@@ -19,6 +25,8 @@ type Track = (name: string, extra?: Record<string, unknown>) => void;
 const PLAYED_KEY = 'ff:quote-intro-played';
 /** How long a requested playback may take to start before it counts as failed. */
 const START_LIMIT_MS = 12000;
+/** How long an automatic start may take before the Play With Sound button shows. */
+const AUTO_START_MS = 2500;
 
 // v1.3 (Randy, November 2026): `veil(true)` while the overlay is open blurs
 // only the price figures behind it; every way the overlay closes (end, close
@@ -45,6 +53,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   let started = false;
   let ended = false;
   let watchdog = 0;
+  let blockedSent = false;
   let afterClose: () => void = () => {};
 
   const fail = () => {
@@ -65,9 +74,14 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   );
   video.addEventListener('playing', () => {
     window.clearTimeout(watchdog);
+    if (isOpen) playBtn.hidden = true;
     if (!isOpen || started) return;
     started = true;
     send('quote_video_start');
+  });
+  // Paused before the end while open (e.g. the phone interrupted it): offer the button again.
+  video.addEventListener('pause', () => {
+    if (isOpen && started && !ended && !video.ended) showPlay();
   });
   video.addEventListener('ended', () => {
     if (!isOpen) return;
@@ -100,28 +114,48 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
       items[(i + (e.shiftKey ? items.length - 1 : 1)) % items.length]?.focus();
     }
   }
-  function request() {
+  /** The automatic start didn't happen: show Play With Sound (never a frozen video with no control). */
+  function showPlay() {
+    if (!isOpen || failed || !playBtn.hidden) return;
+    window.clearTimeout(watchdog);
+    if (!started && !blockedSent) {
+      blockedSent = true;
+      send('quote_video_autoplay_blocked');
+    }
+    playBtn.hidden = false;
+    playBtn.focus({ preventScroll: true });
+  }
+  /** auto: the start after SEE MY RATES; otherwise a tap (Play With Sound or the video). */
+  function request(auto: boolean) {
     window.clearTimeout(watchdog);
     watchdog = window.setTimeout(() => {
-      if (isOpen && !started) fail();
-    }, START_LIMIT_MS);
-    video!.muted = false;
-    const p = video!.play();
-    p?.catch((err: DOMException) => {
       if (!isOpen || started) return;
-      window.clearTimeout(watchdog);
-      if (err?.name === 'NotAllowedError') {
-        send('quote_video_autoplay_blocked');
-        playBtn.hidden = false;
-        playBtn.focus();
-      } else if (err?.name !== 'AbortError') fail();
+      if (auto) showPlay();
+      else fail();
+    }, auto ? AUTO_START_MS : START_LIMIT_MS);
+    video!.muted = false;
+    let p: Promise<void> | undefined;
+    try {
+      p = video!.play();
+    } catch {
+      if (auto) showPlay();
+      return;
+    }
+    p?.catch((err: DOMException) => {
+      if (!isOpen || started || !video!.paused) return;
+      if (err?.name === 'NotSupportedError') fail();
+      else showPlay();
     });
   }
-  playBtn.addEventListener('click', () => {
+  // Called within the tap itself, so the browser allows sound.
+  const tapPlay = () => {
+    if (!isOpen || !video.paused) return;
     playBtn.hidden = true;
-    closeBtn.focus();
-    request();
-  });
+    closeBtn.focus({ preventScroll: true });
+    request(false);
+  };
+  playBtn.addEventListener('click', tapPlay);
+  video.addEventListener('click', tapPlay);
   closeBtn.addEventListener('click', close);
 
   return {
@@ -151,6 +185,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
       isOpen = true;
       started = false;
       ended = false;
+      blockedSent = false;
       playBtn.hidden = true;
       veil(true);
       overlay.hidden = false;
@@ -159,7 +194,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
       try {
         video.currentTime = 0;
       } catch {}
-      request();
+      request(true);
       closeBtn.focus({ preventScroll: true });
     },
     /** Preview builds only (?preview=video): open on every load, ignoring

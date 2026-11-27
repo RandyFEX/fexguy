@@ -1818,7 +1818,13 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the same <video> may later play with sound (iPhone Safari, Facebook and
   Instagram in-app browsers, Android WebView); open() plays at once after
   the rates show (never add a timer before play()). Blocked sound shows a
-  Play With Sound button (not a failure); a load or playback failure, or a
+  Play With Sound button (not a failure); playback fix V1.0 (Randy, November 2026):
+  iPhones can leave that play() pending or aborted instead of refusing it,
+  so the button also shows when the automatic start hasn't begun within
+  2.5 s (AUTO_START_MS), for any refusal but an unsupported source, and on
+  a pause before the end; a tap on the video works like the button, and the
+  button hides once playback starts (test: the iPhone-like cases in
+  tests/quote/video-intro.browser.mjs); a load or playback failure, or a
   requested start that doesn't come within 12 s, closes the overlay. Close
   button and Escape stop playback. Pricing, lead submission, Agent CRM,
   existing tracking and the 10-minute countdown are unchanged.
