@@ -29,6 +29,7 @@ import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pr
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 import { TEST_SESSION_ENDED, ownerTestState } from './owner-test.js';
+import { TOKEN_TTL_MS, newToken, quoteLines, vcardNote } from './vcard.js';
 
 /** Direct preview access (preview/local only): the one fixed sample record and its quote. */
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
@@ -406,6 +407,29 @@ export async function handleQuote(request, env, deps) {
       const exp = now + SESSION_MS;
       await store.putSession(sid, { lid: PREVIEW_SAMPLE_LEAD, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
       return json(200, { status: 'verified', quote: PREVIEW_SAMPLE_QUOTE, testMode: true, sample: true, expiresAt: exp }, { 'Set-Cookie': setCookie(sign(key, { sid, lid: PREVIEW_SAMPLE_LEAD, exp })) });
+    }
+
+    // SAVE QUOTE & CONTACT INFO (Randy, November 2026; server/quote/vcard.js):
+    // re-prices the displayed quote and saves a one-time, 2-minute download
+    // token for this browser's session. Nothing personal in the returned URL.
+    case 'vcard': {
+      const v = await verifiedLead(request, env, store, now);
+      if (!v) return json(401, { status: 'verify-required' });
+      const quote = parsePricingInput(body.quote);
+      if (!quote) return bad();
+      if (await store.limit([{ key: `vcard:h:${v.leadId}:${Math.floor(now / HOUR)}`, limit: 20, windowMs: HOUR }])) return json(429, { status: 'rate-limited' });
+      const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
+      if (!loaded) return json(503, { status: 'unavailable' });
+      const categories = priceCategories(loaded.engine, quote);
+      const lines = quoteLines(quote, categories);
+      if (!lines.length) return json(409, { status: 'unavailable' });
+      const record = await store.getLead(v.leadId);
+      if (!record) return json(401, { status: 'verify-required' });
+      const token = newToken();
+      const at = new Date(now);
+      const note = vcardNote({ firstName: firstNameOf(record.firstName ?? '') || 'you', quote, categories, at });
+      await store.putPending(`vc:${token}`, { leadId: v.leadId, sid: v.sid, at: at.toISOString(), quote, lines, note, test }, TOKEN_TTL_MS);
+      return json(200, { status: 'ok', url: `/api/quote-vcard/?t=${token}` });
     }
 
     // Start New Quote: end this visit's verified session. The lead's

@@ -377,8 +377,31 @@ if (root) {
     }
     return svg;
   }
+  // SAVE QUOTE & CONTACT INFO (Randy, November 2026; server/quote/vcard.js):
+  // the server re-prices the quote on screen and returns a one-time download
+  // link for this browser; the phone then offers to add Randy's contact card
+  // with the quote in its notes. GA4 quote_downloaded only (no personal data).
+  const saveWrap = $('[data-qf-save-wrap]');
+  const saveBtn = $<HTMLButtonElement>('[data-qf-save]');
+  const saveStatus = $('[data-qf-save-status]');
+  saveBtn.addEventListener('click', async () => {
+    if (!shown || saveBtn.disabled) return;
+    saveBtn.disabled = true;
+    saveStatus.textContent = 'Preparing your quote…';
+    let r = await api({ action: 'vcard', quote: shown.quote });
+    if (r.http === 401 && (await resumeSession())) r = await api({ action: 'vcard', quote: shown.quote });
+    saveBtn.disabled = false;
+    if (r.http === 200 && r.body.status === 'ok' && typeof r.body.url === 'string' && r.body.url.startsWith('/api/quote-vcard/?t=')) {
+      saveStatus.textContent = 'Your phone will ask to add the contact. Tap Create New Contact (or Add to Existing Contact) to save it.';
+      track('quote_downloaded');
+      window.location.href = r.body.url;
+      return;
+    }
+    saveStatus.textContent = `Sorry, your quote couldn't be saved just now. Please try again, or call ${funnelPhone}.`;
+  });
   function lockCards() {
     unlocked = false;
+    saveWrap.hidden = true;
     pricing.dataset.locked = 'true';
     adjust.hidden = true;
     adjustIntro.hidden = true;
@@ -505,6 +528,7 @@ if (root) {
   }
   function render(quote: PriceQuote, categories: Category[]) {
     shown = { quote, categories };
+    saveWrap.hidden = !unlocked || expired || !categories.some((c) => c.status === 'ok');
     for (const cat of categories) {
       const el = cards.get(cat.id);
       if (el) setCard(el, cat, cat.status, cat.status === 'ok' ? '' : cat.message ?? '');
@@ -658,6 +682,7 @@ if (root) {
     expired = true;
     window.clearTimeout(timer);
     pricing.dataset.expired = 'true';
+    saveWrap.hidden = true;
     adjust.hidden = true;
     adjustIntro.hidden = true;
     refNote.hidden = true;

@@ -237,6 +237,11 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
             <p class="qf-retry__msg" role="status" aria-live="polite" data-qf-retry-msg></p>
             <button class="btn qf-btn-cta qf-retry__btn" type="button" data-qf-retry hidden>Try Again</button>
           </div>
+          <!-- Personalized quote vCard (Randy, November 2026; server/quote/vcard.js): shown with real prices only. -->
+          <div class="qf-save" data-qf-save-wrap hidden>
+            <button class="btn qf-btn-cta qf-save__btn" type="button" data-qf-save>SAVE QUOTE &amp; CONTACT INFO</button>
+            <p class="qf-save__status" role="status" aria-live="polite" data-qf-save-status></p>
+          </div>
 
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
 
@@ -355,6 +360,11 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
   .qf-retry[hidden], .qf-retry__btn[hidden] { display: none; }
   .qf-retry { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); margin-top: var(--space-4); text-align: center; }
   .qf-retry__msg { margin: 0; font-weight: 700; color: var(--color-text); }
+  .qf-save[hidden] { display: none; }
+  .qf-save { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); margin-top: var(--space-4); text-align: center; }
+  .qf-save__btn { width: 100%; max-width: 24rem; min-height: 3rem; font-size: 1.0625rem; }
+  .qf-save__status { margin: 0; font-size: 0.9375rem; color: var(--color-text); }
+  .qf-save__status:empty { display: none; }
   /* v1.3: while the video overlay is open, only the price figures are blurred (presentation only). */
   .qf[data-video-veil] .qf-card__amount { filter: blur(4px); }
   /* Video introduction overlay (portrait 9:16). */

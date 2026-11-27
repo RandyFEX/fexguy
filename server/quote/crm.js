@@ -185,3 +185,66 @@ export function quoteCustomFields(lowest10k, quote = {}) {
   }
   return fields.length ? fields : null;
 }
+
+// Personalized quote vCard (Randy, November 2026; server/quote/vcard.js): the
+// first download of a lead's SAVE QUOTE & CONTACT INFO card updates its
+// EXISTING contact once: the tag below (a GoHighLevel workflow on this tag
+// can set the dialing status and notify Randy) and a note with the coverage
+// and the displayed rates. The contact is the one saved at delivery
+// (record.crm.contactId); only an older lead without it is matched by the
+// same upsert (the location's duplicate rules), never a new duplicate.
+export const QUOTE_DOWNLOADED_TAG = 'Quote Downloaded';
+
+/** @param {any} record @param {{ at: Date, quote: any, lines: string[] }} d */
+export function quoteDownloadNote(record, d) {
+  const q = d.quote ?? {};
+  return [
+    /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
+    'Quote Downloaded: the customer downloaded the personalized quote contact card (SAVE QUOTE & CONTACT INFO).',
+    `Downloaded: ${d.at.toISOString()} (${d.at.toLocaleString('en-US', { timeZone: 'America/Chicago', dateStyle: 'medium', timeStyle: 'short' })} Central)`,
+    'premium' in q ? `Monthly budget: $${q.premium}` : `Coverage: $${Number(q.coverage).toLocaleString('en-US')}`,
+    ...d.lines.map((l) => `Displayed rate, ${l}`),
+    `Lead ID: ${record.leadId}`,
+    "Saving the contact on the phone can't be confirmed by the website.",
+  ].filter(Boolean).join('\n');
+}
+
+/**
+ * @param {Record<string, string | undefined>} env @param {any} record
+ * @param {{ at: Date, quote: any, lines: string[] }} d @param {typeof fetch} [fetchImpl]
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, error?: string }>}
+ */
+export async function sendQuoteDownloadToCrm(env, record, d, fetchImpl = fetch) {
+  const token = env.AGENT_CRM_TOKEN ?? '';
+  const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
+  if (!token || !locationId) return { sent: false };
+  const call = async (/** @type {string} */ path, /** @type {unknown} */ body) => {
+    const res = await fetchImpl(`${API}${path}`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    /** @type {any} */
+    let data = null;
+    try { data = await res.json(); } catch {}
+    return { res, data };
+  };
+  let step = 'contact';
+  try {
+    let contactId = record.crm?.contactId;
+    if (typeof contactId !== 'string' || !contactId) {
+      const up = await call('/contacts/upsert', crmContact(record, locationId));
+      contactId = up.data?.contact?.id;
+      if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
+    }
+    step = 'tags';
+    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [QUOTE_DOWNLOADED_TAG] });
+    step = 'note';
+    const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: quoteDownloadNote(record, d) });
+    const ok = tag.res.ok && note.res.ok;
+    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: !tag.res.ok ? tag.res.status : note.res.status, contactId };
+  } catch (e) {
+    return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
+  }
+}

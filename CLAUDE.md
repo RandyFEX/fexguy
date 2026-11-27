@@ -1800,6 +1800,35 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   pages apart by page path (no new events). Start New Quote stays on the
   page it was used on.
 
+## Personalized quote vCard (Randy, November 2026)
+
+- SAVE QUOTE & CONTACT INFO under the result cards (QuoteFunnelPage.astro;
+  /free-quote/, /get-rates/, every entry point, /test/; shown with real prices
+  only) downloads Randy's master contact card (/randy/randy-vandervaate.vcf
+  from src/config/card.ts: name, Funeral Funds, 888-862-9456, email, website,
+  photo; /randy/ itself unchanged) with only its NOTE replaced: the visitor's
+  first name, quote date, the displayed coverage (or monthly budget), each
+  company with its monthly premium (Gerber with its 2-year waiting period),
+  the representative-rates line and "Call Randy directly at 888-862-9456 for
+  possibly lower-cost options available in your state." No age, sex,
+  tobacco, state, phone or last name.
+- Flow (server/quote/vcard.js): POST /api/quote/ action `vcard` checks the
+  session, re-prices the DISPLAYED quote on the server and stores a one-time
+  2-minute token; the page opens GET /api/quote-vcard/?t=<token> (only for the
+  browser whose session cookie made it), served as text/vcard attachment.
+  The URL holds only the random token. GA4 `quote_downloaded` (never "contact
+  saved"; nothing to Meta).
+- Agent CRM (production only, never previews or owner test mode): the FIRST
+  download of a lead updates its existing contact (record.crm.contactId; an
+  older lead without it is matched by the upsert, never duplicated): tag
+  "Quote Downloaded" (QUOTE_DOWNLOADED_TAG in server/quote/crm.js) and a note
+  with the download time, coverage and displayed rates. Later downloads are
+  recorded on the lead only. A CRM failure never blocks the file. The
+  dialing status "High Intent" and Randy's notification belong to a
+  GoHighLevel workflow triggered by that tag (no dialing-status field or
+  notification API is used by the site). Tests: tests/quote/vcard.test.js,
+  tests/quote/owner-test.browser.mjs.
+
 ## Quote funnel video introduction (Randy, November 2026, v1.2)
 
 - The ONLY approved exception to the no-pop-ups rule (the rule itself is
