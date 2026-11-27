@@ -357,7 +357,7 @@ if (root) {
     }
     return svg;
   }
-  // SAVE QUOTE & CONTACT INFO (Randy, November 2026; server/quote/vcard.js):
+  // SAVE THIS QUOTE TO YOUR PHONE (Randy, November 2026; server/quote/vcard.js):
   // the server re-prices the quote on screen and returns a one-time download
   // link for this browser; the phone then offers to add Randy's contact card
   // with the quote in its notes. GA4 quote_downloaded only (no personal data).

@@ -187,7 +187,7 @@ export function quoteCustomFields(lowest10k, quote = {}) {
 }
 
 // Personalized quote vCard (Randy, November 2026; server/quote/vcard.js): the
-// first download of a lead's SAVE QUOTE & CONTACT INFO card updates its
+// first download of a lead's SAVE THIS QUOTE TO YOUR PHONE card updates its
 // EXISTING contact once: the tag below (a GoHighLevel workflow on this tag
 // can set the dialing status and notify Randy) and a note with the coverage
 // and the displayed rates. The contact is the one saved at delivery
@@ -200,7 +200,7 @@ export function quoteDownloadNote(record, d) {
   const q = d.quote ?? {};
   return [
     /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
-    'Quote Downloaded: the customer downloaded the personalized quote contact card (SAVE QUOTE & CONTACT INFO).',
+    'Quote Downloaded: the customer downloaded the personalized quote contact card (SAVE THIS QUOTE TO YOUR PHONE).',
     `Downloaded: ${d.at.toISOString()} (${d.at.toLocaleString('en-US', { timeZone: 'America/Chicago', dateStyle: 'medium', timeStyle: 'short' })} Central)`,
     'premium' in q ? `Monthly budget: $${q.premium}` : `Coverage: $${Number(q.coverage).toLocaleString('en-US')}`,
     ...d.lines.map((l) => `Displayed rate, ${l}`),

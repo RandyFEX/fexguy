@@ -82,7 +82,7 @@ for (const path of ['/get-rates/', '/free-quote/']) {
     assert((await keys('qe:production:lead:*')).length === prodBefore, 'production lead record created');
     assert((await keys('qe:owner-test:lead:*')).length === testBefore + 1, 'test record in the owner-test store');
     assert(analytics.length === 0, `analytics requests: ${analytics.join(' ')}`);
-    // SAVE QUOTE & CONTACT INFO: the personalized vCard downloads with the coverage on screen ($15,000); no Agent CRM.
+    // SAVE THIS QUOTE TO YOUR PHONE: the personalized vCard downloads with the coverage on screen ($15,000); no Agent CRM.
     const [dl] = await Promise.all([page.waitForEvent('download', { timeout: 8000 }), page.click('[data-qf-save]')]);
     const vcf = (await (await import('node:fs/promises')).readFile(await dl.path(), 'utf8')).replace(/\r\n /g, '');
     assert(/^BEGIN:VCARD/.test(vcf) && /FN:Randy VanderVaate/.test(vcf) && /NOTE:Funeral Funds quote for Owner\\nQuote date: .*\\nCoverage: \$15\\,000/.test(vcf), 'vCard note');
@@ -117,7 +117,7 @@ await check('an ordinary visitor is unchanged: the submission reaches Agent CRM 
   await page.waitForFunction(() => [...document.querySelectorAll('[data-qf-card]')].some((c) => c.dataset.state === 'ok'), null, { timeout: 10000 });
   assert(srv.crm.calls.slice(crmBefore).some((c) => c.url.endsWith('/contacts/upsert')), 'Agent CRM upsert');
   assert(await page.evaluate(() => document.querySelector('[data-qf-test]').hidden), 'no TEST MODE note');
-  // SAVE QUOTE & CONTACT INFO: two downloads, one "Quote Downloaded" tag on the existing contact.
+  // SAVE THIS QUOTE TO YOUR PHONE: two downloads, one "Quote Downloaded" tag on the existing contact.
   await page.keyboard.press('Escape');
   for (let i = 0; i < 2; i++) await Promise.all([page.waitForEvent('download', { timeout: 8000 }), page.click('[data-qf-save]')]);
   const tags = srv.crm.calls.slice(crmBefore).filter((c) => c.url.endsWith('/tags') && c.body?.tags?.includes('Quote Downloaded'));

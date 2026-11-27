@@ -1802,7 +1802,8 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
 ## Personalized quote vCard (Randy, November 2026)
 
-- SAVE QUOTE & CONTACT INFO is the orange button INSIDE each of the three
+- SAVE THIS QUOTE TO YOUR PHONE (Randy's wording, November 2026; first
+  shipped as "SAVE QUOTE & CONTACT INFO") is the orange button INSIDE each of the three
   result cards (Randy: on a phone visitors see one card at a time). It
   REPLACES both card buttons, "Call to Chat or Apply" and "Text to Chat or
   Apply" (superseding the V4.13/V4.15/V4.16 card-button rules; their
