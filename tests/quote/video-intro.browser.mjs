@@ -188,7 +188,7 @@ await check('close button stops playback at once and records quote_video_dismiss
   const s = await state(page);
   assert(!s.open && s.paused && s.results, JSON.stringify(s));
   const ev = await page.evaluate(() => window.__ev.filter((d) => d.name === 'quote_video_dismiss'));
-  assert(ev.length === 1 && Number.isInteger(ev[0].position) && ev[0].videoId === 'randy-intro-v1', JSON.stringify(ev));
+  assert(ev.length === 1 && Number.isInteger(ev[0].position) && ev[0].videoId === 'randy-intro-v2', JSON.stringify(ev));
   assert(!JSON.stringify(await page.evaluate(() => window.__ev)).match(/Pat|867-?5315/), 'personal data in events');
   await ctx.close();
 });

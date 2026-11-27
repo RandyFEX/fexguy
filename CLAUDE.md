@@ -2044,6 +2044,15 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   its captions were transcribed from the audio ("quoter" at 15 s, heard as
   "quarter" by the transcriber). It replaced the temporary test clip.
   Test: tests/quote/video-intro.browser.mjs (headless Chromium only).
+- **Pre-rate video V1.0 (Randy, November 2026):** `randy-intro-v2` (32.3 s,
+  office background) replaced `randy-intro-v1`; the v1 files were removed.
+  Source 1080x1920 H.264/AAC, 16.0 MB, encoded with the recipe in
+  src/config/quote-intro.ts to 720x1280 MP4 (2.69 MB, faststart), WebM and a
+  poster. "YOUR RATES WILL APPEAR AFTER THIS VIDEO" is burned into the
+  picture at the bottom; the captions (randy-intro-v2.vtt, transcribed from
+  the audio, line:80%) sit above it. No duration is hardcoded: the rates show
+  on the video's own end event. Playback, warm(), prime() and the fallbacks
+  are unchanged.
 - **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
   overlay is open only the price figures are blurred (`data-video-veil` on
   the funnel root; presentation only, removed on every close: end, close
