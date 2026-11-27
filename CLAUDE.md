@@ -1939,7 +1939,22 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   conditions reported." Plain lines, no blank lines, labels, timestamps,
   names, phones or None of the above. An earlier generated summary is
   replaced; other Comments text is kept below it.
-- After success the page sets sessionStorage `ff:application-submitted` and
+- **Questionnaire V2.4 (Randy, November 2026; supersedes the V1.7 pale red
+  and the /randy/ redirect below):** a selected condition uses None of the
+  above's pale green (#e8f5e9; white unselected); each question has one dark
+  green (#173f35) rounded header with white text, "N. " plus the question with
+  every word's first letter capitalized (display only; "Question N of 10" is
+  gone); the feedback sits in a pale yellow (#fff7b0) rounded box; a second
+  "N of 10 completed" (aria-hidden, same state) is always shown after
+  question 10, above SUBMIT MY ANSWERS. After the server confirms the save,
+  the questions are replaced by "Great News!" / "I've Received Your
+  Answers." / "I'll Review Your Information To Find Your Best Coverage
+  Options." / Randy / Funeral Funds with a green check (test mode adds the
+  Agent CRM preview below it), and 5 seconds later the page opens /about/
+  (`ABOUT_URL`, `REDIRECT_MS` in src/scripts/quote-application.ts). A failed
+  submission shows its error only. The `ff:application-submitted` flag is
+  still set; /randy/ is no longer opened from here.
+- (Before V2.4) After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans
   are available to you." above the card, CALL RANDY NOW (tel:8888629456)

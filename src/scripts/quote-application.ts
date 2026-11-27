@@ -11,6 +11,9 @@ import { FEEDBACK, HEALTH_QUESTIONS, LIMITS, NONE } from '../../server/quote/app
 
 /** /randy/ shows its confirmation state only with this fresh flag (src/pages/randy/index.astro). */
 export const APPLICATION_FLAG = 'ff:application-submitted';
+/** V2.4: after a confirmed submission, the existing About page (src/content/pages/about.md). */
+export const ABOUT_URL = '/about/';
+export const REDIRECT_MS = 5000;
 
 type Api = (body: Record<string, unknown>) => Promise<{ http: number; body: Record<string, any> }>;
 
@@ -24,6 +27,8 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
   const weight = $<HTMLInputElement>('[data-qa-weight]');
   const bar = $('[data-qa-bar]');
   const count = $('[data-qa-count]');
+  const countBottom = $('[data-qa-count-bottom]');
+  const success = $('[data-qa-success]');
   const done = $('[data-qa-done]');
   const submit = $<HTMLButtonElement>('[data-qa-submit]');
   const status = $('[data-qa-status]');
@@ -46,6 +51,7 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
     }
     bar.style.width = `${n * 10}%`;
     count.textContent = `${n} of 10 completed`;
+    countBottom.textContent = count.textContent;
     done.hidden = n < 10;
   }
 
@@ -65,8 +71,9 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
   });
   $('[data-qa-back]').addEventListener('click', () => opts.back());
 
+  let sent = false;
   submit.addEventListener('click', async () => {
-    if (submit.disabled) return;
+    if (submit.disabled || sent) return;
     const answers = {
       heightFeet: Number(feet.value),
       heightInches: Number(inches.value),
@@ -81,22 +88,23 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
       try {
         sessionStorage.setItem(APPLICATION_FLAG, String(Date.now()));
       } catch {}
-      status.textContent = 'Your answers were received.';
-      // V1.5: test mode only: show the Agent CRM update that would be made (nothing was sent).
+      sent = true;
+      status.textContent = '';
+      // V2.4 (Randy, November 2026): the confirmation replaces the questions, then /about/ after 5 seconds.
+      for (const el of box.children) (el as HTMLElement).hidden = el !== success;
+      success.hidden = false;
+      // V1.5: test mode only: the Agent CRM update that would be made (nothing was sent), under the confirmation.
       const p = r.body.crmPreview;
       if (r.body.testMode === true && p) {
         const pre = document.createElement('pre');
         pre.className = 'qa-preview';
         pre.dataset.qaPreview = '';
         pre.textContent = `TEST MODE: nothing was sent to Agent CRM.\nWould update: ${p.contact}\nNew contact: ${p.newContact ? 'yes' : 'no'} | Note: ${p.note ? 'yes' : 'no'}\nField ${p.commentsField}:\n${p.comments}\nThen tag: ${p.tagAfterComments}`;
-        const go = document.createElement('a');
-        go.className = 'btn qf-btn-cta qa-submit';
-        go.href = '/randy/';
-        go.textContent = 'Continue to the contact card';
-        status.after(pre, go);
-        return;
+        success.append(pre);
       }
-      window.location.assign('/randy/');
+      success.scrollIntoView({ block: 'start', behavior: 'auto' });
+      success.focus({ preventScroll: true });
+      window.setTimeout(() => window.location.assign(ABOUT_URL), REDIRECT_MS);
       return;
     }
     submit.disabled = false;
