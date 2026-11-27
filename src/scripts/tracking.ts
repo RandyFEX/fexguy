@@ -248,7 +248,7 @@ const FUNNEL_EVENTS = new Set([
   'quote_pricing_adjust',
   'quote_apply_now',
   'quote_call_click',
-  // SAVE QUOTE & CONTACT INFO (Randy, November 2026): the personalized vCard was
+  // SAVE THIS QUOTE TO YOUR PHONE (Randy, November 2026): the personalized vCard was
   // requested and its download started. Not "contact saved" (the site can't know).
   'quote_downloaded',
   // v5.8: funnel entry (every load of /free-quote/) and an article sidebar choice.

@@ -224,8 +224,8 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
                 </p>
                 <p class="qf-card__timing" data-qf-timing hidden></p>
                 <p class="qf-card__note" data-qf-note></p>
-                <!-- Randy (November 2026): SAVE QUOTE & CONTACT INFO replaces Call to Chat or Apply and Text to Chat or Apply in every card (server/quote/vcard.js). -->
-                <button class="btn qf-card__call qf-card__save" type="button" data-qf-save disabled>SAVE QUOTE &amp; CONTACT INFO</button>
+                <!-- Randy (November 2026): SAVE THIS QUOTE TO YOUR PHONE replaces Call to Chat or Apply and Text to Chat or Apply in every card (server/quote/vcard.js). -->
+                <button class="btn qf-card__call qf-card__save" type="button" data-qf-save disabled>SAVE THIS QUOTE TO YOUR PHONE</button>
                 <p class="qf-card__save-status" role="status" aria-live="polite" data-qf-save-status></p>
               </article>
             ))}
@@ -654,9 +654,9 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
     .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 74px) / 11.7)); }
   }
   .qf-card__apply-icon { flex: none; }
-  /* SAVE QUOTE & CONTACT INFO in each card (the call button's size and orange; longer label). */
-  .qf-card .qf-card__save { font-size: min(1.0625rem, calc((100vw - 124px) / 14)); cursor: pointer; }
-  @media (min-width: 52rem) { .qf-card .qf-card__save { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 60px) / 14)); } }
+  /* SAVE THIS QUOTE TO YOUR PHONE in each card (the call button's size and orange; longer label). */
+  .qf-card .qf-card__save { font-size: min(1.0625rem, calc((100vw - 124px) / 16)); cursor: pointer; }
+  @media (min-width: 52rem) { .qf-card .qf-card__save { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 60px) / 16)); } }
   .qf-card__save:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; filter: none; }
   .qf-card__save-status { margin: 0; font-size: 0.875rem; line-height: 1.35; text-align: center; color: var(--color-text); }
   .qf-card__save-status:empty { display: none; }

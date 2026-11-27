@@ -1,5 +1,5 @@
 // @ts-check
-// Personalized quote vCard (Randy, November 2026): SAVE QUOTE & CONTACT INFO on
+// Personalized quote vCard (Randy, November 2026): SAVE THIS QUOTE TO YOUR PHONE on
 // the quote results downloads Randy's own contact card (the master vCard at
 // /randy/randy-vandervaate.vcf, built from src/config/card.ts: name, Funeral
 // Funds, phone, email, website, photo) with the visitor's quote in its NOTE.
@@ -114,7 +114,7 @@ export function vcardNote({ firstName, quote, categories, at }) {
  */
 export async function handleVcardDownload(request, env, deps) {
   const headers = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
-  const gone = () => new Response('This download link has expired. Please go back to your quote and tap SAVE QUOTE & CONTACT INFO again.', { status: 410, headers: { ...headers, 'Content-Type': 'text/plain; charset=utf-8' } });
+  const gone = () => new Response('This download link has expired. Please go back to your quote and tap SAVE THIS QUOTE TO YOUR PHONE again.', { status: 410, headers: { ...headers, 'Content-Type': 'text/plain; charset=utf-8' } });
   if (request.method !== 'GET' && request.method !== 'HEAD') return new Response(null, { status: 405, headers: { ...headers, Allow: 'GET' } });
   const token = new URL(request.url).searchParams.get('t');
   if (!deps.store || !tokenOk(token)) return gone();

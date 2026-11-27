@@ -1,5 +1,5 @@
 // Vercel Function: GET /api/quote-vcard/?t=<token>, the personalized quote
-// vCard (SAVE QUOTE & CONTACT INFO; server/quote/vcard.js). One-time token,
+// vCard (SAVE THIS QUOTE TO YOUR PHONE; server/quote/vcard.js). One-time token,
 // only for the browser whose quote session made it. Owner test mode (/test/
 // cookie): the owner-test store, never Agent CRM.
 //

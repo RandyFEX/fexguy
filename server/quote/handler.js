@@ -409,7 +409,7 @@ export async function handleQuote(request, env, deps) {
       return json(200, { status: 'verified', quote: PREVIEW_SAMPLE_QUOTE, testMode: true, sample: true, expiresAt: exp }, { 'Set-Cookie': setCookie(sign(key, { sid, lid: PREVIEW_SAMPLE_LEAD, exp })) });
     }
 
-    // SAVE QUOTE & CONTACT INFO (Randy, November 2026; server/quote/vcard.js):
+    // SAVE THIS QUOTE TO YOUR PHONE (Randy, November 2026; server/quote/vcard.js):
     // re-prices the displayed quote and saves a one-time, 2-minute download
     // token for this browser's session. Nothing personal in the returned URL.
     case 'vcard': {

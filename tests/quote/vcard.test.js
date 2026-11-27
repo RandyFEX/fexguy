@@ -1,4 +1,4 @@
-// Personalized quote vCard (SAVE QUOTE & CONTACT INFO, Randy, November 2026):
+// Personalized quote vCard (SAVE THIS QUOTE TO YOUR PHONE, Randy, November 2026):
 // the master card's identity with the displayed quote in NOTE; one-time,
 // session-bound download; the existing Agent CRM contact updated once per
 // lead on production; never in test mode. Throwaway local redis-server and a
