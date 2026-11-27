@@ -1720,7 +1720,8 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   are re-priced on the server the same way and record the card's coverage;
   the handoff and the prewritten text carry the card's coverage and its exact
   premium. Choosing a preset returns to ordinary premiums.
-  **Results start at $10,000 (Randy, November 2026):** after SEE MY RATES
+  **Results start at $5,000 (Randy, November 2026, default coverage V1.0; was
+  $10,000; read $5,000 wherever this item says $10,000):** after SEE MY RATES
   the results always open priced at $10,000 with $10,000 selected, whatever
   the coverage question answer (`RESULTS_START_COVERAGE` in
   src/scripts/quote-funnel.ts); that answer stays in the lead record
