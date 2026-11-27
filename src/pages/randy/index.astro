@@ -19,19 +19,17 @@ const qr = renderSVG(card.url, { ecc: 'M', border: 2 });
 const icons = {
   save: 'M12 3v12m0 0l-5-5m5 5l5-5M5 21h14',
   call: 'M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z',
-  text: 'M4 5h16v11H8l-4 4V5z',
-  email: 'M3 6h18v12H3V6zm0 0l9 7 9-7',
   web: 'M12 3a9 9 0 100 18 9 9 0 000-18zm-9 9h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z',
   share: 'M12 15V3m0 0L8 7m4-4l4 4M5 12v8h14v-8',
 };
 
+// Card V1.1 (Randy, November 2026): Talk to Randy Directly, Website, Share This
+// Card (no text-message or email actions).
 const actions = [
-  { key: 'call', label: 'Call Randy Now', href: card.phone.href },
-  card.sms && { key: 'text', label: 'Text Randy', href: card.sms.href },
-  card.email && { key: 'email', label: 'Email Randy', href: `mailto:${card.email}` },
+  { key: 'call', label: 'Talk to Randy Directly', href: card.phone.href },
   { key: 'web', label: 'Website', href: card.website.href },
-].filter(Boolean) as { key: keyof typeof icons; label: string; href: string }[];
-const trackName: Record<string, string> = { call: 'call', text: 'text', email: 'email', web: 'website' };
+] as { key: keyof typeof icons; label: string; href: string }[];
+const trackName: Record<string, string> = { call: 'call', web: 'website' };
 ---
 
 <BaseLayout
@@ -66,7 +64,8 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
       </picture>
       <h1 class="rc-name" id="rc-name">{card.fullName}</h1>
       <p class="rc-title">{card.title}</p>
-      <a class="rc-site" href={card.website.href} data-card-action="website">{card.website.display}</a>
+      <p class="rc-org">{card.org}</p>
+      <p class="rc-title">{card.department}</p>
 
       <ul class="rc-btns" role="list">
         {actions.map((a) => (
@@ -81,7 +80,7 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
         <li>
           <button class="rc-btn" type="button" data-card-action="share" data-card-share>
             <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d={icons.share} /></svg>
-            <span>Share Card</span>
+            <span>Share This Card</span>
           </button>
         </li>
       </ul>
@@ -181,16 +180,11 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
     font-weight: 600;
     color: var(--color-text);
   }
-  .rc-site {
-    display: inline-flex;
-    align-items: center;
-    min-height: var(--tap-target);
-    margin-top: 0.25rem;
+  .rc-org {
+    margin: 0.25rem 0 0;
     font-size: 1.375rem;
     font-weight: 700;
     color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
   }
   .rc-alert__do {
     white-space: nowrap;
@@ -232,6 +226,10 @@ const trackName: Record<string, string> = { call: 'call', text: 'text', email: '
   }
   .rc-btns__wide {
     grid-column: 1 / -1;
+  }
+  /* Buttons side by side keep the same height when one label wraps (card V1.1). */
+  .rc-btns > li {
+    display: flex;
   }
   .rc-btn {
     display: flex;

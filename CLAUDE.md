@@ -1803,6 +1803,18 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
 ## Personalized quote vCard (Randy, November 2026)
 
+- **Card V1.1 (Randy, November 2026):** /randy/ shows, in order, "Randy
+  VanderVaate", "Owner & Licensed Life Insurance Agent", "Funeral Funds",
+  "Burial, Cremation & Final Expense Insurance", then three buttons: Talk to
+  Randy Directly (tel:8888629456), Website, Share This Card. No email address
+  and no text-message action anywhere on the card or in either vCard (removed
+  from src/config/card.ts, not hidden). Both vCards carry TITLE "Owner &
+  Licensed Life Insurance Agent", ORG "Funeral Funds;Burial, Cremation & Final
+  Expense Insurance" (organization;department), URL https://funeralfunds.com,
+  and the search terms Life insurance, Burial insurance, Cremation insurance,
+  Final expense insurance and Funeral insurance in NOTE (the quote vCard
+  appends them after its quote lines).
+
 - SAVE THIS QUOTE TO YOUR PHONE (Randy's wording, November 2026; first
   shipped as "SAVE QUOTE & CONTACT INFO") is the orange button INSIDE each of the three
   result cards (Randy: on a phone visitors see one card at a time). It
@@ -1812,7 +1824,7 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   /free-quote/, /get-rates/, every entry point, /test/; enabled with real
   prices only (gray and disabled before). Every card's button downloads the
   same card (all three companies). It downloads Randy's master contact card (/randy/randy-vandervaate.vcf
-  from src/config/card.ts: name, Funeral Funds, 888-862-9456, email, website,
+  from src/config/card.ts: name, Funeral Funds, 888-862-9456, website,
   photo; /randy/ itself unchanged) with only its NOTE replaced: the visitor's
   first name, quote date, the displayed coverage (or monthly budget), each
   company with its monthly premium (Gerber with its 2-year waiting period),

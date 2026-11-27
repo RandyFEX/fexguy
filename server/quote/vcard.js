@@ -33,6 +33,8 @@ const MASTER_URL = 'https://funeralfunds.com/randy/randy-vandervaate.vcf';
 const CALL_LINE = 'Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state.';
 /** The approved representative-rates wording from the quote results. */
 const REP_LINE = 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.';
+/** Card V1.1 (Randy, November 2026): the same searchable terms as the master card's notes (src/config/card.ts searchTerms). */
+const SEARCH_TERMS = ['Life insurance', 'Burial insurance', 'Cremation insurance', 'Final expense insurance', 'Funeral insurance'];
 /** How long the download may wait for Agent CRM before the file is sent anyway. */
 const CRM_WAIT_MS = 4000;
 
@@ -104,13 +106,14 @@ export function vcardNote({ firstName, quote, categories, at }) {
     ...quoteLines(quote, categories),
     REP_LINE,
     CALL_LINE,
+    ...SEARCH_TERMS,
   ].join('\n');
 }
 
 /**
  * GET /api/quote-vcard/?t=<token>
  * @param {Request} request @param {Record<string, string | undefined>} env
- * @param {{ store: any, fetchImpl?: typeof fetch, now?: () => number }} deps store: the quote store this browser uses (owner test or not)
+ * @param {{ store: any, fetchImpl?: typeof fetch, master?: string, now?: () => number }} deps store: the quote store this browser uses (owner test or not); fetchImpl: Agent CRM only; master: a master card text (tests)
  */
 export async function handleVcardDownload(request, env, deps) {
   const headers = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
@@ -130,7 +133,7 @@ export async function handleVcardDownload(request, env, deps) {
   const at = new Date(pending.at);
   let body;
   try {
-    body = personalizeVcard(await masterVcard(deps.fetchImpl), pending.note);
+    body = personalizeVcard(deps.master ?? (await masterVcard()), pending.note);
   } catch {
     return new Response('Your contact card could not be prepared just now. Please try again in a moment.', { status: 503, headers: { ...headers, 'Content-Type': 'text/plain; charset=utf-8' } });
   }

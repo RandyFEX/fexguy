@@ -5,6 +5,7 @@
 // fake Agent CRM API: no real request is ever made.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
 import { startRedis } from '../health-search/redis-test-server.js';
 import { createEngine, monthlyPremium } from '../../server/rates/engine.js';
 import { toFixed } from '../../server/rates/decimal.js';
@@ -57,7 +58,7 @@ function browser(env, { owner = false } = {}) {
     if (set) session = set.split(';')[0];
     return { http: res.status, body: await res.json() };
   };
-  const download = (url, c = cookie()) => handleVcardDownload(new Request(`https://x.test${url}`, { headers: { cookie: c } }), env, { store, fetchImpl });
+  const download = (url, c = cookie()) => handleVcardDownload(new Request(`https://x.test${url}`, { headers: { cookie: c } }), env, { store, fetchImpl, master: testMaster() });
   const start = () => call({ action: 'start', firstName: 'Pat Smith', phone: `21486753${String(20 + n).slice(-2)}`, state: 'Texas', quote: { age: 68, gender: 'female', tobacco: false, coverage: 10000 }, consentVersion: CONSENT_VERSION, funnel: 'get-rates' });
   return { call, download, start, calls, store, cookie };
 }
@@ -65,13 +66,23 @@ const crmCalls = (b) => b.calls.filter((c) => /\/contacts\//.test(c.url));
 const unfold = (t) => t.replace(/\r\n /g, '');
 const note = (vcf) => unfold(vcf).match(/^NOTE:(.*)$/m)[1].replace(/\\n/g, '\n').replace(/\\([,;\\])/g, '$1');
 
+// The built master card (dist/, after `npm run build`); CI's quote job doesn't
+// build, so there an equivalent card V1.1 fixture stands in (never the live site).
+const BUILT_MASTER = new URL('../../dist/randy/randy-vandervaate.vcf', import.meta.url);
+const MASTER_FIXTURE = ['BEGIN:VCARD', 'VERSION:3.0', 'N:VanderVaate;Randy;;;', 'FN:Randy VanderVaate', 'ORG:Funeral Funds;Burial\\, Cremation & Final Expense Insurance', 'TITLE:Owner & Licensed Life Insurance Agent', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'URL:https://funeralfunds.com', 'NOTE:Life insurance\\nBurial insurance\\nCremation insurance\\nFinal expense insurance\\nFuneral insurance\\nDigital card: https://funeralfunds.com/randy/', 'PHOTO;ENCODING=b;TYPE=JPEG:/9j/AAAA', 'END:VCARD', ''].join('\r\n');
+
+/** The master the download uses: the built card (undefined = the handler reads dist/), else the fixture. */
+const testMaster = () => (existsSync(BUILT_MASTER) ? undefined : MASTER_FIXTURE);
+
 test('the master card: same identity, photo and format; only NOTE is personalized', async () => {
-  const master = await masterVcard();
+  const master = existsSync(BUILT_MASTER) ? await masterVcard() : MASTER_FIXTURE;
   const out = personalizeVcard(master, 'Line one\nCoverage: $10,000; ok');
   assert.ok(out.startsWith('BEGIN:VCARD\r\nVERSION:3.0\r\n') && out.endsWith('END:VCARD\r\n'));
   assert.ok(out.split('\r\n').every((l) => l.length <= 75), 'folded at 75');
-  for (const l of ['FN:Randy VanderVaate', 'ORG:Funeral Funds', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'EMAIL;TYPE=INTERNET,WORK:randy@funeralfunds.com', 'URL:https://funeralfunds.com/']) assert.ok(unfold(out).includes(l), l);
+  for (const l of ['FN:Randy VanderVaate', 'ORG:Funeral Funds;Burial\\, Cremation & Final Expense Insurance', 'TITLE:Owner & Licensed Life Insurance Agent', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'URL:https://funeralfunds.com']) assert.ok(unfold(out).includes(l), l);
   assert.match(unfold(out), /^PHOTO;ENCODING=b;TYPE=JPEG:\/9j\//m);
+  assert.doesNotMatch(out, /EMAIL|@funeralfunds|sms:/i, 'card V1.1: no email address or text-message line');
+  assert.match(unfold(master), /^NOTE:Life insurance\\nBurial insurance\\nCremation insurance\\nFinal expense insurance\\nFuneral insurance\\nDigital card: /m);
   assert.equal((unfold(out).match(/^NOTE:/gm) ?? []).length, 1);
   assert.equal(unfold(out).match(/^NOTE:(.*)$/m)[1], 'Line one\\nCoverage: $10\\,000\\; ok');
 });
@@ -94,7 +105,7 @@ test('production: the vCard carries the displayed quote; the first download upda
   assert.match(text, /Mutual of Omaha: \$\d+\.\d\d\/month/);
   assert.match(text, /Aetna: \$\d+\.\d\d\/month/);
   assert.match(text, /Gerber Life: \$\d+\.\d\d\/month \(2-year waiting period\)/);
-  assert.match(text, /Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state\.$/);
+  assert.match(text, /Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state\.\nLife insurance\nBurial insurance\nCremation insurance\nFinal expense insurance\nFuneral insurance$/);
   assert.doesNotMatch(text, /Smith|Texas|214|68|female/i, 'no unnecessary personal data');
   const after = crmCalls(b).slice(deliveryCalls);
   assert.deepEqual(after.map((c) => c.url.replace('https://services.leadconnectorhq.com', '')), ['/contacts/contact-1/tags', '/contacts/contact-1/notes'], 'the existing contact, no upsert');
@@ -146,7 +157,7 @@ test('an Agent CRM failure never blocks the download', async () => {
   const b = browser(PROD);
   await b.start();
   const r = await b.call({ action: 'vcard', quote: { age: 68, gender: 'female', tobacco: false, coverage: 10000 } });
-  const res = await handleVcardDownload(new Request(`https://x.test${r.body.url}`, { headers: { cookie: b.cookie() } }), PROD, { store: b.store, fetchImpl: async () => { throw new Error('down'); } });
+  const res = await handleVcardDownload(new Request(`https://x.test${r.body.url}`, { headers: { cookie: b.cookie() } }), PROD, { store: b.store, master: testMaster(), fetchImpl: async () => { throw new Error('down'); } });
   assert.equal(res.status, 200);
   assert.match(note(await res.text()), /Coverage: \$10,000/);
 });
