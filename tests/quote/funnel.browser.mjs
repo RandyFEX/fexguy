@@ -304,7 +304,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const body = decodeURIComponent(cards[0].textHref.split('&body=')[1]);
       assert(body === `Hi, this is Mary. I have a few questions about my $10,000 final expense insurance quote for ${exp['lowest-preferred']}/month.`, `prewritten text ${body}`);
     }
-    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense Preferred/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
+    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First Day Coverage|Aetna/Accendo Final Expense Preferred/First Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
     assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
     const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));
     assert(icons.join('|') === 'check|check|calendar', `timing icons ${icons}`);

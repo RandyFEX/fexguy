@@ -108,8 +108,8 @@ test('Guaranteed Acceptance uses Gerber where available; tobacco never changes i
 test('v3.5 card content: carrier, plan, coverage timing and logo per category', () => {
   const c = byId(priceCategories(engine, input()));
   // With these test tables Aetna is the cheaper competitive product, Mutual of Omaha the second.
-  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense Preferred', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
-  assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
+  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense Preferred', timing: 'First Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
+  assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
   assert.deepEqual(c['guaranteed-acceptance'].carriers, [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }]);
 });
 
