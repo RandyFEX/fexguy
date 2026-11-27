@@ -15,7 +15,7 @@
 // retry re-delivers the same lead (server/quote/handler.js 'start'). The
 // token is never logged, returned or sent to the browser.
 
-import { writeComments } from './comments.js';
+import { STATE_ABBR, writeComments } from './comments.js';
 
 export const CRM_TAG = 'Funeral Funds - Website Quote';
 // V4.42 (Randy, November 2026): leads from /get-rates/ (Facebook ads) get
@@ -28,6 +28,10 @@ export const FACEBOOK_CRM_SOURCE = 'Funeral Funds Facebook Quote';
 const isFacebookFunnel = (record) => record?.funnel === 'get-rates';
 /** @param {any} record */
 export const crmTag = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_TAG : CRM_TAG);
+/** V1.9: the original funnel entry, by the funnel validated at SEE MY RATES (never /apply/ or /about/). @param {any} record */
+export const funnelSource = (record) => (isFacebookFunnel(record) ? 'Facebook' : 'Website');
+/** @param {any} record */
+export const funnelUrl = (record) => `https://funeralfunds.com/${isFacebookFunnel(record) ? 'get-rates' : 'free-quote'}/`;
 /** @param {any} record */
 export const crmSource = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_SOURCE : CRM_SOURCE);
 const API = 'https://services.leadconnectorhq.com';
@@ -49,7 +53,9 @@ export function crmContact(record, locationId) {
   // (V1.1) sends no last name (empty values are never sent).
   const full = String(record.firstName ?? '').trim().replace(/\s+/g, ' ');
   const [first, ...rest] = full.split(' ');
-  return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: crmSource(record) });
+  // V1.9 (Randy, November 2026): the native State field gets the two-letter postal code
+  // (the format in GoHighLevel's contact API examples, e.g. "TX").
+  return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: STATE_ABBR[record.state] ?? record.state, source: crmSource(record) });
 }
 
 /**
@@ -66,6 +72,9 @@ export function crmNote(record, rates = []) {
     /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
     'Funeral Funds website quote',
     `Quote page: /${isFacebookFunnel(record) ? 'get-rates' : 'free-quote'}/`,
+    // V1.9: the original funnel, kept from the first page for the whole journey.
+    `Lead Source: ${funnelSource(record)}`,
+    `URL: ${funnelUrl(record)}`,
     `Lead ID: ${record.leadId}`,
     `Submitted: ${record.submittedAt}`,
     q.coverage ? `Coverage requested: ${money(q.coverage)}` : null,
@@ -300,7 +309,7 @@ export async function sendApplicationToCrm(env, record, d, fetchImpl = fetch) {
     }
     step = 'comments';
     const commentsField = await writeComments(call, locationId, contactId, d.comments);
-    if (commentsField !== 'updated') return { sent: true, ok: false, step, contactId, commentsField };
+    if (!commentsField.startsWith('updated')) return { sent: true, ok: false, step, contactId, commentsField };
     step = 'tags';
     const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [APPLICATION_TAG] });
     return { sent: true, ok: tag.res.ok, step: tag.res.ok ? 'done' : 'tags', status: tag.res.status, contactId, commentsField };

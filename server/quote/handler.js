@@ -199,6 +199,8 @@ export async function handleQuote(request, env, deps) {
         source: parseSource(body.source),
         // V4.42: which quote page (validated; anything else is the website funnel).
         funnel: parseFunnel(body.funnel),
+        // V1.9: the original funnel page, kept on the lead for the whole journey.
+        entryUrl: `https://funeralfunds.com/${parseFunnel(body.funnel)}/`,
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
       };
       // A retry after a failed delivery: the same lead, from the same visit, not yet delivered.
@@ -237,6 +239,8 @@ export async function handleQuote(request, env, deps) {
         const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k, comments).catch(() => ({ sent: true, ok: false, error: 'error' }));
         const delivered = crm.sent && crm.ok === true;
         await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null, commentsField: /** @type {any} */ (crm).commentsField ?? null }).catch(() => {});
+        // V1.9: each CRM step's outcome in the runtime logs (no name, phone or answers).
+        console.log(JSON.stringify({ event: 'quote-crm', type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', funnel: record.funnel, step: crm.step ?? null, status: crm.status ?? null, isNew: crm.isNew ?? null, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null, commentsField: /** @type {any} */ (crm).commentsField ?? null }));
         record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
         await store.putLead(leadId, record);
         if (!delivered)
@@ -474,6 +478,7 @@ export async function handleQuote(request, env, deps) {
       const crm = await sendApplicationToCrm(env, record, { comments: app.comments }, deps.fetchImpl).catch(() => ({ sent: true, ok: false, error: 'error' }));
       const delivered = crm.sent && crm.ok === true;
       await store.event(v.leadId, { at: iso, type: delivered ? 'crm-application-delivered' : crm.sent ? 'crm-application-failed' : 'crm-not-configured', ...crm }).catch(() => {});
+      console.log(JSON.stringify({ event: 'quote-crm', type: delivered ? 'crm-application-delivered' : crm.sent ? 'crm-application-failed' : 'crm-not-configured', funnel: record.funnel, step: /** @type {any} */ (crm).step ?? null, status: /** @type {any} */ (crm).status ?? null, commentsField: /** @type {any} */ (crm).commentsField ?? null }));
       record.application.crm = { delivered, at: iso };
       await store.putLead(v.leadId, record);
       if (!delivered) return json(502, { status: 'delivery-failed', message: `We saved your answers but couldn't send them just now. Please tap SUBMIT MY ANSWERS again, or call ${FUNNEL_PHONE}.` });
