@@ -131,7 +131,7 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
     // V4.36: coverage_amount and monthly_premium ride on the upsert itself, so
     // they are on the contact before any workflow runs. If GoHighLevel refuses
     // them, the upsert is repeated without them (the lead is never lost).
-    const quoteFields = quoteCustomFields(lowest10k, record.quoteAtSubmission);
+    const quoteFields = quoteCustomFields(lowest10k, record.quoteAtSubmission, funnelUrl(record));
     let up = await call('/contacts/upsert', quoteFields ? { ...crmContact(record, locationId), customFields: quoteFields } : crmContact(record, locationId));
     // V4.41: whether Agent CRM accepted the custom fields (logged on the lead's events).
     /** @type {string | null} */
@@ -196,9 +196,13 @@ export const PREMIUM_FIELD_KEY = 'monthly_premium';
 export const AGE_FIELD_KEY = 'age';
 export const GENDER_FIELD_KEY = 'gender';
 /** @param {string | null} lowest10k @param {any} [quote] the quote at submission */
-export function quoteCustomFields(lowest10k, quote = {}) {
+/** V2.1: Randy's Single Line contact field "Original Funnel URL" (created in Agent CRM). */
+export const FUNNEL_URL_FIELD_KEY = 'original_funnel_url';
+export function quoteCustomFields(lowest10k, quote = {}, entryUrl = null) {
   const q = quote ?? {};
   const fields = [];
+  // V2.1 (Randy, November 2026): his "Original Funnel URL" field, for {{contact.original_funnel_url}}.
+  if (entryUrl) fields.push({ key: FUNNEL_URL_FIELD_KEY, field_value: entryUrl });
   if (Number.isInteger(q.age)) fields.push({ key: AGE_FIELD_KEY, field_value: String(q.age) });
   if (q.gender === 'male' || q.gender === 'female') fields.push({ key: GENDER_FIELD_KEY, field_value: q.gender === 'female' ? 'Female' : 'Male' });
   if (lowest10k) {

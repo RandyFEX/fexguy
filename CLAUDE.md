@@ -1987,6 +1987,12 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   keeps https://funeralfunds.com/apply/ (Lead Source: Website; only
   /get-rates/ is Facebook). The test-mode CRM preview also shows State,
   Contact source, Lead Source and URL.
+  V2.1 (Randy, November 2026): Randy's Single Line contact field "Original
+  Funnel URL" (key `original_funnel_url`, `FUNNEL_URL_FIELD_KEY` in
+  server/quote/crm.js) gets the lead's entryUrl on the contact upsert, with
+  age/gender/coverage/premium, before the quote tag; never changed later
+  (/apply/, /about/). His notification uses {{contact.source}} and
+  {{contact.original_funnel_url}}. The test-mode preview shows the field.
 - (Before V2.4) After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans
