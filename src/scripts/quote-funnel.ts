@@ -339,7 +339,6 @@ if (root) {
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
   const resultsLead = $('[data-qf-results-lead]');
-  const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
   const blurred = (text: string) => {
     const b = document.createElement('span');
@@ -432,7 +431,6 @@ if (root) {
     unlocked = false;
     pricing.dataset.locked = 'true';
     adjust.hidden = true;
-    adjustIntro.hidden = true;
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
     // The results headline and its supporting line appear with real prices only.
@@ -704,7 +702,6 @@ if (root) {
     window.clearTimeout(timer);
     pricing.dataset.expired = 'true';
     adjust.hidden = true;
-    adjustIntro.hidden = true;
     refNote.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
@@ -725,7 +722,6 @@ if (root) {
     pricing.dataset.locked = 'false';
     testBanner.hidden = !test;
     adjust.hidden = false;
-    adjustIntro.hidden = false;
     refNote.hidden = false;
     // Randy (November 2026, wording V1.1): the number is a call link.
     const call = document.createElement('a');

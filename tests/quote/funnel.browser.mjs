@@ -207,7 +207,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const over = await page.$$eval('[data-qf-summary] > div', (els) => els.filter((e) => e.scrollWidth > e.clientWidth + 1).length);
     assert(over === 0, `${over} summary values overflow their box`);
     const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.nextElementSibling?.matches('[data-qf-disclosure]')]);
-    assert(btn[0] === 'SEE MY RATES' && btn[1], JSON.stringify(btn));
+    assert(btn[0] === 'SEE MY RATES INSTANTLY' && btn[1], JSON.stringify(btn));
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
     const inputs = await page.$$eval('[data-qf-contact] input:not([type="checkbox"]):not([type="hidden"])', (els) => els.map((e) => [e.id, document.querySelector(`label[for="${e.id}"]`)?.textContent.trim(), e.type]));
