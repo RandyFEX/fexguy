@@ -225,11 +225,10 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
                   <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Loading price</span></span>
                   <span class="qf-card__per">per month</span>
                 </p>
-                <!-- Randy (November 2026): SAVE THIS QUOTE TO YOUR PHONE replaces Call to Chat or Apply and Text to Chat or Apply in every card (server/quote/vcard.js); layout V1.0: directly under the premium, above the coverage line. -->
+                <!-- V1.4 (Randy, November 2026): directly under the premium, APPLY NOW - 10 EASY QUESTIONS first (every card opens the same questionnaire, step 9), then SAVE THIS QUOTE TO YOUR PHONE (server/quote/vcard.js), then the coverage line. -->
+                <button class="btn qf-card__call qf-card__save qf-card__apply-q" type="button" data-qf-apply-q disabled>APPLY NOW - 10 EASY QUESTIONS</button>
                 <button class="btn qf-card__call qf-card__save" type="button" data-qf-save disabled>SAVE THIS QUOTE TO YOUR PHONE</button>
                 <p class="qf-card__save-status" role="status" aria-live="polite" data-qf-save-status></p>
-                <!-- 10 Easy Questions (Randy, November 2026): every card opens the same questionnaire (step 9). -->
-                <button class="btn qf-card__call qf-card__save qf-card__apply-q" type="button" data-qf-apply-q disabled>APPLY NOW - 10 EASY QUESTIONS</button>
                 <p class="qf-card__timing" data-qf-timing hidden></p>
                 <p class="qf-card__note" data-qf-note></p>
               </article>

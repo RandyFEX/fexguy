@@ -3,7 +3,7 @@
 // tables: the three cards' APPLY NOW buttons, exact questions and order,
 // multiple selection, None of the above, exact feedback, progress,
 // completion, saving on the existing lead, one CRM update (existing contact,
-// note + tag), the /randy/ confirmation state, and owner test mode (no CRM).
+// Comments field, then the tag), the /randy/ confirmation state, and owner test mode (no CRM).
 // Run after a build: node tests/quote/application.browser.mjs
 import { createRequire } from 'node:module';
 import { startFunnelServer, OWNER_TEST_PASSWORD } from './funnel-server.mjs';
@@ -66,10 +66,10 @@ async function answerAll(page) {
   for (const q of HEALTH_QUESTIONS.slice(1)) await page.check(`input[name="${q.id}"][value="none"]`);
 }
 
-await check('three APPLY NOW - 10 EASY QUESTIONS buttons under the save buttons; each opens the same questionnaire', async () => {
+await check('V1.4: in every card, under the premium, APPLY NOW - 10 EASY QUESTIONS then SAVE THIS QUOTE TO YOUR PHONE, then the coverage line; each opens the same questionnaire', async () => {
   const { ctx, page } = await toRates();
-  const cards = await page.$$eval('[data-qf-card]', (cs) => cs.map((c) => { const s = c.querySelector('[data-qf-save]').getBoundingClientRect(); const a = c.querySelector('[data-qf-apply-q]'); return { text: a.textContent.trim(), below: a.getBoundingClientRect().top >= s.bottom, sameWidth: Math.abs(a.getBoundingClientRect().width - s.width) < 1 }; }));
-  assert(cards.length === 3 && cards.every((c) => c.text === 'APPLY NOW - 10 EASY QUESTIONS' && c.below && c.sameWidth), JSON.stringify(cards));
+  const cards = await page.$$eval('[data-qf-card]', (cs) => cs.map((c) => { const p = c.querySelector('.qf-card__price').getBoundingClientRect(); const s = c.querySelector('[data-qf-save]').getBoundingClientRect(); const a = c.querySelector('[data-qf-apply-q]').getBoundingClientRect(); const tm = c.querySelector('[data-qf-timing]'); const t = tm.getBoundingClientRect(); return { text: c.querySelector('[data-qf-apply-q]').textContent.trim(), order: p.bottom <= a.top && a.bottom <= s.top && (tm.hidden || s.bottom <= t.top), sameWidth: Math.abs(a.width - s.width) < 1 }; }));
+  assert(cards.length === 3 && cards.every((c) => c.text === 'APPLY NOW - 10 EASY QUESTIONS' && c.order && c.sameWidth), JSON.stringify(cards));
   for (const id of ['lowest-preferred', 'average-standard']) {
     await page.click(`[data-qf-card="${id}"] [data-qf-apply-q]`);
     await page.waitForSelector('[data-qa]:not([hidden])');
@@ -117,8 +117,12 @@ await check('exact questions and answer order; nothing preselected; multiple cho
   await ctx.close();
 });
 
-await check('production: answers saved on the existing lead, one CRM update to the existing contact (note + tag), then /randy/ in its confirmation state; a repeat sends nothing', async () => {
+await check('production: the Comments field (not Notes) gets the summary at lead delivery and the extended summary on submit, the tag only after Comments; then /randy/; a repeat sends nothing', async () => {
+  srv.crm.comments = 'Prefers mornings';
   const { ctx, page } = await toRates({ phone: '214-867-5322' });
+  const pre = srv.crm.comments.split('\n');
+  // TEST-ONLY tables price Mutual of Omaha and Aetna (shown as CVS); Gerber has none here.
+  assert(pre.join('\n') === '70 | Female | TX | Non-tobacco\n$5,000 Coverage\nMutual of Omaha: $21.00/mo\nCVS: $25.38/mo\nPrefers mornings', JSON.stringify(pre));
   const before = srv.crm.calls.length;
   await page.click('[data-qf-card="average-standard"] [data-qf-apply-q]');
   await page.waitForSelector('[data-qa]:not([hidden])');
@@ -126,10 +130,12 @@ await check('production: answers saved on the existing lead, one CRM update to t
   await Promise.all([page.waitForURL(/\/randy\/$/), page.click('[data-qa-submit]')]);
   const calls = srv.crm.calls.slice(before);
   assert(!calls.some((c) => c.url.endsWith('/contacts/upsert')), 'no new contact');
-  const note = calls.find((c) => c.url.endsWith('/notes'))?.body?.body ?? '';
-  const tag = calls.find((c) => c.url.endsWith('/tags'))?.body?.tags ?? [];
-  assert(tag.includes('Application Questionnaire Completed'), JSON.stringify(tag));
-  for (const s of ['Name: Pat Applicant', 'Phone:', 'Age: 70', 'Gender: Female', 'Tobacco: No', 'State: Texas', 'Coverage: $5,000', 'Quoted: Mutual of Omaha: $', '1. What is your height and weight? 5 ft 6 in, 180 lb', '2. Do you have any of these health conditions? Arthritis, High cholesterol', '3. Do you have any of these health conditions? None of the above', '10. Do any of the following currently apply to you? None of the above']) assert(note.includes(s), `note lacks ${s}`);
+  assert(!calls.some((c) => c.url.endsWith('/notes')), 'no note');
+  const putAt = calls.findIndex((c) => c.method === 'PUT');
+  const tagAt = calls.findIndex((c) => c.url.endsWith('/tags'));
+  assert(putAt >= 0 && tagAt > putAt && calls[tagAt].body.tags.join() === 'Application Questionnaire Completed', JSON.stringify(calls.map((c) => [c.method, c.url])));
+  const after = srv.crm.comments.split('\n');
+  assert(after.join('\n') === `${pre.slice(0, 4).join('\n')}\n5’6” | 180 lbs\nArthritis, High cholesterol\nPrefers mornings`, JSON.stringify(after));
   const card = await page.evaluate(() => ({ title: document.querySelector('.rc-received')?.innerText.replace(/\s+/g, ' ').trim(), visible: getComputedStyle(document.querySelector('.rc-received')).display !== 'none', call: [...document.querySelectorAll('[data-card-action="call"] span')].filter((s) => getComputedStyle(s).display !== 'none').map((s) => s.textContent.trim()), href: document.querySelector('[data-card-action="call"]').getAttribute('href'), note: getComputedStyle(document.querySelector('.rc-call-note')).display !== 'none', save: [...document.querySelectorAll('[data-card-save] span')].filter((s) => getComputedStyle(s).display !== 'none').map((s) => s.textContent.trim()), alert: getComputedStyle(document.querySelector('.rc-alert')).display, email: /mailto:|sms:/.test(document.body.innerHTML) }));
   assert(card.visible && card.title === 'Randy just received your information! Call Randy now to find out which plans are available to you.', JSON.stringify(card));
   assert(card.call.join('|') === 'CALL RANDY NOW|888-862-9456' && card.href === 'tel:8888629456' && card.note, JSON.stringify(card));

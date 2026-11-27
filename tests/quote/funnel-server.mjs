@@ -36,11 +36,21 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 export const OWNER_TEST_PASSWORD = 'local test password only';
 export async function startFunnelServer({ production = false, videoIntro = false, datasets = null, ownerTest = false } = {}) {
   // V3.3: a fake Agent CRM for production runs (srv.crm.down = true makes it fail).
-  const crm = { down: false, calls: [] };
+  // V1.4: it also keeps the contact's Comments field (fieldKey contact.comments).
+  const crm = { down: false, calls: [], comments: '' };
   const fetchImpl = async (url, init) => {
-    crm.calls.push({ url: String(url), body: JSON.parse(init.body) });
+    const u = String(url);
+    const method = init.method ?? 'POST';
+    crm.calls.push({ url: u, method, body: init.body ? JSON.parse(init.body) : null });
     if (crm.down) return Response.json({ message: 'unavailable' }, { status: 503 });
-    if (String(url).endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'fake-contact' } });
+    if (u.endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'fake-contact' } });
+    if (method === 'GET' && u.includes('/customFields')) return Response.json({ customFields: [{ id: 'cf-other', fieldKey: 'contact.age' }, { id: 'cf-comments', fieldKey: 'contact.comments' }] });
+    if (method === 'GET' && u.endsWith('/contacts/fake-contact')) return Response.json({ contact: { id: 'fake-contact', customFields: [{ id: 'cf-comments', value: crm.comments }] } });
+    if (method === 'PUT' && u.endsWith('/contacts/fake-contact')) {
+      const f = JSON.parse(init.body).customFields?.find((x) => x.id === 'cf-comments');
+      if (f) crm.comments = f.field_value;
+      return Response.json({ succeded: true });
+    }
     return Response.json({ ok: true }, { status: 201 });
   };
   const redis = await startRedis();

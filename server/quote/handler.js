@@ -31,6 +31,7 @@ import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 import { TEST_SESSION_ENDED, ownerTestState } from './owner-test.js';
 import { TOKEN_TTL_MS, newToken, quoteLines, vcardNote } from './vcard.js';
 import { applicationLines, parseApplication } from './application.js';
+import { commentRates, commentsSummary } from './comments.js';
 
 /** Direct preview access (preview/local only): the one fixed sample record and its quote. */
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
@@ -231,9 +232,11 @@ export async function handleQuote(request, env, deps) {
           lowest10k = at10k.sort((a, b) => (a.monthlyPremiumCents ?? 0) - (b.monthlyPremiumCents ?? 0))[0]?.monthlyPremium ?? null;
         } catch {}
         /** @type {{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }} */
-        const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k).catch(() => ({ sent: true, ok: false, error: 'error' }));
+        // V1.4: the compact Comments summary (server/quote/comments.js).
+        const comments = rates.length ? commentsSummary(record, quote, commentRates(rates)) : null;
+        const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k, comments).catch(() => ({ sent: true, ok: false, error: 'error' }));
         const delivered = crm.sent && crm.ok === true;
-        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null }).catch(() => {});
+        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null, commentsField: /** @type {any} */ (crm).commentsField ?? null }).catch(() => {});
         record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
         await store.putLead(leadId, record);
         if (!delivered)
@@ -454,14 +457,15 @@ export async function handleQuote(request, env, deps) {
       if (!record.application) {
         const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
         if (!loaded) return json(503, { status: 'unavailable', message: `Please try again, or call ${FUNNEL_PHONE}.` });
-        const rateLines = quoteLines(quote, priceCategories(loaded.engine, quote));
-        record.application = { at: iso, quote, rateLines, answers, answerLines: applicationLines(answers), crm: { delivered: false } };
+        const categories = priceCategories(loaded.engine, quote);
+        const rateLines = quoteLines(quote, categories);
+        record.application = { at: iso, quote, rateLines, answers, answerLines: applicationLines(answers), comments: commentsSummary(record, quote, commentRates(categories), answers), crm: { delivered: false } };
         await store.putLead(v.leadId, record);
         await store.event(v.leadId, { at: iso, type: 'application-submitted' });
       }
       if (!live) return json(200, { status: 'ok', saved: true, testMode: true });
       const app = record.application;
-      const crm = await sendApplicationToCrm(env, record, { at: new Date(app.at), quote: app.quote, rateLines: app.rateLines, answerLines: app.answerLines }, deps.fetchImpl).catch(() => ({ sent: true, ok: false, error: 'error' }));
+      const crm = await sendApplicationToCrm(env, record, { comments: app.comments }, deps.fetchImpl).catch(() => ({ sent: true, ok: false, error: 'error' }));
       const delivered = crm.sent && crm.ok === true;
       await store.event(v.leadId, { at: iso, type: delivered ? 'crm-application-delivered' : crm.sent ? 'crm-application-failed' : 'crm-not-configured', ...crm }).catch(() => {});
       record.application.crm = { delivered, at: iso };

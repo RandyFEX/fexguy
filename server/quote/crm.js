@@ -15,6 +15,8 @@
 // retry re-delivers the same lead (server/quote/handler.js 'start'). The
 // token is never logged, returned or sent to the browser.
 
+import { writeComments } from './comments.js';
+
 export const CRM_TAG = 'Funeral Funds - Website Quote';
 // V4.42 (Randy, November 2026): leads from /get-rates/ (Facebook ads) get
 // their own source and tag, for a separate Agent CRM workflow; /free-quote/
@@ -96,9 +98,10 @@ export function crmNote(record, rates = []) {
  * @param {{ label: string, monthlyPremium?: string | null, status: string }[]} [rates]
  * @param {typeof fetch} [fetchImpl]
  * @param {string | null} [lowest10k] the lowest displayed monthly rate for $10,000 ("32.87"), saved on the contact for GoHighLevel's text
- * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }>}
+ * @param {string | null} [comments] the Comments summary (server/quote/comments.js), written before the tag
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null, commentsField?: string | null }>}
  */
-export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, lowest10k = null) {
+export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, lowest10k = null, comments = null) {
   const token = env.AGENT_CRM_TOKEN ?? '';
   const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
   if (!token || !locationId) return { sent: false };
@@ -106,7 +109,7 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
     const res = await fetchImpl(`${API}${path}`, {
       method,
       headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
-      body: JSON.stringify(body),
+      body: body === undefined ? undefined : JSON.stringify(body),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
     /** @type {any} */
@@ -141,12 +144,22 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
         rateField = e instanceof Error ? e.name : 'error';
       }
     }
+    // V1.4: the Comments summary (best effort, logged), also before the tag.
+    /** @type {string | null} */
+    let commentsField = null;
+    if (comments) {
+      try {
+        commentsField = await writeComments(call, locationId, contactId, comments);
+      } catch (e) {
+        commentsField = e instanceof Error ? e.name : 'error';
+      }
+    }
     step = 'tags';
     const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [crmTag(record)] });
     step = 'note';
     const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: crmNote(record, rates) });
     const ok = tag.res.ok && note.res.ok;
-    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField, customFields };
+    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField, customFields, commentsField };
   } catch (e) {
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
@@ -249,50 +262,27 @@ export async function sendQuoteDownloadToCrm(env, record, d, fetchImpl = fetch) 
   }
 }
 
-// 10 Easy Questions (Randy, November 2026; server/quote/application.js): a
-// submitted questionnaire updates the lead's EXISTING contact once: the tag
-// below (a GoHighLevel workflow on it can notify Randy and mark the lead high
-// intent) and a note with the quote, the displayed rates and every answer.
+// 10 Easy Questions (Randy, November 2026; server/quote/application.js; V1.4):
+// a submitted questionnaire updates the lead's EXISTING contact once: its
+// Comments field gets the extended summary (server/quote/comments.js; never a
+// note), and only after that write succeeds the tag below is added (a
+// GoHighLevel workflow on it can notify Randy and mark the lead high intent).
 export const APPLICATION_TAG = 'Application Questionnaire Completed';
-
-/** @param {any} record @param {{ at: Date, quote: any, rateLines: string[], answerLines: string[] }} d */
-export function applicationNote(record, d) {
-  const q = d.quote ?? {};
-  const age = q.age ?? record.quoteAtSubmission?.age;
-  const gender = q.gender ?? record.quoteAtSubmission?.gender;
-  const tobacco = q.tobacco ?? record.quoteAtSubmission?.tobacco;
-  return [
-    /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
-    '10 Easy Questions completed (preliminary questionnaire; not an underwriting decision).',
-    `Submitted: ${d.at.toISOString()} (${d.at.toLocaleString('en-US', { timeZone: 'America/Chicago', dateStyle: 'medium', timeStyle: 'short' })} Central)`,
-    record.firstName ? `Name: ${String(record.firstName).trim()}` : null,
-    record.phone ? `Phone: ${record.phone}` : null,
-    Number.isInteger(age) ? `Age: ${age}` : null,
-    gender ? `Gender: ${gender === 'female' ? 'Female' : 'Male'}` : null,
-    typeof tobacco === 'boolean' ? `Tobacco: ${tobacco ? 'Yes' : 'No'}` : null,
-    record.state ? `State: ${record.state}` : null,
-    'premium' in q ? `Monthly budget: $${q.premium}` : `Coverage: $${Number(q.coverage).toLocaleString('en-US')}`,
-    ...d.rateLines.map((l) => `Quoted: ${l}`),
-    'Answers:',
-    ...d.answerLines,
-    `Lead ID: ${record.leadId}`,
-  ].filter(Boolean).join('\n');
-}
 
 /**
  * @param {Record<string, string | undefined>} env @param {any} record
- * @param {{ at: Date, quote: any, rateLines: string[], answerLines: string[] }} d @param {typeof fetch} [fetchImpl]
- * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, error?: string }>}
+ * @param {{ comments: string }} d @param {typeof fetch} [fetchImpl]
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, error?: string, commentsField?: string }>}
  */
 export async function sendApplicationToCrm(env, record, d, fetchImpl = fetch) {
   const token = env.AGENT_CRM_TOKEN ?? '';
   const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
   if (!token || !locationId) return { sent: false };
-  const call = async (/** @type {string} */ path, /** @type {unknown} */ body) => {
+  const call = async (/** @type {string} */ path, /** @type {unknown} */ body, method = 'POST') => {
     const res = await fetchImpl(`${API}${path}`, {
-      method: 'POST',
+      method,
       headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
-      body: JSON.stringify(body),
+      body: body === undefined ? undefined : JSON.stringify(body),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
     /** @type {any} */
@@ -308,13 +298,12 @@ export async function sendApplicationToCrm(env, record, d, fetchImpl = fetch) {
       contactId = up.data?.contact?.id;
       if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
     }
-    // The note first, so a workflow started by the tag already finds the answers.
-    step = 'note';
-    const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: applicationNote(record, d) });
+    step = 'comments';
+    const commentsField = await writeComments(call, locationId, contactId, d.comments);
+    if (commentsField !== 'updated') return { sent: true, ok: false, step, contactId, commentsField };
     step = 'tags';
     const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [APPLICATION_TAG] });
-    const ok = tag.res.ok && note.res.ok;
-    return { sent: true, ok, step: ok ? 'done' : !note.res.ok ? 'note' : 'tags', status: !note.res.ok ? note.res.status : tag.res.status, contactId };
+    return { sent: true, ok: tag.res.ok, step: tag.res.ok ? 'done' : 'tags', status: tag.res.status, contactId, commentsField };
   } catch (e) {
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }

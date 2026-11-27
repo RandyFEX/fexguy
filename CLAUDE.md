@@ -1850,9 +1850,9 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
 ## 10 Easy Questions application funnel (Randy, November 2026, V1.0)
 
-- Each result card has a second orange button under SAVE THIS QUOTE TO YOUR
-  PHONE: APPLY NOW - 10 EASY QUESTIONS (same style; disabled until real
-  prices show). All three open the same one-page questionnaire, step 9 of
+- Each result card has, directly under the monthly premium, APPLY NOW - 10
+  EASY QUESTIONS and then SAVE THIS QUOTE TO YOUR PHONE (V1.4 order; same
+  style; disabled until real prices show), then the coverage line. All three open the same one-page questionnaire, step 9 of
   QuoteFunnelPage.astro (src/components/quote/ApplicationQuestions.astro,
   src/scripts/quote-application.ts), on /free-quote/, /get-rates/, every
   entry point and /test/. Questions, answer order, None of the above (always
@@ -1865,16 +1865,28 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   matching or eligibility decision.
 - POST /api/quote/ action `application` (session-checked, validated against
   the definitions, the displayed quote re-priced) saves the answers on the
-  EXISTING lead record (`application`) before anything else; on production
-  (never previews or owner test mode) the existing Agent CRM contact gets a
-  note (name, phone, age, gender, tobacco, state, coverage, the three
-  quoted companies and premiums, height/weight, every answer by question,
-  time) and then the tag "Application Questionnaire Completed"
-  (APPLICATION_TAG, server/quote/crm.js). Success only after the save (and,
-  on production, the delivery); a failed delivery is retried with the same
+  EXISTING lead record (`application`, with the full answers and time)
+  before anything else; on production (never previews or owner test mode)
+  the existing Agent CRM contact's Comments field is updated and only then
+  is the tag "Application Questionnaire Completed" added (APPLICATION_TAG,
+  server/quote/crm.js); no note. Success only after the save (and, on
+  production, the delivery); a failed delivery is retried with the same
   saved answers; a completed lead never sends a second update. Answers never
   go to GA4, Meta or a URL. Randy's notification and any high-intent status
   belong to a GoHighLevel workflow on that tag.
+- **CRM Comments summary (V1.4, Randy, November 2026):** written to the
+  contact's existing Comments custom field (fieldKey `contact.comments`,
+  the field the Reschedule form uses; its id is looked up through the
+  location's custom-field definitions; never Notes, never a new field).
+  server/quote/comments.js builds it: at lead delivery (best effort, before
+  the quote tag) "67 | Female | TX | Non-tobacco", "$5,000 Coverage" and one
+  "<Company>: $26.53/mo" line per displayed card (Aetna shown as CVS); after
+  the questionnaire the same lines plus "5’6” | 165 lbs" and the selected
+  conditions alphabetized, with the question's timeframe ("(last 2 years)"
+  for questions 5 and 7, "(currently)" for 10), or "No listed health
+  conditions reported." Plain lines, no blank lines, labels, timestamps,
+  names, phones or None of the above. An earlier generated summary is
+  replaced; other Comments text is kept below it.
 - After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans
