@@ -477,7 +477,9 @@ if (root) {
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
-    timing.textContent = state === 'ok' ? timings.join(' / ') : '';
+    // Layout V1.0 (Randy, November 2026): the card's coverage amount after its coverage term, e.g. "First-Day Coverage - $5,000".
+    const shownCoverage = cat?.coverage ?? shown?.quote.coverage;
+    timing.textContent = state === 'ok' && timings.length ? `${timings.join(' / ')}${shownCoverage ? ` - ${money(shownCoverage)}` : ''}` : '';
     timing.hidden = !timing.textContent;
     if (!timing.hidden) timing.prepend(timingIcon(/waiting period/i.test(timing.textContent) ? 'calendar' : 'check'));
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
