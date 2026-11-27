@@ -1802,9 +1802,14 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
 ## Personalized quote vCard (Randy, November 2026)
 
-- SAVE QUOTE & CONTACT INFO under the result cards (QuoteFunnelPage.astro;
-  /free-quote/, /get-rates/, every entry point, /test/; shown with real prices
-  only) downloads Randy's master contact card (/randy/randy-vandervaate.vcf
+- SAVE QUOTE & CONTACT INFO is the orange button INSIDE each of the three
+  result cards (Randy: on a phone visitors see one card at a time). It
+  REPLACES both card buttons, "Call to Chat or Apply" and "Text to Chat or
+  Apply" (superseding the V4.13/V4.15/V4.16 card-button rules; their
+  quote_call_click and quote_apply_now card taps are gone). QuoteFunnelPage.astro;
+  /free-quote/, /get-rates/, every entry point, /test/; enabled with real
+  prices only (gray and disabled before). Every card's button downloads the
+  same card (all three companies). It downloads Randy's master contact card (/randy/randy-vandervaate.vcf
   from src/config/card.ts: name, Funeral Funds, 888-862-9456, email, website,
   photo; /randy/ itself unchanged) with only its NOTE replaced: the visitor's
   first name, quote date, the displayed coverage (or monthly budget), each

@@ -17,13 +17,10 @@
 import { lead } from '@/config/lead';
 import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
-import { saveHandoff } from '@/scripts/quote-handoff';
 import { offerExpiresAt, resetOffers, restartQuote, runCountdown } from '@/scripts/quote-offer';
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
 import { isValidName } from '../../server/quote/name.js';
-import { SMS_NUMBER } from '@/config/phones';
-import { isIOS, isMobileDevice, prewrittenText, smsHref } from '@/scripts/sms-link.js';
 import { createIntro } from '@/scripts/quote-intro';
 
 // Direct preview access (preview and local builds only): ?preview=results
@@ -82,22 +79,6 @@ function visitId() {
   } catch {
     if (!memoryVisit) memoryVisit = newVisitId();
     return memoryVisit;
-  }
-}
-/** V4.16 (Randy, November 2026): each card's "Text to Chat or Apply".
- *  Phones and tablets: a direct sms: link to SMS_NUMBER (src/config/phones.ts)
- *  with Randy's approved prewritten text (src/scripts/sms-link.js, the same
- *  text /facebook/ uses). Computers: the /facebook/ handoff page (query string
- *  kept), with its computer instructions and QR code. Active only on a priced
- *  card. */
-const ON_PHONE = isMobileDevice(navigator);
-function setTextLink(a: HTMLElement, on: boolean, href = '') {
-  if (on && href) {
-    a.setAttribute('href', href);
-    a.removeAttribute('aria-disabled');
-  } else {
-    a.removeAttribute('href');
-    a.setAttribute('aria-disabled', 'true');
   }
 }
 // Owner test mode (V1.1): a browser signed in at /test/ asks for test mode on
@@ -332,7 +313,6 @@ if (root) {
     return n >= 1 && n <= 9999.99 ? n.toFixed(2) : null;
   };
   /** The coverage a card shows: its own (Desired Premium) or the chosen amount. */
-  const cardCoverage = (cat: Category) => cat.coverage ?? shown?.quote.coverage ?? 0;
   const live = $('[data-qf-live]');
   const applyStatus = $('[data-qf-apply-status]');
   const pricing = steps.get(7)!;
@@ -381,27 +361,28 @@ if (root) {
   // the server re-prices the quote on screen and returns a one-time download
   // link for this browser; the phone then offers to add Randy's contact card
   // with the quote in its notes. GA4 quote_downloaded only (no personal data).
-  const saveWrap = $('[data-qf-save-wrap]');
-  const saveBtn = $<HTMLButtonElement>('[data-qf-save]');
-  const saveStatus = $('[data-qf-save-status]');
-  saveBtn.addEventListener('click', async () => {
-    if (!shown || saveBtn.disabled) return;
-    saveBtn.disabled = true;
-    saveStatus.textContent = 'Preparing your quote…';
+  async function saveQuote(btn: HTMLButtonElement, status: HTMLElement) {
+    if (!shown || !unlocked || expired || btn.disabled) return;
+    btn.disabled = true;
+    status.textContent = 'Preparing your quote…';
     let r = await api({ action: 'vcard', quote: shown.quote });
     if (r.http === 401 && (await resumeSession())) r = await api({ action: 'vcard', quote: shown.quote });
-    saveBtn.disabled = false;
+    btn.disabled = !shown || expired;
     if (r.http === 200 && r.body.status === 'ok' && typeof r.body.url === 'string' && r.body.url.startsWith('/api/quote-vcard/?t=')) {
-      saveStatus.textContent = 'Your phone will ask to add the contact. Tap Create New Contact (or Add to Existing Contact) to save it.';
+      status.textContent = 'Your phone will ask to add the contact. Tap Create New Contact (or Add to Existing Contact) to save it.';
       track('quote_downloaded');
       window.location.href = r.body.url;
       return;
     }
-    saveStatus.textContent = `Sorry, your quote couldn't be saved just now. Please try again, or call ${funnelPhone}.`;
-  });
+    status.textContent = `Sorry, your quote couldn't be saved just now. Please try again, or call ${funnelPhone}.`;
+  }
+  for (const el of cards.values()) {
+    const btn = el.querySelector<HTMLButtonElement>('[data-qf-save]')!;
+    const status = el.querySelector<HTMLElement>('[data-qf-save-status]')!;
+    btn.addEventListener('click', () => void saveQuote(btn, status));
+  }
   function lockCards() {
     unlocked = false;
-    saveWrap.hidden = true;
     pricing.dataset.locked = 'true';
     adjust.hidden = true;
     adjustIntro.hidden = true;
@@ -417,11 +398,8 @@ if (root) {
       const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Loading price</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
-      const lockedApply = el.querySelector<HTMLElement>('[data-qf-apply]')!;
-      setTextLink(lockedApply, false);
-      lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Text to Chat or Apply';
-      delete lockedApply.dataset.ready;
-      el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
+      el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = true;
+      el.querySelector<HTMLElement>('[data-qf-save-status]')!.textContent = '';
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
       const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
       timing.textContent = '';
@@ -479,11 +457,6 @@ if (root) {
     return coverage ? { ...base, coverage } : null;
   }
 
-  function textHref(cat: Category): string {
-    if (!ON_PHONE) return `/facebook/${location.search}`;
-    const body = prewrittenText({ firstName: visitorName, coverage: cardCoverage(cat), monthlyPremium: cat.monthlyPremium ?? '' });
-    return body ? smsHref(SMS_NUMBER, body, isIOS(navigator)) : '';
-  }
   function setCard(el: HTMLElement, cat: Category | null, state: string, note: string) {
     el.dataset.state = state;
     // V4.29: with a Desired Premium the card shows the coverage it buys, for that premium.
@@ -495,15 +468,12 @@ if (root) {
       fine ? '' : byPremium ? money(cat!.coverage!) : state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
     el.querySelector<HTMLElement>('.qf-card__per')!.textContent = byPremium ? `coverage for $${cat!.premium}/month` : 'per month';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
-    setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok', state === 'ok' && cat ? textHref(cat) : '');
+    el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = state !== 'ok';
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
     if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
-    el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = state !== 'ok';
-    el.querySelector('[data-qf-apply] [data-qf-apply-label]')!.textContent = 'Text to Chat or Apply';
-    el.querySelector<HTMLElement>('[data-qf-apply]')!.dataset.ready = 'true';
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     timing.textContent = state === 'ok' ? timings.join(' / ') : '';
@@ -528,7 +498,6 @@ if (root) {
   }
   function render(quote: PriceQuote, categories: Category[]) {
     shown = { quote, categories };
-    saveWrap.hidden = !unlocked || expired || !categories.some((c) => c.status === 'ok');
     for (const cat of categories) {
       const el = cards.get(cat.id);
       if (el) setCard(el, cat, cat.status, cat.status === 'ok' ? '' : cat.message ?? '');
@@ -682,7 +651,6 @@ if (root) {
     expired = true;
     window.clearTimeout(timer);
     pricing.dataset.expired = 'true';
-    saveWrap.hidden = true;
     adjust.hidden = true;
     adjustIntro.hidden = true;
     refNote.hidden = true;
@@ -690,7 +658,7 @@ if (root) {
     for (const el of cards.values()) {
       el.querySelector<HTMLElement>('[data-qf-amount]')!.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">This offer has expired</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
-      setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, false);
+      el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = true;
     }
     restart.hidden = false;
   }
@@ -734,7 +702,6 @@ if (root) {
   const intakeStatus = $('[data-qf-intake-status]');
   let intakeCategory = '';
   let questionId = '';
-  let applyNotified = true;
   let completed = false;
 
   function intakeFinished(reason: string, flag: string | null) {
@@ -778,71 +745,6 @@ if (root) {
   root.querySelectorAll<HTMLButtonElement>('[data-qf-answer]').forEach((btn) =>
     btn.addEventListener('click', () => intakeStep({ action: 'intake-answer', category: intakeCategory, questionId, answer: btn.dataset.qfAnswer })),
   );
-
-  // "Call to Get Approved" (v3.7): the tel: link dials the funnel's number itself;
-  // this only records which quote was on the card (a tap, not a call).
-  const QUOTE_REF_KEY = 'ff:quote-ref';
-  const quoteRef = () => {
-    try {
-      let r = sessionStorage.getItem(QUOTE_REF_KEY) ?? '';
-      if (!/^[A-Za-z0-9]{16}$/.test(r)) {
-        r = newVisitId().slice(0, 16);
-        sessionStorage.setItem(QUOTE_REF_KEY, r);
-      }
-      return r;
-    } catch {
-      return '';
-    }
-  };
-  for (const [id, el] of cards) {
-    el.querySelector<HTMLAnchorElement>('[data-qf-call]')!.addEventListener('click', () => {
-      if (!shown || !unlocked) return;
-      const cat = shown.categories.find((c) => c.id === id);
-      if (!cat || cat.status !== 'ok') return;
-      const first = (cat.carriers ?? []).find(Boolean) as Carrier | undefined;
-      const ref = quoteRef();
-      const at = new Date().toISOString();
-      track('quote_call_click', { category: id, carrier: first?.carrier, product: first?.plan, coverage: cardCoverage(cat), premium: cat.monthlyPremium, quoteRef: ref, at });
-      try {
-        void fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ action: 'call-click', category: id, quote: shown.quote, quoteRef: ref || undefined }), credentials: 'same-origin', keepalive: true }).catch(() => {});
-      } catch {}
-    });
-  }
-  for (const [id, el] of cards) {
-    // V4.16: the link itself opens the messaging app on a phone (sms: with the
-    // prewritten text) or the /facebook/ handoff page on a computer; the tap is
-    // recorded in the background (GA4 quote_apply_now and the server's Apply
-    // Now record, keepalive) and the selection is kept for /facebook/
-    // (quote-handoff.ts) before the link is followed.
-    el.querySelector<HTMLElement>('[data-qf-apply]')!.addEventListener('click', (e) => {
-      const cat = shown?.categories.find((c) => c.id === id);
-      if (!shown || !unlocked || expired || !cat || cat.status !== 'ok') {
-        e.preventDefault();
-        return;
-      }
-      const quote = shown.quote;
-      track('quote_apply_now', { category: id });
-      const first = cat.carriers?.find((c): c is Carrier => Boolean(c)) ?? null;
-      const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
-      const keep = (tier: string, monthlyPremium: string) =>
-        saveHandoff({
-          selection: { tierId: id, tier, carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: cardCoverage(cat), monthlyPremium },
-          inputs: { age: quote.age, gender: quote.gender, tobacco: quote.tobacco, state: answers.state ?? null },
-          attribution,
-          ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
-        });
-      keep(cat.label, String(cat.monthlyPremium));
-      void fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ action: 'apply', category: id, quote }), credentials: 'same-origin', keepalive: true })
-        .then((r) => (r.ok ? r.json() : null))
-        .then((body) => {
-          if (body?.status !== 'ok') return;
-          // v6.2: the lead counts once the server has saved the Apply Now record.
-          applyNotified = body.saved === true;
-          keep(String(body.category ?? cat.label), String(body.monthlyPremium ?? cat.monthlyPremium));
-        })
-        .catch(() => {});
-    });
-  }
 
   // Start: only this browser's own quote session returns to the live prices;
   // any other (new tab, new visit) starts at the first question.
