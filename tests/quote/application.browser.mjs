@@ -169,6 +169,47 @@ await check('owner test mode (/test/): the questionnaire submits and opens the c
   await ctx.close();
 });
 
+await check('/apply/ (V1.0): APPLY NOW opens /apply/ with no query string and the adjusted coverage kept; the submission uses that quote and the same contact', async () => {
+  const { ctx, page } = await toRates({ phone: '214-867-5324' });
+  await page.click('.qf-adjust input[name="coverage"][value="15000"]', { force: true }).catch(() => page.check('.qf-adjust input[name="coverage"][value="15000"]', { force: true }));
+  await page.waitForFunction(() => document.querySelector('.qf-adjust input[name="coverage"][value="15000"]')?.checked);
+  await page.waitForTimeout(800);
+  const before = srv.crm.calls.length;
+  await Promise.all([page.waitForURL(/\/apply\/$/), page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]')]);
+  await page.waitForSelector('[data-qa]:not([hidden])');
+  assert(new URL(page.url()).search === '', page.url());
+  await answerAll(page);
+  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('[data-qa-submit]')]);
+  const calls = srv.crm.calls.slice(before);
+  assert(!calls.some((c) => c.url.endsWith('/contacts/upsert')) && calls.some((c) => c.url.endsWith('/contacts/fake-contact') && c.method === 'PUT'), 'same contact');
+  assert(srv.crm.comments.split('\n')[1] === '$15,000 Coverage', srv.crm.comments);
+  await ctx.close();
+});
+
+await check('/apply/ visited directly without a quote: the quote form first, then straight to the questionnaire; /test/ links to /apply/', async () => {
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
+  const page = await ctx.newPage();
+  await page.goto(`${srv.base}/apply/`);
+  await page.waitForSelector('[data-step="1"]:not([hidden])');
+  assert(await page.$eval('[data-qa]', (e) => e.hidden), 'questionnaire hidden first');
+  for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="66"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(s);
+  await page.selectOption('[data-qf-state]', 'Texas');
+  await page.waitForSelector('[data-step="6"]:not([hidden])');
+  await page.waitForTimeout(300);
+  await page.fill('#qf-first', 'Direct Applicant');
+  await page.fill('#qf-phone', '214-867-5325');
+  await page.click('[data-qf-submit]');
+  await page.waitForSelector('[data-qa]:not([hidden])', { timeout: 10000 });
+  assert(srv.crm.comments.startsWith('66 | Male | TX | Non-tobacco\n$5,000 Coverage'), srv.crm.comments);
+  const robots = await page.$eval('meta[name="robots"]', (m) => m.content);
+  assert(robots === 'noindex, nofollow', robots);
+  await page.goto(`${srv.base}/test/`);
+  await page.fill('input[name="password"]', OWNER_TEST_PASSWORD);
+  await page.click('button[type="submit"]');
+  await page.waitForSelector('a[href="/apply/"]');
+  await ctx.close();
+});
+
 await browser.close();
 await srv.close();
 console.log(results.join('\n'));

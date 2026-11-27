@@ -1,0 +1,23 @@
+---
+// /apply/ (Randy, November 2026, application page URL V1.0): the permanent
+// address of the 10 Easy Questions questionnaire. The same shared funnel page
+// (src/components/quote/QuoteFunnelPage.astro); every card's APPLY NOW - 10
+// EASY QUESTIONS opens it with the displayed quote handed over in
+// sessionStorage (quote figures only; nothing personal or medical in the URL).
+// A visitor without a quote session goes through the quote form first, then
+// straight to the questionnaire. noindex, out of the sitemap, llms.txt and
+// site search.
+import QuoteFunnelPage from '@/components/quote/QuoteFunnelPage.astro';
+
+const title = 'Apply Now | 10 Easy Questions | Funeral Funds';
+const robots = 'noindex, nofollow';
+const headMeta = [
+  { property: 'og:locale', content: 'en_US' },
+  { property: 'og:type', content: 'website' },
+  { property: 'og:title', content: title },
+  { property: 'og:url', content: 'https://funeralfunds.com/apply/' },
+  { property: 'og:site_name', content: 'Funeral Funds' },
+];
+---
+
+<QuoteFunnelPage title={title} robots={robots} canonical="/apply/" headMeta={headMeta} funnel="free-quote" apply />

@@ -290,6 +290,13 @@ if (root) {
     // A new lead: fresh 10-minute results window (never an old visit's expired one).
     resetOffers();
     unlock({ ...quote, coverage: RESULTS_START_COVERAGE }, body.testMode, body.expiresAt);
+    // A new lead: an earlier quote handed to /apply/ no longer applies.
+    applyQuote = null;
+    try {
+      sessionStorage.removeItem(APPLY_QUOTE_KEY);
+    } catch {}
+    // /apply/ without an earlier quote: the quote form first, then straight to the questions.
+    if (applyPage) return show(9);
     intro.open(() => resultsTitle.focus({ preventScroll: true }));
   });
 
@@ -385,9 +392,21 @@ if (root) {
   }
   // 10 Easy Questions (Randy, November 2026; src/scripts/quote-application.ts):
   // every card's APPLY NOW opens the same questionnaire (step 9) for the quote on screen.
+  // /apply/ (Randy, November 2026, application page URL V1.0): the cards'
+  // APPLY NOW opens the permanent page /apply/ (this same funnel) with the
+  // displayed quote in sessionStorage (age, sex, tobacco, coverage or budget
+  // only); on /apply/ itself it opens the questionnaire in place.
+  const applyPage = root.dataset.applyPage === 'true';
+  const APPLY_QUOTE_KEY = 'ff:apply-quote';
+  let applyQuote: PriceQuote | null = null;
+  if (applyPage) {
+    try {
+      applyQuote = JSON.parse(sessionStorage.getItem(APPLY_QUOTE_KEY) ?? 'null');
+    } catch {}
+  }
   createApplication(root, {
     api,
-    quote: () => shown?.quote,
+    quote: () => shown?.quote ?? applyQuote,
     resume: () => resumeSession(),
     phone: funnelPhone,
     back: () => {
@@ -398,7 +417,11 @@ if (root) {
   for (const el of cards.values()) {
     el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.addEventListener('click', () => {
       if (!shown || !unlocked || expired) return;
-      show(9);
+      if (applyPage) return show(9);
+      try {
+        sessionStorage.setItem(APPLY_QUOTE_KEY, JSON.stringify(shown.quote));
+      } catch {}
+      location.assign('/apply/');
     });
   }
   function lockCards() {
@@ -805,6 +828,11 @@ if (root) {
     if (http === 200 && body.status === 'verified' && body.quote) {
       visitorName = String(body.firstName ?? '');
       if (typeof body.lead === 'string') leadId = body.lead;
+      if (applyPage) {
+        applyQuote ??= quoteReady() ?? (body.quote as PriceQuote);
+        unlock(applyQuote, body.testMode, body.expiresAt);
+        return show(9);
+      }
       return unlock(quoteReady() ?? (body.quote as PriceQuote), body.testMode, body.expiresAt);
     }
     // Only if the visitor hasn't already answered (an answer given while this

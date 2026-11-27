@@ -51,8 +51,8 @@ const TOTAL = 5;
 // (Facebook ads) render this same funnel; only the SEO head and the funnel id
 // (data-funnel, validated by the server to pick the Agent CRM source and tag)
 // differ.
-interface Props { title: string; robots: string; canonical: string; headMeta: HeadMeta[]; jsonLd?: string[]; funnel: 'free-quote' | 'get-rates' }
-const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
+interface Props { title: string; robots: string; canonical: string; headMeta: HeadMeta[]; jsonLd?: string[]; funnel: 'free-quote' | 'get-rates'; apply?: boolean }
+const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = Astro.props;
 ---
 
 <BaseLayout
@@ -97,6 +97,7 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
     data-page-reason="Interactive quote funnel (noindex)."
     data-quote-funnel
     data-funnel={funnel}
+    data-apply-page={apply ? 'true' : undefined}
     data-consent-version={CONSENT_VERSION}
     data-funnel-phone={phone.display}
   >

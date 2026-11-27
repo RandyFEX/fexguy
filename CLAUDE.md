@@ -99,7 +99,8 @@ is in place; see src/content/README.md for how pages were migrated.
   page itself (content, traffic, links, SEO value, current purpose) and, if it
   stays, replace the old form appropriately (with Randy's approval).
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
-  redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
+  redirect. Removed so far: /application/, /conservation/, /careers/, /apply/ (rebuilt
+  in November 2026 as the 10 Easy Questions page, below),
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
@@ -1874,6 +1875,16 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   saved answers; a completed lead never sends a second update. Answers never
   go to GA4, Meta or a URL. Randy's notification and any high-intent status
   belong to a GoHighLevel workflow on that tag.
+- **/apply/ (Randy, November 2026, application page URL V1.0):** the
+  questionnaire's permanent URL (src/pages/apply.astro renders the same
+  QuoteFunnelPage with `apply`; one questionnaire). Every card's APPLY NOW -
+  10 EASY QUESTIONS on /free-quote/ and /get-rates/ opens /apply/ with the
+  displayed quote (age, sex, tobacco, coverage or budget only) in
+  sessionStorage `ff:apply-quote`; the quote session, lead and Agent CRM
+  contact carry over; nothing personal or medical is in the URL. Without a
+  quote session /apply/ runs the quote form first (website funnel source),
+  then opens the questions (no video). noindex, nofollow; out of the
+  sitemap, llms.txt and site search; linked from the /test/ hub.
 - **CRM Comments summary (V1.4, Randy, November 2026):** written to the
   contact's existing Comments custom field (fieldKey `contact.comments`,
   the field the Reschedule form uses; its id is looked up through the
