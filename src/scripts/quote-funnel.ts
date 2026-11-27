@@ -22,6 +22,7 @@ import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quo
 import { toE164US } from '../../server/quote/phone.js';
 import { isValidName } from '../../server/quote/name.js';
 import { createIntro } from '@/scripts/quote-intro';
+import { createApplication } from '@/scripts/quote-application';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
@@ -382,6 +383,24 @@ if (root) {
     const status = el.querySelector<HTMLElement>('[data-qf-save-status]')!;
     btn.addEventListener('click', () => void saveQuote(btn, status));
   }
+  // 10 Easy Questions (Randy, November 2026; src/scripts/quote-application.ts):
+  // every card's APPLY NOW opens the same questionnaire (step 9) for the quote on screen.
+  createApplication(root, {
+    api,
+    quote: () => shown?.quote,
+    resume: () => resumeSession(),
+    phone: funnelPhone,
+    back: () => {
+      show(7, false);
+      cards.get('lowest-preferred')?.scrollIntoView({ block: 'start', behavior: 'auto' });
+    },
+  });
+  for (const el of cards.values()) {
+    el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.addEventListener('click', () => {
+      if (!shown || !unlocked || expired) return;
+      show(9);
+    });
+  }
   function lockCards() {
     unlocked = false;
     pricing.dataset.locked = 'true';
@@ -400,6 +419,7 @@ if (root) {
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Loading price</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = true;
+      el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.disabled = true;
       el.querySelector<HTMLElement>('[data-qf-save-status]')!.textContent = '';
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
       const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
@@ -470,6 +490,7 @@ if (root) {
     el.querySelector<HTMLElement>('.qf-card__per')!.textContent = byPremium ? `coverage for $${cat!.premium}/month` : 'per month';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
     el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = state !== 'ok';
+    el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.disabled = state !== 'ok';
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
     // Card text V1.0 (Randy, November 2026): the card keeps its own heading (the page's), never the server label.
@@ -663,6 +684,7 @@ if (root) {
       el.querySelector<HTMLElement>('[data-qf-amount]')!.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">This offer has expired</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = true;
+      el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.disabled = true;
     }
     restart.hidden = false;
   }

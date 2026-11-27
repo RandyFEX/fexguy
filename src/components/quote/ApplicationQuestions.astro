@@ -1,0 +1,98 @@
+---
+// 10 Easy Questions (Randy, November 2026, application funnel V1.0): opened by
+// APPLY NOW - 10 EASY QUESTIONS on every quote result card; one shared
+// implementation for /free-quote/, /get-rates/ and /test/ (rendered inside
+// QuoteFunnelPage.astro as step 9). Wording comes only from
+// server/quote/application.js. Behavior: src/scripts/quote-application.ts.
+import { HEALTH_QUESTIONS, HEIGHT_PROMPT, LIMITS } from '../../../server/quote/application.js';
+
+const feet = Array.from({ length: LIMITS.feet.max - LIMITS.feet.min + 1 }, (_, i) => LIMITS.feet.min + i);
+const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
+---
+
+<section class="qf-step qa" data-step="9" aria-labelledby="qa-title" data-qa hidden>
+  <button class="qa-back" type="button" data-qa-back>&lsaquo; Back to my rates</button>
+  <h2 class="qf-q" id="qa-title" tabindex="-1">10 Easy Questions</h2>
+  <div class="qa-progress">
+    <div class="qa-progress__track" aria-hidden="true"><span class="qa-progress__bar" data-qa-bar></span></div>
+    <p class="qa-progress__text" role="status" aria-live="polite" data-qa-count>0 of 10 completed</p>
+  </div>
+
+  <fieldset class="qa-q" data-qa-q="q1">
+    <legend><span class="qa-num">Question 1 of 10</span><span class="qa-prompt">{HEIGHT_PROMPT}</span></legend>
+    <div class="qa-hw">
+      <label class="qa-field"><span>Height (feet)</span>
+        <select class="qa-input" data-qa-feet>
+          <option value="">Feet</option>
+          {feet.map((f) => <option value={f}>{f} ft</option>)}
+        </select>
+      </label>
+      <label class="qa-field"><span>Height (inches)</span>
+        <select class="qa-input" data-qa-inches>
+          <option value="">Inches</option>
+          {inches.map((n) => <option value={n}>{n} in</option>)}
+        </select>
+      </label>
+      <label class="qa-field"><span>Weight (pounds)</span>
+        <input class="qa-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="lbs" data-qa-weight />
+      </label>
+    </div>
+  </fieldset>
+
+  {HEALTH_QUESTIONS.map((q, i) => (
+    <fieldset class="qa-q" data-qa-q={q.id}>
+      <legend><span class="qa-num">Question {i + 2} of 10</span><span class="qa-prompt">{q.prompt}</span></legend>
+      <div class="qa-opts">
+        {q.options.map((o) => (
+          <label class="qa-opt">
+            <input type="checkbox" name={q.id} value={o.id} />
+            <span>{o.label}</span>
+          </label>
+        ))}
+      </div>
+      <p class="qa-fb" data-qa-fb hidden>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="11" fill="#1d7a3c" /><path d="M6.8 12.4l3.4 3.4 7-7.2" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        <span data-qa-fb-text></span>
+      </p>
+    </fieldset>
+  ))}
+
+  <div class="qa-done" data-qa-done hidden>
+    <p class="qa-done__title">Congratulations!</p>
+    <p class="qa-done__text">You’ve completed all 10 questions.</p>
+    <button class="btn qf-btn-cta qa-submit" type="button" data-qa-submit>SUBMIT MY ANSWERS</button>
+    <p class="qa-status" role="status" aria-live="polite" data-qa-status></p>
+  </div>
+</section>
+
+<style>
+  .qa { max-width: 40rem; margin-inline: auto; }
+  .qa-back { display: inline-flex; align-items: center; min-height: var(--tap-target); padding: 0; border: 0; background: none; color: var(--color-primary); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+  .qa-progress { position: sticky; top: 0; z-index: 2; margin: 0 0 var(--space-4); padding: var(--space-2) 0; background: var(--color-bg, #fff); }
+  .qa-progress__track { height: 0.625rem; border-radius: 999px; background: #e3ece0; overflow: hidden; }
+  .qa-progress__bar { display: block; height: 100%; width: 0; border-radius: 999px; background: #1d7a3c; transition: width 0.2s; }
+  .qa-progress__text { margin: 0.25rem 0 0; text-align: center; font-weight: 700; color: #173f35; }
+  .qa-q { margin: 0 0 var(--space-6); padding: 0; border: 0; min-width: 0; }
+  .qa-q legend { display: block; width: 100%; padding: 0; margin-bottom: var(--space-3); }
+  .qa-num { display: block; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: #5b6560; }
+  .qa-prompt { display: block; margin-top: 0.125rem; font-size: 1.375rem; line-height: 1.3; font-weight: 800; color: #173f35; }
+  .qa-opts { display: grid; gap: var(--space-2); }
+  .qa-opt { display: flex; align-items: center; gap: 0.875rem; min-height: 3.5rem; padding: 0.625rem 1rem; border: 2px solid #c9d3cf; border-radius: 0.75rem; background: #fff; font-size: 1.25rem; font-weight: 600; color: #1c2b26; cursor: pointer; }
+  .qa-opt:has(input:checked) { border-color: #173f35; background: #eef5ec; }
+  .qa-opt input { flex: none; width: 1.75rem; height: 1.75rem; margin: 0; accent-color: #173f35; cursor: pointer; }
+  .qa-hw { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .qa-field { display: grid; gap: 0.25rem; font-weight: 700; font-size: 1rem; color: #1c2b26; }
+  .qa-field:last-child { grid-column: 1 / -1; }
+  @media (min-width: 36rem) { .qa-hw { grid-template-columns: 1fr 1fr 1fr; } .qa-field:last-child { grid-column: auto; } }
+  .qa-input { width: 100%; min-height: 3.25rem; padding: 0 0.75rem; border: 2px solid #c9d3cf; border-radius: 0.625rem; background: #fff; font: inherit; font-size: 1.25rem; color: #1c2b26; }
+  .qa-fb { display: flex; align-items: flex-start; gap: 0.5rem; margin: var(--space-3) 0 0; font-size: 1.125rem; font-weight: 700; color: #1d5c32; }
+  .qa-fb[hidden] { display: none; }
+  .qa-fb svg { flex: none; margin-top: 0.0625rem; }
+  .qa-done { text-align: center; padding: var(--space-4) 0 var(--space-2); }
+  .qa-done[hidden] { display: none; }
+  .qa-done__title { margin: 0; font-size: 1.75rem; font-weight: 800; color: #173f35; }
+  .qa-done__text { margin: 0.25rem 0 var(--space-4); font-size: 1.25rem; }
+  .qa-submit { width: 100%; max-width: 24rem; min-height: 3.5rem; font-size: 1.25rem; }
+  .qa-status { margin: var(--space-3) 0 0; font-weight: 600; }
+  .qa-status:empty { display: none; }
+</style>

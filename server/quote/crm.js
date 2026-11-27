@@ -248,3 +248,74 @@ export async function sendQuoteDownloadToCrm(env, record, d, fetchImpl = fetch) 
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
 }
+
+// 10 Easy Questions (Randy, November 2026; server/quote/application.js): a
+// submitted questionnaire updates the lead's EXISTING contact once: the tag
+// below (a GoHighLevel workflow on it can notify Randy and mark the lead high
+// intent) and a note with the quote, the displayed rates and every answer.
+export const APPLICATION_TAG = 'Application Questionnaire Completed';
+
+/** @param {any} record @param {{ at: Date, quote: any, rateLines: string[], answerLines: string[] }} d */
+export function applicationNote(record, d) {
+  const q = d.quote ?? {};
+  const age = q.age ?? record.quoteAtSubmission?.age;
+  const gender = q.gender ?? record.quoteAtSubmission?.gender;
+  const tobacco = q.tobacco ?? record.quoteAtSubmission?.tobacco;
+  return [
+    /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
+    '10 Easy Questions completed (preliminary questionnaire; not an underwriting decision).',
+    `Submitted: ${d.at.toISOString()} (${d.at.toLocaleString('en-US', { timeZone: 'America/Chicago', dateStyle: 'medium', timeStyle: 'short' })} Central)`,
+    record.firstName ? `Name: ${String(record.firstName).trim()}` : null,
+    record.phone ? `Phone: ${record.phone}` : null,
+    Number.isInteger(age) ? `Age: ${age}` : null,
+    gender ? `Gender: ${gender === 'female' ? 'Female' : 'Male'}` : null,
+    typeof tobacco === 'boolean' ? `Tobacco: ${tobacco ? 'Yes' : 'No'}` : null,
+    record.state ? `State: ${record.state}` : null,
+    'premium' in q ? `Monthly budget: $${q.premium}` : `Coverage: $${Number(q.coverage).toLocaleString('en-US')}`,
+    ...d.rateLines.map((l) => `Quoted: ${l}`),
+    'Answers:',
+    ...d.answerLines,
+    `Lead ID: ${record.leadId}`,
+  ].filter(Boolean).join('\n');
+}
+
+/**
+ * @param {Record<string, string | undefined>} env @param {any} record
+ * @param {{ at: Date, quote: any, rateLines: string[], answerLines: string[] }} d @param {typeof fetch} [fetchImpl]
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, error?: string }>}
+ */
+export async function sendApplicationToCrm(env, record, d, fetchImpl = fetch) {
+  const token = env.AGENT_CRM_TOKEN ?? '';
+  const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
+  if (!token || !locationId) return { sent: false };
+  const call = async (/** @type {string} */ path, /** @type {unknown} */ body) => {
+    const res = await fetchImpl(`${API}${path}`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    /** @type {any} */
+    let data = null;
+    try { data = await res.json(); } catch {}
+    return { res, data };
+  };
+  let step = 'contact';
+  try {
+    let contactId = record.crm?.contactId;
+    if (typeof contactId !== 'string' || !contactId) {
+      const up = await call('/contacts/upsert', crmContact(record, locationId));
+      contactId = up.data?.contact?.id;
+      if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
+    }
+    // The note first, so a workflow started by the tag already finds the answers.
+    step = 'note';
+    const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: applicationNote(record, d) });
+    step = 'tags';
+    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [APPLICATION_TAG] });
+    const ok = tag.res.ok && note.res.ok;
+    return { sent: true, ok, step: ok ? 'done' : !note.res.ok ? 'note' : 'tags', status: !note.res.ok ? note.res.status : tag.res.status, contactId };
+  } catch (e) {
+    return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
+  }
+}

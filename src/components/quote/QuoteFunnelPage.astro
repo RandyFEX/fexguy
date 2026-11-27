@@ -17,6 +17,7 @@ import type { HeadMeta } from '@/components/Seo.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
 import GenderChoice from '@/components/quote/GenderChoice.astro';
+import ApplicationQuestions from '@/components/quote/ApplicationQuestions.astro';
 import { PAGE_PHONES } from '@/config/phones';
 import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../../server/rates/pricing-categories.js';
@@ -227,6 +228,8 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
                 <!-- Randy (November 2026): SAVE THIS QUOTE TO YOUR PHONE replaces Call to Chat or Apply and Text to Chat or Apply in every card (server/quote/vcard.js); layout V1.0: directly under the premium, above the coverage line. -->
                 <button class="btn qf-card__call qf-card__save" type="button" data-qf-save disabled>SAVE THIS QUOTE TO YOUR PHONE</button>
                 <p class="qf-card__save-status" role="status" aria-live="polite" data-qf-save-status></p>
+                <!-- 10 Easy Questions (Randy, November 2026): every card opens the same questionnaire (step 9). -->
+                <button class="btn qf-card__call qf-card__save qf-card__apply-q" type="button" data-qf-apply-q disabled>APPLY NOW - 10 EASY QUESTIONS</button>
                 <p class="qf-card__timing" data-qf-timing hidden></p>
                 <p class="qf-card__note" data-qf-note></p>
               </article>
@@ -300,6 +303,8 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
           </div>
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-intake-status></p>
         </section>
+
+        <ApplicationQuestions />
 
       </div>
 
@@ -595,13 +600,13 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
   .qf-countdown { display: inline-block; padding: 0 0.3em; border-radius: 0.2em; background: #ffeb3b; color: #0b2e22; font-weight: 800; font-variant-numeric: tabular-nums; }
   .qf-restart { display: block; margin: var(--space-3) auto 0; }
   .qf-restart[hidden] { display: none; }
-  @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
+  @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(9, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
     display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);
     background: #fff; border: 1.5px solid #173f35; border-top: 8px solid #173f35; border-radius: 0.875rem;
     padding: var(--space-4);
   }
-  @media (min-width: 52rem) { .qf-card { grid-row: span 8; grid-template-rows: subgrid; } }
+  @media (min-width: 52rem) { .qf-card { grid-row: span 9; grid-template-rows: subgrid; } }
   .qf-card__logo { height: 4.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; overflow: hidden; }
   /* V4.15: a definite box for each logo (full height, at most 92% wide) with the artwork contained inside, so no engine crops it (iOS Safari mis-resolved the old percentage max-height). */
   .qf-card__logo :global(img) { display: block; flex: 1 1 0; min-width: 0; max-width: 92%; height: 100%; object-fit: contain; object-position: center; }

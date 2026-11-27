@@ -1848,6 +1848,41 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   notification API is used by the site). Tests: tests/quote/vcard.test.js,
   tests/quote/owner-test.browser.mjs.
 
+## 10 Easy Questions application funnel (Randy, November 2026, V1.0)
+
+- Each result card has a second orange button under SAVE THIS QUOTE TO YOUR
+  PHONE: APPLY NOW - 10 EASY QUESTIONS (same style; disabled until real
+  prices show). All three open the same one-page questionnaire, step 9 of
+  QuoteFunnelPage.astro (src/components/quote/ApplicationQuestions.astro,
+  src/scripts/quote-application.ts), on /free-quote/, /get-rates/, every
+  entry point and /test/. Questions, answer order, None of the above (always
+  last, exclusive) and the three feedback lines are Randy's exact wording,
+  defined once in server/quote/application.js (page and server both use it);
+  never reword, reorder or add questions. Question 1 is height (feet,
+  inches) and weight. A progress line counts completed questions;
+  "Congratulations!" / "You’ve completed all 10 questions." and SUBMIT MY
+  ANSWERS appear when all 10 are done. Not underwriting: no scoring, carrier
+  matching or eligibility decision.
+- POST /api/quote/ action `application` (session-checked, validated against
+  the definitions, the displayed quote re-priced) saves the answers on the
+  EXISTING lead record (`application`) before anything else; on production
+  (never previews or owner test mode) the existing Agent CRM contact gets a
+  note (name, phone, age, gender, tobacco, state, coverage, the three
+  quoted companies and premiums, height/weight, every answer by question,
+  time) and then the tag "Application Questionnaire Completed"
+  (APPLICATION_TAG, server/quote/crm.js). Success only after the save (and,
+  on production, the delivery); a failed delivery is retried with the same
+  saved answers; a completed lead never sends a second update. Answers never
+  go to GA4, Meta or a URL. Randy's notification and any high-intent status
+  belong to a GoHighLevel workflow on that tag.
+- After success the page sets sessionStorage `ff:application-submitted` and
+  opens /randy/, which only with that fresh flag (12 hours) shows "Randy
+  just received your information!" / "Call Randy now to find out which plans
+  are available to you." above the card, CALL RANDY NOW (tel:8888629456)
+  with "Talk to Randy or leave him a message." under it, and SAVE MY CONTACT
+  INFORMATION; the IMPORTANT alert is hidden in that state. Ordinary
+  visitors see the unchanged card. Test: tests/quote/application.browser.mjs.
+
 ## Quote funnel video introduction (Randy, November 2026, v1.2)
 
 - The ONLY approved exception to the no-pop-ups rule (the rule itself is
