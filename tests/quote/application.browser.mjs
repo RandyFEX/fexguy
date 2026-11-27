@@ -3,12 +3,15 @@
 // tables: the three cards' APPLY NOW buttons, exact questions and order,
 // multiple selection, None of the above, exact feedback, progress,
 // completion, saving on the existing lead, one CRM update (existing contact,
-// Comments field, then the tag), the /randy/ confirmation state, and owner test mode (no CRM).
+// Comments field, then the tag), the V2.4 confirmation and /about/ redirect, and owner test mode (no CRM).
 // Run after a build: node tests/quote/application.browser.mjs
 import { createRequire } from 'node:module';
 import { startFunnelServer, OWNER_TEST_PASSWORD } from './funnel-server.mjs';
 import { PRODUCTS } from '../../server/rates/products.js';
 import { HEALTH_QUESTIONS, FEEDBACK } from '../../server/quote/application.js';
+const headerCase = (t) => t.replace(/(^|\s)(\S)/g, (_m, sp, ch) => sp + ch.toUpperCase());
+const SUCCESS = "Great News! I've Received Your Answers. I'll Review Your Information To Find Your Best Coverage Options. Randy Funeral Funds";
+const successText = (page) => page.$eval('[data-qa-success]', (e) => e.innerText.replace(/\s+/g, ' ').trim());
 
 const { chromium } = createRequire(import.meta.url)('playwright');
 const datasets = {};
@@ -85,10 +88,10 @@ await check('exact questions and answer order; nothing preselected; multiple cho
   await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
   await page.waitForSelector('[data-qa]:not([hidden])');
   const shown = await page.$$eval('[data-qa-q]', (fs) => fs.map((f) => ({ prompt: f.querySelector('.qa-prompt').textContent.trim(), options: [...f.querySelectorAll('.qa-opt span')].map((s) => s.textContent.trim()), checked: f.querySelectorAll('input:checked').length })));
-  assert(shown.length === 10 && shown[0].prompt === 'What is your height and weight?', 'q1');
+  assert(shown.length === 10 && shown[0].prompt === '1. What Is Your Height And Weight?', shown[0].prompt);
   HEALTH_QUESTIONS.forEach((q, i) => {
     const s = shown[i + 1];
-    assert(s.prompt === q.prompt && JSON.stringify(s.options) === JSON.stringify(q.options.map((o) => o.label)) && s.checked === 0, `q${i + 2}: ${JSON.stringify(s)}`);
+    assert(s.prompt === `${i + 2}. ${headerCase(q.prompt)}` && JSON.stringify(s.options) === JSON.stringify(q.options.map((o) => o.label)) && s.checked === 0, `q${i + 2}: ${JSON.stringify(s)}`);
     assert(s.options.at(-1) === 'None of the above', `q${i + 2} none last`);
   });
   assert((await page.textContent('[data-qa-count]')).trim() === '0 of 10 completed', 'progress 0');
@@ -117,7 +120,7 @@ await check('exact questions and answer order; nothing preselected; multiple cho
   await ctx.close();
 });
 
-await check('production: the Comments field (not Notes) gets the summary at lead delivery and the extended summary on submit, the tag only after Comments; then /randy/; a repeat sends nothing', async () => {
+await check('production: the Comments field (not Notes) gets the summary at lead delivery and the extended summary on submit, the tag only after Comments; then the confirmation and /about/; a repeat sends nothing', async () => {
   srv.crm.comments = 'Prefers mornings';
   const { ctx, page } = await toRates({ phone: '214-867-5322' });
   const pre = srv.crm.comments.split('\n');
@@ -127,7 +130,12 @@ await check('production: the Comments field (not Notes) gets the summary at lead
   await page.click('[data-qf-card="average-standard"] [data-qf-apply-q]');
   await page.waitForSelector('[data-qa]:not([hidden])');
   await answerAll(page);
-  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('[data-qa-submit]')]);
+  await page.click('[data-qa-submit]');
+  await page.waitForSelector('[data-qa-success]:not([hidden])');
+  assert((await successText(page)) === SUCCESS, await successText(page));
+  const t0 = Date.now();
+  await page.waitForURL(/\/about\/$/, { timeout: 8000 });
+  assert(Date.now() - t0 > 4000, `redirected after ${Date.now() - t0} ms`);
   const calls = srv.crm.calls.slice(before);
   assert(!calls.some((c) => c.url.endsWith('/contacts/upsert')), 'no new contact');
   assert(!calls.some((c) => c.url.endsWith('/notes')), 'no note');
@@ -136,10 +144,6 @@ await check('production: the Comments field (not Notes) gets the summary at lead
   assert(putAt >= 0 && tagAt > putAt && calls[tagAt].body.tags.join() === 'Application Questionnaire Completed', JSON.stringify(calls.map((c) => [c.method, c.url])));
   const after = srv.crm.comments.split('\n');
   assert(after.join('\n') === `${pre.slice(0, 4).join('\n')}\n5’6” | 180 lbs\nArthritis, High cholesterol\nPrefers mornings`, JSON.stringify(after));
-  const card = await page.evaluate(() => ({ title: document.querySelector('.rc-received')?.innerText.replace(/\s+/g, ' ').trim(), visible: getComputedStyle(document.querySelector('.rc-received')).display !== 'none', call: [...document.querySelectorAll('[data-card-action="call"] span')].filter((s) => getComputedStyle(s).display !== 'none').map((s) => s.textContent.trim()), href: document.querySelector('[data-card-action="call"]').getAttribute('href'), note: getComputedStyle(document.querySelector('.rc-call-note')).display !== 'none', save: [...document.querySelectorAll('[data-card-save] span')].filter((s) => getComputedStyle(s).display !== 'none').map((s) => s.textContent.trim()), alert: getComputedStyle(document.querySelector('.rc-alert')).display, email: /mailto:|sms:/.test(document.body.innerHTML) }));
-  assert(card.visible && card.title === 'Randy just received your information! Call Randy now to find out which plans are available to you.', JSON.stringify(card));
-  assert(card.call.join('|') === 'CALL RANDY NOW|888-862-9456' && card.href === 'tel:8888629456' && card.note, JSON.stringify(card));
-  assert(card.save.join('|') === 'SAVE MY CONTACT INFORMATION' && !card.email, JSON.stringify(card));
   // A second submission (back on the funnel) sends nothing more.
   const n = srv.crm.calls.length;
   await page.goBack();
@@ -186,7 +190,8 @@ await check('V1.5 /test/: quote -> three rates -> APPLY NOW opens the 10 questio
   const preview = await page.textContent('[data-qa-preview]');
   for (const t of ['TEST MODE: nothing was sent to Agent CRM.', 'New contact: no | Note: no', 'Field contact.comments:', '70 | Female | TX | Non-tobacco', '$5,000 Coverage', '5’6” | 180 lbs', 'Arthritis, High cholesterol', 'Then tag: Application Questionnaire Completed']) assert(preview.includes(t), `preview lacks ${t}: ${preview}`);
   assert(srv.crm.calls.length === before, `CRM calls: ${srv.crm.calls.length - before}`);
-  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('text=Continue to the contact card')]);
+  assert((await successText(page)).startsWith(SUCCESS), await successText(page));
+  await page.waitForURL(/\/about\/$/, { timeout: 8000 });
   await ctx.close();
 });
 
@@ -200,7 +205,8 @@ await check('/apply/ (V1.0): APPLY NOW opens /apply/ with no query string and th
   await page.waitForSelector('[data-qa]:not([hidden])');
   assert(new URL(page.url()).search === '', page.url());
   await answerAll(page);
-  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('[data-qa-submit]')]);
+  await page.click('[data-qa-submit]');
+  await page.waitForURL(/\/about\/$/, { timeout: 8000 });
   const calls = srv.crm.calls.slice(before);
   assert(!calls.some((c) => c.url.endsWith('/contacts/upsert')) && calls.some((c) => c.url.endsWith('/contacts/fake-contact') && c.method === 'PUT'), 'same contact');
   assert(srv.crm.comments.split('\n')[1] === '$15,000 Coverage', srv.crm.comments);
@@ -232,7 +238,7 @@ await check('/apply/ visited directly without a quote: the quote form first, the
 });
 
 for (const width of [390, 1280]) {
-  await check(`V1.7 (${width}px): pale red selected conditions, pale green bold None of the above (also unselected), exact feedback, "in the last 2 years", SUBMIT MY ANSWERS after the last question`, async () => {
+  await check(`V1.7 (${width}px): selected conditions pale green (V2.4), pale green bold None of the above (also unselected), exact feedback, "in the last 2 years", SUBMIT MY ANSWERS after the last question`, async () => {
     const { ctx, page } = await toRates({ owner: true, phone: `214-867-53${width === 390 ? 30 : 31}`, width });
     await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
     await page.waitForSelector('[data-qa]:not([hidden])');
@@ -241,7 +247,7 @@ for (const width of [390, 1280]) {
     const none0 = await st('none');
     assert(none0.bg === 'rgb(232, 245, 233)' && Number(none0.w) >= 700, JSON.stringify(none0));
     await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
-    assert((await st('arthritis')).bg === 'rgb(253, 238, 238)', JSON.stringify(await st('arthritis')));
+    assert((await st('arthritis')).bg === 'rgb(232, 245, 233)', JSON.stringify(await st('arthritis')));
     assert((await fb(page, 'q2')) === 'Great news! Funeral Funds has companies that may cover these conditions.', await fb(page, 'q2'));
     await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
     assert((await st('arthritis')).bg === white, 'deselected returns to original');
@@ -249,7 +255,7 @@ for (const width of [390, 1280]) {
     assert((await st('none')).bg === 'rgb(232, 245, 233)' && (await page.isChecked('input[name="q2"][value="none"]')), 'none selected stays green');
     assert((await fb(page, 'q2')) === 'Great news! You have no health concerns in this area.', await fb(page, 'q2'));
     const prompts = await page.$$eval('.qa-prompt', (p) => p.map((x) => x.textContent));
-    assert(prompts.includes('In the last 2 years, have you had any of the following?') && prompts.includes('Have you had cancer or received cancer treatment in the last 2 years?') && !prompts.some((t) => /two years/.test(t)), JSON.stringify(prompts));
+    assert(prompts.includes('5. In The Last 2 Years, Have You Had Any Of The Following?') && prompts.includes('7. Have You Had Cancer Or Received Cancer Treatment In The Last 2 Years?') && !prompts.some((t) => /two years/.test(t)), JSON.stringify(prompts));
     assert(await page.$eval('[data-qa-done]', (e) => e.hidden), 'no submit before complete');
     await answerAll(page);
     const btn = await page.evaluate(() => { const b = document.querySelector('[data-qa-submit]'); const last = document.querySelector('[data-qa-q="q10"]'); return { text: b.textContent.trim(), cta: b.classList.contains('qf-btn-cta'), after: b.getBoundingClientRect().top > last.getBoundingClientRect().bottom }; });
@@ -326,6 +332,46 @@ for (const width of [390, 1280]) {
     await page.click('.qf-adjust input[name="coverage"][value="15000"]', { force: true }).catch(() => page.check('.qf-adjust input[name="coverage"][value="15000"]', { force: true }));
     await page.waitForFunction(() => document.querySelector('[data-qf-card="guaranteed-acceptance"] [data-qf-timing]')?.textContent === '2-Year Wait Plan - $15,000');
     await page.screenshot({ path: `/tmp/claude-0/layout11-${width}.png` });
+    await ctx.close();
+  });
+}
+
+for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
+  await check(`V2.4 (/${funnel}/, ${width}px, /test/): green headers, yellow feedback, synced counters (also after a deselect), confirmation, then /about/; a failed submit shows no confirmation`, async () => {
+    const { ctx, page } = await toRates({ owner: true, phone: `214-867-58${width === 390 ? 10 : 11}`, width, funnel });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+    await page.waitForSelector('[data-qa]:not([hidden])');
+    const heads = await page.$$eval('[data-qa-q] legend', (ls) => ls.map((l) => ({ t: l.textContent.trim(), bg: getComputedStyle(l).backgroundColor, c: getComputedStyle(l.querySelector('.qa-prompt')).color, w: Math.round(l.getBoundingClientRect().width), r: getComputedStyle(l).borderTopLeftRadius })));
+    const optW = await page.$eval('[data-qa-q="q2"] .qa-opt', (o) => Math.round(o.getBoundingClientRect().width));
+    assert(heads[2].t === '3. Do You Have Any Of These Health Conditions?' && heads[5].t === '6. Have You Ever Had Any Of The Following?' && heads.every((h) => h.bg === 'rgb(23, 63, 53)' && h.c === 'rgb(255, 255, 255)' && h.w === optW && h.r === '12px' && !/Question|of 10/.test(h.t)), JSON.stringify(heads));
+    await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
+    const fbBox = await page.$eval('[data-qa-q="q2"] [data-qa-fb]', (e) => ({ bg: getComputedStyle(e).backgroundColor, r: getComputedStyle(e).borderTopLeftRadius, svg: !!e.querySelector('svg'), t: e.textContent.trim() }));
+    assert(fbBox.bg === 'rgb(255, 247, 176)' && fbBox.r === '12px' && fbBox.svg && fbBox.t === FEEDBACK.conditions, JSON.stringify(fbBox));
+    const counts = () => page.evaluate(() => [document.querySelector('[data-qa-count]').textContent, document.querySelector('[data-qa-count-bottom]').textContent, !document.querySelector('[data-qa-count-bottom]').hidden && getComputedStyle(document.querySelector('[data-qa-count-bottom]')).display !== 'none', document.querySelector('[data-qa-done]').hidden]);
+    let c = await counts();
+    assert(c[0] === '1 of 10 completed' && c[1] === c[0] && c[2] && c[3], JSON.stringify(c));
+    await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
+    await answerAll(page);
+    c = await counts();
+    assert(c[0] === '10 of 10 completed' && c[1] === c[0] && !c[3], JSON.stringify(c));
+    const order = await page.evaluate(() => { const b = document.querySelector('[data-qa-count-bottom]').getBoundingClientRect(), s = document.querySelector('[data-qa-submit]').getBoundingClientRect(), q = document.querySelector('[data-qa-q="q10"]').getBoundingClientRect(); return q.bottom <= b.top && b.bottom <= s.top; });
+    assert(order, 'bottom counter after question 10 and above SUBMIT MY ANSWERS');
+    await page.uncheck('input[name="q10"][value="none"]');
+    c = await counts();
+    assert(c[0] === '9 of 10 completed' && c[1] === c[0] && c[3], JSON.stringify(c));
+    await page.check('input[name="q10"][value="none"]');
+    // A failed submission: no confirmation, no redirect, the answers stay.
+    await page.route('**/api/quote/', (route) => (route.request().postData() ?? '').includes('"action":"application"') ? route.fulfill({ status: 502, contentType: 'application/json', body: JSON.stringify({ status: 'delivery-failed', message: 'TEST failure' }) }) : route.continue());
+    await page.click('[data-qa-submit]');
+    await page.waitForFunction(() => document.querySelector('[data-qa-status]').textContent === 'TEST failure');
+    await page.waitForTimeout(5600);
+    assert(/\/apply\/$/.test(new URL(page.url()).pathname) && (await page.$eval('[data-qa-success]', (e) => e.hidden)), 'no confirmation or redirect after a failure');
+    await page.unroute('**/api/quote/');
+    await page.click('[data-qa-submit]');
+    await page.waitForSelector('[data-qa-success]:not([hidden])');
+    assert((await successText(page)).startsWith(SUCCESS), await successText(page));
+    await page.screenshot({ path: `/tmp/claude-0/v24-success-${width}.png` });
+    await page.waitForURL(/\/about\/$/, { timeout: 8000 });
     await ctx.close();
   });
 }
