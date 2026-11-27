@@ -5,6 +5,7 @@
 // fake Agent CRM API: no real request is ever made.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
 import { startRedis } from '../health-search/redis-test-server.js';
 import { createEngine, monthlyPremium } from '../../server/rates/engine.js';
 import { toFixed } from '../../server/rates/decimal.js';
@@ -65,8 +66,13 @@ const crmCalls = (b) => b.calls.filter((c) => /\/contacts\//.test(c.url));
 const unfold = (t) => t.replace(/\r\n /g, '');
 const note = (vcf) => unfold(vcf).match(/^NOTE:(.*)$/m)[1].replace(/\\n/g, '\n').replace(/\\([,;\\])/g, '$1');
 
+// The built master card (dist/, after `npm run build`); CI's quote job doesn't
+// build, so there an equivalent card V1.1 fixture stands in (never the live site).
+const BUILT_MASTER = new URL('../../dist/randy/randy-vandervaate.vcf', import.meta.url);
+const MASTER_FIXTURE = ['BEGIN:VCARD', 'VERSION:3.0', 'N:VanderVaate;Randy;;;', 'FN:Randy VanderVaate', 'ORG:Funeral Funds;Burial\\, Cremation & Final Expense Insurance', 'TITLE:Owner & Licensed Life Insurance Agent', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'URL:https://funeralfunds.com', 'NOTE:Life insurance\\nBurial insurance\\nCremation insurance\\nFinal expense insurance\\nFuneral insurance\\nDigital card: https://funeralfunds.com/randy/', 'PHOTO;ENCODING=b;TYPE=JPEG:/9j/AAAA', 'END:VCARD', ''].join('\r\n');
+
 test('the master card: same identity, photo and format; only NOTE is personalized', async () => {
-  const master = await masterVcard();
+  const master = existsSync(BUILT_MASTER) ? await masterVcard() : MASTER_FIXTURE;
   const out = personalizeVcard(master, 'Line one\nCoverage: $10,000; ok');
   assert.ok(out.startsWith('BEGIN:VCARD\r\nVERSION:3.0\r\n') && out.endsWith('END:VCARD\r\n'));
   assert.ok(out.split('\r\n').every((l) => l.length <= 75), 'folded at 75');
