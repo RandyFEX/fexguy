@@ -2053,6 +2053,10 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   the audio, line:80%) sit above it. No duration is hardcoded: the rates show
   on the video's own end event. Playback, warm(), prime() and the fallbacks
   are unchanged.
+- **Pre-rate video V2.0 (Randy, November 2026):** `randy-intro-v3` (24.2 s,
+  the shorter office-background recording; source 11.9 MB, MP4 2.03 MB)
+  replaced `randy-intro-v2` (v2 files removed); same recipe, same caption
+  placement above the burned-in bottom text, new captions from the audio.
 - **Pricing reveal and reliability v1.3 (Randy, November 2026):** while the
   overlay is open only the price figures are blurred (`data-video-veil` on
   the funnel root; presentation only, removed on every close: end, close
