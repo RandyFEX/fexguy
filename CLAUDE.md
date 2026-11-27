@@ -1835,6 +1835,11 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   directly below the orange save button, above "Then tap Create New
   Contact or Save.". Display only: both vCards keep ORG "Funeral Funds;Burial,
   Cremation & Final Expense Insurance".
+- **Card arrow refinement V1.1 (Randy, November 2026; replaces the V1.0
+  arrow):** the "IMPORTANT: TOUCH ORANGE BUTTON NOW" heading and the up-arrow
+  are gone; a single row of exactly ten orange downward arrows sits directly
+  above the save button, spread across its width and bouncing in unison
+  (CSS only, transform, static under prefers-reduced-motion).
 
 - **Card V1.1 (Randy, November 2026):** /randy/ shows, in order, "Randy
   VanderVaate", "Owner & Licensed Life Insurance Agent", "Funeral Funds",
