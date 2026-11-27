@@ -174,7 +174,7 @@ await check('an ordinary visitor to /randy/ sees the normal card (no confirmatio
   const page = await ctx.newPage();
   await page.goto(`${srv.base}/randy/`);
   const s = await page.evaluate(() => ({ received: getComputedStyle(document.querySelector('.rc-received')).display, call: [...document.querySelectorAll('[data-card-action="call"] span')].filter((x) => getComputedStyle(x).display !== 'none').map((x) => x.textContent.trim()).join('|') }));
-  assert(s.received === 'none' && s.call === 'Talk to Randy Directly|888-862-9456', JSON.stringify(s));
+  assert(s.received === 'none' && s.call === 'Call Randy|888-862-9456', JSON.stringify(s));
   await ctx.close();
 });
 

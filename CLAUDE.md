@@ -1826,6 +1826,16 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
 
 ## Personalized quote vCard (Randy, November 2026)
 
+- **Card refinements V1.0 (Randy, November 2026; updates Card V1.1):** under
+  the title the card shows "FuneralFunds.com" (the website name, in the old
+  "Funeral Funds" line's style); "Burial, Cremation & Final Expense
+  Insurance" moved to directly below the Website and Share This Card
+  buttons; the call button reads "Call Randy"; a small orange upward arrow
+  with a gentle CSS bounce (static under prefers-reduced-motion) sits
+  directly below the orange save button, above "Then tap Create New
+  Contact or Save.". Display only: both vCards keep ORG "Funeral Funds;Burial,
+  Cremation & Final Expense Insurance".
+
 - **Card V1.1 (Randy, November 2026):** /randy/ shows, in order, "Randy
   VanderVaate", "Owner & Licensed Life Insurance Agent", "Funeral Funds",
   "Burial, Cremation & Final Expense Insurance", then three buttons: Talk to
