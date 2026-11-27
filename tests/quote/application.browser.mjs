@@ -34,7 +34,7 @@ const assert = (c, m) => {
 };
 let ip = 40;
 
-async function toRates({ owner = false, phone = '214-867-5320', width = 390 } = {}) {
+async function toRates({ owner = false, phone = '214-867-5320', width = 390, funnel = 'get-rates' } = {}) {
   const ctx = await browser.newContext({ viewport: { width, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
   const page = await ctx.newPage();
   if (owner) {
@@ -43,7 +43,7 @@ async function toRates({ owner = false, phone = '214-867-5320', width = 390 } = 
     await page.click('button[type="submit"]');
     await page.waitForSelector('a[href="/get-rates/"]');
   }
-  await page.goto(`${srv.base}/get-rates/`);
+  await page.goto(`${srv.base}/${funnel}/`);
   await page.waitForSelector('[data-step="1"]:not([hidden])');
   for (const s of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="70"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(s);
   await page.selectOption('[data-qf-state]', 'Texas');
@@ -255,6 +255,25 @@ for (const width of [390, 1280]) {
     const btn = await page.evaluate(() => { const b = document.querySelector('[data-qa-submit]'); const last = document.querySelector('[data-qa-q="q10"]'); return { text: b.textContent.trim(), cta: b.classList.contains('qf-btn-cta'), after: b.getBoundingClientRect().top > last.getBoundingClientRect().bottom }; });
     assert(btn.text === 'SUBMIT MY ANSWERS' && btn.cta && btn.after, JSON.stringify(btn));
     await ctx.close();
+  });
+}
+
+for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
+  await check(`V1.9 (/${funnel}/, ${width}px): /apply/ shows the carried-over name, phone, gender, age, state, tobacco and coverage above the first question`, async () => {
+    const digits = width === 390 ? '40' : '41';
+    const { ctx, page } = await toRates({ owner: true, phone: `214-867-55${digits}`, width, funnel });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+    await page.waitForSelector('[data-qa]:not([hidden])');
+    await page.waitForFunction(() => document.querySelector('[data-qa-sum="name"]')?.textContent);
+    const sum = await page.$$eval('[data-qa-sum]', (d) => Object.fromEntries(d.map((e) => [e.dataset.qaSum, e.textContent])));
+    const want = { name: 'Pat Applicant', phone: `(214) 867-55${digits}`, gender: 'Female', age: '70', state: 'Texas', tobacco: 'Non-Smoker', coverage: '$5,000' };
+    assert(JSON.stringify(sum) === JSON.stringify(want), JSON.stringify(sum));
+    const pos = await page.evaluate(() => { const r = (s) => document.querySelector(s).getBoundingClientRect(); const sm = document.querySelector('[data-qa-summary]'); return { title: r('#qa-title').bottom, sumTop: r('[data-qa-summary]').top, sumBottom: r('[data-qa-summary]').bottom, q1: r('[data-qa-q="q1"]').top, inputs: sm.querySelectorAll('input,button,select').length, overflow: [...sm.querySelectorAll('dd')].some((d) => { const r = document.createRange(); r.selectNodeContents(d); return r.getBoundingClientRect().width > d.getBoundingClientRect().width + 0.5; }) }; });
+    assert(pos.sumTop >= pos.title && pos.sumBottom <= pos.q1 && pos.inputs === 0 && !pos.overflow, JSON.stringify(pos));
+    assert(!/Pat|214/.test(page.url()), page.url());
+    await page.screenshot({ path: `/tmp/claude-0/apply-summary-${width}.png` });
+    await ctx.close();
+    return `summary ${Math.round(pos.sumBottom - pos.sumTop)}px tall`;
   });
 }
 

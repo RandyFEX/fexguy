@@ -296,7 +296,12 @@ if (root) {
       sessionStorage.removeItem(APPLY_QUOTE_KEY);
     } catch {}
     // /apply/ without an earlier quote: the quote form first, then straight to the questions.
-    if (applyPage) return show(9);
+    if (applyPage) {
+      const d = phoneInput.value.replace(/\D/g, '').slice(-10);
+      who = { name: firstName, phone: d.length === 10 ? `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` : '', state: answers.state ?? '' };
+      fillAppSummary({ ...quote, coverage: RESULTS_START_COVERAGE });
+      return show(9);
+    }
     intro.open(() => resultsTitle.focus({ preventScroll: true }));
   });
 
@@ -405,6 +410,24 @@ if (root) {
   }
   // V1.5: from APPLY NOW the questions open immediately, before the session
   // check returns (it continues in the background; the quote questions never show).
+  // V1.9: the summary above the questions: the displayed quote, plus the visitor's
+  // name, phone and state from the verified session (or the form just submitted).
+  let who = { name: '', phone: '', state: '' };
+  function fillAppSummary(q: PriceQuote | null) {
+    const put = (k: string, v: string) => {
+      const el = root!.querySelector<HTMLElement>(`[data-qa-sum="${k}"]`);
+      if (el) el.textContent = v;
+    };
+    put('name', who.name);
+    put('phone', who.phone);
+    put('state', who.state);
+    if (!q) return;
+    put('gender', q.gender === 'female' ? 'Female' : 'Male');
+    put('age', String(q.age));
+    put('tobacco', q.tobacco ? 'Smoker' : 'Non-Smoker');
+    put('coverage', 'premium' in q && q.premium ? `$${q.premium}/mo` : q.coverage ? money(q.coverage) : '');
+  }
+  fillAppSummary(applyQuote);
   if (applyPage && applyQuote) show(9, false);
   delete root.dataset.applyHandoff;
   createApplication(root, {
@@ -420,7 +443,10 @@ if (root) {
   for (const el of cards.values()) {
     el.querySelector<HTMLButtonElement>('[data-qf-apply-q]')!.addEventListener('click', () => {
       if (!shown || !unlocked || expired) return;
-      if (applyPage) return show(9);
+      if (applyPage) {
+        fillAppSummary(shown.quote);
+        return show(9);
+      }
       try {
         sessionStorage.setItem(APPLY_QUOTE_KEY, JSON.stringify(shown.quote));
       } catch {}
@@ -843,6 +869,8 @@ if (root) {
       if (typeof body.lead === 'string') leadId = body.lead;
       if (applyPage) {
         applyQuote ??= quoteReady() ?? (body.quote as PriceQuote);
+        if (body.contact) who = { name: String(body.contact.name ?? ''), phone: String(body.contact.phone ?? ''), state: String(body.contact.state ?? '') };
+        fillAppSummary(applyQuote);
         const open = current === 9;
         unlock(applyQuote, body.testMode, body.expiresAt);
         if (!open) show(9);

@@ -1907,6 +1907,12 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   lead's contact. In test mode (/test/, previews) SUBMIT MY ANSWERS shows
   the Agent CRM update it would make (contact, no new contact, no note, the
   Comments text, the tag) with a link on to /randy/; nothing is sent.
+- **Customer summary on /apply/ (Randy, November 2026, V1.9):** under the
+  "10 Easy Questions" heading, a read-only summary in the quote funnel's
+  summary style: Name, Phone, Gender, Age, State, Tobacco, Coverage (3
+  columns on phones, one wrapping row from 36rem). Name, phone and state come
+  from the verified session (`session` returns `contact` to that browser
+  only, no-store); the rest from the displayed quote. Nothing in the URL.
 - **CRM Comments summary (V1.4, Randy, November 2026):** written to the
   contact's existing Comments custom field (fieldKey `contact.comments`,
   the field the Reschedule form uses; its id is looked up through the
