@@ -352,24 +352,6 @@ if (root) {
     b.textContent = text;
     return b;
   };
-  /** The approved card icons: a filled check for first-day coverage, a calendar for a waiting period. */
-  function timingIcon(kind: 'check' | 'calendar') {
-    const ns = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(ns, 'svg');
-    svg.setAttribute('viewBox', '0 0 24 24');
-    svg.setAttribute('aria-hidden', 'true');
-    svg.dataset.icon = kind;
-    const shapes =
-      kind === 'check'
-        ? [['circle', { cx: '12', cy: '12', r: '11', fill: '#0b2e22' }], ['path', { d: 'M6.8 12.4l3.4 3.4 7-7.2', fill: 'none', stroke: '#fff', 'stroke-width': '2.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }]]
-        : [['rect', { x: '3', y: '4.5', width: '18', height: '16', rx: '2', fill: 'none', stroke: '#0b2e22', 'stroke-width': '2' }], ['path', { d: 'M3 9.5h18M8 2.5v4M16 2.5v4', fill: 'none', stroke: '#0b2e22', 'stroke-width': '2', 'stroke-linecap': 'round' }], ['rect', { x: '13', y: '13', width: '4', height: '4', rx: '0.5', fill: '#0b2e22' }]];
-    for (const [tag, attrs] of shapes as [string, Record<string, string>][]) {
-      const el = document.createElementNS(ns, tag);
-      for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
-      svg.append(el);
-    }
-    return svg;
-  }
   // SAVE THIS QUOTE TO YOUR PHONE (Randy, November 2026; server/quote/vcard.js):
   // the server re-prices the quote on screen and returns a one-time download
   // link for this browser; the phone then offers to add Randy's contact card
@@ -551,9 +533,10 @@ if (root) {
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     // Layout V1.0 (Randy, November 2026): the card's coverage amount after its coverage term, e.g. "First-Day Coverage - $5,000".
     const shownCoverage = cat?.coverage ?? shown?.quote.coverage;
-    timing.textContent = state === 'ok' && timings.length ? `${timings.join(' / ')}${shownCoverage ? ` - ${money(shownCoverage)}` : ''}` : '';
+    // Layout V1.1 (Randy, November 2026): no icons; the waiting-period label reads "2-Year Wait Plan".
+    const timingLabel = (t: string) => (t === '2-Year Waiting Period' ? '2-Year Wait Plan' : t);
+    timing.textContent = state === 'ok' && timings.length ? `${timings.map((t) => timingLabel(t!)).join(' / ')}${shownCoverage ? ` - ${money(shownCoverage)}` : ''}` : '';
     timing.hidden = !timing.textContent;
-    if (!timing.hidden) timing.prepend(timingIcon(/waiting period/i.test(timing.textContent) ? 'calendar' : 'check'));
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
       ...names.map((n) => {
         if (n.logo) {
@@ -753,6 +736,7 @@ if (root) {
     const call = document.createElement('a');
     call.href = 'tel:8888629456';
     call.textContent = '888-862-9456';
+    call.className = 'qf-tel-mark';
     resultsTitle.replaceChildren('Call ', call, ' for even lower-cost state-specific plans.');
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
