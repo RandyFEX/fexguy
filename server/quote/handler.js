@@ -262,7 +262,11 @@ export async function handleQuote(request, env, deps) {
       // Texting handoff V4.0: the first word of the visitor's own name, for the
       // prewritten text on /facebook/ (this verified visit only; kept in memory there).
       const firstName = firstNameOf(record.firstName);
-      return json(200, { status: 'verified', lead: v.leadId, quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
+      // Application summary V1.9 (Randy, November 2026): /apply/ shows the visitor's own
+      // name, phone and state above the questions (this verified browser only; no-store).
+      const d = String(record.phone ?? '').replace(/\D/g, '').slice(-10);
+      const contact = { name: String(record.firstName ?? '').trim(), phone: d.length === 10 ? `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` : '', state: String(record.state ?? '') };
+      return json(200, { status: 'verified', lead: v.leadId, quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName, contact });
     }
 
     // Pricing reliability v1.3 (Randy, November 2026): the page that received

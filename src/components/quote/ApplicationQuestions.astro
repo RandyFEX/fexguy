@@ -13,6 +13,16 @@ const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
 <section class="qf-step qa" data-step="9" aria-labelledby="qa-title" data-qa hidden>
   <button class="qa-back" type="button" data-qa-back>&lsaquo; Back to my rates</button>
   <h2 class="qf-q" id="qa-title" tabindex="-1">10 Easy Questions</h2>
+  <!-- V1.9: the visitor's information carried over from the quote (read-only; filled by quote-funnel.ts). -->
+  <dl class="qa-summary" aria-label="Your information" data-qa-summary>
+    <div class="qa-summary__wide"><dt>Name</dt><dd data-qa-sum="name"></dd></div>
+    <div class="qa-summary__wide"><dt>Phone</dt><dd data-qa-sum="phone"></dd></div>
+    <div><dt>Gender</dt><dd data-qa-sum="gender"></dd></div>
+    <div><dt>Age</dt><dd data-qa-sum="age"></dd></div>
+    <div><dt>State</dt><dd data-qa-sum="state"></dd></div>
+    <div><dt>Tobacco</dt><dd data-qa-sum="tobacco"></dd></div>
+    <div><dt>Coverage</dt><dd data-qa-sum="coverage"></dd></div>
+  </dl>
   <div class="qa-progress">
     <div class="qa-progress__track" aria-hidden="true"><span class="qa-progress__bar" data-qa-bar></span></div>
     <p class="qa-progress__text" role="status" aria-live="polite" data-qa-count>0 of 10 completed</p>
@@ -68,6 +78,13 @@ const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
 <style>
   .qa { max-width: 40rem; margin-inline: auto; }
   .qa-back { display: inline-flex; align-items: center; min-height: var(--tap-target); padding: 0; border: 0; background: none; color: var(--color-primary); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+  /* V1.9: the quote funnel's summary style (.qf-summary), compact; 3 columns on phones; from 36rem one wrapping row sized to the content. */
+  .qa-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-flow: dense; gap: 0.375rem; margin: var(--space-2) 0 var(--space-3); padding: 0; }
+  @media (min-width: 36rem) { .qa-summary { display: flex; flex-wrap: wrap; } .qa-summary > div { flex: 1 1 auto; padding-inline: 0.5rem; } }
+  .qa-summary > div { background: var(--color-surface); border-radius: 0.5rem; padding: 0.3rem 0.25rem; text-align: center; min-width: 0; }
+  .qa-summary__wide { grid-column: span 2; }
+  .qa-summary dt { font-size: 0.75rem; line-height: 1.25; font-weight: 700; color: var(--color-text-muted); }
+  .qa-summary dd { margin: 0; font-size: 0.9375rem; line-height: 1.3; font-weight: 800; color: #173f35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .qa-progress { position: sticky; top: 0; z-index: 2; margin: 0 0 var(--space-4); padding: var(--space-2) 0; background: var(--color-bg, #fff); }
   .qa-progress__track { height: 0.625rem; border-radius: 999px; background: #e3ece0; overflow: hidden; }
   .qa-progress__bar { display: block; height: 100%; width: 0; border-radius: 999px; background: #1d7a3c; transition: width 0.2s; }
