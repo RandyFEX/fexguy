@@ -675,7 +675,11 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Want even lower rates? Ask us about our state-specific plans.';
+    // Randy (November 2026, wording V1.1): the number is a call link.
+    const call = document.createElement('a');
+    call.href = 'tel:8888629456';
+    call.textContent = '888-862-9456';
+    resultsTitle.replaceChildren('Call ', call, ' for even lower-cost state-specific plans.');
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
     stopCountdown?.();

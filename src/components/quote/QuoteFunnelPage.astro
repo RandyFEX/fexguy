@@ -30,7 +30,7 @@ const cards = [
   // display only: the server's category labels in records and Agent CRM are unchanged).
   { id: 'lowest-preferred', label: 'Popular National Company', sub: 'state' },
   { id: 'average-standard', label: 'Popular National Company', sub: 'state' },
-  { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate', sub: 'other' },
+  { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate', sub: 'state' },
 ];
 // Safe stand-ins for the blurred, locked cards (never real carriers or plans).
 const LOGO_STAND_INS = ['Insurance Co.', 'Life Company', 'Insurance Co.'];
@@ -218,7 +218,7 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
             {cards.map((c, i) => (
               <article class="qf-card" data-qf-card={c.id} data-state="locked">
                 <div class="qf-card__logo" data-qf-logo><span class="qf-blur qf-logo-stand" aria-hidden="true">{LOGO_STAND_INS[i]}</span></div>
-                <div class="qf-card__cat"><h3 class="qf-card__label">{c.label}</h3>{c.sub === 'state' ? <p class="qf-card__sub"><span class="qf-card__sub-line">For lower state-specific rates,</span> <span class="qf-card__sub-line">Call <a href="tel:8888629456">888-862-9456</a></span></p> : <p class="qf-card__sub">(Let us check other options first)</p>}</div>
+                <div class="qf-card__cat"><h3 class="qf-card__label">{c.label}</h3><p class="qf-card__sub"><span class="qf-card__sub-line">For lower state-specific rates,</span> <span class="qf-card__sub-line">Call <a href="tel:8888629456">888-862-9456</a></span></p></div>
                 <p class="qf-card__plan" data-qf-plan><span class="qf-blur" aria-hidden="true">{PLAN_STAND_INS[i]}</span></p>
                 <p class="qf-card__price">
                   <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Loading price</span></span>
@@ -405,6 +405,8 @@ const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
   @media (prefers-reduced-motion: reduce) { .qf-step { animation: none; } .qf-progress__bar { transition: none; } }
   .qf-q { font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem); line-height: 1.2; color: var(--color-primary); margin: 0 0 var(--space-4); text-align: center; }
   .qf-q:focus { outline: none; }
+  /* The results heading's call link (wording V1.1): same typography and color as the heading. */
+  .qf-q :global(a[href^="tel:"]) { color: inherit; text-decoration: underline; white-space: nowrap; }
   /* Reassurance line under the Step 1 cards (Randy, November 2026): plain
      sentence text, one line on desktop where it fits, wraps on small screens. */
   .qf-start-note { margin: var(--space-3) auto 0; max-width: 40rem; text-align: center; font-size: 0.875rem; font-weight: 600; line-height: 1.4; color: var(--color-primary); }
