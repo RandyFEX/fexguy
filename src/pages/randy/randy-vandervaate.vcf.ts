@@ -29,12 +29,12 @@ export const GET: APIRoute = () => {
     'VERSION:3.0',
     `N:${esc(card.lastName)};${esc(card.firstName)};;;`,
     `FN:${esc(card.fullName)}`,
-    `ORG:${esc(card.org)}`,
+    // ORG: organization;department (vCard 3.0 ORG components). No EMAIL (card V1.1).
+    `ORG:${esc(card.org)};${esc(card.department)}`,
     `TITLE:${esc(card.title)}`,
     `TEL;TYPE=WORK,VOICE,PREF:${card.phone.e164}`,
-    ...(card.email ? [`EMAIL;TYPE=INTERNET,WORK:${card.email}`] : []),
-    `URL:${card.website.href}`,
-    `NOTE:${esc(`Digital card: ${card.url}`)}`,
+    `URL:${card.website.vcard}`,
+    `NOTE:${esc(`${card.searchTerms.join('\n')}\nDigital card: ${card.url}`)}`,
     `PHOTO;ENCODING=b;TYPE=JPEG:${photo}`,
     'END:VCARD',
   ];

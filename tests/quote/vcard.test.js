@@ -70,8 +70,10 @@ test('the master card: same identity, photo and format; only NOTE is personalize
   const out = personalizeVcard(master, 'Line one\nCoverage: $10,000; ok');
   assert.ok(out.startsWith('BEGIN:VCARD\r\nVERSION:3.0\r\n') && out.endsWith('END:VCARD\r\n'));
   assert.ok(out.split('\r\n').every((l) => l.length <= 75), 'folded at 75');
-  for (const l of ['FN:Randy VanderVaate', 'ORG:Funeral Funds', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'EMAIL;TYPE=INTERNET,WORK:randy@funeralfunds.com', 'URL:https://funeralfunds.com/']) assert.ok(unfold(out).includes(l), l);
+  for (const l of ['FN:Randy VanderVaate', 'ORG:Funeral Funds;Burial\\, Cremation & Final Expense Insurance', 'TITLE:Owner & Licensed Life Insurance Agent', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'URL:https://funeralfunds.com']) assert.ok(unfold(out).includes(l), l);
   assert.match(unfold(out), /^PHOTO;ENCODING=b;TYPE=JPEG:\/9j\//m);
+  assert.doesNotMatch(out, /EMAIL|@funeralfunds|sms:/i, 'card V1.1: no email address or text-message line');
+  assert.match(unfold(master), /^NOTE:Life insurance\\nBurial insurance\\nCremation insurance\\nFinal expense insurance\\nFuneral insurance\\nDigital card: /m);
   assert.equal((unfold(out).match(/^NOTE:/gm) ?? []).length, 1);
   assert.equal(unfold(out).match(/^NOTE:(.*)$/m)[1], 'Line one\\nCoverage: $10\\,000\\; ok');
 });
@@ -94,7 +96,7 @@ test('production: the vCard carries the displayed quote; the first download upda
   assert.match(text, /Mutual of Omaha: \$\d+\.\d\d\/month/);
   assert.match(text, /Aetna: \$\d+\.\d\d\/month/);
   assert.match(text, /Gerber Life: \$\d+\.\d\d\/month \(2-year waiting period\)/);
-  assert.match(text, /Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state\.$/);
+  assert.match(text, /Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state\.\nLife insurance\nBurial insurance\nCremation insurance\nFinal expense insurance\nFuneral insurance$/);
   assert.doesNotMatch(text, /Smith|Texas|214|68|female/i, 'no unnecessary personal data');
   const after = crmCalls(b).slice(deliveryCalls);
   assert.deepEqual(after.map((c) => c.url.replace('https://services.leadconnectorhq.com', '')), ['/contacts/contact-1/tags', '/contacts/contact-1/notes'], 'the existing contact, no upsert');

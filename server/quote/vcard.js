@@ -33,6 +33,8 @@ const MASTER_URL = 'https://funeralfunds.com/randy/randy-vandervaate.vcf';
 const CALL_LINE = 'Call Randy directly at 888-862-9456 for possibly lower-cost options available in your state.';
 /** The approved representative-rates wording from the quote results. */
 const REP_LINE = 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.';
+/** Card V1.1 (Randy, November 2026): the same searchable terms as the master card's notes (src/config/card.ts searchTerms). */
+const SEARCH_TERMS = ['Life insurance', 'Burial insurance', 'Cremation insurance', 'Final expense insurance', 'Funeral insurance'];
 /** How long the download may wait for Agent CRM before the file is sent anyway. */
 const CRM_WAIT_MS = 4000;
 
@@ -104,6 +106,7 @@ export function vcardNote({ firstName, quote, categories, at }) {
     ...quoteLines(quote, categories),
     REP_LINE,
     CALL_LINE,
+    ...SEARCH_TERMS,
   ].join('\n');
 }
 

@@ -3,7 +3,6 @@
 // "Business identity"; src/config/lead.ts; src/config/phones.ts). Never
 // invent contact details here.
 import { lead } from './lead';
-import { SMS_NUMBER } from './phones';
 import { site } from './site';
 
 export const card = {
@@ -14,15 +13,16 @@ export const card = {
   firstName: 'Randy',
   lastName: 'VanderVaate',
   fullName: 'Randy VanderVaate',
-  title: 'Owner and Licensed Agent',
+  // Card V1.1 (Randy, November 2026): title, organization and department, exact wording.
+  title: 'Owner & Licensed Life Insurance Agent',
   org: 'Funeral Funds',
+  department: 'Burial, Cremation & Final Expense Insurance',
+  /** Saved in the contact's notes so customers can find Randy by searching these words. */
+  searchTerms: ['Life insurance', 'Burial insurance', 'Cremation insurance', 'Final expense insurance', 'Funeral insurance'],
   phone: { display: lead.phone.display, href: lead.phone.href, e164: site.phoneE164 },
-  /** Text-only line (SMS-capable, toll-free verified); never shown as a calling number. */
-  sms: SMS_NUMBER ? { href: `sms:+1${SMS_NUMBER}` } : null,
-  /** Approved by Randy for this card only (November 2026). The rest of the
-   * site still publishes no email address. */
-  email: 'randy@funeralfunds.com' as string | null,
-  website: { display: 'FuneralFunds.com', href: `${site.url}/` },
+  // Card V1.1 (Randy, November 2026): no email address and no text-message
+  // action anywhere on the card or in its vCards (phone contact only).
+  website: { display: 'FuneralFunds.com', href: `${site.url}/`, vcard: site.url },
   /** Approved headshot (the homepage portrait); the 240px JPEG is embedded in the vCard. */
   photo: { jpg: '/images/randy/randy-vandervaate-240.jpg', webp: '/images/randy/randy-vandervaate-240.webp', avif: '/images/randy/randy-vandervaate-240.avif' },
 };
