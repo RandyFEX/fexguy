@@ -1885,6 +1885,15 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   quote session /apply/ runs the quote form first (website funnel source),
   then opens the questions (no video). noindex, nofollow; out of the
   sitemap, llms.txt and site search; linked from the /test/ hub.
+  V1.5 (Randy, November 2026): from a card's APPLY NOW the questions show at
+  once (an inline check of the handoff hides every quote step before the
+  script runs; the session check continues in the background and is retried
+  on network or server errors; only a definite "no quote session" falls back
+  to the quote form). The rates load behind the questions. No lead, contact
+  or conversion is created on /apply/; the answers go to the existing
+  lead's contact. In test mode (/test/, previews) SUBMIT MY ANSWERS shows
+  the Agent CRM update it would make (contact, no new contact, no note, the
+  Comments text, the tag) with a link on to /randy/; nothing is sent.
 - **CRM Comments summary (V1.4, Randy, November 2026):** written to the
   contact's existing Comments custom field (fieldKey `contact.comments`,
   the field the Reschedule form uses; its id is looked up through the
