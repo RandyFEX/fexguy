@@ -232,6 +232,9 @@ await check('/apply/ visited directly without a quote: the quote form first, the
   await page.click('[data-qf-submit]');
   await page.waitForSelector('[data-qa]:not([hidden])', { timeout: 10000 });
   assert(srv.crm.comments.startsWith('66 | Male | TX | Non-tobacco\n$5,000 Coverage'), srv.crm.comments);
+  // V1.8: a quote started on /apply/ itself keeps /apply/ as its URL (Website, never Facebook).
+  const dnote = [...srv.crm.calls].reverse().find((c) => c.url.endsWith('/notes'));
+  assert(dnote.body.body.includes('Lead Source: Website\nURL: https://funeralfunds.com/apply/'), dnote.body.body.slice(0, 200));
   const robots = await page.$eval('meta[name="robots"]', (m) => m.content);
   assert(robots === 'noindex, nofollow', robots);
   await page.goto(`${srv.base}/test/`);
@@ -375,6 +378,10 @@ for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
     await page.click('[data-qa-submit]');
     await page.waitForSelector('[data-qa-success]:not([hidden])');
     assert((await successText(page)).startsWith(SUCCESS), await successText(page));
+    // V1.8: the test-mode CRM preview (nothing sent) shows the contact data for the real CRM.
+    const pv = await page.textContent('[data-qa-preview]');
+    const fb = funnel === 'get-rates';
+    for (const t of ['New contact: no | Note: no', 'State: TX', `Contact source: Funeral Funds ${fb ? 'Facebook' : 'Website'} Quote`, `Lead Source: ${fb ? 'Facebook' : 'Website'}`, `URL: https://funeralfunds.com/${funnel}/`, 'Field contact.comments:', 'Then tag: Application Questionnaire Completed']) assert(pv.includes(t), `preview lacks ${t}: ${pv}`);
     await page.screenshot({ path: `/tmp/claude-0/v24-success-${width}.png` });
     await page.waitForURL(/\/about\/$/, { timeout: 8000 });
     await ctx.close();

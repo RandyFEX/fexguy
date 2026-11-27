@@ -31,7 +31,7 @@ export const crmTag = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_TAG :
 /** V1.9: the original funnel entry, by the funnel validated at SEE MY RATES (never /apply/ or /about/). @param {any} record */
 export const funnelSource = (record) => (isFacebookFunnel(record) ? 'Facebook' : 'Website');
 /** @param {any} record */
-export const funnelUrl = (record) => `https://funeralfunds.com/${isFacebookFunnel(record) ? 'get-rates' : 'free-quote'}/`;
+export const funnelUrl = (record) => record?.entryUrl || `https://funeralfunds.com/${isFacebookFunnel(record) ? 'get-rates' : 'free-quote'}/`;
 /** @param {any} record */
 export const crmSource = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_SOURCE : CRM_SOURCE);
 const API = 'https://services.leadconnectorhq.com';

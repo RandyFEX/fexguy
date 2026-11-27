@@ -99,7 +99,7 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
         const pre = document.createElement('pre');
         pre.className = 'qa-preview';
         pre.dataset.qaPreview = '';
-        pre.textContent = `TEST MODE: nothing was sent to Agent CRM.\nWould update: ${p.contact}\nNew contact: ${p.newContact ? 'yes' : 'no'} | Note: ${p.note ? 'yes' : 'no'}\nField ${p.commentsField}:\n${p.comments}\nThen tag: ${p.tagAfterComments}`;
+        pre.textContent = `TEST MODE: nothing was sent to Agent CRM.\nWould update: ${p.contact}\nNew contact: ${p.newContact ? 'yes' : 'no'} | Note: ${p.note ? 'yes' : 'no'}\nState: ${p.state} | Contact source: ${p.contactSource}\nLead Source: ${p.leadSource}\nURL: ${p.url}\nField ${p.commentsField}:\n${p.comments}\nThen tag: ${p.tagAfterComments}`;
         success.append(pre);
       }
       success.scrollIntoView({ block: 'start', behavior: 'auto' });

@@ -254,6 +254,8 @@ if (root) {
       consentVersion: root!.dataset.consentVersion,
       // V4.42: which quote page this is (/free-quote/ or /get-rates/); the server validates it.
       funnel: root!.dataset.funnel,
+      // V1.8: the quote page the funnel was completed on (its own URL is kept as the lead's entry URL).
+      page: location.pathname,
       ...(previewJourney ? { previewJourney: true } : {}),
       source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
     });

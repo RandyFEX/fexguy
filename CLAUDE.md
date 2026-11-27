@@ -1981,6 +1981,12 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   internal SMS: Randy's lead notification is a GoHighLevel workflow; its
   source/URL lines branch on the funnel tag there. Each CRM outcome is also
   logged (`quote-crm`, no personal data) in the Vercel runtime logs.
+  V1.8 follow-up (Randy, November 2026): `entryUrl` is the page the quote was
+  completed on (`page` sent with SEE MY RATES; only /get-rates/, /free-quote/
+  or /apply/, otherwise the funnel's page), so a quote started on /apply/
+  keeps https://funeralfunds.com/apply/ (Lead Source: Website; only
+  /get-rates/ is Facebook). The test-mode CRM preview also shows State,
+  Contact source, Lead Source and URL.
 - (Before V2.4) After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans
