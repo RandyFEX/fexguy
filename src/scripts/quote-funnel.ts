@@ -43,7 +43,8 @@ type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavail
 type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: string; logo?: string | null };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
-const RESULTS_START_COVERAGE = 10000;
+// Default coverage V1.0 (Randy, November 2026): every quote starts at $5,000 (was $10,000).
+const RESULTS_START_COVERAGE = 5000;
 const TOTAL = 5;
 const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, coverage)
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -116,7 +117,7 @@ if (root) {
   try {
     Object.assign(answers, JSON.parse(sessionStorage.getItem(STEPS_KEY) ?? '{}'));
   } catch {}
-  // V4.31: no coverage question; every quote starts at $10,000 (the results page changes it).
+  // V4.31: no coverage question; every quote starts at RESULTS_START_COVERAGE (the results page changes it).
   answers.coverage ??= RESULTS_START_COVERAGE;
   const saveSteps = () => {
     try {
@@ -281,7 +282,7 @@ if (root) {
     if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(6);
     visitorName = firstName;
-    // Randy (November 2026): the results always open at $10,000 for everyone
+    // Randy (November 2026): the results always open at RESULTS_START_COVERAGE for everyone
     // (the amount chosen on the coverage question stays in the lead record).
     answers.coverage = RESULTS_START_COVERAGE;
     saveSteps();
