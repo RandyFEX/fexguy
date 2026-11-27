@@ -58,7 +58,7 @@ function browser(env, { owner = false } = {}) {
     if (set) session = set.split(';')[0];
     return { http: res.status, body: await res.json() };
   };
-  const download = (url, c = cookie()) => handleVcardDownload(new Request(`https://x.test${url}`, { headers: { cookie: c } }), env, { store, fetchImpl });
+  const download = (url, c = cookie()) => handleVcardDownload(new Request(`https://x.test${url}`, { headers: { cookie: c } }), env, { store, fetchImpl, master: testMaster() });
   const start = () => call({ action: 'start', firstName: 'Pat Smith', phone: `21486753${String(20 + n).slice(-2)}`, state: 'Texas', quote: { age: 68, gender: 'female', tobacco: false, coverage: 10000 }, consentVersion: CONSENT_VERSION, funnel: 'get-rates' });
   return { call, download, start, calls, store, cookie };
 }
@@ -70,6 +70,9 @@ const note = (vcf) => unfold(vcf).match(/^NOTE:(.*)$/m)[1].replace(/\\n/g, '\n')
 // build, so there an equivalent card V1.1 fixture stands in (never the live site).
 const BUILT_MASTER = new URL('../../dist/randy/randy-vandervaate.vcf', import.meta.url);
 const MASTER_FIXTURE = ['BEGIN:VCARD', 'VERSION:3.0', 'N:VanderVaate;Randy;;;', 'FN:Randy VanderVaate', 'ORG:Funeral Funds;Burial\\, Cremation & Final Expense Insurance', 'TITLE:Owner & Licensed Life Insurance Agent', 'TEL;TYPE=WORK,VOICE,PREF:+18888629456', 'URL:https://funeralfunds.com', 'NOTE:Life insurance\\nBurial insurance\\nCremation insurance\\nFinal expense insurance\\nFuneral insurance\\nDigital card: https://funeralfunds.com/randy/', 'PHOTO;ENCODING=b;TYPE=JPEG:/9j/AAAA', 'END:VCARD', ''].join('\r\n');
+
+/** The master the download uses: the built card (undefined = the handler reads dist/), else the fixture. */
+const testMaster = () => (existsSync(BUILT_MASTER) ? undefined : MASTER_FIXTURE);
 
 test('the master card: same identity, photo and format; only NOTE is personalized', async () => {
   const master = existsSync(BUILT_MASTER) ? await masterVcard() : MASTER_FIXTURE;
@@ -154,7 +157,7 @@ test('an Agent CRM failure never blocks the download', async () => {
   const b = browser(PROD);
   await b.start();
   const r = await b.call({ action: 'vcard', quote: { age: 68, gender: 'female', tobacco: false, coverage: 10000 } });
-  const res = await handleVcardDownload(new Request(`https://x.test${r.body.url}`, { headers: { cookie: b.cookie() } }), PROD, { store: b.store, fetchImpl: async () => { throw new Error('down'); } });
+  const res = await handleVcardDownload(new Request(`https://x.test${r.body.url}`, { headers: { cookie: b.cookie() } }), PROD, { store: b.store, master: testMaster(), fetchImpl: async () => { throw new Error('down'); } });
   assert.equal(res.status, 200);
   assert.match(note(await res.text()), /Coverage: \$10,000/);
 });

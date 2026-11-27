@@ -113,7 +113,7 @@ export function vcardNote({ firstName, quote, categories, at }) {
 /**
  * GET /api/quote-vcard/?t=<token>
  * @param {Request} request @param {Record<string, string | undefined>} env
- * @param {{ store: any, fetchImpl?: typeof fetch, now?: () => number }} deps store: the quote store this browser uses (owner test or not)
+ * @param {{ store: any, fetchImpl?: typeof fetch, master?: string, now?: () => number }} deps store: the quote store this browser uses (owner test or not); fetchImpl: Agent CRM only; master: a master card text (tests)
  */
 export async function handleVcardDownload(request, env, deps) {
   const headers = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
@@ -133,7 +133,7 @@ export async function handleVcardDownload(request, env, deps) {
   const at = new Date(pending.at);
   let body;
   try {
-    body = personalizeVcard(await masterVcard(deps.fetchImpl), pending.note);
+    body = personalizeVcard(deps.master ?? (await masterVcard()), pending.note);
   } catch {
     return new Response('Your contact card could not be prepared just now. Please try again in a moment.', { status: 503, headers: { ...headers, 'Content-Type': 'text/plain; charset=utf-8' } });
   }
