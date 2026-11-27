@@ -28,7 +28,8 @@ export const HEALTH_QUESTIONS = [
   { id: 'q4', prompt: 'Do you have any of these health conditions?', options: [['anxiety', 'Anxiety'], ['bipolar', 'Bipolar disorder'], ['depression', 'Depression'], ['schizophrenia', 'Schizophrenia']] },
   { id: 'q5', prompt: 'In the last 2 years, have you had any of the following?', options: [['heart-attack', 'Heart attack'], ['heart-bypass', 'Heart bypass surgery'], ['heart-failure', 'Heart failure'], ['heart-stents', 'Heart stents'], ['stroke', 'Stroke']] },
   { id: 'q6', prompt: 'Have you ever had any of the following?', options: [['chronic-bronchitis', 'Chronic bronchitis'], ['copd', 'COPD'], ['emphysema', 'Emphysema'], ['oxygen', 'Supplemental oxygen use']] },
-  { id: 'q7', prompt: 'Have you had cancer or received cancer treatment in the last 2 years?', options: [['cancer', 'Cancer or cancer treatment']] },
+  // V2.5 (Randy, November 2026): no time limit in the question; the time frame is in the answers.
+  { id: 'q7', prompt: 'Have you ever had cancer or received cancer treatment?', options: [['cancer-over-2-years', 'Cancer More Than 2 Years Ago'], ['cancer-last-2-years', 'Cancer In The Last 2 Years'], ['cancer-current', 'Currently Have Cancer']] },
   { id: 'q8', prompt: 'Have you ever had any of these diabetic complications?', options: [['diabetic-amputations', 'Diabetic amputations'], ['diabetic-coma', 'Diabetic coma'], ['diabetic-neuropathy', 'Diabetic neuropathy']] },
   { id: 'q9', prompt: 'Have you ever had any of the following?', options: [['alzheimers', 'Alzheimer’s disease'], ['dementia', 'Dementia'], ['kidney-disease', 'Kidney disease'], ['liver-disease', 'Liver disease']] },
   { id: 'q10', prompt: 'Do any of the following currently apply to you?', options: [['hospitalized', 'Hospitalized'], ['nursing-home', 'In a nursing home'], ['hospice', 'In hospice care'], ['pending-surgery', 'Pending surgery']] },

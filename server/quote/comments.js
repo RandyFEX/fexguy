@@ -23,7 +23,8 @@ const STATE_ABBR = /** @type {Record<string, string>} */ ({
 });
 
 /** The questions' own timeframes, kept on affirmative answers. */
-const TIMEFRAME = /** @type {Record<string, string>} */ ({ q5: ' (last 2 years)', q7: ' (last 2 years)', q10: ' (currently)' });
+// V2.5: question 7's answers carry their own time frame (e.g. "Cancer In The Last 2 Years").
+const TIMEFRAME = /** @type {Record<string, string>} */ ({ q5: ' (last 2 years)', q10: ' (currently)' });
 
 /** Comments name for a carrier (Aetna's card shows the CVS/aetna logo; Randy's format says CVS). @param {string} c */
 const shortName = (c) => (c === 'Aetna' ? 'CVS' : c);

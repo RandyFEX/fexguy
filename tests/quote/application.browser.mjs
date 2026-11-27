@@ -116,7 +116,7 @@ await check('exact questions and answer order; nothing preselected; multiple cho
   for (const q of HEALTH_QUESTIONS.slice(1)) if (q.id !== 'q5') await page.check(`input[name="${q.id}"][value="none"]`);
   assert((await page.textContent('[data-qa-count]')).trim() === '10 of 10 completed', 'progress 10');
   const done = await page.$eval('[data-qa-done]', (e) => ({ hidden: e.hidden, text: e.innerText.replace(/\s+/g, ' ').trim() }));
-  assert(!done.hidden && done.text.startsWith('Congratulations! You’ve completed all 10 questions. SUBMIT MY ANSWERS'), JSON.stringify(done));
+  assert(!done.hidden && done.text === 'SUBMIT MY ANSWERS Congratulations!' && !/completed all/.test(await page.textContent('[data-qa]')), JSON.stringify(done));
   await ctx.close();
 });
 
@@ -255,7 +255,7 @@ for (const width of [390, 1280]) {
     assert((await st('none')).bg === 'rgb(232, 245, 233)' && (await page.isChecked('input[name="q2"][value="none"]')), 'none selected stays green');
     assert((await fb(page, 'q2')) === 'Great news! You have no health concerns in this area.', await fb(page, 'q2'));
     const prompts = await page.$$eval('.qa-prompt', (p) => p.map((x) => x.textContent));
-    assert(prompts.includes('5. In The Last 2 Years, Have You Had Any Of The Following?') && prompts.includes('7. Have You Had Cancer Or Received Cancer Treatment In The Last 2 Years?') && !prompts.some((t) => /two years/.test(t)), JSON.stringify(prompts));
+    assert(prompts.includes('5. In The Last 2 Years, Have You Had Any Of The Following?') && prompts.includes('7. Have You Ever Had Cancer Or Received Cancer Treatment?') && !prompts.some((t) => /two years/.test(t)), JSON.stringify(prompts));
     assert(await page.$eval('[data-qa-done]', (e) => e.hidden), 'no submit before complete');
     await answerAll(page);
     const btn = await page.evaluate(() => { const b = document.querySelector('[data-qa-submit]'); const last = document.querySelector('[data-qa-q="q10"]'); return { text: b.textContent.trim(), cta: b.classList.contains('qf-btn-cta'), after: b.getBoundingClientRect().top > last.getBoundingClientRect().bottom }; });
@@ -354,8 +354,9 @@ for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
     await answerAll(page);
     c = await counts();
     assert(c[0] === '10 of 10 completed' && c[1] === c[0] && !c[3], JSON.stringify(c));
-    const order = await page.evaluate(() => { const b = document.querySelector('[data-qa-count-bottom]').getBoundingClientRect(), s = document.querySelector('[data-qa-submit]').getBoundingClientRect(), q = document.querySelector('[data-qa-q="q10"]').getBoundingClientRect(); return q.bottom <= b.top && b.bottom <= s.top; });
-    assert(order, 'bottom counter after question 10 and above SUBMIT MY ANSWERS');
+    // V2.5: question 10's yellow feedback, SUBMIT MY ANSWERS (orange, white bold), Congratulations!, the bottom count.
+    const lay = await page.evaluate(() => { const r = (s) => document.querySelector(s).getBoundingClientRect(); const b = document.querySelector('[data-qa-submit]'), cs = getComputedStyle(b); const fb = r('[data-qa-q="q10"] [data-qa-fb]'), sb = r('[data-qa-submit]'), co = r('.qa-done__title'), ct = r('[data-qa-count-bottom]'); return { order: fb.bottom <= sb.top && sb.bottom <= co.top && co.bottom <= ct.top, gap: Math.round(sb.top - fb.bottom), bg: cs.backgroundColor, color: cs.color, weight: cs.fontWeight, opacity: cs.opacity, disabled: b.disabled, text: b.textContent.trim(), counts: document.querySelectorAll('[data-qa-count-bottom]').length }; });
+    assert(lay.order && lay.gap < 48 && lay.bg === 'rgb(194, 65, 12)' && lay.color === 'rgb(255, 255, 255)' && Number(lay.weight) >= 700 && lay.opacity === '1' && !lay.disabled && lay.text === 'SUBMIT MY ANSWERS' && lay.counts === 1, JSON.stringify(lay));
     await page.uncheck('input[name="q10"][value="none"]');
     c = await counts();
     assert(c[0] === '9 of 10 completed' && c[1] === c[0] && c[3], JSON.stringify(c));
@@ -375,6 +376,29 @@ for (const [funnel, width] of [['get-rates', 390], ['free-quote', 1280]]) {
     await ctx.close();
   });
 }
+
+await check('V2.5: question 7 reads "7. Have You Ever Had Cancer Or Received Cancer Treatment?" with its four options; the selected cancer answers reach the saved summary', async () => {
+  const { ctx, page } = await toRates({ owner: true, phone: '214-867-5910' });
+  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+  await page.waitForSelector('[data-qa]:not([hidden])');
+  const q7 = await page.$eval('[data-qa-q="q7"]', (f) => ({ head: f.querySelector('legend').textContent.trim(), opts: [...f.querySelectorAll('.qa-opt span')].map((s) => s.textContent.trim()) }));
+  assert(q7.head === '7. Have You Ever Had Cancer Or Received Cancer Treatment?' && q7.opts.join('|') === 'Cancer More Than 2 Years Ago|Cancer In The Last 2 Years|Currently Have Cancer|None of the above', JSON.stringify(q7));
+  await page.selectOption('[data-qa-feet]', '5');
+  await page.selectOption('[data-qa-inches]', '6');
+  await page.fill('[data-qa-weight]', '180');
+  for (const q of HEALTH_QUESTIONS) if (q.id !== 'q7') await page.check(`input[name="${q.id}"][value="none"]`);
+  await page.check('input[name="q7"][value="cancer-over-2-years"]');
+  await page.check('input[name="q7"][value="cancer-last-2-years"]');
+  await page.check('input[name="q7"][value="none"]');
+  assert((await page.$$eval('input[name="q7"]:checked', (i) => i.map((x) => x.value))).join() === 'none', 'None of the above clears the cancer answers');
+  await page.check('input[name="q7"][value="cancer-last-2-years"]');
+  await page.check('input[name="q7"][value="cancer-current"]');
+  await page.click('[data-qa-submit]');
+  await page.waitForSelector('[data-qa-preview]');
+  const preview = await page.textContent('[data-qa-preview]');
+  assert(preview.includes('Cancer In The Last 2 Years, Currently Have Cancer') && !/\(last 2 years\)/.test(preview), preview);
+  await ctx.close();
+});
 
 await browser.close();
 await srv.close();

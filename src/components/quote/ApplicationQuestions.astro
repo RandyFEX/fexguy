@@ -70,15 +70,14 @@ const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
     </fieldset>
   ))}
 
-  <!-- V2.4: the same live count, always shown above the SUBMIT MY ANSWERS location (the top one announces changes). -->
-  <p class="qa-progress__text qa-progress__text--bottom" aria-hidden="true" data-qa-count-bottom>0 of 10 completed</p>
-
+  <!-- V2.5: after question 10's feedback: SUBMIT MY ANSWERS, Congratulations! (both only at 10 of 10), then the
+       same live count, always shown (the top one announces changes). -->
   <div class="qa-done" data-qa-done hidden>
-    <p class="qa-done__title">Congratulations!</p>
-    <p class="qa-done__text">You’ve completed all 10 questions.</p>
     <button class="btn qf-btn-cta qa-submit" type="button" data-qa-submit>SUBMIT MY ANSWERS</button>
     <p class="qa-status" role="status" aria-live="polite" data-qa-status></p>
+    <p class="qa-done__title">Congratulations!</p>
   </div>
+  <p class="qa-progress__text qa-progress__text--bottom" aria-hidden="true" data-qa-count-bottom>0 of 10 completed</p>
 
   <!-- V2.4: shown only after the server confirms the answers were saved; then /about/ after 5 seconds. -->
   <div class="qa-success" role="status" tabindex="-1" data-qa-success hidden>
@@ -124,7 +123,7 @@ const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
   .qa-fb { display: flex; align-items: flex-start; gap: 0.5rem; margin: var(--space-3) 0 0; padding: 0.5rem 0.75rem; border-radius: 0.75rem; background: #fff7b0; font-size: 1.125rem; font-weight: 700; color: #1d5c32; }
   .qa-fb[hidden] { display: none; }
   .qa-fb svg { flex: none; margin-top: 0.0625rem; }
-  .qa-progress__text--bottom { margin: 0 0 var(--space-3); }
+  .qa-progress__text--bottom { margin: var(--space-2) 0 var(--space-3); }
   .qa-success { text-align: center; padding: var(--space-6) var(--space-3); }
   .qa-success[hidden] { display: none; }
   .qa-success svg { display: block; margin: 0 auto var(--space-3); }
@@ -132,11 +131,13 @@ const inches = Array.from({ length: LIMITS.inches.max + 1 }, (_, i) => i);
   .qa-success__line { margin: 0 0 var(--space-2); font-size: 1.25rem; font-weight: 700; color: #1c2b26; }
   .qa-success__sign { margin: var(--space-4) 0 0; font-size: 1.125rem; font-weight: 700; color: #173f35; }
   .qa-success__sign span { display: block; }
-  .qa-done { text-align: center; padding: var(--space-4) 0 var(--space-2); }
+  .qa-done { text-align: center; padding: 0; }
   .qa-done[hidden] { display: none; }
-  .qa-done__title { margin: 0; font-size: 1.75rem; font-weight: 800; color: #173f35; }
-  .qa-done__text { margin: 0.25rem 0 var(--space-4); font-size: 1.25rem; }
-  .qa-submit { width: 100%; max-width: 24rem; min-height: 3.5rem; font-size: 1.25rem; }
+  .qa-done__title { margin: var(--space-3) 0 0; font-size: 1.75rem; font-weight: 800; color: #173f35; }
+  /* V2.5: the funnel's primary orange CTA (QuoteFunnelPage's .qf-btn-cta is scoped there and didn't reach this component). */
+  .qa-submit { width: 100%; max-width: 24rem; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; background: var(--color-cta); border-color: var(--color-cta); color: var(--color-on-cta); cursor: pointer; }
+  .qa-submit:hover:not(:disabled) { background: var(--color-cta); color: var(--color-on-cta); filter: brightness(0.9); }
+  .qa-submit:disabled { background: var(--color-cta); color: var(--color-on-cta); opacity: 0.6; cursor: not-allowed; filter: none; }
   .qa-status { margin: var(--space-3) 0 0; font-weight: 600; }
   .qa-status:empty { display: none; }
   .qa-success :global(.qa-preview) { margin: var(--space-3) 0; padding: var(--space-3); text-align: left; white-space: pre-wrap; font-size: 0.9375rem; background: #f4f6f5; border: 1px solid #c9d3cf; border-radius: 0.5rem; }
