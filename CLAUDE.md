@@ -1954,6 +1954,18 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   (`ABOUT_URL`, `REDIRECT_MS` in src/scripts/quote-application.ts). A failed
   submission shows its error only. The `ff:application-submitted` flag is
   still set; /randy/ is no longer opened from here.
+- **Questionnaire V2.5 (Randy, November 2026; supersedes V2.4's cancer
+  question and bottom layout):** question 7 reads "Have you ever had cancer
+  or received cancer treatment?" (header "7. Have You Ever Had Cancer Or
+  Received Cancer Treatment?") with Cancer More Than 2 Years Ago, Cancer In
+  The Last 2 Years, Currently Have Cancer, None of the above (ids
+  cancer-over-2-years, cancer-last-2-years, cancer-current; the Comments
+  summary lists the labels without an added time frame). At 10 of 10 the
+  bottom reads: question 10's feedback, the orange SUBMIT MY ANSWERS (its own
+  CTA styles in ApplicationQuestions.astro: --color-cta, white bold text;
+  QuoteFunnelPage's scoped .qf-btn-cta never reached it), Congratulations!,
+  then the bottom count ("You’ve completed all 10 questions." removed).
+  Below 10, only the bottom count shows there.
 - (Before V2.4) After success the page sets sessionStorage `ff:application-submitted` and
   opens /randy/, which only with that fresh flag (12 hours) shows "Randy
   just received your information!" / "Call Randy now to find out which plans
