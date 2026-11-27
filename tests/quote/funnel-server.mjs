@@ -17,6 +17,7 @@ import { quoteStore } from '../../server/quote/store.js';
 import { verifiedLead } from '../../server/quote/session.js';
 import { TEST_LEAD_TTL_MS, TEST_NAMESPACE, ownerTestState } from '../../server/quote/owner-test.js';
 import { handleTestPage } from '../../server/quote/test-page.js';
+import { handleVcardDownload } from '../../server/quote/vcard.js';
 import { config as hqsConfig } from '../../server/health-search/config.generated.js';
 
 const DIST = fileURLToPath(new URL('../../dist/', import.meta.url));
@@ -82,6 +83,11 @@ export async function startFunnelServer({ production = false, videoIntro = false
       const cookies = out.headers.getSetCookie();
       res.writeHead(out.status, { ...h, ...(cookies.length ? { 'set-cookie': cookies } : {}) });
       return res.end(await out.text());
+    }
+    // The same store choice api/quote-vcard.js makes (owner test mode).
+    if (url.pathname === '/api/quote-vcard/') {
+      const r = new Request(url, { headers: /** @type {any} */ (req.headers) });
+      return send(await handleVcardDownload(r, env, { store: ownerTestState(r, env, Date.now()) === 'valid' ? testStore : store, fetchImpl }));
     }
     if (url.pathname === '/api/quote/' || url.pathname === '/api/price-explorer/') {
       const chunks = [];
