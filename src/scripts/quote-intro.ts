@@ -8,6 +8,15 @@
 //              unlocks that element for later playback with sound.
 //   open():    after the lead is accepted and the rates are showing: the
 //              overlay opens and play() is called at once (no timer first).
+// V1.1 startup (Randy, November 2026): iPhones ignore preload and stream the
+// video only once play() is called, so playback could wait on the network
+// (or stall) after the overlay opened. warm() (from the age question on)
+// downloads the small MP4 in full at low priority and plays it from memory
+// (a blob: URL), so the start doesn't wait on the network; it is skipped with
+// Save-Data, aborted by prime() if unfinished (then the video streams as
+// before), and the source never changes after prime(). A stall (waiting) of
+// STALL_MS while open shows the button too, and a tap restarts a stalled
+// playback.
 // Blocked sound: a Play With Sound button (the overlay stays open). V1.0 fix
 // (Randy, November 2026): iPhones don't always refuse the unprimed play() with
 // NotAllowedError; the request can stay pending or be aborted, which left a
@@ -27,6 +36,8 @@ const PLAYED_KEY = 'ff:quote-intro-played';
 const START_LIMIT_MS = 12000;
 /** How long an automatic start may take before the Play With Sound button shows. */
 const AUTO_START_MS = 2500;
+/** How long playback may stall (waiting for data) before the button shows. */
+const STALL_MS = 2500;
 
 // v1.3 (Randy, November 2026): `veil(true)` while the overlay is open blurs
 // only the price figures behind it; every way the overlay closes (end, close
@@ -34,7 +45,7 @@ const AUTO_START_MS = 2500;
 export function createIntro(root: HTMLElement, track: Track, visit: () => string, veil: (on: boolean) => void = () => {}) {
   const overlay = root.querySelector<HTMLElement>('[data-qv]');
   const video = overlay?.querySelector<HTMLVideoElement>('video');
-  if (!overlay || !video) return { prepare() {}, prime() {}, open(_after: () => void) {}, openPreview(_after: () => void) {} };
+  if (!overlay || !video) return { warm() {}, prepare() {}, prime() {}, open(_after: () => void) {}, openPreview(_after: () => void) {} };
   const closeBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-close]')!;
   const playBtn = overlay.querySelector<HTMLButtonElement>('[data-qv-play]')!;
   const videoId = overlay.dataset.qvId ?? '';
@@ -54,6 +65,10 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   let ended = false;
   let watchdog = 0;
   let blockedSent = false;
+  let stallTimer = 0;
+  // warm(): the in-memory copy of the MP4.
+  let warming: AbortController | null = null;
+  let warmed = false;
   let afterClose: () => void = () => {};
 
   const fail = () => {
@@ -68,11 +83,27 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   video.addEventListener(
     'error',
     () => {
+      // The in-memory copy failed to play: back to the streamed sources.
+      if (warmed && video.getAttribute('src')?.startsWith('blob:')) {
+        warmed = false;
+        video.removeAttribute('src');
+        video.load();
+        if (isOpen) request(true);
+        return;
+      }
       if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) fail();
     },
     true,
   );
+  video.addEventListener('waiting', () => {
+    if (!isOpen || ended) return;
+    window.clearTimeout(stallTimer);
+    stallTimer = window.setTimeout(() => {
+      if (isOpen && !ended && video.readyState < HTMLMediaElement.HAVE_FUTURE_DATA) showPlay();
+    }, STALL_MS);
+  });
   video.addEventListener('playing', () => {
+    window.clearTimeout(stallTimer);
     window.clearTimeout(watchdog);
     if (isOpen) playBtn.hidden = true;
     if (!isOpen || started) return;
@@ -81,7 +112,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   });
   // Paused before the end while open (e.g. the phone interrupted it): offer the button again.
   video.addEventListener('pause', () => {
-    if (isOpen && started && !ended && !video.ended) showPlay();
+    if (isOpen && started && !ended && video.paused && !video.ended) showPlay();
   });
   video.addEventListener('ended', () => {
     if (!isOpen) return;
@@ -94,6 +125,7 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
     if (!isOpen) return;
     isOpen = false;
     window.clearTimeout(watchdog);
+    window.clearTimeout(stallTimer);
     video!.pause();
     if (!ended && !failed) send('quote_video_dismiss', { position: Math.floor(video!.currentTime || 0) });
     overlay!.hidden = true;
@@ -149,9 +181,11 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   }
   // Called within the tap itself, so the browser allows sound.
   const tapPlay = () => {
-    if (!isOpen || !video.paused) return;
+    // Ignore taps while it plays normally; a stalled or pending start restarts.
+    if (!isOpen || (!video.paused && playBtn.hidden && started)) return;
     playBtn.hidden = true;
     closeBtn.focus({ preventScroll: true });
+    if (!video.paused) video.pause();
     request(false);
   };
   playBtn.addEventListener('click', tapPlay);
@@ -159,8 +193,31 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
   closeBtn.addEventListener('click', close);
 
   return {
+    /** From the age question on: download the MP4 in full (low priority) and
+     *  play it from memory. Never changes the source after prime(). */
+    warm() {
+      if (warming || warmed || primed || failed || played()) return;
+      const nav = navigator as Navigator & { connection?: { saveData?: boolean } };
+      if (nav.connection?.saveData || typeof fetch !== 'function' || !URL.createObjectURL) return;
+      const mp4 = video.querySelector<HTMLSourceElement>('source[type="video/mp4"]')?.src;
+      if (!mp4) return;
+      const ctl = new AbortController();
+      warming = ctl;
+      fetch(mp4, { signal: ctl.signal, priority: 'low' } as RequestInit)
+        .then((r) => (r.ok ? r.blob() : Promise.reject(new Error(String(r.status)))))
+        .then((blob) => {
+          if (primed || ctl.signal.aborted) return;
+          warmed = true;
+          video.src = URL.createObjectURL(blob.type ? blob : new Blob([blob], { type: 'video/mp4' }));
+        })
+        .catch(() => {})
+        .finally(() => {
+          if (warming === ctl) warming = null;
+        });
+    },
     /** The contact step is showing: start downloading the video. */
     prepare() {
+      if (warming || warmed) return;
       if (failed || played() || video.preload === 'auto') return;
       video.preload = 'auto';
       video.load();
@@ -169,6 +226,8 @@ export function createIntro(root: HTMLElement, track: Track, visit: () => string
     prime() {
       if (failed || played()) return;
       primed = true;
+      // An unfinished download stops here; the video streams as before.
+      warming?.abort();
       video.muted = false;
       try {
         video.play()?.catch(() => {});

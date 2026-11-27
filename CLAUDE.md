@@ -1824,7 +1824,13 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   2.5 s (AUTO_START_MS), for any refusal but an unsupported source, and on
   a pause before the end; a tap on the video works like the button, and the
   button hides once playback starts (test: the iPhone-like cases in
-  tests/quote/video-intro.browser.mjs); a load or playback failure, or a
+  tests/quote/video-intro.browser.mjs); startup V1.1 (Randy, November 2026): the MP4 was
+  re-encoded for fast mobile start (randy-intro-v1b.mp4, 1.78 MB instead of
+  4.72 MB, same recording and `id`), and warm() downloads it in full at low
+  priority from the age question on and plays it from memory (blob: URL;
+  skipped with Save-Data, aborted at SEE MY RATES if unfinished, then it
+  streams as before); a stall of 2.5 s also shows the button, and a tap
+  restarts a stalled playback; a load or playback failure, or a
   requested start that doesn't come within 12 s, closes the overlay. Close
   button and Escape stop playback. Pricing, lead submission, Agent CRM,
   existing tracking and the 10-minute countdown are unchanged.

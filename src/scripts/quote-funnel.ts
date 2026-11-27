@@ -162,6 +162,8 @@ if (root) {
     const shownStep = Math.min(n > 4 ? n - 1 : n, TOTAL);
     progress.style.width = `${(shownStep / TOTAL) * 100}%`;
     progressLabel.textContent = `Step ${shownStep} of ${TOTAL}`;
+    // V1.1: from the age question on, download the video for an instant start (quote-intro.ts).
+    if (n >= 2 && n <= 6) intro.warm();
     if (!focus) return;
     if (n === 6) {
       fillSummary();
