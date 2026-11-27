@@ -95,7 +95,7 @@ await check('exact questions and answer order; nothing preselected; multiple cho
   // Multiple choices + Q2 feedback.
   await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
   await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="thyroid"])');
-  assert((await fb(page, 'q2')) === FEEDBACK.q2, await fb(page, 'q2'));
+  assert((await fb(page, 'q2')) === FEEDBACK.conditions, await fb(page, 'q2'));
   // None clears the others; a condition clears None.
   await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="none"])');
   let sel = await page.$$eval('input[name="q2"]:checked', (i) => i.map((x) => x.value));
@@ -230,6 +230,33 @@ await check('/apply/ visited directly without a quote: the quote form first, the
   await page.waitForSelector('a[href="/apply/"]');
   await ctx.close();
 });
+
+for (const width of [390, 1280]) {
+  await check(`V1.7 (${width}px): pale red selected conditions, pale green bold None of the above (also unselected), exact feedback, "in the last 2 years", SUBMIT MY ANSWERS after the last question`, async () => {
+    const { ctx, page } = await toRates({ owner: true, phone: `214-867-53${width === 390 ? 30 : 31}`, width });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+    await page.waitForSelector('[data-qa]:not([hidden])');
+    const st = (v) => page.$eval(`[data-qa-q="q2"] .qa-opt:has(input[value="${v}"])`, (l) => ({ bg: getComputedStyle(l).backgroundColor, w: getComputedStyle(l).fontWeight }));
+    const white = (await st('arthritis')).bg;
+    const none0 = await st('none');
+    assert(none0.bg === 'rgb(232, 245, 233)' && Number(none0.w) >= 700, JSON.stringify(none0));
+    await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
+    assert((await st('arthritis')).bg === 'rgb(253, 238, 238)', JSON.stringify(await st('arthritis')));
+    assert((await fb(page, 'q2')) === 'Great news! Funeral Funds has companies that may cover these conditions.', await fb(page, 'q2'));
+    await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="arthritis"])');
+    assert((await st('arthritis')).bg === white, 'deselected returns to original');
+    await page.click('[data-qa-q="q2"] .qa-opt:has(input[value="none"])');
+    assert((await st('none')).bg === 'rgb(232, 245, 233)' && (await page.isChecked('input[name="q2"][value="none"]')), 'none selected stays green');
+    assert((await fb(page, 'q2')) === 'Great news! You have no health concerns in this area.', await fb(page, 'q2'));
+    const prompts = await page.$$eval('.qa-prompt', (p) => p.map((x) => x.textContent));
+    assert(prompts.includes('In the last 2 years, have you had any of the following?') && prompts.includes('Have you had cancer or received cancer treatment in the last 2 years?') && !prompts.some((t) => /two years/.test(t)), JSON.stringify(prompts));
+    assert(await page.$eval('[data-qa-done]', (e) => e.hidden), 'no submit before complete');
+    await answerAll(page);
+    const btn = await page.evaluate(() => { const b = document.querySelector('[data-qa-submit]'); const last = document.querySelector('[data-qa-q="q10"]'); return { text: b.textContent.trim(), cta: b.classList.contains('qf-btn-cta'), after: b.getBoundingClientRect().top > last.getBoundingClientRect().bottom }; });
+    assert(btn.text === 'SUBMIT MY ANSWERS' && btn.cta && btn.after, JSON.stringify(btn));
+    await ctx.close();
+  });
+}
 
 await browser.close();
 await srv.close();

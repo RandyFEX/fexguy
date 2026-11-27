@@ -42,7 +42,7 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
       const fb = box.querySelector<HTMLElement>(`[data-qa-q="${q.id}"] [data-qa-fb]`)!;
       if (sel.length) n++;
       fb.hidden = !sel.length;
-      fb.querySelector('[data-qa-fb-text]')!.textContent = !sel.length ? '' : sel.includes(NONE) ? FEEDBACK.none : q.id === 'q2' ? FEEDBACK.q2 : FEEDBACK.conditions;
+      fb.querySelector('[data-qa-fb-text]')!.textContent = !sel.length ? '' : sel.includes(NONE) ? FEEDBACK.none : FEEDBACK.conditions;
     }
     bar.style.width = `${n * 10}%`;
     count.textContent = `${n} of 10 completed`;

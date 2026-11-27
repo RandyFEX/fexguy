@@ -11,11 +11,10 @@
 export const NONE = 'none';
 export const NONE_LABEL = 'None of the above';
 
-/** Feedback shown under an answered health question (exact wording). */
+/** Feedback shown under an answered health question (exact wording; V1.7, Randy, November 2026). */
 export const FEEDBACK = {
-  q2: 'Great news! These conditions won’t prevent you from getting our lowest rates.',
-  conditions: 'Great news! We have companies that will handle these conditions.',
-  none: 'Great!',
+  conditions: 'Great news! Funeral Funds has companies that may cover these conditions.',
+  none: 'Great news! You have no health concerns in this area.',
 };
 
 /**
@@ -27,9 +26,9 @@ export const HEALTH_QUESTIONS = [
   { id: 'q2', prompt: 'Do you have any of these health conditions?', options: [['arthritis', 'Arthritis'], ['high-blood-pressure', 'High blood pressure'], ['high-cholesterol', 'High cholesterol'], ['thyroid', 'Thyroid condition']] },
   { id: 'q3', prompt: 'Do you have any of these health conditions?', options: [['afib', 'AFib'], ['asthma', 'Asthma'], ['diabetes', 'Diabetes'], ['sleep-apnea', 'Sleep apnea']] },
   { id: 'q4', prompt: 'Do you have any of these health conditions?', options: [['anxiety', 'Anxiety'], ['bipolar', 'Bipolar disorder'], ['depression', 'Depression'], ['schizophrenia', 'Schizophrenia']] },
-  { id: 'q5', prompt: 'In the last two years, have you had any of the following?', options: [['heart-attack', 'Heart attack'], ['heart-bypass', 'Heart bypass surgery'], ['heart-failure', 'Heart failure'], ['heart-stents', 'Heart stents'], ['stroke', 'Stroke']] },
+  { id: 'q5', prompt: 'In the last 2 years, have you had any of the following?', options: [['heart-attack', 'Heart attack'], ['heart-bypass', 'Heart bypass surgery'], ['heart-failure', 'Heart failure'], ['heart-stents', 'Heart stents'], ['stroke', 'Stroke']] },
   { id: 'q6', prompt: 'Have you ever had any of the following?', options: [['chronic-bronchitis', 'Chronic bronchitis'], ['copd', 'COPD'], ['emphysema', 'Emphysema'], ['oxygen', 'Supplemental oxygen use']] },
-  { id: 'q7', prompt: 'Have you had cancer or received cancer treatment in the last two years?', options: [['cancer', 'Cancer or cancer treatment']] },
+  { id: 'q7', prompt: 'Have you had cancer or received cancer treatment in the last 2 years?', options: [['cancer', 'Cancer or cancer treatment']] },
   { id: 'q8', prompt: 'Have you ever had any of these diabetic complications?', options: [['diabetic-amputations', 'Diabetic amputations'], ['diabetic-coma', 'Diabetic coma'], ['diabetic-neuropathy', 'Diabetic neuropathy']] },
   { id: 'q9', prompt: 'Have you ever had any of the following?', options: [['alzheimers', 'Alzheimer’s disease'], ['dementia', 'Dementia'], ['kidney-disease', 'Kidney disease'], ['liver-disease', 'Liver disease']] },
   { id: 'q10', prompt: 'Do any of the following currently apply to you?', options: [['hospitalized', 'Hospitalized'], ['nursing-home', 'In a nursing home'], ['hospice', 'In hospice care'], ['pending-surgery', 'Pending surgery']] },

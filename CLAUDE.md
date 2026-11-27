@@ -1857,7 +1857,11 @@ KB-STYLE-011 (RandyFEX/fexguy-monitoring).
   QuoteFunnelPage.astro (src/components/quote/ApplicationQuestions.astro,
   src/scripts/quote-application.ts), on /free-quote/, /get-rates/, every
   entry point and /test/. Questions, answer order, None of the above (always
-  last, exclusive) and the three feedback lines are Randy's exact wording,
+  last, exclusive) and the feedback lines are Randy's exact wording (V1.7:
+  "Great news! Funeral Funds has companies that may cover these conditions."
+  and, for None of the above, "Great news! You have no health concerns in this
+  area."; "in the last 2 years" in questions 5 and 7; a selected condition is
+  very pale red, None of the above is always pale green and bold),
   defined once in server/quote/application.js (page and server both use it);
   never reword, reorder or add questions. Question 1 is height (feet,
   inches) and weight. A progress line counts completed questions;
