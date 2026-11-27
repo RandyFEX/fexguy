@@ -263,7 +263,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
     const h = await page.$eval('#qf-s7', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
-    assert(h.t === 'We guarantee you qualify for at least one of these rates.' && h.h > 10, JSON.stringify(h));
+    assert(h.t === 'Want even lower rates? Ask us about our state-specific plans.' && h.h > 10, JSON.stringify(h));
     const resIntro = await page.evaluate(() => {
       const t = document.querySelector('#qf-s7'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
       const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();

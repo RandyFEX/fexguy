@@ -674,7 +674,7 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'We guarantee you qualify for at least one of these rates.';
+    resultsTitle.textContent = 'Want even lower rates? Ask us about our state-specific plans.';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
     stopCountdown?.();
