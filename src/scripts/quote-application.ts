@@ -82,6 +82,20 @@ export function createApplication(root: HTMLElement, opts: { api: Api; quote: ()
         sessionStorage.setItem(APPLICATION_FLAG, String(Date.now()));
       } catch {}
       status.textContent = 'Your answers were received.';
+      // V1.5: test mode only: show the Agent CRM update that would be made (nothing was sent).
+      const p = r.body.crmPreview;
+      if (r.body.testMode === true && p) {
+        const pre = document.createElement('pre');
+        pre.className = 'qa-preview';
+        pre.dataset.qaPreview = '';
+        pre.textContent = `TEST MODE: nothing was sent to Agent CRM.\nWould update: ${p.contact}\nNew contact: ${p.newContact ? 'yes' : 'no'} | Note: ${p.note ? 'yes' : 'no'}\nField ${p.commentsField}:\n${p.comments}\nThen tag: ${p.tagAfterComments}`;
+        const go = document.createElement('a');
+        go.className = 'btn qf-btn-cta qa-submit';
+        go.href = '/randy/';
+        go.textContent = 'Continue to the contact card';
+        status.after(pre, go);
+        return;
+      }
       window.location.assign('/randy/');
       return;
     }

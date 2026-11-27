@@ -159,13 +159,34 @@ await check('an ordinary visitor to /randy/ sees the normal card (no confirmatio
   await ctx.close();
 });
 
-await check('owner test mode (/test/): the questionnaire submits and opens the confirmation card with no Agent CRM call', async () => {
+await check('V1.5 /test/: quote -> three rates -> APPLY NOW opens the 10 questions at once (no quote question, even while the session check is slow or fails once); submit shows the mocked Agent CRM update for the existing contact; nothing sent', async () => {
   const { ctx, page } = await toRates({ owner: true, phone: '214-867-5323' });
   const before = srv.crm.calls.length;
-  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]');
+  let sessionCalls = 0;
+  // The session check: slow, and a server error the first time.
+  await page.route('**/api/quote/', async (route) => {
+    const body = route.request().postData() ?? '';
+    if (body.includes('"action":"session"')) {
+      sessionCalls++;
+      await new Promise((r) => setTimeout(r, 2000));
+      if (sessionCalls === 1) return route.fulfill({ status: 503, body: '{}' });
+    }
+    return route.continue();
+  });
+  await Promise.all([page.waitForURL(/\/apply\/$/, { waitUntil: 'commit' }), page.click('[data-qf-card="lowest-preferred"] [data-qf-apply-q]')]);
+  await page.waitForLoadState('domcontentloaded');
+  const early = await page.evaluate(() => ({ q1: getComputedStyle(document.querySelector('[data-step="1"]')).display, qa: getComputedStyle(document.querySelector('[data-qa]')).display }));
+  assert(early.q1 === 'none' && early.qa !== 'none', `on arrival: ${JSON.stringify(early)}`);
+  const seen = await page.evaluate(() => new Promise((res) => { let q1 = false; const t = setInterval(() => { if (getComputedStyle(document.querySelector('[data-step="1"]')).display !== 'none') q1 = true; }, 50); setTimeout(() => { clearInterval(t); res(q1); }, 6000); }));
+  assert(!seen && sessionCalls >= 2, `quote question shown: ${seen}, session checks ${sessionCalls}`);
+  await page.unroute('**/api/quote/');
   await answerAll(page);
-  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('[data-qa-submit]')]);
+  await page.click('[data-qa-submit]');
+  await page.waitForSelector('[data-qa-preview]');
+  const preview = await page.textContent('[data-qa-preview]');
+  for (const t of ['TEST MODE: nothing was sent to Agent CRM.', 'New contact: no | Note: no', 'Field contact.comments:', '70 | Female | TX | Non-tobacco', '$5,000 Coverage', '5’6” | 180 lbs', 'Arthritis, High cholesterol', 'Then tag: Application Questionnaire Completed']) assert(preview.includes(t), `preview lacks ${t}: ${preview}`);
   assert(srv.crm.calls.length === before, `CRM calls: ${srv.crm.calls.length - before}`);
+  await Promise.all([page.waitForURL(/\/randy\/$/), page.click('text=Continue to the contact card')]);
   await ctx.close();
 });
 

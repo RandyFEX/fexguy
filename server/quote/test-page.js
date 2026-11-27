@@ -84,7 +84,8 @@ const hubPage = () =>
 <p>This browser is in test mode for ${TEST_DAYS} days. Choose a quote funnel:</p>
 <a class="go" href="/get-rates/">Test /get-rates/</a>
 <a class="go" href="/free-quote/">Test /free-quote/</a>
-<a class="go" href="/apply/">Test /apply/ (10 Easy Questions)</a>
+<a class="go" href="/apply/">Test /apply/ without a quote (direct visit)</a>
+<p class="note">To test the application from a quote: open /get-rates/ or /free-quote/, get the three rates, then tap APPLY NOW - 10 EASY QUESTIONS. After SUBMIT MY ANSWERS the page shows the Agent CRM update it would make (nothing is sent).</p>
 <p class="note">These buttons open the real, current funnel pages with the live rates. While this browser is in test mode:</p>
 <ul class="note">
 <li>nothing is sent to Agent CRM, so no contact, workflow, text or call;</li>

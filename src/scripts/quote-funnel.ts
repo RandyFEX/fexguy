@@ -404,6 +404,10 @@ if (root) {
       applyQuote = JSON.parse(sessionStorage.getItem(APPLY_QUOTE_KEY) ?? 'null');
     } catch {}
   }
+  // V1.5: from APPLY NOW the questions open immediately, before the session
+  // check returns (it continues in the background; the quote questions never show).
+  if (applyPage && applyQuote) show(9, false);
+  delete root.dataset.applyHandoff;
   createApplication(root, {
     api,
     quote: () => shown?.quote ?? applyQuote,
@@ -732,6 +736,12 @@ if (root) {
     resultsLead.hidden = false;
     stopCountdown?.();
     stopCountdown = runCountdown(countdown, offerExpiresAt('results'), expireResults);
+    // V1.5: on /apply/ with the questions open, the rates load behind them (no jump to the results).
+    if (applyPage && current === 9) {
+      fillAdjust(quote);
+      void reprice(quote);
+      return;
+    }
     if (expired) {
       show(7, false);
       return;
@@ -804,7 +814,7 @@ if (root) {
   // v5.8: the visit's entry; a Male or Female choice made in an article's
   // sidebar is applied here, so the visitor starts at the age question (Back
   // still returns to the choice).
-  track('quote_funnel_entry');
+  if (!(applyPage && applyQuote)) track('quote_funnel_entry');
   if (arrival?.fromSidebar) track('quote_sidebar_select');
   const preselect = arrival?.preselect ?? null;
   if (preselect) {
@@ -824,19 +834,36 @@ if (root) {
         return;
       }
     }
-    const { http, body } = await api({ action: 'session' });
+    let { http, body } = await api({ action: 'session' });
+    // V1.5: from APPLY NOW, a network error or server hiccup is retried; only a
+    // definite "no quote session" answer falls back to the quote form.
+    for (const wait of [1000, 2500, 5000]) {
+      if (!(applyPage && applyQuote) || (http > 0 && http < 500)) break;
+      await new Promise((r) => setTimeout(r, wait));
+      ({ http, body } = await api({ action: 'session' }));
+    }
     if (http === 200 && body.status === 'verified' && body.quote) {
       visitorName = String(body.firstName ?? '');
       if (typeof body.lead === 'string') leadId = body.lead;
       if (applyPage) {
         applyQuote ??= quoteReady() ?? (body.quote as PriceQuote);
+        const open = current === 9;
         unlock(applyQuote, body.testMode, body.expiresAt);
-        return show(9);
+        if (!open) show(9);
+        return;
       }
       return unlock(quoteReady() ?? (body.quote as PriceQuote), body.testMode, body.expiresAt);
     }
     // Only if the visitor hasn't already answered (an answer given while this
     // check was loading must not send them back to the first question).
+    if (applyPage && applyQuote) {
+      if (http === 0 || http >= 500) return; // still unreachable: stay on the questions (submit retries)
+      applyQuote = null;
+      try {
+        sessionStorage.removeItem(APPLY_QUOTE_KEY);
+      } catch {}
+      return show(1, false);
+    }
     if (!preselect && current === 1) show(1, false);
   })();
 }

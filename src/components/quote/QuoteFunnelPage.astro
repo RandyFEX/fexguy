@@ -101,6 +101,12 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
     data-consent-version={CONSENT_VERSION}
     data-funnel-phone={phone.display}
   >
+    {apply && (
+      <script is:inline>
+        // V1.5: arriving from a card's APPLY NOW, the questions show at once (no quote question first).
+        try { if (sessionStorage.getItem('ff:apply-quote')) document.currentScript.parentElement.setAttribute('data-apply-handoff', ''); } catch (e) {}
+      </script>
+    )}
     <h1 class="visually-hidden">Request Life Insurance Quote</h1>
 
     <div class="container qf-body">
@@ -346,6 +352,9 @@ const { title, robots, canonical, headMeta, jsonLd, funnel, apply = false } = As
 </script>
 
 <style>
+  /* V1.5 (/apply/ from APPLY NOW): only the questionnaire, before the script runs. */
+  :global(.qf[data-apply-handoff] [data-qf-top]), :global(.qf[data-apply-handoff] [data-qf-progress-wrap]), :global(.qf[data-apply-handoff] [data-step]:not([data-step="9"])) { display: none !important; }
+  :global(.qf[data-apply-handoff] [data-step="9"]) { display: block !important; }
   /* Minimal quote header: logo left; Secure Form and the phone right. */
   .qh-top { background: #fff; border-bottom: 1px solid var(--color-border); }
   .qh-top__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-2); }
