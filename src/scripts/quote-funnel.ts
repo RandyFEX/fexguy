@@ -471,7 +471,7 @@ if (root) {
     el.querySelector<HTMLButtonElement>('[data-qf-save]')!.disabled = state !== 'ok';
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
-    if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
+    // Card text V1.0 (Randy, November 2026): the card keeps its own heading (the page's), never the server label.
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
@@ -502,7 +502,8 @@ if (root) {
       const el = cards.get(cat.id);
       if (el) setCard(el, cat, cat.status, cat.status === 'ok' ? '' : cat.message ?? '');
     }
-    const ok = categories.filter((c) => c.status === 'ok').map((c) => (c.premium && c.coverage ? `${c.label} ${money(c.coverage)} coverage for $${c.premium} per month` : `${c.label} $${c.monthlyPremium} per month`));
+    const shownLabel = (c: Category) => cards.get(c.id)?.querySelector('.qf-card__label')?.textContent ?? c.label;
+    const ok = categories.filter((c) => c.status === 'ok').map((c) => (c.premium && c.coverage ? `${shownLabel(c)} ${money(c.coverage)} coverage for $${c.premium} per month` : `${shownLabel(c)} $${c.monthlyPremium} per month`));
     live.textContent = ok.length ? `Prices updated. ${ok.join('. ')}.` : 'Prices updated.';
     if (firstView) {
       firstView = false;
